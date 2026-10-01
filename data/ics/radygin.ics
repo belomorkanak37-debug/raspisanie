@@ -6,11 +6,21 @@ METHOD:PUBLISH
 X-WR-CALNAME:Расписание — Радыгин
 REFRESH-INTERVAL;VALUE=DURATION:PT6H
 X-PUBLISHED-TTL:PT6H
+X-WR-TIMEZONE:Europe/Moscow
+BEGIN:VTIMEZONE
+TZID:Europe/Moscow
+BEGIN:STANDARD
+DTSTART:19700101T000000
+TZOFFSETFROM:+0300
+TZOFFSETTO:+0300
+TZNAME:MSK
+END:STANDARD
+END:VTIMEZONE
 BEGIN:VEVENT
 UID:2026-09-29-1100-t2zk61@raspisanie
-DTSTAMP:20261001T154600Z
-DTSTART:20260929T110000
-DTEND:20260929T120000
+DTSTAMP:20261001T164100Z
+DTSTART;TZID=Europe/Moscow:20260929T110000
+DTEND;TZID=Europe/Moscow:20260929T120000
 SUMMARY:Ввод «Маша и медведи» (вводящийся)
 LOCATION:Новая сцена
 DESCRIPTION:Ввод в спектакль «Маша и медведи»
@@ -20,9 +30,9 @@ DESCRIPTION:Ввод в спектакль «Маша и медведи»
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-09-29-1430-t2zk61@raspisanie
-DTSTAMP:20261001T154600Z
-DTSTART:20260929T143000
-DTEND:20260929T153000
+DTSTAMP:20261001T164100Z
+DTSTART;TZID=Europe/Moscow:20260929T143000
+DTEND;TZID=Europe/Moscow:20260929T153000
 SUMMARY:Ввод «Маша и медведи» (вводящийся)
 LOCATION:Новая сцена
 DESCRIPTION:Ввод в спектакль «Маша и медведи»
@@ -32,9 +42,9 @@ DESCRIPTION:Ввод в спектакль «Маша и медведи»
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-09-30-1500-t2zk61@raspisanie
-DTSTAMP:20261001T154600Z
-DTSTART:20260930T150000
-DTEND:20260930T160000
+DTSTAMP:20261001T164100Z
+DTSTART;TZID=Europe/Moscow:20260930T150000
+DTEND;TZID=Europe/Moscow:20260930T160000
 SUMMARY:Ввод «Маша и медведи» (вводящийся)
 LOCATION:Новая сцена
 DESCRIPTION:Ввод в спектакль «Маша и медведи»
@@ -44,30 +54,31 @@ DESCRIPTION:Ввод в спектакль «Маша и медведи»
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-02-1230-l5f9v@raspisanie
-DTSTAMP:20261001T154600Z
-DTSTART:20261002T123000
-DTEND:20261002T133000
+DTSTAMP:20261001T164100Z
+DTSTART;TZID=Europe/Moscow:20261002T123000
+DTEND;TZID=Europe/Moscow:20261002T133000
 SUMMARY:Собрание всего коллектива
 LOCATION:Старая сцена
 DESCRIPTION:СОБРАНИЕ ВСЕГО КОЛЛЕКТИВА
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-06-1200-gs@raspisanie
-DTSTAMP:20261001T154600Z
-DTSTART:20261006T120000
-DTEND:20261006T130000
-SUMMARY:Ввод «Федорино горе» (вводящийся)
+DTSTAMP:20261001T164100Z
+DTSTART;TZID=Europe/Moscow:20261006T120000
+DTEND;TZID=Europe/Moscow:20261006T130000
+SUMMARY:Ввод «Федорино горе» · + сдача А.С. в 
+ 16:00 (вводящийся)
 LOCATION:Старая сцена
 DESCRIPTION:Ввод в спектакль «Федорино горе» 
  + сдача А.С. в 16:00\nВводящийся –Радыгин\nБ
- езносиков\, Лоскутов\, Шаймиев\, Баранов\
- , Глазецкая\, Самойлов\nЗвук/свет: Звук
+ езносиков\, Лоскутов\, Шаймиев\, Баранов
+ \, Глазецкая\, Самойлов\nЗвук/свет: Звук
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-08-1200-f0s38s@raspisanie
-DTSTAMP:20261001T154600Z
-DTSTART:20261008T120000
-DTEND:20261008T130000
+DTSTAMP:20261001T164100Z
+DTSTART;TZID=Europe/Moscow:20261008T120000
+DTEND;TZID=Europe/Moscow:20261008T130000
 SUMMARY:Ввод «Палочка-выручалочка» (вводящ
  ийся)
 LOCATION:Старая сцена
@@ -78,9 +89,9 @@ DESCRIPTION:Ввод в спектакль «Палочка-выруча
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-13-1200-z1uvui@raspisanie
-DTSTAMP:20261001T154600Z
-DTSTART:20261013T120000
-DTEND:20261013T130000
+DTSTAMP:20261001T164100Z
+DTSTART;TZID=Europe/Moscow:20261013T120000
+DTEND;TZID=Europe/Moscow:20261013T130000
 SUMMARY:Ввод «Конёк-горбунок» (вводящийся)
 LOCATION:Старая сцена
 DESCRIPTION:Ввод в спектакль «Конёк-горбунок
@@ -90,9 +101,9 @@ DESCRIPTION:Ввод в спектакль «Конёк-горбунок
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-14-1100-z1uvui@raspisanie
-DTSTAMP:20261001T154600Z
-DTSTART:20261014T110000
-DTEND:20261014T150000
+DTSTAMP:20261001T164100Z
+DTSTART;TZID=Europe/Moscow:20261014T110000
+DTEND;TZID=Europe/Moscow:20261014T150000
 SUMMARY:Ввод «Конёк-горбунок» (вводящийся)
 LOCATION:Старая сцена
 DESCRIPTION:Ввод в спектакль «Конёк-горбунок
@@ -102,21 +113,21 @@ DESCRIPTION:Ввод в спектакль «Конёк-горбунок
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-15-1100-1nrwk50@raspisanie
-DTSTAMP:20261001T154600Z
-DTSTART:20261015T110000
-DTEND:20261015T120000
+DTSTAMP:20261001T164100Z
+DTSTART;TZID=Europe/Moscow:20261015T110000
+DTEND;TZID=Europe/Moscow:20261015T120000
 SUMMARY:Спектакль «Палочка-выручалочка» (?)
 LOCATION:Старая сцена
-DESCRIPTION:Спектакль «Палочка-выручалочка»\
- nЗаяшников\, Носов\, Трунина\, Мартюшева\,
-  Лоскутов (?) / Радыгин (?)\nЗвук/свет: Звук\
- , свет
+DESCRIPTION:Спектакль «Палочка-выручалочка»
+ \nЗаяшников\, Носов\, Трунина\, Мартюшева
+ \, Лоскутов (?) / Радыгин (?)\nЗвук/свет: Зву
+ к\, свет
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-18-1100-dp5ewz@raspisanie
-DTSTAMP:20261001T154600Z
-DTSTART:20261018T110000
-DTEND:20261018T120000
+DTSTAMP:20261001T164100Z
+DTSTART;TZID=Europe/Moscow:20261018T110000
+DTEND;TZID=Europe/Moscow:20261018T120000
 SUMMARY:Спектакль «Федорино горе»
 LOCATION:Старая сцена
 DESCRIPTION:Спектакль «Федорино горе»\nРадыг
@@ -126,9 +137,9 @@ DESCRIPTION:Спектакль «Федорино горе»\nРадыг
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-18-1300-dp5ewz@raspisanie
-DTSTAMP:20261001T154600Z
-DTSTART:20261018T130000
-DTEND:20261018T140000
+DTSTAMP:20261001T164100Z
+DTSTART;TZID=Europe/Moscow:20261018T130000
+DTEND;TZID=Europe/Moscow:20261018T140000
 SUMMARY:Спектакль «Федорино горе»
 LOCATION:Старая сцена
 DESCRIPTION:Спектакль «Федорино горе»\nРадыг
@@ -138,9 +149,9 @@ DESCRIPTION:Спектакль «Федорино горе»\nРадыг
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-18-1500-dp5ewz@raspisanie
-DTSTAMP:20261001T154600Z
-DTSTART:20261018T150000
-DTEND:20261018T160000
+DTSTAMP:20261001T164100Z
+DTSTART;TZID=Europe/Moscow:20261018T150000
+DTEND;TZID=Europe/Moscow:20261018T160000
 SUMMARY:Спектакль «Федорино горе»
 LOCATION:Старая сцена
 DESCRIPTION:Спектакль «Федорино горе»\nРадыг

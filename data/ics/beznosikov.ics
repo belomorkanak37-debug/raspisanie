@@ -6,25 +6,36 @@ METHOD:PUBLISH
 X-WR-CALNAME:Расписание — Безносиков
 REFRESH-INTERVAL;VALUE=DURATION:PT6H
 X-PUBLISHED-TTL:PT6H
+X-WR-TIMEZONE:Europe/Moscow
+BEGIN:VTIMEZONE
+TZID:Europe/Moscow
+BEGIN:STANDARD
+DTSTART:19700101T000000
+TZOFFSETFROM:+0300
+TZOFFSETTO:+0300
+TZNAME:MSK
+END:STANDARD
+END:VTIMEZONE
 BEGIN:VEVENT
 UID:2026-09-28-0713-1gl2wdd@raspisanie
-DTSTAMP:20261001T154600Z
-DTSTART:20260928T071300
-DTEND:20260928T081300
+DTSTAMP:20261001T164100Z
+DTSTART;TZID=Europe/Moscow:20260928T071300
+DTEND;TZID=Europe/Moscow:20260928T081300
 SUMMARY:Отъезд гастрольной группы на БДФ
 LOCATION:Московский вокзал
-DESCRIPTION:ОТЪЕЗД гастрольной группы на БДФ\
- nАбдулина\, Шерстюк\, Безносиков\, Бабано
- в\, Глазецкая\, Миронова\, Кожевникова\, К
- оломейцев\,\nЛоскутов\, Нечаев\, Ожинский
- \, Гончаренко
+DESCRIPTION:ОТЪЕЗД гастрольной группы на БДФ
+ \nАбдулина\, Шерстюк\, Безносиков\, Бабан
+ ов\, Глазецкая\, Миронова\, Кожевникова\, 
+ Коломейцев\,\nЛоскутов\, Нечаев\, Ожински
+ й\, Гончаренко
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-09-29-1900-1q80p5y@raspisanie
-DTSTAMP:20261001T154600Z
-DTSTART:20260929T190000
-DTEND:20260929T200000
-SUMMARY:Спектакль «Алые паруса»
+DTSTAMP:20261001T164100Z
+DTSTART;TZID=Europe/Moscow:20260929T190000
+DTEND;TZID=Europe/Moscow:20260929T200000
+SUMMARY:Спектакль «Алые паруса» · БДФ Москв
+ а
 LOCATION:Москва / Губернская сцена
 DESCRIPTION:БДФ Москва / Спектакль «Алые пару
  са»\nБезносиков\, Миронова\, Лоскутов\, Г
@@ -34,18 +45,18 @@ DESCRIPTION:БДФ Москва / Спектакль «Алые пару
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-02-1230-l5f9v@raspisanie
-DTSTAMP:20261001T154600Z
-DTSTART:20261002T123000
-DTEND:20261002T133000
+DTSTAMP:20261001T164100Z
+DTSTART;TZID=Europe/Moscow:20261002T123000
+DTEND;TZID=Europe/Moscow:20261002T133000
 SUMMARY:Собрание всего коллектива
 LOCATION:Старая сцена
 DESCRIPTION:СОБРАНИЕ ВСЕГО КОЛЛЕКТИВА
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-04-1100-101wdvg@raspisanie
-DTSTAMP:20261001T154600Z
-DTSTART:20261004T110000
-DTEND:20261004T120000
+DTSTAMP:20261001T164100Z
+DTSTART;TZID=Europe/Moscow:20261004T110000
+DTEND;TZID=Europe/Moscow:20261004T120000
 SUMMARY:Спектакль «Волк и лиса»
 LOCATION:Новая сцена
 DESCRIPTION:Спектакль «Волк и лиса»\nБезносик
@@ -54,9 +65,9 @@ DESCRIPTION:Спектакль «Волк и лиса»\nБезносик
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-04-1300-101wdvg@raspisanie
-DTSTAMP:20261001T154600Z
-DTSTART:20261004T130000
-DTEND:20261004T140000
+DTSTAMP:20261001T164100Z
+DTSTART;TZID=Europe/Moscow:20261004T130000
+DTEND;TZID=Europe/Moscow:20261004T140000
 SUMMARY:Спектакль «Волк и лиса»
 LOCATION:Новая сцена
 DESCRIPTION:Спектакль «Волк и лиса»\nБезносик
@@ -65,9 +76,9 @@ DESCRIPTION:Спектакль «Волк и лиса»\nБезносик
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-04-1500-101wdvg@raspisanie
-DTSTAMP:20261001T154600Z
-DTSTART:20261004T150000
-DTEND:20261004T160000
+DTSTAMP:20261001T164100Z
+DTSTART;TZID=Europe/Moscow:20261004T150000
+DTEND;TZID=Europe/Moscow:20261004T160000
 SUMMARY:Спектакль «Волк и лиса»
 LOCATION:Новая сцена
 DESCRIPTION:Спектакль «Волк и лиса»\nБезносик
@@ -76,21 +87,22 @@ DESCRIPTION:Спектакль «Волк и лиса»\nБезносик
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-06-1200-gs@raspisanie
-DTSTAMP:20261001T154600Z
-DTSTART:20261006T120000
-DTEND:20261006T130000
-SUMMARY:Ввод «Федорино горе»
+DTSTAMP:20261001T164100Z
+DTSTART;TZID=Europe/Moscow:20261006T120000
+DTEND;TZID=Europe/Moscow:20261006T130000
+SUMMARY:Ввод «Федорино горе» · + сдача А.С. в 
+ 16:00
 LOCATION:Старая сцена
 DESCRIPTION:Ввод в спектакль «Федорино горе» 
  + сдача А.С. в 16:00\nВводящийся –Радыгин\nБ
- езносиков\, Лоскутов\, Шаймиев\, Баранов\
- , Глазецкая\, Самойлов\nЗвук/свет: Звук
+ езносиков\, Лоскутов\, Шаймиев\, Баранов
+ \, Глазецкая\, Самойлов\nЗвук/свет: Звук
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-07-1100-1wcv2ii@raspisanie
-DTSTAMP:20261001T154600Z
-DTSTART:20261007T110000
-DTEND:20261007T120000
+DTSTAMP:20261001T164100Z
+DTSTART;TZID=Europe/Moscow:20261007T110000
+DTEND;TZID=Europe/Moscow:20261007T120000
 SUMMARY:Спектакль «Аленький цветочек»
 LOCATION:Старая сцена
 DESCRIPTION:Спектакль «Аленький цветочек»\nГ
@@ -100,10 +112,11 @@ DESCRIPTION:Спектакль «Аленький цветочек»\nГ
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-08-1200-368fwo@raspisanie
-DTSTAMP:20261001T154600Z
-DTSTART:20261008T120000
-DTEND:20261008T130000
-SUMMARY:Репетиция «Оксюморон»
+DTSTAMP:20261001T164100Z
+DTSTART;TZID=Europe/Moscow:20261008T120000
+DTEND;TZID=Europe/Moscow:20261008T130000
+SUMMARY:Репетиция «Оксюморон» · Басня «Лов
+ ля»
 LOCATION:Новая сцена
 DESCRIPTION:Репетиция спектакля «Оксюморон» 
  / Басня «Ловля»\nБеканова\, Безносиков\, 
@@ -112,10 +125,10 @@ DESCRIPTION:Репетиция спектакля «Оксюморон»
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-08-1500-1b7fnh4@raspisanie
-DTSTAMP:20261001T154600Z
-DTSTART:20261008T150000
-DTEND:20261008T160000
-SUMMARY:Репетиция «Оксюморон»
+DTSTAMP:20261001T164100Z
+DTSTART;TZID=Europe/Moscow:20261008T150000
+DTEND;TZID=Europe/Moscow:20261008T160000
+SUMMARY:Репетиция «Оксюморон» · Прогон
 LOCATION:Новая сцена
 DESCRIPTION:Репетиция спектакля «Оксюморон» 
  / ПРОГОН\nТрунина\, Беканова\, Миронова\, 
@@ -125,10 +138,11 @@ DESCRIPTION:Репетиция спектакля «Оксюморон»
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-09-1300-1r2hen@raspisanie
-DTSTAMP:20261001T154600Z
-DTSTART:20261009T130000
-DTEND:20261009T140000
-SUMMARY:Репетиция «Полосатые сказки»
+DTSTAMP:20261001T164100Z
+DTSTART;TZID=Europe/Moscow:20261009T130000
+DTEND;TZID=Europe/Moscow:20261009T140000
+SUMMARY:Репетиция «Полосатые сказки» · + 14:00
+  – сдача А.С.
 LOCATION:Новая сцена
 DESCRIPTION:Репетиция спектакля «Полосатые с
  казки» + 14:00 – сдача А.С.\nСигитова\, Безн
@@ -136,9 +150,9 @@ DESCRIPTION:Репетиция спектакля «Полосатые с
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-09-1700-b4bxfw@raspisanie
-DTSTAMP:20261001T154600Z
-DTSTART:20261009T170000
-DTEND:20261009T180000
+DTSTAMP:20261001T164100Z
+DTSTART;TZID=Europe/Moscow:20261009T170000
+DTEND;TZID=Europe/Moscow:20261009T180000
 SUMMARY:Спектакль «Полосатые сказки»
 LOCATION:Новая сцена
 DESCRIPTION:Спектакль «Полосатые сказки»\n11:00
@@ -148,9 +162,9 @@ DESCRIPTION:Спектакль «Полосатые сказки»\n11:00
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-10-1100-suj04h@raspisanie
-DTSTAMP:20261001T154600Z
-DTSTART:20261010T110000
-DTEND:20261010T120000
+DTSTAMP:20261001T164100Z
+DTSTART;TZID=Europe/Moscow:20261010T110000
+DTEND;TZID=Europe/Moscow:20261010T120000
 SUMMARY:Спектакль «Теремок»
 LOCATION:Новая сцена
 DESCRIPTION:Спектакль «Теремок»\nГлазецкая\, 
@@ -159,9 +173,9 @@ DESCRIPTION:Спектакль «Теремок»\nГлазецкая\,
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-10-1300-suj04h@raspisanie
-DTSTAMP:20261001T154600Z
-DTSTART:20261010T130000
-DTEND:20261010T140000
+DTSTAMP:20261001T164100Z
+DTSTART;TZID=Europe/Moscow:20261010T130000
+DTEND;TZID=Europe/Moscow:20261010T140000
 SUMMARY:Спектакль «Теремок»
 LOCATION:Новая сцена
 DESCRIPTION:Спектакль «Теремок»\nГлазецкая\, 
@@ -170,9 +184,9 @@ DESCRIPTION:Спектакль «Теремок»\nГлазецкая\,
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-10-1500-suj04h@raspisanie
-DTSTAMP:20261001T154600Z
-DTSTART:20261010T150000
-DTEND:20261010T160000
+DTSTAMP:20261001T164100Z
+DTSTART;TZID=Europe/Moscow:20261010T150000
+DTEND;TZID=Europe/Moscow:20261010T160000
 SUMMARY:Спектакль «Теремок»
 LOCATION:Новая сцена
 DESCRIPTION:Спектакль «Теремок»\nГлазецкая\, 
@@ -181,9 +195,9 @@ DESCRIPTION:Спектакль «Теремок»\nГлазецкая\,
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-11-1630-67gxwk@raspisanie
-DTSTAMP:20261001T154600Z
-DTSTART:20261011T163000
-DTEND:20261011T173000
+DTSTAMP:20261001T164100Z
+DTSTART;TZID=Europe/Moscow:20261011T163000
+DTEND;TZID=Europe/Moscow:20261011T173000
 SUMMARY:Репетиция «Алые паруса»
 LOCATION:Новая сцена
 DESCRIPTION:Репетиция спектакля «Алые паруса
@@ -192,9 +206,9 @@ DESCRIPTION:Репетиция спектакля «Алые паруса
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-11-1900-8mhiyb@raspisanie
-DTSTAMP:20261001T154600Z
-DTSTART:20261011T190000
-DTEND:20261011T200000
+DTSTAMP:20261001T164100Z
+DTSTART;TZID=Europe/Moscow:20261011T190000
+DTEND;TZID=Europe/Moscow:20261011T200000
 SUMMARY:Спектакль «Алые паруса»
 LOCATION:Новая сцена
 DESCRIPTION:Спектакль «Алые паруса»\nМиронов
@@ -203,9 +217,9 @@ DESCRIPTION:Спектакль «Алые паруса»\nМиронов
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-13-1200-z1uvui@raspisanie
-DTSTAMP:20261001T154600Z
-DTSTART:20261013T120000
-DTEND:20261013T130000
+DTSTAMP:20261001T164100Z
+DTSTART;TZID=Europe/Moscow:20261013T120000
+DTEND;TZID=Europe/Moscow:20261013T130000
 SUMMARY:Ввод «Конёк-горбунок» (вводящий)
 LOCATION:Старая сцена
 DESCRIPTION:Ввод в спектакль «Конёк-горбунок
@@ -215,9 +229,9 @@ DESCRIPTION:Ввод в спектакль «Конёк-горбунок
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-14-1100-z1uvui@raspisanie
-DTSTAMP:20261001T154600Z
-DTSTART:20261014T110000
-DTEND:20261014T150000
+DTSTAMP:20261001T164100Z
+DTSTART;TZID=Europe/Moscow:20261014T110000
+DTEND;TZID=Europe/Moscow:20261014T150000
 SUMMARY:Ввод «Конёк-горбунок» (вводящий)
 LOCATION:Старая сцена
 DESCRIPTION:Ввод в спектакль «Конёк-горбунок
@@ -227,22 +241,22 @@ DESCRIPTION:Ввод в спектакль «Конёк-горбунок
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-16-1200-q79fq@raspisanie
-DTSTAMP:20261001T154600Z
-DTSTART:20261016T120000
-DTEND:20261016T150000
+DTSTAMP:20261001T164100Z
+DTSTART;TZID=Europe/Moscow:20261016T120000
+DTEND;TZID=Europe/Moscow:20261016T150000
 SUMMARY:Репетиция «Оксюморон»
 LOCATION:Новая сцена
-DESCRIPTION:Репетиция спектакля «Оксюморон»\
- nТрунина\, Беканова\, Миронова\, Сигитова
- \, Мартюшева\, Разуваева\, Андреев\, Безно
- сиков\,\nБаранов\, Шаймиев\, Носов\, Заяшн
- иков\nЗвук/свет: Звук\, свет
+DESCRIPTION:Репетиция спектакля «Оксюморон»
+ \nТрунина\, Беканова\, Миронова\, Сигитов
+ а\, Мартюшева\, Разуваева\, Андреев\, Безн
+ осиков\,\nБаранов\, Шаймиев\, Носов\, Заяш
+ ников\nЗвук/свет: Звук\, свет
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-18-1100-dp5ewz@raspisanie
-DTSTAMP:20261001T154600Z
-DTSTART:20261018T110000
-DTEND:20261018T120000
+DTSTAMP:20261001T164100Z
+DTSTART;TZID=Europe/Moscow:20261018T110000
+DTEND;TZID=Europe/Moscow:20261018T120000
 SUMMARY:Спектакль «Федорино горе»
 LOCATION:Старая сцена
 DESCRIPTION:Спектакль «Федорино горе»\nРадыг
@@ -252,9 +266,9 @@ DESCRIPTION:Спектакль «Федорино горе»\nРадыг
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-18-1300-dp5ewz@raspisanie
-DTSTAMP:20261001T154600Z
-DTSTART:20261018T130000
-DTEND:20261018T140000
+DTSTAMP:20261001T164100Z
+DTSTART;TZID=Europe/Moscow:20261018T130000
+DTEND;TZID=Europe/Moscow:20261018T140000
 SUMMARY:Спектакль «Федорино горе»
 LOCATION:Старая сцена
 DESCRIPTION:Спектакль «Федорино горе»\nРадыг
@@ -264,9 +278,9 @@ DESCRIPTION:Спектакль «Федорино горе»\nРадыг
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-18-1500-dp5ewz@raspisanie
-DTSTAMP:20261001T154600Z
-DTSTART:20261018T150000
-DTEND:20261018T160000
+DTSTAMP:20261001T164100Z
+DTSTART;TZID=Europe/Moscow:20261018T150000
+DTEND;TZID=Europe/Moscow:20261018T160000
 SUMMARY:Спектакль «Федорино горе»
 LOCATION:Старая сцена
 DESCRIPTION:Спектакль «Федорино горе»\nРадыг

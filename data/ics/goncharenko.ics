@@ -6,25 +6,36 @@ METHOD:PUBLISH
 X-WR-CALNAME:Расписание — Гончаренко
 REFRESH-INTERVAL;VALUE=DURATION:PT6H
 X-PUBLISHED-TTL:PT6H
+X-WR-TIMEZONE:Europe/Moscow
+BEGIN:VTIMEZONE
+TZID:Europe/Moscow
+BEGIN:STANDARD
+DTSTART:19700101T000000
+TZOFFSETFROM:+0300
+TZOFFSETTO:+0300
+TZNAME:MSK
+END:STANDARD
+END:VTIMEZONE
 BEGIN:VEVENT
 UID:2026-09-28-0713-1gl2wdd@raspisanie
-DTSTAMP:20261001T154600Z
-DTSTART:20260928T071300
-DTEND:20260928T081300
+DTSTAMP:20261001T164100Z
+DTSTART;TZID=Europe/Moscow:20260928T071300
+DTEND;TZID=Europe/Moscow:20260928T081300
 SUMMARY:Отъезд гастрольной группы на БДФ
 LOCATION:Московский вокзал
-DESCRIPTION:ОТЪЕЗД гастрольной группы на БДФ\
- nАбдулина\, Шерстюк\, Безносиков\, Бабано
- в\, Глазецкая\, Миронова\, Кожевникова\, К
- оломейцев\,\nЛоскутов\, Нечаев\, Ожинский
- \, Гончаренко
+DESCRIPTION:ОТЪЕЗД гастрольной группы на БДФ
+ \nАбдулина\, Шерстюк\, Безносиков\, Бабан
+ ов\, Глазецкая\, Миронова\, Кожевникова\, 
+ Коломейцев\,\nЛоскутов\, Нечаев\, Ожински
+ й\, Гончаренко
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-09-29-1900-1q80p5y@raspisanie
-DTSTAMP:20261001T154600Z
-DTSTART:20260929T190000
-DTEND:20260929T200000
-SUMMARY:Спектакль «Алые паруса» (свет)
+DTSTAMP:20261001T164100Z
+DTSTART;TZID=Europe/Moscow:20260929T190000
+DTEND;TZID=Europe/Moscow:20260929T200000
+SUMMARY:Спектакль «Алые паруса» · БДФ Москв
+ а (свет)
 LOCATION:Москва / Губернская сцена
 DESCRIPTION:БДФ Москва / Спектакль «Алые пару
  са»\nБезносиков\, Миронова\, Лоскутов\, Г
@@ -34,9 +45,9 @@ DESCRIPTION:БДФ Москва / Спектакль «Алые пару
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-02-1230-l5f9v@raspisanie
-DTSTAMP:20261001T154600Z
-DTSTART:20261002T123000
-DTEND:20261002T133000
+DTSTAMP:20261001T164100Z
+DTSTART;TZID=Europe/Moscow:20261002T123000
+DTEND;TZID=Europe/Moscow:20261002T133000
 SUMMARY:Собрание всего коллектива
 LOCATION:Старая сцена
 DESCRIPTION:СОБРАНИЕ ВСЕГО КОЛЛЕКТИВА

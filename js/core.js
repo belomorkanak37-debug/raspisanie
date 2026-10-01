@@ -409,7 +409,8 @@ function foldLine(line) {
   const out = [];
   let cur = '';
   let bytes = 0;
-  for (const ch of line) {
+  // Экранированные пары (\n, \,) не разрываем переносом — так надёжнее для разных календарей.
+  for (const ch of line.match(/\\.|[\s\S]/gu) || []) {
     const b = enc.encode(ch).length;
     if (bytes + b > 73) {
       out.push(cur);
@@ -425,11 +426,18 @@ function foldLine(line) {
 
 const icsDate = (iso, hhmm) => `${iso.replace(/-/g, '')}T${hhmm.replace(':', '')}00`;
 
+// Время в расписании — московское. Без явного пояса Google Календарь считает его временем UTC
+// и сдвигает события на +3 часа, поэтому пояс указываем в каждом событии.
+const TZID = 'Europe/Moscow';
+const VTIMEZONE = ['BEGIN:VTIMEZONE', `TZID:${TZID}`, 'BEGIN:STANDARD', 'DTSTART:19700101T000000',
+  'TZOFFSETFROM:+0300', 'TZOFFSETTO:+0300', 'TZNAME:MSK', 'END:STANDARD', 'END:VTIMEZONE'];
+
 export function eventSummary(it) {
   const ev = it.ev;
-  const { heading } = prettyTitle(ev.title);
+  const { heading, sub } = prettyTitle(ev.title);
   const kind = KIND_LABELS[ev.kind];
   let s = kind && /«/.test(ev.title) ? `${kind} «${heading}»` : heading;
+  if (sub) s += ` · ${sub}`;
   if (it.roles && it.roles.length) s += ` (${it.roles.join(', ')})`;
   if (it.uncertainAll) s += ' (?)';
   return s;
@@ -448,6 +456,7 @@ export function buildICS(items, calName) {
   if (calName) {
     L.push(`X-WR-CALNAME:${icsEscape(calName)}`, 'REFRESH-INTERVAL;VALUE=DURATION:PT6H', 'X-PUBLISHED-TTL:PT6H');
   }
+  L.push(`X-WR-TIMEZONE:${TZID}`, ...VTIMEZONE);
   for (const it of items) {
     if (it.type === 'note') continue;
     const ev = it.ev;
@@ -456,8 +465,8 @@ export function buildICS(items, calName) {
       L.push('BEGIN:VEVENT',
         `UID:${ev.date}-${a.replace(':', '')}-${hashStr(ev.title)}@raspisanie`,
         `DTSTAMP:${stamp}`,
-        `DTSTART:${icsDate(ev.date, a)}`,
-        `DTEND:${icsDate(ev.date, b > a ? b : addMinutes(a, 60))}`,
+        `DTSTART;TZID=${TZID}:${icsDate(ev.date, a)}`,
+        `DTEND;TZID=${TZID}:${icsDate(ev.date, b > a ? b : addMinutes(a, 60))}`,
         `SUMMARY:${icsEscape(eventSummary(it))}`);
       if (ev.place) L.push(`LOCATION:${icsEscape(ev.place)}`);
       L.push(`DESCRIPTION:${icsEscape(desc)}`, 'END:VEVENT');

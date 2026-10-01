@@ -6,11 +6,21 @@ METHOD:PUBLISH
 X-WR-CALNAME:Расписание — Носов
 REFRESH-INTERVAL;VALUE=DURATION:PT6H
 X-PUBLISHED-TTL:PT6H
+X-WR-TIMEZONE:Europe/Moscow
+BEGIN:VTIMEZONE
+TZID:Europe/Moscow
+BEGIN:STANDARD
+DTSTART:19700101T000000
+TZOFFSETFROM:+0300
+TZOFFSETTO:+0300
+TZNAME:MSK
+END:STANDARD
+END:VTIMEZONE
 BEGIN:VEVENT
 UID:2026-09-29-1100-t2zk61@raspisanie
-DTSTAMP:20261001T154600Z
-DTSTART:20260929T110000
-DTEND:20260929T120000
+DTSTAMP:20261001T164100Z
+DTSTART;TZID=Europe/Moscow:20260929T110000
+DTEND;TZID=Europe/Moscow:20260929T120000
 SUMMARY:Ввод «Маша и медведи»
 LOCATION:Новая сцена
 DESCRIPTION:Ввод в спектакль «Маша и медведи»
@@ -20,9 +30,9 @@ DESCRIPTION:Ввод в спектакль «Маша и медведи»
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-09-29-1430-t2zk61@raspisanie
-DTSTAMP:20261001T154600Z
-DTSTART:20260929T143000
-DTEND:20260929T153000
+DTSTAMP:20261001T164100Z
+DTSTART;TZID=Europe/Moscow:20260929T143000
+DTEND;TZID=Europe/Moscow:20260929T153000
 SUMMARY:Ввод «Маша и медведи»
 LOCATION:Новая сцена
 DESCRIPTION:Ввод в спектакль «Маша и медведи»
@@ -32,9 +42,9 @@ DESCRIPTION:Ввод в спектакль «Маша и медведи»
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-09-29-1500-5dus6@raspisanie
-DTSTAMP:20261001T154600Z
-DTSTART:20260929T150000
-DTEND:20260929T160000
+DTSTAMP:20261001T164100Z
+DTSTART;TZID=Europe/Moscow:20260929T150000
+DTEND;TZID=Europe/Moscow:20260929T160000
 SUMMARY:Репетиция «Бармалей»
 LOCATION:Старая сцена
 DESCRIPTION:Репетиция спектакля «Бармалей»\n
@@ -44,9 +54,9 @@ DESCRIPTION:Репетиция спектакля «Бармалей»\n
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-09-30-1200-kffw3z@raspisanie
-DTSTAMP:20261001T154600Z
-DTSTART:20260930T120000
-DTEND:20260930T143000
+DTSTAMP:20261001T164100Z
+DTSTART;TZID=Europe/Moscow:20260930T120000
+DTEND;TZID=Europe/Moscow:20260930T143000
 SUMMARY:Репетиция «Чудо-репка»
 LOCATION:Старая сцена
 DESCRIPTION:Репетиция спектакля «Чудо-репка»
@@ -56,9 +66,9 @@ DESCRIPTION:Репетиция спектакля «Чудо-репка»
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-09-30-1500-t2zk61@raspisanie
-DTSTAMP:20261001T154600Z
-DTSTART:20260930T150000
-DTEND:20260930T160000
+DTSTAMP:20261001T164100Z
+DTSTART;TZID=Europe/Moscow:20260930T150000
+DTEND;TZID=Europe/Moscow:20260930T160000
 SUMMARY:Ввод «Маша и медведи»
 LOCATION:Новая сцена
 DESCRIPTION:Ввод в спектакль «Маша и медведи»
@@ -68,63 +78,64 @@ DESCRIPTION:Ввод в спектакль «Маша и медведи»
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-01-1500-1fd518o@raspisanie
-DTSTAMP:20261001T154600Z
-DTSTART:20261001T150000
-DTEND:20261001T160000
+DTSTAMP:20261001T164100Z
+DTSTART;TZID=Europe/Moscow:20261001T150000
+DTEND;TZID=Europe/Moscow:20261001T160000
 SUMMARY:Репетиция «Звёздочка»
 LOCATION:Новая сцена
-DESCRIPTION:Репетиция спектакля «Звёздочка»\
- nНосов\, Кожев\, Беканова\, Заяшников\, Чи
+DESCRIPTION:Репетиция спектакля «Звёздочка»
+ \nНосов\, Кожев\, Беканова\, Заяшников\, Чи
  рочкина\, Трунина\nЗвук/свет: Звук\, свет
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-02-1230-l5f9v@raspisanie
-DTSTAMP:20261001T154600Z
-DTSTART:20261002T123000
-DTEND:20261002T133000
+DTSTAMP:20261001T164100Z
+DTSTART;TZID=Europe/Moscow:20261002T123000
+DTEND;TZID=Europe/Moscow:20261002T133000
 SUMMARY:Собрание всего коллектива
 LOCATION:Старая сцена
 DESCRIPTION:СОБРАНИЕ ВСЕГО КОЛЛЕКТИВА
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-03-1100-1wvchkp@raspisanie
-DTSTAMP:20261001T154600Z
-DTSTART:20261003T110000
-DTEND:20261003T120000
+DTSTAMP:20261001T164100Z
+DTSTART;TZID=Europe/Moscow:20261003T110000
+DTEND;TZID=Europe/Moscow:20261003T120000
 SUMMARY:Спектакль «Три поросёнка»
 LOCATION:Новая сцена
-DESCRIPTION:Спектакль «Три поросёнка»\nНосов\
- , Беканова\, Лоскутов\, Разуваева\nЗвук/с
+DESCRIPTION:Спектакль «Три поросёнка»\nНосов
+ \, Беканова\, Лоскутов\, Разуваева\nЗвук/с
  вет: Звук\, свет
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-03-1300-1wvchkp@raspisanie
-DTSTAMP:20261001T154600Z
-DTSTART:20261003T130000
-DTEND:20261003T140000
+DTSTAMP:20261001T164100Z
+DTSTART;TZID=Europe/Moscow:20261003T130000
+DTEND;TZID=Europe/Moscow:20261003T140000
 SUMMARY:Спектакль «Три поросёнка»
 LOCATION:Новая сцена
-DESCRIPTION:Спектакль «Три поросёнка»\nНосов\
- , Беканова\, Лоскутов\, Разуваева\nЗвук/с
+DESCRIPTION:Спектакль «Три поросёнка»\nНосов
+ \, Беканова\, Лоскутов\, Разуваева\nЗвук/с
  вет: Звук\, свет
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-03-1500-1wvchkp@raspisanie
-DTSTAMP:20261001T154600Z
-DTSTART:20261003T150000
-DTEND:20261003T160000
+DTSTAMP:20261001T164100Z
+DTSTART;TZID=Europe/Moscow:20261003T150000
+DTEND;TZID=Europe/Moscow:20261003T160000
 SUMMARY:Спектакль «Три поросёнка»
 LOCATION:Новая сцена
-DESCRIPTION:Спектакль «Три поросёнка»\nНосов\
- , Беканова\, Лоскутов\, Разуваева\nЗвук/с
+DESCRIPTION:Спектакль «Три поросёнка»\nНосов
+ \, Беканова\, Лоскутов\, Разуваева\nЗвук/с
  вет: Звук\, свет
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-08-1100-1ror6co@raspisanie
-DTSTAMP:20261001T154600Z
-DTSTART:20261008T110000
-DTEND:20261008T120000
-SUMMARY:Репетиция «Оксюморон»
+DTSTAMP:20261001T164100Z
+DTSTART;TZID=Europe/Moscow:20261008T110000
+DTEND;TZID=Europe/Moscow:20261008T120000
+SUMMARY:Репетиция «Оксюморон» · Басня «Люб
+ опытный»
 LOCATION:Новая сцена
 DESCRIPTION:Репетиция спектакля «Оксюморон» 
  / Басня «Любопытный»\nТрунина\, Андреев\,
@@ -132,10 +143,10 @@ DESCRIPTION:Репетиция спектакля «Оксюморон»
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-08-1500-1b7fnh4@raspisanie
-DTSTAMP:20261001T154600Z
-DTSTART:20261008T150000
-DTEND:20261008T160000
-SUMMARY:Репетиция «Оксюморон»
+DTSTAMP:20261001T164100Z
+DTSTART;TZID=Europe/Moscow:20261008T150000
+DTEND;TZID=Europe/Moscow:20261008T160000
+SUMMARY:Репетиция «Оксюморон» · Прогон
 LOCATION:Новая сцена
 DESCRIPTION:Репетиция спектакля «Оксюморон» 
  / ПРОГОН\nТрунина\, Беканова\, Миронова\, 
@@ -145,9 +156,9 @@ DESCRIPTION:Репетиция спектакля «Оксюморон»
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-09-1100-b4bxfw@raspisanie
-DTSTAMP:20261001T154600Z
-DTSTART:20261009T110000
-DTEND:20261009T120000
+DTSTAMP:20261001T164100Z
+DTSTART;TZID=Europe/Moscow:20261009T110000
+DTEND;TZID=Europe/Moscow:20261009T120000
 SUMMARY:Спектакль «Полосатые сказки»
 LOCATION:Новая сцена
 DESCRIPTION:Спектакль «Полосатые сказки»\n11:00
@@ -157,9 +168,9 @@ DESCRIPTION:Спектакль «Полосатые сказки»\n11:00
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-09-1700-b4bxfw@raspisanie
-DTSTAMP:20261001T154600Z
-DTSTART:20261009T170000
-DTEND:20261009T180000
+DTSTAMP:20261001T164100Z
+DTSTART;TZID=Europe/Moscow:20261009T170000
+DTEND;TZID=Europe/Moscow:20261009T180000
 SUMMARY:Спектакль «Полосатые сказки»
 LOCATION:Новая сцена
 DESCRIPTION:Спектакль «Полосатые сказки»\n11:00
@@ -169,10 +180,11 @@ DESCRIPTION:Спектакль «Полосатые сказки»\n11:00
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-09-1300-1r2hen@raspisanie
-DTSTAMP:20261001T154600Z
-DTSTART:20261009T130000
-DTEND:20261009T140000
-SUMMARY:Репетиция «Полосатые сказки»
+DTSTAMP:20261001T164100Z
+DTSTART;TZID=Europe/Moscow:20261009T130000
+DTEND;TZID=Europe/Moscow:20261009T140000
+SUMMARY:Репетиция «Полосатые сказки» · + 14:00
+  – сдача А.С.
 LOCATION:Новая сцена
 DESCRIPTION:Репетиция спектакля «Полосатые с
  казки» + 14:00 – сдача А.С.\nСигитова\, Безн
@@ -180,9 +192,9 @@ DESCRIPTION:Репетиция спектакля «Полосатые с
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-10-1100-suj04h@raspisanie
-DTSTAMP:20261001T154600Z
-DTSTART:20261010T110000
-DTEND:20261010T120000
+DTSTAMP:20261001T164100Z
+DTSTART;TZID=Europe/Moscow:20261010T110000
+DTEND;TZID=Europe/Moscow:20261010T120000
 SUMMARY:Спектакль «Теремок»
 LOCATION:Новая сцена
 DESCRIPTION:Спектакль «Теремок»\nГлазецкая\, 
@@ -191,9 +203,9 @@ DESCRIPTION:Спектакль «Теремок»\nГлазецкая\,
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-10-1300-suj04h@raspisanie
-DTSTAMP:20261001T154600Z
-DTSTART:20261010T130000
-DTEND:20261010T140000
+DTSTAMP:20261001T164100Z
+DTSTART;TZID=Europe/Moscow:20261010T130000
+DTEND;TZID=Europe/Moscow:20261010T140000
 SUMMARY:Спектакль «Теремок»
 LOCATION:Новая сцена
 DESCRIPTION:Спектакль «Теремок»\nГлазецкая\, 
@@ -202,9 +214,9 @@ DESCRIPTION:Спектакль «Теремок»\nГлазецкая\,
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-10-1500-suj04h@raspisanie
-DTSTAMP:20261001T154600Z
-DTSTART:20261010T150000
-DTEND:20261010T160000
+DTSTAMP:20261001T164100Z
+DTSTART;TZID=Europe/Moscow:20261010T150000
+DTEND;TZID=Europe/Moscow:20261010T160000
 SUMMARY:Спектакль «Теремок»
 LOCATION:Новая сцена
 DESCRIPTION:Спектакль «Теремок»\nГлазецкая\, 
@@ -213,9 +225,9 @@ DESCRIPTION:Спектакль «Теремок»\nГлазецкая\,
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-11-1100-1j396w1@raspisanie
-DTSTAMP:20261001T154600Z
-DTSTART:20261011T110000
-DTEND:20261011T120000
+DTSTAMP:20261001T164100Z
+DTSTART;TZID=Europe/Moscow:20261011T110000
+DTEND;TZID=Europe/Moscow:20261011T120000
 SUMMARY:Спектакль «Бармалей»
 LOCATION:Старая сцена
 DESCRIPTION:Спектакль «Бармалей»\nГалустянц. 
@@ -225,9 +237,9 @@ DESCRIPTION:Спектакль «Бармалей»\nГалустянц.
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-11-1300-1j396w1@raspisanie
-DTSTAMP:20261001T154600Z
-DTSTART:20261011T130000
-DTEND:20261011T140000
+DTSTAMP:20261001T164100Z
+DTSTART;TZID=Europe/Moscow:20261011T130000
+DTEND;TZID=Europe/Moscow:20261011T140000
 SUMMARY:Спектакль «Бармалей»
 LOCATION:Старая сцена
 DESCRIPTION:Спектакль «Бармалей»\nГалустянц. 
@@ -237,9 +249,9 @@ DESCRIPTION:Спектакль «Бармалей»\nГалустянц.
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-11-1500-1j396w1@raspisanie
-DTSTAMP:20261001T154600Z
-DTSTART:20261011T150000
-DTEND:20261011T160000
+DTSTAMP:20261001T164100Z
+DTSTART;TZID=Europe/Moscow:20261011T150000
+DTEND;TZID=Europe/Moscow:20261011T160000
 SUMMARY:Спектакль «Бармалей»
 LOCATION:Старая сцена
 DESCRIPTION:Спектакль «Бармалей»\nГалустянц. 
@@ -249,34 +261,34 @@ DESCRIPTION:Спектакль «Бармалей»\nГалустянц.
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-15-1100-1nrwk50@raspisanie
-DTSTAMP:20261001T154600Z
-DTSTART:20261015T110000
-DTEND:20261015T120000
+DTSTAMP:20261001T164100Z
+DTSTART;TZID=Europe/Moscow:20261015T110000
+DTEND;TZID=Europe/Moscow:20261015T120000
 SUMMARY:Спектакль «Палочка-выручалочка»
 LOCATION:Старая сцена
-DESCRIPTION:Спектакль «Палочка-выручалочка»\
- nЗаяшников\, Носов\, Трунина\, Мартюшева\,
-  Лоскутов (?) / Радыгин (?)\nЗвук/свет: Звук\
- , свет
+DESCRIPTION:Спектакль «Палочка-выручалочка»
+ \nЗаяшников\, Носов\, Трунина\, Мартюшева
+ \, Лоскутов (?) / Радыгин (?)\nЗвук/свет: Зву
+ к\, свет
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-16-1200-q79fq@raspisanie
-DTSTAMP:20261001T154600Z
-DTSTART:20261016T120000
-DTEND:20261016T150000
+DTSTAMP:20261001T164100Z
+DTSTART;TZID=Europe/Moscow:20261016T120000
+DTEND;TZID=Europe/Moscow:20261016T150000
 SUMMARY:Репетиция «Оксюморон»
 LOCATION:Новая сцена
-DESCRIPTION:Репетиция спектакля «Оксюморон»\
- nТрунина\, Беканова\, Миронова\, Сигитова
- \, Мартюшева\, Разуваева\, Андреев\, Безно
- сиков\,\nБаранов\, Шаймиев\, Носов\, Заяшн
- иков\nЗвук/свет: Звук\, свет
+DESCRIPTION:Репетиция спектакля «Оксюморон»
+ \nТрунина\, Беканова\, Миронова\, Сигитов
+ а\, Мартюшева\, Разуваева\, Андреев\, Безн
+ осиков\,\nБаранов\, Шаймиев\, Носов\, Заяш
+ ников\nЗвук/свет: Звук\, свет
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-17-1500-1ug20ag@raspisanie
-DTSTAMP:20261001T154600Z
-DTSTART:20261017T150000
-DTEND:20261017T160000
+DTSTAMP:20261001T164100Z
+DTSTART;TZID=Europe/Moscow:20261017T150000
+DTEND;TZID=Europe/Moscow:20261017T160000
 SUMMARY:Спектакль «Чудо-репка»
 LOCATION:Старая сцена
 DESCRIPTION:Спектакль «Чудо-репка»\nРазуваев
@@ -286,9 +298,9 @@ DESCRIPTION:Спектакль «Чудо-репка»\nРазуваев
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-18-1100-b4bxfw@raspisanie
-DTSTAMP:20261001T154600Z
-DTSTART:20261018T110000
-DTEND:20261018T120000
+DTSTAMP:20261001T164100Z
+DTSTART;TZID=Europe/Moscow:20261018T110000
+DTEND;TZID=Europe/Moscow:20261018T120000
 SUMMARY:Спектакль «Полосатые сказки»
 LOCATION:Новая сцена
 DESCRIPTION:Спектакль «Полосатые сказки»\nМа
@@ -298,9 +310,9 @@ DESCRIPTION:Спектакль «Полосатые сказки»\nМа
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-18-1500-b4bxfw@raspisanie
-DTSTAMP:20261001T154600Z
-DTSTART:20261018T150000
-DTEND:20261018T160000
+DTSTAMP:20261001T164100Z
+DTSTART;TZID=Europe/Moscow:20261018T150000
+DTEND;TZID=Europe/Moscow:20261018T160000
 SUMMARY:Спектакль «Полосатые сказки»
 LOCATION:Новая сцена
 DESCRIPTION:Спектакль «Полосатые сказки»\nМа
@@ -310,9 +322,9 @@ DESCRIPTION:Спектакль «Полосатые сказки»\nМа
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-18-1700-b4bxfw@raspisanie
-DTSTAMP:20261001T154600Z
-DTSTART:20261018T170000
-DTEND:20261018T180000
+DTSTAMP:20261001T164100Z
+DTSTART;TZID=Europe/Moscow:20261018T170000
+DTEND;TZID=Europe/Moscow:20261018T180000
 SUMMARY:Спектакль «Полосатые сказки»
 LOCATION:Новая сцена
 DESCRIPTION:Спектакль «Полосатые сказки»\nМа
