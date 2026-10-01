@@ -1,5 +1,5 @@
 // Работа без интернета: оболочка приложения из кэша, данные — сначала из сети.
-const VERSION = 'v1';
+const VERSION = 'v3';
 const SHELL = `shell-${VERSION}`;
 const DATA = 'data';
 const SHELL_FILES = [

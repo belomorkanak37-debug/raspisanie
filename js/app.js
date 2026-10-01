@@ -3,6 +3,9 @@ import {
   personalItems, prettyTitle, todayISO, addDays, weekdayName,
 } from './core.js';
 
+const MONTHS = ['Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'Июнь', 'Июль', 'Август', 'Сентябрь',
+  'Октябрь', 'Ноябрь', 'Декабрь'];
+
 const $ = (sel, root = document) => root.querySelector(sel);
 const view = $('#view');
 const esc = (s) => String(s ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
@@ -13,6 +16,8 @@ const ICON = {
   cal: '<svg viewBox="0 0 24 24"><rect x="3.5" y="5" width="17" height="15.5" rx="3"/><path d="M3.5 9.5h17M8 3v4M16 3v4"/></svg>',
   file: '<svg viewBox="0 0 24 24"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5"/></svg>',
   plus: '<svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg>',
+  prev: '<svg viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7"/></svg>',
+  next: '<svg viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></svg>',
 };
 
 /* ---------- хранилище на устройстве ---------- */
@@ -26,9 +31,16 @@ const store = {
 };
 const PIN = 'rs.pinned';
 const RECENT = 'rs.recent';
+const VIEW = 'rs.view';
 
 /* ---------- данные ---------- */
-const state = { index: null, weeks: new Map(), offline: false, tab: 'upcoming', archiveLimit: 4 };
+const state = {
+  index: null, weeks: new Map(), offline: false, archiveLimit: 4,
+  view: store.get(VIEW, 'list'), // 'list' | 'calendar' | 'archive'
+  month: null, // 'YYYY-MM' в календаре
+  selDay: null, // выбранный день в календаре
+  rendered: [], // недели, показанные сейчас (для кнопки «В календарь» у события)
+};
 
 async function fetchJSON(path) {
   const res = await fetch(`${path}?v=${Date.now()}`, { cache: 'no-store' });
@@ -167,8 +179,8 @@ async function showPerson(rawName) {
       </div>
     </section>
     <div class="tabs" role="tablist">
-      <button role="tab" data-tab="upcoming" class="${state.tab === 'upcoming' ? 'on' : ''}">Ближайшие</button>
-      <button role="tab" data-tab="archive" class="${state.tab === 'archive' ? 'on' : ''}">Архив</button>
+      ${[['list', 'Список'], ['calendar', 'Календарь'], ['archive', 'Архив']].map(([v, label]) => `
+        <button role="tab" data-tab="${v}" class="${state.view === v ? 'on' : ''}" aria-selected="${state.view === v}">${label}</button>`).join('')}
     </div>
     <div id="feed"><div class="skeleton"></div><div class="skeleton"></div><div class="skeleton"></div></div>`;
 
@@ -182,26 +194,55 @@ async function showPerson(rawName) {
   });
   $('#calBtn')?.addEventListener('click', openCalendarSheet);
   view.querySelectorAll('[data-tab]').forEach((b) => b.addEventListener('click', () => {
-    state.tab = b.dataset.tab;
-    view.querySelectorAll('[data-tab]').forEach((x) => x.classList.toggle('on', x === b));
+    state.view = b.dataset.tab;
+    if (state.view !== 'archive') store.set(VIEW, state.view);
+    view.querySelectorAll('[data-tab]').forEach((x) => {
+      x.classList.toggle('on', x === b);
+      x.setAttribute('aria-selected', x === b);
+    });
     renderFeed();
   }));
+  bindFeed($('#feed'));
   renderFeed();
 }
 
-async function renderFeed() {
+function renderFeed() {
   const feed = $('#feed');
   if (!feed || !current) return;
+  if (state.index.failed) {
+    feed.innerHTML = '<div class="empty"><div class="big">Не удалось загрузить расписание</div>Проверьте интернет и обновите страницу.</div>';
+    return;
+  }
+  return state.view === 'calendar' ? renderCalendar(feed) : renderList(feed, state.view === 'list');
+}
+
+// Записи человека за неделю + отменённые (из прошлой версии недели) с отметками изменений.
+function weekEntries(w, key, keep) {
+  const items = personalItems(w.events, key).filter(keep);
+  const removed = w.previous
+    ? markChanges(items, personalItems(w.previous.events, key).filter(keep)).map((r) => ({ ...r, removed: true }))
+    : [];
+  return [...items, ...removed]
+    .map((it) => Object.assign(it, { week: w }))
+    .sort((a, b) => (a.sortKey < b.sortKey ? -1 : a.sortKey > b.sortKey ? 1 : 0));
+}
+
+const isChange = (it) => it.removed || !!it.change;
+const noteHTML = (it) => `<div class="note">${esc(prettyTitle(it.ev.title).heading)}</div>`;
+const entryHTML = (it) => (it.type === 'note' ? noteHTML(it) : card(it, it.week));
+
+function changesBanner(entries, hint = 'Они отмечены ниже.') {
+  const n = entries.filter(isChange).length;
+  return n
+    ? `<div class="banner"><span class="dot"></span><div>Расписание обновлено — у вас ${n} ${plural(n, 'изменение', 'изменения', 'изменений')}. ${hint}</div></div>`
+    : '';
+}
+
+/* ---------- вид списком ---------- */
+async function renderList(feed, upcoming) {
   const { key } = current;
   const today = todayISO();
   const idx = state.index;
-
-  if (idx.failed) {
-    feed.innerHTML = `<div class="empty"><div class="big">Не удалось загрузить расписание</div>Проверьте интернет и обновите страницу.</div>`;
-    return;
-  }
-
-  const upcoming = state.tab === 'upcoming';
   let metas = upcoming
     ? idx.weeks.filter((w) => w.end >= today)
     : idx.weeks.filter((w) => w.start < today).sort((a, b) => b.start.localeCompare(a.start));
@@ -209,50 +250,146 @@ async function renderFeed() {
   if (!upcoming) metas = metas.slice(0, state.archiveLimit);
 
   const weeks = (await Promise.all(metas.map((m) => loadWeek(m.id)))).filter(Boolean);
-  const inRange = (it) => (upcoming ? it.ev.date >= today : it.ev.date < today);
+  const keep = (it) => (upcoming ? it.ev.date >= today : it.ev.date < today);
 
   let html = '';
-  let total = 0;
-  let changes = 0;
+  const all = [];
   for (const w of weeks) {
-    const items = personalItems(w.events, key).filter(inRange);
-    let removed = [];
-    if (w.previous) {
-      const prev = personalItems(w.previous.events, key).filter(inRange);
-      removed = markChanges(items, prev);
-      changes += removed.length + items.filter((i) => i.change).length;
-    }
-    const mine = items.filter((i) => i.type !== 'note');
-    total += mine.length;
-    if (!mine.length && !removed.length) continue;
-
-    const byDay = new Map();
-    for (const it of [...items, ...removed.map((r) => ({ ...r, removed: true }))]) {
-      if (!byDay.has(it.ev.date)) byDay.set(it.ev.date, []);
-      byDay.get(it.ev.date).push(it);
-    }
-    const days = [...byDay.keys()].sort();
+    const entries = weekEntries(w, key, keep);
+    all.push(...entries);
+    if (!entries.some((i) => i.type !== 'note')) continue;
     html += weekHeader(w);
+    const days = [...new Set(entries.map((i) => i.ev.date))].sort();
     for (const d of days) {
-      const list = byDay.get(d).sort((a, b) => (a.sortKey < b.sortKey ? -1 : 1));
+      const list = entries.filter((i) => i.ev.date === d);
       if (!list.some((i) => i.type !== 'note')) continue;
-      html += dayHeader(d, today);
-      html += list.map((it) => (it.type === 'note' ? `<div class="note">${esc(prettyTitle(it.ev.title).heading)}</div>` : card(it, w))).join('');
+      html += dayHeader(d, today) + list.map(entryHTML).join('');
     }
   }
 
-  const banner = changes && upcoming
-    ? `<div class="banner"><span class="dot"></span><div>Расписание обновлено — у вас ${changes} ${plural(changes, 'изменение', 'изменения', 'изменений')}. Они отмечены ниже.</div></div>`
-    : '';
+  if (state.view !== (upcoming ? 'list' : 'archive')) return; // пока грузили, переключили вкладку
+  state.rendered = weeks;
+  feed.innerHTML = html
+    ? (upcoming ? changesBanner(all) : '') + html
+      + (hasMore ? `<button class="pill more-btn" data-more>${ICON.plus}Показать ещё</button>` : '')
+    : emptyState(upcoming);
+}
 
-  if (!total && !html) {
-    feed.innerHTML = emptyState(upcoming);
-  } else {
-    feed.innerHTML = banner + html
-      + (hasMore ? `<button class="pill more-btn" id="moreBtn">${ICON.plus}Показать ещё</button>` : '');
+/* ---------- вид календарём ---------- */
+const monthOf = (iso) => iso.slice(0, 7);
+function shiftMonth(ym, n) {
+  const [y, m] = ym.split('-').map(Number);
+  const d = new Date(y, m - 1 + n, 1);
+  return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}`;
+}
+
+async function renderCalendar(feed) {
+  const { key } = current;
+  const today = todayISO();
+  const idx = state.index;
+  const ym = state.month || monthOf(today);
+  state.month = ym;
+
+  // Границы листания — месяцы, на которые есть расписание (и текущий).
+  const minM = [monthOf(today), ...idx.weeks.map((w) => monthOf(w.start))].sort()[0];
+  const maxM = [monthOf(today), ...idx.weeks.map((w) => monthOf(w.end))].sort().pop();
+
+  const [y, m] = ym.split('-').map(Number);
+  const first = `${ym}-01`;
+  const offset = (new Date(y, m - 1, 1).getDay() + 6) % 7; // неделя с понедельника
+  const daysInMonth = new Date(y, m, 0).getDate();
+  const cells = Math.ceil((offset + daysInMonth) / 7) * 7;
+  const gridStart = addDays(first, -offset);
+  const gridEnd = addDays(gridStart, cells - 1);
+
+  const metas = idx.weeks.filter((w) => w.start <= gridEnd && w.end >= gridStart);
+  const weeks = (await Promise.all(metas.map((mt) => loadWeek(mt.id)))).filter(Boolean);
+  if (state.view !== 'calendar' || state.month !== ym) return;
+  state.rendered = weeks;
+
+  const inGrid = (it) => it.ev.date >= gridStart && it.ev.date <= gridEnd;
+  const entries = weeks.flatMap((w) => weekEntries(w, key, inGrid));
+  const byDay = new Map();
+  for (const it of entries) {
+    if (!byDay.has(it.ev.date)) byDay.set(it.ev.date, []);
+    byDay.get(it.ev.date).push(it);
   }
-  $('#moreBtn')?.addEventListener('click', () => { state.archiveLimit += 4; renderFeed(); });
-  bindCards(feed, weeks);
+  const covered = (d) => metas.some((w) => d >= w.start && d <= w.end);
+
+  let sel = state.selDay;
+  if (!sel || monthOf(sel) !== ym) {
+    const busy = [...byDay.keys()].filter((d) => monthOf(d) === ym && byDay.get(d).some((i) => i.type !== 'note')).sort();
+    sel = monthOf(today) === ym ? today : busy[0] || first;
+  }
+  state.selDay = sel;
+
+  let grid = ['Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб', 'Вс'].map((d) => `<div class="cal-wd">${d}</div>`).join('');
+  for (let i = 0; i < cells; i++) {
+    const d = addDays(gridStart, i);
+    const list = (byDay.get(d) || []).filter((it) => it.type !== 'note');
+    const live = list.filter((it) => !it.removed);
+    const cls = ['cal-day', monthOf(d) !== ym && 'out', d === today && 'today', d === sel && 'sel',
+      !covered(d) && 'nodata', live.length && 'busy'].filter(Boolean).join(' ');
+    const label = `${fmtDate(d)}, ${live.length ? `${live.length} ${plural(live.length, 'занятость', 'занятости', 'занятостей')}` : 'свободно'}`;
+    grid += `<button class="${cls}" data-day="${d}" aria-label="${label}" aria-pressed="${d === sel}">
+      <span class="num">${Number(d.slice(8))}</span>
+      <span class="dots">${live.slice(0, 3).map((it) => `<i class="k-${it.ev.kind}"></i>`).join('')}</span>
+      ${list.some(isChange) ? '<span class="chg" aria-hidden="true"></span>' : ''}
+    </button>`;
+  }
+
+  const upcomingEntries = entries.filter((it) => it.ev.date >= today);
+  feed.innerHTML = `
+    ${changesBanner(upcomingEntries, 'Дни с изменениями отмечены оранжевой точкой.')}
+    <div class="cal">
+      <div class="cal-head">
+        <button class="cal-nav" data-nav="-1" aria-label="Предыдущий месяц" ${ym <= minM ? 'disabled' : ''}>${ICON.prev}</button>
+        <h2>${MONTHS[m - 1]} ${y}</h2>
+        <button class="cal-nav" data-nav="1" aria-label="Следующий месяц" ${ym >= maxM ? 'disabled' : ''}>${ICON.next}</button>
+      </div>
+      <div class="cal-grid">${grid}</div>
+      ${monthOf(today) !== ym ? '<button class="cal-today" data-today>Сегодня</button>' : ''}
+    </div>
+    <div id="dayList"></div>`;
+  state.calDays = { byDay, covered };
+  renderDayList(sel);
+}
+
+function renderDayList(d) {
+  const box = $('#dayList');
+  if (!box) return;
+  const { byDay, covered } = state.calDays;
+  const list = byDay.get(d) || [];
+  const busy = list.some((i) => i.type !== 'note');
+  let body;
+  if (busy) body = list.map(entryHTML).join('');
+  else if (!covered(d)) body = '<div class="day-empty">Расписание на этот день ещё не загружено</div>';
+  else body = list.map(noteHTML).join('') + '<div class="day-empty">Занятостей нет</div>';
+  box.innerHTML = dayHeader(d, todayISO()) + body;
+}
+
+function selectDay(d) {
+  if (monthOf(d) !== state.month) {
+    state.month = monthOf(d);
+    state.selDay = d;
+    renderFeed();
+    return;
+  }
+  state.selDay = d;
+  document.querySelectorAll('.cal-day').forEach((b) => {
+    const on = b.dataset.day === d;
+    b.classList.toggle('sel', on);
+    b.setAttribute('aria-pressed', on);
+  });
+  renderDayList(d);
+}
+
+function navMonth(n) {
+  const btn = document.querySelector(`[data-nav="${n}"]`);
+  if (!btn || btn.disabled) return;
+  state.month = shiftMonth(state.month, n);
+  state.selDay = null;
+  renderFeed();
 }
 
 function emptyState(upcoming) {
@@ -345,23 +482,37 @@ function card(it, w) {
   </article>`;
 }
 
-function bindCards(feed, weeks) {
+// Один обработчик на всю ленту (содержимое перерисовывается, обработчики не копятся).
+function bindFeed(feed) {
   const findItem = (id) => {
     const [wid, eid] = id.split(':');
-    const w = weeks.find((x) => x.id === wid);
+    const w = state.rendered.find((x) => x.id === wid);
     const ev = w?.events.find((e) => e.id === eid);
     return ev ? personalItems([ev], current.key)[0] : null;
   };
   feed.addEventListener('click', (e) => {
-    const icsBtn = e.target.closest('[data-ics]');
-    const c = e.target.closest('.card');
+    const t = e.target;
+    const day = t.closest('[data-day]');
+    if (day) return selectDay(day.dataset.day);
+    const nav = t.closest('[data-nav]');
+    if (nav) return navMonth(Number(nav.dataset.nav));
+    if (t.closest('[data-today]')) {
+      state.month = null;
+      state.selDay = null;
+      return renderFeed();
+    }
+    if (t.closest('[data-more]')) {
+      state.archiveLimit += 4;
+      return renderFeed();
+    }
+    const c = t.closest('.card');
     if (!c) return;
-    if (icsBtn) {
+    if (t.closest('[data-ics]')) {
       const it = findItem(c.dataset.id);
       if (it) downloadICS(buildICS([it]), `${it.ev.date}.ics`);
       return;
     }
-    if (e.target.closest('a')) return;
+    if (t.closest('a')) return;
     const open = c.classList.toggle('open');
     c.setAttribute('aria-expanded', open);
   });
@@ -371,6 +522,18 @@ function bindCards(feed, weeks) {
       e.target.click();
     }
   });
+  // Листание месяцев свайпом по сетке календаря.
+  let touch = null;
+  feed.addEventListener('touchstart', (e) => {
+    touch = e.target.closest('.cal-grid') ? { x: e.touches[0].clientX, y: e.touches[0].clientY } : null;
+  }, { passive: true });
+  feed.addEventListener('touchend', (e) => {
+    if (!touch) return;
+    const dx = e.changedTouches[0].clientX - touch.x;
+    const dy = e.changedTouches[0].clientY - touch.y;
+    touch = null;
+    if (Math.abs(dx) > 60 && Math.abs(dx) > Math.abs(dy) * 1.5) navMonth(dx < 0 ? 1 : -1);
+  }, { passive: true });
 }
 
 /* ---------- календарь ---------- */
@@ -398,7 +561,8 @@ function openCalendarSheet() {
   const abs = new URL(path, location.href).href;
   const webcal = abs.replace(/^https?:/, 'webcal:');
   $('#calWebcal').href = webcal;
-  $('#calGoogle').href = `https://calendar.google.com/calendar/render?cid=${encodeURIComponent(webcal)}`;
+  // Google забирает файл со своих серверов — даём ему прямую https-ссылку, без webcal и редиректов.
+  $('#calGoogle').href = `https://calendar.google.com/calendar/render?cid=${encodeURIComponent(abs)}`;
   $('#calFile').href = abs;
   $('#calFile').setAttribute('download', `${current.name}.ics`);
   const dlg = $('#calSheet');
