@@ -595,5 +595,14 @@ state.loadedAt = Date.now();
 route();
 
 if ('serviceWorker' in navigator && location.protocol === 'https:') {
+  // Вышла новая версия приложения — один раз перезагружаемся, чтобы сразу её показать.
+  const hadController = !!navigator.serviceWorker.controller;
+  let reloaded = false;
+  navigator.serviceWorker.addEventListener('controllerchange', () => {
+    if (hadController && !reloaded) {
+      reloaded = true;
+      location.reload();
+    }
+  });
   navigator.serviceWorker.register('sw.js').catch(() => {});
 }

@@ -1,5 +1,5 @@
 // Работа без интернета: оболочка приложения из кэша, данные — сначала из сети.
-const VERSION = 'v3';
+const VERSION = 'v4';
 const SHELL = `shell-${VERSION}`;
 const DATA = 'data';
 const SHELL_FILES = [
@@ -8,7 +8,11 @@ const SHELL_FILES = [
 ];
 
 self.addEventListener('install', (e) => {
-  e.waitUntil(caches.open(SHELL).then((c) => c.addAll(SHELL_FILES)).then(() => self.skipWaiting()));
+  // cache: 'reload' — берём файлы с сервера, а не из HTTP-кэша браузера (иначе новая версия
+  // может закэшировать старые файлы).
+  e.waitUntil(caches.open(SHELL)
+    .then((c) => c.addAll(SHELL_FILES.map((u) => new Request(u, { cache: 'reload' }))))
+    .then(() => self.skipWaiting()));
 });
 
 self.addEventListener('activate', (e) => {
@@ -43,11 +47,15 @@ self.addEventListener('fetch', (e) => {
 
   // Оболочка: отвечаем из кэша и обновляем его в фоне.
   e.respondWith(caches.open(SHELL).then(async (c) => {
-    const cached = await c.match(e.request, { ignoreSearch: true });
-    const network = fetch(e.request).then((res) => {
-      if (res.ok && !/\/data\//.test(path)) c.put(e.request, res.clone());
+    const key = url.origin + path;
+    const cached = await c.match(key);
+    // no-cache: браузер сверяется с сервером (если файл не менялся — быстрый ответ 304).
+    const network = fetch(key, { cache: 'no-cache' }).then((res) => {
+      if (res.ok && !/\/data\//.test(path)) c.put(key, res.clone());
       return res;
-    }).catch(() => cached);
-    return cached || network;
+    });
+    if (!cached) return network;
+    e.waitUntil(network.catch(() => {}));
+    return cached;
   }));
 });
