@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Расписание</title>
+  <meta name="description" content="Личное расписание: спектакли, репетиции и вводы по фамилии">
+  <meta name="theme-color" content="#f5f3ef" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#121110" media="(prefers-color-scheme: dark)">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="Расписание">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+  <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+  <div class="wrap">
+    <header class="topbar">
+      <a class="brand" href="#/search" aria-label="К поиску">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15.5" rx="3"/><path d="M3.5 9.5h17M8 3v4M16 3v4"/></svg>
+        <span>Расписание</span>
+      </a>
+      <div class="top-right">
+        <span class="status" id="status" hidden></span>
+        <a class="icon-link" id="searchLink" href="#/search" aria-label="Другая фамилия" hidden>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l4.5 4.5"/></svg>
+        </a>
+      </div>
+    </header>
+    <main id="view" aria-live="polite"></main>
+    <footer class="foot" id="foot"></footer>
+  </div>
+
+  <dialog class="sheet" id="calSheet">
+    <form method="dialog" class="sheet-body">
+      <div class="sheet-grip" aria-hidden="true"></div>
+      <h2>Календарь на телефоне</h2>
+      <p class="muted">Подписка добавит все ваши занятости в календарь телефона и будет обновляться сама, когда выйдет новое расписание.</p>
+      <a class="btn btn-primary" id="calWebcal" href="#">Подписаться — iPhone, iPad, Mac</a>
+      <a class="btn" id="calGoogle" href="#" target="_blank" rel="noopener">Подписаться — Google Календарь</a>
+      <a class="btn btn-ghost" id="calFile" href="#" download>Скачать файл .ics</a>
+      <p class="hint">Android — кнопка «Google Календарь»: подтвердите добавление, и календарь появится в приложении Google Календарь. Обновления подтягиваются автоматически (у Google — раз в несколько часов). Файл .ics — разовый снимок без обновлений.</p>
+      <button class="btn btn-ghost" value="close">Закрыть</button>
+    </form>
+  </dialog>
+
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,178 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Raspisanie//RU
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Расписание — Чепиль
+REFRESH-INTERVAL;VALUE=DURATION:PT6H
+X-PUBLISHED-TTL:PT6H
+BEGIN:VEVENT
+UID:2026-09-30-1200-kffw3z@raspisanie
+DTSTAMP:20261001T154600Z
+DTSTART:20260930T120000
+DTEND:20260930T143000
+SUMMARY:Репетиция «Чудо-репка»
+LOCATION:Старая сцена
+DESCRIPTION:Репетиция спектакля «Чудо-репка»
+ \nНосов\, Разуваева\, Чепиль\, Чирочкина\, 
+ Мартюшева\, Галустянц\nЗвук/свет: Звук\, 
+ свет
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-01-1300-aq7k9r@raspisanie
+DTSTAMP:20261001T154600Z
+DTSTART:20261001T130000
+DTEND:20261001T140000
+SUMMARY:Сдача «Курочка ряба»
+LOCATION:Старая сцена
+DESCRIPTION:Сдача А.С. спектакля «Курочка ряб
+ а»\nЛоскутова\, Трунина\, Баранов\, Чепил
+ ь\, Галустянц\, Самойлов\nЗвук/свет: Звук\
+ , свет
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-02-1230-l5f9v@raspisanie
+DTSTAMP:20261001T154600Z
+DTSTART:20261002T123000
+DTEND:20261002T133000
+SUMMARY:Собрание всего коллектива
+LOCATION:Старая сцена
+DESCRIPTION:СОБРАНИЕ ВСЕГО КОЛЛЕКТИВА
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-03-1100-lidji7@raspisanie
+DTSTAMP:20261001T154600Z
+DTSTART:20261003T110000
+DTEND:20261003T120000
+SUMMARY:Спектакль «Курочка ряба»
+LOCATION:Старая сцена
+DESCRIPTION:Спектакль «Курочка ряба»\nТрунин
+ а\, Самойлов\, Галустянц\, Чепиль\, Барано
+ в\nЗвук/свет: Звук\, свет
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-03-1300-lidji7@raspisanie
+DTSTAMP:20261001T154600Z
+DTSTART:20261003T130000
+DTEND:20261003T140000
+SUMMARY:Спектакль «Курочка ряба»
+LOCATION:Старая сцена
+DESCRIPTION:Спектакль «Курочка ряба»\nТрунин
+ а\, Самойлов\, Галустянц\, Чепиль\, Барано
+ в\nЗвук/свет: Звук\, свет
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-03-1500-lidji7@raspisanie
+DTSTAMP:20261001T154600Z
+DTSTART:20261003T150000
+DTEND:20261003T160000
+SUMMARY:Спектакль «Курочка ряба»
+LOCATION:Старая сцена
+DESCRIPTION:Спектакль «Курочка ряба»\nТрунин
+ а\, Самойлов\, Галустянц\, Чепиль\, Барано
+ в\nЗвук/свет: Звук\, свет
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-04-1500-xk9qxg@raspisanie
+DTSTAMP:20261001T154600Z
+DTSTART:20261004T150000
+DTEND:20261004T160000
+SUMMARY:Спектакль «Муха-цокотуха»
+LOCATION:Старая сцена
+DESCRIPTION:Спектакль «Муха-цокотуха»\n11:00 и 13
+ :00 – Глазецкая \; 15:00 – Миронова\n11:00 и 13:00
+  - Самойлов\, 15:00 –Чепиль\nРазуваева\, Лос
+ кутов\nЗвук/свет: Звук\, свет
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-06-1100-qik2fb@raspisanie
+DTSTAMP:20261001T154600Z
+DTSTART:20261006T110000
+DTEND:20261006T120000
+SUMMARY:Репетиция «Муравьишка»
+LOCATION:Новая сцена
+DESCRIPTION:Репетиция спектакля «Муравьишка
+ »\nАндреев\, Чепиль\, Сигитова\nЗвук/свет:
+  Звук\, свет (?)
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-07-1100-qik2fb@raspisanie
+DTSTAMP:20261001T154600Z
+DTSTART:20261007T110000
+DTEND:20261007T120000
+SUMMARY:Репетиция «Муравьишка»
+LOCATION:Новая сцена
+DESCRIPTION:Репетиция спектакля «Муравьишка
+ »\nАндреев\, Чепиль\, Сигитова\nЗвук/свет:
+  Звук\, свет (?)
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-13-1100-qik2fb@raspisanie
+DTSTAMP:20261001T154600Z
+DTSTART:20261013T110000
+DTEND:20261013T120000
+SUMMARY:Репетиция «Муравьишка»
+LOCATION:Новая сцена
+DESCRIPTION:Репетиция спектакля «Муравьишка
+ »\nЧепиль\, Андреев\, Сигитова\nЗвук/свет:
+  Звук\, свет (?)
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-14-1100-qik2fb@raspisanie
+DTSTAMP:20261001T154600Z
+DTSTART:20261014T110000
+DTEND:20261014T120000
+SUMMARY:Репетиция «Муравьишка»
+LOCATION:Новая сцена
+DESCRIPTION:Репетиция спектакля «Муравьишка
+ »\nЧепиль\, Андреев\, Сигитова\nЗвук/свет:
+  Звук\, свет (?)
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-15-1100-qik2fb@raspisanie
+DTSTAMP:20261001T154600Z
+DTSTART:20261015T110000
+DTEND:20261015T120000
+SUMMARY:Репетиция «Муравьишка»
+LOCATION:Новая сцена (возможно\, в фойе)
+DESCRIPTION:Репетиция спектакля «Муравьишка
+ »\nЧепиль\, Андреев\, Сигитова\nЗвук/свет:
+  Звук
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-17-1100-1ug20ag@raspisanie
+DTSTAMP:20261001T154600Z
+DTSTART:20261017T110000
+DTEND:20261017T120000
+SUMMARY:Спектакль «Чудо-репка»
+LOCATION:Старая сцена
+DESCRIPTION:Спектакль «Чудо-репка»\nРазуваев
+ а\, Самойлов (11:00 и 13:00)\, Носов (15:00)\, Мартю
+ шева\, Чепиль\, Галустянц\,\nЧирочкина\nЗв
+ ук/свет: Звук\, свет
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-17-1300-1ug20ag@raspisanie
+DTSTAMP:20261001T154600Z
+DTSTART:20261017T130000
+DTEND:20261017T140000
+SUMMARY:Спектакль «Чудо-репка»
+LOCATION:Старая сцена
+DESCRIPTION:Спектакль «Чудо-репка»\nРазуваев
+ а\, Самойлов (11:00 и 13:00)\, Носов (15:00)\, Мартю
+ шева\, Чепиль\, Галустянц\,\nЧирочкина\nЗв
+ ук/свет: Звук\, свет
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-17-1500-1ug20ag@raspisanie
+DTSTAMP:20261001T154600Z
+DTSTART:20261017T150000
+DTEND:20261017T160000
+SUMMARY:Спектакль «Чудо-репка»
+LOCATION:Старая сцена
+DESCRIPTION:Спектакль «Чудо-репка»\nРазуваев
+ а\, Самойлов (11:00 и 13:00)\, Носов (15:00)\, Мартю
+ шева\, Чепиль\, Галустянц\,\nЧирочкина\nЗв
+ ук/свет: Звук\, свет
+END:VEVENT
+END:VCALENDAR

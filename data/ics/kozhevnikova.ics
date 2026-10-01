@@ -1,0 +1,31 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Raspisanie//RU
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Расписание — Кожевникова
+REFRESH-INTERVAL;VALUE=DURATION:PT6H
+X-PUBLISHED-TTL:PT6H
+BEGIN:VEVENT
+UID:2026-09-28-0713-1gl2wdd@raspisanie
+DTSTAMP:20261001T154600Z
+DTSTART:20260928T071300
+DTEND:20260928T081300
+SUMMARY:Отъезд гастрольной группы на БДФ
+LOCATION:Московский вокзал
+DESCRIPTION:ОТЪЕЗД гастрольной группы на БДФ\
+ nАбдулина\, Шерстюк\, Безносиков\, Бабано
+ в\, Глазецкая\, Миронова\, Кожевникова\, К
+ оломейцев\,\nЛоскутов\, Нечаев\, Ожинский
+ \, Гончаренко
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-02-1230-l5f9v@raspisanie
+DTSTAMP:20261001T154600Z
+DTSTART:20261002T123000
+DTEND:20261002T133000
+SUMMARY:Собрание всего коллектива
+LOCATION:Старая сцена
+DESCRIPTION:СОБРАНИЕ ВСЕГО КОЛЛЕКТИВА
+END:VEVENT
+END:VCALENDAR

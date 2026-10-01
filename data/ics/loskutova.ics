@@ -1,0 +1,191 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Raspisanie//RU
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Расписание — Лоскутова
+REFRESH-INTERVAL;VALUE=DURATION:PT6H
+X-PUBLISHED-TTL:PT6H
+BEGIN:VEVENT
+UID:2026-09-29-1100-t2zk61@raspisanie
+DTSTAMP:20261001T154600Z
+DTSTART:20260929T110000
+DTEND:20260929T120000
+SUMMARY:Ввод «Маша и медведи»
+LOCATION:Новая сцена
+DESCRIPTION:Ввод в спектакль «Маша и медведи»
+ \nВводящийся – Радыгин\; вводящий – Кож
+ ев\nЛоскутова\, Разуваева\, Носов\nЗвук/с
+ вет: Звук
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-09-29-1430-t2zk61@raspisanie
+DTSTAMP:20261001T154600Z
+DTSTART:20260929T143000
+DTEND:20260929T153000
+SUMMARY:Ввод «Маша и медведи»
+LOCATION:Новая сцена
+DESCRIPTION:Ввод в спектакль «Маша и медведи»
+ \nВводящийся – Радыгин\; вводящий – Кож
+ ев\nЛоскутова\, Разуваева\, Носов\nЗвук/с
+ вет: Звук
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-09-29-1500-5dus6@raspisanie
+DTSTAMP:20261001T154600Z
+DTSTART:20260929T150000
+DTEND:20260929T160000
+SUMMARY:Репетиция «Бармалей»
+LOCATION:Старая сцена
+DESCRIPTION:Репетиция спектакля «Бармалей»\n
+ Самойлов\, Мартюшева\, Трунина\, Лоскуто
+ ва (с 15:00)\, Носов (с 15:00)\, Галустянц\, Бара
+ нов\nЗвук/свет: Звук
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-01-1100-1fugs7c@raspisanie
+DTSTAMP:20261001T154600Z
+DTSTART:20261001T110000
+DTEND:20261001T120000
+SUMMARY:Спектакль «Собачка»
+LOCATION:Новая сцена
+DESCRIPTION:Спектакль «Собачка»\nТрунина\, Ло
+ скутова\, Баранов\nЗвук/свет: Звук\, свет
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-01-1300-aq7k9r@raspisanie
+DTSTAMP:20261001T154600Z
+DTSTART:20261001T130000
+DTEND:20261001T140000
+SUMMARY:Сдача «Курочка ряба»
+LOCATION:Старая сцена
+DESCRIPTION:Сдача А.С. спектакля «Курочка ряб
+ а»\nЛоскутова\, Трунина\, Баранов\, Чепил
+ ь\, Галустянц\, Самойлов\nЗвук/свет: Звук\
+ , свет
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-02-1230-l5f9v@raspisanie
+DTSTAMP:20261001T154600Z
+DTSTART:20261002T123000
+DTEND:20261002T133000
+SUMMARY:Собрание всего коллектива
+LOCATION:Старая сцена
+DESCRIPTION:СОБРАНИЕ ВСЕГО КОЛЛЕКТИВА
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-10-1100-suj04h@raspisanie
+DTSTAMP:20261001T154600Z
+DTSTART:20261010T110000
+DTEND:20261010T120000
+SUMMARY:Спектакль «Теремок»
+LOCATION:Новая сцена
+DESCRIPTION:Спектакль «Теремок»\nГлазецкая\, 
+ Безносиков\, Лоскутова\, Носов\nЗвук/све
+ т: Звук\, свет
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-10-1300-suj04h@raspisanie
+DTSTAMP:20261001T154600Z
+DTSTART:20261010T130000
+DTEND:20261010T140000
+SUMMARY:Спектакль «Теремок»
+LOCATION:Новая сцена
+DESCRIPTION:Спектакль «Теремок»\nГлазецкая\, 
+ Безносиков\, Лоскутова\, Носов\nЗвук/све
+ т: Звук\, свет
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-10-1500-suj04h@raspisanie
+DTSTAMP:20261001T154600Z
+DTSTART:20261010T150000
+DTEND:20261010T160000
+SUMMARY:Спектакль «Теремок»
+LOCATION:Новая сцена
+DESCRIPTION:Спектакль «Теремок»\nГлазецкая\, 
+ Безносиков\, Лоскутова\, Носов\nЗвук/све
+ т: Звук\, свет
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-11-1100-1j396w1@raspisanie
+DTSTAMP:20261001T154600Z
+DTSTART:20261011T110000
+DTEND:20261011T120000
+SUMMARY:Спектакль «Бармалей»
+LOCATION:Старая сцена
+DESCRIPTION:Спектакль «Бармалей»\nГалустянц. 
+ Носов\, Мартюшева\, Самойлов\, Лоскутова 
+ (11:00 и 13:00)\, Трунина (15:00)\nЗвук/свет: Звук\,
+  свет
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-11-1300-1j396w1@raspisanie
+DTSTAMP:20261001T154600Z
+DTSTART:20261011T130000
+DTEND:20261011T140000
+SUMMARY:Спектакль «Бармалей»
+LOCATION:Старая сцена
+DESCRIPTION:Спектакль «Бармалей»\nГалустянц. 
+ Носов\, Мартюшева\, Самойлов\, Лоскутова 
+ (11:00 и 13:00)\, Трунина (15:00)\nЗвук/свет: Звук\,
+  свет
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-13-1200-z1uvui@raspisanie
+DTSTAMP:20261001T154600Z
+DTSTART:20261013T120000
+DTEND:20261013T130000
+SUMMARY:Ввод «Конёк-горбунок»
+LOCATION:Старая сцена
+DESCRIPTION:Ввод в спектакль «Конёк-горбунок
+ »\nВводящийся – Радыгин\, вводящий – Бе
+ зносиков\nЛоскутова\, Лоскутов\, Самойло
+ в\nЗвук/свет: Звук
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-15-1500-18re0zl@raspisanie
+DTSTAMP:20261001T154600Z
+DTSTART:20261015T150000
+DTEND:20261015T160000
+SUMMARY:Репетиция «Сказка о глупом мышонке
+ »
+LOCATION:Старая сцена
+DESCRIPTION:Репетиция спектакля «Сказка о гл
+ упом мышонке»\nБеканова\, Мартюшева\, Тр
+ унина\, Лоскутова\, Галустянц\, Глазецка
+ я\nЗвук/свет: Звук\, свет
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-17-1100-ij5ejw@raspisanie
+DTSTAMP:20261001T154600Z
+DTSTART:20261017T110000
+DTEND:20261017T120000
+SUMMARY:Спектакль «Краденое солнце»
+LOCATION:Новая сцена
+DESCRIPTION:Спектакль «Краденое солнце»\nЛос
+ кутова\, Шаймиев\, Андреев\, Трунина\nЗву
+ к/свет: Звук\, свет
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-17-1300-ij5ejw@raspisanie
+DTSTAMP:20261001T154600Z
+DTSTART:20261017T130000
+DTEND:20261017T140000
+SUMMARY:Спектакль «Краденое солнце»
+LOCATION:Новая сцена
+DESCRIPTION:Спектакль «Краденое солнце»\nЛос
+ кутова\, Шаймиев\, Андреев\, Трунина\nЗву
+ к/свет: Звук\, свет
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-17-1500-ij5ejw@raspisanie
+DTSTAMP:20261001T154600Z
+DTSTART:20261017T150000
+DTEND:20261017T160000
+SUMMARY:Спектакль «Краденое солнце»
+LOCATION:Новая сцена
+DESCRIPTION:Спектакль «Краденое солнце»\nЛос
+ кутова\, Шаймиев\, Андреев\, Трунина\nЗву
+ к/свет: Звук\, свет
+END:VEVENT
+END:VCALENDAR

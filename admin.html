@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Админка — Расписание</title>
+  <link rel="icon" href="icons/icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/app.css">
+  <link rel="stylesheet" href="css/admin.css">
+</head>
+<body>
+  <div class="wrap admin">
+    <header class="topbar">
+      <a class="brand" href="./">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15.5" rx="3"/><path d="M3.5 9.5h17M8 3v4M16 3v4"/></svg>
+        <span>Расписание · админ</span>
+      </a>
+      <a class="small-link" href="./">Открыть приложение</a>
+    </header>
+
+    <section class="panel" id="ghPanel">
+      <h2>Публикация</h2>
+      <div id="ghStatus"></div>
+      <form id="ghForm" class="form" hidden autocomplete="off">
+        <div class="grid2">
+          <label>Логин GitHub<input name="owner" required placeholder="ivanov"></label>
+          <label>Репозиторий<input name="repo" required placeholder="raspisanie"></label>
+        </div>
+        <label>Ветка<input name="branch" value="main" required></label>
+        <label>Ключ доступа (token)<input name="token" type="password" required placeholder="github_pat_…"></label>
+        <details class="help">
+          <summary>Как получить ключ</summary>
+          <ol>
+            <li>Откройте <a href="https://github.com/settings/personal-access-tokens/new" target="_blank" rel="noopener">github.com → Settings → Developer settings → Fine-grained tokens → Generate new token</a>.</li>
+            <li><b>Repository access</b>: Only select repositories → выберите репозиторий с приложением.</li>
+            <li><b>Permissions → Repository permissions → Contents</b>: Read and write.</li>
+            <li>Срок действия — до года (потом создадите новый ключ так же).</li>
+            <li>Нажмите Generate token, скопируйте ключ и вставьте сюда.</li>
+          </ol>
+          <p>Ключ хранится только в этом браузере и отправляется только в GitHub.</p>
+        </details>
+        <div class="form-row">
+          <button class="btn btn-primary" type="submit">Подключить</button>
+          <button class="btn btn-ghost" type="button" id="ghCancel" hidden>Отмена</button>
+        </div>
+        <p class="error" id="ghError" hidden></p>
+      </form>
+    </section>
+
+    <section class="panel">
+      <h2>Новое расписание</h2>
+      <label class="drop" id="drop">
+        <input type="file" id="file" accept="application/pdf,.pdf" hidden>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M12 17v-6M9.5 13.5 12 11l2.5 2.5"/></svg>
+        <span class="drop-title">Выберите PDF</span>
+        <span class="drop-sub">или перетащите файл сюда</span>
+      </label>
+      <p class="error" id="parseError" hidden></p>
+    </section>
+
+    <section class="panel" id="preview" hidden></section>
+
+    <section class="panel">
+      <h2>Опубликованные недели</h2>
+      <div id="published"><p class="muted">Загрузка…</p></div>
+    </section>
+  </div>
+
+  <div class="publish-bar" id="publishBar" hidden>
+    <div class="publish-inner">
+      <button class="btn btn-ghost" id="discardBtn">Отмена</button>
+      <button class="btn btn-primary" id="publishBtn">Опубликовать</button>
+    </div>
+  </div>
+
+  <dialog class="sheet" id="editDlg">
+    <form method="dialog" class="sheet-body form" id="editForm">
+      <div class="sheet-grip" aria-hidden="true"></div>
+      <h2 id="editTitle">Событие</h2>
+      <div class="grid2">
+        <label>Дата<select name="date"></select></label>
+        <label>Время<input name="timeText" placeholder="11:00 13:00 или 12:00 - 14:30"></label>
+      </div>
+      <label>Название<input name="title" placeholder="Спектакль «…»"></label>
+      <label>Состав <span class="muted">— по строкам, как в PDF</span><textarea name="lines" rows="4"></textarea></label>
+      <div class="parsed" id="editParsed"></div>
+      <div class="grid2">
+        <label>Сцена<input name="place"></label>
+        <label>Звук, свет<input name="tech"></label>
+      </div>
+      <label>Кому показывать
+        <select name="scope">
+          <option value="people">Только участникам</option>
+          <option value="all">Всем (общее событие)</option>
+          <option value="note">Пометка дня (например, «Выходной»)</option>
+        </select>
+      </label>
+      <div class="form-row">
+        <button class="btn btn-ghost danger" value="delete" id="editDelete">Удалить</button>
+        <button class="btn btn-ghost" value="cancel" formnovalidate>Отмена</button>
+        <button class="btn btn-primary" value="save">Сохранить</button>
+      </div>
+    </form>
+  </dialog>
+
+  <script type="module" src="js/admin.js"></script>
+</body>
+</html>
