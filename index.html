@@ -42,7 +42,14 @@
       <a class="btn btn-primary" id="calWebcal" href="#">Подписаться — iPhone, iPad, Mac</a>
       <a class="btn" id="calGoogle" href="#" target="_blank" rel="noopener">Подписаться — Google Календарь</a>
       <a class="btn btn-ghost" id="calFile" href="#" download>Скачать файл .ics</a>
-      <p class="hint">Android — кнопка «Google Календарь»: подтвердите добавление, и календарь появится в приложении Google Календарь. Обновления подтягиваются автоматически (у Google — раз в несколько часов). Файл .ics — разовый снимок без обновлений.</p>
+      <p class="hint">Android — кнопка «Google Календарь». Если календарь не появился в приложении Google Календарь:</p>
+      <ol class="hint">
+        <li>в браузере должен быть открыт тот же Google-аккаунт, что и в приложении;</li>
+        <li>в приложении: Настройки → «Показать ещё» → «Расписание — …» → включить «Синхронизация»;</li>
+        <li>или добавьте вручную: скопируйте ссылку ниже → calendar.google.com (версия для ПК) → «Другие календари» → «+» → «Добавить по URL».</li>
+      </ol>
+      <button class="btn btn-ghost" type="button" id="calCopy">Скопировать ссылку на календарь</button>
+      <p class="hint">Изменения расписания Google подтягивает сам, раз в несколько часов. Файл .ics — разовый снимок без обновлений.</p>
       <button class="btn btn-ghost" value="close">Закрыть</button>
     </form>
   </dialog>

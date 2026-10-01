@@ -480,6 +480,7 @@ main { flex: 1; }
   color: var(--text);
   border-radius: 22px 22px 0 0;
   max-height: 92dvh;
+  overflow-y: auto;
 }
 .sheet::backdrop { background: rgba(10, 8, 6, .45); }
 .sheet-body { padding: 10px 20px calc(20px + env(safe-area-inset-bottom)); }
@@ -488,6 +489,8 @@ main { flex: 1; }
 .muted { color: var(--muted); }
 .sheet p { margin: 0 0 8px; font-size: 15px; }
 .sheet .hint { font-size: 13px; color: var(--muted); margin-top: 12px; }
+.sheet ol.hint { margin: 4px 0 0; padding-left: 18px; line-height: 1.45; }
+.sheet ol.hint li { margin-bottom: 4px; }
 
 @media (min-width: 600px) {
   .sheet { border-radius: 22px; margin: auto; }

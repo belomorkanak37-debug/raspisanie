@@ -561,16 +561,28 @@ function openCalendarSheet() {
   const abs = new URL(path, location.href).href;
   const webcal = abs.replace(/^https?:/, 'webcal:');
   $('#calWebcal').href = webcal;
-  // Google забирает файл со своих серверов — даём ему прямую https-ссылку, без webcal и редиректов.
-  $('#calGoogle').href = `https://calendar.google.com/calendar/render?cid=${encodeURIComponent(abs)}`;
+  // Google принимает подписку только по webcal-ссылке (https в cid «добавляется», но календарь не появляется).
+  // ?v=2 — чтобы ссылка отличалась от прежней: повторную подписку на тот же адрес Google иногда молча игнорирует.
+  $('#calGoogle').href = `https://calendar.google.com/calendar/render?cid=${encodeURIComponent(`${webcal}?v=2`)}`;
   $('#calFile').href = abs;
   $('#calFile').setAttribute('download', `${current.name}.ics`);
+  $('#calCopy').dataset.url = abs;
+  $('#calCopy').textContent = 'Скопировать ссылку на календарь';
   const dlg = $('#calSheet');
   if (dlg.showModal) dlg.showModal();
   else dlg.setAttribute('open', '');
 }
 $('#calSheet').addEventListener('click', (e) => {
   if (e.target === e.currentTarget) e.currentTarget.close();
+});
+$('#calCopy').addEventListener('click', async (e) => {
+  const b = e.currentTarget;
+  try {
+    await navigator.clipboard.writeText(b.dataset.url);
+    b.textContent = 'Ссылка скопирована';
+  } catch {
+    prompt('Скопируйте ссылку:', b.dataset.url);
+  }
 });
 
 /* ---------- подвал ---------- */
