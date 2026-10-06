@@ -18,7 +18,7 @@ END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
 UID:2026-10-02-1230-l5f9v@raspisanie
-DTSTAMP:20261001T164100Z
+DTSTAMP:20261006T114400Z
 DTSTART;TZID=Europe/Moscow:20261002T123000
 DTEND;TZID=Europe/Moscow:20261002T133000
 SUMMARY:Собрание всего коллектива
@@ -27,7 +27,7 @@ DESCRIPTION:СОБРАНИЕ ВСЕГО КОЛЛЕКТИВА
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-04-1100-101wdvg@raspisanie
-DTSTAMP:20261001T164100Z
+DTSTAMP:20261006T114400Z
 DTSTART;TZID=Europe/Moscow:20261004T110000
 DTEND;TZID=Europe/Moscow:20261004T120000
 SUMMARY:Спектакль «Волк и лиса»
@@ -38,7 +38,7 @@ DESCRIPTION:Спектакль «Волк и лиса»\nБезносик
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-04-1300-101wdvg@raspisanie
-DTSTAMP:20261001T164100Z
+DTSTAMP:20261006T114400Z
 DTSTART;TZID=Europe/Moscow:20261004T130000
 DTEND;TZID=Europe/Moscow:20261004T140000
 SUMMARY:Спектакль «Волк и лиса»
@@ -49,7 +49,7 @@ DESCRIPTION:Спектакль «Волк и лиса»\nБезносик
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-04-1500-101wdvg@raspisanie
-DTSTAMP:20261001T164100Z
+DTSTAMP:20261006T114400Z
 DTSTART;TZID=Europe/Moscow:20261004T150000
 DTEND;TZID=Europe/Moscow:20261004T160000
 SUMMARY:Спектакль «Волк и лиса»
@@ -60,7 +60,7 @@ DESCRIPTION:Спектакль «Волк и лиса»\nБезносик
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-06-1200-gs@raspisanie
-DTSTAMP:20261001T164100Z
+DTSTAMP:20261006T114400Z
 DTSTART;TZID=Europe/Moscow:20261006T120000
 DTEND;TZID=Europe/Moscow:20261006T130000
 SUMMARY:Ввод «Федорино горе» · + сдача А.С. в 
@@ -73,7 +73,7 @@ DESCRIPTION:Ввод в спектакль «Федорино горе»
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-08-1200-368fwo@raspisanie
-DTSTAMP:20261001T164100Z
+DTSTAMP:20261006T114400Z
 DTSTART;TZID=Europe/Moscow:20261008T120000
 DTEND;TZID=Europe/Moscow:20261008T130000
 SUMMARY:Репетиция «Оксюморон» · Басня «Лов
@@ -86,7 +86,7 @@ DESCRIPTION:Репетиция спектакля «Оксюморон»
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-08-1500-1b7fnh4@raspisanie
-DTSTAMP:20261001T164100Z
+DTSTAMP:20261006T114400Z
 DTSTART;TZID=Europe/Moscow:20261008T150000
 DTEND;TZID=Europe/Moscow:20261008T160000
 SUMMARY:Репетиция «Оксюморон» · Прогон
@@ -99,7 +99,7 @@ DESCRIPTION:Репетиция спектакля «Оксюморон»
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-16-1200-q79fq@raspisanie
-DTSTAMP:20261001T164100Z
+DTSTAMP:20261006T114400Z
 DTSTART;TZID=Europe/Moscow:20261016T120000
 DTEND;TZID=Europe/Moscow:20261016T150000
 SUMMARY:Репетиция «Оксюморон»
@@ -112,7 +112,7 @@ DESCRIPTION:Репетиция спектакля «Оксюморон»
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-17-1100-ij5ejw@raspisanie
-DTSTAMP:20261001T164100Z
+DTSTAMP:20261006T114400Z
 DTSTART;TZID=Europe/Moscow:20261017T110000
 DTEND;TZID=Europe/Moscow:20261017T120000
 SUMMARY:Спектакль «Краденое солнце»
@@ -123,7 +123,7 @@ DESCRIPTION:Спектакль «Краденое солнце»\nЛос
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-17-1300-ij5ejw@raspisanie
-DTSTAMP:20261001T164100Z
+DTSTAMP:20261006T114400Z
 DTSTART;TZID=Europe/Moscow:20261017T130000
 DTEND;TZID=Europe/Moscow:20261017T140000
 SUMMARY:Спектакль «Краденое солнце»
@@ -134,7 +134,7 @@ DESCRIPTION:Спектакль «Краденое солнце»\nЛос
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-17-1500-ij5ejw@raspisanie
-DTSTAMP:20261001T164100Z
+DTSTAMP:20261006T114400Z
 DTSTART;TZID=Europe/Moscow:20261017T150000
 DTEND;TZID=Europe/Moscow:20261017T160000
 SUMMARY:Спектакль «Краденое солнце»
@@ -145,7 +145,7 @@ DESCRIPTION:Спектакль «Краденое солнце»\nЛос
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-18-1100-dp5ewz@raspisanie
-DTSTAMP:20261001T164100Z
+DTSTAMP:20261006T114400Z
 DTSTART;TZID=Europe/Moscow:20261018T110000
 DTEND;TZID=Europe/Moscow:20261018T120000
 SUMMARY:Спектакль «Федорино горе»
@@ -157,7 +157,7 @@ DESCRIPTION:Спектакль «Федорино горе»\nРадыг
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-18-1300-dp5ewz@raspisanie
-DTSTAMP:20261001T164100Z
+DTSTAMP:20261006T114400Z
 DTSTART;TZID=Europe/Moscow:20261018T130000
 DTEND;TZID=Europe/Moscow:20261018T140000
 SUMMARY:Спектакль «Федорино горе»
@@ -169,7 +169,7 @@ DESCRIPTION:Спектакль «Федорино горе»\nРадыг
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-18-1500-dp5ewz@raspisanie
-DTSTAMP:20261001T164100Z
+DTSTAMP:20261006T114400Z
 DTSTART;TZID=Europe/Moscow:20261018T150000
 DTEND;TZID=Europe/Moscow:20261018T160000
 SUMMARY:Спектакль «Федорино горе»
@@ -178,5 +178,103 @@ DESCRIPTION:Спектакль «Федорино горе»\nРадыг
  ин\, Безносиков\, Лоскутов\, Шаймиев\, Сам
  ойлов\, Заяшников\, Глазецкая\nЗвук/свет:
   Звук\, свет
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-20-1200-175r9eq@raspisanie
+DTSTAMP:20261006T114400Z
+DTSTART;TZID=Europe/Moscow:20261020T120000
+DTEND;TZID=Europe/Moscow:20261020T130000
+SUMMARY:Репетиция «Мойдодыр»
+LOCATION:Старая сцена
+DESCRIPTION:Репетиция спектакля «Мойдодыр»\n
+ Советов\, Шаймиев\, Баранов\, Сигитова\nЗ
+ вук/свет: Звук
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-20-1500-144na9v@raspisanie
+DTSTAMP:20261006T114400Z
+DTSTART;TZID=Europe/Moscow:20261020T150000
+DTEND;TZID=Europe/Moscow:20261020T160000
+SUMMARY:Репетиция «Оксюморон» · Прогон спе
+ ктакля
+LOCATION:Новая сцена
+DESCRIPTION:Прогон спектакля«Оксюморон»\nТру
+ нина\, Беканова\, Миронова\, Сигитова\, Ма
+ ртюшева\, Разуваева\, Андреев\, Безносик
+ ов\,\nБаранов\, Шаймиев\, Носов\, Заяшнико
+ в\nЗвук/свет: Звук\, свет
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-22-1600-nwvrur@raspisanie
+DTSTAMP:20261006T114400Z
+DTSTART;TZID=Europe/Moscow:20261022T160000
+DTEND;TZID=Europe/Moscow:20261022T170000
+SUMMARY:Репетиция «Оксюморон» · Прогон спе
+ ктакля
+LOCATION:Новая сцена
+DESCRIPTION:Прогон спектакля «Оксюморон»\nТр
+ унина\, Беканова\, Миронова\, Сигитова\, М
+ артюшева\, Разуваева\, Андреев\, Безноси
+ ков\,\nБаранов\, Шаймиев\, Носов\, Заяшник
+ ов\nЗвук/свет: Звук\, свет
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-23-1100-1hjcxld@raspisanie
+DTSTAMP:20261006T114400Z
+DTSTART;TZID=Europe/Moscow:20261023T110000
+DTEND;TZID=Europe/Moscow:20261023T120000
+SUMMARY:Спектакль «Оксюморон»
+LOCATION:Новая сцена
+DESCRIPTION:Спектакль «Оксюморон»\nТрунина\, 
+ Беканова\, Миронова\, Сигитова\, Мартюше
+ ва\, Разуваева\, Андреев\, Безносиков\,\nБ
+ аранов\, Шаймиев\, Носов\, Заяшников\nЗву
+ к/свет: Звук\, свет
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-23-1900-1hjcxld@raspisanie
+DTSTAMP:20261006T114400Z
+DTSTART;TZID=Europe/Moscow:20261023T190000
+DTEND;TZID=Europe/Moscow:20261023T200000
+SUMMARY:Спектакль «Оксюморон»
+LOCATION:Новая сцена
+DESCRIPTION:Спектакль «Оксюморон»\nТрунина\, 
+ Беканова\, Миронова\, Сигитова\, Мартюше
+ ва\, Разуваева\, Андреев\, Безносиков\,\nБ
+ аранов\, Шаймиев\, Носов\, Заяшников\nЗву
+ к/свет: Звук\, свет
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-25-1100-sbrlhx@raspisanie
+DTSTAMP:20261006T114400Z
+DTSTART;TZID=Europe/Moscow:20261025T110000
+DTEND;TZID=Europe/Moscow:20261025T120000
+SUMMARY:Спектакль «Мойдодыр»
+LOCATION:Старая сцена
+DESCRIPTION:Спектакль «Мойдодыр»\nСоветов\, Ш
+ аймиев\, Баранов\, Сигитова\nЗвук/свет: З
+ вук\, свет
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-25-1300-sbrlhx@raspisanie
+DTSTAMP:20261006T114400Z
+DTSTART;TZID=Europe/Moscow:20261025T130000
+DTEND;TZID=Europe/Moscow:20261025T140000
+SUMMARY:Спектакль «Мойдодыр»
+LOCATION:Старая сцена
+DESCRIPTION:Спектакль «Мойдодыр»\nСоветов\, Ш
+ аймиев\, Баранов\, Сигитова\nЗвук/свет: З
+ вук\, свет
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-25-1500-sbrlhx@raspisanie
+DTSTAMP:20261006T114400Z
+DTSTART;TZID=Europe/Moscow:20261025T150000
+DTEND;TZID=Europe/Moscow:20261025T160000
+SUMMARY:Спектакль «Мойдодыр»
+LOCATION:Старая сцена
+DESCRIPTION:Спектакль «Мойдодыр»\nСоветов\, Ш
+ аймиев\, Баранов\, Сигитова\nЗвук/свет: З
+ вук\, свет
 END:VEVENT
 END:VCALENDAR

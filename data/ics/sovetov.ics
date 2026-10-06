@@ -1,0 +1,94 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Raspisanie//RU
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Расписание — Советов
+REFRESH-INTERVAL;VALUE=DURATION:PT6H
+X-PUBLISHED-TTL:PT6H
+X-WR-TIMEZONE:Europe/Moscow
+BEGIN:VTIMEZONE
+TZID:Europe/Moscow
+BEGIN:STANDARD
+DTSTART:19700101T000000
+TZOFFSETFROM:+0300
+TZOFFSETTO:+0300
+TZNAME:MSK
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:2026-10-02-1230-l5f9v@raspisanie
+DTSTAMP:20261006T114400Z
+DTSTART;TZID=Europe/Moscow:20261002T123000
+DTEND;TZID=Europe/Moscow:20261002T133000
+SUMMARY:Собрание всего коллектива
+LOCATION:Старая сцена
+DESCRIPTION:СОБРАНИЕ ВСЕГО КОЛЛЕКТИВА
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-20-1200-175r9eq@raspisanie
+DTSTAMP:20261006T114400Z
+DTSTART;TZID=Europe/Moscow:20261020T120000
+DTEND;TZID=Europe/Moscow:20261020T130000
+SUMMARY:Репетиция «Мойдодыр»
+LOCATION:Старая сцена
+DESCRIPTION:Репетиция спектакля «Мойдодыр»\n
+ Советов\, Шаймиев\, Баранов\, Сигитова\nЗ
+ вук/свет: Звук
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-22-0930-fxt148@raspisanie
+DTSTAMP:20261006T114400Z
+DTSTART;TZID=Europe/Moscow:20261022T093000
+DTEND;TZID=Europe/Moscow:20261022T103000
+SUMMARY:Репетиция «Заинька»
+LOCATION:Новая сцена
+DESCRIPTION:Репетиция спектакля «Заинька»\nС
+ оветов\, Глазецкая\, Заяшников\nЗвук/све
+ т: Звук\, свет
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-22-1100-c33i7@raspisanie
+DTSTAMP:20261006T114400Z
+DTSTART;TZID=Europe/Moscow:20261022T110000
+DTEND;TZID=Europe/Moscow:20261022T120000
+SUMMARY:Спектакль «Заинька»
+LOCATION:Новая сцена
+DESCRIPTION:Спектакль «Заинька»\nСоветов\, Гл
+ азецкая\, Заяшников\nЗвук/свет: Звук\, св
+ ет
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-25-1100-sbrlhx@raspisanie
+DTSTAMP:20261006T114400Z
+DTSTART;TZID=Europe/Moscow:20261025T110000
+DTEND;TZID=Europe/Moscow:20261025T120000
+SUMMARY:Спектакль «Мойдодыр»
+LOCATION:Старая сцена
+DESCRIPTION:Спектакль «Мойдодыр»\nСоветов\, Ш
+ аймиев\, Баранов\, Сигитова\nЗвук/свет: З
+ вук\, свет
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-25-1300-sbrlhx@raspisanie
+DTSTAMP:20261006T114400Z
+DTSTART;TZID=Europe/Moscow:20261025T130000
+DTEND;TZID=Europe/Moscow:20261025T140000
+SUMMARY:Спектакль «Мойдодыр»
+LOCATION:Старая сцена
+DESCRIPTION:Спектакль «Мойдодыр»\nСоветов\, Ш
+ аймиев\, Баранов\, Сигитова\nЗвук/свет: З
+ вук\, свет
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-25-1500-sbrlhx@raspisanie
+DTSTAMP:20261006T114400Z
+DTSTART;TZID=Europe/Moscow:20261025T150000
+DTEND;TZID=Europe/Moscow:20261025T160000
+SUMMARY:Спектакль «Мойдодыр»
+LOCATION:Старая сцена
+DESCRIPTION:Спектакль «Мойдодыр»\nСоветов\, Ш
+ аймиев\, Баранов\, Сигитова\nЗвук/свет: З
+ вук\, свет
+END:VEVENT
+END:VCALENDAR
