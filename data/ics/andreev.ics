@@ -18,7 +18,7 @@ END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
 UID:2026-10-02-1230-l5f9v@raspisanie
-DTSTAMP:20261007T124800Z
+DTSTAMP:20261007T135600Z
 DTSTART;TZID=Europe/Moscow:20261002T123000
 DTEND;TZID=Europe/Moscow:20261002T133000
 SUMMARY:Собрание всего коллектива
@@ -27,7 +27,7 @@ DESCRIPTION:СОБРАНИЕ ВСЕГО КОЛЛЕКТИВА
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-02-1700-9rwos5@raspisanie
-DTSTAMP:20261007T124800Z
+DTSTAMP:20261007T135600Z
 DTSTART;TZID=Europe/Moscow:20261002T170000
 DTEND;TZID=Europe/Moscow:20261002T180000
 SUMMARY:Спектакль «Кто оставил здесь следы?
@@ -40,7 +40,7 @@ DESCRIPTION:Спектакль «Кто оставил здесь сле
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-06-1100-qik2fb@raspisanie
-DTSTAMP:20261007T124800Z
+DTSTAMP:20261007T135600Z
 DTSTART;TZID=Europe/Moscow:20261006T110000
 DTEND;TZID=Europe/Moscow:20261006T120000
 SUMMARY:Репетиция «Муравьишка»
@@ -51,7 +51,7 @@ DESCRIPTION:Репетиция спектакля «Муравьишка
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-07-1100-qik2fb@raspisanie
-DTSTAMP:20261007T124800Z
+DTSTAMP:20261007T135600Z
 DTSTART;TZID=Europe/Moscow:20261007T110000
 DTEND;TZID=Europe/Moscow:20261007T120000
 SUMMARY:Репетиция «Муравьишка»
@@ -62,7 +62,7 @@ DESCRIPTION:Репетиция спектакля «Муравьишка
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-08-1100-1ror6co@raspisanie
-DTSTAMP:20261007T124800Z
+DTSTAMP:20261007T135600Z
 DTSTART;TZID=Europe/Moscow:20261008T110000
 DTEND;TZID=Europe/Moscow:20261008T120000
 SUMMARY:Репетиция «Оксюморон» · Басня «Люб
@@ -74,7 +74,7 @@ DESCRIPTION:Репетиция спектакля «Оксюморон»
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-08-1200-368fwo@raspisanie
-DTSTAMP:20261007T124800Z
+DTSTAMP:20261007T135600Z
 DTSTART;TZID=Europe/Moscow:20261008T120000
 DTEND;TZID=Europe/Moscow:20261008T130000
 SUMMARY:Репетиция «Оксюморон» · Басня «Лов
@@ -87,7 +87,7 @@ DESCRIPTION:Репетиция спектакля «Оксюморон»
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-08-1500-1b7fnh4@raspisanie
-DTSTAMP:20261007T124800Z
+DTSTAMP:20261007T135600Z
 DTSTART;TZID=Europe/Moscow:20261008T150000
 DTEND;TZID=Europe/Moscow:20261008T160000
 SUMMARY:Репетиция «Оксюморон» · Прогон
@@ -100,7 +100,7 @@ DESCRIPTION:Репетиция спектакля «Оксюморон»
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-09-1100-b4bxfw@raspisanie
-DTSTAMP:20261007T124800Z
+DTSTAMP:20261007T135600Z
 DTSTART;TZID=Europe/Moscow:20261009T110000
 DTEND;TZID=Europe/Moscow:20261009T120000
 SUMMARY:Спектакль «Полосатые сказки»
@@ -112,7 +112,7 @@ DESCRIPTION:Спектакль «Полосатые сказки»\n11:00
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-13-1100-qik2fb@raspisanie
-DTSTAMP:20261007T124800Z
+DTSTAMP:20261007T135600Z
 DTSTART;TZID=Europe/Moscow:20261013T110000
 DTEND;TZID=Europe/Moscow:20261013T120000
 SUMMARY:Репетиция «Муравьишка»
@@ -123,7 +123,7 @@ DESCRIPTION:Репетиция спектакля «Муравьишка
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-14-1100-qik2fb@raspisanie
-DTSTAMP:20261007T124800Z
+DTSTAMP:20261007T135600Z
 DTSTART;TZID=Europe/Moscow:20261014T110000
 DTEND;TZID=Europe/Moscow:20261014T120000
 SUMMARY:Репетиция «Муравьишка»
@@ -134,7 +134,7 @@ DESCRIPTION:Репетиция спектакля «Муравьишка
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-15-1100-qik2fb@raspisanie
-DTSTAMP:20261007T124800Z
+DTSTAMP:20261007T135600Z
 DTSTART;TZID=Europe/Moscow:20261015T110000
 DTEND;TZID=Europe/Moscow:20261015T120000
 SUMMARY:Репетиция «Муравьишка»
@@ -145,7 +145,7 @@ DESCRIPTION:Репетиция спектакля «Муравьишка
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-16-1200-q79fq@raspisanie
-DTSTAMP:20261007T124800Z
+DTSTAMP:20261007T135600Z
 DTSTART;TZID=Europe/Moscow:20261016T120000
 DTEND;TZID=Europe/Moscow:20261016T150000
 SUMMARY:Репетиция «Оксюморон»
@@ -158,7 +158,7 @@ DESCRIPTION:Репетиция спектакля «Оксюморон»
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-17-1100-ij5ejw@raspisanie
-DTSTAMP:20261007T124800Z
+DTSTAMP:20261007T135600Z
 DTSTART;TZID=Europe/Moscow:20261017T110000
 DTEND;TZID=Europe/Moscow:20261017T120000
 SUMMARY:Спектакль «Краденое солнце»
@@ -169,7 +169,7 @@ DESCRIPTION:Спектакль «Краденое солнце»\nЛос
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-17-1300-ij5ejw@raspisanie
-DTSTAMP:20261007T124800Z
+DTSTAMP:20261007T135600Z
 DTSTART;TZID=Europe/Moscow:20261017T130000
 DTEND;TZID=Europe/Moscow:20261017T140000
 SUMMARY:Спектакль «Краденое солнце»
@@ -180,7 +180,7 @@ DESCRIPTION:Спектакль «Краденое солнце»\nЛос
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-17-1500-ij5ejw@raspisanie
-DTSTAMP:20261007T124800Z
+DTSTAMP:20261007T135600Z
 DTSTART;TZID=Europe/Moscow:20261017T150000
 DTEND;TZID=Europe/Moscow:20261017T160000
 SUMMARY:Спектакль «Краденое солнце»
@@ -191,7 +191,7 @@ DESCRIPTION:Спектакль «Краденое солнце»\nЛос
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-18-1100-b4bxfw@raspisanie
-DTSTAMP:20261007T124800Z
+DTSTAMP:20261007T135600Z
 DTSTART;TZID=Europe/Moscow:20261018T110000
 DTEND;TZID=Europe/Moscow:20261018T120000
 SUMMARY:Спектакль «Полосатые сказки»
@@ -203,7 +203,7 @@ DESCRIPTION:Спектакль «Полосатые сказки»\nМа
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-18-1500-b4bxfw@raspisanie
-DTSTAMP:20261007T124800Z
+DTSTAMP:20261007T135600Z
 DTSTART;TZID=Europe/Moscow:20261018T150000
 DTEND;TZID=Europe/Moscow:20261018T160000
 SUMMARY:Спектакль «Полосатые сказки»
@@ -215,7 +215,7 @@ DESCRIPTION:Спектакль «Полосатые сказки»\nМа
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-18-1700-b4bxfw@raspisanie
-DTSTAMP:20261007T124800Z
+DTSTAMP:20261007T135600Z
 DTSTART;TZID=Europe/Moscow:20261018T170000
 DTEND;TZID=Europe/Moscow:20261018T180000
 SUMMARY:Спектакль «Полосатые сказки»
@@ -227,7 +227,7 @@ DESCRIPTION:Спектакль «Полосатые сказки»\nМа
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-20-1500-144na9v@raspisanie
-DTSTAMP:20261007T124800Z
+DTSTAMP:20261007T135600Z
 DTSTART;TZID=Europe/Moscow:20261020T150000
 DTEND;TZID=Europe/Moscow:20261020T160000
 SUMMARY:Репетиция «Оксюморон» · Прогон спе
@@ -241,7 +241,7 @@ DESCRIPTION:Прогон спектакля«Оксюморон»\nТру
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-21-1100-qik2fb@raspisanie
-DTSTAMP:20261007T124800Z
+DTSTAMP:20261007T135600Z
 DTSTART;TZID=Europe/Moscow:20261021T110000
 DTEND;TZID=Europe/Moscow:20261021T120000
 SUMMARY:Репетиция «Муравьишка»
@@ -252,7 +252,7 @@ DESCRIPTION:Репетиция спектакля «Муравьишка
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-22-1600-nwvrur@raspisanie
-DTSTAMP:20261007T124800Z
+DTSTAMP:20261007T135600Z
 DTSTART;TZID=Europe/Moscow:20261022T160000
 DTEND;TZID=Europe/Moscow:20261022T170000
 SUMMARY:Репетиция «Оксюморон» · Прогон спе
@@ -266,7 +266,7 @@ DESCRIPTION:Прогон спектакля «Оксюморон»\nТр
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-23-1100-1hjcxld@raspisanie
-DTSTAMP:20261007T124800Z
+DTSTAMP:20261007T135600Z
 DTSTART;TZID=Europe/Moscow:20261023T110000
 DTEND;TZID=Europe/Moscow:20261023T120000
 SUMMARY:Спектакль «Оксюморон»
@@ -279,7 +279,7 @@ DESCRIPTION:Спектакль «Оксюморон»\nТрунина\,
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-23-1900-1hjcxld@raspisanie
-DTSTAMP:20261007T124800Z
+DTSTAMP:20261007T135600Z
 DTSTART;TZID=Europe/Moscow:20261023T190000
 DTEND;TZID=Europe/Moscow:20261023T200000
 SUMMARY:Спектакль «Оксюморон»
@@ -292,7 +292,7 @@ DESCRIPTION:Спектакль «Оксюморон»\nТрунина\,
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-24-1100-1xfad3x@raspisanie
-DTSTAMP:20261007T124800Z
+DTSTAMP:20261007T135600Z
 DTSTART;TZID=Europe/Moscow:20261024T110000
 DTEND;TZID=Europe/Moscow:20261024T120000
 SUMMARY:Спектакль «Три поросенка»
@@ -303,7 +303,7 @@ DESCRIPTION:Спектакль «Три поросенка»\nАндре
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-24-1300-1xfad3x@raspisanie
-DTSTAMP:20261007T124800Z
+DTSTAMP:20261007T135600Z
 DTSTART;TZID=Europe/Moscow:20261024T130000
 DTEND;TZID=Europe/Moscow:20261024T140000
 SUMMARY:Спектакль «Три поросенка»
@@ -314,7 +314,7 @@ DESCRIPTION:Спектакль «Три поросенка»\nАндре
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-24-1500-1xfad3x@raspisanie
-DTSTAMP:20261007T124800Z
+DTSTAMP:20261007T135600Z
 DTSTART;TZID=Europe/Moscow:20261024T150000
 DTEND;TZID=Europe/Moscow:20261024T160000
 SUMMARY:Спектакль «Три поросенка»
@@ -325,7 +325,7 @@ DESCRIPTION:Спектакль «Три поросенка»\nАндре
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-27-1100-qik2fb@raspisanie
-DTSTAMP:20261007T124800Z
+DTSTAMP:20261007T135600Z
 DTSTART;TZID=Europe/Moscow:20261027T110000
 DTEND;TZID=Europe/Moscow:20261027T120000
 SUMMARY:Репетиция «Муравьишка»
@@ -336,7 +336,7 @@ DESCRIPTION:Репетиция спектакля «Муравьишка
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-28-1100-qik2fb@raspisanie
-DTSTAMP:20261007T124800Z
+DTSTAMP:20261007T135600Z
 DTSTART;TZID=Europe/Moscow:20261028T110000
 DTEND;TZID=Europe/Moscow:20261028T120000
 SUMMARY:Репетиция «Муравьишка»
@@ -346,20 +346,21 @@ DESCRIPTION:Репетиция спектакля «Муравьишка
   Звук\, свет
 END:VEVENT
 BEGIN:VEVENT
-UID:2026-10-29-1100-1orylsn@raspisanie
-DTSTAMP:20261007T124800Z
+UID:2026-10-29-1100-grjp4p@raspisanie
+DTSTAMP:20261007T135600Z
 DTSTART;TZID=Europe/Moscow:20261029T110000
 DTEND;TZID=Europe/Moscow:20261029T120000
-SUMMARY:Репетиция «Агния Барто» · \, сдача А
+SUMMARY:Репетиция «Агния Барто» · \, сдача А.
  С
 LOCATION:Старая сцена
 DESCRIPTION:Репетиция спектакля «Агния Барто
- »\, сдача АС\nЛоскутова\, Андреев\, Чепиль
- \, Мартюшева\, Чирочкина\nЗвук/свет: Звук
+ »\, сдача А.С\nЛоскутова\, Андреев\, Чепил
+ ь\, Мартюшева\, Чирочкина\nЗвук/свет: Зву
+ к
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-29-1400-qik2fb@raspisanie
-DTSTAMP:20261007T124800Z
+DTSTAMP:20261007T135600Z
 DTSTART;TZID=Europe/Moscow:20261029T140000
 DTEND;TZID=Europe/Moscow:20261029T180000
 SUMMARY:Репетиция «Муравьишка»
@@ -370,7 +371,7 @@ DESCRIPTION:Репетиция спектакля «Муравьишка
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-31-1100-152hmft@raspisanie
-DTSTAMP:20261007T124800Z
+DTSTAMP:20261007T135600Z
 DTSTART;TZID=Europe/Moscow:20261031T110000
 DTEND;TZID=Europe/Moscow:20261031T120000
 SUMMARY:Спектакль «Кот в сапогах»
@@ -381,7 +382,7 @@ DESCRIPTION:Спектакль «Кот в сапогах»\nАндрее
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-31-1300-152hmft@raspisanie
-DTSTAMP:20261007T124800Z
+DTSTAMP:20261007T135600Z
 DTSTART;TZID=Europe/Moscow:20261031T130000
 DTEND;TZID=Europe/Moscow:20261031T140000
 SUMMARY:Спектакль «Кот в сапогах»
@@ -392,7 +393,7 @@ DESCRIPTION:Спектакль «Кот в сапогах»\nАндрее
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-31-1500-152hmft@raspisanie
-DTSTAMP:20261007T124800Z
+DTSTAMP:20261007T135600Z
 DTSTART;TZID=Europe/Moscow:20261031T150000
 DTEND;TZID=Europe/Moscow:20261031T160000
 SUMMARY:Спектакль «Кот в сапогах»
@@ -402,44 +403,8 @@ DESCRIPTION:Спектакль «Кот в сапогах»\nАндрее
  ова\, Разуваева\nЗвук/свет: Звук\, свет
 END:VEVENT
 BEGIN:VEVENT
-UID:2026-11-01-1100-ezemun@raspisanie
-DTSTAMP:20261007T124800Z
-DTSTART;TZID=Europe/Moscow:20261101T110000
-DTEND;TZID=Europe/Moscow:20261101T120000
-SUMMARY:Спектакль «Колобок»
-LOCATION:Старая сцена
-DESCRIPTION:Спектакль «Колобок»\nГалустянц\, 
- Разуваева\, Баранов\, Глазецкая\, Бекано
- ва\, Андреев (11 и 13)\, Заяшников (15)\nЗвук/с
- вет: Звук\, свет
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-11-01-1300-ezemun@raspisanie
-DTSTAMP:20261007T124800Z
-DTSTART;TZID=Europe/Moscow:20261101T130000
-DTEND;TZID=Europe/Moscow:20261101T140000
-SUMMARY:Спектакль «Колобок»
-LOCATION:Старая сцена
-DESCRIPTION:Спектакль «Колобок»\nГалустянц\, 
- Разуваева\, Баранов\, Глазецкая\, Бекано
- ва\, Андреев (11 и 13)\, Заяшников (15)\nЗвук/с
- вет: Звук\, свет
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-11-01-1500-ezemun@raspisanie
-DTSTAMP:20261007T124800Z
-DTSTART;TZID=Europe/Moscow:20261101T150000
-DTEND;TZID=Europe/Moscow:20261101T160000
-SUMMARY:Спектакль «Колобок»
-LOCATION:Старая сцена
-DESCRIPTION:Спектакль «Колобок»\nГалустянц\, 
- Разуваева\, Баранов\, Глазецкая\, Бекано
- ва\, Андреев (11 и 13)\, Заяшников (15)\nЗвук/с
- вет: Звук\, свет
-END:VEVENT
-BEGIN:VEVENT
 UID:2026-11-01-1300-yunp5@raspisanie
-DTSTAMP:20261007T124800Z
+DTSTAMP:20261007T135600Z
 DTSTART;TZID=Europe/Moscow:20261101T130000
 DTEND;TZID=Europe/Moscow:20261101T140000
 SUMMARY:Выезд «Краденое солнце» · Выезд спе
@@ -447,18 +412,5 @@ SUMMARY:Выезд «Краденое солнце» · Выезд спе
 DESCRIPTION:Выезд спектакля «Краденое солнце
  »\, начало в 13:00\nТрунина\, Андреев\, Шайми
  ев\, Лоскутова\nЗвук/свет: Звук\, свет
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-11-01-1700-9rwos5@raspisanie
-DTSTAMP:20261007T124800Z
-DTSTART;TZID=Europe/Moscow:20261101T170000
-DTEND;TZID=Europe/Moscow:20261101T180000
-SUMMARY:Спектакль «Кто оставил здесь следы?
- »
-LOCATION:Новая сцена
-DESCRIPTION:Спектакль «Кто оставил здесь сле
- ды?»\n11:00 – Миронова\, Чирочкина\, Лоскут
- ов\n17:00 – Мартюшева\, Чирочкина\, Андреев
- \nЗвук/свет: Звук\, свет
 END:VEVENT
 END:VCALENDAR
