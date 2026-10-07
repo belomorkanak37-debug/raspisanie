@@ -356,7 +356,6 @@ async function renderCalendar(feed) {
         <h2>${MONTHS[m - 1]} ${y}</h2>
         <button class="cal-nav" data-nav="1" aria-label="Следующий месяц" ${ym >= '9999-12' ? 'disabled' : ''}>${ICON.next}</button>
       </div>
-      <label class="cal-month-picker">Выбрать месяц<input type="month" data-cal-month value="${ym}" aria-label="Месяц календаря" min="1900-01" max="9999-12"></label>
       <div class="cal-grid">${grid}</div>
       ${monthOf(today) !== ym ? '<button class="cal-today" data-today>Сегодня</button>' : ''}
     </div>
@@ -661,13 +660,6 @@ function bindFeed(feed) {
     return ev ? personalItems([ev], current.key)[0] : null;
   };
   feed.addEventListener('change', (e) => {
-    if (e.target.matches('[data-cal-month]')) {
-      const month = e.target.value;
-      if (!/^\d{4}-(?:0[1-9]|1[0-2])$/.test(month) || month < '1900-01' || month > '9999-12') return;
-      state.month = month;
-      state.selDay = null;
-      return renderFeed();
-    }
     if (!e.target.matches('[data-totals-month]')) return;
     state.totalsMonth = e.target.value;
     renderFeed();
