@@ -31,6 +31,86 @@
    "scope": "note"
   },
   {
+   "id": "pdf-tour-20261020",
+   "date": "2026-10-20",
+   "timeText": "в 10:00 и 12:00",
+   "times": [
+    "10:00",
+    "12:00"
+   ],
+   "range": null,
+   "timeUncertain": false,
+   "title": "ВЫЕЗД спектакля «Кот в сапогах»",
+   "kind": "trip",
+   "place": "Шк № 7, ул Летчика Пилютова, 11 к 2",
+   "tech": "Звук, свет",
+   "lines": [
+    "Кожев, Носов, Заяшников, Лоскутов, Трунина, Глазецкая"
+   ],
+   "people": [
+    {
+     "name": "Кожев",
+     "times": null,
+     "from": null,
+     "role": null,
+     "uncertain": false,
+     "alts": [],
+     "note": null
+    },
+    {
+     "name": "Носов",
+     "times": null,
+     "from": null,
+     "role": null,
+     "uncertain": false,
+     "alts": [],
+     "note": null
+    },
+    {
+     "name": "Заяшников",
+     "times": null,
+     "from": null,
+     "role": null,
+     "uncertain": false,
+     "alts": [],
+     "note": null
+    },
+    {
+     "name": "Лоскутов",
+     "times": null,
+     "from": null,
+     "role": null,
+     "uncertain": false,
+     "alts": [],
+     "note": null
+    },
+    {
+     "name": "Трунина",
+     "times": null,
+     "from": null,
+     "role": null,
+     "uncertain": false,
+     "alts": [],
+     "note": null
+    },
+    {
+     "name": "Глазецкая",
+     "times": null,
+     "from": null,
+     "role": null,
+     "uncertain": false,
+     "alts": [],
+     "note": null
+    }
+   ],
+   "scope": "people",
+   "accounting": {
+    "showWeight": 1,
+    "away": true,
+    "intro": false
+   }
+  },
+  {
    "id": "e2",
    "date": "2026-10-20",
    "timeText": "12:00",
@@ -1160,12 +1240,12 @@
    "scope": "people"
   }
  ],
- "version": 2,
- "updatedAt": "2026-10-07T12:15:58.290Z",
+ "version": 3,
+ "updatedAt": "2026-10-07T13:13:30.453Z",
  "pdf": "data/pdf/2026-10-19.pdf",
  "previous": {
-  "version": 1,
-  "updatedAt": "2026-10-06T11:44:35.115Z",
+  "version": 2,
+  "updatedAt": "2026-10-07T12:15:58.290Z",
   "events": [
    {
     "id": "e1",

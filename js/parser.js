@@ -196,7 +196,7 @@ const TITLE_START = /^(спектакль|репетиция|ввод|сдача
 function splitBand(evLines, timeLines) {
   const starts = [0];
   evLines.forEach((l, i) => { if (i > 0 && TITLE_START.test(l.text)) starts.push(i); });
-  const open = (s) => (s.match(/«/g) || []).length > (s.match(/»/g) || []).length;
+  const open = (s) => s.lastIndexOf('«') > s.lastIndexOf('»');
   return starts.map((s, n) => {
     const end = n + 1 < starts.length ? starts[n + 1] : evLines.length;
     const part = evLines.slice(s, end).map((l) => l.text);
@@ -292,9 +292,10 @@ export async function parseSchedulePdf(buffer, fileName = '') {
       const inBand = page.items.filter((it) => it.cy > a && it.cy < b);
       const pick = (col) => toLines(inBand.filter((it) => inCol(it, col)));
       const evLines = pick(cols.event);
-      const timeLines = pick(cols.time);
-      const isHeader = (l) => HEADER_RE.test(l.text);
-      if (evLines.some(isHeader) || timeLines.some(isHeader)) continue;
+      // «Начало в 10:00 и 12:00» бывает временем настоящего выездного спектакля.
+      // Одно слово «Начало» в этой ячейке не означает, что вся строка — шапка.
+      const timeLines = pick(cols.time).filter((l) => !/^начало$/i.test(l.text));
+      if (evLines.some((l) => HEADER_RE.test(l.text))) continue;
       if (!evLines.length && !timeLines.length) continue;
 
       const date = dateFor((a + b) / 2);

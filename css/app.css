@@ -197,7 +197,7 @@ main { flex: 1; }
 .person-actions { display: flex; gap: 8px; margin-top: 14px; flex-wrap: wrap; }
 .tabs {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   background: var(--surface-2);
   padding: 4px;
   border-radius: 14px;
@@ -227,6 +227,37 @@ main { flex: 1; }
   align-items: flex-start;
 }
 .banner .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--warn); margin-top: 6px; flex: none; }
+
+/* ---------- месячные итоги ---------- */
+.totals-head h2 { margin: 22px 0 10px; font-size: 23px; }
+.totals-notice { margin: 0 0 18px; padding: 14px; border-radius: 14px; background: var(--warn-soft); font-size: 15px; line-height: 1.5; }
+.totals-month { display: flex; align-items: center; gap: 14px; font-size: 14px; color: var(--muted); }
+.totals-month select { flex: 1; min-width: 0; min-height: 46px; padding: 10px 12px; border: 1px solid var(--line); border-radius: 12px; background: var(--surface); color: var(--text); font-size: 16px; }
+.totals-coverage, .totals-rules { color: var(--muted); font-size: 13px; line-height: 1.5; }
+.totals-coverage { margin: 12px 0; }
+.totals-panel { margin-top: 14px; padding: 4px 16px; background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); }
+.totals-panel h3 { margin: 14px 0 6px; font-size: 17px; }
+.totals-stats { margin: 0; }
+.totals-stats > div { display: flex; align-items: baseline; justify-content: space-between; gap: 14px; padding: 13px 0; border-bottom: 1px solid var(--line); }
+.totals-stats > div:last-child { border-bottom: 0; }
+.totals-stats dt { font-size: 14px; }
+.totals-stats dd { margin: 0; text-align: right; font-size: 19px; font-weight: 600; }
+.totals-stats dd span { color: var(--muted); font-size: 13px; font-weight: 400; }
+.totals-stats .totals-show { display: block; }
+.totals-show dd { text-align: left; margin-top: 4px; }
+.totals-show strong { font-size: 32px; color: var(--accent); }
+.totals-show small { display: block; font-size: 13px; font-weight: 400; color: var(--muted); margin-top: 2px; }
+.totals-details { margin: 14px 0; border: 1px solid var(--line); border-radius: 14px; padding: 12px 14px; font-size: 14px; }
+.totals-details summary { cursor: pointer; font-weight: 600; }
+.totals-details h3 { margin: 18px 0 8px; font-size: 14px; }
+.totals-details ul { list-style: none; margin: 0; padding: 0; }
+.totals-details li { padding: 10px 0; border-bottom: 1px solid var(--line); overflow-wrap: anywhere; line-height: 1.45; }
+.totals-details li:last-child { border-bottom: 0; }
+.totals-date { color: var(--muted); font-size: 12px; margin-bottom: 2px; }
+.totals-possible { border-color: var(--warn); }
+@media (max-width: 380px) {
+  .tabs button { font-size: 13px; }
+}
 
 /* ---------- лента ---------- */
 .week-head {

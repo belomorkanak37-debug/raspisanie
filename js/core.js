@@ -180,13 +180,20 @@ function tokenize(line) {
     else if (m[8]) out.push({ t: 'open', raw: m[0] });
     else if (m[9]) out.push({ t: 'close', raw: m[0] });
     else if (m[10]) out.push({ t: 'q', raw: m[0] });
+    out[out.length - 1].pos = m.index;
   }
   return out;
 }
 
 // Пометка в скобках после фамилии: «(с 15:00)», «(11:00 и 13:00)», «(?)».
-function applyAnnotation(targets, inner) {
-  const times = inner.filter((t) => t.t === 'time').map((t) => t.v);
+function applyAnnotation(targets, inner, source = '') {
+  let times = inner.filter((t) => t.t === 'time').map((t) => t.v);
+  // В PDF встречается сокращённое время: «Андреев (11 и 13)», «Заяшников (15)».
+  // Принимаем только целую пометку со списком часов, а не числа внутри произвольного текста.
+  if (!times.length && /^(?:(?:с|со|после|до|в)\s+)?\d{1,2}(?:\s*(?:и|,|\/)\s*\d{1,2})*\s*\??$/i.test(source.trim())) {
+    const hours = source.match(/\d{1,2}/g).map(Number);
+    if (hours.every((h) => h < 24)) times = hours.map((h) => `${pad(h)}:00`);
+  }
   const words = inner.filter((t) => t.t === 'word').map((t) => t.v.toLowerCase());
   const hasFrom = words.some((w) => ['с', 'со', 'после'].includes(w));
   const hasTo = words.includes('до');
@@ -247,7 +254,7 @@ export function parseParticipants(lines) {
         const inner = [];
         while (j < toks.length && toks[j].t !== 'close') inner.push(toks[j++]);
         const targets = group.length ? group : people.slice(-1);
-        applyAnnotation(targets, inner);
+        applyAnnotation(targets, inner, line.slice(tk.pos + 1, toks[j]?.pos ?? line.length));
         i = j;
         sinceSep = [];
         prev = 'paren';
@@ -309,7 +316,7 @@ export function buildEvent({ id, date, timeText = '', title = '', lines = [], pl
   const cleanLines = lines.map((l) => String(l).replace(/\s+/g, ' ').trim()).filter(Boolean);
   const people = parseParticipants(cleanLines);
   const cleanTitle = String(title).replace(/\s+/g, ' ').trim();
-  return {
+  const ev = {
     id, date, timeText: tt.text, times: tt.times, range: tt.range, timeUncertain: tt.uncertain,
     title: cleanTitle, kind: detectKind(cleanTitle),
     place: String(place).replace(/\s+/g, ' ').replace(/\s*\/\s*/g, ' / ').trim(),
@@ -317,6 +324,8 @@ export function buildEvent({ id, date, timeText = '', title = '', lines = [], pl
     lines: cleanLines, people,
     scope: scope || autoScope(tt.times, people, cleanTitle),
   };
+  ev.accounting = eventAccounting(ev);
+  return ev;
 }
 
 export const eventSortKey = (ev) => `${ev.date || '9999'} ${ev.times[0] || (ev.range && ev.range.from) || (ev.scope === 'note' ? '00:00' : '99:99')}`;
@@ -380,6 +389,116 @@ export function itemSignature(it) {
 export function personalItems(events, key) {
   return events.map((ev) => personalize(ev, key)).filter(Boolean)
     .sort((a, b) => (a.sortKey < b.sortKey ? -1 : a.sortKey > b.sortKey ? 1 : 0));
+}
+
+/* ---------- приблизительные итоги за месяц ---------- */
+
+export const MONTHLY_NORM = 8;
+export const INTRO_ROLE_LABELS = { mentor: 'Вводящий', newcomer: 'Вводящийся', actor: 'Актёр на вводе' };
+
+const accountingText = (s) => normName(s).replace(/[^а-яa-z0-9]+/g, ' ').trim();
+
+// Эти признаки сохраняются при разборе PDF и создании события в админке.
+// Для уже опубликованных недель их можно получить без повторной загрузки PDF.
+export function eventAccounting(ev) {
+  const title = normName(ev.title);
+  const kind = ev.kind || detectKind(ev.title);
+  const show = ev.scope !== 'note' && (kind === 'show' || (kind === 'trip'
+    && /спектакл/.test(title) && !/^(отъезд|выезд\s+(?:гастрольной\s+)?группы)/.test(title)));
+  const heading = accountingText(prettyTitle(ev.title).heading);
+  const half = /(^| )собачка($| )|(^| )первый снег малыша($| )/.test(heading);
+  const place = normName(ev.place);
+  const away = show && (/выезд|гастрол|бдф/.test(title)
+    || /москв|выборг|шк(?:ола|\s|\.|№)|лице[йя]|гимнази|дворец|дом культуры|губернск|(^|[^а-я])дк($|[^а-я])|ул[.\s]|проспект/.test(place));
+  return { showWeight: show ? (half ? 0.5 : 1) : 0, away, intro: kind === 'intro' && ev.scope !== 'note' };
+}
+
+function introRole(role) {
+  const r = normName(role);
+  if (/вводящ(?:ийся|аяся|иеся)/.test(r)) return 'newcomer';
+  if (/вводящ(?:ий|ая|ие)/.test(r)) return 'mentor';
+  // Технические службы в составе ввода — не актёры на вводе.
+  if (/монтиров|звук|свет|реквизит|костюм|грим/.test(r)) return null;
+  return 'actor';
+}
+
+function accountingPeople(ev) {
+  // Дополняем только недостающие ограничения времени в старых JSON.
+  // Сохранённые фамилии, роли и пометки после ручного редактирования остаются приоритетными.
+  const parsed = parseParticipants(ev.lines || []);
+  const used = new Set();
+  return (ev.people || []).map((p) => {
+    const i = parsed.findIndex((q, n) => !used.has(n) && normName(q.name) === normName(p.name)
+      && normName(q.role) === normName(p.role));
+    if (i < 0) return p;
+    used.add(i);
+    const q = parsed[i];
+    return { ...p, times: p.times || q.times, from: p.from || q.from };
+  });
+}
+
+function accountingTimes(ev, p) {
+  let times = p.times?.length ? p.times.slice() : (ev.times || []).slice();
+  if (p.from) times = times.length ? times.filter((t) => t >= p.from) : [p.from];
+  const until = /^до (\d{2}:\d{2})/.exec(p.note || '');
+  if (until) times = times.filter((t) => t < until[1]);
+  // Спектакль без указанного времени всё равно является одним показом.
+  return uniq(times.length ? times : (!ev.times?.length && !p.from && !until ? [''] : []));
+}
+
+export function monthlyTotals(weeks, name, month) {
+  const key = normName(name);
+  const [year, num] = month.split('-').map(Number);
+  const totalDays = new Date(year, num, 0).getDate();
+  const first = `${month}-01`, last = `${month}-${pad(totalDays)}`;
+  const latest = new Map();
+  for (const w of weeks.filter(Boolean)) {
+    const old = latest.get(w.id);
+    if (!old || (w.version || 1) > (old.version || 1)
+      || ((w.version || 1) === (old.version || 1) && (w.updatedAt || '') > (old.updatedAt || ''))) latest.set(w.id, w);
+  }
+  const covered = new Set(), shows = new Map(), intros = new Map();
+  for (const w of latest.values()) {
+    for (let d = w.start > first ? w.start : first; d <= w.end && d <= last; d = addDays(d, 1)) covered.add(d);
+    // previous содержит отменённые и изменённые записи — в итогах берём только текущие events.
+    for (const ev of w.events || []) {
+      if (ev.date < first || ev.date > last || ev.scope === 'note') continue;
+      const flags = eventAccounting(ev);
+      if (!flags.showWeight && !flags.intro) continue;
+      const entries = accountingPeople(ev).filter((p) => normName(p.name) === key);
+      for (const p of entries) {
+        const possible = !!p.uncertain || !!p.alts?.length;
+        if (flags.showWeight) for (const time of accountingTimes(ev, p)) {
+          const id = [ev.date, time, accountingText(prettyTitle(ev.title).heading), accountingText(ev.place)].join('|');
+          const old = shows.get(id);
+          if (!old || (old.possible && !possible)) shows.set(id, { ev, week: w, time, possible, weight: flags.showWeight, away: flags.away });
+        }
+        if (flags.intro) {
+          const role = introRole(p.role);
+          if (!role) continue;
+          const id = `${ev.date}|${role}`;
+          const old = intros.get(id);
+          if (!old || (old.possible && !possible)) intros.set(id, { date: ev.date, role, possible, titles: [prettyTitle(ev.title).heading] });
+          else if (old.possible === possible) old.titles = uniq([...old.titles, prettyTitle(ev.title).heading]);
+        }
+      }
+    }
+  }
+  const bucket = (possible) => {
+    const showItems = [...shows.values()].filter((s) => s.possible === possible)
+      .sort((a, b) => `${a.ev.date} ${a.time}`.localeCompare(`${b.ev.date} ${b.time}`));
+    const introItems = [...intros.values()].filter((i) => i.possible === possible)
+      .sort((a, b) => `${a.date} ${a.role}`.localeCompare(`${b.date} ${b.role}`));
+    const showsCount = showItems.reduce((sum, s) => sum + s.weight, 0);
+    return {
+      shows: showsCount, performances: showItems.length, aboveNorm: Math.max(0, showsCount - MONTHLY_NORM),
+      halfShows: showItems.filter((s) => s.weight === 0.5).length,
+      awayShows: showItems.filter((s) => s.away).length,
+      introDays: Object.fromEntries(Object.keys(INTRO_ROLE_LABELS).map((r) => [r, introItems.filter((i) => i.role === r).length])),
+      showItems, introItems,
+    };
+  };
+  return { month, norm: MONTHLY_NORM, confirmed: bucket(false), possible: bucket(true), coverage: { days: covered.size, totalDays } };
 }
 
 // Сравнивает персональные записи с предыдущей версией недели.

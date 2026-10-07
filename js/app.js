@@ -1,6 +1,6 @@
 import {
   KIND_LABELS, buildICS, editDistance, fmtDate, fmtDateTime, markChanges, normName,
-  personalItems, prettyTitle, todayISO, addDays, weekdayName,
+  personalItems, prettyTitle, todayISO, addDays, weekdayName, monthlyTotals, INTRO_ROLE_LABELS,
 } from './core.js';
 
 const MONTHS = ['Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'Июнь', 'Июль', 'Август', 'Сентябрь',
@@ -36,9 +36,10 @@ const VIEW = 'rs.view';
 /* ---------- данные ---------- */
 const state = {
   index: null, weeks: new Map(), offline: false, archiveLimit: 4,
-  view: store.get(VIEW, 'list'), // 'list' | 'calendar' | 'archive'
+  view: store.get(VIEW, 'list'), // 'list' | 'calendar' | 'archive' | 'totals'
   month: null, // 'YYYY-MM' в календаре
   selDay: null, // выбранный день в календаре
+  totalsMonth: null, // 'YYYY-MM' в итогах
   rendered: [], // недели, показанные сейчас (для кнопки «В календарь» у события)
 };
 
@@ -179,7 +180,7 @@ async function showPerson(rawName) {
       </div>
     </section>
     <div class="tabs" role="tablist">
-      ${[['list', 'Список'], ['calendar', 'Календарь'], ['archive', 'Архив']].map(([v, label]) => `
+      ${[['list', 'Список'], ['calendar', 'Календарь'], ['archive', 'Архив'], ['totals', 'Итоги']].map(([v, label]) => `
         <button role="tab" data-tab="${v}" class="${state.view === v ? 'on' : ''}" aria-selected="${state.view === v}">${label}</button>`).join('')}
     </div>
     <div id="feed"><div class="skeleton"></div><div class="skeleton"></div><div class="skeleton"></div></div>`;
@@ -213,6 +214,7 @@ function renderFeed() {
     feed.innerHTML = '<div class="empty"><div class="big">Не удалось загрузить расписание</div>Проверьте интернет и обновите страницу.</div>';
     return;
   }
+  if (state.view === 'totals') return renderTotals(feed);
   return state.view === 'calendar' ? renderCalendar(feed) : renderList(feed, state.view === 'list');
 }
 
@@ -392,6 +394,76 @@ function navMonth(n) {
   renderFeed();
 }
 
+/* ---------- месячные итоги ---------- */
+const fmtCount = (n) => String(n).replace('.', ',');
+const monthLabel = (ym) => `${MONTHS[Number(ym.slice(5)) - 1]} ${ym.slice(0, 4)}`;
+
+function totalsMonths() {
+  const months = new Set([monthOf(todayISO())]);
+  for (const w of state.index.weeks) {
+    for (let m = monthOf(w.start); m <= monthOf(w.end); m = shiftMonth(m, 1)) months.add(m);
+  }
+  return [...months].sort();
+}
+
+function totalsStats(t, possible = false) {
+  return `<dl class="totals-stats">
+    <div class="totals-show"><dt>Спектаклей</dt><dd><strong>${fmtCount(t.shows)}</strong>
+      ${!possible ? `<span>(${fmtCount(t.aboveNorm)} выше нормы)</span>` : ''}
+      ${t.halfShows ? `<small>(${t.halfShows} ${plural(t.halfShows, 'показ', 'показа', 'показов')} по 0,5)</small>` : ''}</dd></div>
+    ${Object.entries(INTRO_ROLE_LABELS).map(([r, label]) => `<div><dt>${label}</dt><dd>${t.introDays[r]} <span>${plural(t.introDays[r], 'день', 'дня', 'дней')}</span></dd></div>`).join('')}
+    <div><dt>Выездных спектаклей</dt><dd>${t.awayShows}</dd></div>
+  </dl>`;
+}
+
+function totalsDetails(t, label) {
+  if (!t.showItems.length && !t.introItems.length) return '';
+  return `<details class="totals-details"><summary>${label}</summary>
+    ${t.showItems.length ? `<h3>Спектакли (${t.performances} ${plural(t.performances, 'показ', 'показа', 'показов')})</h3>
+      <ul>${t.showItems.map((s) => `<li><div class="totals-date">${fmtDate(s.ev.date)} · ${esc(s.time || 'время не указано')}</div>
+        <div>${esc(prettyTitle(s.ev.title).heading)}${s.weight === 0.5 ? ' <span class="chip">0,5</span>' : ''}${s.away ? ' <span class="chip">выезд</span>' : ''}</div>
+        ${s.ev.place ? `<div class="muted">${esc(s.ev.place)}</div>` : ''}</li>`).join('')}</ul>` : ''}
+    ${t.introItems.length ? `<h3>Дни вводов</h3><ul>${t.introItems.map((i) => `<li>
+      <div class="totals-date">${fmtDate(i.date)} · ${INTRO_ROLE_LABELS[i.role]}</div>
+      <div>${i.titles.map(esc).join(', ')}</div></li>`).join('')}</ul>` : ''}
+  </details>`;
+}
+
+async function renderTotals(feed) {
+  const person = current;
+  if (!person.known) { feed.innerHTML = emptyState(false); return; }
+  const months = totalsMonths();
+  const ym = state.totalsMonth || monthOf(todayISO());
+  state.totalsMonth = ym;
+  const header = `<section class="totals-head"><h2>Итоги</h2>
+    <p class="totals-notice"><strong>Все расчёты приблизительны.</strong> Как всегда, мы не знаем, кто и что точно сыграет.</p>
+    <label class="totals-month">Месяц<select data-totals-month aria-label="Месяц итогов">
+      ${months.map((m) => `<option value="${m}" ${m === ym ? 'selected' : ''}>${monthLabel(m)}</option>`).join('')}</select></label>
+  </section>`;
+  feed.innerHTML = header + '<div class="skeleton"></div>';
+  const [y, m] = ym.split('-').map(Number);
+  const first = `${ym}-01`, last = `${ym}-${String(new Date(y, m, 0).getDate()).padStart(2, '0')}`;
+  const metas = state.index.weeks.filter((w) => w.start <= last && w.end >= first);
+  const loaded = await Promise.all(metas.map((w) => loadWeek(w.id)));
+  if (current !== person || state.view !== 'totals' || state.totalsMonth !== ym || $('#feed') !== feed) return;
+  const weeks = loaded.filter(Boolean);
+  const totals = monthlyTotals(weeks, person.key, ym);
+  const { confirmed, possible, coverage } = totals;
+  const hasPossible = possible.showItems.length || possible.introItems.length;
+  const failed = weeks.length < metas.length;
+  feed.innerHTML = header + `
+    ${failed ? '<div class="banner">Часть расписаний не загрузилась. Показаны итоги только по доступным неделям. Обновите страницу при подключении к интернету.</div>' : ''}
+    <p class="totals-coverage">${coverage.days ? `Расписание загружено на ${coverage.days} из ${coverage.totalDays} дней месяца.` : 'Расписание на этот месяц ещё не загружено.'}
+      ${coverage.days ? ' Учтены все опубликованные даты, включая предстоящие.' : ''}</p>
+    ${coverage.days ? `<section class="totals-panel" aria-label="Итоги по расписанию">${totalsStats(confirmed)}</section>
+      <p class="totals-rules">Норма — ${totals.norm}. «Собачка» и «Первый снег малыша» считаются по 0,5 за показ.
+        Каждый личный показ считается отдельно. Выездные входят в общее количество спектаклей. Вводы считаются по дням, а не по числу репетиций; роли берутся из состава.</p>
+      ${totalsDetails(confirmed, 'Посмотреть учтённые даты')}
+      ${hasPossible ? `<section class="totals-panel totals-possible"><h3>Под вопросом — отдельно</h3>
+        <p class="totals-rules">Участия с «?» и альтернативным составом не включены в основные итоги.</p>
+        ${totalsStats(possible, true)}${totalsDetails(possible, 'Посмотреть возможные участия')}</section>` : ''}` : ''}`;
+}
+
 function emptyState(upcoming) {
   const { name, key, known } = current;
   if (!known) {
@@ -490,6 +562,11 @@ function bindFeed(feed) {
     const ev = w?.events.find((e) => e.id === eid);
     return ev ? personalItems([ev], current.key)[0] : null;
   };
+  feed.addEventListener('change', (e) => {
+    if (!e.target.matches('[data-totals-month]')) return;
+    state.totalsMonth = e.target.value;
+    renderFeed();
+  });
   feed.addEventListener('click', (e) => {
     const t = e.target;
     const day = t.closest('[data-day]');
