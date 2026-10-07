@@ -1,6 +1,6 @@
 import {
   KIND_LABELS, buildICS, editDistance, fmtDate, fmtDateTime, markChanges, normName,
-  personalItems, prettyTitle, todayISO, addDays, weekdayName, monthlyTotals, INTRO_ROLE_LABELS,
+  personalItems, prettyTitle, todayISO, addDays, weekdayName, weekTitle, monthlyTotals, INTRO_ROLE_LABELS,
 } from './core.js';
 import { loadPersonalEvents, savePersonalEvent, deletePersonalEvent, personalStorageKey } from './personal.js';
 
@@ -212,7 +212,7 @@ async function showPerson(rawName) {
 function renderFeed() {
   const feed = $('#feed');
   if (!feed || !current) return;
-  if (state.index.failed && state.view !== 'calendar') {
+  if (state.index.failed && state.view === 'totals') {
     feed.innerHTML = '<div class="empty"><div class="big">Не удалось загрузить расписание</div>Проверьте интернет и обновите страницу.</div>';
     return;
   }
@@ -233,7 +233,9 @@ function weekEntries(w, key, keep) {
 
 const isChange = (it) => it.removed || !!it.change;
 const noteHTML = (it) => `<div class="note">${esc(prettyTitle(it.ev.title).heading)}</div>`;
-const entryHTML = (it) => (it.type === 'note' ? noteHTML(it) : card(it, it.week));
+const entryHTML = (it) => (it.type === 'personal' ? personalCard(it.ev) : it.type === 'note' ? noteHTML(it) : card(it, it.week));
+const personalEntry = (ev) => ({ type: 'personal', ev, sortKey: `${ev.date} ${ev.start || '00:00'}` });
+const byTime = (a, b) => (a.sortKey || `${a.ev.date} 00:00`).localeCompare(b.sortKey || `${b.ev.date} 00:00`);
 
 function changesBanner(entries, hint = 'Они отмечены ниже.') {
   const n = entries.filter(isChange).length;
@@ -244,25 +246,46 @@ function changesBanner(entries, hint = 'Они отмечены ниже.') {
 
 /* ---------- вид списком ---------- */
 async function renderList(feed, upcoming) {
-  const { key } = current;
+  const person = current;
+  const { key } = person;
   const today = todayISO();
   const idx = state.index;
-  let metas = upcoming
+  const metas = upcoming
     ? idx.weeks.filter((w) => w.end >= today)
-    : idx.weeks.filter((w) => w.start < today).sort((a, b) => b.start.localeCompare(a.start));
-  const hasMore = !upcoming && metas.length > state.archiveLimit;
-  if (!upcoming) metas = metas.slice(0, state.archiveLimit);
+    : idx.weeks.filter((w) => w.start < today);
+  const keepDate = (d) => (upcoming ? d >= today : d < today);
+  let personal = [], personalError = '';
+  try { personal = loadPersonalEvents(key).filter((ev) => keepDate(ev.date)); } catch (e) { personalError = e.message; }
 
-  const weeks = (await Promise.all(metas.map((m) => loadWeek(m.id)))).filter(Boolean);
-  const keep = (it) => (upcoming ? it.ev.date >= today : it.ev.date < today);
+  let groups = metas.map((meta) => ({ meta, personal: [] }));
+  for (const ev of personal) {
+    let group = groups.find(({ meta }) => ev.date >= meta.start && ev.date <= meta.end);
+    if (!group) {
+      const offset = (new Date(`${ev.date}T12:00:00`).getDay() + 6) % 7;
+      const start = addDays(ev.date, -offset), end = addDays(start, 6);
+      group = { meta: { start, end, title: weekTitle(start, end) }, personal: [] };
+      groups.push(group);
+    }
+    group.personal.push(personalEntry(ev));
+  }
+  groups.sort((a, b) => upcoming ? a.meta.start.localeCompare(b.meta.start) : b.meta.start.localeCompare(a.meta.start));
+  const hasMore = !upcoming && groups.length > state.archiveLimit;
+  if (!upcoming) groups = groups.slice(0, state.archiveLimit);
+
+  const loaded = await Promise.all(groups.map(({ meta }) => meta.id ? loadWeek(meta.id) : null));
+  if (current !== person || state.view !== (upcoming ? 'list' : 'archive') || $('#feed') !== feed) return;
+  const weeks = loaded.filter(Boolean);
+  const keep = (it) => keepDate(it.ev.date);
 
   let html = '';
   const all = [];
-  for (const w of weeks) {
-    const entries = weekEntries(w, key, keep);
+  for (let i = 0; i < groups.length; i++) {
+    const { meta, personal } = groups[i];
+    const w = loaded[i];
+    const entries = [...(w ? weekEntries(w, key, keep) : []), ...personal].sort(byTime);
     all.push(...entries);
     if (!entries.some((i) => i.type !== 'note')) continue;
-    html += weekHeader(w);
+    html += weekHeader(w || meta);
     const days = [...new Set(entries.map((i) => i.ev.date))].sort();
     for (const d of days) {
       const list = entries.filter((i) => i.ev.date === d);
@@ -271,12 +294,13 @@ async function renderList(feed, upcoming) {
     }
   }
 
-  if (state.view !== (upcoming ? 'list' : 'archive')) return; // пока грузили, переключили вкладку
   state.rendered = weeks;
-  feed.innerHTML = html
-    ? (upcoming ? changesBanner(all) : '') + html
-      + (hasMore ? `<button class="pill more-btn" data-more>${ICON.plus}Показать ещё</button>` : '')
-    : emptyState(upcoming);
+  feed.innerHTML = (idx.failed ? '<div class="banner">Театральное расписание не удалось загрузить. Личные дела доступны в этом браузере.</div>' : '')
+    + (personalError ? `<div class="banner">${esc(personalError)}</div>` : '')
+    + (html
+      ? (upcoming ? changesBanner(all) : '') + html
+        + (hasMore ? `<button class="pill more-btn" data-more>${ICON.plus}Показать ещё</button>` : '')
+      : emptyState(upcoming));
 }
 
 /* ---------- вид календарём ---------- */
@@ -312,9 +336,7 @@ async function renderCalendar(feed) {
   let personal = [], personalError = '';
   try { personal = loadPersonalEvents(key); } catch (e) { personalError = e.message; }
   const entries = [...weeks.flatMap((w) => weekEntries(w, key, inGrid)),
-    ...personal.filter((e) => e.date >= gridStart && e.date <= gridEnd).map((e) => ({
-      type: 'personal', ev: e, sortKey: `${e.date} ${e.start || '00:00'}`,
-    }))].sort((a, b) => (a.sortKey || `${a.ev.date} 00:00`).localeCompare(b.sortKey || `${b.ev.date} 00:00`));
+    ...personal.filter((e) => e.date >= gridStart && e.date <= gridEnd).map(personalEntry)].sort(byTime);
   const byDay = new Map();
   for (const it of entries) {
     if (!byDay.has(it.ev.date)) byDay.set(it.ev.date, []);
@@ -373,7 +395,7 @@ function renderDayList(d) {
   const busy = list.some((i) => i.type !== 'note');
   let body;
   if (busy) body = (!covered(d) ? '<div class="day-empty">Театральное расписание на этот день ещё не загружено</div>' : '')
-    + list.map((it) => it.type === 'personal' ? personalCard(it.ev) : entryHTML(it)).join('');
+    + list.map(entryHTML).join('');
   else if (!covered(d)) body = '<div class="day-empty">Расписание на этот день ещё не загружено</div>';
   else body = list.map(noteHTML).join('') + '<div class="day-empty">Занятостей нет</div>';
   box.innerHTML = dayHeader(d, todayISO())
@@ -486,7 +508,8 @@ $('#personalDelete')?.addEventListener('click', () => {
   } catch (err) { personalError(err.message); }
 });
 window.addEventListener('storage', (e) => {
-  if (current && state.view === 'calendar' && (e.key === null || e.key === personalStorageKey(current.key))) renderFeed();
+  if (current && ['calendar', 'list', 'archive'].includes(state.view)
+    && (e.key === null || e.key === personalStorageKey(current.key))) renderFeed();
 });
 
 /* ---------- месячные итоги ---------- */
