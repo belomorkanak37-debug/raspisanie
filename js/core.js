@@ -485,17 +485,19 @@ export function monthlyTotals(weeks, name, month) {
     }
   }
   const bucket = (possible) => {
-    const showItems = [...shows.values()].filter((s) => s.possible === possible)
+    const items = [...shows.values()].filter((s) => s.possible === possible)
       .sort((a, b) => `${a.ev.date} ${a.time}`.localeCompare(`${b.ev.date} ${b.time}`));
+    const showItems = items.filter((s) => !s.away);
+    const awayItems = items.filter((s) => s.away);
     const introItems = [...intros.values()].filter((i) => i.possible === possible)
       .sort((a, b) => `${a.date} ${a.role}`.localeCompare(`${b.date} ${b.role}`));
     const showsCount = showItems.reduce((sum, s) => sum + s.weight, 0);
     return {
       shows: showsCount, performances: showItems.length, aboveNorm: Math.max(0, showsCount - MONTHLY_NORM),
       halfShows: showItems.filter((s) => s.weight === 0.5).length,
-      awayShows: showItems.filter((s) => s.away).length,
+      awayShows: awayItems.length,
       introDays: Object.fromEntries(Object.keys(INTRO_ROLE_LABELS).map((r) => [r, introItems.filter((i) => i.role === r).length])),
-      showItems, introItems,
+      showItems, awayItems, introItems,
     };
   };
   return { month, norm: MONTHLY_NORM, confirmed: bucket(false), possible: bucket(true), coverage: { days: covered.size, totalDays } };

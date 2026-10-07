@@ -417,12 +417,14 @@ function totalsStats(t, possible = false) {
 }
 
 function totalsDetails(t, label) {
-  if (!t.showItems.length && !t.introItems.length) return '';
+  if (!t.showItems.length && !t.awayItems.length && !t.introItems.length) return '';
+  const showsList = (items) => `<ul>${items.map((s) => `<li><div class="totals-date">${fmtDate(s.ev.date)} · ${esc(s.time || 'время не указано')}</div>
+    <div>${esc(prettyTitle(s.ev.title).heading)}${s.weight === 0.5 && !s.away ? ' <span class="chip">0,5</span>' : ''}</div>
+    ${s.ev.place ? `<div class="muted">${esc(s.ev.place)}</div>` : ''}</li>`).join('')}</ul>`;
   return `<details class="totals-details"><summary>${label}</summary>
     ${t.showItems.length ? `<h3>Спектакли (${t.performances} ${plural(t.performances, 'показ', 'показа', 'показов')})</h3>
-      <ul>${t.showItems.map((s) => `<li><div class="totals-date">${fmtDate(s.ev.date)} · ${esc(s.time || 'время не указано')}</div>
-        <div>${esc(prettyTitle(s.ev.title).heading)}${s.weight === 0.5 ? ' <span class="chip">0,5</span>' : ''}${s.away ? ' <span class="chip">выезд</span>' : ''}</div>
-        ${s.ev.place ? `<div class="muted">${esc(s.ev.place)}</div>` : ''}</li>`).join('')}</ul>` : ''}
+      ${showsList(t.showItems)}` : ''}
+    ${t.awayItems.length ? `<h3>Выездные спектакли (${t.awayShows} ${plural(t.awayShows, 'показ', 'показа', 'показов')})</h3>${showsList(t.awayItems)}` : ''}
     ${t.introItems.length ? `<h3>Дни вводов</h3><ul>${t.introItems.map((i) => `<li>
       <div class="totals-date">${fmtDate(i.date)} · ${INTRO_ROLE_LABELS[i.role]}</div>
       <div>${i.titles.map(esc).join(', ')}</div></li>`).join('')}</ul>` : ''}
@@ -449,15 +451,15 @@ async function renderTotals(feed) {
   const weeks = loaded.filter(Boolean);
   const totals = monthlyTotals(weeks, person.key, ym);
   const { confirmed, possible, coverage } = totals;
-  const hasPossible = possible.showItems.length || possible.introItems.length;
+  const hasPossible = possible.showItems.length || possible.awayItems.length || possible.introItems.length;
   const failed = weeks.length < metas.length;
   feed.innerHTML = header + `
     ${failed ? '<div class="banner">Часть расписаний не загрузилась. Показаны итоги только по доступным неделям. Обновите страницу при подключении к интернету.</div>' : ''}
     <p class="totals-coverage">${coverage.days ? `Расписание загружено на ${coverage.days} из ${coverage.totalDays} дней месяца.` : 'Расписание на этот месяц ещё не загружено.'}
       ${coverage.days ? ' Учтены все опубликованные даты, включая предстоящие.' : ''}</p>
     ${coverage.days ? `<section class="totals-panel" aria-label="Итоги по расписанию">${totalsStats(confirmed)}</section>
-      <p class="totals-rules">Норма — ${totals.norm}. «Собачка» и «Первый снег малыша» считаются по 0,5 за показ.
-        Каждый личный показ считается отдельно. Выездные входят в общее количество спектаклей. Вводы считаются по дням, а не по числу репетиций; роли берутся из состава.</p>
+      <p class="totals-rules">Норма спектаклей в театре — ${totals.norm}. «Собачка» и «Первый снег малыша» считаются по 0,5 за показ.
+        Каждый личный показ считается отдельно. Выезды учитываются отдельной графой и не влияют на норму. Вводы считаются по дням, а не по числу репетиций; роли берутся из состава.</p>
       ${totalsDetails(confirmed, 'Посмотреть учтённые даты')}
       ${hasPossible ? `<section class="totals-panel totals-possible"><h3>Под вопросом — отдельно</h3>
         <p class="totals-rules">Участия с «?» и альтернативным составом не включены в основные итоги.</p>
