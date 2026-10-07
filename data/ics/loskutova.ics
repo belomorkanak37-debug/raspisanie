@@ -18,7 +18,7 @@ END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
 UID:2026-09-29-1100-t2zk61@raspisanie
-DTSTAMP:20261006T114400Z
+DTSTAMP:20261007T073900Z
 DTSTART;TZID=Europe/Moscow:20260929T110000
 DTEND;TZID=Europe/Moscow:20260929T120000
 SUMMARY:Ввод «Маша и медведи»
@@ -30,7 +30,7 @@ DESCRIPTION:Ввод в спектакль «Маша и медведи»
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-09-29-1430-t2zk61@raspisanie
-DTSTAMP:20261006T114400Z
+DTSTAMP:20261007T073900Z
 DTSTART;TZID=Europe/Moscow:20260929T143000
 DTEND;TZID=Europe/Moscow:20260929T153000
 SUMMARY:Ввод «Маша и медведи»
@@ -42,7 +42,7 @@ DESCRIPTION:Ввод в спектакль «Маша и медведи»
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-09-29-1500-5dus6@raspisanie
-DTSTAMP:20261006T114400Z
+DTSTAMP:20261007T073900Z
 DTSTART;TZID=Europe/Moscow:20260929T150000
 DTEND;TZID=Europe/Moscow:20260929T160000
 SUMMARY:Репетиция «Бармалей»
@@ -54,7 +54,7 @@ DESCRIPTION:Репетиция спектакля «Бармалей»\n
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-01-1100-1fugs7c@raspisanie
-DTSTAMP:20261006T114400Z
+DTSTAMP:20261007T073900Z
 DTSTART;TZID=Europe/Moscow:20261001T110000
 DTEND;TZID=Europe/Moscow:20261001T120000
 SUMMARY:Спектакль «Собачка»
@@ -64,7 +64,7 @@ DESCRIPTION:Спектакль «Собачка»\nТрунина\, Ло
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-01-1300-aq7k9r@raspisanie
-DTSTAMP:20261006T114400Z
+DTSTAMP:20261007T073900Z
 DTSTART;TZID=Europe/Moscow:20261001T130000
 DTEND;TZID=Europe/Moscow:20261001T140000
 SUMMARY:Сдача «Курочка ряба»
@@ -76,7 +76,7 @@ DESCRIPTION:Сдача А.С. спектакля «Курочка ряб
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-02-1230-l5f9v@raspisanie
-DTSTAMP:20261006T114400Z
+DTSTAMP:20261007T073900Z
 DTSTART;TZID=Europe/Moscow:20261002T123000
 DTEND;TZID=Europe/Moscow:20261002T133000
 SUMMARY:Собрание всего коллектива
@@ -84,65 +84,8 @@ LOCATION:Старая сцена
 DESCRIPTION:СОБРАНИЕ ВСЕГО КОЛЛЕКТИВА
 END:VEVENT
 BEGIN:VEVENT
-UID:2026-10-10-1100-suj04h@raspisanie
-DTSTAMP:20261006T114400Z
-DTSTART;TZID=Europe/Moscow:20261010T110000
-DTEND;TZID=Europe/Moscow:20261010T120000
-SUMMARY:Спектакль «Теремок»
-LOCATION:Новая сцена
-DESCRIPTION:Спектакль «Теремок»\nГлазецкая\, 
- Безносиков\, Лоскутова\, Носов\nЗвук/све
- т: Звук\, свет
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-10-10-1300-suj04h@raspisanie
-DTSTAMP:20261006T114400Z
-DTSTART;TZID=Europe/Moscow:20261010T130000
-DTEND;TZID=Europe/Moscow:20261010T140000
-SUMMARY:Спектакль «Теремок»
-LOCATION:Новая сцена
-DESCRIPTION:Спектакль «Теремок»\nГлазецкая\, 
- Безносиков\, Лоскутова\, Носов\nЗвук/све
- т: Звук\, свет
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-10-10-1500-suj04h@raspisanie
-DTSTAMP:20261006T114400Z
-DTSTART;TZID=Europe/Moscow:20261010T150000
-DTEND;TZID=Europe/Moscow:20261010T160000
-SUMMARY:Спектакль «Теремок»
-LOCATION:Новая сцена
-DESCRIPTION:Спектакль «Теремок»\nГлазецкая\, 
- Безносиков\, Лоскутова\, Носов\nЗвук/све
- т: Звук\, свет
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-10-11-1100-1j396w1@raspisanie
-DTSTAMP:20261006T114400Z
-DTSTART;TZID=Europe/Moscow:20261011T110000
-DTEND;TZID=Europe/Moscow:20261011T120000
-SUMMARY:Спектакль «Бармалей»
-LOCATION:Старая сцена
-DESCRIPTION:Спектакль «Бармалей»\nГалустянц. 
- Носов\, Мартюшева\, Самойлов\, Лоскутова 
- (11:00 и 13:00)\, Трунина (15:00)\nЗвук/свет: Звук\,
-  свет
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-10-11-1300-1j396w1@raspisanie
-DTSTAMP:20261006T114400Z
-DTSTART;TZID=Europe/Moscow:20261011T130000
-DTEND;TZID=Europe/Moscow:20261011T140000
-SUMMARY:Спектакль «Бармалей»
-LOCATION:Старая сцена
-DESCRIPTION:Спектакль «Бармалей»\nГалустянц. 
- Носов\, Мартюшева\, Самойлов\, Лоскутова 
- (11:00 и 13:00)\, Трунина (15:00)\nЗвук/свет: Звук\,
-  свет
-END:VEVENT
-BEGIN:VEVENT
 UID:2026-10-13-1200-z1uvui@raspisanie
-DTSTAMP:20261006T114400Z
+DTSTAMP:20261007T073900Z
 DTSTART;TZID=Europe/Moscow:20261013T120000
 DTEND;TZID=Europe/Moscow:20261013T130000
 SUMMARY:Ввод «Конёк-горбунок»
@@ -154,7 +97,7 @@ DESCRIPTION:Ввод в спектакль «Конёк-горбунок
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-15-1500-18re0zl@raspisanie
-DTSTAMP:20261006T114400Z
+DTSTAMP:20261007T073900Z
 DTSTART;TZID=Europe/Moscow:20261015T150000
 DTEND;TZID=Europe/Moscow:20261015T160000
 SUMMARY:Репетиция «Сказка о глупом мышонке
@@ -167,7 +110,7 @@ DESCRIPTION:Репетиция спектакля «Сказка о гл
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-17-1100-ij5ejw@raspisanie
-DTSTAMP:20261006T114400Z
+DTSTAMP:20261007T073900Z
 DTSTART;TZID=Europe/Moscow:20261017T110000
 DTEND;TZID=Europe/Moscow:20261017T120000
 SUMMARY:Спектакль «Краденое солнце»
@@ -178,7 +121,7 @@ DESCRIPTION:Спектакль «Краденое солнце»\nЛос
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-17-1300-ij5ejw@raspisanie
-DTSTAMP:20261006T114400Z
+DTSTAMP:20261007T073900Z
 DTSTART;TZID=Europe/Moscow:20261017T130000
 DTEND;TZID=Europe/Moscow:20261017T140000
 SUMMARY:Спектакль «Краденое солнце»
@@ -189,7 +132,7 @@ DESCRIPTION:Спектакль «Краденое солнце»\nЛос
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-17-1500-ij5ejw@raspisanie
-DTSTAMP:20261006T114400Z
+DTSTAMP:20261007T073900Z
 DTSTART;TZID=Europe/Moscow:20261017T150000
 DTEND;TZID=Europe/Moscow:20261017T160000
 SUMMARY:Спектакль «Краденое солнце»
@@ -200,7 +143,7 @@ DESCRIPTION:Спектакль «Краденое солнце»\nЛос
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-21-1200-z1uvui@raspisanie
-DTSTAMP:20261006T114400Z
+DTSTAMP:20261007T073900Z
 DTSTART;TZID=Europe/Moscow:20261021T120000
 DTEND;TZID=Europe/Moscow:20261021T130000
 SUMMARY:Ввод «Конёк-горбунок»
@@ -211,7 +154,7 @@ DESCRIPTION:Ввод в спектакль «Конёк-горбунок
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-22-1130-1ri7jfm@raspisanie
-DTSTAMP:20261006T114400Z
+DTSTAMP:20261007T073900Z
 DTSTART;TZID=Europe/Moscow:20261022T113000
 DTEND;TZID=Europe/Moscow:20261022T123000
 SUMMARY:Спектакль «Конёк-горбунок»
@@ -222,7 +165,7 @@ DESCRIPTION:Спектакль «Конёк-горбунок»\nБезн
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-24-1100-1xn9ady@raspisanie
-DTSTAMP:20261006T114400Z
+DTSTAMP:20261007T073900Z
 DTSTART;TZID=Europe/Moscow:20261024T110000
 DTEND;TZID=Europe/Moscow:20261024T120000
 SUMMARY:Спектакль «Сказка о глупом мышонке
@@ -235,7 +178,7 @@ DESCRIPTION:Спектакль «Сказка о глупом мышон
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-24-1300-1xn9ady@raspisanie
-DTSTAMP:20261006T114400Z
+DTSTAMP:20261007T073900Z
 DTSTART;TZID=Europe/Moscow:20261024T130000
 DTEND;TZID=Europe/Moscow:20261024T140000
 SUMMARY:Спектакль «Сказка о глупом мышонке
@@ -248,7 +191,7 @@ DESCRIPTION:Спектакль «Сказка о глупом мышон
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-24-1500-1xn9ady@raspisanie
-DTSTAMP:20261006T114400Z
+DTSTAMP:20261007T073900Z
 DTSTART;TZID=Europe/Moscow:20261024T150000
 DTEND;TZID=Europe/Moscow:20261024T160000
 SUMMARY:Спектакль «Сказка о глупом мышонке
@@ -261,7 +204,7 @@ DESCRIPTION:Спектакль «Сказка о глупом мышон
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-25-1100-1ty7xlr@raspisanie
-DTSTAMP:20261006T114400Z
+DTSTAMP:20261007T073900Z
 DTSTART;TZID=Europe/Moscow:20261025T110000
 DTEND;TZID=Europe/Moscow:20261025T120000
 SUMMARY:Спектакль «Звёздочка»
@@ -272,7 +215,7 @@ DESCRIPTION:Спектакль «Звёздочка»\nБеканова\,
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-25-1300-1ty7xlr@raspisanie
-DTSTAMP:20261006T114400Z
+DTSTAMP:20261007T073900Z
 DTSTART;TZID=Europe/Moscow:20261025T130000
 DTEND;TZID=Europe/Moscow:20261025T140000
 SUMMARY:Спектакль «Звёздочка»
@@ -283,7 +226,7 @@ DESCRIPTION:Спектакль «Звёздочка»\nБеканова\,
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-25-1500-1ty7xlr@raspisanie
-DTSTAMP:20261006T114400Z
+DTSTAMP:20261007T073900Z
 DTSTART;TZID=Europe/Moscow:20261025T150000
 DTEND;TZID=Europe/Moscow:20261025T160000
 SUMMARY:Спектакль «Звёздочка»
@@ -291,5 +234,62 @@ LOCATION:Новая сцена
 DESCRIPTION:Спектакль «Звёздочка»\nБеканова\,
   Лоскутова\, Чирочкина. Заяшников\, Носо
  в\nЗвук/свет: Звук\, свет
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-10-1100-suj04h@raspisanie
+DTSTAMP:20261007T073900Z
+DTSTART;TZID=Europe/Moscow:20261010T110000
+DTEND;TZID=Europe/Moscow:20261010T120000
+SUMMARY:Спектакль «Теремок»
+LOCATION:Новая сцена
+DESCRIPTION:Спектакль «Теремок»\nГлазецкая\, 
+ Безносиков\, Лоскутова\, Носов\nЗвук/све
+ т: Звук\, свет
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-10-1300-suj04h@raspisanie
+DTSTAMP:20261007T073900Z
+DTSTART;TZID=Europe/Moscow:20261010T130000
+DTEND;TZID=Europe/Moscow:20261010T140000
+SUMMARY:Спектакль «Теремок»
+LOCATION:Новая сцена
+DESCRIPTION:Спектакль «Теремок»\nГлазецкая\, 
+ Безносиков\, Лоскутова\, Носов\nЗвук/све
+ т: Звук\, свет
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-10-1500-suj04h@raspisanie
+DTSTAMP:20261007T073900Z
+DTSTART;TZID=Europe/Moscow:20261010T150000
+DTEND;TZID=Europe/Moscow:20261010T160000
+SUMMARY:Спектакль «Теремок»
+LOCATION:Новая сцена
+DESCRIPTION:Спектакль «Теремок»\nГлазецкая\, 
+ Безносиков\, Лоскутова\, Носов\nЗвук/све
+ т: Звук\, свет
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-11-1100-1j396w1@raspisanie
+DTSTAMP:20261007T073900Z
+DTSTART;TZID=Europe/Moscow:20261011T110000
+DTEND;TZID=Europe/Moscow:20261011T120000
+SUMMARY:Спектакль «Бармалей»
+LOCATION:Старая сцена
+DESCRIPTION:Спектакль «Бармалей»\nГалустянц. 
+ Носов\, Мартюшева\, Самойлов\, Лоскутова 
+ (11:00 и 13:00)\, Трунина (15:00)\nЗвук/свет: Звук\,
+  свет
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-11-1300-1j396w1@raspisanie
+DTSTAMP:20261007T073900Z
+DTSTART;TZID=Europe/Moscow:20261011T130000
+DTEND;TZID=Europe/Moscow:20261011T140000
+SUMMARY:Спектакль «Бармалей»
+LOCATION:Старая сцена
+DESCRIPTION:Спектакль «Бармалей»\nГалустянц. 
+ Носов\, Мартюшева\, Самойлов\, Лоскутова 
+ (11:00 и 13:00)\, Трунина (15:00)\nЗвук/свет: Звук\,
+  свет
 END:VEVENT
 END:VCALENDAR
