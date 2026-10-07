@@ -4,7 +4,7 @@
  "end": "2026-10-11",
  "title": "5–11 октября",
  "header": "ПЛАН РАБОТЫ На ОКТЯБРЬ 2026 года",
- "source": "Расписание_с_05_октября_по_11_октября_1.pdf",
+ "source": "Расписание с 05 октября по 11 октября.pdf",
  "days": [
   "2026-10-05",
   "2026-10-06",
@@ -1056,7 +1056,7 @@
    "place": "Новая сцена",
    "tech": "Звук, свет",
    "lines": [
-    "Глазецкая, Безносиков, Лоскутова, Носов"
+    "Глазецкая, Безносиков, Трунина, Носов"
    ],
    "people": [
     {
@@ -1078,7 +1078,7 @@
      "note": null
     },
     {
-     "name": "Лоскутова",
+     "name": "Трунина",
      "times": null,
      "from": null,
      "role": null,
@@ -1114,7 +1114,7 @@
    "place": "Старая сцена",
    "tech": "Звук, свет",
    "lines": [
-    "Галустянц. Носов, Мартюшева, Самойлов, Лоскутова (11:00 и 13:00), Трунина (15:00)"
+    "Галустянц. Носов, Мартюшева, Самойлов, Трунина"
    ],
    "people": [
     {
@@ -1154,22 +1154,8 @@
      "note": null
     },
     {
-     "name": "Лоскутова",
-     "times": [
-      "11:00",
-      "13:00"
-     ],
-     "from": null,
-     "role": null,
-     "uncertain": false,
-     "alts": [],
-     "note": null
-    },
-    {
      "name": "Трунина",
-     "times": [
-      "15:00"
-     ],
+     "times": null,
      "from": null,
      "role": null,
      "uncertain": false,
@@ -1292,12 +1278,12 @@
    "scope": "people"
   }
  ],
- "version": 2,
- "updatedAt": "2026-10-07T07:39:26.231Z",
+ "version": 3,
+ "updatedAt": "2026-10-07T12:14:32.708Z",
  "pdf": "data/pdf/2026-10-05.pdf",
  "previous": {
-  "version": 1,
-  "updatedAt": "2026-10-01T15:46:53.810Z",
+  "version": 2,
+  "updatedAt": "2026-10-07T07:39:26.231Z",
   "events": [
    {
     "id": "e1",
@@ -1928,6 +1914,54 @@
      }
     ],
     "scope": "people"
+   },
+   {
+    "id": "nmuxsr021jog2c3",
+    "date": "2026-10-08",
+    "timeText": "17:15",
+    "times": [
+     "17:15"
+    ],
+    "range": null,
+    "timeUncertain": false,
+    "title": "Худ совет",
+    "kind": "other",
+    "place": "Новая сцена",
+    "tech": "",
+    "lines": [
+     "Безносиков, Лоскутов, Глазецкая"
+    ],
+    "people": [
+     {
+      "name": "Безносиков",
+      "times": null,
+      "from": null,
+      "role": null,
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     },
+     {
+      "name": "Лоскутов",
+      "times": null,
+      "from": null,
+      "role": null,
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     },
+     {
+      "name": "Глазецкая",
+      "times": null,
+      "from": null,
+      "role": null,
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     }
+    ],
+    "scope": "people",
+    "manual": true
    },
    {
     "id": "e11",
