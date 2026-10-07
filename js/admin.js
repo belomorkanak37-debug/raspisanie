@@ -1,5 +1,4 @@
-import { parseSchedulePdf } from './parser.js';
-import { buildEvent, eventSortKey, fmtDate, fmtDateTime, normName, peopleOfWeek, weekdayName } from './core.js';
+import { addDays, buildEvent, eventSortKey, fmtDate, fmtDateTime, fromISO, normName, peopleOfWeek, todayISO, weekdayName, weekTitle } from './core.js';
 import { GitHub, INDEX_PATH, buildCalendars, buildIndex, finalizeWeek, indexEntry, pdfPath, weekPath } from './publish.js';
 
 const $ = (sel, root = document) => root.querySelector(sel);
@@ -132,28 +131,105 @@ async function loadPublished() {
     <div class="pub-row">
       <div class="grow"><div>${esc(w.title)}</div>
         <div class="muted">версия ${w.version || 1} · ${esc(fmtDateTime(w.updatedAt))} · ${(w.people || []).length} чел.</div></div>
-      ${w.pdf ? `<a href="${esc(w.pdf)}" target="_blank" rel="noopener">PDF</a>` : ''}
-      <button class="del" data-del="${esc(w.id)}">Удалить</button>
+      <div class="pub-actions">
+        ${w.pdf ? `<a href="${esc(w.pdf)}" target="_blank" rel="noopener">PDF</a>` : ''}
+        <button data-edit-week="${esc(w.id)}">Изменить</button>
+        <button class="del" data-del="${esc(w.id)}">Удалить</button>
+      </div>
     </div>`).join('');
 }
 
 $('#published').addEventListener('click', async (e) => {
+  if (busy) return;
+  const editId = e.target.closest('[data-edit-week]')?.dataset.editWeek;
+  if (editId) return openManualWeek(null, editId);
   const id = e.target.closest('[data-del]')?.dataset.del;
   if (!id) return;
   const meta = index.weeks.find((w) => w.id === id);
   if (!backend) return toast('Сначала подключите GitHub');
   if (!confirm(`Удалить неделю «${meta.title}» из приложения?`)) return;
+  setBusy(true);
   try {
     await commitWeeks({ remove: [id], message: `Удалена неделя ${meta.title}` });
     toast('Неделя удалена');
     loadPublished();
   } catch (ex) {
     toast(`Ошибка: ${ex.message}`, 6000);
+  } finally {
+    setBusy(false);
   }
 });
 
+/* ---------- черновик и отдельные события ---------- */
+let draft = null; // { week, pdf, fileName, existing, overlaps, replaced, mode }
+let busy = false;
+
+function setBusy(value) {
+  busy = value;
+  for (const id of ['file', 'manualAddBtn', 'publishBtn', 'discardBtn']) $(`#${id}`).disabled = value;
+}
+
+function daysBetween(start, end) {
+  const days = [];
+  for (let d = start; d <= end; d = addDays(d, 1)) days.push(d);
+  return days;
+}
+
+function revealPreview() {
+  renderPreview();
+  $('#preview').scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+
+$('#manualForm').date.value = todayISO();
+$('#manualForm').addEventListener('submit', (e) => {
+  e.preventDefault();
+  openManualWeek(e.currentTarget.date.value);
+});
+
+async function openManualWeek(date, id = null) {
+  if (busy) return;
+  if (draft && (id ? draft.week.id === id : date >= draft.week.start && date <= draft.week.end)) {
+    revealPreview();
+    if (date) openEditor(null, date);
+    return;
+  }
+  if (draft && !confirm('Есть неопубликованные изменения. Отменить их и открыть другую неделю?')) return;
+  setBusy(true);
+  try {
+    const idx = (await readData(INDEX_PATH)) || { weeks: [] };
+    const meta = idx.weeks.find((w) => id ? w.id === id : w.start <= date && w.end >= date);
+    if (id && !meta) throw new Error('Эта неделя больше не опубликована. Обновите страницу.');
+    const existing = meta ? await readData(weekPath(meta.id)) : null;
+    if (meta && !existing) throw new Error('Не удалось загрузить неделю. Попробуйте ещё раз.');
+    let week;
+    if (existing) {
+      week = JSON.parse(JSON.stringify(existing));
+      week.days = daysBetween(week.start, week.end);
+      week.warnings = [];
+    } else {
+      let start = addDays(date, -((fromISO(date).getDay() + 6) % 7));
+      let end = addDays(start, 6);
+      // Не перекрываем соседнее расписание, если PDF охватывает неполную неделю.
+      for (const w of idx.weeks) {
+        if (w.end < date && w.end >= start) start = addDays(w.end, 1);
+        if (w.start > date && w.start <= end) end = addDays(w.start, -1);
+      }
+      week = { id: start, start, end, title: weekTitle(start, end), header: '', source: '',
+        days: daysBetween(start, end), events: [], warnings: [], pdf: null };
+    }
+    index = idx;
+    draft = { week, pdf: null, fileName: 'Без загрузки PDF', existing, overlaps: [],
+      replaced: existing ? [existing] : [], mode: 'manual' };
+    revealPreview();
+    if (date) openEditor(null, date);
+  } catch (ex) {
+    toast(`Не удалось открыть неделю: ${ex.message}`, 6000);
+  } finally {
+    setBusy(false);
+  }
+}
+
 /* ---------- загрузка PDF ---------- */
-let draft = null; // { week, pdf, fileName, existing, overlaps }
 
 const drop = $('#drop');
 $('#file').addEventListener('change', (e) => { if (e.target.files[0]) handleFile(e.target.files[0]); e.target.value = ''; });
@@ -167,25 +243,50 @@ drop.addEventListener('drop', (e) => {
 });
 
 async function handleFile(file) {
+  if (busy) return;
+  if (draft && !confirm('Есть неопубликованные изменения. Отменить их и загрузить новый PDF?')) return;
+  setBusy(true);
   const err = $('#parseError');
   err.hidden = true;
   $('.drop-title').textContent = 'Читаю PDF…';
   try {
     const pdf = await file.arrayBuffer();
+    const { parseSchedulePdf } = await import('./parser.js');
     const week = await parseSchedulePdf(pdf, file.name);
-    if (!index) await loadPublished();
+    index = (await readData(INDEX_PATH)) || { weeks: [] };
     const overlaps = (index?.weeks || []).filter((w) => w.id !== week.id && w.start <= week.end && w.end >= week.start);
-    let existing = await readData(weekPath(week.id));
-    if (!existing && overlaps.length) existing = await readData(weekPath(overlaps[0].id));
-    draft = { week, pdf, fileName: file.name, existing, overlaps };
-    renderPreview();
-    $('#preview').scrollIntoView({ behavior: 'smooth', block: 'start' });
+    const replaced = (await Promise.all([week.id, ...overlaps.map((w) => w.id)].map((id) => readData(weekPath(id))))).filter(Boolean);
+    if ([...overlaps, ...index.weeks.filter((w) => w.id === week.id)].some((w) => !replaced.some((r) => r.id === w.id))) {
+      throw new Error('Не удалось загрузить опубликованную неделю. Попробуйте ещё раз.');
+    }
+    const existing = replaced.find((w) => w.id === week.id) || replaced[0] || null;
+    // Добавленные вручную события сохраняем и при исправлении PDF.
+    const manualEvents = replaced.flatMap((w) => w.events.filter((e) => e.manual));
+    const signatures = new Map(week.events.map((ev, i) => [evSig(ev), i]));
+    for (const ev of manualEvents) {
+      if (signatures.has(evSig(ev))) {
+        const i = signatures.get(evSig(ev));
+        week.events[i] = { ...week.events[i], id: ev.id, manual: true };
+      } else {
+        signatures.set(evSig(ev), week.events.length);
+        week.events.push(ev);
+      }
+    }
+    if (manualEvents.length) {
+      week.days = [...new Set([...week.days, ...manualEvents.map((e) => e.date).filter(Boolean)])].sort();
+      week.start = week.days[0];
+      week.end = week.days[week.days.length - 1];
+      week.title = weekTitle(week.start, week.end);
+    }
+    draft = { week, pdf, fileName: file.name, existing, overlaps, replaced, mode: 'pdf' };
+    revealPreview();
   } catch (ex) {
     console.error(ex);
     err.textContent = `Не получилось разобрать файл: ${ex.message}`;
     err.hidden = false;
   } finally {
     $('.drop-title').textContent = 'Выберите PDF';
+    setBusy(false);
   }
 }
 
@@ -218,7 +319,7 @@ function eventRow(ev) {
   return `<div class="a-ev ${ev.scope === 'note' ? 'note' : ''} ${flag ? 'flag' : ''}" data-ev="${esc(ev.id)}" tabindex="0">
     <div class="t">${esc(time)}</div>
     <div>
-      ${ev.scope === 'all' ? '<div class="scope-tag">для всех</div>' : ''}
+      ${ev.scope === 'all' || ev.manual ? `<div class="scope-tag">${[ev.scope === 'all' && 'для всех', ev.manual && 'вручную'].filter(Boolean).join(' · ')}</div>` : ''}
       <div class="ttl">${esc(ev.title || 'Без названия')}</div>
       ${meta ? `<div class="pl">${esc(meta)}</div>` : ''}
       ${ev.people.length ? `<div class="ppl">${ev.people.map(personChip).join('')}</div>` : ''}
@@ -249,7 +350,7 @@ function renderPreview() {
       : '<p class="diff muted">Отличий от опубликованной версии нет.</p>';
   }
   const days = [...new Set([...week.days, ...week.events.map((e) => e.date).filter(Boolean)])].sort();
-  const warnings = [...week.warnings];
+  const warnings = [...(week.warnings || [])];
   overlaps.forEach((o) => warnings.push(`Даты пересекаются с опубликованной неделей «${o.title}» — она будет заменена этой.`));
   if (fresh.length) warnings.push(`Новые фамилии (проверьте, что это не ошибка распознавания): ${fresh.join(', ')}.`);
 
@@ -265,10 +366,11 @@ function renderPreview() {
       ${week.events.filter((e) => e.date === d).map(eventRow).join('')}`).join('')}
     ${week.events.some((e) => !e.date) ? `<div class="a-day"><h3>Без даты</h3></div>${week.events.filter((e) => !e.date).map(eventRow).join('')}` : ''}`;
   $('#publishBar').hidden = false;
-  $('#publishBtn').disabled = false;
+  $('#publishBtn').disabled = busy;
 }
 
 $('#preview').addEventListener('click', (e) => {
+  if (busy) return;
   const add = e.target.closest('[data-add]');
   if (add) return openEditor(null, add.dataset.add);
   const row = e.target.closest('[data-ev]');
@@ -278,7 +380,7 @@ $('#preview').addEventListener('keydown', (e) => {
   if (e.key === 'Enter' && e.target.matches('[data-ev]')) e.target.click();
 });
 $('#discardBtn').addEventListener('click', () => {
-  if (!confirm('Отменить загрузку этого PDF?')) return;
+  if (busy || !confirm('Отменить неопубликованные изменения?')) return;
   draft = null;
   renderPreview();
 });
@@ -290,13 +392,17 @@ let editing = null;
 
 function openEditor(ev, date) {
   editing = ev ? ev.id : null;
-  const days = [...new Set([...draft.week.days, ...draft.week.events.map((e) => e.date).filter(Boolean)])].sort();
+  const days = [...new Set([...draft.week.days, ...draft.week.events.map((e) => e.date).filter(Boolean), ...(date ? [date] : [])])].sort();
   ef.date.innerHTML = days.map((d) => `<option value="${d}">${esc(fmtDate(d))}, ${esc(weekdayName(d))}</option>`).join('');
   ef.date.value = ev?.date || date || days[0];
   ef.timeText.value = ev?.timeText || '';
   ef.elements.title.value = ev?.title || '';
+  ef.elements.title.required = draft.mode === 'manual' || !ev || !!ev.manual;
+  ef.elements.title.setCustomValidity('');
   ef.lines.value = (ev?.lines || []).join('\n');
+  ef.lines.setCustomValidity('');
   ef.place.value = ev?.place || '';
+  ef.timeText.setCustomValidity('');
   ef.tech.value = ev?.tech || '';
   ef.scope.value = ev?.scope || 'people';
   $('#editTitle').textContent = ev ? 'Исправить событие' : 'Новое событие';
@@ -306,8 +412,8 @@ function openEditor(ev, date) {
 }
 
 function formEvent() {
-  return buildEvent({
-    id: editing || `n${Date.now().toString(36)}`,
+  const ev = buildEvent({
+    id: editing || `n${Date.now().toString(36)}${Math.random().toString(36).slice(2, 8)}`,
     date: ef.date.value,
     timeText: ef.timeText.value,
     title: ef.elements.title.value,
@@ -316,15 +422,31 @@ function formEvent() {
     tech: ef.tech.value,
     scope: ef.scope.value,
   });
+  if (!editing || draft.week.events.find((e) => e.id === editing)?.manual) ev.manual = true;
+  return ev;
 }
 
 function showParsed() {
+  ef.lines.setCustomValidity('');
   const ev = formEvent();
   $('#editParsed').innerHTML = ev.people.length
     ? `<div class="ppl">${ev.people.map(personChip).join('')}</div>`
     : '<span class="muted" style="font-size:13px">Фамилии не найдены</span>';
 }
 ef.lines.addEventListener('input', showParsed);
+ef.elements.title.addEventListener('input', () => ef.elements.title.setCustomValidity(''));
+ef.timeText.addEventListener('input', () => ef.timeText.setCustomValidity(''));
+ef.scope.addEventListener('change', () => ef.lines.setCustomValidity(''));
+ef.addEventListener('submit', (e) => {
+  if (e.submitter?.value !== 'save') return;
+  const ev = formEvent();
+  if (draft.mode !== 'manual' && !ev.manual) return;
+  if (!ev.title) ef.elements.title.setCustomValidity('Укажите название события.');
+  if (ev.scope === 'people' && !ev.people.length) ef.lines.setCustomValidity('Укажите фамилии с заглавной буквы или выберите «Всем».');
+  const invalidTime = [...ev.timeText.matchAll(/(\d{1,2})[:.](\d{2})/g)].some((m) => Number(m[1]) > 23 || Number(m[2]) > 59);
+  if (invalidTime || (ev.timeText && !ev.times.length)) ef.timeText.setCustomValidity('Укажите время, например 12:00, 11:00 13:00 или 12:00 - 14:30.');
+  if (!ef.reportValidity()) e.preventDefault();
+});
 
 dlg.addEventListener('close', () => {
   const action = dlg.returnValue;
@@ -339,7 +461,13 @@ dlg.addEventListener('close', () => {
   } else if (action === 'delete' && editing) {
     if (!confirm('Удалить это событие?')) return;
     draft.week.events = events.filter((x) => x.id !== editing);
-  } else return;
+  } else {
+    if (draft.mode === 'manual' && !draft.existing && !events.length) {
+      draft = null;
+      renderPreview();
+    }
+    return;
+  }
   renderPreview();
 });
 
@@ -366,18 +494,30 @@ async function commitWeeks({ add = null, pdf = null, remove = [], message }) {
 }
 
 $('#publishBtn').addEventListener('click', async () => {
-  if (!draft) return;
+  if (!draft || busy) return;
   if (!backend) {
     toast('Сначала подключите GitHub (раздел «Публикация» вверху)', 5000);
     $('#ghPanel').scrollIntoView({ behavior: 'smooth' });
     return;
   }
   const btn = $('#publishBtn');
-  btn.disabled = true;
+  setBusy(true);
   btn.textContent = 'Публикую…';
   try {
-    const existing = (await backend.readJSON(weekPath(draft.week.id)))
-      || (draft.overlaps.length ? await backend.readJSON(weekPath(draft.overlaps[0].id)) : null);
+    const idx = (await backend.readJSON(INDEX_PATH)) || { weeks: [] };
+    const ids = [...new Set([draft.week.id, ...draft.replaced.map((w) => w.id)])];
+    const current = await Promise.all(ids.map((id) => backend.readJSON(weekPath(id))));
+    for (let i = 0; i < ids.length; i++) {
+      const before = draft.replaced.find((w) => w.id === ids[i]);
+      const now = current[i];
+      if (!!before !== !!now || (before && (before.version !== now.version || before.updatedAt !== now.updatedAt))) {
+        throw new Error('Расписание уже обновлено. Отмените черновик и откройте неделю заново, чтобы сохранить все изменения.');
+      }
+    }
+    if (idx.weeks.some((w) => w.start <= draft.week.end && w.end >= draft.week.start && !ids.includes(w.id))) {
+      throw new Error('На эти даты уже опубликовано другое расписание. Отмените черновик и откройте неделю заново.');
+    }
+    const existing = current.find((w) => w?.id === draft.week.id) || current.find(Boolean) || null;
     const week = finalizeWeek(draft.week, existing);
     await commitWeeks({
       add: week,
@@ -394,7 +534,7 @@ $('#publishBtn').addEventListener('click', async () => {
     console.error(ex);
     toast(`Не удалось опубликовать: ${ex.message}`, 8000);
   } finally {
-    btn.disabled = false;
+    setBusy(false);
     btn.textContent = 'Опубликовать';
   }
 });

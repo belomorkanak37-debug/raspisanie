@@ -59,6 +59,15 @@
       <p class="error" id="parseError" hidden></p>
     </section>
 
+    <section class="panel">
+      <h2>Отдельное событие</h2>
+      <p class="muted manual-hint">Выберите день и добавьте событие без загрузки PDF. Оно появится у участников после публикации.</p>
+      <form id="manualForm" class="form manual-form">
+        <label>Дата<input type="date" name="date" required></label>
+        <button class="btn btn-primary" type="submit" id="manualAddBtn">Добавить событие</button>
+      </form>
+    </section>
+
     <section class="panel" id="preview" hidden></section>
 
     <section class="panel">
@@ -83,10 +92,10 @@
         <label>Время<input name="timeText" placeholder="11:00 13:00 или 12:00 - 14:30"></label>
       </div>
       <label>Название<input name="title" placeholder="Спектакль «…»"></label>
-      <label>Состав <span class="muted">— по строкам, как в PDF</span><textarea name="lines" rows="4"></textarea></label>
+      <label>Фамилии и состав <span class="muted">— с заглавной буквы, через запятую или по строкам</span><textarea name="lines" rows="4" placeholder="Андреев, Чепиль, Сигитова"></textarea></label>
       <div class="parsed" id="editParsed"></div>
       <div class="grid2">
-        <label>Сцена<input name="place"></label>
+        <label>Место / сцена<input name="place"></label>
         <label>Звук, свет<input name="tech"></label>
       </div>
       <label>Кому показывать
@@ -97,7 +106,7 @@
         </select>
       </label>
       <div class="form-row">
-        <button class="btn btn-ghost danger" value="delete" id="editDelete">Удалить</button>
+        <button class="btn btn-ghost danger" value="delete" id="editDelete" formnovalidate>Удалить</button>
         <button class="btn btn-ghost" value="cancel" formnovalidate>Отмена</button>
         <button class="btn btn-primary" value="save">Сохранить</button>
       </div>

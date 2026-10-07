@@ -13,7 +13,7 @@ export function finalizeWeek(draft, existing) {
     ...week,
     version: existing ? (existing.version || 1) + 1 : 1,
     updatedAt: new Date().toISOString(),
-    pdf: pdfPath(week.id),
+    pdf: week.pdf === undefined ? pdfPath(week.id) : week.pdf,
     previous: existing ? { version: existing.version || 1, updatedAt: existing.updatedAt, events: existing.events } : null,
   };
 }

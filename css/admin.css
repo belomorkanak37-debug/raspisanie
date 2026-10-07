@@ -63,6 +63,11 @@
 .drop-title { font-weight: 650; font-size: 16px; }
 .drop-sub { font-size: 13.5px; color: var(--muted); }
 
+.manual-hint { margin: 0; font-size: 14px; line-height: 1.5; }
+.manual-form { display: flex; align-items: end; gap: 12px; }
+.manual-form label { flex: 1; min-width: 0; }
+.manual-form .btn { width: auto; }
+
 .summary { display: flex; flex-wrap: wrap; gap: 8px; margin: 4px 0 12px; }
 .warnings { background: var(--warn-soft); color: var(--text); border-radius: 12px; padding: 10px 14px; font-size: 14px; margin: 8px 0; }
 .warnings ul { margin: 6px 0 0; padding-left: 18px; }
@@ -107,6 +112,7 @@
 }
 .pub-row:first-child { border-top: 0; }
 .pub-row .grow { flex: 1; }
+.pub-actions { display: flex; flex-wrap: wrap; justify-content: end; gap: 6px; }
 .pub-row .muted { font-size: 13px; }
 .pub-row a, .pub-row button { font-size: 14px; font-weight: 600; text-decoration: none; background: none; border: 0; cursor: pointer; color: var(--accent); padding: 4px; }
 .pub-row button.del { color: var(--k-show); }
@@ -144,5 +150,9 @@
 
 @media (max-width: 480px) {
   .grid2 { grid-template-columns: 1fr; }
+  .manual-form { flex-direction: column; align-items: stretch; gap: 0; }
+  .manual-form .btn { width: 100%; }
+  .pub-row .grow { min-width: 0; }
+  .pub-actions { max-width: 130px; flex-shrink: 0; }
   .a-ev { grid-template-columns: 62px 1fr; }
 }
