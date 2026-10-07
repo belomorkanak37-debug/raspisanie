@@ -18,7 +18,7 @@ END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
 UID:2026-09-29-1100-t2zk61@raspisanie
-DTSTAMP:20261007T121400Z
+DTSTAMP:20261007T121600Z
 DTSTART;TZID=Europe/Moscow:20260929T110000
 DTEND;TZID=Europe/Moscow:20260929T120000
 SUMMARY:Ввод «Маша и медведи»
@@ -30,7 +30,7 @@ DESCRIPTION:Ввод в спектакль «Маша и медведи»
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-09-29-1430-t2zk61@raspisanie
-DTSTAMP:20261007T121400Z
+DTSTAMP:20261007T121600Z
 DTSTART;TZID=Europe/Moscow:20260929T143000
 DTEND;TZID=Europe/Moscow:20260929T153000
 SUMMARY:Ввод «Маша и медведи»
@@ -42,7 +42,7 @@ DESCRIPTION:Ввод в спектакль «Маша и медведи»
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-09-30-1200-kffw3z@raspisanie
-DTSTAMP:20261007T121400Z
+DTSTAMP:20261007T121600Z
 DTSTART;TZID=Europe/Moscow:20260930T120000
 DTEND;TZID=Europe/Moscow:20260930T143000
 SUMMARY:Репетиция «Чудо-репка»
@@ -54,7 +54,7 @@ DESCRIPTION:Репетиция спектакля «Чудо-репка»
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-09-30-1500-t2zk61@raspisanie
-DTSTAMP:20261007T121400Z
+DTSTAMP:20261007T121600Z
 DTSTART;TZID=Europe/Moscow:20260930T150000
 DTEND;TZID=Europe/Moscow:20260930T160000
 SUMMARY:Ввод «Маша и медведи»
@@ -66,7 +66,7 @@ DESCRIPTION:Ввод в спектакль «Маша и медведи»
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-02-1100-9rwos5@raspisanie
-DTSTAMP:20261007T121400Z
+DTSTAMP:20261007T121600Z
 DTSTART;TZID=Europe/Moscow:20261002T110000
 DTEND;TZID=Europe/Moscow:20261002T120000
 SUMMARY:Спектакль «Кто оставил здесь следы?
@@ -79,7 +79,7 @@ DESCRIPTION:Спектакль «Кто оставил здесь сле
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-02-1230-l5f9v@raspisanie
-DTSTAMP:20261007T121400Z
+DTSTAMP:20261007T121600Z
 DTSTART;TZID=Europe/Moscow:20261002T123000
 DTEND;TZID=Europe/Moscow:20261002T133000
 SUMMARY:Собрание всего коллектива
@@ -88,7 +88,7 @@ DESCRIPTION:СОБРАНИЕ ВСЕГО КОЛЛЕКТИВА
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-03-1100-1wvchkp@raspisanie
-DTSTAMP:20261007T121400Z
+DTSTAMP:20261007T121600Z
 DTSTART;TZID=Europe/Moscow:20261003T110000
 DTEND;TZID=Europe/Moscow:20261003T120000
 SUMMARY:Спектакль «Три поросёнка»
@@ -99,7 +99,7 @@ DESCRIPTION:Спектакль «Три поросёнка»\nНосов
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-03-1300-1wvchkp@raspisanie
-DTSTAMP:20261007T121400Z
+DTSTAMP:20261007T121600Z
 DTSTART;TZID=Europe/Moscow:20261003T130000
 DTEND;TZID=Europe/Moscow:20261003T140000
 SUMMARY:Спектакль «Три поросёнка»
@@ -110,7 +110,7 @@ DESCRIPTION:Спектакль «Три поросёнка»\nНосов
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-03-1500-1wvchkp@raspisanie
-DTSTAMP:20261007T121400Z
+DTSTAMP:20261007T121600Z
 DTSTART;TZID=Europe/Moscow:20261003T150000
 DTEND;TZID=Europe/Moscow:20261003T160000
 SUMMARY:Спектакль «Три поросёнка»
@@ -121,7 +121,7 @@ DESCRIPTION:Спектакль «Три поросёнка»\nНосов
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-04-1100-xk9qxg@raspisanie
-DTSTAMP:20261007T121400Z
+DTSTAMP:20261007T121600Z
 DTSTART;TZID=Europe/Moscow:20261004T110000
 DTEND;TZID=Europe/Moscow:20261004T120000
 SUMMARY:Спектакль «Муха-цокотуха»
@@ -133,7 +133,7 @@ DESCRIPTION:Спектакль «Муха-цокотуха»\n11:00 и 13
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-04-1300-xk9qxg@raspisanie
-DTSTAMP:20261007T121400Z
+DTSTAMP:20261007T121600Z
 DTSTART;TZID=Europe/Moscow:20261004T130000
 DTEND;TZID=Europe/Moscow:20261004T140000
 SUMMARY:Спектакль «Муха-цокотуха»
@@ -145,7 +145,7 @@ DESCRIPTION:Спектакль «Муха-цокотуха»\n11:00 и 13
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-04-1500-xk9qxg@raspisanie
-DTSTAMP:20261007T121400Z
+DTSTAMP:20261007T121600Z
 DTSTART;TZID=Europe/Moscow:20261004T150000
 DTEND;TZID=Europe/Moscow:20261004T160000
 SUMMARY:Спектакль «Муха-цокотуха»
@@ -156,8 +156,33 @@ DESCRIPTION:Спектакль «Муха-цокотуха»\n11:00 и 13
  кутов\nЗвук/свет: Звук\, свет
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-10-07-1100-1wcv2ii@raspisanie
+DTSTAMP:20261007T121600Z
+DTSTART;TZID=Europe/Moscow:20261007T110000
+DTEND;TZID=Europe/Moscow:20261007T120000
+SUMMARY:Спектакль «Аленький цветочек»
+LOCATION:Старая сцена
+DESCRIPTION:Спектакль «Аленький цветочек»\nГ
+ лазецкая\, Безносиков\, Чирочкина\, Разу
+ ваева\, Галустянц\, Заяшников\nЗвук/свет:
+  Звук свет
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-08-1500-1b7fnh4@raspisanie
+DTSTAMP:20261007T121600Z
+DTSTART;TZID=Europe/Moscow:20261008T150000
+DTEND;TZID=Europe/Moscow:20261008T160000
+SUMMARY:Репетиция «Оксюморон» · Прогон
+LOCATION:Новая сцена
+DESCRIPTION:Репетиция спектакля «Оксюморон» 
+ / ПРОГОН\nТрунина\, Беканова\, Миронова\, 
+ Сигитова\, Мартюшева\, Разуваева\, Андре
+ ев\, Безносиков\, Баранов\,\nШаймиев\, Нос
+ ов\, Заяшников\nЗвук/свет: Звук\, свет
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-10-16-1200-q79fq@raspisanie
-DTSTAMP:20261007T121400Z
+DTSTAMP:20261007T121600Z
 DTSTART;TZID=Europe/Moscow:20261016T120000
 DTEND;TZID=Europe/Moscow:20261016T150000
 SUMMARY:Репетиция «Оксюморон»
@@ -170,7 +195,7 @@ DESCRIPTION:Репетиция спектакля «Оксюморон»
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-17-1100-1ug20ag@raspisanie
-DTSTAMP:20261007T121400Z
+DTSTAMP:20261007T121600Z
 DTSTART;TZID=Europe/Moscow:20261017T110000
 DTEND;TZID=Europe/Moscow:20261017T120000
 SUMMARY:Спектакль «Чудо-репка»
@@ -182,7 +207,7 @@ DESCRIPTION:Спектакль «Чудо-репка»\nРазуваев
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-17-1300-1ug20ag@raspisanie
-DTSTAMP:20261007T121400Z
+DTSTAMP:20261007T121600Z
 DTSTART;TZID=Europe/Moscow:20261017T130000
 DTEND;TZID=Europe/Moscow:20261017T140000
 SUMMARY:Спектакль «Чудо-репка»
@@ -194,7 +219,7 @@ DESCRIPTION:Спектакль «Чудо-репка»\nРазуваев
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-17-1500-1ug20ag@raspisanie
-DTSTAMP:20261007T121400Z
+DTSTAMP:20261007T121600Z
 DTSTART;TZID=Europe/Moscow:20261017T150000
 DTEND;TZID=Europe/Moscow:20261017T160000
 SUMMARY:Спектакль «Чудо-репка»
@@ -206,7 +231,7 @@ DESCRIPTION:Спектакль «Чудо-репка»\nРазуваев
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-20-1500-144na9v@raspisanie
-DTSTAMP:20261007T121400Z
+DTSTAMP:20261007T121600Z
 DTSTART;TZID=Europe/Moscow:20261020T150000
 DTEND;TZID=Europe/Moscow:20261020T160000
 SUMMARY:Репетиция «Оксюморон» · Прогон спе
@@ -220,7 +245,7 @@ DESCRIPTION:Прогон спектакля«Оксюморон»\nТру
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-22-1600-nwvrur@raspisanie
-DTSTAMP:20261007T121400Z
+DTSTAMP:20261007T121600Z
 DTSTART;TZID=Europe/Moscow:20261022T160000
 DTEND;TZID=Europe/Moscow:20261022T170000
 SUMMARY:Репетиция «Оксюморон» · Прогон спе
@@ -234,7 +259,7 @@ DESCRIPTION:Прогон спектакля «Оксюморон»\nТр
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-23-1100-1hjcxld@raspisanie
-DTSTAMP:20261007T121400Z
+DTSTAMP:20261007T121600Z
 DTSTART;TZID=Europe/Moscow:20261023T110000
 DTEND;TZID=Europe/Moscow:20261023T120000
 SUMMARY:Спектакль «Оксюморон»
@@ -247,7 +272,7 @@ DESCRIPTION:Спектакль «Оксюморон»\nТрунина\,
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-23-1900-1hjcxld@raspisanie
-DTSTAMP:20261007T121400Z
+DTSTAMP:20261007T121600Z
 DTSTART;TZID=Europe/Moscow:20261023T190000
 DTEND;TZID=Europe/Moscow:20261023T200000
 SUMMARY:Спектакль «Оксюморон»
@@ -260,7 +285,7 @@ DESCRIPTION:Спектакль «Оксюморон»\nТрунина\,
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-24-1100-1xfad3x@raspisanie
-DTSTAMP:20261007T121400Z
+DTSTAMP:20261007T121600Z
 DTSTART;TZID=Europe/Moscow:20261024T110000
 DTEND;TZID=Europe/Moscow:20261024T120000
 SUMMARY:Спектакль «Три поросенка»
@@ -271,7 +296,7 @@ DESCRIPTION:Спектакль «Три поросенка»\nАндре
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-24-1300-1xfad3x@raspisanie
-DTSTAMP:20261007T121400Z
+DTSTAMP:20261007T121600Z
 DTSTART;TZID=Europe/Moscow:20261024T130000
 DTEND;TZID=Europe/Moscow:20261024T140000
 SUMMARY:Спектакль «Три поросенка»
@@ -282,7 +307,7 @@ DESCRIPTION:Спектакль «Три поросенка»\nАндре
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-24-1500-1xfad3x@raspisanie
-DTSTAMP:20261007T121400Z
+DTSTAMP:20261007T121600Z
 DTSTART;TZID=Europe/Moscow:20261024T150000
 DTEND;TZID=Europe/Moscow:20261024T160000
 SUMMARY:Спектакль «Три поросенка»
@@ -290,30 +315,5 @@ LOCATION:Новая сцена
 DESCRIPTION:Спектакль «Три поросенка»\nАндре
  ев\, Мартюшева\, Разуваева\, Лоскутов\nЗв
  ук/свет: Звук\, свет
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-10-07-1100-1wcv2ii@raspisanie
-DTSTAMP:20261007T121400Z
-DTSTART;TZID=Europe/Moscow:20261007T110000
-DTEND;TZID=Europe/Moscow:20261007T120000
-SUMMARY:Спектакль «Аленький цветочек»
-LOCATION:Старая сцена
-DESCRIPTION:Спектакль «Аленький цветочек»\nГ
- лазецкая\, Безносиков\, Чирочкина\, Разу
- ваева\, Галустянц\, Заяшников\nЗвук/свет:
-  Звук свет
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-10-08-1500-1b7fnh4@raspisanie
-DTSTAMP:20261007T121400Z
-DTSTART;TZID=Europe/Moscow:20261008T150000
-DTEND;TZID=Europe/Moscow:20261008T160000
-SUMMARY:Репетиция «Оксюморон» · Прогон
-LOCATION:Новая сцена
-DESCRIPTION:Репетиция спектакля «Оксюморон» 
- / ПРОГОН\nТрунина\, Беканова\, Миронова\, 
- Сигитова\, Мартюшева\, Разуваева\, Андре
- ев\, Безносиков\, Баранов\,\nШаймиев\, Нос
- ов\, Заяшников\nЗвук/свет: Звук\, свет
 END:VEVENT
 END:VCALENDAR
