@@ -16,6 +16,7 @@
   --k-meeting: #2e8a5a;
   --k-trip: #5d6b7a;
   --k-other: #8a8580;
+  --k-personal: #7353a6;
   --warn: #9a6200;
   --warn-soft: #fbf0d9;
   --ok: #24794e;
@@ -45,6 +46,7 @@
     --k-meeting: #62c592;
     --k-trip: #9fb0c2;
     --k-other: #aaa49c;
+    --k-personal: #bb9ee8;
     --warn: #eab457;
     --warn-soft: #3a2e17;
     --ok: #66c998;
@@ -327,6 +329,7 @@ main { flex: 1; }
 .k-meeting { --k: var(--k-meeting); }
 .k-trip { --k: var(--k-trip); }
 .k-other { --k: var(--k-other); }
+.k-personal { --k: var(--k-personal); }
 .card .title { font-size: 17.5px; font-weight: 650; line-height: 1.25; letter-spacing: -.01em; }
 .card .subtitle { font-size: 14px; color: var(--muted); margin-top: 2px; }
 .card .meta { font-size: 14px; color: var(--muted); margin-top: 6px; }
@@ -400,6 +403,8 @@ main { flex: 1; }
 }
 .cal-head { display: flex; align-items: center; justify-content: space-between; padding: 0 2px 6px; }
 .cal-head h2 { margin: 0; font-size: 17px; font-weight: 700; letter-spacing: -.01em; }
+.cal-month-picker { display: flex; align-items: center; justify-content: center; gap: 10px; margin: 0 4px 10px; font-size: 12px; color: var(--muted); }
+.cal-month-picker input { min-width: 0; width: 168px; min-height: 40px; border: 1px solid var(--line); border-radius: 10px; background: var(--surface); padding: 6px 8px; font-size: 16px; color: var(--text); }
 .cal-nav {
   width: 40px;
   height: 40px;
@@ -468,6 +473,24 @@ main { flex: 1; }
 }
 #dayList .day { margin-top: 20px; }
 .day-empty { color: var(--muted); font-size: 15px; padding: 6px 2px 0; }
+
+/* ---------- личные дела ---------- */
+.personal-add { margin: 2px 0 0; }
+.personal-hint { margin: 8px 2px 14px; color: var(--muted); font-size: 12px; line-height: 1.45; }
+.personal-card { display: grid; grid-template-columns: 66px minmax(0, 1fr); gap: 12px; background: var(--surface); border: 1px solid var(--line); border-left: 3px solid var(--k-personal); border-radius: var(--radius); margin: 10px 0; padding: 15px 14px; box-shadow: var(--shadow); }
+.personal-all-day { color: var(--muted); font-size: 13px; font-weight: 500; }
+.personal-title { font-size: 17px; font-weight: 650; line-height: 1.3; overflow-wrap: anywhere; }
+.personal-place { color: var(--muted); font-size: 14px; margin-top: 6px; overflow-wrap: anywhere; }
+.personal-note { margin: 8px 0; font-size: 14px; line-height: 1.45; overflow-wrap: anywhere; }
+.personal-card .btn-sm { margin-top: 10px; }
+.personal-form label { display: flex; flex-direction: column; gap: 6px; margin: 12px 0; font-size: 14px; font-weight: 600; }
+.personal-form input, .personal-form textarea { display: block; width: 100%; min-width: 0; min-height: 46px; border: 1px solid var(--line); border-radius: 10px; padding: 10px; font-size: 16px; font-weight: 400; background: var(--bg); color: var(--text); }
+.personal-form input:focus, .personal-form textarea:focus { outline: 2px solid var(--accent); outline-offset: 1px; }
+.personal-form textarea { resize: vertical; }
+.personal-times { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+.personal-times label { min-width: 0; margin-bottom: 4px; }
+.personal-form .personal-error { margin: 12px 0; color: var(--warn); background: var(--warn-soft); padding: 10px 12px; border-radius: 10px; font-size: 14px; }
+.personal-delete { color: var(--accent); }
 
 .empty { text-align: center; padding: 48px 12px; color: var(--muted); }
 .empty .big { font-size: 18px; font-weight: 650; color: var(--text); margin-bottom: 6px; }

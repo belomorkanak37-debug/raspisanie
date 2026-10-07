@@ -2,6 +2,7 @@ import {
   KIND_LABELS, buildICS, editDistance, fmtDate, fmtDateTime, markChanges, normName,
   personalItems, prettyTitle, todayISO, addDays, weekdayName, monthlyTotals, INTRO_ROLE_LABELS,
 } from './core.js';
+import { loadPersonalEvents, savePersonalEvent, deletePersonalEvent, personalStorageKey } from './personal.js';
 
 const MONTHS = ['Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'Июнь', 'Июль', 'Август', 'Сентябрь',
   'Октябрь', 'Ноябрь', 'Декабрь'];
@@ -87,6 +88,7 @@ const capitalize = (s) => {
 
 /* ---------- маршруты ---------- */
 function route() {
+  closePersonalEditor();
   const h = decodeURIComponent(location.hash.replace(/^#\/?/, ''));
   if (h.startsWith('p/') && h.length > 2) return showPerson(h.slice(2));
   if (!h) {
@@ -210,7 +212,7 @@ async function showPerson(rawName) {
 function renderFeed() {
   const feed = $('#feed');
   if (!feed || !current) return;
-  if (state.index.failed) {
+  if (state.index.failed && state.view !== 'calendar') {
     feed.innerHTML = '<div class="empty"><div class="big">Не удалось загрузить расписание</div>Проверьте интернет и обновите страницу.</div>';
     return;
   }
@@ -286,15 +288,12 @@ function shiftMonth(ym, n) {
 }
 
 async function renderCalendar(feed) {
-  const { key } = current;
+  const person = current;
+  const { key } = person;
   const today = todayISO();
   const idx = state.index;
   const ym = state.month || monthOf(today);
   state.month = ym;
-
-  // Границы листания — месяцы, на которые есть расписание (и текущий).
-  const minM = [monthOf(today), ...idx.weeks.map((w) => monthOf(w.start))].sort()[0];
-  const maxM = [monthOf(today), ...idx.weeks.map((w) => monthOf(w.end))].sort().pop();
 
   const [y, m] = ym.split('-').map(Number);
   const first = `${ym}-01`;
@@ -306,11 +305,16 @@ async function renderCalendar(feed) {
 
   const metas = idx.weeks.filter((w) => w.start <= gridEnd && w.end >= gridStart);
   const weeks = (await Promise.all(metas.map((mt) => loadWeek(mt.id)))).filter(Boolean);
-  if (state.view !== 'calendar' || state.month !== ym) return;
+  if (current !== person || state.view !== 'calendar' || state.month !== ym || $('#feed') !== feed) return;
   state.rendered = weeks;
 
   const inGrid = (it) => it.ev.date >= gridStart && it.ev.date <= gridEnd;
-  const entries = weeks.flatMap((w) => weekEntries(w, key, inGrid));
+  let personal = [], personalError = '';
+  try { personal = loadPersonalEvents(key); } catch (e) { personalError = e.message; }
+  const entries = [...weeks.flatMap((w) => weekEntries(w, key, inGrid)),
+    ...personal.filter((e) => e.date >= gridStart && e.date <= gridEnd).map((e) => ({
+      type: 'personal', ev: e, sortKey: `${e.date} ${e.start || '00:00'}`,
+    }))].sort((a, b) => (a.sortKey || `${a.ev.date} 00:00`).localeCompare(b.sortKey || `${b.ev.date} 00:00`));
   const byDay = new Map();
   for (const it of entries) {
     if (!byDay.has(it.ev.date)) byDay.set(it.ev.date, []);
@@ -330,44 +334,52 @@ async function renderCalendar(feed) {
     const d = addDays(gridStart, i);
     const list = (byDay.get(d) || []).filter((it) => it.type !== 'note');
     const live = list.filter((it) => !it.removed);
+    const hasPersonal = live.some((it) => it.type === 'personal');
     const cls = ['cal-day', monthOf(d) !== ym && 'out', d === today && 'today', d === sel && 'sel',
-      !covered(d) && 'nodata', live.length && 'busy'].filter(Boolean).join(' ');
-    const label = `${fmtDate(d)}, ${live.length ? `${live.length} ${plural(live.length, 'занятость', 'занятости', 'занятостей')}` : 'свободно'}`;
+      !covered(d) && !hasPersonal && 'nodata', live.length && 'busy'].filter(Boolean).join(' ');
+    const label = `${fmtDate(d)}, ${live.length ? `${live.length} ${plural(live.length, 'занятость', 'занятости', 'занятостей')}` : 'свободно'}${hasPersonal ? ', есть личные дела' : ''}`;
     grid += `<button class="${cls}" data-day="${d}" aria-label="${label}" aria-pressed="${d === sel}">
       <span class="num">${Number(d.slice(8))}</span>
-      <span class="dots">${live.slice(0, 3).map((it) => `<i class="k-${it.ev.kind}"></i>`).join('')}</span>
+      <span class="dots">${live.filter((it) => it.type !== 'personal').slice(0, hasPersonal ? 2 : 3).map((it) => `<i class="k-${it.ev.kind}"></i>`).join('')}${hasPersonal ? '<i class="k-personal"></i>' : ''}</span>
       ${list.some(isChange) ? '<span class="chg" aria-hidden="true"></span>' : ''}
     </button>`;
   }
 
   const upcomingEntries = entries.filter((it) => it.ev.date >= today);
   feed.innerHTML = `
+    ${idx.failed ? '<div class="banner">Театральное расписание не удалось загрузить. Личные дела доступны в этом браузере.</div>' : ''}
+    ${personalError ? `<div class="banner">${esc(personalError)}</div>` : ''}
     ${changesBanner(upcomingEntries, 'Дни с изменениями отмечены оранжевой точкой.')}
     <div class="cal">
       <div class="cal-head">
-        <button class="cal-nav" data-nav="-1" aria-label="Предыдущий месяц" ${ym <= minM ? 'disabled' : ''}>${ICON.prev}</button>
+        <button class="cal-nav" data-nav="-1" aria-label="Предыдущий месяц" ${ym <= '1900-01' ? 'disabled' : ''}>${ICON.prev}</button>
         <h2>${MONTHS[m - 1]} ${y}</h2>
-        <button class="cal-nav" data-nav="1" aria-label="Следующий месяц" ${ym >= maxM ? 'disabled' : ''}>${ICON.next}</button>
+        <button class="cal-nav" data-nav="1" aria-label="Следующий месяц" ${ym >= '9999-12' ? 'disabled' : ''}>${ICON.next}</button>
       </div>
+      <label class="cal-month-picker">Выбрать месяц<input type="month" data-cal-month value="${ym}" aria-label="Месяц календаря" min="1900-01" max="9999-12"></label>
       <div class="cal-grid">${grid}</div>
       ${monthOf(today) !== ym ? '<button class="cal-today" data-today>Сегодня</button>' : ''}
     </div>
     <div id="dayList"></div>`;
-  state.calDays = { byDay, covered };
+  state.calDays = { byDay, covered, person };
   renderDayList(sel);
 }
 
 function renderDayList(d) {
   const box = $('#dayList');
   if (!box) return;
-  const { byDay, covered } = state.calDays;
+  const { byDay, covered, person } = state.calDays;
+  if (current !== person) return;
   const list = byDay.get(d) || [];
   const busy = list.some((i) => i.type !== 'note');
   let body;
-  if (busy) body = list.map(entryHTML).join('');
+  if (busy) body = (!covered(d) ? '<div class="day-empty">Театральное расписание на этот день ещё не загружено</div>' : '')
+    + list.map((it) => it.type === 'personal' ? personalCard(it.ev) : entryHTML(it)).join('');
   else if (!covered(d)) body = '<div class="day-empty">Расписание на этот день ещё не загружено</div>';
   else body = list.map(noteHTML).join('') + '<div class="day-empty">Занятостей нет</div>';
-  box.innerHTML = dayHeader(d, todayISO()) + body;
+  box.innerHTML = dayHeader(d, todayISO())
+    + `<button class="pill personal-add" data-personal-add="${d}">${ICON.plus}Добавить личное дело</button>
+      <p class="personal-hint">Личные дела видны только в этом браузере, для выбранной фамилии.</p>` + body;
 }
 
 function selectDay(d) {
@@ -393,6 +405,90 @@ function navMonth(n) {
   state.selDay = null;
   renderFeed();
 }
+
+/* ---------- личные дела в этом браузере ---------- */
+let personalEditor = null;
+const personalFields = ['date', 'title', 'start', 'end', 'place', 'note'];
+
+function personalCard(event) {
+  return `<article class="personal-card">
+    <div class="time">${event.start ? `<span>${esc(event.start)}</span>${event.end ? `<span class="sub">–${esc(event.end)}</span>` : ''}` : '<span class="personal-all-day">Весь день</span>'}</div>
+    <div><div class="kind k-personal">Личное дело</div><div class="personal-title">${esc(event.title)}</div>
+      ${event.place ? `<div class="personal-place">${esc(event.place)}</div>` : ''}
+      ${event.note ? `<p class="personal-note">${esc(event.note).replace(/\r?\n/g, '<br>')}</p>` : ''}
+      <button class="btn-sm" data-personal-edit="${esc(event.id)}" aria-label="Изменить личное дело «${esc(event.title)}»">Изменить</button>
+    </div>
+  </article>`;
+}
+
+function personalError(message) {
+  const box = $('#personalError');
+  box.textContent = message;
+  box.hidden = !message;
+}
+
+function closePersonalEditor() {
+  const dlg = $('#personalDlg');
+  if (dlg?.open) dlg.close();
+  personalEditor = null;
+}
+
+function openPersonalEditor(date, id = null) {
+  if (!current) return;
+  const form = $('#personalForm');
+  if (!form) { location.reload(); return; }
+  form.reset();
+  personalError('');
+  personalEditor = { key: current.key, name: current.name, id };
+  $('#personalDialogTitle').textContent = id ? 'Изменить личное дело' : 'Новое личное дело';
+  $('#personalFor').textContent = `${current.name} · только в этом браузере`;
+  $('#personalDelete').hidden = !id;
+  let event = { date: date || state.selDay || todayISO() };
+  try {
+    const events = loadPersonalEvents(current.key);
+    if (id) {
+      event = events.find((e) => e.id === id);
+      if (!event) throw new Error('Личное дело уже удалено. Закройте форму и обновите календарь.');
+    }
+  } catch (e) { personalError(e.message); }
+  for (const field of personalFields) form.elements.namedItem(field).value = event?.[field] || '';
+  $('#personalDlg').showModal();
+  form.elements.namedItem('title').focus();
+}
+
+$('#personalForm')?.addEventListener('submit', (e) => {
+  e.preventDefault();
+  const editor = personalEditor;
+  if (!editor || current?.key !== editor.key) return personalError('Фамилия изменилась. Закройте форму и откройте личное дело заново.');
+  const form = e.currentTarget;
+  if (!form.reportValidity()) return;
+  const fields = Object.fromEntries(personalFields.map((field) => [field, form.elements.namedItem(field).value]));
+  try {
+    const event = savePersonalEvent(editor.key, { ...fields, id: editor.id });
+    closePersonalEditor();
+    state.month = monthOf(event.date);
+    state.selDay = event.date;
+    renderFeed();
+  } catch (err) { personalError(err.message); }
+});
+$('#personalCancel')?.addEventListener('click', closePersonalEditor);
+$('#personalDlg')?.addEventListener('close', () => { personalEditor = null; });
+$('#personalForm')?.addEventListener('input', () => personalError(''));
+$('#personalDelete')?.addEventListener('click', () => {
+  const editor = personalEditor;
+  if (!editor?.id || current?.key !== editor.key) return;
+  if (!confirm('Удалить это личное дело?')) return;
+  try {
+    const event = deletePersonalEvent(editor.key, editor.id);
+    closePersonalEditor();
+    state.month = monthOf(event.date);
+    state.selDay = event.date;
+    renderFeed();
+  } catch (err) { personalError(err.message); }
+});
+window.addEventListener('storage', (e) => {
+  if (current && state.view === 'calendar' && (e.key === null || e.key === personalStorageKey(current.key))) renderFeed();
+});
 
 /* ---------- месячные итоги ---------- */
 const fmtCount = (n) => String(n).replace('.', ',');
@@ -565,12 +661,23 @@ function bindFeed(feed) {
     return ev ? personalItems([ev], current.key)[0] : null;
   };
   feed.addEventListener('change', (e) => {
+    if (e.target.matches('[data-cal-month]')) {
+      const month = e.target.value;
+      if (!/^\d{4}-(?:0[1-9]|1[0-2])$/.test(month) || month < '1900-01' || month > '9999-12') return;
+      state.month = month;
+      state.selDay = null;
+      return renderFeed();
+    }
     if (!e.target.matches('[data-totals-month]')) return;
     state.totalsMonth = e.target.value;
     renderFeed();
   });
   feed.addEventListener('click', (e) => {
     const t = e.target;
+    const addPersonal = t.closest('[data-personal-add]');
+    if (addPersonal) return openPersonalEditor(addPersonal.dataset.personalAdd);
+    const editPersonal = t.closest('[data-personal-edit]');
+    if (editPersonal) return openPersonalEditor(null, editPersonal.dataset.personalEdit);
     const day = t.closest('[data-day]');
     if (day) return selectDay(day.dataset.day);
     const nav = t.closest('[data-nav]');

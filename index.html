@@ -38,7 +38,7 @@
     <form method="dialog" class="sheet-body">
       <div class="sheet-grip" aria-hidden="true"></div>
       <h2>Календарь на телефоне</h2>
-      <p class="muted">Подписка добавит все ваши занятости в календарь телефона и будет обновляться сама, когда выйдет новое расписание.</p>
+      <p class="muted">Подписка добавит театральные занятости в календарь телефона и будет обновляться сама, когда выйдет новое расписание. Личные дела из этого приложения в подписку не входят.</p>
       <a class="btn btn-primary" id="calWebcal" href="#">Подписаться — iPhone, iPad, Mac</a>
       <a class="btn" id="calGoogle" href="#" target="_blank" rel="noopener">Подписаться — Google Календарь</a>
       <a class="btn btn-ghost" id="calFile" href="#" download>Скачать файл .ics</a>
@@ -51,6 +51,28 @@
       <button class="btn btn-ghost" type="button" id="calCopy">Скопировать ссылку на календарь</button>
       <p class="hint">Изменения расписания Google подтягивает сам, раз в несколько часов. Файл .ics — разовый снимок без обновлений.</p>
       <button class="btn btn-ghost" value="close">Закрыть</button>
+    </form>
+  </dialog>
+
+  <dialog class="sheet" id="personalDlg" aria-labelledby="personalDialogTitle">
+    <form method="dialog" class="sheet-body personal-form" id="personalForm">
+      <div class="sheet-grip" aria-hidden="true"></div>
+      <h2 id="personalDialogTitle">Личное дело</h2>
+      <p class="muted" id="personalFor"></p>
+      <label>Дата<input type="date" name="date" required min="1900-01-01" max="9999-12-31"></label>
+      <label>Название<input type="text" name="title" required maxlength="200" placeholder="Например, встреча или тренировка"></label>
+      <div class="personal-times">
+        <label>Начало<input type="time" name="start"></label>
+        <label>Окончание<input type="time" name="end"></label>
+      </div>
+      <p class="hint">Без времени — дело на весь день. Окончание можно не указывать.</p>
+      <label>Место<input type="text" name="place" maxlength="200" placeholder="Необязательно"></label>
+      <label>Заметка<textarea name="note" rows="3" maxlength="2000" placeholder="Необязательно"></textarea></label>
+      <p class="personal-error" id="personalError" role="alert" hidden></p>
+      <button class="btn btn-primary" type="submit">Сохранить личное дело</button>
+      <button class="btn personal-delete" type="button" id="personalDelete" hidden>Удалить дело</button>
+      <button class="btn btn-ghost" type="button" id="personalCancel">Отмена</button>
+      <p class="hint">Сохраняется только в этом браузере. На других устройствах дело не видно. При очистке данных браузера личные дела удалятся.</p>
     </form>
   </dialog>
 

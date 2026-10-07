@@ -1,9 +1,9 @@
 // Работа без интернета: оболочка приложения из кэша, данные — сначала из сети.
-const VERSION = 'v8';
+const VERSION = 'v9';
 const SHELL = `shell-${VERSION}`;
 const DATA = 'data';
 const SHELL_FILES = [
-  './', 'index.html', 'css/app.css', 'js/app.js', 'js/core.js', 'manifest.webmanifest',
+  './', 'index.html', 'css/app.css', 'js/app.js', 'js/core.js', 'js/personal.js', 'manifest.webmanifest',
   'icons/icon.svg', 'icons/icon-192.png', 'icons/apple-touch-icon.png',
 ];
 
