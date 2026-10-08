@@ -18,7 +18,7 @@ END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
 UID:2026-09-28-0713-1gl2wdd@raspisanie
-DTSTAMP:20261007T135600Z
+DTSTAMP:20261008T113700Z
 DTSTART;TZID=Europe/Moscow:20260928T071300
 DTEND;TZID=Europe/Moscow:20260928T081300
 SUMMARY:Отъезд гастрольной группы на БДФ
@@ -31,7 +31,7 @@ DESCRIPTION:ОТЪЕЗД гастрольной группы на БДФ
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-09-29-1900-1q80p5y@raspisanie
-DTSTAMP:20261007T135600Z
+DTSTAMP:20261008T113700Z
 DTSTART;TZID=Europe/Moscow:20260929T190000
 DTEND;TZID=Europe/Moscow:20260929T200000
 SUMMARY:Спектакль «Алые паруса» · БДФ Москв
@@ -45,7 +45,7 @@ DESCRIPTION:БДФ Москва / Спектакль «Алые пару
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-02-1230-l5f9v@raspisanie
-DTSTAMP:20261007T135600Z
+DTSTAMP:20261008T113700Z
 DTSTART;TZID=Europe/Moscow:20261002T123000
 DTEND;TZID=Europe/Moscow:20261002T133000
 SUMMARY:Собрание всего коллектива
@@ -54,7 +54,7 @@ DESCRIPTION:СОБРАНИЕ ВСЕГО КОЛЛЕКТИВА
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-02-1700-9rwos5@raspisanie
-DTSTAMP:20261007T135600Z
+DTSTAMP:20261008T113700Z
 DTSTART;TZID=Europe/Moscow:20261002T170000
 DTEND;TZID=Europe/Moscow:20261002T180000
 SUMMARY:Спектакль «Кто оставил здесь следы?
@@ -67,7 +67,7 @@ DESCRIPTION:Спектакль «Кто оставил здесь сле
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-04-1500-xk9qxg@raspisanie
-DTSTAMP:20261007T135600Z
+DTSTAMP:20261008T113700Z
 DTSTART;TZID=Europe/Moscow:20261004T150000
 DTEND;TZID=Europe/Moscow:20261004T160000
 SUMMARY:Спектакль «Муха-цокотуха»
@@ -79,7 +79,7 @@ DESCRIPTION:Спектакль «Муха-цокотуха»\n11:00 и 13
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-08-1400-1bjojgd@raspisanie
-DTSTAMP:20261007T135600Z
+DTSTAMP:20261008T113700Z
 DTSTART;TZID=Europe/Moscow:20261008T140000
 DTEND;TZID=Europe/Moscow:20261008T150000
 SUMMARY:Репетиция «Оксюморон» · Басня «Обе
@@ -92,7 +92,7 @@ DESCRIPTION:Репетиция спектакля «Оксюморон»
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-08-1500-1b7fnh4@raspisanie
-DTSTAMP:20261007T135600Z
+DTSTAMP:20261008T113700Z
 DTSTART;TZID=Europe/Moscow:20261008T150000
 DTEND;TZID=Europe/Moscow:20261008T160000
 SUMMARY:Репетиция «Оксюморон» · Прогон
@@ -105,7 +105,7 @@ DESCRIPTION:Репетиция спектакля «Оксюморон»
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-09-1300-hncdcq@raspisanie
-DTSTAMP:20261007T135600Z
+DTSTAMP:20261008T113700Z
 DTSTART;TZID=Europe/Moscow:20261009T130000
 DTEND;TZID=Europe/Moscow:20261009T140000
 SUMMARY:Репетиция «Золушка» · + 15:00 – сдача 
@@ -118,7 +118,7 @@ DESCRIPTION:Репетиция спектакля «Золушка» + 15
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-09-1800-1s7c52g@raspisanie
-DTSTAMP:20261007T135600Z
+DTSTAMP:20261008T113700Z
 DTSTART;TZID=Europe/Moscow:20261009T180000
 DTEND;TZID=Europe/Moscow:20261009T190000
 SUMMARY:Спектакль «Золушка»
@@ -129,7 +129,7 @@ DESCRIPTION:Спектакль «Золушка»\nМиронова\, К
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-11-1630-67gxwk@raspisanie
-DTSTAMP:20261007T135600Z
+DTSTAMP:20261008T113700Z
 DTSTART;TZID=Europe/Moscow:20261011T163000
 DTEND;TZID=Europe/Moscow:20261011T173000
 SUMMARY:Репетиция «Алые паруса»
@@ -140,7 +140,7 @@ DESCRIPTION:Репетиция спектакля «Алые паруса
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-11-1900-8mhiyb@raspisanie
-DTSTAMP:20261007T135600Z
+DTSTAMP:20261008T113700Z
 DTSTART;TZID=Europe/Moscow:20261011T190000
 DTEND;TZID=Europe/Moscow:20261011T200000
 SUMMARY:Спектакль «Алые паруса»
@@ -151,7 +151,7 @@ DESCRIPTION:Спектакль «Алые паруса»\nМиронов
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-16-1200-q79fq@raspisanie
-DTSTAMP:20261007T135600Z
+DTSTAMP:20261008T113700Z
 DTSTART;TZID=Europe/Moscow:20261016T120000
 DTEND;TZID=Europe/Moscow:20261016T150000
 SUMMARY:Репетиция «Оксюморон»
@@ -164,7 +164,7 @@ DESCRIPTION:Репетиция спектакля «Оксюморон»
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-16-1800-xk9qxg@raspisanie
-DTSTAMP:20261007T135600Z
+DTSTAMP:20261008T113700Z
 DTSTART;TZID=Europe/Moscow:20261016T180000
 DTEND;TZID=Europe/Moscow:20261016T190000
 SUMMARY:Спектакль «Муха-цокотуха»
@@ -174,8 +174,43 @@ DESCRIPTION:Спектакль «Муха-цокотуха»\nГалус
  ук/свет: Звук\, свет
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-10-30-1700-67gxwk@raspisanie
+DTSTAMP:20261008T113700Z
+DTSTART;TZID=Europe/Moscow:20261030T170000
+DTEND;TZID=Europe/Moscow:20261030T180000
+SUMMARY:Репетиция «Алые паруса»
+LOCATION:Новая сцена
+DESCRIPTION:Репетиция спектакля «Алые паруса
+ »\nБезносиков\, Лоскутов\, Глазецкая\, Ми
+ ронова\nЗвук/свет: Звук\, свет
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-30-1900-8mhiyb@raspisanie
+DTSTAMP:20261008T113700Z
+DTSTART;TZID=Europe/Moscow:20261030T190000
+DTEND;TZID=Europe/Moscow:20261030T200000
+SUMMARY:Спектакль «Алые паруса»
+LOCATION:Новая сцена
+DESCRIPTION:Спектакль «Алые паруса»\nБезноси
+ ков\, Лоскутов\, Глазецкая\, Миронова\nЗв
+ ук/свет: Звук\, свет
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-11-01-1100-9rwos5@raspisanie
+DTSTAMP:20261008T113700Z
+DTSTART;TZID=Europe/Moscow:20261101T110000
+DTEND;TZID=Europe/Moscow:20261101T120000
+SUMMARY:Спектакль «Кто оставил здесь следы?
+ »
+LOCATION:Новая сцена
+DESCRIPTION:Спектакль «Кто оставил здесь сле
+ ды?»\n11:00 – Миронова\, Чирочкина\, Лоскут
+ ов\n17:00 – Мартюшева\, Чирочкина\, Лоскуто
+ в\nЗвук/свет: Звук\, свет
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-10-20-1500-144na9v@raspisanie
-DTSTAMP:20261007T135600Z
+DTSTAMP:20261008T113700Z
 DTSTART;TZID=Europe/Moscow:20261020T150000
 DTEND;TZID=Europe/Moscow:20261020T160000
 SUMMARY:Репетиция «Оксюморон» · Прогон спе
@@ -189,7 +224,7 @@ DESCRIPTION:Прогон спектакля«Оксюморон»\nТру
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-22-1600-nwvrur@raspisanie
-DTSTAMP:20261007T135600Z
+DTSTAMP:20261008T113700Z
 DTSTART;TZID=Europe/Moscow:20261022T160000
 DTEND;TZID=Europe/Moscow:20261022T170000
 SUMMARY:Репетиция «Оксюморон» · Прогон спе
@@ -203,7 +238,7 @@ DESCRIPTION:Прогон спектакля «Оксюморон»\nТр
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-23-1100-1hjcxld@raspisanie
-DTSTAMP:20261007T135600Z
+DTSTAMP:20261008T113700Z
 DTSTART;TZID=Europe/Moscow:20261023T110000
 DTEND;TZID=Europe/Moscow:20261023T120000
 SUMMARY:Спектакль «Оксюморон»
@@ -216,7 +251,7 @@ DESCRIPTION:Спектакль «Оксюморон»\nТрунина\,
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-23-1900-1hjcxld@raspisanie
-DTSTAMP:20261007T135600Z
+DTSTAMP:20261008T113700Z
 DTSTART;TZID=Europe/Moscow:20261023T190000
 DTEND;TZID=Europe/Moscow:20261023T200000
 SUMMARY:Спектакль «Оксюморон»
@@ -226,40 +261,5 @@ DESCRIPTION:Спектакль «Оксюморон»\nТрунина\,
  ва\, Разуваева\, Андреев\, Безносиков\,\nБ
  аранов\, Шаймиев\, Носов\, Заяшников\nЗву
  к/свет: Звук\, свет
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-10-30-1700-67gxwk@raspisanie
-DTSTAMP:20261007T135600Z
-DTSTART;TZID=Europe/Moscow:20261030T170000
-DTEND;TZID=Europe/Moscow:20261030T180000
-SUMMARY:Репетиция «Алые паруса»
-LOCATION:Новая сцена
-DESCRIPTION:Репетиция спектакля «Алые паруса
- »\nБезносиков\, Лоскутов\, Глазецкая\, Ми
- ронова\nЗвук/свет: Звук\, свет
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-10-30-1900-8mhiyb@raspisanie
-DTSTAMP:20261007T135600Z
-DTSTART;TZID=Europe/Moscow:20261030T190000
-DTEND;TZID=Europe/Moscow:20261030T200000
-SUMMARY:Спектакль «Алые паруса»
-LOCATION:Новая сцена
-DESCRIPTION:Спектакль «Алые паруса»\nБезноси
- ков\, Лоскутов\, Глазецкая\, Миронова\nЗв
- ук/свет: Звук\, свет
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-11-01-1100-9rwos5@raspisanie
-DTSTAMP:20261007T135600Z
-DTSTART;TZID=Europe/Moscow:20261101T110000
-DTEND;TZID=Europe/Moscow:20261101T120000
-SUMMARY:Спектакль «Кто оставил здесь следы?
- »
-LOCATION:Новая сцена
-DESCRIPTION:Спектакль «Кто оставил здесь сле
- ды?»\n11:00 – Миронова\, Чирочкина\, Лоскут
- ов\n17:00 – Мартюшева\, Чирочкина\, Лоскуто
- в\nЗвук/свет: Звук\, свет
 END:VEVENT
 END:VCALENDAR
