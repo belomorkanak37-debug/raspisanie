@@ -78,72 +78,6 @@
    "scope": "people"
   },
   {
-   "id": "e3",
-   "date": "2026-10-13",
-   "timeText": "12:00",
-   "times": [
-    "12:00"
-   ],
-   "range": null,
-   "timeUncertain": false,
-   "title": "Ввод в спектакль «Конёк-горбунок»",
-   "kind": "intro",
-   "place": "Старая сцена",
-   "tech": "Звук",
-   "lines": [
-    "Вводящийся – Радыгин, вводящий – Безносиков",
-    "Лоскутова, Лоскутов, Самойлов"
-   ],
-   "people": [
-    {
-     "name": "Радыгин",
-     "times": null,
-     "from": null,
-     "role": "вводящийся",
-     "uncertain": false,
-     "alts": [],
-     "note": null
-    },
-    {
-     "name": "Безносиков",
-     "times": null,
-     "from": null,
-     "role": "вводящий",
-     "uncertain": false,
-     "alts": [],
-     "note": null
-    },
-    {
-     "name": "Лоскутова",
-     "times": null,
-     "from": null,
-     "role": null,
-     "uncertain": false,
-     "alts": [],
-     "note": null
-    },
-    {
-     "name": "Лоскутов",
-     "times": null,
-     "from": null,
-     "role": null,
-     "uncertain": false,
-     "alts": [],
-     "note": null
-    },
-    {
-     "name": "Самойлов",
-     "times": null,
-     "from": null,
-     "role": null,
-     "uncertain": false,
-     "alts": [],
-     "note": null
-    }
-   ],
-   "scope": "people"
-  },
-  {
    "id": "e4",
    "date": "2026-10-14",
    "timeText": "11:00 – 15:00",
@@ -1007,8 +941,1004 @@
    "scope": "people"
   }
  ],
- "version": 1,
- "updatedAt": "2026-10-01T15:46:53.894Z",
+ "version": 2,
+ "updatedAt": "2026-10-09T08:42:09.518Z",
  "pdf": "data/pdf/2026-10-12.pdf",
- "previous": null
+ "previous": {
+  "version": 1,
+  "updatedAt": "2026-10-01T15:46:53.894Z",
+  "events": [
+   {
+    "id": "e1",
+    "date": "2026-10-12",
+    "timeText": "",
+    "times": [],
+    "range": null,
+    "timeUncertain": false,
+    "title": "ВЫХОДНОЙ",
+    "kind": "other",
+    "place": "",
+    "tech": "",
+    "lines": [],
+    "people": [],
+    "scope": "note"
+   },
+   {
+    "id": "e2",
+    "date": "2026-10-13",
+    "timeText": "11:00",
+    "times": [
+     "11:00"
+    ],
+    "range": null,
+    "timeUncertain": false,
+    "title": "Репетиция спектакля «Муравьишка»",
+    "kind": "rehearsal",
+    "place": "Новая сцена",
+    "tech": "Звук, свет (?)",
+    "lines": [
+     "Чепиль, Андреев, Сигитова"
+    ],
+    "people": [
+     {
+      "name": "Чепиль",
+      "times": null,
+      "from": null,
+      "role": null,
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     },
+     {
+      "name": "Андреев",
+      "times": null,
+      "from": null,
+      "role": null,
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     },
+     {
+      "name": "Сигитова",
+      "times": null,
+      "from": null,
+      "role": null,
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     }
+    ],
+    "scope": "people"
+   },
+   {
+    "id": "e3",
+    "date": "2026-10-13",
+    "timeText": "12:00",
+    "times": [
+     "12:00"
+    ],
+    "range": null,
+    "timeUncertain": false,
+    "title": "Ввод в спектакль «Конёк-горбунок»",
+    "kind": "intro",
+    "place": "Старая сцена",
+    "tech": "Звук",
+    "lines": [
+     "Вводящийся – Радыгин, вводящий – Безносиков",
+     "Лоскутова, Лоскутов, Самойлов"
+    ],
+    "people": [
+     {
+      "name": "Радыгин",
+      "times": null,
+      "from": null,
+      "role": "вводящийся",
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     },
+     {
+      "name": "Безносиков",
+      "times": null,
+      "from": null,
+      "role": "вводящий",
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     },
+     {
+      "name": "Лоскутова",
+      "times": null,
+      "from": null,
+      "role": null,
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     },
+     {
+      "name": "Лоскутов",
+      "times": null,
+      "from": null,
+      "role": null,
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     },
+     {
+      "name": "Самойлов",
+      "times": null,
+      "from": null,
+      "role": null,
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     }
+    ],
+    "scope": "people"
+   },
+   {
+    "id": "e4",
+    "date": "2026-10-14",
+    "timeText": "11:00 – 15:00",
+    "times": [
+     "11:00"
+    ],
+    "range": {
+     "from": "11:00",
+     "to": "15:00"
+    },
+    "timeUncertain": false,
+    "title": "Ввод в спектакль «Конёк-горбунок»",
+    "kind": "intro",
+    "place": "Старая сцена",
+    "tech": "Звук",
+    "lines": [
+     "Вводящийся – Радыгин, вводящий – Безносиков",
+     "Галустянц, Самойлов, Лоскутов"
+    ],
+    "people": [
+     {
+      "name": "Радыгин",
+      "times": null,
+      "from": null,
+      "role": "вводящийся",
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     },
+     {
+      "name": "Безносиков",
+      "times": null,
+      "from": null,
+      "role": "вводящий",
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     },
+     {
+      "name": "Галустянц",
+      "times": null,
+      "from": null,
+      "role": null,
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     },
+     {
+      "name": "Самойлов",
+      "times": null,
+      "from": null,
+      "role": null,
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     },
+     {
+      "name": "Лоскутов",
+      "times": null,
+      "from": null,
+      "role": null,
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     }
+    ],
+    "scope": "people"
+   },
+   {
+    "id": "e5",
+    "date": "2026-10-14",
+    "timeText": "11:00",
+    "times": [
+     "11:00"
+    ],
+    "range": null,
+    "timeUncertain": false,
+    "title": "Репетиция спектакля «Муравьишка»",
+    "kind": "rehearsal",
+    "place": "Новая сцена",
+    "tech": "Звук, свет (?)",
+    "lines": [
+     "Чепиль, Андреев, Сигитова"
+    ],
+    "people": [
+     {
+      "name": "Чепиль",
+      "times": null,
+      "from": null,
+      "role": null,
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     },
+     {
+      "name": "Андреев",
+      "times": null,
+      "from": null,
+      "role": null,
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     },
+     {
+      "name": "Сигитова",
+      "times": null,
+      "from": null,
+      "role": null,
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     }
+    ],
+    "scope": "people"
+   },
+   {
+    "id": "e6",
+    "date": "2026-10-15",
+    "timeText": "11:00",
+    "times": [
+     "11:00"
+    ],
+    "range": null,
+    "timeUncertain": false,
+    "title": "Спектакль «Палочка-выручалочка»",
+    "kind": "show",
+    "place": "Старая сцена",
+    "tech": "Звук, свет",
+    "lines": [
+     "Заяшников, Носов, Трунина, Мартюшева, Лоскутов (?) / Радыгин (?)"
+    ],
+    "people": [
+     {
+      "name": "Заяшников",
+      "times": null,
+      "from": null,
+      "role": null,
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     },
+     {
+      "name": "Носов",
+      "times": null,
+      "from": null,
+      "role": null,
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     },
+     {
+      "name": "Трунина",
+      "times": null,
+      "from": null,
+      "role": null,
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     },
+     {
+      "name": "Мартюшева",
+      "times": null,
+      "from": null,
+      "role": null,
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     },
+     {
+      "name": "Лоскутов",
+      "times": null,
+      "from": null,
+      "role": null,
+      "uncertain": true,
+      "alts": [
+       "Радыгин"
+      ],
+      "note": null
+     },
+     {
+      "name": "Радыгин",
+      "times": null,
+      "from": null,
+      "role": null,
+      "uncertain": true,
+      "alts": [
+       "Лоскутов"
+      ],
+      "note": null
+     }
+    ],
+    "scope": "people"
+   },
+   {
+    "id": "e7",
+    "date": "2026-10-15",
+    "timeText": "11:00",
+    "times": [
+     "11:00"
+    ],
+    "range": null,
+    "timeUncertain": false,
+    "title": "Репетиция спектакля «Муравьишка»",
+    "kind": "rehearsal",
+    "place": "Новая сцена (возможно, в фойе)",
+    "tech": "Звук",
+    "lines": [
+     "Чепиль, Андреев, Сигитова"
+    ],
+    "people": [
+     {
+      "name": "Чепиль",
+      "times": null,
+      "from": null,
+      "role": null,
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     },
+     {
+      "name": "Андреев",
+      "times": null,
+      "from": null,
+      "role": null,
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     },
+     {
+      "name": "Сигитова",
+      "times": null,
+      "from": null,
+      "role": null,
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     }
+    ],
+    "scope": "people"
+   },
+   {
+    "id": "e8",
+    "date": "2026-10-15",
+    "timeText": "15:00",
+    "times": [
+     "15:00"
+    ],
+    "range": null,
+    "timeUncertain": false,
+    "title": "Репетиция спектакля «Сказка о глупом мышонке»",
+    "kind": "rehearsal",
+    "place": "Старая сцена",
+    "tech": "Звук, свет",
+    "lines": [
+     "Беканова, Мартюшева, Трунина, Лоскутова, Галустянц, Глазецкая"
+    ],
+    "people": [
+     {
+      "name": "Беканова",
+      "times": null,
+      "from": null,
+      "role": null,
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     },
+     {
+      "name": "Мартюшева",
+      "times": null,
+      "from": null,
+      "role": null,
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     },
+     {
+      "name": "Трунина",
+      "times": null,
+      "from": null,
+      "role": null,
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     },
+     {
+      "name": "Лоскутова",
+      "times": null,
+      "from": null,
+      "role": null,
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     },
+     {
+      "name": "Галустянц",
+      "times": null,
+      "from": null,
+      "role": null,
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     },
+     {
+      "name": "Глазецкая",
+      "times": null,
+      "from": null,
+      "role": null,
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     }
+    ],
+    "scope": "people"
+   },
+   {
+    "id": "e9",
+    "date": "2026-10-16",
+    "timeText": "12:00 - 15:00 (?)",
+    "times": [
+     "12:00"
+    ],
+    "range": {
+     "from": "12:00",
+     "to": "15:00"
+    },
+    "timeUncertain": true,
+    "title": "Репетиция спектакля «Оксюморон»",
+    "kind": "rehearsal",
+    "place": "Новая сцена",
+    "tech": "Звук, свет",
+    "lines": [
+     "Трунина, Беканова, Миронова, Сигитова, Мартюшева, Разуваева, Андреев, Безносиков,",
+     "Баранов, Шаймиев, Носов, Заяшников"
+    ],
+    "people": [
+     {
+      "name": "Трунина",
+      "times": null,
+      "from": null,
+      "role": null,
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     },
+     {
+      "name": "Беканова",
+      "times": null,
+      "from": null,
+      "role": null,
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     },
+     {
+      "name": "Миронова",
+      "times": null,
+      "from": null,
+      "role": null,
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     },
+     {
+      "name": "Сигитова",
+      "times": null,
+      "from": null,
+      "role": null,
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     },
+     {
+      "name": "Мартюшева",
+      "times": null,
+      "from": null,
+      "role": null,
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     },
+     {
+      "name": "Разуваева",
+      "times": null,
+      "from": null,
+      "role": null,
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     },
+     {
+      "name": "Андреев",
+      "times": null,
+      "from": null,
+      "role": null,
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     },
+     {
+      "name": "Безносиков",
+      "times": null,
+      "from": null,
+      "role": null,
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     },
+     {
+      "name": "Баранов",
+      "times": null,
+      "from": null,
+      "role": null,
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     },
+     {
+      "name": "Шаймиев",
+      "times": null,
+      "from": null,
+      "role": null,
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     },
+     {
+      "name": "Носов",
+      "times": null,
+      "from": null,
+      "role": null,
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     },
+     {
+      "name": "Заяшников",
+      "times": null,
+      "from": null,
+      "role": null,
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     }
+    ],
+    "scope": "people"
+   },
+   {
+    "id": "e10",
+    "date": "2026-10-16",
+    "timeText": "18:00",
+    "times": [
+     "18:00"
+    ],
+    "range": null,
+    "timeUncertain": false,
+    "title": "Спектакль «Муха-цокотуха»",
+    "kind": "show",
+    "place": "Старая сцена",
+    "tech": "Звук, свет",
+    "lines": [
+     "Галустянц, Миронова, Самойлов, Лоскутов"
+    ],
+    "people": [
+     {
+      "name": "Галустянц",
+      "times": null,
+      "from": null,
+      "role": null,
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     },
+     {
+      "name": "Миронова",
+      "times": null,
+      "from": null,
+      "role": null,
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     },
+     {
+      "name": "Самойлов",
+      "times": null,
+      "from": null,
+      "role": null,
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     },
+     {
+      "name": "Лоскутов",
+      "times": null,
+      "from": null,
+      "role": null,
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     }
+    ],
+    "scope": "people"
+   },
+   {
+    "id": "e11",
+    "date": "2026-10-16",
+    "timeText": "18:00",
+    "times": [
+     "18:00"
+    ],
+    "range": null,
+    "timeUncertain": false,
+    "title": "Спектакль «Гадкий утёнок»",
+    "kind": "show",
+    "place": "Новая сцена",
+    "tech": "Звук, свет",
+    "lines": [
+     "Глазецкая, Кожев, Беканова"
+    ],
+    "people": [
+     {
+      "name": "Глазецкая",
+      "times": null,
+      "from": null,
+      "role": null,
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     },
+     {
+      "name": "Кожев",
+      "times": null,
+      "from": null,
+      "role": null,
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     },
+     {
+      "name": "Беканова",
+      "times": null,
+      "from": null,
+      "role": null,
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     }
+    ],
+    "scope": "people"
+   },
+   {
+    "id": "e12",
+    "date": "2026-10-17",
+    "timeText": "11:00 13:00 15:00",
+    "times": [
+     "11:00",
+     "13:00",
+     "15:00"
+    ],
+    "range": null,
+    "timeUncertain": false,
+    "title": "Спектакль «Чудо-репка»",
+    "kind": "show",
+    "place": "Старая сцена",
+    "tech": "Звук, свет",
+    "lines": [
+     "Разуваева, Самойлов (11:00 и 13:00), Носов (15:00), Мартюшева, Чепиль, Галустянц,",
+     "Чирочкина"
+    ],
+    "people": [
+     {
+      "name": "Разуваева",
+      "times": null,
+      "from": null,
+      "role": null,
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     },
+     {
+      "name": "Самойлов",
+      "times": [
+       "11:00",
+       "13:00"
+      ],
+      "from": null,
+      "role": null,
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     },
+     {
+      "name": "Носов",
+      "times": [
+       "15:00"
+      ],
+      "from": null,
+      "role": null,
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     },
+     {
+      "name": "Мартюшева",
+      "times": null,
+      "from": null,
+      "role": null,
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     },
+     {
+      "name": "Чепиль",
+      "times": null,
+      "from": null,
+      "role": null,
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     },
+     {
+      "name": "Галустянц",
+      "times": null,
+      "from": null,
+      "role": null,
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     },
+     {
+      "name": "Чирочкина",
+      "times": null,
+      "from": null,
+      "role": null,
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     }
+    ],
+    "scope": "people"
+   },
+   {
+    "id": "e13",
+    "date": "2026-10-17",
+    "timeText": "11:00 13:00 15:00",
+    "times": [
+     "11:00",
+     "13:00",
+     "15:00"
+    ],
+    "range": null,
+    "timeUncertain": false,
+    "title": "Спектакль «Краденое солнце»",
+    "kind": "show",
+    "place": "Новая сцена",
+    "tech": "Звук, свет",
+    "lines": [
+     "Лоскутова, Шаймиев, Андреев, Трунина"
+    ],
+    "people": [
+     {
+      "name": "Лоскутова",
+      "times": null,
+      "from": null,
+      "role": null,
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     },
+     {
+      "name": "Шаймиев",
+      "times": null,
+      "from": null,
+      "role": null,
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     },
+     {
+      "name": "Андреев",
+      "times": null,
+      "from": null,
+      "role": null,
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     },
+     {
+      "name": "Трунина",
+      "times": null,
+      "from": null,
+      "role": null,
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     }
+    ],
+    "scope": "people"
+   },
+   {
+    "id": "e14",
+    "date": "2026-10-18",
+    "timeText": "11:00 13:00 15:00",
+    "times": [
+     "11:00",
+     "13:00",
+     "15:00"
+    ],
+    "range": null,
+    "timeUncertain": false,
+    "title": "Спектакль «Федорино горе»",
+    "kind": "show",
+    "place": "Старая сцена",
+    "tech": "Звук, свет",
+    "lines": [
+     "Радыгин, Безносиков, Лоскутов, Шаймиев, Самойлов, Заяшников, Глазецкая"
+    ],
+    "people": [
+     {
+      "name": "Радыгин",
+      "times": null,
+      "from": null,
+      "role": null,
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     },
+     {
+      "name": "Безносиков",
+      "times": null,
+      "from": null,
+      "role": null,
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     },
+     {
+      "name": "Лоскутов",
+      "times": null,
+      "from": null,
+      "role": null,
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     },
+     {
+      "name": "Шаймиев",
+      "times": null,
+      "from": null,
+      "role": null,
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     },
+     {
+      "name": "Самойлов",
+      "times": null,
+      "from": null,
+      "role": null,
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     },
+     {
+      "name": "Заяшников",
+      "times": null,
+      "from": null,
+      "role": null,
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     },
+     {
+      "name": "Глазецкая",
+      "times": null,
+      "from": null,
+      "role": null,
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     }
+    ],
+    "scope": "people"
+   },
+   {
+    "id": "e15",
+    "date": "2026-10-18",
+    "timeText": "11:00 15:00 17:00",
+    "times": [
+     "11:00",
+     "15:00",
+     "17:00"
+    ],
+    "range": null,
+    "timeUncertain": false,
+    "title": "Спектакль «Полосатые сказки»",
+    "kind": "show",
+    "place": "Новая сцена",
+    "tech": "Звук, свет",
+    "lines": [
+     "Мартюшева (11:00), Мартюшева?/Сигитова? (13:00 и 15:00) Носов, Андреев"
+    ],
+    "people": [
+     {
+      "name": "Мартюшева",
+      "times": [
+       "11:00"
+      ],
+      "from": null,
+      "role": null,
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     },
+     {
+      "name": "Мартюшева",
+      "times": [
+       "13:00",
+       "15:00"
+      ],
+      "from": null,
+      "role": null,
+      "uncertain": true,
+      "alts": [
+       "Сигитова"
+      ],
+      "note": null
+     },
+     {
+      "name": "Сигитова",
+      "times": [
+       "13:00",
+       "15:00"
+      ],
+      "from": null,
+      "role": null,
+      "uncertain": true,
+      "alts": [
+       "Мартюшева"
+      ],
+      "note": null
+     },
+     {
+      "name": "Носов",
+      "times": null,
+      "from": null,
+      "role": null,
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     },
+     {
+      "name": "Андреев",
+      "times": null,
+      "from": null,
+      "role": null,
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     }
+    ],
+    "scope": "people"
+   }
+  ]
+ }
 }

@@ -18,7 +18,7 @@ END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
 UID:2026-09-29-1100-t2zk61@raspisanie
-DTSTAMP:20261008T113700Z
+DTSTAMP:20261009T084200Z
 DTSTART;TZID=Europe/Moscow:20260929T110000
 DTEND;TZID=Europe/Moscow:20260929T120000
 SUMMARY:Ввод «Маша и медведи» (вводящийся)
@@ -30,7 +30,7 @@ DESCRIPTION:Ввод в спектакль «Маша и медведи»
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-09-29-1430-t2zk61@raspisanie
-DTSTAMP:20261008T113700Z
+DTSTAMP:20261009T084200Z
 DTSTART;TZID=Europe/Moscow:20260929T143000
 DTEND;TZID=Europe/Moscow:20260929T153000
 SUMMARY:Ввод «Маша и медведи» (вводящийся)
@@ -42,7 +42,7 @@ DESCRIPTION:Ввод в спектакль «Маша и медведи»
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-09-30-1500-t2zk61@raspisanie
-DTSTAMP:20261008T113700Z
+DTSTAMP:20261009T084200Z
 DTSTART;TZID=Europe/Moscow:20260930T150000
 DTEND;TZID=Europe/Moscow:20260930T160000
 SUMMARY:Ввод «Маша и медведи» (вводящийся)
@@ -54,7 +54,7 @@ DESCRIPTION:Ввод в спектакль «Маша и медведи»
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-02-1230-l5f9v@raspisanie
-DTSTAMP:20261008T113700Z
+DTSTAMP:20261009T084200Z
 DTSTART;TZID=Europe/Moscow:20261002T123000
 DTEND;TZID=Europe/Moscow:20261002T133000
 SUMMARY:Собрание всего коллектива
@@ -63,7 +63,7 @@ DESCRIPTION:СОБРАНИЕ ВСЕГО КОЛЛЕКТИВА
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-06-1200-gs@raspisanie
-DTSTAMP:20261008T113700Z
+DTSTAMP:20261009T084200Z
 DTSTART;TZID=Europe/Moscow:20261006T120000
 DTEND;TZID=Europe/Moscow:20261006T130000
 SUMMARY:Ввод «Федорино горе» · + сдача А.С. в 
@@ -76,7 +76,7 @@ DESCRIPTION:Ввод в спектакль «Федорино горе»
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-08-1200-f0s38s@raspisanie
-DTSTAMP:20261008T113700Z
+DTSTAMP:20261009T084200Z
 DTSTART;TZID=Europe/Moscow:20261008T120000
 DTEND;TZID=Europe/Moscow:20261008T130000
 SUMMARY:Ввод «Палочка-выручалочка» (вводящ
@@ -88,80 +88,52 @@ DESCRIPTION:Ввод в спектакль «Палочка-выруча
  \, Чирочкина\nЗвук/свет: Звук
 END:VEVENT
 BEGIN:VEVENT
-UID:2026-10-13-1200-z1uvui@raspisanie
-DTSTAMP:20261008T113700Z
-DTSTART;TZID=Europe/Moscow:20261013T120000
-DTEND;TZID=Europe/Moscow:20261013T130000
+UID:2026-10-21-1200-z1uvui@raspisanie
+DTSTAMP:20261009T084200Z
+DTSTART;TZID=Europe/Moscow:20261021T120000
+DTEND;TZID=Europe/Moscow:20261021T130000
 SUMMARY:Ввод «Конёк-горбунок» (вводящийся)
 LOCATION:Старая сцена
 DESCRIPTION:Ввод в спектакль «Конёк-горбунок
- »\nВводящийся – Радыгин\, вводящий – Бе
- зносиков\nЛоскутова\, Лоскутов\, Самойло
- в\nЗвук/свет: Звук
+ »\nВводящийся – Радыгин\nЛоскутова\, Сам
+ ойлов\, Лоскутов\nЗвук/свет: Звук\, свет
 END:VEVENT
 BEGIN:VEVENT
-UID:2026-10-14-1100-z1uvui@raspisanie
-DTSTAMP:20261008T113700Z
-DTSTART;TZID=Europe/Moscow:20261014T110000
-DTEND;TZID=Europe/Moscow:20261014T150000
-SUMMARY:Ввод «Конёк-горбунок» (вводящийся)
+UID:2026-10-22-1330-t3fget@raspisanie
+DTSTAMP:20261009T084200Z
+DTSTART;TZID=Europe/Moscow:20261022T133000
+DTEND;TZID=Europe/Moscow:20261022T143000
+SUMMARY:Репетиция «Конёк-горбунок»
 LOCATION:Старая сцена
-DESCRIPTION:Ввод в спектакль «Конёк-горбунок
- »\nВводящийся – Радыгин\, вводящий – Бе
- зносиков\nГалустянц\, Самойлов\, Лоскуто
- в\nЗвук/свет: Звук
+DESCRIPTION:Репетиция спектакля «Конёк-горбу
+ нок»\nРадыгин\, Галустянц\, Самойлов\, Ло
+ скутов\nЗвук/свет: Звук
 END:VEVENT
 BEGIN:VEVENT
-UID:2026-10-15-1100-1nrwk50@raspisanie
-DTSTAMP:20261008T113700Z
-DTSTART;TZID=Europe/Moscow:20261015T110000
-DTEND;TZID=Europe/Moscow:20261015T120000
-SUMMARY:Спектакль «Палочка-выручалочка» (?)
+UID:2026-10-23-1500-t3fget@raspisanie
+DTSTAMP:20261009T084200Z
+DTSTART;TZID=Europe/Moscow:20261023T150000
+DTEND;TZID=Europe/Moscow:20261023T160000
+SUMMARY:Репетиция «Конёк-горбунок»
 LOCATION:Старая сцена
-DESCRIPTION:Спектакль «Палочка-выручалочка»
- \nЗаяшников\, Носов\, Трунина\, Мартюшева
- \, Лоскутов (?) / Радыгин (?)\nЗвук/свет: Зву
- к\, свет
+DESCRIPTION:Репетиция спектакля «Конёк-горбу
+ нок»\nРадыгин\, Галустянц\, Самойлов\, Ло
+ скутов\nЗвук/свет: Звук\, свет
 END:VEVENT
 BEGIN:VEVENT
-UID:2026-10-18-1100-dp5ewz@raspisanie
-DTSTAMP:20261008T113700Z
-DTSTART;TZID=Europe/Moscow:20261018T110000
-DTEND;TZID=Europe/Moscow:20261018T120000
-SUMMARY:Спектакль «Федорино горе»
+UID:2026-10-23-1800-trma95@raspisanie
+DTSTAMP:20261009T084200Z
+DTSTART;TZID=Europe/Moscow:20261023T180000
+DTEND;TZID=Europe/Moscow:20261023T190000
+SUMMARY:Спектакль ««Конёк-горбунок»
 LOCATION:Старая сцена
-DESCRIPTION:Спектакль «Федорино горе»\nРадыг
- ин\, Безносиков\, Лоскутов\, Шаймиев\, Сам
- ойлов\, Заяшников\, Глазецкая\nЗвук/свет:
-  Звук\, свет
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-10-18-1300-dp5ewz@raspisanie
-DTSTAMP:20261008T113700Z
-DTSTART;TZID=Europe/Moscow:20261018T130000
-DTEND;TZID=Europe/Moscow:20261018T140000
-SUMMARY:Спектакль «Федорино горе»
-LOCATION:Старая сцена
-DESCRIPTION:Спектакль «Федорино горе»\nРадыг
- ин\, Безносиков\, Лоскутов\, Шаймиев\, Сам
- ойлов\, Заяшников\, Глазецкая\nЗвук/свет:
-  Звук\, свет
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-10-18-1500-dp5ewz@raspisanie
-DTSTAMP:20261008T113700Z
-DTSTART;TZID=Europe/Moscow:20261018T150000
-DTEND;TZID=Europe/Moscow:20261018T160000
-SUMMARY:Спектакль «Федорино горе»
-LOCATION:Старая сцена
-DESCRIPTION:Спектакль «Федорино горе»\nРадыг
- ин\, Безносиков\, Лоскутов\, Шаймиев\, Сам
- ойлов\, Заяшников\, Глазецкая\nЗвук/свет:
-  Звук\, свет
+DESCRIPTION:Спектакль ««Конёк-горбунок»\nРад
+ ыгин\, Галустянц\, Самойлов\, Лоскутов\nЗ
+ вук/свет: Звук\, свет
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-31-1100-1nrwk50@raspisanie
-DTSTAMP:20261008T113700Z
+DTSTAMP:20261009T084200Z
 DTSTART;TZID=Europe/Moscow:20261031T110000
 DTEND;TZID=Europe/Moscow:20261031T120000
 SUMMARY:Спектакль «Палочка-выручалочка» (?)
@@ -173,7 +145,7 @@ DESCRIPTION:Спектакль «Палочка-выручалочка»
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-31-1300-1nrwk50@raspisanie
-DTSTAMP:20261008T113700Z
+DTSTAMP:20261009T084200Z
 DTSTART;TZID=Europe/Moscow:20261031T130000
 DTEND;TZID=Europe/Moscow:20261031T140000
 SUMMARY:Спектакль «Палочка-выручалочка» (?)
@@ -185,7 +157,7 @@ DESCRIPTION:Спектакль «Палочка-выручалочка»
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-31-1500-1nrwk50@raspisanie
-DTSTAMP:20261008T113700Z
+DTSTAMP:20261009T084200Z
 DTSTART;TZID=Europe/Moscow:20261031T150000
 DTEND;TZID=Europe/Moscow:20261031T160000
 SUMMARY:Спектакль «Палочка-выручалочка» (?)
@@ -196,47 +168,63 @@ DESCRIPTION:Спектакль «Палочка-выручалочка»
  к\, свет
 END:VEVENT
 BEGIN:VEVENT
-UID:2026-10-21-1200-z1uvui@raspisanie
-DTSTAMP:20261008T113700Z
-DTSTART;TZID=Europe/Moscow:20261021T120000
-DTEND;TZID=Europe/Moscow:20261021T130000
+UID:2026-10-14-1100-z1uvui@raspisanie
+DTSTAMP:20261009T084200Z
+DTSTART;TZID=Europe/Moscow:20261014T110000
+DTEND;TZID=Europe/Moscow:20261014T150000
 SUMMARY:Ввод «Конёк-горбунок» (вводящийся)
 LOCATION:Старая сцена
 DESCRIPTION:Ввод в спектакль «Конёк-горбунок
- »\nВводящийся – Радыгин\nЛоскутова\, Сам
- ойлов\, Лоскутов\nЗвук/свет: Звук\, свет
+ »\nВводящийся – Радыгин\, вводящий – Бе
+ зносиков\nГалустянц\, Самойлов\, Лоскуто
+ в\nЗвук/свет: Звук
 END:VEVENT
 BEGIN:VEVENT
-UID:2026-10-22-1330-t3fget@raspisanie
-DTSTAMP:20261008T113700Z
-DTSTART;TZID=Europe/Moscow:20261022T133000
-DTEND;TZID=Europe/Moscow:20261022T143000
-SUMMARY:Репетиция «Конёк-горбунок»
+UID:2026-10-15-1100-1nrwk50@raspisanie
+DTSTAMP:20261009T084200Z
+DTSTART;TZID=Europe/Moscow:20261015T110000
+DTEND;TZID=Europe/Moscow:20261015T120000
+SUMMARY:Спектакль «Палочка-выручалочка» (?)
 LOCATION:Старая сцена
-DESCRIPTION:Репетиция спектакля «Конёк-горбу
- нок»\nРадыгин\, Галустянц\, Самойлов\, Ло
- скутов\nЗвук/свет: Звук
+DESCRIPTION:Спектакль «Палочка-выручалочка»
+ \nЗаяшников\, Носов\, Трунина\, Мартюшева
+ \, Лоскутов (?) / Радыгин (?)\nЗвук/свет: Зву
+ к\, свет
 END:VEVENT
 BEGIN:VEVENT
-UID:2026-10-23-1500-t3fget@raspisanie
-DTSTAMP:20261008T113700Z
-DTSTART;TZID=Europe/Moscow:20261023T150000
-DTEND;TZID=Europe/Moscow:20261023T160000
-SUMMARY:Репетиция «Конёк-горбунок»
+UID:2026-10-18-1100-dp5ewz@raspisanie
+DTSTAMP:20261009T084200Z
+DTSTART;TZID=Europe/Moscow:20261018T110000
+DTEND;TZID=Europe/Moscow:20261018T120000
+SUMMARY:Спектакль «Федорино горе»
 LOCATION:Старая сцена
-DESCRIPTION:Репетиция спектакля «Конёк-горбу
- нок»\nРадыгин\, Галустянц\, Самойлов\, Ло
- скутов\nЗвук/свет: Звук\, свет
+DESCRIPTION:Спектакль «Федорино горе»\nРадыг
+ ин\, Безносиков\, Лоскутов\, Шаймиев\, Сам
+ ойлов\, Заяшников\, Глазецкая\nЗвук/свет:
+  Звук\, свет
 END:VEVENT
 BEGIN:VEVENT
-UID:2026-10-23-1800-trma95@raspisanie
-DTSTAMP:20261008T113700Z
-DTSTART;TZID=Europe/Moscow:20261023T180000
-DTEND;TZID=Europe/Moscow:20261023T190000
-SUMMARY:Спектакль ««Конёк-горбунок»
+UID:2026-10-18-1300-dp5ewz@raspisanie
+DTSTAMP:20261009T084200Z
+DTSTART;TZID=Europe/Moscow:20261018T130000
+DTEND;TZID=Europe/Moscow:20261018T140000
+SUMMARY:Спектакль «Федорино горе»
 LOCATION:Старая сцена
-DESCRIPTION:Спектакль ««Конёк-горбунок»\nРад
- ыгин\, Галустянц\, Самойлов\, Лоскутов\nЗ
- вук/свет: Звук\, свет
+DESCRIPTION:Спектакль «Федорино горе»\nРадыг
+ ин\, Безносиков\, Лоскутов\, Шаймиев\, Сам
+ ойлов\, Заяшников\, Глазецкая\nЗвук/свет:
+  Звук\, свет
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-18-1500-dp5ewz@raspisanie
+DTSTAMP:20261009T084200Z
+DTSTART;TZID=Europe/Moscow:20261018T150000
+DTEND;TZID=Europe/Moscow:20261018T160000
+SUMMARY:Спектакль «Федорино горе»
+LOCATION:Старая сцена
+DESCRIPTION:Спектакль «Федорино горе»\nРадыг
+ ин\, Безносиков\, Лоскутов\, Шаймиев\, Сам
+ ойлов\, Заяшников\, Глазецкая\nЗвук/свет:
+  Звук\, свет
 END:VEVENT
 END:VCALENDAR
