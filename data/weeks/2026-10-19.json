@@ -9,6 +9,7 @@
   "2026-10-19",
   "2026-10-20",
   "2026-10-21",
+  "2026-10-22",
   "2026-10-23",
   "2026-10-24",
   "2026-10-25"
@@ -310,119 +311,6 @@
    }
   },
   {
-   "id": "e5",
-   "date": "2026-10-21",
-   "timeText": "11:00",
-   "times": [
-    "11:00"
-   ],
-   "range": null,
-   "timeUncertain": false,
-   "title": "Спектакль «Заинька»",
-   "kind": "show",
-   "place": "Новая сцена",
-   "tech": "Звук, свет",
-   "lines": [
-    "Андреев, Глазецкая, Заяшников"
-   ],
-   "people": [
-    {
-     "name": "Андреев",
-     "times": null,
-     "from": null,
-     "role": null,
-     "uncertain": false,
-     "alts": [],
-     "note": null
-    },
-    {
-     "name": "Глазецкая",
-     "times": null,
-     "from": null,
-     "role": null,
-     "uncertain": false,
-     "alts": [],
-     "note": null
-    },
-    {
-     "name": "Заяшников",
-     "times": null,
-     "from": null,
-     "role": null,
-     "uncertain": false,
-     "alts": [],
-     "note": null
-    }
-   ],
-   "scope": "people",
-   "accounting": {
-    "showWeight": 1,
-    "away": false,
-    "intro": false
-   }
-  },
-  {
-   "id": "e6",
-   "date": "2026-10-21",
-   "timeText": "11:30",
-   "times": [
-    "11:30"
-   ],
-   "range": null,
-   "timeUncertain": false,
-   "title": "Спектакль «Конёк-горбунок»",
-   "kind": "show",
-   "place": "Старая сцена",
-   "tech": "Звук, свет",
-   "lines": [
-    "Безносиков, Лоскутова, Самойлов, Лоскутов"
-   ],
-   "people": [
-    {
-     "name": "Безносиков",
-     "times": null,
-     "from": null,
-     "role": null,
-     "uncertain": false,
-     "alts": [],
-     "note": null
-    },
-    {
-     "name": "Лоскутова",
-     "times": null,
-     "from": null,
-     "role": null,
-     "uncertain": false,
-     "alts": [],
-     "note": null
-    },
-    {
-     "name": "Самойлов",
-     "times": null,
-     "from": null,
-     "role": null,
-     "uncertain": false,
-     "alts": [],
-     "note": null
-    },
-    {
-     "name": "Лоскутов",
-     "times": null,
-     "from": null,
-     "role": null,
-     "uncertain": false,
-     "alts": [],
-     "note": null
-    }
-   ],
-   "scope": "people",
-   "accounting": {
-    "showWeight": 1,
-    "away": false,
-    "intro": false
-   }
-  },
-  {
    "id": "e7",
    "date": "2026-10-21",
    "timeText": "12:00",
@@ -537,8 +425,121 @@
    }
   },
   {
+   "id": "e5",
+   "date": "2026-10-22",
+   "timeText": "11:00",
+   "times": [
+    "11:00"
+   ],
+   "range": null,
+   "timeUncertain": false,
+   "title": "Спектакль «Заинька»",
+   "kind": "show",
+   "place": "Новая сцена",
+   "tech": "Звук, свет",
+   "lines": [
+    "Андреев, Глазецкая, Заяшников"
+   ],
+   "people": [
+    {
+     "name": "Андреев",
+     "times": null,
+     "from": null,
+     "role": null,
+     "uncertain": false,
+     "alts": [],
+     "note": null
+    },
+    {
+     "name": "Глазецкая",
+     "times": null,
+     "from": null,
+     "role": null,
+     "uncertain": false,
+     "alts": [],
+     "note": null
+    },
+    {
+     "name": "Заяшников",
+     "times": null,
+     "from": null,
+     "role": null,
+     "uncertain": false,
+     "alts": [],
+     "note": null
+    }
+   ],
+   "scope": "people",
+   "accounting": {
+    "showWeight": 1,
+    "away": false,
+    "intro": false
+   }
+  },
+  {
+   "id": "e6",
+   "date": "2026-10-22",
+   "timeText": "11:30",
+   "times": [
+    "11:30"
+   ],
+   "range": null,
+   "timeUncertain": false,
+   "title": "Спектакль «Конёк-горбунок»",
+   "kind": "show",
+   "place": "Старая сцена",
+   "tech": "Звук, свет",
+   "lines": [
+    "Безносиков, Лоскутова, Самойлов, Лоскутов"
+   ],
+   "people": [
+    {
+     "name": "Безносиков",
+     "times": null,
+     "from": null,
+     "role": null,
+     "uncertain": false,
+     "alts": [],
+     "note": null
+    },
+    {
+     "name": "Лоскутова",
+     "times": null,
+     "from": null,
+     "role": null,
+     "uncertain": false,
+     "alts": [],
+     "note": null
+    },
+    {
+     "name": "Самойлов",
+     "times": null,
+     "from": null,
+     "role": null,
+     "uncertain": false,
+     "alts": [],
+     "note": null
+    },
+    {
+     "name": "Лоскутов",
+     "times": null,
+     "from": null,
+     "role": null,
+     "uncertain": false,
+     "alts": [],
+     "note": null
+    }
+   ],
+   "scope": "people",
+   "accounting": {
+    "showWeight": 1,
+    "away": false,
+    "intro": false
+   }
+  },
+  {
    "id": "e9",
-   "date": "2026-10-21",
+   "date": "2026-10-22",
    "timeText": "13:30",
    "times": [
     "13:30"
@@ -599,7 +600,7 @@
   },
   {
    "id": "e10",
-   "date": "2026-10-21",
+   "date": "2026-10-22",
    "timeText": "16:00",
    "times": [
     "16:00"
@@ -1259,12 +1260,12 @@
    }
   }
  ],
- "version": 5,
- "updatedAt": "2026-10-10T17:06:46.448Z",
+ "version": 6,
+ "updatedAt": "2026-10-10T17:31:40.105Z",
  "pdf": "data/pdf/2026-10-19.pdf",
  "previous": {
-  "version": 4,
-  "updatedAt": "2026-10-08T11:37:05.443Z",
+  "version": 5,
+  "updatedAt": "2026-10-10T17:06:46.448Z",
   "events": [
    {
     "id": "e1",
@@ -1369,9 +1370,9 @@
    {
     "id": "e3",
     "date": "2026-10-20",
-    "timeText": "12:00",
+    "timeText": "14:00",
     "times": [
-     "12:00"
+     "14:00"
     ],
     "range": null,
     "timeUncertain": false,
@@ -1436,7 +1437,7 @@
     ],
     "range": null,
     "timeUncertain": false,
-    "title": "Прогон спектакля«Оксюморон»",
+    "title": "Репетиция спектакля «Оксюморон»",
     "kind": "rehearsal",
     "place": "Новая сцена",
     "tech": "Звук, свет",
@@ -1570,34 +1571,34 @@
     ],
     "range": null,
     "timeUncertain": false,
-    "title": "Репетиция спектакля «Муравьишка»",
-    "kind": "rehearsal",
+    "title": "Спектакль «Заинька»",
+    "kind": "show",
     "place": "Новая сцена",
     "tech": "Звук, свет",
     "lines": [
-     "Чепиль, Сигитова, Андреев"
+     "Андреев, Глазецкая, Заяшников"
     ],
     "people": [
      {
-      "name": "Чепиль",
-      "times": null,
-      "from": null,
-      "role": null,
-      "uncertain": false,
-      "alts": [],
-      "note": null
-     },
-     {
-      "name": "Сигитова",
-      "times": null,
-      "from": null,
-      "role": null,
-      "uncertain": false,
-      "alts": [],
-      "note": null
-     },
-     {
       "name": "Андреев",
+      "times": null,
+      "from": null,
+      "role": null,
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     },
+     {
+      "name": "Глазецкая",
+      "times": null,
+      "from": null,
+      "role": null,
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     },
+     {
+      "name": "Заяшников",
       "times": null,
       "from": null,
       "role": null,
@@ -1608,13 +1609,74 @@
     ],
     "scope": "people",
     "accounting": {
-     "showWeight": 0,
+     "showWeight": 1,
      "away": false,
      "intro": false
     }
    },
    {
     "id": "e6",
+    "date": "2026-10-21",
+    "timeText": "11:30",
+    "times": [
+     "11:30"
+    ],
+    "range": null,
+    "timeUncertain": false,
+    "title": "Спектакль «Конёк-горбунок»",
+    "kind": "show",
+    "place": "Старая сцена",
+    "tech": "Звук, свет",
+    "lines": [
+     "Безносиков, Лоскутова, Самойлов, Лоскутов"
+    ],
+    "people": [
+     {
+      "name": "Безносиков",
+      "times": null,
+      "from": null,
+      "role": null,
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     },
+     {
+      "name": "Лоскутова",
+      "times": null,
+      "from": null,
+      "role": null,
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     },
+     {
+      "name": "Самойлов",
+      "times": null,
+      "from": null,
+      "role": null,
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     },
+     {
+      "name": "Лоскутов",
+      "times": null,
+      "from": null,
+      "role": null,
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     }
+    ],
+    "scope": "people",
+    "accounting": {
+     "showWeight": 1,
+     "away": false,
+     "intro": false
+    }
+   },
+   {
+    "id": "e7",
     "date": "2026-10-21",
     "timeText": "12:00",
     "times": [
@@ -1676,22 +1738,31 @@
     }
    },
    {
-    "id": "e7",
-    "date": "2026-10-22",
-    "timeText": "11:00",
+    "id": "e8",
+    "date": "2026-10-21",
+    "timeText": "12:00",
     "times": [
-     "11:00"
+     "12:00"
     ],
     "range": null,
     "timeUncertain": false,
-    "title": "Спектакль «Заинька»",
-    "kind": "show",
+    "title": "Репетиция спектакля «Муравьишка»",
+    "kind": "rehearsal",
     "place": "Новая сцена",
     "tech": "Звук, свет",
     "lines": [
-     "Андреев, Глазецкая, Заяшников"
+     "Чепиль, Андреев, Сигитова"
     ],
     "people": [
+     {
+      "name": "Чепиль",
+      "times": null,
+      "from": null,
+      "role": null,
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     },
      {
       "name": "Андреев",
       "times": null,
@@ -1702,16 +1773,7 @@
       "note": null
      },
      {
-      "name": "Глазецкая",
-      "times": null,
-      "from": null,
-      "role": null,
-      "uncertain": false,
-      "alts": [],
-      "note": null
-     },
-     {
-      "name": "Заяшников",
+      "name": "Сигитова",
       "times": null,
       "from": null,
       "role": null,
@@ -1722,75 +1784,14 @@
     ],
     "scope": "people",
     "accounting": {
-     "showWeight": 1,
-     "away": false,
-     "intro": false
-    }
-   },
-   {
-    "id": "e8",
-    "date": "2026-10-22",
-    "timeText": "11:30",
-    "times": [
-     "11:30"
-    ],
-    "range": null,
-    "timeUncertain": false,
-    "title": "Спектакль «Конёк-горбунок»",
-    "kind": "show",
-    "place": "Старая сцена",
-    "tech": "Звук, свет",
-    "lines": [
-     "Безносиков, Лоскутова, Самойлов, Лоскутов"
-    ],
-    "people": [
-     {
-      "name": "Безносиков",
-      "times": null,
-      "from": null,
-      "role": null,
-      "uncertain": false,
-      "alts": [],
-      "note": null
-     },
-     {
-      "name": "Лоскутова",
-      "times": null,
-      "from": null,
-      "role": null,
-      "uncertain": false,
-      "alts": [],
-      "note": null
-     },
-     {
-      "name": "Самойлов",
-      "times": null,
-      "from": null,
-      "role": null,
-      "uncertain": false,
-      "alts": [],
-      "note": null
-     },
-     {
-      "name": "Лоскутов",
-      "times": null,
-      "from": null,
-      "role": null,
-      "uncertain": false,
-      "alts": [],
-      "note": null
-     }
-    ],
-    "scope": "people",
-    "accounting": {
-     "showWeight": 1,
+     "showWeight": 0,
      "away": false,
      "intro": false
     }
    },
    {
     "id": "e9",
-    "date": "2026-10-22",
+    "date": "2026-10-21",
     "timeText": "13:30",
     "times": [
      "13:30"
@@ -1851,14 +1852,14 @@
    },
    {
     "id": "e10",
-    "date": "2026-10-22",
+    "date": "2026-10-21",
     "timeText": "16:00",
     "times": [
      "16:00"
     ],
     "range": null,
     "timeUncertain": false,
-    "title": "Прогон спектакля «Оксюморон»",
+    "title": "Репетиция спектакля «Оксюморон»",
     "kind": "rehearsal",
     "place": "Новая сцена",
     "tech": "Звук, свет",

@@ -18,7 +18,7 @@ END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
 UID:2026-10-02-1230-l5f9v@raspisanie
-DTSTAMP:20261010T170800Z
+DTSTAMP:20261010T173100Z
 DTSTART;TZID=Europe/Moscow:20261002T123000
 DTEND;TZID=Europe/Moscow:20261002T133000
 SUMMARY:Собрание всего коллектива
@@ -27,7 +27,7 @@ DESCRIPTION:СОБРАНИЕ ВСЕГО КОЛЛЕКТИВА
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-15-1145-1xbr8tf@raspisanie
-DTSTAMP:20261010T170800Z
+DTSTAMP:20261010T173100Z
 DTSTART;TZID=Europe/Moscow:20261015T114500
 DTEND;TZID=Europe/Moscow:20261015T124500
 SUMMARY:Репетиция «Палочка-выручалочка»
@@ -37,52 +37,8 @@ DESCRIPTION:Репетиция спектакля «Палочка-выр
  Мартюшева\, Лоскутов\,Советов
 END:VEVENT
 BEGIN:VEVENT
-UID:2026-10-20-1400-175r9eq@raspisanie
-DTSTAMP:20261010T170800Z
-DTSTART;TZID=Europe/Moscow:20261020T140000
-DTEND;TZID=Europe/Moscow:20261020T150000
-SUMMARY:Репетиция «Мойдодыр»
-LOCATION:Старая сцена
-DESCRIPTION:Репетиция спектакля «Мойдодыр»\n
- Советов\, Шаймиев\, Баранов\, Сигитова\nЗ
- вук/свет: Звук
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-10-25-1100-sbrlhx@raspisanie
-DTSTAMP:20261010T170800Z
-DTSTART;TZID=Europe/Moscow:20261025T110000
-DTEND;TZID=Europe/Moscow:20261025T120000
-SUMMARY:Спектакль «Мойдодыр»
-LOCATION:Старая сцена
-DESCRIPTION:Спектакль «Мойдодыр»\nСоветов\, Ш
- аймиев\, Баранов\, Сигитова\nЗвук/свет: З
- вук\, свет
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-10-25-1300-sbrlhx@raspisanie
-DTSTAMP:20261010T170800Z
-DTSTART;TZID=Europe/Moscow:20261025T130000
-DTEND;TZID=Europe/Moscow:20261025T140000
-SUMMARY:Спектакль «Мойдодыр»
-LOCATION:Старая сцена
-DESCRIPTION:Спектакль «Мойдодыр»\nСоветов\, Ш
- аймиев\, Баранов\, Сигитова\nЗвук/свет: З
- вук\, свет
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-10-25-1500-sbrlhx@raspisanie
-DTSTAMP:20261010T170800Z
-DTSTART;TZID=Europe/Moscow:20261025T150000
-DTEND;TZID=Europe/Moscow:20261025T160000
-SUMMARY:Спектакль «Мойдодыр»
-LOCATION:Старая сцена
-DESCRIPTION:Спектакль «Мойдодыр»\nСоветов\, Ш
- аймиев\, Баранов\, Сигитова\nЗвук/свет: З
- вук\, свет
-END:VEVENT
-BEGIN:VEVENT
 UID:2026-10-29-0930-1nonzmn@raspisanie
-DTSTAMP:20261010T170800Z
+DTSTAMP:20261010T173100Z
 DTSTART;TZID=Europe/Moscow:20261029T093000
 DTEND;TZID=Europe/Moscow:20261029T103000
 SUMMARY:Репетиция «Собачка»
@@ -93,7 +49,7 @@ DESCRIPTION:Репетиция спектакля «Собачка»\nС
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-29-1100-1fugs7c@raspisanie
-DTSTAMP:20261010T170800Z
+DTSTAMP:20261010T173100Z
 DTSTART;TZID=Europe/Moscow:20261029T110000
 DTEND;TZID=Europe/Moscow:20261029T120000
 SUMMARY:Спектакль «Собачка»
@@ -103,7 +59,7 @@ DESCRIPTION:Спектакль «Собачка»\nСоветов\, Гл
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-31-1100-1nrwk50@raspisanie
-DTSTAMP:20261010T170800Z
+DTSTAMP:20261010T173100Z
 DTSTART;TZID=Europe/Moscow:20261031T110000
 DTEND;TZID=Europe/Moscow:20261031T120000
 SUMMARY:Спектакль «Палочка-выручалочка»
@@ -114,7 +70,7 @@ DESCRIPTION:Спектакль «Палочка-выручалочка»
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-31-1300-1nrwk50@raspisanie
-DTSTAMP:20261010T170800Z
+DTSTAMP:20261010T173100Z
 DTSTART;TZID=Europe/Moscow:20261031T130000
 DTEND;TZID=Europe/Moscow:20261031T140000
 SUMMARY:Спектакль «Палочка-выручалочка»
@@ -125,7 +81,7 @@ DESCRIPTION:Спектакль «Палочка-выручалочка»
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-31-1500-1nrwk50@raspisanie
-DTSTAMP:20261010T170800Z
+DTSTAMP:20261010T173100Z
 DTSTART;TZID=Europe/Moscow:20261031T150000
 DTEND;TZID=Europe/Moscow:20261031T160000
 SUMMARY:Спектакль «Палочка-выручалочка»
@@ -133,5 +89,49 @@ LOCATION:Старая сцена
 DESCRIPTION:Спектакль «Палочка-выручалочка»
  \nСоветов\, Кожев\, Чирочкина\, Лоскутова
  \, Лоскутов)\nЗвук/свет: Звук\, свет
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-20-1400-175r9eq@raspisanie
+DTSTAMP:20261010T173100Z
+DTSTART;TZID=Europe/Moscow:20261020T140000
+DTEND;TZID=Europe/Moscow:20261020T150000
+SUMMARY:Репетиция «Мойдодыр»
+LOCATION:Старая сцена
+DESCRIPTION:Репетиция спектакля «Мойдодыр»\n
+ Советов\, Шаймиев\, Баранов\, Сигитова\nЗ
+ вук/свет: Звук
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-25-1100-sbrlhx@raspisanie
+DTSTAMP:20261010T173100Z
+DTSTART;TZID=Europe/Moscow:20261025T110000
+DTEND;TZID=Europe/Moscow:20261025T120000
+SUMMARY:Спектакль «Мойдодыр»
+LOCATION:Старая сцена
+DESCRIPTION:Спектакль «Мойдодыр»\nСоветов\, Ш
+ аймиев\, Баранов\, Сигитова\nЗвук/свет: З
+ вук\, свет
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-25-1300-sbrlhx@raspisanie
+DTSTAMP:20261010T173100Z
+DTSTART;TZID=Europe/Moscow:20261025T130000
+DTEND;TZID=Europe/Moscow:20261025T140000
+SUMMARY:Спектакль «Мойдодыр»
+LOCATION:Старая сцена
+DESCRIPTION:Спектакль «Мойдодыр»\nСоветов\, Ш
+ аймиев\, Баранов\, Сигитова\nЗвук/свет: З
+ вук\, свет
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-25-1500-sbrlhx@raspisanie
+DTSTAMP:20261010T173100Z
+DTSTART;TZID=Europe/Moscow:20261025T150000
+DTEND;TZID=Europe/Moscow:20261025T160000
+SUMMARY:Спектакль «Мойдодыр»
+LOCATION:Старая сцена
+DESCRIPTION:Спектакль «Мойдодыр»\nСоветов\, Ш
+ аймиев\, Баранов\, Сигитова\nЗвук/свет: З
+ вук\, свет
 END:VEVENT
 END:VCALENDAR
