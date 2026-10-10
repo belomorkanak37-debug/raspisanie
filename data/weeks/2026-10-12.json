@@ -4,7 +4,7 @@
  "end": "2026-10-18",
  "title": "12–18 октября",
  "header": "ПЛАН РАБОТЫ На ОКТЯБРЬ 2026 года",
- "source": "Расписание_с_12_октября_по_18_октября3.pdf",
+ "source": "Расписание с 12 октября по 18 октября(4).pdf",
  "days": [
   "2026-10-12",
   "2026-10-13",
@@ -28,7 +28,12 @@
    "tech": "",
    "lines": [],
    "people": [],
-   "scope": "note"
+   "scope": "note",
+   "accounting": {
+    "showWeight": 0,
+    "away": false,
+    "intro": false
+   }
   },
   {
    "id": "e2",
@@ -75,10 +80,15 @@
      "note": null
     }
    ],
-   "scope": "people"
+   "scope": "people",
+   "accounting": {
+    "showWeight": 0,
+    "away": false,
+    "intro": false
+   }
   },
   {
-   "id": "e4",
+   "id": "e3",
    "date": "2026-10-14",
    "timeText": "11:00 – 15:00",
    "times": [
@@ -144,10 +154,15 @@
      "note": null
     }
    ],
-   "scope": "people"
+   "scope": "people",
+   "accounting": {
+    "showWeight": 0,
+    "away": false,
+    "intro": true
+   }
   },
   {
-   "id": "e5",
+   "id": "e4",
    "date": "2026-10-14",
    "timeText": "11:00",
    "times": [
@@ -191,10 +206,15 @@
      "note": null
     }
    ],
-   "scope": "people"
+   "scope": "people",
+   "accounting": {
+    "showWeight": 0,
+    "away": false,
+    "intro": false
+   }
   },
   {
-   "id": "e6",
+   "id": "e5",
    "date": "2026-10-15",
    "timeText": "11:00",
    "times": [
@@ -207,7 +227,7 @@
    "place": "Старая сцена",
    "tech": "Звук, свет",
    "lines": [
-    "Заяшников, Носов, Трунина, Мартюшева, Лоскутов (?) / Радыгин (?)"
+    "Заяшников, Носов, Трунина, Мартюшева, Лоскутов,"
    ],
    "people": [
     {
@@ -251,28 +271,20 @@
      "times": null,
      "from": null,
      "role": null,
-     "uncertain": true,
-     "alts": [
-      "Радыгин"
-     ],
-     "note": null
-    },
-    {
-     "name": "Радыгин",
-     "times": null,
-     "from": null,
-     "role": null,
-     "uncertain": true,
-     "alts": [
-      "Лоскутов"
-     ],
+     "uncertain": false,
+     "alts": [],
      "note": null
     }
    ],
-   "scope": "people"
+   "scope": "people",
+   "accounting": {
+    "showWeight": 1,
+    "away": false,
+    "intro": false
+   }
   },
   {
-   "id": "e7",
+   "id": "e6",
    "date": "2026-10-15",
    "timeText": "11:00",
    "times": [
@@ -316,7 +328,92 @@
      "note": null
     }
    ],
-   "scope": "people"
+   "scope": "people",
+   "accounting": {
+    "showWeight": 0,
+    "away": false,
+    "intro": false
+   }
+  },
+  {
+   "id": "nmv2nap5xfg5vqq",
+   "date": "2026-10-15",
+   "timeText": "11:45",
+   "times": [
+    "11:45"
+   ],
+   "range": null,
+   "timeUncertain": false,
+   "title": "Репетиция спектакля «Палочка-выручалочка»",
+   "kind": "rehearsal",
+   "place": "Старая сцена",
+   "tech": "",
+   "lines": [
+    "Заяшников, Носов, Трунина, Мартюшева, Лоскутов,Советов"
+   ],
+   "people": [
+    {
+     "name": "Заяшников",
+     "times": null,
+     "from": null,
+     "role": null,
+     "uncertain": false,
+     "alts": [],
+     "note": null
+    },
+    {
+     "name": "Носов",
+     "times": null,
+     "from": null,
+     "role": null,
+     "uncertain": false,
+     "alts": [],
+     "note": null
+    },
+    {
+     "name": "Трунина",
+     "times": null,
+     "from": null,
+     "role": null,
+     "uncertain": false,
+     "alts": [],
+     "note": null
+    },
+    {
+     "name": "Мартюшева",
+     "times": null,
+     "from": null,
+     "role": null,
+     "uncertain": false,
+     "alts": [],
+     "note": null
+    },
+    {
+     "name": "Лоскутов",
+     "times": null,
+     "from": null,
+     "role": null,
+     "uncertain": false,
+     "alts": [],
+     "note": null
+    },
+    {
+     "name": "Советов",
+     "times": null,
+     "from": null,
+     "role": null,
+     "uncertain": false,
+     "alts": [],
+     "note": null
+    }
+   ],
+   "scope": "people",
+   "accounting": {
+    "showWeight": 0,
+    "away": false,
+    "intro": false
+   },
+   "manual": true
   },
   {
    "id": "e8",
@@ -390,10 +487,97 @@
      "note": null
     }
    ],
-   "scope": "people"
+   "scope": "people",
+   "accounting": {
+    "showWeight": 0,
+    "away": false,
+    "intro": false
+   }
   },
   {
    "id": "e9",
+   "date": "2026-10-16",
+   "timeText": "11:00 - 13:00",
+   "times": [
+    "11:00"
+   ],
+   "range": {
+    "from": "11:00",
+    "to": "13:00"
+   },
+   "timeUncertain": false,
+   "title": "Репетиция спектакля «Сказка о глупом мышонке» с А.С.",
+   "kind": "rehearsal",
+   "place": "Старая сцена",
+   "tech": "Звук, свет",
+   "lines": [
+    "Беканова, Мартюшева, Трунина, Лоскутова, Галустянц, Глазецкая"
+   ],
+   "people": [
+    {
+     "name": "Беканова",
+     "times": null,
+     "from": null,
+     "role": null,
+     "uncertain": false,
+     "alts": [],
+     "note": null
+    },
+    {
+     "name": "Мартюшева",
+     "times": null,
+     "from": null,
+     "role": null,
+     "uncertain": false,
+     "alts": [],
+     "note": null
+    },
+    {
+     "name": "Трунина",
+     "times": null,
+     "from": null,
+     "role": null,
+     "uncertain": false,
+     "alts": [],
+     "note": null
+    },
+    {
+     "name": "Лоскутова",
+     "times": null,
+     "from": null,
+     "role": null,
+     "uncertain": false,
+     "alts": [],
+     "note": null
+    },
+    {
+     "name": "Галустянц",
+     "times": null,
+     "from": null,
+     "role": null,
+     "uncertain": false,
+     "alts": [],
+     "note": null
+    },
+    {
+     "name": "Глазецкая",
+     "times": null,
+     "from": null,
+     "role": null,
+     "uncertain": false,
+     "alts": [],
+     "note": null
+    }
+   ],
+   "scope": "people",
+   "accounting": {
+    "showWeight": 0,
+    "away": false,
+    "intro": false
+   }
+  },
+  {
+   "id": "e10",
    "date": "2026-10-16",
    "timeText": "12:00 - 15:00 (?)",
    "times": [
@@ -522,10 +706,15 @@
      "note": null
     }
    ],
-   "scope": "people"
+   "scope": "people",
+   "accounting": {
+    "showWeight": 0,
+    "away": false,
+    "intro": false
+   }
   },
   {
-   "id": "e10",
+   "id": "e11",
    "date": "2026-10-16",
    "timeText": "18:00",
    "times": [
@@ -578,10 +767,15 @@
      "note": null
     }
    ],
-   "scope": "people"
+   "scope": "people",
+   "accounting": {
+    "showWeight": 1,
+    "away": false,
+    "intro": false
+   }
   },
   {
-   "id": "e11",
+   "id": "e12",
    "date": "2026-10-16",
    "timeText": "18:00",
    "times": [
@@ -625,10 +819,15 @@
      "note": null
     }
    ],
-   "scope": "people"
+   "scope": "people",
+   "accounting": {
+    "showWeight": 1,
+    "away": false,
+    "intro": false
+   }
   },
   {
-   "id": "e12",
+   "id": "e13",
    "date": "2026-10-17",
    "timeText": "11:00 13:00 15:00",
    "times": [
@@ -716,10 +915,15 @@
      "note": null
     }
    ],
-   "scope": "people"
+   "scope": "people",
+   "accounting": {
+    "showWeight": 1,
+    "away": false,
+    "intro": false
+   }
   },
   {
-   "id": "e13",
+   "id": "e14",
    "date": "2026-10-17",
    "timeText": "11:00 13:00 15:00",
    "times": [
@@ -774,10 +978,15 @@
      "note": null
     }
    ],
-   "scope": "people"
+   "scope": "people",
+   "accounting": {
+    "showWeight": 1,
+    "away": false,
+    "intro": false
+   }
   },
   {
-   "id": "e14",
+   "id": "e15",
    "date": "2026-10-18",
    "timeText": "11:00 13:00 15:00",
    "times": [
@@ -859,10 +1068,15 @@
      "note": null
     }
    ],
-   "scope": "people"
+   "scope": "people",
+   "accounting": {
+    "showWeight": 1,
+    "away": false,
+    "intro": false
+   }
   },
   {
-   "id": "e15",
+   "id": "e16",
    "date": "2026-10-18",
    "timeText": "11:00 15:00 17:00",
    "times": [
@@ -877,7 +1091,7 @@
    "place": "Новая сцена",
    "tech": "Звук, свет",
    "lines": [
-    "Мартюшева (11:00), Мартюшева?/Сигитова? (13:00 и 15:00) Носов, Андреев"
+    "Мартюшева (11:00), Сигитова (13:00 и 15:00) Носов, Андреев"
    ],
    "people": [
     {
@@ -892,20 +1106,6 @@
      "note": null
     },
     {
-     "name": "Мартюшева",
-     "times": [
-      "13:00",
-      "15:00"
-     ],
-     "from": null,
-     "role": null,
-     "uncertain": true,
-     "alts": [
-      "Сигитова"
-     ],
-     "note": null
-    },
-    {
      "name": "Сигитова",
      "times": [
       "13:00",
@@ -913,10 +1113,8 @@
      ],
      "from": null,
      "role": null,
-     "uncertain": true,
-     "alts": [
-      "Мартюшева"
-     ],
+     "uncertain": false,
+     "alts": [],
      "note": null
     },
     {
@@ -938,15 +1136,20 @@
      "note": null
     }
    ],
-   "scope": "people"
+   "scope": "people",
+   "accounting": {
+    "showWeight": 1,
+    "away": false,
+    "intro": false
+   }
   }
  ],
- "version": 2,
- "updatedAt": "2026-10-09T08:42:09.518Z",
+ "version": 3,
+ "updatedAt": "2026-10-10T17:06:15.864Z",
  "pdf": "data/pdf/2026-10-12.pdf",
  "previous": {
-  "version": 1,
-  "updatedAt": "2026-10-01T15:46:53.894Z",
+  "version": 2,
+  "updatedAt": "2026-10-09T08:42:09.518Z",
   "events": [
    {
     "id": "e1",
@@ -1000,72 +1203,6 @@
      },
      {
       "name": "Сигитова",
-      "times": null,
-      "from": null,
-      "role": null,
-      "uncertain": false,
-      "alts": [],
-      "note": null
-     }
-    ],
-    "scope": "people"
-   },
-   {
-    "id": "e3",
-    "date": "2026-10-13",
-    "timeText": "12:00",
-    "times": [
-     "12:00"
-    ],
-    "range": null,
-    "timeUncertain": false,
-    "title": "Ввод в спектакль «Конёк-горбунок»",
-    "kind": "intro",
-    "place": "Старая сцена",
-    "tech": "Звук",
-    "lines": [
-     "Вводящийся – Радыгин, вводящий – Безносиков",
-     "Лоскутова, Лоскутов, Самойлов"
-    ],
-    "people": [
-     {
-      "name": "Радыгин",
-      "times": null,
-      "from": null,
-      "role": "вводящийся",
-      "uncertain": false,
-      "alts": [],
-      "note": null
-     },
-     {
-      "name": "Безносиков",
-      "times": null,
-      "from": null,
-      "role": "вводящий",
-      "uncertain": false,
-      "alts": [],
-      "note": null
-     },
-     {
-      "name": "Лоскутова",
-      "times": null,
-      "from": null,
-      "role": null,
-      "uncertain": false,
-      "alts": [],
-      "note": null
-     },
-     {
-      "name": "Лоскутов",
-      "times": null,
-      "from": null,
-      "role": null,
-      "uncertain": false,
-      "alts": [],
-      "note": null
-     },
-     {
-      "name": "Самойлов",
       "times": null,
       "from": null,
       "role": null,
