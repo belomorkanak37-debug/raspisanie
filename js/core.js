@@ -134,7 +134,7 @@ export function detectKind(title) {
   if (/^(репетиц|прогон)/.test(t)) return 'rehearsal';
   if (/^спектак/.test(t)) return 'show';
   if (/^собрани/.test(t)) return 'meeting';
-  if (/^(отъезд|выезд|гастрол)/.test(t)) return 'trip';
+  if (/^(отъезд|выезд|гастрол|фестивал)/.test(t)) return 'trip';
   if (/спектакль|спектакля/.test(t) && !/репетиц/.test(t)) return 'show';
   if (/репетиц/.test(t)) return 'rehearsal';
   return 'other';
@@ -403,14 +403,17 @@ const accountingText = (s) => normName(s).replace(/[^а-яa-z0-9]+/g, ' ').trim(
 export function eventAccounting(ev) {
   const title = normName(ev.title);
   const kind = ev.kind || detectKind(ev.title);
-  const show = ev.scope !== 'note' && (kind === 'show' || (kind === 'trip'
-    && /спектакл/.test(title) && !/^(отъезд|выезд\s+(?:гастрольной\s+)?группы)/.test(title)));
+  const awayTitle = /выезд|гастрол|фестивал|бдф/.test(title);
+  const travelOnly = /^(отъезд|выезд\s+(?:гастрольной\s+)?группы)/.test(title);
+  const show = ev.scope !== 'note' && (kind === 'show' || ((kind === 'trip' || (kind === 'other' && awayTitle))
+    && !travelOnly && (/спектакл/.test(title) || (/«[^»]+»/.test(title) && ev.times?.length > 0))));
   const heading = accountingText(prettyTitle(ev.title).heading);
-  const half = /(^| )собачка($| )|(^| )первый снег малыша($| )/.test(heading);
+  const baby = show && /(^| )собачка($| )|(^| )первый снег малыша($| )/.test(heading);
+  const halfFor = show && /(^| )теремок($| )/.test(heading) ? ['баранов', 'носов'] : [];
   const place = normName(ev.place);
-  const away = show && (/выезд|гастрол|бдф/.test(title)
+  const away = show && (awayTitle
     || /москв|выборг|шк(?:ола|\s|\.|№)|лице[йя]|гимнази|дворец|дом культуры|губернск|(^|[^а-я])дк($|[^а-я])|ул[.\s]|проспект/.test(place));
-  return { showWeight: show ? (half ? 0.5 : 1) : 0, away, intro: kind === 'intro' && ev.scope !== 'note' };
+  return { showWeight: show ? 1 : 0, baby, halfFor, away, intro: kind === 'intro' && ev.scope !== 'note' };
 }
 
 function introRole(role) {
@@ -471,7 +474,10 @@ export function monthlyTotals(weeks, name, month) {
         if (flags.showWeight) for (const time of accountingTimes(ev, p)) {
           const id = [ev.date, time, accountingText(prettyTitle(ev.title).heading), accountingText(ev.place)].join('|');
           const old = shows.get(id);
-          if (!old || (old.possible && !possible)) shows.set(id, { ev, week: w, time, possible, weight: flags.showWeight, away: flags.away });
+          if (!old || (old.possible && !possible)) shows.set(id, {
+            ev, week: w, time, possible, weight: flags.halfFor.includes(key) ? 0.5 : flags.showWeight,
+            baby: flags.baby, away: flags.away,
+          });
         }
         if (flags.intro) {
           const role = introRole(p.role);
@@ -495,12 +501,57 @@ export function monthlyTotals(weeks, name, month) {
     return {
       shows: showsCount, performances: showItems.length, aboveNorm: Math.max(0, showsCount - MONTHLY_NORM),
       halfShows: showItems.filter((s) => s.weight === 0.5).length,
+      babyShows: showItems.filter((s) => s.baby).length,
       awayShows: awayItems.length,
       introDays: Object.fromEntries(Object.keys(INTRO_ROLE_LABELS).map((r) => [r, introItems.filter((i) => i.role === r).length])),
       showItems, awayItems, introItems,
     };
   };
   return { month, norm: MONTHLY_NORM, confirmed: bucket(false), possible: bucket(true), coverage: { days: covered.size, totalDays } };
+}
+
+/* ---------- приблизительная зарплата ---------- */
+
+export const SALARY_RATES = { show: 5, baby: 3, awayFirst: 6, awayExtra: 5, newcomer: 6, mentor: 3, actor: 4, tax: 13 };
+
+export function calculateSalary(totals, salary) {
+  const text = String(salary ?? '').trim().replace(/\s/g, '').replace(',', '.');
+  const baseKopecks = Math.round(Number(text) * 100);
+  if (!/^\d+(?:\.\d{1,2})?$/.test(text) || !Number.isSafeInteger(baseKopecks) || baseKopecks <= 0) {
+    throw new Error('Введите оклад больше нуля, в рублях и копейках.');
+  }
+  const t = totals.confirmed;
+  const counts = { show: 0, baby: 0, awayFirst: 0, awayExtra: 0, ...t.introDays };
+  let used = 0;
+  // Порядок показов важен: бэбик внутри нормы не оплачивается дополнительно.
+  const showCharges = t.showItems.map((s) => {
+    const before = Math.max(0, used - totals.norm);
+    used += s.weight;
+    const units = Math.max(0, used - totals.norm) - before;
+    const kind = s.baby ? 'baby' : 'show';
+    counts[kind] += units;
+    return { ...s, units, percent: units * SALARY_RATES[kind] };
+  });
+  const awayDays = new Set();
+  const awayCharges = t.awayItems.map((s) => {
+    const kind = awayDays.has(s.ev.date) ? 'awayExtra' : 'awayFirst';
+    awayDays.add(s.ev.date);
+    counts[kind]++;
+    return { ...s, percent: SALARY_RATES[kind] };
+  });
+  const lines = ['show', 'baby', 'awayFirst', 'awayExtra', 'newcomer', 'mentor', 'actor'].map((key) => {
+    const count = counts[key], rate = SALARY_RATES[key], percent = count * rate;
+    return { key, count, rate, percent, amount: Math.round(baseKopecks * percent / 100) / 100 };
+  });
+  const bonusKopecks = lines.reduce((sum, line) => sum + Math.round(line.amount * 100), 0);
+  const grossKopecks = baseKopecks + bonusKopecks;
+  if (!Number.isSafeInteger(grossKopecks)) throw new Error('Оклад слишком большой для расчёта.');
+  const taxKopecks = Math.round(grossKopecks * SALARY_RATES.tax / 100);
+  return {
+    base: baseKopecks / 100, lines, bonusPercent: lines.reduce((sum, line) => sum + line.percent, 0),
+    bonus: bonusKopecks / 100, gross: grossKopecks / 100, tax: taxKopecks / 100,
+    net: (grossKopecks - taxKopecks) / 100, taxRate: SALARY_RATES.tax, showCharges, awayCharges,
+  };
 }
 
 // Сравнивает персональные записи с предыдущей версией недели.

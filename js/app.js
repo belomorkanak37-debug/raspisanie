@@ -1,6 +1,6 @@
 import {
   KIND_LABELS, buildICS, editDistance, fmtDate, fmtDateTime, markChanges, normName,
-  personalItems, prettyTitle, todayISO, addDays, weekdayName, weekTitle, monthlyTotals, INTRO_ROLE_LABELS,
+  personalItems, prettyTitle, todayISO, addDays, weekdayName, weekTitle, monthlyTotals, calculateSalary, INTRO_ROLE_LABELS,
 } from './core.js';
 import { loadPersonalEvents, savePersonalEvent, deletePersonalEvent, personalStorageKey } from './personal.js';
 
@@ -33,11 +33,14 @@ const store = {
 const PIN = 'rs.pinned';
 const RECENT = 'rs.recent';
 const VIEW = 'rs.view';
+const salaryKey = (name) => `rs.salary.v1.${normName(name)}`;
+const savedView = store.get(VIEW, 'list');
 
 /* ---------- данные ---------- */
 const state = {
-  index: null, weeks: new Map(), offline: false, archiveLimit: 4,
-  view: store.get(VIEW, 'list'), // 'list' | 'calendar' | 'archive' | 'totals'
+  index: null, weeks: new Map(), offline: false, pastLimit: 4, showPast: false,
+  listRequest: 0, pastRequest: 0, salaryTotals: null,
+  view: ['list', 'calendar', 'totals', 'calculator'].includes(savedView) ? savedView : 'list',
   month: null, // 'YYYY-MM' в календаре
   selDay: null, // выбранный день в календаре
   totalsMonth: null, // 'YYYY-MM' в итогах
@@ -167,6 +170,7 @@ async function showPerson(rawName) {
   const key = normName(rawName);
   const known = allPeople().find((n) => normName(n) === key);
   const name = known || capitalize(rawName);
+  if (current?.key !== key) { state.showPast = false; state.pastLimit = 4; }
   current = { name, key, known: !!known };
   document.title = `${name} — расписание`;
   $('#searchLink').hidden = false;
@@ -182,7 +186,7 @@ async function showPerson(rawName) {
       </div>
     </section>
     <div class="tabs" role="tablist">
-      ${[['list', 'Список'], ['calendar', 'Календарь'], ['archive', 'Архив'], ['totals', 'Итоги']].map(([v, label]) => `
+      ${[['list', 'Список'], ['calendar', 'Календарь'], ['totals', 'Итоги'], ['calculator', 'Калькулятор']].map(([v, label]) => `
         <button role="tab" data-tab="${v}" class="${state.view === v ? 'on' : ''}" aria-selected="${state.view === v}">${label}</button>`).join('')}
     </div>
     <div id="feed"><div class="skeleton"></div><div class="skeleton"></div><div class="skeleton"></div></div>`;
@@ -198,7 +202,7 @@ async function showPerson(rawName) {
   $('#calBtn')?.addEventListener('click', openCalendarSheet);
   view.querySelectorAll('[data-tab]').forEach((b) => b.addEventListener('click', () => {
     state.view = b.dataset.tab;
-    if (state.view !== 'archive') store.set(VIEW, state.view);
+    store.set(VIEW, state.view);
     view.querySelectorAll('[data-tab]').forEach((x) => {
       x.classList.toggle('on', x === b);
       x.setAttribute('aria-selected', x === b);
@@ -212,12 +216,13 @@ async function showPerson(rawName) {
 function renderFeed() {
   const feed = $('#feed');
   if (!feed || !current) return;
-  if (state.index.failed && state.view === 'totals') {
+  if (state.view !== 'calculator') state.salaryTotals = null;
+  if (state.index.failed && ['totals', 'calculator'].includes(state.view)) {
     feed.innerHTML = '<div class="empty"><div class="big">Не удалось загрузить расписание</div>Проверьте интернет и обновите страницу.</div>';
     return;
   }
-  if (state.view === 'totals') return renderTotals(feed);
-  return state.view === 'calendar' ? renderCalendar(feed) : renderList(feed, state.view === 'list');
+  if (state.view === 'totals' || state.view === 'calculator') return renderTotals(feed, state.view === 'calculator');
+  return state.view === 'calendar' ? renderCalendar(feed) : renderList(feed);
 }
 
 // Записи человека за неделю + отменённые (из прошлой версии недели) с отметками изменений.
@@ -245,8 +250,7 @@ function changesBanner(entries, hint = 'Они отмечены ниже.') {
 }
 
 /* ---------- вид списком ---------- */
-async function renderList(feed, upcoming) {
-  const person = current;
+async function listSection(upcoming, person) {
   const { key } = person;
   const today = todayISO();
   const idx = state.index;
@@ -269,11 +273,11 @@ async function renderList(feed, upcoming) {
     group.personal.push(personalEntry(ev));
   }
   groups.sort((a, b) => upcoming ? a.meta.start.localeCompare(b.meta.start) : b.meta.start.localeCompare(a.meta.start));
-  const hasMore = !upcoming && groups.length > state.archiveLimit;
-  if (!upcoming) groups = groups.slice(0, state.archiveLimit);
+  const hasMore = !upcoming && groups.length > state.pastLimit;
+  if (!upcoming) groups = groups.slice(0, state.pastLimit);
 
   const loaded = await Promise.all(groups.map(({ meta }) => meta.id ? loadWeek(meta.id) : null));
-  if (current !== person || state.view !== (upcoming ? 'list' : 'archive') || $('#feed') !== feed) return;
+  if (current !== person) return null;
   const weeks = loaded.filter(Boolean);
   const keep = (it) => keepDate(it.ev.date);
 
@@ -294,13 +298,35 @@ async function renderList(feed, upcoming) {
     }
   }
 
-  state.rendered = weeks;
-  feed.innerHTML = (idx.failed ? '<div class="banner">Театральное расписание не удалось загрузить. Личные дела доступны в этом браузере.</div>' : '')
-    + (personalError ? `<div class="banner">${esc(personalError)}</div>` : '')
-    + (html
-      ? (upcoming ? changesBanner(all) : '') + html
-        + (hasMore ? `<button class="pill more-btn" data-more>${ICON.plus}Показать ещё</button>` : '')
-      : emptyState(upcoming));
+  return { weeks, all, personalError, html: html
+    ? html + (hasMore ? `<button class="pill more-btn" data-more>${ICON.plus}Показать ещё прошлые дни</button>` : '')
+    : emptyState(upcoming) };
+}
+
+async function renderList(feed) {
+  const person = current, request = ++state.listRequest;
+  const section = await listSection(true, person);
+  if (!section || current !== person || state.view !== 'list' || $('#feed') !== feed || request !== state.listRequest) return;
+  state.pastRequest++;
+  state.rendered = section.weeks;
+  feed.innerHTML = (state.index.failed ? '<div class="banner">Театральное расписание не удалось загрузить. Личные дела доступны в этом браузере.</div>' : '')
+    + (section.personalError ? `<div class="banner">${esc(section.personalError)}</div>` : '')
+    + `<details class="past-days" data-past ${state.showPast ? 'open' : ''}>
+        <summary>${state.showPast ? 'Скрыть прошлые дни' : 'Показать прошлые дни'}</summary>
+        <div id="pastList">${state.showPast ? '<div class="skeleton"></div>' : ''}</div>
+      </details>`
+    + changesBanner(section.all) + section.html;
+  if (state.showPast) await renderPast(feed);
+}
+
+async function renderPast(feed) {
+  const person = current, box = $('#pastList', feed), request = ++state.pastRequest;
+  if (!box || !state.showPast) return;
+  const section = await listSection(false, person);
+  if (!section || current !== person || state.view !== 'list' || !state.showPast
+    || $('#feed') !== feed || $('#pastList', feed) !== box || request !== state.pastRequest) return;
+  state.rendered = [...new Map([...state.rendered, ...section.weeks].map((w) => [w.id, w])).values()];
+  box.innerHTML = (section.personalError ? `<div class="banner">${esc(section.personalError)}</div>` : '') + section.html;
 }
 
 /* ---------- вид календарём ---------- */
@@ -508,7 +534,7 @@ $('#personalDelete')?.addEventListener('click', () => {
   } catch (err) { personalError(err.message); }
 });
 window.addEventListener('storage', (e) => {
-  if (current && ['calendar', 'list', 'archive'].includes(state.view)
+  if (current && ['calendar', 'list'].includes(state.view)
     && (e.key === null || e.key === personalStorageKey(current.key))) renderFeed();
 });
 
@@ -531,13 +557,14 @@ function totalsStats(t, possible = false) {
       ${t.halfShows ? `<small>(${t.halfShows} ${plural(t.halfShows, 'показ', 'показа', 'показов')} по 0,5)</small>` : ''}</dd></div>
     ${Object.entries(INTRO_ROLE_LABELS).map(([r, label]) => `<div><dt>${label}</dt><dd>${t.introDays[r]} <span>${plural(t.introDays[r], 'день', 'дня', 'дней')}</span></dd></div>`).join('')}
     <div><dt>Выездных спектаклей</dt><dd>${t.awayShows}</dd></div>
+    <div><dt>Бэбиков</dt><dd>${t.babyShows}</dd></div>
   </dl>`;
 }
 
 function totalsDetails(t, label) {
   if (!t.showItems.length && !t.awayItems.length && !t.introItems.length) return '';
   const showsList = (items) => `<ul>${items.map((s) => `<li><div class="totals-date">${fmtDate(s.ev.date)} · ${esc(s.time || 'время не указано')}</div>
-    <div>${esc(prettyTitle(s.ev.title).heading)}${s.weight === 0.5 && !s.away ? ' <span class="chip">0,5</span>' : ''}</div>
+    <div>${esc(prettyTitle(s.ev.title).heading)}${s.weight === 0.5 && !s.away ? ' <span class="chip">0,5</span>' : ''}${s.baby ? ' <span class="chip">бэбик</span>' : ''}</div>
     ${s.ev.place ? `<div class="muted">${esc(s.ev.place)}</div>` : ''}</li>`).join('')}</ul>`;
   return `<details class="totals-details"><summary>${label}</summary>
     ${t.showItems.length ? `<h3>Спектакли (${t.performances} ${plural(t.performances, 'показ', 'показа', 'показов')})</h3>
@@ -549,15 +576,67 @@ function totalsDetails(t, label) {
   </details>`;
 }
 
-async function renderTotals(feed) {
+const money = (n) => new Intl.NumberFormat('ru-RU', { style: 'currency', currency: 'RUB' }).format(n);
+const salaryLabels = {
+  show: 'Спектакли сверх нормы', baby: 'Бэбики сверх нормы',
+  awayFirst: 'Выезды: первый показ за день', awayExtra: 'Выезды: последующие показы',
+  newcomer: 'Вводящийся', mentor: 'Вводящий', actor: 'Актёр на вводе',
+};
+
+function salaryDetails(calc, totals) {
+  const list = (items, away) => `<ul>${items.map((s) => `<li>
+    <div class="totals-date">${fmtDate(s.ev.date)} · ${esc(s.time || 'время не указано')}</div>
+    <div>${esc(prettyTitle(s.ev.title).heading)}${s.baby ? ' <span class="chip">бэбик</span>' : ''}${s.weight === 0.5 && !away ? ' <span class="chip">0,5</span>' : ''}</div>
+    <div class="muted">${s.percent ? `+${fmtCount(s.percent)}% от оклада${!away && s.units < s.weight ? ' · часть показа сверх нормы' : ''}` : 'В пределах нормы — без доплаты'}</div>
+  </li>`).join('')}</ul>`;
+  return `<details class="totals-details"><summary>Посмотреть расчёт по датам</summary>
+    ${calc.showCharges.length ? `<h3>Спектакли в театре</h3>${list(calc.showCharges, false)}` : ''}
+    ${calc.awayCharges.length ? `<h3>Выезды, гастроли и фестивали</h3>${list(calc.awayCharges, true)}` : ''}
+    ${totals.confirmed.introItems.length ? `<h3>Дни вводов</h3><ul>${totals.confirmed.introItems.map((i) => `<li>
+      <div class="totals-date">${fmtDate(i.date)} · ${INTRO_ROLE_LABELS[i.role]}</div>
+      <div>${i.titles.map(esc).join(', ')}</div>
+      <div class="muted">+${calc.lines.find((l) => l.key === i.role).rate}% от оклада</div>
+    </li>`).join('')}</ul>` : ''}
+  </details>`;
+}
+
+function updateSalaryResult() {
+  const box = $('#salaryResult'), input = $('[data-salary]'), context = state.salaryTotals;
+  if (!box || !input || !context || context.person !== current || state.view !== 'calculator' || context.ym !== state.totalsMonth) return;
+  input.setAttribute('aria-invalid', 'false');
+  if (!input.value.trim()) {
+    box.innerHTML = '<p class="calc-placeholder">Введите оклад, чтобы увидеть приблизительную зарплату.</p>';
+    return;
+  }
+  try {
+    const calc = calculateSalary(context.totals, input.value);
+    box.innerHTML = `<section class="calc-result" aria-label="Приблизительная зарплата">
+        <p>Примерно на руки</p><strong>${money(calc.net)}</strong><span>После удержания ${calc.taxRate}% налога</span>
+      </section>
+      <dl class="calc-ledger">
+        <div><dt>Оклад</dt><dd>${money(calc.base)}</dd></div>
+        ${calc.lines.map((line) => `<div><dt>${salaryLabels[line.key]}<small>${fmtCount(line.count)} × ${line.rate}% = ${fmtCount(line.percent)}%</small></dt><dd>${money(line.amount)}</dd></div>`).join('')}
+        <div class="calc-total"><dt>Всего доплат <small>${fmtCount(calc.bonusPercent)}% от оклада</small></dt><dd>${money(calc.bonus)}</dd></div>
+        <div class="calc-total"><dt>Начислено до налога</dt><dd>${money(calc.gross)}</dd></div>
+        <div><dt>Налог ${calc.taxRate}%</dt><dd>−${money(calc.tax)}</dd></div>
+      </dl>${salaryDetails(calc, context.totals)}`;
+  } catch (e) {
+    input.setAttribute('aria-invalid', 'true');
+    box.innerHTML = `<p class="calc-error" role="alert">${esc(e.message)}</p>`;
+  }
+}
+
+async function renderTotals(feed, calculator = false) {
   const person = current;
+  const targetView = calculator ? 'calculator' : 'totals';
+  state.salaryTotals = null;
   if (!person.known) { feed.innerHTML = emptyState(false); return; }
   const months = totalsMonths();
   const ym = state.totalsMonth || monthOf(todayISO());
   state.totalsMonth = ym;
-  const header = `<section class="totals-head"><h2>Итоги</h2>
+  const header = `<section class="totals-head"><h2>${calculator ? 'Калькулятор' : 'Итоги'}</h2>
     <p class="totals-notice"><strong>Все расчёты приблизительны.</strong> Как всегда, мы не знаем, кто и что точно сыграет.</p>
-    <label class="totals-month">Месяц<select data-totals-month aria-label="Месяц итогов">
+    <label class="totals-month">Месяц<select data-totals-month aria-label="${calculator ? 'Месяц расчёта' : 'Месяц итогов'}">
       ${months.map((m) => `<option value="${m}" ${m === ym ? 'selected' : ''}>${monthLabel(m)}</option>`).join('')}</select></label>
   </section>`;
   feed.innerHTML = header + '<div class="skeleton"></div>';
@@ -565,18 +644,37 @@ async function renderTotals(feed) {
   const first = `${ym}-01`, last = `${ym}-${String(new Date(y, m, 0).getDate()).padStart(2, '0')}`;
   const metas = state.index.weeks.filter((w) => w.start <= last && w.end >= first);
   const loaded = await Promise.all(metas.map((w) => loadWeek(w.id)));
-  if (current !== person || state.view !== 'totals' || state.totalsMonth !== ym || $('#feed') !== feed) return;
+  if (current !== person || state.view !== targetView || state.totalsMonth !== ym || $('#feed') !== feed) return;
   const weeks = loaded.filter(Boolean);
   const totals = monthlyTotals(weeks, person.key, ym);
   const { confirmed, possible, coverage } = totals;
   const hasPossible = possible.showItems.length || possible.awayItems.length || possible.introItems.length;
   const failed = weeks.length < metas.length;
-  feed.innerHTML = header + `
+  const notices = `
     ${failed ? '<div class="banner">Часть расписаний не загрузилась. Показаны итоги только по доступным неделям. Обновите страницу при подключении к интернету.</div>' : ''}
     <p class="totals-coverage">${coverage.days ? `Расписание загружено на ${coverage.days} из ${coverage.totalDays} дней месяца.` : 'Расписание на этот месяц ещё не загружено.'}
-      ${coverage.days ? ' Учтены все опубликованные даты, включая предстоящие.' : ''}</p>
+      ${coverage.days ? ' Учтены все опубликованные даты, включая предстоящие.' : ''}</p>`;
+  if (calculator) {
+    state.salaryTotals = { person, ym, totals };
+    feed.innerHTML = header + notices + `
+      <div class="calc-form"><label for="salaryBase">Оклад, ₽</label>
+        <input id="salaryBase" data-salary type="text" inputmode="decimal" autocomplete="off" placeholder="Например, 50000" value="${esc(store.get(salaryKey(person.key), ''))}" aria-describedby="salaryHint">
+        <p id="salaryHint">До удержания налога. Оклад сохраняется только в этом браузере.</p>
+      </div>
+      ${!coverage.days ? '<p class="totals-rules">Расписание на этот месяц не загружено — пока можно посчитать только оклад после налога.</p>' : ''}
+      ${hasPossible ? '<p class="totals-rules">Участия под вопросом и альтернативный состав в сумму не включены. Их можно посмотреть в «Итогах».</p>' : ''}
+      <div id="salaryResult" aria-live="polite"></div>
+      <p class="totals-rules">Первые ${totals.norm} спектаклей входят в норму. Далее обычный показ даёт +5%, бэбик — только +3%. Порядок — по датам и времени.
+        «Теремок» у Баранова и Носова учитывается по 0,5; часть сверх нормы оплачивается пропорционально.
+        Выезды, гастроли и фестивали считаются отдельно: первый показ каждого дня +6%, каждый следующий +5%.
+        День ввода: вводящийся +6%, вводящий +3%, актёр на вводе +4%. Налог 13% удерживается с оклада и всех доплат.</p>`;
+    updateSalaryResult();
+    return;
+  }
+  feed.innerHTML = header + notices + `
     ${coverage.days ? `<section class="totals-panel" aria-label="Итоги по расписанию">${totalsStats(confirmed)}</section>
-      <p class="totals-rules">Норма спектаклей в театре — ${totals.norm}. «Собачка» и «Первый снег малыша» считаются по 0,5 за показ.
+      <p class="totals-rules">Норма спектаклей в театре — ${totals.norm}. «Собачка» и «Первый снег малыша» — бэбики, каждый считается как 1 спектакль.
+        «Теремок» для Баранова и Носова считается по 0,5 за показ, для остальных — как 1.
         Каждый личный показ считается отдельно. Выезды учитываются отдельной графой и не влияют на норму. Вводы считаются по дням, а не по числу репетиций; роли берутся из состава.</p>
       ${totalsDetails(confirmed, 'Посмотреть учтённые даты')}
       ${hasPossible ? `<section class="totals-panel totals-possible"><h3>Под вопросом — отдельно</h3>
@@ -595,7 +693,7 @@ function emptyState(upcoming) {
   }
   return upcoming
     ? '<div class="empty"><div class="big">Ближайших занятостей нет</div>Как только выйдет новое расписание, оно появится здесь.</div>'
-    : '<div class="empty"><div class="big">В архиве пока пусто</div>Здесь будут прошедшие занятости.</div>';
+    : '<div class="empty"><div class="big">Прошедших занятостей нет</div>Здесь будут прошлые дни.</div>';
 }
 
 const plural = (n, one, few, many) => {
@@ -682,6 +780,18 @@ function bindFeed(feed) {
     const ev = w?.events.find((e) => e.id === eid);
     return ev ? personalItems([ev], current.key)[0] : null;
   };
+  feed.addEventListener('toggle', (e) => {
+    if (!e.target.matches('[data-past]') || e.target.open === state.showPast) return;
+    state.showPast = e.target.open;
+    e.target.querySelector('summary').textContent = state.showPast ? 'Скрыть прошлые дни' : 'Показать прошлые дни';
+    if (state.showPast) renderPast(feed);
+    else state.pastRequest++;
+  }, true);
+  feed.addEventListener('input', (e) => {
+    if (!e.target.matches('[data-salary]') || !current) return;
+    store.set(salaryKey(current.key), e.target.value);
+    updateSalaryResult();
+  });
   feed.addEventListener('change', (e) => {
     if (!e.target.matches('[data-totals-month]')) return;
     state.totalsMonth = e.target.value;
@@ -703,8 +813,8 @@ function bindFeed(feed) {
       return renderFeed();
     }
     if (t.closest('[data-more]')) {
-      state.archiveLimit += 4;
-      return renderFeed();
+      state.pastLimit += 4;
+      return renderPast(feed);
     }
     const c = t.closest('.card');
     if (!c) return;
