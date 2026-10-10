@@ -4,7 +4,7 @@
  "end": "2026-11-01",
  "title": "26 октября — 1 ноября",
  "header": "ПЛАН РАБОТЫ На ОКТЯБРЬ 2026 года",
- "source": "Расписание с  26 октября по 1 ноября исправленное.pdf",
+ "source": "Расписание с  26 октября по 1 ноября(1).pdf",
  "days": [
   "2026-10-26",
   "2026-10-27",
@@ -492,7 +492,59 @@
    }
   },
   {
-   "id": "e8",
+   "id": "e9",
+   "date": "2026-10-29",
+   "timeText": "09:30",
+   "times": [
+    "09:30"
+   ],
+   "range": null,
+   "timeUncertain": false,
+   "title": "Репетиция спектакля «Собачка»",
+   "kind": "rehearsal",
+   "place": "Новая сцена",
+   "tech": "Звук, свет",
+   "lines": [
+    "Советов, Глазецкая, Носов"
+   ],
+   "people": [
+    {
+     "name": "Советов",
+     "times": null,
+     "from": null,
+     "role": null,
+     "uncertain": false,
+     "alts": [],
+     "note": null
+    },
+    {
+     "name": "Глазецкая",
+     "times": null,
+     "from": null,
+     "role": null,
+     "uncertain": false,
+     "alts": [],
+     "note": null
+    },
+    {
+     "name": "Носов",
+     "times": null,
+     "from": null,
+     "role": null,
+     "uncertain": false,
+     "alts": [],
+     "note": null
+    }
+   ],
+   "scope": "people",
+   "accounting": {
+    "showWeight": 0,
+    "away": false,
+    "intro": false
+   }
+  },
+  {
+   "id": "e10",
    "date": "2026-10-29",
    "timeText": "11:00",
    "times": [
@@ -505,11 +557,11 @@
    "place": "Новая сцена",
    "tech": "Звук, свет",
    "lines": [
-    "Лоскутов, Глазецкая, Носов"
+    "Советов, Глазецкая, Носов"
    ],
    "people": [
     {
-     "name": "Лоскутов",
+     "name": "Советов",
      "times": null,
      "from": null,
      "role": null,
@@ -544,15 +596,18 @@
    }
   },
   {
-   "id": "e9",
+   "id": "e11",
    "date": "2026-10-29",
-   "timeText": "11:00 –",
+   "timeText": "11:00 – 13:00",
    "times": [
     "11:00"
    ],
-   "range": null,
+   "range": {
+    "from": "11:00",
+    "to": "13:00"
+   },
    "timeUncertain": false,
-   "title": "Репетиция спектакля «Агния Барто», сдача А.С",
+   "title": "Репетиция спектакля «Агния Барто» + сдача А.С.",
    "kind": "rehearsal",
    "place": "Старая сцена",
    "tech": "Звук",
@@ -614,7 +669,7 @@
    }
   },
   {
-   "id": "e11",
+   "id": "e12",
    "date": "2026-10-29",
    "timeText": "14:00 – 18:00",
    "times": [
@@ -669,7 +724,7 @@
    }
   },
   {
-   "id": "e12",
+   "id": "e13",
    "date": "2026-10-29",
    "timeText": "16:00",
    "times": [
@@ -730,7 +785,7 @@
    }
   },
   {
-   "id": "e13",
+   "id": "e14",
    "date": "2026-10-30",
    "timeText": "13:00",
    "times": [
@@ -791,7 +846,7 @@
    }
   },
   {
-   "id": "e14",
+   "id": "e15",
    "date": "2026-10-30",
    "timeText": "17:00",
    "times": [
@@ -852,7 +907,7 @@
    }
   },
   {
-   "id": "e15",
+   "id": "e16",
    "date": "2026-10-30",
    "timeText": "18:00",
    "times": [
@@ -913,7 +968,7 @@
    }
   },
   {
-   "id": "e16",
+   "id": "e17",
    "date": "2026-10-30",
    "timeText": "19:00",
    "times": [
@@ -974,7 +1029,7 @@
    }
   },
   {
-   "id": "e17",
+   "id": "e18",
    "date": "2026-10-31",
    "timeText": "11:00 13:00 15:00",
    "times": [
@@ -989,11 +1044,11 @@
    "place": "Старая сцена",
    "tech": "Звук, свет",
    "lines": [
-    "Заяшников, Кожев, Чирочкина, Лоскутова, Лоскутов / Радыгин (??)"
+    "Советов, Кожев, Чирочкина, Лоскутова, Лоскутов)"
    ],
    "people": [
     {
-     "name": "Заяшников",
+     "name": "Советов",
      "times": null,
      "from": null,
      "role": null,
@@ -1033,21 +1088,8 @@
      "times": null,
      "from": null,
      "role": null,
-     "uncertain": true,
-     "alts": [
-      "Радыгин"
-     ],
-     "note": null
-    },
-    {
-     "name": "Радыгин",
-     "times": null,
-     "from": null,
-     "role": null,
-     "uncertain": true,
-     "alts": [
-      "Лоскутов"
-     ],
+     "uncertain": false,
+     "alts": [],
      "note": null
     }
    ],
@@ -1059,7 +1101,7 @@
    }
   },
   {
-   "id": "e18",
+   "id": "e19",
    "date": "2026-10-31",
    "timeText": "11:00 13:00 15:00",
    "times": [
@@ -1140,7 +1182,7 @@
    }
   },
   {
-   "id": "e19",
+   "id": "e20",
    "date": "2026-11-01",
    "timeText": "11:00 13:00 15:00",
    "times": [
@@ -1221,7 +1263,7 @@
    }
   },
   {
-   "id": "e20",
+   "id": "e21",
    "date": "2026-11-01",
    "timeText": "11:00 17:00",
    "times": [
@@ -1314,7 +1356,7 @@
    }
   },
   {
-   "id": "e21",
+   "id": "e22",
    "date": "2026-11-01",
    "timeText": "13:00",
    "times": [
@@ -1324,7 +1366,7 @@
    "timeUncertain": false,
    "title": "Выезд спектакля «Краденое солнце», начало в 13:00",
    "kind": "trip",
-   "place": "",
+   "place": "Выборгская сторона",
    "tech": "Звук, свет",
    "lines": [
     "Трунина, Андреев, Шаймиев, Лоскутова"
@@ -1375,12 +1417,12 @@
    }
   }
  ],
- "version": 2,
- "updatedAt": "2026-10-07T13:56:31.110Z",
+ "version": 3,
+ "updatedAt": "2026-10-10T17:08:48.018Z",
  "pdf": "data/pdf/2026-10-26.pdf",
  "previous": {
-  "version": 1,
-  "updatedAt": "2026-10-07T12:48:39.046Z",
+  "version": 2,
+  "updatedAt": "2026-10-07T13:56:31.110Z",
   "events": [
    {
     "id": "e1",
@@ -1395,7 +1437,12 @@
     "tech": "",
     "lines": [],
     "people": [],
-    "scope": "note"
+    "scope": "note",
+    "accounting": {
+     "showWeight": 0,
+     "away": false,
+     "intro": false
+    }
    },
    {
     "id": "e2",
@@ -1442,7 +1489,12 @@
       "note": null
      }
     ],
-    "scope": "people"
+    "scope": "people",
+    "accounting": {
+     "showWeight": 0,
+     "away": false,
+     "intro": false
+    }
    },
    {
     "id": "e3",
@@ -1516,7 +1568,12 @@
       "note": null
      }
     ],
-    "scope": "people"
+    "scope": "people",
+    "accounting": {
+     "showWeight": 0,
+     "away": false,
+     "intro": false
+    }
    },
    {
     "id": "e4",
@@ -1590,7 +1647,12 @@
       "note": null
      }
     ],
-    "scope": "people"
+    "scope": "people",
+    "accounting": {
+     "showWeight": 1,
+     "away": false,
+     "intro": false
+    }
    },
    {
     "id": "e5",
@@ -1637,7 +1699,12 @@
       "note": null
      }
     ],
-    "scope": "people"
+    "scope": "people",
+    "accounting": {
+     "showWeight": 0,
+     "away": false,
+     "intro": false
+    }
    },
    {
     "id": "e6",
@@ -1729,7 +1796,12 @@
       "note": null
      }
     ],
-    "scope": "people"
+    "scope": "people",
+    "accounting": {
+     "showWeight": 0,
+     "away": false,
+     "intro": false
+    }
    },
    {
     "id": "e7",
@@ -1821,7 +1893,12 @@
       "note": null
      }
     ],
-    "scope": "people"
+    "scope": "people",
+    "accounting": {
+     "showWeight": 1,
+     "away": false,
+     "intro": false
+    }
    },
    {
     "id": "e8",
@@ -1837,7 +1914,7 @@
     "place": "Новая сцена",
     "tech": "Звук, свет",
     "lines": [
-     "Лоскутов, Глазецкая, Трунина"
+     "Лоскутов, Глазецкая, Носов"
     ],
     "people": [
      {
@@ -1859,7 +1936,7 @@
       "note": null
      },
      {
-      "name": "Трунина",
+      "name": "Носов",
       "times": null,
       "from": null,
       "role": null,
@@ -1868,18 +1945,23 @@
       "note": null
      }
     ],
-    "scope": "people"
+    "scope": "people",
+    "accounting": {
+     "showWeight": 0.5,
+     "away": false,
+     "intro": false
+    }
    },
    {
     "id": "e9",
     "date": "2026-10-29",
-    "timeText": "11:00",
+    "timeText": "11:00 –",
     "times": [
      "11:00"
     ],
     "range": null,
     "timeUncertain": false,
-    "title": "Репетиция спектакля «Агния Барто», сдача АС",
+    "title": "Репетиция спектакля «Агния Барто», сдача А.С",
     "kind": "rehearsal",
     "place": "Старая сцена",
     "tech": "Звук",
@@ -1933,7 +2015,12 @@
       "note": null
      }
     ],
-    "scope": "people"
+    "scope": "people",
+    "accounting": {
+     "showWeight": 0,
+     "away": false,
+     "intro": false
+    }
    },
    {
     "id": "e11",
@@ -1983,7 +2070,12 @@
       "note": null
      }
     ],
-    "scope": "people"
+    "scope": "people",
+    "accounting": {
+     "showWeight": 0,
+     "away": false,
+     "intro": false
+    }
    },
    {
     "id": "e12",
@@ -2039,7 +2131,12 @@
       "note": null
      }
     ],
-    "scope": "people"
+    "scope": "people",
+    "accounting": {
+     "showWeight": 0,
+     "away": false,
+     "intro": false
+    }
    },
    {
     "id": "e13",
@@ -2095,7 +2192,12 @@
       "note": null
      }
     ],
-    "scope": "people"
+    "scope": "people",
+    "accounting": {
+     "showWeight": 0,
+     "away": false,
+     "intro": false
+    }
    },
    {
     "id": "e14",
@@ -2151,7 +2253,12 @@
       "note": null
      }
     ],
-    "scope": "people"
+    "scope": "people",
+    "accounting": {
+     "showWeight": 0,
+     "away": false,
+     "intro": false
+    }
    },
    {
     "id": "e15",
@@ -2162,7 +2269,7 @@
     ],
     "range": null,
     "timeUncertain": false,
-    "title": "Спектакль «Гусёнок»",
+    "title": "Спектакль ««Гусёнок»",
     "kind": "show",
     "place": "Старая сцена",
     "tech": "Звук, свет",
@@ -2207,7 +2314,12 @@
       "note": null
      }
     ],
-    "scope": "people"
+    "scope": "people",
+    "accounting": {
+     "showWeight": 1,
+     "away": false,
+     "intro": false
+    }
    },
    {
     "id": "e16",
@@ -2263,7 +2375,12 @@
       "note": null
      }
     ],
-    "scope": "people"
+    "scope": "people",
+    "accounting": {
+     "showWeight": 1,
+     "away": false,
+     "intro": false
+    }
    },
    {
     "id": "e17",
@@ -2343,7 +2460,12 @@
       "note": null
      }
     ],
-    "scope": "people"
+    "scope": "people",
+    "accounting": {
+     "showWeight": 1,
+     "away": false,
+     "intro": false
+    }
    },
    {
     "id": "e18",
@@ -2419,7 +2541,12 @@
       "note": null
      }
     ],
-    "scope": "people"
+    "scope": "people",
+    "accounting": {
+     "showWeight": 1,
+     "away": false,
+     "intro": false
+    }
    },
    {
     "id": "e19",
@@ -2437,7 +2564,7 @@
     "place": "Старая сцена",
     "tech": "Звук, свет",
     "lines": [
-     "Галустянц, Разуваева, Баранов, Глазецкая, Беканова, Андреев (11 и 13), Заяшников (15)"
+     "Галустянц, Разуваева, Баранов, Глазецкая, Беканова, Заяшников"
     ],
     "people": [
      {
@@ -2486,15 +2613,6 @@
       "note": null
      },
      {
-      "name": "Андреев",
-      "times": null,
-      "from": null,
-      "role": null,
-      "uncertain": false,
-      "alts": [],
-      "note": null
-     },
-     {
       "name": "Заяшников",
       "times": null,
       "from": null,
@@ -2504,7 +2622,12 @@
       "note": null
      }
     ],
-    "scope": "people"
+    "scope": "people",
+    "accounting": {
+     "showWeight": 1,
+     "away": false,
+     "intro": false
+    }
    },
    {
     "id": "e20",
@@ -2522,7 +2645,7 @@
     "tech": "Звук, свет",
     "lines": [
      "11:00 – Миронова, Чирочкина, Лоскутов",
-     "17:00 – Мартюшева, Чирочкина, Андреев"
+     "17:00 – Мартюшева, Чирочкина, Лоскутов"
     ],
     "people": [
      {
@@ -2581,7 +2704,7 @@
       "note": null
      },
      {
-      "name": "Андреев",
+      "name": "Лоскутов",
       "times": [
        "17:00"
       ],
@@ -2592,7 +2715,12 @@
       "note": null
      }
     ],
-    "scope": "people"
+    "scope": "people",
+    "accounting": {
+     "showWeight": 1,
+     "away": false,
+     "intro": false
+    }
    },
    {
     "id": "e21",
@@ -2648,7 +2776,12 @@
       "note": null
      }
     ],
-    "scope": "people"
+    "scope": "people",
+    "accounting": {
+     "showWeight": 1,
+     "away": true,
+     "intro": false
+    }
    }
   ]
  }
