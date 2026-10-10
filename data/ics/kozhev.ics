@@ -167,29 +167,14 @@ DESCRIPTION:Спектакль «Тараканище»\nКожев\, Б
  \nЗвук/свет: Звук\, свет
 END:VEVENT
 BEGIN:VEVENT
-UID:2026-10-20-1000-1m6gyt1@raspisanie
+UID:2026-10-16-1800-rgb9cu@raspisanie
 DTSTAMP:20261010T170600Z
-DTSTART;TZID=Europe/Moscow:20261020T100000
-DTEND;TZID=Europe/Moscow:20261020T110000
-SUMMARY:Выезд «Кот в сапогах» · Выезд спект
- акля
-LOCATION:Шк № 7\, ул Летчика Пилютова\, 11 к 2
-DESCRIPTION:ВЫЕЗД спектакля «Кот в сапогах»\n
- Кожев\, Безносиков\, Заяшников\, Лоскуто
- в\, Трунина\, Глазецкая\nЗвук/свет: Звук\, 
- свет
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-10-20-1200-1m6gyt1@raspisanie
-DTSTAMP:20261010T170600Z
-DTSTART;TZID=Europe/Moscow:20261020T120000
-DTEND;TZID=Europe/Moscow:20261020T130000
-SUMMARY:Выезд «Кот в сапогах» · Выезд спект
- акля
-LOCATION:Шк № 7\, ул Летчика Пилютова\, 11 к 2
-DESCRIPTION:ВЫЕЗД спектакля «Кот в сапогах»\n
- Кожев\, Безносиков\, Заяшников\, Лоскуто
- в\, Трунина\, Глазецкая\nЗвук/свет: Звук\, 
+DTSTART;TZID=Europe/Moscow:20261016T180000
+DTEND;TZID=Europe/Moscow:20261016T190000
+SUMMARY:Спектакль «Гадкий утёнок»
+LOCATION:Новая сцена
+DESCRIPTION:Спектакль «Гадкий утёнок»\nГлазе
+ цкая\, Кожев\, Беканова\nЗвук/свет: Звук\, 
  свет
 END:VEVENT
 BEGIN:VEVENT
@@ -253,14 +238,29 @@ DESCRIPTION:Спектакль «Палочка-выручалочка»
  к\, свет
 END:VEVENT
 BEGIN:VEVENT
-UID:2026-10-16-1800-rgb9cu@raspisanie
+UID:2026-10-20-1000-1m6gyt1@raspisanie
 DTSTAMP:20261010T170600Z
-DTSTART;TZID=Europe/Moscow:20261016T180000
-DTEND;TZID=Europe/Moscow:20261016T190000
-SUMMARY:Спектакль «Гадкий утёнок»
-LOCATION:Новая сцена
-DESCRIPTION:Спектакль «Гадкий утёнок»\nГлазе
- цкая\, Кожев\, Беканова\nЗвук/свет: Звук\, 
+DTSTART;TZID=Europe/Moscow:20261020T100000
+DTEND;TZID=Europe/Moscow:20261020T110000
+SUMMARY:Выезд «Кот в сапогах» · Выезд спект
+ акля
+LOCATION:Шк № 7\, ул Летчика Пилютова\, 11 к 2
+DESCRIPTION:ВЫЕЗД спектакля «Кот в сапогах»\n
+ Кожев\, Безносиков\, Заяшников\, Лоскуто
+ в\, Трунина\, Глазецкая\nЗвук/свет: Звук\, 
+ свет
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-20-1200-1m6gyt1@raspisanie
+DTSTAMP:20261010T170600Z
+DTSTART;TZID=Europe/Moscow:20261020T120000
+DTEND;TZID=Europe/Moscow:20261020T130000
+SUMMARY:Выезд «Кот в сапогах» · Выезд спект
+ акля
+LOCATION:Шк № 7\, ул Летчика Пилютова\, 11 к 2
+DESCRIPTION:ВЫЕЗД спектакля «Кот в сапогах»\n
+ Кожев\, Безносиков\, Заяшников\, Лоскуто
+ в\, Трунина\, Глазецкая\nЗвук/свет: Звук\, 
  свет
 END:VEVENT
 END:VCALENDAR

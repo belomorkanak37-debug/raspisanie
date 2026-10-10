@@ -26,10 +26,21 @@ LOCATION:Старая сцена
 DESCRIPTION:СОБРАНИЕ ВСЕГО КОЛЛЕКТИВА
 END:VEVENT
 BEGIN:VEVENT
-UID:2026-10-20-1200-175r9eq@raspisanie
+UID:2026-10-15-1145-1xbr8tf@raspisanie
 DTSTAMP:20261010T170600Z
-DTSTART;TZID=Europe/Moscow:20261020T120000
-DTEND;TZID=Europe/Moscow:20261020T130000
+DTSTART;TZID=Europe/Moscow:20261015T114500
+DTEND;TZID=Europe/Moscow:20261015T124500
+SUMMARY:Репетиция «Палочка-выручалочка»
+LOCATION:Старая сцена
+DESCRIPTION:Репетиция спектакля «Палочка-выр
+ учалочка»\nЗаяшников\, Носов\, Трунина\, 
+ Мартюшева\, Лоскутов\,Советов
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-20-1400-175r9eq@raspisanie
+DTSTAMP:20261010T170600Z
+DTSTART;TZID=Europe/Moscow:20261020T140000
+DTEND;TZID=Europe/Moscow:20261020T150000
 SUMMARY:Репетиция «Мойдодыр»
 LOCATION:Старая сцена
 DESCRIPTION:Репетиция спектакля «Мойдодыр»\n
@@ -68,16 +79,5 @@ LOCATION:Старая сцена
 DESCRIPTION:Спектакль «Мойдодыр»\nСоветов\, Ш
  аймиев\, Баранов\, Сигитова\nЗвук/свет: З
  вук\, свет
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-10-15-1145-1xbr8tf@raspisanie
-DTSTAMP:20261010T170600Z
-DTSTART;TZID=Europe/Moscow:20261015T114500
-DTEND;TZID=Europe/Moscow:20261015T124500
-SUMMARY:Репетиция «Палочка-выручалочка»
-LOCATION:Старая сцена
-DESCRIPTION:Репетиция спектакля «Палочка-выр
- учалочка»\nЗаяшников\, Носов\, Трунина\, 
- Мартюшева\, Лоскутов\,Советов
 END:VEVENT
 END:VCALENDAR

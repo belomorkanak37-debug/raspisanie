@@ -198,159 +198,6 @@ DESCRIPTION:Спектакль «Бармалей»\nГалустянц.
  вук/свет: Звук\, свет
 END:VEVENT
 BEGIN:VEVENT
-UID:2026-10-22-1330-t3fget@raspisanie
-DTSTAMP:20261010T170600Z
-DTSTART;TZID=Europe/Moscow:20261022T133000
-DTEND;TZID=Europe/Moscow:20261022T143000
-SUMMARY:Репетиция «Конёк-горбунок»
-LOCATION:Старая сцена
-DESCRIPTION:Репетиция спектакля «Конёк-горбу
- нок»\nРадыгин\, Галустянц\, Самойлов\, Ло
- скутов\nЗвук/свет: Звук
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-10-23-1500-t3fget@raspisanie
-DTSTAMP:20261010T170600Z
-DTSTART;TZID=Europe/Moscow:20261023T150000
-DTEND;TZID=Europe/Moscow:20261023T160000
-SUMMARY:Репетиция «Конёк-горбунок»
-LOCATION:Старая сцена
-DESCRIPTION:Репетиция спектакля «Конёк-горбу
- нок»\nРадыгин\, Галустянц\, Самойлов\, Ло
- скутов\nЗвук/свет: Звук\, свет
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-10-23-1800-trma95@raspisanie
-DTSTAMP:20261010T170600Z
-DTSTART;TZID=Europe/Moscow:20261023T180000
-DTEND;TZID=Europe/Moscow:20261023T190000
-SUMMARY:Спектакль ««Конёк-горбунок»
-LOCATION:Старая сцена
-DESCRIPTION:Спектакль ««Конёк-горбунок»\nРад
- ыгин\, Галустянц\, Самойлов\, Лоскутов\nЗ
- вук/свет: Звук\, свет
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-10-24-1100-1xn9ady@raspisanie
-DTSTAMP:20261010T170600Z
-DTSTART;TZID=Europe/Moscow:20261024T110000
-DTEND;TZID=Europe/Moscow:20261024T120000
-SUMMARY:Спектакль «Сказка о глупом мышонке
- »
-LOCATION:Старая сцена
-DESCRIPTION:Спектакль «Сказка о глупом мышон
- ке»\nБеканова\, Трунина\, Глазецкая\, Гал
- устянц\, Лоскутова\nЗвук/свет: Звук\, све
- т
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-10-24-1300-1xn9ady@raspisanie
-DTSTAMP:20261010T170600Z
-DTSTART;TZID=Europe/Moscow:20261024T130000
-DTEND;TZID=Europe/Moscow:20261024T140000
-SUMMARY:Спектакль «Сказка о глупом мышонке
- »
-LOCATION:Старая сцена
-DESCRIPTION:Спектакль «Сказка о глупом мышон
- ке»\nБеканова\, Трунина\, Глазецкая\, Гал
- устянц\, Лоскутова\nЗвук/свет: Звук\, све
- т
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-10-24-1500-1xn9ady@raspisanie
-DTSTAMP:20261010T170600Z
-DTSTART;TZID=Europe/Moscow:20261024T150000
-DTEND;TZID=Europe/Moscow:20261024T160000
-SUMMARY:Спектакль «Сказка о глупом мышонке
- »
-LOCATION:Старая сцена
-DESCRIPTION:Спектакль «Сказка о глупом мышон
- ке»\nБеканова\, Трунина\, Глазецкая\, Гал
- устянц\, Лоскутова\nЗвук/свет: Звук\, све
- т
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-10-27-1500-dwxnhp@raspisanie
-DTSTAMP:20261010T170600Z
-DTSTART;TZID=Europe/Moscow:20261027T150000
-DTEND;TZID=Europe/Moscow:20261027T160000
-SUMMARY:Репетиция «Аленький цветочек»
-LOCATION:Старая сцена
-DESCRIPTION:Репетиция спектакля «Аленький цв
- еточек»\nБезносиков\, Заяшников\, Глазец
- кая\, Разуваева\, Чирочкина\, Галустянц\n
- Звук/свет: Звук\, свет
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-10-27-1700-1wcv2ii@raspisanie
-DTSTAMP:20261010T170600Z
-DTSTART;TZID=Europe/Moscow:20261027T170000
-DTEND;TZID=Europe/Moscow:20261027T180000
-SUMMARY:Спектакль «Аленький цветочек»
-LOCATION:Старая сцена
-DESCRIPTION:Спектакль «Аленький цветочек»\nБ
- езносиков\, Заяшников\, Глазецкая\, Разу
- ваева\, Чирочкина\, Галустянц\nЗвук/свет:
-  Звук\, свет
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-10-28-1200-17ik0i3@raspisanie
-DTSTAMP:20261010T170600Z
-DTSTART;TZID=Europe/Moscow:20261028T120000
-DTEND;TZID=Europe/Moscow:20261028T130000
-SUMMARY:Репетиция «Каштанка»
-LOCATION:Старая сцена
-DESCRIPTION:Репетиция спектакля «Каштанка»\n
- Безносиков\, Баранов\, Беканова\, Кожев\, 
- Глазецкая\, Лоскутова\, Галустянц\, Шайм
- иев\nЗвук/свет: Звук\, свет\, проектор
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-10-28-1700-1ih3jwc@raspisanie
-DTSTAMP:20261010T170600Z
-DTSTART;TZID=Europe/Moscow:20261028T170000
-DTEND;TZID=Europe/Moscow:20261028T180000
-SUMMARY:Спектакль «Каштанка»
-LOCATION:Старая сцена
-DESCRIPTION:Спектакль «Каштанка»\nБезносиков
- \, Баранов\, Беканова\, Кожев\, Глазецкая\,
-  Лоскутова\, Галустянц\, Шаймиев\nЗвук/св
- ет: Звук\, свет\, проектор
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-11-01-1100-ezemun@raspisanie
-DTSTAMP:20261010T170600Z
-DTSTART;TZID=Europe/Moscow:20261101T110000
-DTEND;TZID=Europe/Moscow:20261101T120000
-SUMMARY:Спектакль «Колобок»
-LOCATION:Старая сцена
-DESCRIPTION:Спектакль «Колобок»\nГалустянц\, 
- Разуваева\, Баранов\, Глазецкая\, Бекано
- ва\, Заяшников\nЗвук/свет: Звук\, свет
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-11-01-1300-ezemun@raspisanie
-DTSTAMP:20261010T170600Z
-DTSTART;TZID=Europe/Moscow:20261101T130000
-DTEND;TZID=Europe/Moscow:20261101T140000
-SUMMARY:Спектакль «Колобок»
-LOCATION:Старая сцена
-DESCRIPTION:Спектакль «Колобок»\nГалустянц\, 
- Разуваева\, Баранов\, Глазецкая\, Бекано
- ва\, Заяшников\nЗвук/свет: Звук\, свет
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-11-01-1500-ezemun@raspisanie
-DTSTAMP:20261010T170600Z
-DTSTART;TZID=Europe/Moscow:20261101T150000
-DTEND;TZID=Europe/Moscow:20261101T160000
-SUMMARY:Спектакль «Колобок»
-LOCATION:Старая сцена
-DESCRIPTION:Спектакль «Колобок»\nГалустянц\, 
- Разуваева\, Баранов\, Глазецкая\, Бекано
- ва\, Заяшников\nЗвук/свет: Звук\, свет
-END:VEVENT
-BEGIN:VEVENT
 UID:2026-10-14-1100-z1uvui@raspisanie
 DTSTAMP:20261010T170600Z
 DTSTART;TZID=Europe/Moscow:20261014T110000
@@ -434,5 +281,158 @@ DESCRIPTION:Спектакль «Чудо-репка»\nРазуваев
  а\, Самойлов (11:00 и 13:00)\, Носов (15:00)\, Мартю
  шева\, Чепиль\, Галустянц\,\nЧирочкина\nЗв
  ук/свет: Звук\, свет
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-27-1500-dwxnhp@raspisanie
+DTSTAMP:20261010T170600Z
+DTSTART;TZID=Europe/Moscow:20261027T150000
+DTEND;TZID=Europe/Moscow:20261027T160000
+SUMMARY:Репетиция «Аленький цветочек»
+LOCATION:Старая сцена
+DESCRIPTION:Репетиция спектакля «Аленький цв
+ еточек»\nБезносиков\, Заяшников\, Глазец
+ кая\, Разуваева\, Чирочкина\, Галустянц\n
+ Звук/свет: Звук\, свет
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-27-1700-1wcv2ii@raspisanie
+DTSTAMP:20261010T170600Z
+DTSTART;TZID=Europe/Moscow:20261027T170000
+DTEND;TZID=Europe/Moscow:20261027T180000
+SUMMARY:Спектакль «Аленький цветочек»
+LOCATION:Старая сцена
+DESCRIPTION:Спектакль «Аленький цветочек»\nБ
+ езносиков\, Заяшников\, Глазецкая\, Разу
+ ваева\, Чирочкина\, Галустянц\nЗвук/свет:
+  Звук\, свет
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-28-1200-17ik0i3@raspisanie
+DTSTAMP:20261010T170600Z
+DTSTART;TZID=Europe/Moscow:20261028T120000
+DTEND;TZID=Europe/Moscow:20261028T130000
+SUMMARY:Репетиция «Каштанка»
+LOCATION:Старая сцена
+DESCRIPTION:Репетиция спектакля «Каштанка»\n
+ Безносиков\, Баранов\, Беканова\, Кожев\, 
+ Глазецкая\, Лоскутова\, Галустянц\, Шайм
+ иев\nЗвук/свет: Звук\, свет\, проектор
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-28-1700-1ih3jwc@raspisanie
+DTSTAMP:20261010T170600Z
+DTSTART;TZID=Europe/Moscow:20261028T170000
+DTEND;TZID=Europe/Moscow:20261028T180000
+SUMMARY:Спектакль «Каштанка»
+LOCATION:Старая сцена
+DESCRIPTION:Спектакль «Каштанка»\nБезносиков
+ \, Баранов\, Беканова\, Кожев\, Глазецкая\,
+  Лоскутова\, Галустянц\, Шаймиев\nЗвук/св
+ ет: Звук\, свет\, проектор
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-11-01-1100-ezemun@raspisanie
+DTSTAMP:20261010T170600Z
+DTSTART;TZID=Europe/Moscow:20261101T110000
+DTEND;TZID=Europe/Moscow:20261101T120000
+SUMMARY:Спектакль «Колобок»
+LOCATION:Старая сцена
+DESCRIPTION:Спектакль «Колобок»\nГалустянц\, 
+ Разуваева\, Баранов\, Глазецкая\, Бекано
+ ва\, Заяшников\nЗвук/свет: Звук\, свет
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-11-01-1300-ezemun@raspisanie
+DTSTAMP:20261010T170600Z
+DTSTART;TZID=Europe/Moscow:20261101T130000
+DTEND;TZID=Europe/Moscow:20261101T140000
+SUMMARY:Спектакль «Колобок»
+LOCATION:Старая сцена
+DESCRIPTION:Спектакль «Колобок»\nГалустянц\, 
+ Разуваева\, Баранов\, Глазецкая\, Бекано
+ ва\, Заяшников\nЗвук/свет: Звук\, свет
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-11-01-1500-ezemun@raspisanie
+DTSTAMP:20261010T170600Z
+DTSTART;TZID=Europe/Moscow:20261101T150000
+DTEND;TZID=Europe/Moscow:20261101T160000
+SUMMARY:Спектакль «Колобок»
+LOCATION:Старая сцена
+DESCRIPTION:Спектакль «Колобок»\nГалустянц\, 
+ Разуваева\, Баранов\, Глазецкая\, Бекано
+ ва\, Заяшников\nЗвук/свет: Звук\, свет
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-21-1330-t3fget@raspisanie
+DTSTAMP:20261010T170600Z
+DTSTART;TZID=Europe/Moscow:20261021T133000
+DTEND;TZID=Europe/Moscow:20261021T143000
+SUMMARY:Репетиция «Конёк-горбунок»
+LOCATION:Старая сцена
+DESCRIPTION:Репетиция спектакля «Конёк-горбу
+ нок»\nРадыгин\, Галустянц\, Самойлов\, Ло
+ скутов\nЗвук/свет: Звук
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-23-1500-t3fget@raspisanie
+DTSTAMP:20261010T170600Z
+DTSTART;TZID=Europe/Moscow:20261023T150000
+DTEND;TZID=Europe/Moscow:20261023T160000
+SUMMARY:Репетиция «Конёк-горбунок»
+LOCATION:Старая сцена
+DESCRIPTION:Репетиция спектакля «Конёк-горбу
+ нок»\nРадыгин\, Галустянц\, Самойлов\, Ло
+ скутов\nЗвук/свет: Звук\, свет
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-23-1800-trma95@raspisanie
+DTSTAMP:20261010T170600Z
+DTSTART;TZID=Europe/Moscow:20261023T180000
+DTEND;TZID=Europe/Moscow:20261023T190000
+SUMMARY:Спектакль ««Конёк-горбунок»
+LOCATION:Старая сцена
+DESCRIPTION:Спектакль ««Конёк-горбунок»\nРад
+ ыгин\, Галустянц\, Самойлов\, Лоскутов\nЗ
+ вук/свет: Звук\, свет
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-24-1100-1xn9ady@raspisanie
+DTSTAMP:20261010T170600Z
+DTSTART;TZID=Europe/Moscow:20261024T110000
+DTEND;TZID=Europe/Moscow:20261024T120000
+SUMMARY:Спектакль «Сказка о глупом мышонке
+ »
+LOCATION:Старая сцена
+DESCRIPTION:Спектакль «Сказка о глупом мышон
+ ке»\nБеканова\, Трунина\, Глазецкая\, Гал
+ устянц\, Лоскутова\nЗвук/свет: Звук\, све
+ т
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-24-1300-1xn9ady@raspisanie
+DTSTAMP:20261010T170600Z
+DTSTART;TZID=Europe/Moscow:20261024T130000
+DTEND;TZID=Europe/Moscow:20261024T140000
+SUMMARY:Спектакль «Сказка о глупом мышонке
+ »
+LOCATION:Старая сцена
+DESCRIPTION:Спектакль «Сказка о глупом мышон
+ ке»\nБеканова\, Трунина\, Глазецкая\, Гал
+ устянц\, Лоскутова\nЗвук/свет: Звук\, све
+ т
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-24-1500-1xn9ady@raspisanie
+DTSTAMP:20261010T170600Z
+DTSTART;TZID=Europe/Moscow:20261024T150000
+DTEND;TZID=Europe/Moscow:20261024T160000
+SUMMARY:Спектакль «Сказка о глупом мышонке
+ »
+LOCATION:Старая сцена
+DESCRIPTION:Спектакль «Сказка о глупом мышон
+ ке»\nБеканова\, Трунина\, Глазецкая\, Гал
+ устянц\, Лоскутова\nЗвук/свет: Звук\, све
+ т
 END:VEVENT
 END:VCALENDAR

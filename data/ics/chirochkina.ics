@@ -119,37 +119,40 @@ DESCRIPTION:Ввод в спектакль «Палочка-выруча
  \, Чирочкина\nЗвук/свет: Звук
 END:VEVENT
 BEGIN:VEVENT
-UID:2026-10-25-1100-1ty7xlr@raspisanie
+UID:2026-10-17-1100-1ug20ag@raspisanie
 DTSTAMP:20261010T170600Z
-DTSTART;TZID=Europe/Moscow:20261025T110000
-DTEND;TZID=Europe/Moscow:20261025T120000
-SUMMARY:Спектакль «Звёздочка»
-LOCATION:Новая сцена
-DESCRIPTION:Спектакль «Звёздочка»\nБеканова\,
-  Лоскутова\, Чирочкина. Заяшников\, Носо
- в\nЗвук/свет: Звук\, свет
+DTSTART;TZID=Europe/Moscow:20261017T110000
+DTEND;TZID=Europe/Moscow:20261017T120000
+SUMMARY:Спектакль «Чудо-репка»
+LOCATION:Старая сцена
+DESCRIPTION:Спектакль «Чудо-репка»\nРазуваев
+ а\, Самойлов (11:00 и 13:00)\, Носов (15:00)\, Мартю
+ шева\, Чепиль\, Галустянц\,\nЧирочкина\nЗв
+ ук/свет: Звук\, свет
 END:VEVENT
 BEGIN:VEVENT
-UID:2026-10-25-1300-1ty7xlr@raspisanie
+UID:2026-10-17-1300-1ug20ag@raspisanie
 DTSTAMP:20261010T170600Z
-DTSTART;TZID=Europe/Moscow:20261025T130000
-DTEND;TZID=Europe/Moscow:20261025T140000
-SUMMARY:Спектакль «Звёздочка»
-LOCATION:Новая сцена
-DESCRIPTION:Спектакль «Звёздочка»\nБеканова\,
-  Лоскутова\, Чирочкина. Заяшников\, Носо
- в\nЗвук/свет: Звук\, свет
+DTSTART;TZID=Europe/Moscow:20261017T130000
+DTEND;TZID=Europe/Moscow:20261017T140000
+SUMMARY:Спектакль «Чудо-репка»
+LOCATION:Старая сцена
+DESCRIPTION:Спектакль «Чудо-репка»\nРазуваев
+ а\, Самойлов (11:00 и 13:00)\, Носов (15:00)\, Мартю
+ шева\, Чепиль\, Галустянц\,\nЧирочкина\nЗв
+ ук/свет: Звук\, свет
 END:VEVENT
 BEGIN:VEVENT
-UID:2026-10-25-1500-1ty7xlr@raspisanie
+UID:2026-10-17-1500-1ug20ag@raspisanie
 DTSTAMP:20261010T170600Z
-DTSTART;TZID=Europe/Moscow:20261025T150000
-DTEND;TZID=Europe/Moscow:20261025T160000
-SUMMARY:Спектакль «Звёздочка»
-LOCATION:Новая сцена
-DESCRIPTION:Спектакль «Звёздочка»\nБеканова\,
-  Лоскутова\, Чирочкина. Заяшников\, Носо
- в\nЗвук/свет: Звук\, свет
+DTSTART;TZID=Europe/Moscow:20261017T150000
+DTEND;TZID=Europe/Moscow:20261017T160000
+SUMMARY:Спектакль «Чудо-репка»
+LOCATION:Старая сцена
+DESCRIPTION:Спектакль «Чудо-репка»\nРазуваев
+ а\, Самойлов (11:00 и 13:00)\, Носов (15:00)\, Мартю
+ шева\, Чепиль\, Галустянц\,\nЧирочкина\nЗв
+ ук/свет: Звук\, свет
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-27-1500-dwxnhp@raspisanie
@@ -251,39 +254,36 @@ DESCRIPTION:Спектакль «Кто оставил здесь сле
  в\nЗвук/свет: Звук\, свет
 END:VEVENT
 BEGIN:VEVENT
-UID:2026-10-17-1100-1ug20ag@raspisanie
+UID:2026-10-25-1100-1ty7xlr@raspisanie
 DTSTAMP:20261010T170600Z
-DTSTART;TZID=Europe/Moscow:20261017T110000
-DTEND;TZID=Europe/Moscow:20261017T120000
-SUMMARY:Спектакль «Чудо-репка»
-LOCATION:Старая сцена
-DESCRIPTION:Спектакль «Чудо-репка»\nРазуваев
- а\, Самойлов (11:00 и 13:00)\, Носов (15:00)\, Мартю
- шева\, Чепиль\, Галустянц\,\nЧирочкина\nЗв
- ук/свет: Звук\, свет
+DTSTART;TZID=Europe/Moscow:20261025T110000
+DTEND;TZID=Europe/Moscow:20261025T120000
+SUMMARY:Спектакль «Звёздочка»
+LOCATION:Новая сцена
+DESCRIPTION:Спектакль «Звёздочка»\nБеканова\,
+  Лоскутова\, Чирочкина. Заяшников\, Носо
+ в\nЗвук/свет: Звук\, свет
 END:VEVENT
 BEGIN:VEVENT
-UID:2026-10-17-1300-1ug20ag@raspisanie
+UID:2026-10-25-1300-1ty7xlr@raspisanie
 DTSTAMP:20261010T170600Z
-DTSTART;TZID=Europe/Moscow:20261017T130000
-DTEND;TZID=Europe/Moscow:20261017T140000
-SUMMARY:Спектакль «Чудо-репка»
-LOCATION:Старая сцена
-DESCRIPTION:Спектакль «Чудо-репка»\nРазуваев
- а\, Самойлов (11:00 и 13:00)\, Носов (15:00)\, Мартю
- шева\, Чепиль\, Галустянц\,\nЧирочкина\nЗв
- ук/свет: Звук\, свет
+DTSTART;TZID=Europe/Moscow:20261025T130000
+DTEND;TZID=Europe/Moscow:20261025T140000
+SUMMARY:Спектакль «Звёздочка»
+LOCATION:Новая сцена
+DESCRIPTION:Спектакль «Звёздочка»\nБеканова\,
+  Лоскутова\, Чирочкина. Заяшников\, Носо
+ в\nЗвук/свет: Звук\, свет
 END:VEVENT
 BEGIN:VEVENT
-UID:2026-10-17-1500-1ug20ag@raspisanie
+UID:2026-10-25-1500-1ty7xlr@raspisanie
 DTSTAMP:20261010T170600Z
-DTSTART;TZID=Europe/Moscow:20261017T150000
-DTEND;TZID=Europe/Moscow:20261017T160000
-SUMMARY:Спектакль «Чудо-репка»
-LOCATION:Старая сцена
-DESCRIPTION:Спектакль «Чудо-репка»\nРазуваев
- а\, Самойлов (11:00 и 13:00)\, Носов (15:00)\, Мартю
- шева\, Чепиль\, Галустянц\,\nЧирочкина\nЗв
- ук/свет: Звук\, свет
+DTSTART;TZID=Europe/Moscow:20261025T150000
+DTEND;TZID=Europe/Moscow:20261025T160000
+SUMMARY:Спектакль «Звёздочка»
+LOCATION:Новая сцена
+DESCRIPTION:Спектакль «Звёздочка»\nБеканова\,
+  Лоскутова\, Чирочкина. Заяшников\, Носо
+ в\nЗвук/свет: Звук\, свет
 END:VEVENT
 END:VCALENDAR

@@ -190,32 +190,170 @@ DESCRIPTION:Спектакль «Тараканище»\nКожев\, Б
  \nЗвук/свет: Звук\, свет
 END:VEVENT
 BEGIN:VEVENT
-UID:2026-10-20-1500-144na9v@raspisanie
+UID:2026-10-15-1500-18re0zl@raspisanie
+DTSTAMP:20261010T170600Z
+DTSTART;TZID=Europe/Moscow:20261015T150000
+DTEND;TZID=Europe/Moscow:20261015T160000
+SUMMARY:Репетиция «Сказка о глупом мышонке
+ »
+LOCATION:Старая сцена
+DESCRIPTION:Репетиция спектакля «Сказка о гл
+ упом мышонке»\nБеканова\, Мартюшева\, Тр
+ унина\, Лоскутова\, Галустянц\, Глазецка
+ я\nЗвук/свет: Звук\, свет
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-16-1100-qpvl1t@raspisanie
+DTSTAMP:20261010T170600Z
+DTSTART;TZID=Europe/Moscow:20261016T110000
+DTEND;TZID=Europe/Moscow:20261016T130000
+SUMMARY:Репетиция «Сказка о глупом мышонке
+ » · С А.С.
+LOCATION:Старая сцена
+DESCRIPTION:Репетиция спектакля «Сказка о гл
+ упом мышонке» с А.С.\nБеканова\, Мартюшев
+ а\, Трунина\, Лоскутова\, Галустянц\, Глаз
+ ецкая\nЗвук/свет: Звук\, свет
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-16-1200-q79fq@raspisanie
+DTSTAMP:20261010T170600Z
+DTSTART;TZID=Europe/Moscow:20261016T120000
+DTEND;TZID=Europe/Moscow:20261016T150000
+SUMMARY:Репетиция «Оксюморон»
+LOCATION:Новая сцена
+DESCRIPTION:Репетиция спектакля «Оксюморон»
+ \nТрунина\, Беканова\, Миронова\, Сигитов
+ а\, Мартюшева\, Разуваева\, Андреев\, Безн
+ осиков\,\nБаранов\, Шаймиев\, Носов\, Заяш
+ ников\nЗвук/свет: Звук\, свет
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-16-1800-rgb9cu@raspisanie
+DTSTAMP:20261010T170600Z
+DTSTART;TZID=Europe/Moscow:20261016T180000
+DTEND;TZID=Europe/Moscow:20261016T190000
+SUMMARY:Спектакль «Гадкий утёнок»
+LOCATION:Новая сцена
+DESCRIPTION:Спектакль «Гадкий утёнок»\nГлазе
+ цкая\, Кожев\, Беканова\nЗвук/свет: Звук\, 
+ свет
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-28-1200-17ik0i3@raspisanie
+DTSTAMP:20261010T170600Z
+DTSTART;TZID=Europe/Moscow:20261028T120000
+DTEND;TZID=Europe/Moscow:20261028T130000
+SUMMARY:Репетиция «Каштанка»
+LOCATION:Старая сцена
+DESCRIPTION:Репетиция спектакля «Каштанка»\n
+ Безносиков\, Баранов\, Беканова\, Кожев\, 
+ Глазецкая\, Лоскутова\, Галустянц\, Шайм
+ иев\nЗвук/свет: Звук\, свет\, проектор
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-28-1700-1ih3jwc@raspisanie
+DTSTAMP:20261010T170600Z
+DTSTART;TZID=Europe/Moscow:20261028T170000
+DTEND;TZID=Europe/Moscow:20261028T180000
+SUMMARY:Спектакль «Каштанка»
+LOCATION:Старая сцена
+DESCRIPTION:Спектакль «Каштанка»\nБезносиков
+ \, Баранов\, Беканова\, Кожев\, Глазецкая\,
+  Лоскутова\, Галустянц\, Шаймиев\nЗвук/св
+ ет: Звук\, свет\, проектор
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-31-1100-152hmft@raspisanie
+DTSTAMP:20261010T170600Z
+DTSTART;TZID=Europe/Moscow:20261031T110000
+DTEND;TZID=Europe/Moscow:20261031T120000
+SUMMARY:Спектакль «Кот в сапогах»
+LOCATION:Новая сцена
+DESCRIPTION:Спектакль «Кот в сапогах»\nАндрее
+ в\, Безносиков\, Шаймиев\, Баранов\, Бекан
+ ова\, Разуваева\nЗвук/свет: Звук\, свет
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-31-1300-152hmft@raspisanie
+DTSTAMP:20261010T170600Z
+DTSTART;TZID=Europe/Moscow:20261031T130000
+DTEND;TZID=Europe/Moscow:20261031T140000
+SUMMARY:Спектакль «Кот в сапогах»
+LOCATION:Новая сцена
+DESCRIPTION:Спектакль «Кот в сапогах»\nАндрее
+ в\, Безносиков\, Шаймиев\, Баранов\, Бекан
+ ова\, Разуваева\nЗвук/свет: Звук\, свет
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-31-1500-152hmft@raspisanie
+DTSTAMP:20261010T170600Z
+DTSTART;TZID=Europe/Moscow:20261031T150000
+DTEND;TZID=Europe/Moscow:20261031T160000
+SUMMARY:Спектакль «Кот в сапогах»
+LOCATION:Новая сцена
+DESCRIPTION:Спектакль «Кот в сапогах»\nАндрее
+ в\, Безносиков\, Шаймиев\, Баранов\, Бекан
+ ова\, Разуваева\nЗвук/свет: Звук\, свет
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-11-01-1100-ezemun@raspisanie
+DTSTAMP:20261010T170600Z
+DTSTART;TZID=Europe/Moscow:20261101T110000
+DTEND;TZID=Europe/Moscow:20261101T120000
+SUMMARY:Спектакль «Колобок»
+LOCATION:Старая сцена
+DESCRIPTION:Спектакль «Колобок»\nГалустянц\, 
+ Разуваева\, Баранов\, Глазецкая\, Бекано
+ ва\, Заяшников\nЗвук/свет: Звук\, свет
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-11-01-1300-ezemun@raspisanie
+DTSTAMP:20261010T170600Z
+DTSTART;TZID=Europe/Moscow:20261101T130000
+DTEND;TZID=Europe/Moscow:20261101T140000
+SUMMARY:Спектакль «Колобок»
+LOCATION:Старая сцена
+DESCRIPTION:Спектакль «Колобок»\nГалустянц\, 
+ Разуваева\, Баранов\, Глазецкая\, Бекано
+ ва\, Заяшников\nЗвук/свет: Звук\, свет
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-11-01-1500-ezemun@raspisanie
+DTSTAMP:20261010T170600Z
+DTSTART;TZID=Europe/Moscow:20261101T150000
+DTEND;TZID=Europe/Moscow:20261101T160000
+SUMMARY:Спектакль «Колобок»
+LOCATION:Старая сцена
+DESCRIPTION:Спектакль «Колобок»\nГалустянц\, 
+ Разуваева\, Баранов\, Глазецкая\, Бекано
+ ва\, Заяшников\nЗвук/свет: Звук\, свет
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-20-1500-q79fq@raspisanie
 DTSTAMP:20261010T170600Z
 DTSTART;TZID=Europe/Moscow:20261020T150000
 DTEND;TZID=Europe/Moscow:20261020T160000
-SUMMARY:Репетиция «Оксюморон» · Прогон спе
- ктакля
+SUMMARY:Репетиция «Оксюморон»
 LOCATION:Новая сцена
-DESCRIPTION:Прогон спектакля«Оксюморон»\nТру
- нина\, Беканова\, Миронова\, Сигитова\, Ма
- ртюшева\, Разуваева\, Андреев\, Безносик
- ов\,\nБаранов\, Шаймиев\, Носов\, Заяшнико
- в\nЗвук/свет: Звук\, свет
+DESCRIPTION:Репетиция спектакля «Оксюморон»
+ \nТрунина\, Беканова\, Миронова\, Сигитов
+ а\, Мартюшева\, Разуваева\, Андреев\, Безн
+ осиков\,\nБаранов\, Шаймиев\, Носов\, Заяш
+ ников\nЗвук/свет: Звук\, свет
 END:VEVENT
 BEGIN:VEVENT
-UID:2026-10-22-1600-nwvrur@raspisanie
+UID:2026-10-21-1600-q79fq@raspisanie
 DTSTAMP:20261010T170600Z
-DTSTART;TZID=Europe/Moscow:20261022T160000
-DTEND;TZID=Europe/Moscow:20261022T170000
-SUMMARY:Репетиция «Оксюморон» · Прогон спе
- ктакля
+DTSTART;TZID=Europe/Moscow:20261021T160000
+DTEND;TZID=Europe/Moscow:20261021T170000
+SUMMARY:Репетиция «Оксюморон»
 LOCATION:Новая сцена
-DESCRIPTION:Прогон спектакля «Оксюморон»\nТр
- унина\, Беканова\, Миронова\, Сигитова\, М
- артюшева\, Разуваева\, Андреев\, Безноси
- ков\,\nБаранов\, Шаймиев\, Носов\, Заяшник
- ов\nЗвук/свет: Звук\, свет
+DESCRIPTION:Репетиция спектакля «Оксюморон»
+ \nТрунина\, Беканова\, Миронова\, Сигитов
+ а\, Мартюшева\, Разуваева\, Андреев\, Безн
+ осиков\,\nБаранов\, Шаймиев\, Носов\, Заяш
+ ников\nЗвук/свет: Звук\, свет
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-23-1100-1hjcxld@raspisanie
@@ -314,145 +452,5 @@ LOCATION:Новая сцена
 DESCRIPTION:Спектакль «Звёздочка»\nБеканова\,
   Лоскутова\, Чирочкина. Заяшников\, Носо
  в\nЗвук/свет: Звук\, свет
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-10-28-1200-17ik0i3@raspisanie
-DTSTAMP:20261010T170600Z
-DTSTART;TZID=Europe/Moscow:20261028T120000
-DTEND;TZID=Europe/Moscow:20261028T130000
-SUMMARY:Репетиция «Каштанка»
-LOCATION:Старая сцена
-DESCRIPTION:Репетиция спектакля «Каштанка»\n
- Безносиков\, Баранов\, Беканова\, Кожев\, 
- Глазецкая\, Лоскутова\, Галустянц\, Шайм
- иев\nЗвук/свет: Звук\, свет\, проектор
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-10-28-1700-1ih3jwc@raspisanie
-DTSTAMP:20261010T170600Z
-DTSTART;TZID=Europe/Moscow:20261028T170000
-DTEND;TZID=Europe/Moscow:20261028T180000
-SUMMARY:Спектакль «Каштанка»
-LOCATION:Старая сцена
-DESCRIPTION:Спектакль «Каштанка»\nБезносиков
- \, Баранов\, Беканова\, Кожев\, Глазецкая\,
-  Лоскутова\, Галустянц\, Шаймиев\nЗвук/св
- ет: Звук\, свет\, проектор
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-10-31-1100-152hmft@raspisanie
-DTSTAMP:20261010T170600Z
-DTSTART;TZID=Europe/Moscow:20261031T110000
-DTEND;TZID=Europe/Moscow:20261031T120000
-SUMMARY:Спектакль «Кот в сапогах»
-LOCATION:Новая сцена
-DESCRIPTION:Спектакль «Кот в сапогах»\nАндрее
- в\, Безносиков\, Шаймиев\, Баранов\, Бекан
- ова\, Разуваева\nЗвук/свет: Звук\, свет
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-10-31-1300-152hmft@raspisanie
-DTSTAMP:20261010T170600Z
-DTSTART;TZID=Europe/Moscow:20261031T130000
-DTEND;TZID=Europe/Moscow:20261031T140000
-SUMMARY:Спектакль «Кот в сапогах»
-LOCATION:Новая сцена
-DESCRIPTION:Спектакль «Кот в сапогах»\nАндрее
- в\, Безносиков\, Шаймиев\, Баранов\, Бекан
- ова\, Разуваева\nЗвук/свет: Звук\, свет
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-10-31-1500-152hmft@raspisanie
-DTSTAMP:20261010T170600Z
-DTSTART;TZID=Europe/Moscow:20261031T150000
-DTEND;TZID=Europe/Moscow:20261031T160000
-SUMMARY:Спектакль «Кот в сапогах»
-LOCATION:Новая сцена
-DESCRIPTION:Спектакль «Кот в сапогах»\nАндрее
- в\, Безносиков\, Шаймиев\, Баранов\, Бекан
- ова\, Разуваева\nЗвук/свет: Звук\, свет
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-11-01-1100-ezemun@raspisanie
-DTSTAMP:20261010T170600Z
-DTSTART;TZID=Europe/Moscow:20261101T110000
-DTEND;TZID=Europe/Moscow:20261101T120000
-SUMMARY:Спектакль «Колобок»
-LOCATION:Старая сцена
-DESCRIPTION:Спектакль «Колобок»\nГалустянц\, 
- Разуваева\, Баранов\, Глазецкая\, Бекано
- ва\, Заяшников\nЗвук/свет: Звук\, свет
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-11-01-1300-ezemun@raspisanie
-DTSTAMP:20261010T170600Z
-DTSTART;TZID=Europe/Moscow:20261101T130000
-DTEND;TZID=Europe/Moscow:20261101T140000
-SUMMARY:Спектакль «Колобок»
-LOCATION:Старая сцена
-DESCRIPTION:Спектакль «Колобок»\nГалустянц\, 
- Разуваева\, Баранов\, Глазецкая\, Бекано
- ва\, Заяшников\nЗвук/свет: Звук\, свет
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-11-01-1500-ezemun@raspisanie
-DTSTAMP:20261010T170600Z
-DTSTART;TZID=Europe/Moscow:20261101T150000
-DTEND;TZID=Europe/Moscow:20261101T160000
-SUMMARY:Спектакль «Колобок»
-LOCATION:Старая сцена
-DESCRIPTION:Спектакль «Колобок»\nГалустянц\, 
- Разуваева\, Баранов\, Глазецкая\, Бекано
- ва\, Заяшников\nЗвук/свет: Звук\, свет
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-10-15-1500-18re0zl@raspisanie
-DTSTAMP:20261010T170600Z
-DTSTART;TZID=Europe/Moscow:20261015T150000
-DTEND;TZID=Europe/Moscow:20261015T160000
-SUMMARY:Репетиция «Сказка о глупом мышонке
- »
-LOCATION:Старая сцена
-DESCRIPTION:Репетиция спектакля «Сказка о гл
- упом мышонке»\nБеканова\, Мартюшева\, Тр
- унина\, Лоскутова\, Галустянц\, Глазецка
- я\nЗвук/свет: Звук\, свет
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-10-16-1100-qpvl1t@raspisanie
-DTSTAMP:20261010T170600Z
-DTSTART;TZID=Europe/Moscow:20261016T110000
-DTEND;TZID=Europe/Moscow:20261016T130000
-SUMMARY:Репетиция «Сказка о глупом мышонке
- » · С А.С.
-LOCATION:Старая сцена
-DESCRIPTION:Репетиция спектакля «Сказка о гл
- упом мышонке» с А.С.\nБеканова\, Мартюшев
- а\, Трунина\, Лоскутова\, Галустянц\, Глаз
- ецкая\nЗвук/свет: Звук\, свет
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-10-16-1200-q79fq@raspisanie
-DTSTAMP:20261010T170600Z
-DTSTART;TZID=Europe/Moscow:20261016T120000
-DTEND;TZID=Europe/Moscow:20261016T150000
-SUMMARY:Репетиция «Оксюморон»
-LOCATION:Новая сцена
-DESCRIPTION:Репетиция спектакля «Оксюморон»
- \nТрунина\, Беканова\, Миронова\, Сигитов
- а\, Мартюшева\, Разуваева\, Андреев\, Безн
- осиков\,\nБаранов\, Шаймиев\, Носов\, Заяш
- ников\nЗвук/свет: Звук\, свет
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-10-16-1800-rgb9cu@raspisanie
-DTSTAMP:20261010T170600Z
-DTSTART;TZID=Europe/Moscow:20261016T180000
-DTEND;TZID=Europe/Moscow:20261016T190000
-SUMMARY:Спектакль «Гадкий утёнок»
-LOCATION:Новая сцена
-DESCRIPTION:Спектакль «Гадкий утёнок»\nГлазе
- цкая\, Кожев\, Беканова\nЗвук/свет: Звук\, 
- свет
 END:VEVENT
 END:VCALENDAR

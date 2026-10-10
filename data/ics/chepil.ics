@@ -117,63 +117,6 @@ DESCRIPTION:Репетиция спектакля «Муравьишка
   Звук\, свет (?)
 END:VEVENT
 BEGIN:VEVENT
-UID:2026-10-21-1100-qik2fb@raspisanie
-DTSTAMP:20261010T170600Z
-DTSTART;TZID=Europe/Moscow:20261021T110000
-DTEND;TZID=Europe/Moscow:20261021T120000
-SUMMARY:Репетиция «Муравьишка»
-LOCATION:Новая сцена
-DESCRIPTION:Репетиция спектакля «Муравьишка
- »\nЧепиль\, Сигитова\, Андреев\nЗвук/свет:
-  Звук\, свет
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-10-27-1100-qik2fb@raspisanie
-DTSTAMP:20261010T170600Z
-DTSTART;TZID=Europe/Moscow:20261027T110000
-DTEND;TZID=Europe/Moscow:20261027T120000
-SUMMARY:Репетиция «Муравьишка»
-LOCATION:Новая сцена
-DESCRIPTION:Репетиция спектакля «Муравьишка
- »\nЧепиль\, Андреев\, Сигитова\nЗвук/свет:
-  Звук\, свет (?)
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-10-28-1100-qik2fb@raspisanie
-DTSTAMP:20261010T170600Z
-DTSTART;TZID=Europe/Moscow:20261028T110000
-DTEND;TZID=Europe/Moscow:20261028T120000
-SUMMARY:Репетиция «Муравьишка»
-LOCATION:Новая сцена
-DESCRIPTION:Репетиция спектакля «Муравьишка
- »\nЧепиль\, Сигитова\, Андреев\nЗвук/свет:
-  Звук\, свет
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-10-29-1100-grjp4p@raspisanie
-DTSTAMP:20261010T170600Z
-DTSTART;TZID=Europe/Moscow:20261029T110000
-DTEND;TZID=Europe/Moscow:20261029T120000
-SUMMARY:Репетиция «Агния Барто» · \, сдача А.
- С
-LOCATION:Старая сцена
-DESCRIPTION:Репетиция спектакля «Агния Барто
- »\, сдача А.С\nЛоскутова\, Андреев\, Чепил
- ь\, Мартюшева\, Чирочкина\nЗвук/свет: Зву
- к
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-10-29-1400-qik2fb@raspisanie
-DTSTAMP:20261010T170600Z
-DTSTART;TZID=Europe/Moscow:20261029T140000
-DTEND;TZID=Europe/Moscow:20261029T180000
-SUMMARY:Репетиция «Муравьишка»
-LOCATION:Новая сцена
-DESCRIPTION:Репетиция спектакля «Муравьишка
- »\nЧепиль\, Сигитова\, Андреев\nЗвук/свет:
-  Звук\, свет
-END:VEVENT
-BEGIN:VEVENT
 UID:2026-10-13-1100-qik2fb@raspisanie
 DTSTAMP:20261010T170600Z
 DTSTART;TZID=Europe/Moscow:20261013T110000
@@ -241,5 +184,62 @@ DESCRIPTION:Спектакль «Чудо-репка»\nРазуваев
  а\, Самойлов (11:00 и 13:00)\, Носов (15:00)\, Мартю
  шева\, Чепиль\, Галустянц\,\nЧирочкина\nЗв
  ук/свет: Звук\, свет
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-27-1100-qik2fb@raspisanie
+DTSTAMP:20261010T170600Z
+DTSTART;TZID=Europe/Moscow:20261027T110000
+DTEND;TZID=Europe/Moscow:20261027T120000
+SUMMARY:Репетиция «Муравьишка»
+LOCATION:Новая сцена
+DESCRIPTION:Репетиция спектакля «Муравьишка
+ »\nЧепиль\, Андреев\, Сигитова\nЗвук/свет:
+  Звук\, свет (?)
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-28-1100-qik2fb@raspisanie
+DTSTAMP:20261010T170600Z
+DTSTART;TZID=Europe/Moscow:20261028T110000
+DTEND;TZID=Europe/Moscow:20261028T120000
+SUMMARY:Репетиция «Муравьишка»
+LOCATION:Новая сцена
+DESCRIPTION:Репетиция спектакля «Муравьишка
+ »\nЧепиль\, Сигитова\, Андреев\nЗвук/свет:
+  Звук\, свет
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-29-1100-grjp4p@raspisanie
+DTSTAMP:20261010T170600Z
+DTSTART;TZID=Europe/Moscow:20261029T110000
+DTEND;TZID=Europe/Moscow:20261029T120000
+SUMMARY:Репетиция «Агния Барто» · \, сдача А.
+ С
+LOCATION:Старая сцена
+DESCRIPTION:Репетиция спектакля «Агния Барто
+ »\, сдача А.С\nЛоскутова\, Андреев\, Чепил
+ ь\, Мартюшева\, Чирочкина\nЗвук/свет: Зву
+ к
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-29-1400-qik2fb@raspisanie
+DTSTAMP:20261010T170600Z
+DTSTART;TZID=Europe/Moscow:20261029T140000
+DTEND;TZID=Europe/Moscow:20261029T180000
+SUMMARY:Репетиция «Муравьишка»
+LOCATION:Новая сцена
+DESCRIPTION:Репетиция спектакля «Муравьишка
+ »\nЧепиль\, Сигитова\, Андреев\nЗвук/свет:
+  Звук\, свет
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-21-1200-qik2fb@raspisanie
+DTSTAMP:20261010T170600Z
+DTSTART;TZID=Europe/Moscow:20261021T120000
+DTEND;TZID=Europe/Moscow:20261021T130000
+SUMMARY:Репетиция «Муравьишка»
+LOCATION:Новая сцена
+DESCRIPTION:Репетиция спектакля «Муравьишка
+ »\nЧепиль\, Андреев\, Сигитова\nЗвук/свет:
+  Звук\, свет
 END:VEVENT
 END:VCALENDAR

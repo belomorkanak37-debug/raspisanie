@@ -203,80 +203,77 @@ DESCRIPTION:Спектакль «Алые паруса»\nМиронов
  ук/свет: Звук\, свет
 END:VEVENT
 BEGIN:VEVENT
-UID:2026-10-20-1000-1m6gyt1@raspisanie
+UID:2026-10-15-1500-18re0zl@raspisanie
 DTSTAMP:20261010T170600Z
-DTSTART;TZID=Europe/Moscow:20261020T100000
-DTEND;TZID=Europe/Moscow:20261020T110000
-SUMMARY:Выезд «Кот в сапогах» · Выезд спект
- акля
-LOCATION:Шк № 7\, ул Летчика Пилютова\, 11 к 2
-DESCRIPTION:ВЫЕЗД спектакля «Кот в сапогах»\n
- Кожев\, Безносиков\, Заяшников\, Лоскуто
- в\, Трунина\, Глазецкая\nЗвук/свет: Звук\, 
- свет
+DTSTART;TZID=Europe/Moscow:20261015T150000
+DTEND;TZID=Europe/Moscow:20261015T160000
+SUMMARY:Репетиция «Сказка о глупом мышонке
+ »
+LOCATION:Старая сцена
+DESCRIPTION:Репетиция спектакля «Сказка о гл
+ упом мышонке»\nБеканова\, Мартюшева\, Тр
+ унина\, Лоскутова\, Галустянц\, Глазецка
+ я\nЗвук/свет: Звук\, свет
 END:VEVENT
 BEGIN:VEVENT
-UID:2026-10-20-1200-1m6gyt1@raspisanie
+UID:2026-10-16-1100-qpvl1t@raspisanie
 DTSTAMP:20261010T170600Z
-DTSTART;TZID=Europe/Moscow:20261020T120000
-DTEND;TZID=Europe/Moscow:20261020T130000
-SUMMARY:Выезд «Кот в сапогах» · Выезд спект
- акля
-LOCATION:Шк № 7\, ул Летчика Пилютова\, 11 к 2
-DESCRIPTION:ВЫЕЗД спектакля «Кот в сапогах»\n
- Кожев\, Безносиков\, Заяшников\, Лоскуто
- в\, Трунина\, Глазецкая\nЗвук/свет: Звук\, 
- свет
+DTSTART;TZID=Europe/Moscow:20261016T110000
+DTEND;TZID=Europe/Moscow:20261016T130000
+SUMMARY:Репетиция «Сказка о глупом мышонке
+ » · С А.С.
+LOCATION:Старая сцена
+DESCRIPTION:Репетиция спектакля «Сказка о гл
+ упом мышонке» с А.С.\nБеканова\, Мартюшев
+ а\, Трунина\, Лоскутова\, Галустянц\, Глаз
+ ецкая\nЗвук/свет: Звук\, свет
 END:VEVENT
 BEGIN:VEVENT
-UID:2026-10-22-1100-c33i7@raspisanie
+UID:2026-10-16-1800-rgb9cu@raspisanie
 DTSTAMP:20261010T170600Z
-DTSTART;TZID=Europe/Moscow:20261022T110000
-DTEND;TZID=Europe/Moscow:20261022T120000
-SUMMARY:Спектакль «Заинька»
+DTSTART;TZID=Europe/Moscow:20261016T180000
+DTEND;TZID=Europe/Moscow:20261016T190000
+SUMMARY:Спектакль «Гадкий утёнок»
 LOCATION:Новая сцена
-DESCRIPTION:Спектакль «Заинька»\nАндреев\, Гл
- азецкая\, Заяшников\nЗвук/свет: Звук\, св
- ет
+DESCRIPTION:Спектакль «Гадкий утёнок»\nГлазе
+ цкая\, Кожев\, Беканова\nЗвук/свет: Звук\, 
+ свет
 END:VEVENT
 BEGIN:VEVENT
-UID:2026-10-24-1100-1xn9ady@raspisanie
+UID:2026-10-18-1100-dp5ewz@raspisanie
 DTSTAMP:20261010T170600Z
-DTSTART;TZID=Europe/Moscow:20261024T110000
-DTEND;TZID=Europe/Moscow:20261024T120000
-SUMMARY:Спектакль «Сказка о глупом мышонке
- »
+DTSTART;TZID=Europe/Moscow:20261018T110000
+DTEND;TZID=Europe/Moscow:20261018T120000
+SUMMARY:Спектакль «Федорино горе»
 LOCATION:Старая сцена
-DESCRIPTION:Спектакль «Сказка о глупом мышон
- ке»\nБеканова\, Трунина\, Глазецкая\, Гал
- устянц\, Лоскутова\nЗвук/свет: Звук\, све
- т
+DESCRIPTION:Спектакль «Федорино горе»\nРадыг
+ ин\, Безносиков\, Лоскутов\, Шаймиев\, Сам
+ ойлов\, Заяшников\, Глазецкая\nЗвук/свет:
+  Звук\, свет
 END:VEVENT
 BEGIN:VEVENT
-UID:2026-10-24-1300-1xn9ady@raspisanie
+UID:2026-10-18-1300-dp5ewz@raspisanie
 DTSTAMP:20261010T170600Z
-DTSTART;TZID=Europe/Moscow:20261024T130000
-DTEND;TZID=Europe/Moscow:20261024T140000
-SUMMARY:Спектакль «Сказка о глупом мышонке
- »
+DTSTART;TZID=Europe/Moscow:20261018T130000
+DTEND;TZID=Europe/Moscow:20261018T140000
+SUMMARY:Спектакль «Федорино горе»
 LOCATION:Старая сцена
-DESCRIPTION:Спектакль «Сказка о глупом мышон
- ке»\nБеканова\, Трунина\, Глазецкая\, Гал
- устянц\, Лоскутова\nЗвук/свет: Звук\, све
- т
+DESCRIPTION:Спектакль «Федорино горе»\nРадыг
+ ин\, Безносиков\, Лоскутов\, Шаймиев\, Сам
+ ойлов\, Заяшников\, Глазецкая\nЗвук/свет:
+  Звук\, свет
 END:VEVENT
 BEGIN:VEVENT
-UID:2026-10-24-1500-1xn9ady@raspisanie
+UID:2026-10-18-1500-dp5ewz@raspisanie
 DTSTAMP:20261010T170600Z
-DTSTART;TZID=Europe/Moscow:20261024T150000
-DTEND;TZID=Europe/Moscow:20261024T160000
-SUMMARY:Спектакль «Сказка о глупом мышонке
- »
+DTSTART;TZID=Europe/Moscow:20261018T150000
+DTEND;TZID=Europe/Moscow:20261018T160000
+SUMMARY:Спектакль «Федорино горе»
 LOCATION:Старая сцена
-DESCRIPTION:Спектакль «Сказка о глупом мышон
- ке»\nБеканова\, Трунина\, Глазецкая\, Гал
- устянц\, Лоскутова\nЗвук/свет: Звук\, све
- т
+DESCRIPTION:Спектакль «Федорино горе»\nРадыг
+ ин\, Безносиков\, Лоскутов\, Шаймиев\, Сам
+ ойлов\, Заяшников\, Глазецкая\nЗвук/свет:
+  Звук\, свет
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-27-1500-dwxnhp@raspisanie
@@ -392,76 +389,79 @@ DESCRIPTION:Спектакль «Колобок»\nГалустянц\,
  ва\, Заяшников\nЗвук/свет: Звук\, свет
 END:VEVENT
 BEGIN:VEVENT
-UID:2026-10-15-1500-18re0zl@raspisanie
+UID:2026-10-20-1000-1m6gyt1@raspisanie
 DTSTAMP:20261010T170600Z
-DTSTART;TZID=Europe/Moscow:20261015T150000
-DTEND;TZID=Europe/Moscow:20261015T160000
-SUMMARY:Репетиция «Сказка о глупом мышонке
- »
-LOCATION:Старая сцена
-DESCRIPTION:Репетиция спектакля «Сказка о гл
- упом мышонке»\nБеканова\, Мартюшева\, Тр
- унина\, Лоскутова\, Галустянц\, Глазецка
- я\nЗвук/свет: Звук\, свет
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-10-16-1100-qpvl1t@raspisanie
-DTSTAMP:20261010T170600Z
-DTSTART;TZID=Europe/Moscow:20261016T110000
-DTEND;TZID=Europe/Moscow:20261016T130000
-SUMMARY:Репетиция «Сказка о глупом мышонке
- » · С А.С.
-LOCATION:Старая сцена
-DESCRIPTION:Репетиция спектакля «Сказка о гл
- упом мышонке» с А.С.\nБеканова\, Мартюшев
- а\, Трунина\, Лоскутова\, Галустянц\, Глаз
- ецкая\nЗвук/свет: Звук\, свет
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-10-16-1800-rgb9cu@raspisanie
-DTSTAMP:20261010T170600Z
-DTSTART;TZID=Europe/Moscow:20261016T180000
-DTEND;TZID=Europe/Moscow:20261016T190000
-SUMMARY:Спектакль «Гадкий утёнок»
-LOCATION:Новая сцена
-DESCRIPTION:Спектакль «Гадкий утёнок»\nГлазе
- цкая\, Кожев\, Беканова\nЗвук/свет: Звук\, 
+DTSTART;TZID=Europe/Moscow:20261020T100000
+DTEND;TZID=Europe/Moscow:20261020T110000
+SUMMARY:Выезд «Кот в сапогах» · Выезд спект
+ акля
+LOCATION:Шк № 7\, ул Летчика Пилютова\, 11 к 2
+DESCRIPTION:ВЫЕЗД спектакля «Кот в сапогах»\n
+ Кожев\, Безносиков\, Заяшников\, Лоскуто
+ в\, Трунина\, Глазецкая\nЗвук/свет: Звук\, 
  свет
 END:VEVENT
 BEGIN:VEVENT
-UID:2026-10-18-1100-dp5ewz@raspisanie
+UID:2026-10-20-1200-1m6gyt1@raspisanie
 DTSTAMP:20261010T170600Z
-DTSTART;TZID=Europe/Moscow:20261018T110000
-DTEND;TZID=Europe/Moscow:20261018T120000
-SUMMARY:Спектакль «Федорино горе»
-LOCATION:Старая сцена
-DESCRIPTION:Спектакль «Федорино горе»\nРадыг
- ин\, Безносиков\, Лоскутов\, Шаймиев\, Сам
- ойлов\, Заяшников\, Глазецкая\nЗвук/свет:
-  Звук\, свет
+DTSTART;TZID=Europe/Moscow:20261020T120000
+DTEND;TZID=Europe/Moscow:20261020T130000
+SUMMARY:Выезд «Кот в сапогах» · Выезд спект
+ акля
+LOCATION:Шк № 7\, ул Летчика Пилютова\, 11 к 2
+DESCRIPTION:ВЫЕЗД спектакля «Кот в сапогах»\n
+ Кожев\, Безносиков\, Заяшников\, Лоскуто
+ в\, Трунина\, Глазецкая\nЗвук/свет: Звук\, 
+ свет
 END:VEVENT
 BEGIN:VEVENT
-UID:2026-10-18-1300-dp5ewz@raspisanie
+UID:2026-10-21-1100-c33i7@raspisanie
 DTSTAMP:20261010T170600Z
-DTSTART;TZID=Europe/Moscow:20261018T130000
-DTEND;TZID=Europe/Moscow:20261018T140000
-SUMMARY:Спектакль «Федорино горе»
-LOCATION:Старая сцена
-DESCRIPTION:Спектакль «Федорино горе»\nРадыг
- ин\, Безносиков\, Лоскутов\, Шаймиев\, Сам
- ойлов\, Заяшников\, Глазецкая\nЗвук/свет:
-  Звук\, свет
+DTSTART;TZID=Europe/Moscow:20261021T110000
+DTEND;TZID=Europe/Moscow:20261021T120000
+SUMMARY:Спектакль «Заинька»
+LOCATION:Новая сцена
+DESCRIPTION:Спектакль «Заинька»\nАндреев\, Гл
+ азецкая\, Заяшников\nЗвук/свет: Звук\, св
+ ет
 END:VEVENT
 BEGIN:VEVENT
-UID:2026-10-18-1500-dp5ewz@raspisanie
+UID:2026-10-24-1100-1xn9ady@raspisanie
 DTSTAMP:20261010T170600Z
-DTSTART;TZID=Europe/Moscow:20261018T150000
-DTEND;TZID=Europe/Moscow:20261018T160000
-SUMMARY:Спектакль «Федорино горе»
+DTSTART;TZID=Europe/Moscow:20261024T110000
+DTEND;TZID=Europe/Moscow:20261024T120000
+SUMMARY:Спектакль «Сказка о глупом мышонке
+ »
 LOCATION:Старая сцена
-DESCRIPTION:Спектакль «Федорино горе»\nРадыг
- ин\, Безносиков\, Лоскутов\, Шаймиев\, Сам
- ойлов\, Заяшников\, Глазецкая\nЗвук/свет:
-  Звук\, свет
+DESCRIPTION:Спектакль «Сказка о глупом мышон
+ ке»\nБеканова\, Трунина\, Глазецкая\, Гал
+ устянц\, Лоскутова\nЗвук/свет: Звук\, све
+ т
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-24-1300-1xn9ady@raspisanie
+DTSTAMP:20261010T170600Z
+DTSTART;TZID=Europe/Moscow:20261024T130000
+DTEND;TZID=Europe/Moscow:20261024T140000
+SUMMARY:Спектакль «Сказка о глупом мышонке
+ »
+LOCATION:Старая сцена
+DESCRIPTION:Спектакль «Сказка о глупом мышон
+ ке»\nБеканова\, Трунина\, Глазецкая\, Гал
+ устянц\, Лоскутова\nЗвук/свет: Звук\, све
+ т
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-24-1500-1xn9ady@raspisanie
+DTSTAMP:20261010T170600Z
+DTSTART;TZID=Europe/Moscow:20261024T150000
+DTEND;TZID=Europe/Moscow:20261024T160000
+SUMMARY:Спектакль «Сказка о глупом мышонке
+ »
+LOCATION:Старая сцена
+DESCRIPTION:Спектакль «Сказка о глупом мышон
+ ке»\nБеканова\, Трунина\, Глазецкая\, Гал
+ устянц\, Лоскутова\nЗвук/свет: Звук\, све
+ т
 END:VEVENT
 END:VCALENDAR

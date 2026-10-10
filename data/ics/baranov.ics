@@ -201,102 +201,17 @@ DESCRIPTION:Спектакль «Тараканище»\nКожев\, Б
  \nЗвук/свет: Звук\, свет
 END:VEVENT
 BEGIN:VEVENT
-UID:2026-10-20-1200-175r9eq@raspisanie
+UID:2026-10-16-1200-q79fq@raspisanie
 DTSTAMP:20261010T170600Z
-DTSTART;TZID=Europe/Moscow:20261020T120000
-DTEND;TZID=Europe/Moscow:20261020T130000
-SUMMARY:Репетиция «Мойдодыр»
-LOCATION:Старая сцена
-DESCRIPTION:Репетиция спектакля «Мойдодыр»\n
- Советов\, Шаймиев\, Баранов\, Сигитова\nЗ
- вук/свет: Звук
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-10-20-1500-144na9v@raspisanie
-DTSTAMP:20261010T170600Z
-DTSTART;TZID=Europe/Moscow:20261020T150000
-DTEND;TZID=Europe/Moscow:20261020T160000
-SUMMARY:Репетиция «Оксюморон» · Прогон спе
- ктакля
+DTSTART;TZID=Europe/Moscow:20261016T120000
+DTEND;TZID=Europe/Moscow:20261016T150000
+SUMMARY:Репетиция «Оксюморон»
 LOCATION:Новая сцена
-DESCRIPTION:Прогон спектакля«Оксюморон»\nТру
- нина\, Беканова\, Миронова\, Сигитова\, Ма
- ртюшева\, Разуваева\, Андреев\, Безносик
- ов\,\nБаранов\, Шаймиев\, Носов\, Заяшнико
- в\nЗвук/свет: Звук\, свет
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-10-22-1600-nwvrur@raspisanie
-DTSTAMP:20261010T170600Z
-DTSTART;TZID=Europe/Moscow:20261022T160000
-DTEND;TZID=Europe/Moscow:20261022T170000
-SUMMARY:Репетиция «Оксюморон» · Прогон спе
- ктакля
-LOCATION:Новая сцена
-DESCRIPTION:Прогон спектакля «Оксюморон»\nТр
- унина\, Беканова\, Миронова\, Сигитова\, М
- артюшева\, Разуваева\, Андреев\, Безноси
- ков\,\nБаранов\, Шаймиев\, Носов\, Заяшник
- ов\nЗвук/свет: Звук\, свет
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-10-23-1100-1hjcxld@raspisanie
-DTSTAMP:20261010T170600Z
-DTSTART;TZID=Europe/Moscow:20261023T110000
-DTEND;TZID=Europe/Moscow:20261023T120000
-SUMMARY:Спектакль «Оксюморон»
-LOCATION:Новая сцена
-DESCRIPTION:Спектакль «Оксюморон»\nТрунина\, 
- Беканова\, Миронова\, Сигитова\, Мартюше
- ва\, Разуваева\, Андреев\, Безносиков\,\nБ
- аранов\, Шаймиев\, Носов\, Заяшников\nЗву
- к/свет: Звук\, свет
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-10-23-1900-1hjcxld@raspisanie
-DTSTAMP:20261010T170600Z
-DTSTART;TZID=Europe/Moscow:20261023T190000
-DTEND;TZID=Europe/Moscow:20261023T200000
-SUMMARY:Спектакль «Оксюморон»
-LOCATION:Новая сцена
-DESCRIPTION:Спектакль «Оксюморон»\nТрунина\, 
- Беканова\, Миронова\, Сигитова\, Мартюше
- ва\, Разуваева\, Андреев\, Безносиков\,\nБ
- аранов\, Шаймиев\, Носов\, Заяшников\nЗву
- к/свет: Звук\, свет
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-10-25-1100-sbrlhx@raspisanie
-DTSTAMP:20261010T170600Z
-DTSTART;TZID=Europe/Moscow:20261025T110000
-DTEND;TZID=Europe/Moscow:20261025T120000
-SUMMARY:Спектакль «Мойдодыр»
-LOCATION:Старая сцена
-DESCRIPTION:Спектакль «Мойдодыр»\nСоветов\, Ш
- аймиев\, Баранов\, Сигитова\nЗвук/свет: З
- вук\, свет
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-10-25-1300-sbrlhx@raspisanie
-DTSTAMP:20261010T170600Z
-DTSTART;TZID=Europe/Moscow:20261025T130000
-DTEND;TZID=Europe/Moscow:20261025T140000
-SUMMARY:Спектакль «Мойдодыр»
-LOCATION:Старая сцена
-DESCRIPTION:Спектакль «Мойдодыр»\nСоветов\, Ш
- аймиев\, Баранов\, Сигитова\nЗвук/свет: З
- вук\, свет
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-10-25-1500-sbrlhx@raspisanie
-DTSTAMP:20261010T170600Z
-DTSTART;TZID=Europe/Moscow:20261025T150000
-DTEND;TZID=Europe/Moscow:20261025T160000
-SUMMARY:Спектакль «Мойдодыр»
-LOCATION:Старая сцена
-DESCRIPTION:Спектакль «Мойдодыр»\nСоветов\, Ш
- аймиев\, Баранов\, Сигитова\nЗвук/свет: З
- вук\, свет
+DESCRIPTION:Репетиция спектакля «Оксюморон»
+ \nТрунина\, Беканова\, Миронова\, Сигитов
+ а\, Мартюшева\, Разуваева\, Андреев\, Безн
+ осиков\,\nБаранов\, Шаймиев\, Носов\, Заяш
+ ников\nЗвук/свет: Звук\, свет
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-28-1200-17ik0i3@raspisanie
@@ -389,10 +304,21 @@ DESCRIPTION:Спектакль «Колобок»\nГалустянц\,
  ва\, Заяшников\nЗвук/свет: Звук\, свет
 END:VEVENT
 BEGIN:VEVENT
-UID:2026-10-16-1200-q79fq@raspisanie
+UID:2026-10-20-1400-175r9eq@raspisanie
 DTSTAMP:20261010T170600Z
-DTSTART;TZID=Europe/Moscow:20261016T120000
-DTEND;TZID=Europe/Moscow:20261016T150000
+DTSTART;TZID=Europe/Moscow:20261020T140000
+DTEND;TZID=Europe/Moscow:20261020T150000
+SUMMARY:Репетиция «Мойдодыр»
+LOCATION:Старая сцена
+DESCRIPTION:Репетиция спектакля «Мойдодыр»\n
+ Советов\, Шаймиев\, Баранов\, Сигитова\nЗ
+ вук/свет: Звук
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-20-1500-q79fq@raspisanie
+DTSTAMP:20261010T170600Z
+DTSTART;TZID=Europe/Moscow:20261020T150000
+DTEND;TZID=Europe/Moscow:20261020T160000
 SUMMARY:Репетиция «Оксюморон»
 LOCATION:Новая сцена
 DESCRIPTION:Репетиция спектакля «Оксюморон»
@@ -400,5 +326,77 @@ DESCRIPTION:Репетиция спектакля «Оксюморон»
  а\, Мартюшева\, Разуваева\, Андреев\, Безн
  осиков\,\nБаранов\, Шаймиев\, Носов\, Заяш
  ников\nЗвук/свет: Звук\, свет
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-21-1600-q79fq@raspisanie
+DTSTAMP:20261010T170600Z
+DTSTART;TZID=Europe/Moscow:20261021T160000
+DTEND;TZID=Europe/Moscow:20261021T170000
+SUMMARY:Репетиция «Оксюморон»
+LOCATION:Новая сцена
+DESCRIPTION:Репетиция спектакля «Оксюморон»
+ \nТрунина\, Беканова\, Миронова\, Сигитов
+ а\, Мартюшева\, Разуваева\, Андреев\, Безн
+ осиков\,\nБаранов\, Шаймиев\, Носов\, Заяш
+ ников\nЗвук/свет: Звук\, свет
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-23-1100-1hjcxld@raspisanie
+DTSTAMP:20261010T170600Z
+DTSTART;TZID=Europe/Moscow:20261023T110000
+DTEND;TZID=Europe/Moscow:20261023T120000
+SUMMARY:Спектакль «Оксюморон»
+LOCATION:Новая сцена
+DESCRIPTION:Спектакль «Оксюморон»\nТрунина\, 
+ Беканова\, Миронова\, Сигитова\, Мартюше
+ ва\, Разуваева\, Андреев\, Безносиков\,\nБ
+ аранов\, Шаймиев\, Носов\, Заяшников\nЗву
+ к/свет: Звук\, свет
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-23-1900-1hjcxld@raspisanie
+DTSTAMP:20261010T170600Z
+DTSTART;TZID=Europe/Moscow:20261023T190000
+DTEND;TZID=Europe/Moscow:20261023T200000
+SUMMARY:Спектакль «Оксюморон»
+LOCATION:Новая сцена
+DESCRIPTION:Спектакль «Оксюморон»\nТрунина\, 
+ Беканова\, Миронова\, Сигитова\, Мартюше
+ ва\, Разуваева\, Андреев\, Безносиков\,\nБ
+ аранов\, Шаймиев\, Носов\, Заяшников\nЗву
+ к/свет: Звук\, свет
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-25-1100-sbrlhx@raspisanie
+DTSTAMP:20261010T170600Z
+DTSTART;TZID=Europe/Moscow:20261025T110000
+DTEND;TZID=Europe/Moscow:20261025T120000
+SUMMARY:Спектакль «Мойдодыр»
+LOCATION:Старая сцена
+DESCRIPTION:Спектакль «Мойдодыр»\nСоветов\, Ш
+ аймиев\, Баранов\, Сигитова\nЗвук/свет: З
+ вук\, свет
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-25-1300-sbrlhx@raspisanie
+DTSTAMP:20261010T170600Z
+DTSTART;TZID=Europe/Moscow:20261025T130000
+DTEND;TZID=Europe/Moscow:20261025T140000
+SUMMARY:Спектакль «Мойдодыр»
+LOCATION:Старая сцена
+DESCRIPTION:Спектакль «Мойдодыр»\nСоветов\, Ш
+ аймиев\, Баранов\, Сигитова\nЗвук/свет: З
+ вук\, свет
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-25-1500-sbrlhx@raspisanie
+DTSTAMP:20261010T170600Z
+DTSTART;TZID=Europe/Moscow:20261025T150000
+DTEND;TZID=Europe/Moscow:20261025T160000
+SUMMARY:Спектакль «Мойдодыр»
+LOCATION:Старая сцена
+DESCRIPTION:Спектакль «Мойдодыр»\nСоветов\, Ш
+ аймиев\, Баранов\, Сигитова\nЗвук/свет: З
+ вук\, свет
 END:VEVENT
 END:VCALENDAR

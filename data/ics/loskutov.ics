@@ -226,118 +226,85 @@ DESCRIPTION:Спектакль «Алые паруса»\nМиронов
  ук/свет: Звук\, свет
 END:VEVENT
 BEGIN:VEVENT
-UID:2026-10-20-1000-1m6gyt1@raspisanie
+UID:2026-10-14-1100-z1uvui@raspisanie
 DTSTAMP:20261010T170600Z
-DTSTART;TZID=Europe/Moscow:20261020T100000
-DTEND;TZID=Europe/Moscow:20261020T110000
-SUMMARY:Выезд «Кот в сапогах» · Выезд спект
- акля
-LOCATION:Шк № 7\, ул Летчика Пилютова\, 11 к 2
-DESCRIPTION:ВЫЕЗД спектакля «Кот в сапогах»\n
- Кожев\, Безносиков\, Заяшников\, Лоскуто
- в\, Трунина\, Глазецкая\nЗвук/свет: Звук\, 
- свет
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-10-20-1200-1m6gyt1@raspisanie
-DTSTAMP:20261010T170600Z
-DTSTART;TZID=Europe/Moscow:20261020T120000
-DTEND;TZID=Europe/Moscow:20261020T130000
-SUMMARY:Выезд «Кот в сапогах» · Выезд спект
- акля
-LOCATION:Шк № 7\, ул Летчика Пилютова\, 11 к 2
-DESCRIPTION:ВЫЕЗД спектакля «Кот в сапогах»\n
- Кожев\, Безносиков\, Заяшников\, Лоскуто
- в\, Трунина\, Глазецкая\nЗвук/свет: Звук\, 
- свет
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-10-21-1200-z1uvui@raspisanie
-DTSTAMP:20261010T170600Z
-DTSTART;TZID=Europe/Moscow:20261021T120000
-DTEND;TZID=Europe/Moscow:20261021T130000
+DTSTART;TZID=Europe/Moscow:20261014T110000
+DTEND;TZID=Europe/Moscow:20261014T150000
 SUMMARY:Ввод «Конёк-горбунок»
 LOCATION:Старая сцена
 DESCRIPTION:Ввод в спектакль «Конёк-горбунок
- »\nВводящийся – Радыгин\nЛоскутова\, Сам
- ойлов\, Лоскутов\nЗвук/свет: Звук\, свет
+ »\nВводящийся – Радыгин\, вводящий – Бе
+ зносиков\nГалустянц\, Самойлов\, Лоскуто
+ в\nЗвук/свет: Звук
 END:VEVENT
 BEGIN:VEVENT
-UID:2026-10-22-1130-1ri7jfm@raspisanie
+UID:2026-10-15-1100-1nrwk50@raspisanie
 DTSTAMP:20261010T170600Z
-DTSTART;TZID=Europe/Moscow:20261022T113000
-DTEND;TZID=Europe/Moscow:20261022T123000
-SUMMARY:Спектакль «Конёк-горбунок»
+DTSTART;TZID=Europe/Moscow:20261015T110000
+DTEND;TZID=Europe/Moscow:20261015T120000
+SUMMARY:Спектакль «Палочка-выручалочка»
 LOCATION:Старая сцена
-DESCRIPTION:Спектакль «Конёк-горбунок»\nБезн
- осиков\, Лоскутова\, Самойлов\, Лоскутов
- \nЗвук/свет: Звук\, свет
+DESCRIPTION:Спектакль «Палочка-выручалочка»
+ \nЗаяшников\, Носов\, Трунина\, Мартюшева
+ \, Лоскутов\,\nЗвук/свет: Звук\, свет
 END:VEVENT
 BEGIN:VEVENT
-UID:2026-10-22-1330-t3fget@raspisanie
+UID:2026-10-15-1145-1xbr8tf@raspisanie
 DTSTAMP:20261010T170600Z
-DTSTART;TZID=Europe/Moscow:20261022T133000
-DTEND;TZID=Europe/Moscow:20261022T143000
-SUMMARY:Репетиция «Конёк-горбунок»
+DTSTART;TZID=Europe/Moscow:20261015T114500
+DTEND;TZID=Europe/Moscow:20261015T124500
+SUMMARY:Репетиция «Палочка-выручалочка»
 LOCATION:Старая сцена
-DESCRIPTION:Репетиция спектакля «Конёк-горбу
- нок»\nРадыгин\, Галустянц\, Самойлов\, Ло
- скутов\nЗвук/свет: Звук
+DESCRIPTION:Репетиция спектакля «Палочка-выр
+ учалочка»\nЗаяшников\, Носов\, Трунина\, 
+ Мартюшева\, Лоскутов\,Советов
 END:VEVENT
 BEGIN:VEVENT
-UID:2026-10-23-1500-t3fget@raspisanie
+UID:2026-10-16-1800-xk9qxg@raspisanie
 DTSTAMP:20261010T170600Z
-DTSTART;TZID=Europe/Moscow:20261023T150000
-DTEND;TZID=Europe/Moscow:20261023T160000
-SUMMARY:Репетиция «Конёк-горбунок»
+DTSTART;TZID=Europe/Moscow:20261016T180000
+DTEND;TZID=Europe/Moscow:20261016T190000
+SUMMARY:Спектакль «Муха-цокотуха»
 LOCATION:Старая сцена
-DESCRIPTION:Репетиция спектакля «Конёк-горбу
- нок»\nРадыгин\, Галустянц\, Самойлов\, Ло
- скутов\nЗвук/свет: Звук\, свет
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-10-23-1800-trma95@raspisanie
-DTSTAMP:20261010T170600Z
-DTSTART;TZID=Europe/Moscow:20261023T180000
-DTEND;TZID=Europe/Moscow:20261023T190000
-SUMMARY:Спектакль ««Конёк-горбунок»
-LOCATION:Старая сцена
-DESCRIPTION:Спектакль ««Конёк-горбунок»\nРад
- ыгин\, Галустянц\, Самойлов\, Лоскутов\nЗ
- вук/свет: Звук\, свет
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-10-24-1100-1xfad3x@raspisanie
-DTSTAMP:20261010T170600Z
-DTSTART;TZID=Europe/Moscow:20261024T110000
-DTEND;TZID=Europe/Moscow:20261024T120000
-SUMMARY:Спектакль «Три поросенка»
-LOCATION:Новая сцена
-DESCRIPTION:Спектакль «Три поросенка»\nАндре
- ев\, Мартюшева\, Разуваева\, Лоскутов\nЗв
+DESCRIPTION:Спектакль «Муха-цокотуха»\nГалус
+ тянц\, Миронова\, Самойлов\, Лоскутов\nЗв
  ук/свет: Звук\, свет
 END:VEVENT
 BEGIN:VEVENT
-UID:2026-10-24-1300-1xfad3x@raspisanie
+UID:2026-10-18-1100-dp5ewz@raspisanie
 DTSTAMP:20261010T170600Z
-DTSTART;TZID=Europe/Moscow:20261024T130000
-DTEND;TZID=Europe/Moscow:20261024T140000
-SUMMARY:Спектакль «Три поросенка»
-LOCATION:Новая сцена
-DESCRIPTION:Спектакль «Три поросенка»\nАндре
- ев\, Мартюшева\, Разуваева\, Лоскутов\nЗв
- ук/свет: Звук\, свет
+DTSTART;TZID=Europe/Moscow:20261018T110000
+DTEND;TZID=Europe/Moscow:20261018T120000
+SUMMARY:Спектакль «Федорино горе»
+LOCATION:Старая сцена
+DESCRIPTION:Спектакль «Федорино горе»\nРадыг
+ ин\, Безносиков\, Лоскутов\, Шаймиев\, Сам
+ ойлов\, Заяшников\, Глазецкая\nЗвук/свет:
+  Звук\, свет
 END:VEVENT
 BEGIN:VEVENT
-UID:2026-10-24-1500-1xfad3x@raspisanie
+UID:2026-10-18-1300-dp5ewz@raspisanie
 DTSTAMP:20261010T170600Z
-DTSTART;TZID=Europe/Moscow:20261024T150000
-DTEND;TZID=Europe/Moscow:20261024T160000
-SUMMARY:Спектакль «Три поросенка»
-LOCATION:Новая сцена
-DESCRIPTION:Спектакль «Три поросенка»\nАндре
- ев\, Мартюшева\, Разуваева\, Лоскутов\nЗв
- ук/свет: Звук\, свет
+DTSTART;TZID=Europe/Moscow:20261018T130000
+DTEND;TZID=Europe/Moscow:20261018T140000
+SUMMARY:Спектакль «Федорино горе»
+LOCATION:Старая сцена
+DESCRIPTION:Спектакль «Федорино горе»\nРадыг
+ ин\, Безносиков\, Лоскутов\, Шаймиев\, Сам
+ ойлов\, Заяшников\, Глазецкая\nЗвук/свет:
+  Звук\, свет
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-18-1500-dp5ewz@raspisanie
+DTSTAMP:20261010T170600Z
+DTSTART;TZID=Europe/Moscow:20261018T150000
+DTEND;TZID=Europe/Moscow:20261018T160000
+SUMMARY:Спектакль «Федорино горе»
+LOCATION:Старая сцена
+DESCRIPTION:Спектакль «Федорино горе»\nРадыг
+ ин\, Безносиков\, Лоскутов\, Шаймиев\, Сам
+ ойлов\, Заяшников\, Глазецкая\nЗвук/свет:
+  Звук\, свет
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-29-1100-1fugs7c@raspisanie
@@ -434,84 +401,117 @@ DESCRIPTION:Спектакль «Кто оставил здесь сле
  в\nЗвук/свет: Звук\, свет
 END:VEVENT
 BEGIN:VEVENT
-UID:2026-10-14-1100-z1uvui@raspisanie
+UID:2026-10-20-1000-1m6gyt1@raspisanie
 DTSTAMP:20261010T170600Z
-DTSTART;TZID=Europe/Moscow:20261014T110000
-DTEND;TZID=Europe/Moscow:20261014T150000
+DTSTART;TZID=Europe/Moscow:20261020T100000
+DTEND;TZID=Europe/Moscow:20261020T110000
+SUMMARY:Выезд «Кот в сапогах» · Выезд спект
+ акля
+LOCATION:Шк № 7\, ул Летчика Пилютова\, 11 к 2
+DESCRIPTION:ВЫЕЗД спектакля «Кот в сапогах»\n
+ Кожев\, Безносиков\, Заяшников\, Лоскуто
+ в\, Трунина\, Глазецкая\nЗвук/свет: Звук\, 
+ свет
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-20-1200-1m6gyt1@raspisanie
+DTSTAMP:20261010T170600Z
+DTSTART;TZID=Europe/Moscow:20261020T120000
+DTEND;TZID=Europe/Moscow:20261020T130000
+SUMMARY:Выезд «Кот в сапогах» · Выезд спект
+ акля
+LOCATION:Шк № 7\, ул Летчика Пилютова\, 11 к 2
+DESCRIPTION:ВЫЕЗД спектакля «Кот в сапогах»\n
+ Кожев\, Безносиков\, Заяшников\, Лоскуто
+ в\, Трунина\, Глазецкая\nЗвук/свет: Звук\, 
+ свет
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-21-1130-1ri7jfm@raspisanie
+DTSTAMP:20261010T170600Z
+DTSTART;TZID=Europe/Moscow:20261021T113000
+DTEND;TZID=Europe/Moscow:20261021T123000
+SUMMARY:Спектакль «Конёк-горбунок»
+LOCATION:Старая сцена
+DESCRIPTION:Спектакль «Конёк-горбунок»\nБезн
+ осиков\, Лоскутова\, Самойлов\, Лоскутов
+ \nЗвук/свет: Звук\, свет
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-21-1200-z1uvui@raspisanie
+DTSTAMP:20261010T170600Z
+DTSTART;TZID=Europe/Moscow:20261021T120000
+DTEND;TZID=Europe/Moscow:20261021T130000
 SUMMARY:Ввод «Конёк-горбунок»
 LOCATION:Старая сцена
 DESCRIPTION:Ввод в спектакль «Конёк-горбунок
- »\nВводящийся – Радыгин\, вводящий – Бе
- зносиков\nГалустянц\, Самойлов\, Лоскуто
- в\nЗвук/свет: Звук
+ »\nВводящийся – Радыгин\nЛоскутова\, Сам
+ ойлов\, Лоскутов\nЗвук/свет: Звук\, свет
 END:VEVENT
 BEGIN:VEVENT
-UID:2026-10-15-1100-1nrwk50@raspisanie
+UID:2026-10-21-1330-t3fget@raspisanie
 DTSTAMP:20261010T170600Z
-DTSTART;TZID=Europe/Moscow:20261015T110000
-DTEND;TZID=Europe/Moscow:20261015T120000
-SUMMARY:Спектакль «Палочка-выручалочка»
+DTSTART;TZID=Europe/Moscow:20261021T133000
+DTEND;TZID=Europe/Moscow:20261021T143000
+SUMMARY:Репетиция «Конёк-горбунок»
 LOCATION:Старая сцена
-DESCRIPTION:Спектакль «Палочка-выручалочка»
- \nЗаяшников\, Носов\, Трунина\, Мартюшева
- \, Лоскутов\,\nЗвук/свет: Звук\, свет
+DESCRIPTION:Репетиция спектакля «Конёк-горбу
+ нок»\nРадыгин\, Галустянц\, Самойлов\, Ло
+ скутов\nЗвук/свет: Звук
 END:VEVENT
 BEGIN:VEVENT
-UID:2026-10-15-1145-1xbr8tf@raspisanie
+UID:2026-10-23-1500-t3fget@raspisanie
 DTSTAMP:20261010T170600Z
-DTSTART;TZID=Europe/Moscow:20261015T114500
-DTEND;TZID=Europe/Moscow:20261015T124500
-SUMMARY:Репетиция «Палочка-выручалочка»
+DTSTART;TZID=Europe/Moscow:20261023T150000
+DTEND;TZID=Europe/Moscow:20261023T160000
+SUMMARY:Репетиция «Конёк-горбунок»
 LOCATION:Старая сцена
-DESCRIPTION:Репетиция спектакля «Палочка-выр
- учалочка»\nЗаяшников\, Носов\, Трунина\, 
- Мартюшева\, Лоскутов\,Советов
+DESCRIPTION:Репетиция спектакля «Конёк-горбу
+ нок»\nРадыгин\, Галустянц\, Самойлов\, Ло
+ скутов\nЗвук/свет: Звук\, свет
 END:VEVENT
 BEGIN:VEVENT
-UID:2026-10-16-1800-xk9qxg@raspisanie
+UID:2026-10-23-1800-trma95@raspisanie
 DTSTAMP:20261010T170600Z
-DTSTART;TZID=Europe/Moscow:20261016T180000
-DTEND;TZID=Europe/Moscow:20261016T190000
-SUMMARY:Спектакль «Муха-цокотуха»
+DTSTART;TZID=Europe/Moscow:20261023T180000
+DTEND;TZID=Europe/Moscow:20261023T190000
+SUMMARY:Спектакль ««Конёк-горбунок»
 LOCATION:Старая сцена
-DESCRIPTION:Спектакль «Муха-цокотуха»\nГалус
- тянц\, Миронова\, Самойлов\, Лоскутов\nЗв
+DESCRIPTION:Спектакль ««Конёк-горбунок»\nРад
+ ыгин\, Галустянц\, Самойлов\, Лоскутов\nЗ
+ вук/свет: Звук\, свет
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-24-1100-1xfad3x@raspisanie
+DTSTAMP:20261010T170600Z
+DTSTART;TZID=Europe/Moscow:20261024T110000
+DTEND;TZID=Europe/Moscow:20261024T120000
+SUMMARY:Спектакль «Три поросенка»
+LOCATION:Новая сцена
+DESCRIPTION:Спектакль «Три поросенка»\nАндре
+ ев\, Мартюшева\, Разуваева\, Лоскутов\nЗв
  ук/свет: Звук\, свет
 END:VEVENT
 BEGIN:VEVENT
-UID:2026-10-18-1100-dp5ewz@raspisanie
+UID:2026-10-24-1300-1xfad3x@raspisanie
 DTSTAMP:20261010T170600Z
-DTSTART;TZID=Europe/Moscow:20261018T110000
-DTEND;TZID=Europe/Moscow:20261018T120000
-SUMMARY:Спектакль «Федорино горе»
-LOCATION:Старая сцена
-DESCRIPTION:Спектакль «Федорино горе»\nРадыг
- ин\, Безносиков\, Лоскутов\, Шаймиев\, Сам
- ойлов\, Заяшников\, Глазецкая\nЗвук/свет:
-  Звук\, свет
+DTSTART;TZID=Europe/Moscow:20261024T130000
+DTEND;TZID=Europe/Moscow:20261024T140000
+SUMMARY:Спектакль «Три поросенка»
+LOCATION:Новая сцена
+DESCRIPTION:Спектакль «Три поросенка»\nАндре
+ ев\, Мартюшева\, Разуваева\, Лоскутов\nЗв
+ ук/свет: Звук\, свет
 END:VEVENT
 BEGIN:VEVENT
-UID:2026-10-18-1300-dp5ewz@raspisanie
+UID:2026-10-24-1500-1xfad3x@raspisanie
 DTSTAMP:20261010T170600Z
-DTSTART;TZID=Europe/Moscow:20261018T130000
-DTEND;TZID=Europe/Moscow:20261018T140000
-SUMMARY:Спектакль «Федорино горе»
-LOCATION:Старая сцена
-DESCRIPTION:Спектакль «Федорино горе»\nРадыг
- ин\, Безносиков\, Лоскутов\, Шаймиев\, Сам
- ойлов\, Заяшников\, Глазецкая\nЗвук/свет:
-  Звук\, свет
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-10-18-1500-dp5ewz@raspisanie
-DTSTAMP:20261010T170600Z
-DTSTART;TZID=Europe/Moscow:20261018T150000
-DTEND;TZID=Europe/Moscow:20261018T160000
-SUMMARY:Спектакль «Федорино горе»
-LOCATION:Старая сцена
-DESCRIPTION:Спектакль «Федорино горе»\nРадыг
- ин\, Безносиков\, Лоскутов\, Шаймиев\, Сам
- ойлов\, Заяшников\, Глазецкая\nЗвук/свет:
-  Звук\, свет
+DTSTART;TZID=Europe/Moscow:20261024T150000
+DTEND;TZID=Europe/Moscow:20261024T160000
+SUMMARY:Спектакль «Три поросенка»
+LOCATION:Новая сцена
+DESCRIPTION:Спектакль «Три поросенка»\nАндре
+ ев\, Мартюшева\, Разуваева\, Лоскутов\nЗв
+ ук/свет: Звук\, свет
 END:VEVENT
 END:VCALENDAR
