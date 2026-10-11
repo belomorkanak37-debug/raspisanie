@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-10T17:31:42.369Z",
+ "updatedAt": "2026-10-11T13:52:35.049Z",
  "weeks": [
   {
    "id": "2026-09-28",
@@ -109,8 +109,8 @@
    "start": "2026-10-19",
    "end": "2026-10-25",
    "title": "19–25 октября",
-   "version": 6,
-   "updatedAt": "2026-10-10T17:31:40.105Z",
+   "version": 7,
+   "updatedAt": "2026-10-11T13:52:32.995Z",
    "pdf": "data/pdf/2026-10-19.pdf",
    "people": [
     "Андреев",
@@ -119,6 +119,7 @@
     "Беканова",
     "Галустянц",
     "Глазецкая",
+    "Демьянова",
     "Заяшников",
     "Кожев",
     "Лоскутов",
@@ -180,6 +181,7 @@
   "галустянц": "data/ics/galustyants.ics",
   "глазецкая": "data/ics/glazetskaya.ics",
   "гончаренко": "data/ics/goncharenko.ics",
+  "демьянова": "data/ics/demyanova.ics",
   "заяшников": "data/ics/zayashnikov.ics",
   "кожев": "data/ics/kozhev.ics",
   "кожевникова": "data/ics/kozhevnikova.ics",
