@@ -40,7 +40,7 @@
   {
    "id": "e2",
    "date": "2026-10-20",
-   "timeText": "в 10:00 и 12:00",
+   "timeText": "10:00 12:00",
    "times": [
     "10:00",
     "12:00"
@@ -122,9 +122,9 @@
   {
    "id": "e3",
    "date": "2026-10-20",
-   "timeText": "12:00",
+   "timeText": "11:00",
    "times": [
-    "12:00"
+    "11:00"
    ],
    "range": null,
    "timeUncertain": false,
@@ -228,86 +228,22 @@
    }
   },
   {
-   "id": "e5",
+   "id": "nmv8t08ca8okoc6",
    "date": "2026-10-20",
-   "timeText": "15:00",
+   "timeText": "14:00",
    "times": [
-    "15:00"
+    "14:00"
    ],
    "range": null,
    "timeUncertain": false,
-   "title": "Репетиция спектакля «Оксюморон»",
-   "kind": "rehearsal",
-   "place": "Новая сцена",
-   "tech": "Звук, свет",
+   "title": "ВЫЕЗД спектакля «Кот в сапогах»",
+   "kind": "trip",
+   "place": "Шк № 7, ул Летчика Пилютова, 11 к 2",
+   "tech": "",
    "lines": [
-    "Трунина, Беканова, Миронова, Сигитова, Мартюшева, Разуваева, Андреев, Безносиков,",
-    "Баранов, Шаймиев, Носов, Заяшников"
+    "Безносиков Глазецкая"
    ],
    "people": [
-    {
-     "name": "Трунина",
-     "times": null,
-     "from": null,
-     "role": null,
-     "uncertain": false,
-     "alts": [],
-     "note": null
-    },
-    {
-     "name": "Беканова",
-     "times": null,
-     "from": null,
-     "role": null,
-     "uncertain": false,
-     "alts": [],
-     "note": null
-    },
-    {
-     "name": "Миронова",
-     "times": null,
-     "from": null,
-     "role": null,
-     "uncertain": false,
-     "alts": [],
-     "note": null
-    },
-    {
-     "name": "Сигитова",
-     "times": null,
-     "from": null,
-     "role": null,
-     "uncertain": false,
-     "alts": [],
-     "note": null
-    },
-    {
-     "name": "Мартюшева",
-     "times": null,
-     "from": null,
-     "role": null,
-     "uncertain": false,
-     "alts": [],
-     "note": null
-    },
-    {
-     "name": "Разуваева",
-     "times": null,
-     "from": null,
-     "role": null,
-     "uncertain": false,
-     "alts": [],
-     "note": null
-    },
-    {
-     "name": "Андреев",
-     "times": null,
-     "from": null,
-     "role": null,
-     "uncertain": false,
-     "alts": [],
-     "note": null
-    },
     {
      "name": "Безносиков",
      "times": null,
@@ -318,16 +254,44 @@
      "note": null
     },
     {
-     "name": "Баранов",
+     "name": "Глазецкая",
      "times": null,
      "from": null,
      "role": null,
      "uncertain": false,
      "alts": [],
      "note": null
-    },
+    }
+   ],
+   "scope": "people",
+   "accounting": {
+    "showWeight": 1,
+    "baby": false,
+    "halfFor": [],
+    "away": true,
+    "intro": false
+   },
+   "manual": true
+  },
+  {
+   "id": "e5",
+   "date": "2026-10-20",
+   "timeText": "15:30",
+   "times": [
+    "15:30"
+   ],
+   "range": null,
+   "timeUncertain": false,
+   "title": "Репетиция спектакля «Оксюморон»",
+   "kind": "rehearsal",
+   "place": "Новая сцена",
+   "tech": "Звук, свет",
+   "lines": [
+    "Андреев, Носов, Трунина"
+   ],
+   "people": [
     {
-     "name": "Шаймиев",
+     "name": "Андреев",
      "times": null,
      "from": null,
      "role": null,
@@ -345,7 +309,7 @@
      "note": null
     },
     {
-     "name": "Заяшников",
+     "name": "Трунина",
      "times": null,
      "from": null,
      "role": null,
@@ -362,6 +326,79 @@
     "away": false,
     "intro": false
    }
+  },
+  {
+   "id": "nmv8t3hmtu40070",
+   "date": "2026-10-20",
+   "timeText": "16:30",
+   "times": [
+    "16:30"
+   ],
+   "range": null,
+   "timeUncertain": false,
+   "title": "Репетиция спектакля «Оксюморон»",
+   "kind": "rehearsal",
+   "place": "",
+   "tech": "",
+   "lines": [
+    "Сигитова Безносиков Андреев Баранов Носов"
+   ],
+   "people": [
+    {
+     "name": "Сигитова",
+     "times": null,
+     "from": null,
+     "role": null,
+     "uncertain": false,
+     "alts": [],
+     "note": null
+    },
+    {
+     "name": "Безносиков",
+     "times": null,
+     "from": null,
+     "role": null,
+     "uncertain": false,
+     "alts": [],
+     "note": null
+    },
+    {
+     "name": "Андреев",
+     "times": null,
+     "from": null,
+     "role": null,
+     "uncertain": false,
+     "alts": [],
+     "note": null
+    },
+    {
+     "name": "Баранов",
+     "times": null,
+     "from": null,
+     "role": null,
+     "uncertain": false,
+     "alts": [],
+     "note": null
+    },
+    {
+     "name": "Носов",
+     "times": null,
+     "from": null,
+     "role": null,
+     "uncertain": false,
+     "alts": [],
+     "note": null
+    }
+   ],
+   "scope": "people",
+   "accounting": {
+    "showWeight": 0,
+    "baby": false,
+    "halfFor": [],
+    "away": false,
+    "intro": false
+   },
+   "manual": true
   },
   {
    "id": "e6",
@@ -1384,12 +1421,12 @@
    }
   }
  ],
- "version": 7,
- "updatedAt": "2026-10-11T13:52:32.995Z",
+ "version": 8,
+ "updatedAt": "2026-10-15T00:34:40.490Z",
  "pdf": "data/pdf/2026-10-19.pdf",
  "previous": {
-  "version": 6,
-  "updatedAt": "2026-10-10T17:31:40.105Z",
+  "version": 7,
+  "updatedAt": "2026-10-11T13:52:32.995Z",
   "events": [
    {
     "id": "e1",
@@ -1407,6 +1444,8 @@
     "scope": "note",
     "accounting": {
      "showWeight": 0,
+     "baby": false,
+     "halfFor": [],
      "away": false,
      "intro": false
     }
@@ -1487,6 +1526,8 @@
     "scope": "people",
     "accounting": {
      "showWeight": 1,
+     "baby": false,
+     "halfFor": [],
      "away": true,
      "intro": false
     }
@@ -1494,9 +1535,9 @@
    {
     "id": "e3",
     "date": "2026-10-20",
-    "timeText": "14:00",
+    "timeText": "12:00",
     "times": [
-     "14:00"
+     "12:00"
     ],
     "range": null,
     "timeUncertain": false,
@@ -1548,12 +1589,59 @@
     "scope": "people",
     "accounting": {
      "showWeight": 0,
+     "baby": false,
+     "halfFor": [],
      "away": false,
      "intro": false
     }
    },
    {
     "id": "e4",
+    "date": "2026-10-20",
+    "timeText": "14:00",
+    "times": [
+     "14:00"
+    ],
+    "range": null,
+    "timeUncertain": false,
+    "title": "ЭКСКУРСИЯ",
+    "kind": "other",
+    "place": "Старая сцена",
+    "tech": "",
+    "lines": [
+     "Демьянова, Лоскутов"
+    ],
+    "people": [
+     {
+      "name": "Демьянова",
+      "times": null,
+      "from": null,
+      "role": null,
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     },
+     {
+      "name": "Лоскутов",
+      "times": null,
+      "from": null,
+      "role": null,
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     }
+    ],
+    "scope": "people",
+    "accounting": {
+     "showWeight": 0,
+     "baby": false,
+     "halfFor": [],
+     "away": false,
+     "intro": false
+    }
+   },
+   {
+    "id": "e5",
     "date": "2026-10-20",
     "timeText": "15:00",
     "times": [
@@ -1682,12 +1770,14 @@
     "scope": "people",
     "accounting": {
      "showWeight": 0,
+     "baby": false,
+     "halfFor": [],
      "away": false,
      "intro": false
     }
    },
    {
-    "id": "e7",
+    "id": "e6",
     "date": "2026-10-21",
     "timeText": "12:00",
     "times": [
@@ -1744,12 +1834,14 @@
     "scope": "people",
     "accounting": {
      "showWeight": 0,
+     "baby": false,
+     "halfFor": [],
      "away": false,
      "intro": true
     }
    },
    {
-    "id": "e8",
+    "id": "e7",
     "date": "2026-10-21",
     "timeText": "12:00",
     "times": [
@@ -1796,12 +1888,14 @@
     "scope": "people",
     "accounting": {
      "showWeight": 0,
+     "baby": false,
+     "halfFor": [],
      "away": false,
      "intro": false
     }
    },
    {
-    "id": "e5",
+    "id": "e8",
     "date": "2026-10-22",
     "timeText": "11:00",
     "times": [
@@ -1848,12 +1942,14 @@
     "scope": "people",
     "accounting": {
      "showWeight": 1,
+     "baby": false,
+     "halfFor": [],
      "away": false,
      "intro": false
     }
    },
    {
-    "id": "e6",
+    "id": "e9",
     "date": "2026-10-22",
     "timeText": "11:30",
     "times": [
@@ -1909,12 +2005,14 @@
     "scope": "people",
     "accounting": {
      "showWeight": 1,
+     "baby": false,
+     "halfFor": [],
      "away": false,
      "intro": false
     }
    },
    {
-    "id": "e9",
+    "id": "e10",
     "date": "2026-10-22",
     "timeText": "13:30",
     "times": [
@@ -1970,12 +2068,14 @@
     "scope": "people",
     "accounting": {
      "showWeight": 0,
+     "baby": false,
+     "halfFor": [],
      "away": false,
      "intro": false
     }
    },
    {
-    "id": "e10",
+    "id": "e11",
     "date": "2026-10-22",
     "timeText": "16:00",
     "times": [
@@ -2104,12 +2204,59 @@
     "scope": "people",
     "accounting": {
      "showWeight": 0,
+     "baby": false,
+     "halfFor": [],
      "away": false,
      "intro": false
     }
    },
    {
-    "id": "e11",
+    "id": "e12",
+    "date": "2026-10-23",
+    "timeText": "11:00",
+    "times": [
+     "11:00"
+    ],
+    "range": null,
+    "timeUncertain": false,
+    "title": "ЭКСКУРСИЯ",
+    "kind": "other",
+    "place": "Старая сцена",
+    "tech": "",
+    "lines": [
+     "Демьянова, Лоскутов"
+    ],
+    "people": [
+     {
+      "name": "Демьянова",
+      "times": null,
+      "from": null,
+      "role": null,
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     },
+     {
+      "name": "Лоскутов",
+      "times": null,
+      "from": null,
+      "role": null,
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     }
+    ],
+    "scope": "people",
+    "accounting": {
+     "showWeight": 0,
+     "baby": false,
+     "halfFor": [],
+     "away": false,
+     "intro": false
+    }
+   },
+   {
+    "id": "e13",
     "date": "2026-10-23",
     "timeText": "11:00 19:00",
     "times": [
@@ -2239,12 +2386,14 @@
     "scope": "people",
     "accounting": {
      "showWeight": 1,
+     "baby": false,
+     "halfFor": [],
      "away": false,
      "intro": false
     }
    },
    {
-    "id": "e12",
+    "id": "e14",
     "date": "2026-10-23",
     "timeText": "15:00",
     "times": [
@@ -2300,12 +2449,14 @@
     "scope": "people",
     "accounting": {
      "showWeight": 0,
+     "baby": false,
+     "halfFor": [],
      "away": false,
      "intro": false
     }
    },
    {
-    "id": "e13",
+    "id": "e15",
     "date": "2026-10-23",
     "timeText": "18:00",
     "times": [
@@ -2361,12 +2512,14 @@
     "scope": "people",
     "accounting": {
      "showWeight": 1,
+     "baby": false,
+     "halfFor": [],
      "away": false,
      "intro": false
     }
    },
    {
-    "id": "e14",
+    "id": "e16",
     "date": "2026-10-24",
     "timeText": "11:00 13:00 15:00",
     "times": [
@@ -2433,12 +2586,14 @@
     "scope": "people",
     "accounting": {
      "showWeight": 1,
+     "baby": false,
+     "halfFor": [],
      "away": false,
      "intro": false
     }
    },
    {
-    "id": "e15",
+    "id": "e17",
     "date": "2026-10-24",
     "timeText": "11:00 13:00 15:00",
     "times": [
@@ -2496,12 +2651,14 @@
     "scope": "people",
     "accounting": {
      "showWeight": 1,
+     "baby": false,
+     "halfFor": [],
      "away": false,
      "intro": false
     }
    },
    {
-    "id": "e16",
+    "id": "e18",
     "date": "2026-10-25",
     "timeText": "11:00 13:00 15:00",
     "times": [
@@ -2559,12 +2716,14 @@
     "scope": "people",
     "accounting": {
      "showWeight": 1,
+     "baby": false,
+     "halfFor": [],
      "away": false,
      "intro": false
     }
    },
    {
-    "id": "e17",
+    "id": "e19",
     "date": "2026-10-25",
     "timeText": "11:00 13:00 15:00",
     "times": [
@@ -2631,6 +2790,8 @@
     "scope": "people",
     "accounting": {
      "showWeight": 1,
+     "baby": false,
+     "halfFor": [],
      "away": false,
      "intro": false
     }
