@@ -310,14 +310,14 @@
   {
    "id": "e6",
    "date": "2026-10-28",
-   "timeText": "12:00",
+   "timeText": "11:00",
    "times": [
-    "12:00"
+    "11:00"
    ],
    "range": null,
    "timeUncertain": false,
-   "title": "Репетиция спектакля «Каштанка»",
-   "kind": "rehearsal",
+   "title": "Спектакль «Каштанка»",
+   "kind": "show",
    "place": "Старая сцена",
    "tech": "Звук, свет, проектор",
    "lines": [
@@ -399,7 +399,7 @@
    ],
    "scope": "people",
    "accounting": {
-    "showWeight": 0,
+    "showWeight": 1,
     "baby": false,
     "halfFor": [],
     "away": false,
@@ -1459,12 +1459,12 @@
    }
   }
  ],
- "version": 5,
- "updatedAt": "2026-10-16T12:22:26.781Z",
+ "version": 6,
+ "updatedAt": "2026-10-17T17:43:23.042Z",
  "pdf": "data/pdf/2026-10-26.pdf",
  "previous": {
-  "version": 4,
-  "updatedAt": "2026-10-11T13:53:03.107Z",
+  "version": 5,
+  "updatedAt": "2026-10-16T12:22:26.781Z",
   "events": [
    {
     "id": "e1",
@@ -1957,28 +1957,6 @@
     }
    },
    {
-    "id": "e8",
-    "date": "2026-10-29",
-    "timeText": "",
-    "times": [],
-    "range": null,
-    "timeUncertain": false,
-    "title": "Сдача А.С. (?) в 12:00",
-    "kind": "handover",
-    "place": "Старая сцена",
-    "tech": "Звук",
-    "lines": [],
-    "people": [],
-    "scope": "note",
-    "accounting": {
-     "showWeight": 0,
-     "baby": false,
-     "halfFor": [],
-     "away": false,
-     "intro": false
-    }
-   },
-   {
     "id": "e9",
     "date": "2026-10-29",
     "timeText": "09:30",
@@ -2098,7 +2076,7 @@
      "to": "13:00"
     },
     "timeUncertain": false,
-    "title": "Репетиция спектакля «Агния Барто»",
+    "title": "Репетиция спектакля «Агния Барто» + сдача А.С.",
     "kind": "rehearsal",
     "place": "Старая сцена",
     "tech": "Звук",
