@@ -17,8 +17,86 @@ TZNAME:MSK
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
+UID:2026-09-30-1200-kffw3z@raspisanie
+DTSTAMP:20261019T140400Z
+DTSTART;TZID=Europe/Moscow:20260930T120000
+DTEND;TZID=Europe/Moscow:20260930T143000
+SUMMARY:Репетиция «Чудо-репка»
+LOCATION:Старая сцена
+DESCRIPTION:Репетиция спектакля «Чудо-репка»
+ \nНосов\, Разуваева\, Чепиль\, Чирочкина\, 
+ Мартюшева\, Галустянц\nЗвук/свет: Звук\, 
+ свет
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-01-1300-aq7k9r@raspisanie
+DTSTAMP:20261019T140400Z
+DTSTART;TZID=Europe/Moscow:20261001T130000
+DTEND;TZID=Europe/Moscow:20261001T140000
+SUMMARY:Сдача «Курочка ряба»
+LOCATION:Старая сцена
+DESCRIPTION:Сдача А.С. спектакля «Курочка ряб
+ а»\nЛоскутова\, Трунина\, Баранов\, Чепил
+ ь\, Галустянц\, Самойлов\nЗвук/свет: Звук
+ \, свет
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-02-1230-l5f9v@raspisanie
+DTSTAMP:20261019T140400Z
+DTSTART;TZID=Europe/Moscow:20261002T123000
+DTEND;TZID=Europe/Moscow:20261002T133000
+SUMMARY:Собрание всего коллектива
+LOCATION:Старая сцена
+DESCRIPTION:СОБРАНИЕ ВСЕГО КОЛЛЕКТИВА
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-03-1100-lidji7@raspisanie
+DTSTAMP:20261019T140400Z
+DTSTART;TZID=Europe/Moscow:20261003T110000
+DTEND;TZID=Europe/Moscow:20261003T120000
+SUMMARY:Спектакль «Курочка ряба»
+LOCATION:Старая сцена
+DESCRIPTION:Спектакль «Курочка ряба»\nТрунин
+ а\, Самойлов\, Галустянц\, Чепиль\, Барано
+ в\nЗвук/свет: Звук\, свет
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-03-1300-lidji7@raspisanie
+DTSTAMP:20261019T140400Z
+DTSTART;TZID=Europe/Moscow:20261003T130000
+DTEND;TZID=Europe/Moscow:20261003T140000
+SUMMARY:Спектакль «Курочка ряба»
+LOCATION:Старая сцена
+DESCRIPTION:Спектакль «Курочка ряба»\nТрунин
+ а\, Самойлов\, Галустянц\, Чепиль\, Барано
+ в\nЗвук/свет: Звук\, свет
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-03-1500-lidji7@raspisanie
+DTSTAMP:20261019T140400Z
+DTSTART;TZID=Europe/Moscow:20261003T150000
+DTEND;TZID=Europe/Moscow:20261003T160000
+SUMMARY:Спектакль «Курочка ряба»
+LOCATION:Старая сцена
+DESCRIPTION:Спектакль «Курочка ряба»\nТрунин
+ а\, Самойлов\, Галустянц\, Чепиль\, Барано
+ в\nЗвук/свет: Звук\, свет
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-04-1500-xk9qxg@raspisanie
+DTSTAMP:20261019T140400Z
+DTSTART;TZID=Europe/Moscow:20261004T150000
+DTEND;TZID=Europe/Moscow:20261004T160000
+SUMMARY:Спектакль «Муха-цокотуха»
+LOCATION:Старая сцена
+DESCRIPTION:Спектакль «Муха-цокотуха»\n11:00 и 13
+ :00 – Глазецкая \; 15:00 – Миронова\n11:00 и 13:00
+  - Самойлов\, 15:00 –Чепиль\nРазуваева\, Лос
+ кутов\nЗвук/свет: Звук\, свет
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-10-06-1100-qik2fb@raspisanie
-DTSTAMP:20261017T174800Z
+DTSTAMP:20261019T140400Z
 DTSTART;TZID=Europe/Moscow:20261006T110000
 DTEND;TZID=Europe/Moscow:20261006T120000
 SUMMARY:Репетиция «Муравьишка»
@@ -29,7 +107,7 @@ DESCRIPTION:Репетиция спектакля «Муравьишка
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-07-1100-qik2fb@raspisanie
-DTSTAMP:20261017T174800Z
+DTSTAMP:20261019T140400Z
 DTSTART;TZID=Europe/Moscow:20261007T110000
 DTEND;TZID=Europe/Moscow:20261007T120000
 SUMMARY:Репетиция «Муравьишка»
@@ -40,7 +118,7 @@ DESCRIPTION:Репетиция спектакля «Муравьишка
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-13-1100-qik2fb@raspisanie
-DTSTAMP:20261017T174800Z
+DTSTAMP:20261019T140400Z
 DTSTART;TZID=Europe/Moscow:20261013T110000
 DTEND;TZID=Europe/Moscow:20261013T120000
 SUMMARY:Репетиция «Муравьишка»
@@ -51,7 +129,7 @@ DESCRIPTION:Репетиция спектакля «Муравьишка
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-14-1100-qik2fb@raspisanie
-DTSTAMP:20261017T174800Z
+DTSTAMP:20261019T140400Z
 DTSTART;TZID=Europe/Moscow:20261014T110000
 DTEND;TZID=Europe/Moscow:20261014T120000
 SUMMARY:Репетиция «Муравьишка»
@@ -62,7 +140,7 @@ DESCRIPTION:Репетиция спектакля «Муравьишка
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-15-1100-qik2fb@raspisanie
-DTSTAMP:20261017T174800Z
+DTSTAMP:20261019T140400Z
 DTSTART;TZID=Europe/Moscow:20261015T110000
 DTEND;TZID=Europe/Moscow:20261015T120000
 SUMMARY:Репетиция «Муравьишка»
@@ -73,7 +151,7 @@ DESCRIPTION:Репетиция спектакля «Муравьишка
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-17-1100-1ug20ag@raspisanie
-DTSTAMP:20261017T174800Z
+DTSTAMP:20261019T140400Z
 DTSTART;TZID=Europe/Moscow:20261017T110000
 DTEND;TZID=Europe/Moscow:20261017T120000
 SUMMARY:Спектакль «Чудо-репка»
@@ -85,7 +163,7 @@ DESCRIPTION:Спектакль «Чудо-репка»\nРазуваев
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-17-1300-1ug20ag@raspisanie
-DTSTAMP:20261017T174800Z
+DTSTAMP:20261019T140400Z
 DTSTART;TZID=Europe/Moscow:20261017T130000
 DTEND;TZID=Europe/Moscow:20261017T140000
 SUMMARY:Спектакль «Чудо-репка»
@@ -97,7 +175,7 @@ DESCRIPTION:Спектакль «Чудо-репка»\nРазуваев
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-17-1500-1ug20ag@raspisanie
-DTSTAMP:20261017T174800Z
+DTSTAMP:20261019T140400Z
 DTSTART;TZID=Europe/Moscow:20261017T150000
 DTEND;TZID=Europe/Moscow:20261017T160000
 SUMMARY:Спектакль «Чудо-репка»
@@ -109,7 +187,7 @@ DESCRIPTION:Спектакль «Чудо-репка»\nРазуваев
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-21-1200-qik2fb@raspisanie
-DTSTAMP:20261017T174800Z
+DTSTAMP:20261019T140400Z
 DTSTART;TZID=Europe/Moscow:20261021T120000
 DTEND;TZID=Europe/Moscow:20261021T130000
 SUMMARY:Репетиция «Муравьишка»
@@ -120,7 +198,7 @@ DESCRIPTION:Репетиция спектакля «Муравьишка
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-27-1100-qik2fb@raspisanie
-DTSTAMP:20261017T174800Z
+DTSTAMP:20261019T140400Z
 DTSTART;TZID=Europe/Moscow:20261027T110000
 DTEND;TZID=Europe/Moscow:20261027T120000
 SUMMARY:Репетиция «Муравьишка»
@@ -131,7 +209,7 @@ DESCRIPTION:Репетиция спектакля «Муравьишка
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-28-1100-qik2fb@raspisanie
-DTSTAMP:20261017T174800Z
+DTSTAMP:20261019T140400Z
 DTSTART;TZID=Europe/Moscow:20261028T110000
 DTEND;TZID=Europe/Moscow:20261028T120000
 SUMMARY:Репетиция «Муравьишка»
@@ -142,7 +220,7 @@ DESCRIPTION:Репетиция спектакля «Муравьишка
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-29-1100-10amesw@raspisanie
-DTSTAMP:20261017T174800Z
+DTSTAMP:20261019T140400Z
 DTSTART;TZID=Europe/Moscow:20261029T110000
 DTEND;TZID=Europe/Moscow:20261029T130000
 SUMMARY:Репетиция «Агния Барто» · + сдача А.
@@ -155,7 +233,7 @@ DESCRIPTION:Репетиция спектакля «Агния Барто
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-29-1400-qik2fb@raspisanie
-DTSTAMP:20261017T174800Z
+DTSTAMP:20261019T140400Z
 DTSTART;TZID=Europe/Moscow:20261029T140000
 DTEND;TZID=Europe/Moscow:20261029T180000
 SUMMARY:Репетиция «Муравьишка»
@@ -165,81 +243,58 @@ DESCRIPTION:Репетиция спектакля «Муравьишка
   Звук\, свет
 END:VEVENT
 BEGIN:VEVENT
-UID:2026-09-30-1200-kffw3z@raspisanie
-DTSTAMP:20261017T174800Z
-DTSTART;TZID=Europe/Moscow:20260930T120000
-DTEND;TZID=Europe/Moscow:20260930T143000
-SUMMARY:Репетиция «Чудо-репка»
-LOCATION:Старая сцена
-DESCRIPTION:Репетиция спектакля «Чудо-репка»
- \nНосов\, Разуваева\, Чепиль\, Чирочкина\, 
- Мартюшева\, Галустянц\nЗвук/свет: Звук\, 
- свет
+UID:2026-11-03-1100-qik2fb@raspisanie
+DTSTAMP:20261019T140400Z
+DTSTART;TZID=Europe/Moscow:20261103T110000
+DTEND;TZID=Europe/Moscow:20261103T120000
+SUMMARY:Репетиция «Муравьишка»
+LOCATION:Новая сцена
+DESCRIPTION:Репетиция спектакля «Муравьишка
+ »\nЧепиль\, Сигитова\, Андреев\nЗвук/свет:
+  Звук\, свет
 END:VEVENT
 BEGIN:VEVENT
-UID:2026-10-01-1300-aq7k9r@raspisanie
-DTSTAMP:20261017T174800Z
-DTSTART;TZID=Europe/Moscow:20261001T130000
-DTEND;TZID=Europe/Moscow:20261001T140000
-SUMMARY:Сдача «Курочка ряба»
-LOCATION:Старая сцена
-DESCRIPTION:Сдача А.С. спектакля «Курочка ряб
- а»\nЛоскутова\, Трунина\, Баранов\, Чепил
- ь\, Галустянц\, Самойлов\nЗвук/свет: Звук
- \, свет
+UID:2026-11-05-1100-qik2fb@raspisanie
+DTSTAMP:20261019T140400Z
+DTSTART;TZID=Europe/Moscow:20261105T110000
+DTEND;TZID=Europe/Moscow:20261105T120000
+SUMMARY:Репетиция «Муравьишка»
+LOCATION:Новая сцена
+DESCRIPTION:Репетиция спектакля «Муравьишка
+ »\nЧепиль\, Сигитова\, Андреев\nЗвук/свет:
+  Звук\, свет
 END:VEVENT
 BEGIN:VEVENT
-UID:2026-10-02-1230-l5f9v@raspisanie
-DTSTAMP:20261017T174800Z
-DTSTART;TZID=Europe/Moscow:20261002T123000
-DTEND;TZID=Europe/Moscow:20261002T133000
-SUMMARY:Собрание всего коллектива
+UID:2026-11-08-1100-sbscg3@raspisanie
+DTSTAMP:20261019T140400Z
+DTSTART;TZID=Europe/Moscow:20261108T110000
+DTEND;TZID=Europe/Moscow:20261108T120000
+SUMMARY:Спектакль «Агния Барто и др»
 LOCATION:Старая сцена
-DESCRIPTION:СОБРАНИЕ ВСЕГО КОЛЛЕКТИВА
+DESCRIPTION:Спектакль «Агния Барто и др»\nЛос
+ кутова\, Андреев\, Мартюшева\, Чепиль\nЗв
+ ук/свет: Звук\, свет
 END:VEVENT
 BEGIN:VEVENT
-UID:2026-10-03-1100-lidji7@raspisanie
-DTSTAMP:20261017T174800Z
-DTSTART;TZID=Europe/Moscow:20261003T110000
-DTEND;TZID=Europe/Moscow:20261003T120000
-SUMMARY:Спектакль «Курочка ряба»
+UID:2026-11-08-1300-sbscg3@raspisanie
+DTSTAMP:20261019T140400Z
+DTSTART;TZID=Europe/Moscow:20261108T130000
+DTEND;TZID=Europe/Moscow:20261108T140000
+SUMMARY:Спектакль «Агния Барто и др»
 LOCATION:Старая сцена
-DESCRIPTION:Спектакль «Курочка ряба»\nТрунин
- а\, Самойлов\, Галустянц\, Чепиль\, Барано
- в\nЗвук/свет: Звук\, свет
+DESCRIPTION:Спектакль «Агния Барто и др»\nЛос
+ кутова\, Андреев\, Мартюшева\, Чепиль\nЗв
+ ук/свет: Звук\, свет
 END:VEVENT
 BEGIN:VEVENT
-UID:2026-10-03-1300-lidji7@raspisanie
-DTSTAMP:20261017T174800Z
-DTSTART;TZID=Europe/Moscow:20261003T130000
-DTEND;TZID=Europe/Moscow:20261003T140000
-SUMMARY:Спектакль «Курочка ряба»
+UID:2026-11-08-1500-sbscg3@raspisanie
+DTSTAMP:20261019T140400Z
+DTSTART;TZID=Europe/Moscow:20261108T150000
+DTEND;TZID=Europe/Moscow:20261108T160000
+SUMMARY:Спектакль «Агния Барто и др»
 LOCATION:Старая сцена
-DESCRIPTION:Спектакль «Курочка ряба»\nТрунин
- а\, Самойлов\, Галустянц\, Чепиль\, Барано
- в\nЗвук/свет: Звук\, свет
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-10-03-1500-lidji7@raspisanie
-DTSTAMP:20261017T174800Z
-DTSTART;TZID=Europe/Moscow:20261003T150000
-DTEND;TZID=Europe/Moscow:20261003T160000
-SUMMARY:Спектакль «Курочка ряба»
-LOCATION:Старая сцена
-DESCRIPTION:Спектакль «Курочка ряба»\nТрунин
- а\, Самойлов\, Галустянц\, Чепиль\, Барано
- в\nЗвук/свет: Звук\, свет
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-10-04-1500-xk9qxg@raspisanie
-DTSTAMP:20261017T174800Z
-DTSTART;TZID=Europe/Moscow:20261004T150000
-DTEND;TZID=Europe/Moscow:20261004T160000
-SUMMARY:Спектакль «Муха-цокотуха»
-LOCATION:Старая сцена
-DESCRIPTION:Спектакль «Муха-цокотуха»\n11:00 и 13
- :00 – Глазецкая \; 15:00 – Миронова\n11:00 и 13:00
-  - Самойлов\, 15:00 –Чепиль\nРазуваева\, Лос
- кутов\nЗвук/свет: Звук\, свет
+DESCRIPTION:Спектакль «Агния Барто и др»\nЛос
+ кутова\, Андреев\, Мартюшева\, Чепиль\nЗв
+ ук/свет: Звук\, свет
 END:VEVENT
 END:VCALENDAR
