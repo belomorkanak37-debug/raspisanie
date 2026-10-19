@@ -18,7 +18,7 @@ END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
 UID:2026-09-29-1300-5dus6@raspisanie
-DTSTAMP:20261019T140400Z
+DTSTAMP:20261019T195200Z
 DTSTART;TZID=Europe/Moscow:20260929T130000
 DTEND;TZID=Europe/Moscow:20260929T140000
 SUMMARY:Репетиция «Бармалей»
@@ -30,7 +30,7 @@ DESCRIPTION:Репетиция спектакля «Бармалей»\n
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-01-1100-1fugs7c@raspisanie
-DTSTAMP:20261019T140400Z
+DTSTAMP:20261019T195200Z
 DTSTART;TZID=Europe/Moscow:20261001T110000
 DTEND;TZID=Europe/Moscow:20261001T120000
 SUMMARY:Спектакль «Собачка»
@@ -40,7 +40,7 @@ DESCRIPTION:Спектакль «Собачка»\nТрунина\, Ло
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-01-1300-aq7k9r@raspisanie
-DTSTAMP:20261019T140400Z
+DTSTAMP:20261019T195200Z
 DTSTART;TZID=Europe/Moscow:20261001T130000
 DTEND;TZID=Europe/Moscow:20261001T140000
 SUMMARY:Сдача «Курочка ряба»
@@ -52,7 +52,7 @@ DESCRIPTION:Сдача А.С. спектакля «Курочка ряб
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-02-1230-l5f9v@raspisanie
-DTSTAMP:20261019T140400Z
+DTSTAMP:20261019T195200Z
 DTSTART;TZID=Europe/Moscow:20261002T123000
 DTEND;TZID=Europe/Moscow:20261002T133000
 SUMMARY:Собрание всего коллектива
@@ -61,7 +61,7 @@ DESCRIPTION:СОБРАНИЕ ВСЕГО КОЛЛЕКТИВА
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-02-1430-1d49a9z@raspisanie
-DTSTAMP:20261019T140400Z
+DTSTAMP:20261019T195200Z
 DTSTART;TZID=Europe/Moscow:20261002T143000
 DTEND;TZID=Europe/Moscow:20261002T153000
 SUMMARY:Репетиция «Медведь в своём реперту
@@ -74,7 +74,7 @@ DESCRIPTION:Репетиция спектакля «Медведь в с
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-02-1800-pzasw@raspisanie
-DTSTAMP:20261019T140400Z
+DTSTAMP:20261019T195200Z
 DTSTART;TZID=Europe/Moscow:20261002T180000
 DTEND;TZID=Europe/Moscow:20261002T190000
 SUMMARY:Спектакль «Медведь в своём реперту
@@ -86,7 +86,7 @@ DESCRIPTION:Спектакль «Медведь в своём репер
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-03-1100-lidji7@raspisanie
-DTSTAMP:20261019T140400Z
+DTSTAMP:20261019T195200Z
 DTSTART;TZID=Europe/Moscow:20261003T110000
 DTEND;TZID=Europe/Moscow:20261003T120000
 SUMMARY:Спектакль «Курочка ряба»
@@ -97,7 +97,7 @@ DESCRIPTION:Спектакль «Курочка ряба»\nТрунин
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-03-1300-lidji7@raspisanie
-DTSTAMP:20261019T140400Z
+DTSTAMP:20261019T195200Z
 DTSTART;TZID=Europe/Moscow:20261003T130000
 DTEND;TZID=Europe/Moscow:20261003T140000
 SUMMARY:Спектакль «Курочка ряба»
@@ -108,7 +108,7 @@ DESCRIPTION:Спектакль «Курочка ряба»\nТрунин
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-03-1500-lidji7@raspisanie
-DTSTAMP:20261019T140400Z
+DTSTAMP:20261019T195200Z
 DTSTART;TZID=Europe/Moscow:20261003T150000
 DTEND;TZID=Europe/Moscow:20261003T160000
 SUMMARY:Спектакль «Курочка ряба»
@@ -119,7 +119,7 @@ DESCRIPTION:Спектакль «Курочка ряба»\nТрунин
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-06-1200-gs@raspisanie
-DTSTAMP:20261019T140400Z
+DTSTAMP:20261019T195200Z
 DTSTART;TZID=Europe/Moscow:20261006T120000
 DTEND;TZID=Europe/Moscow:20261006T130000
 SUMMARY:Ввод «Федорино горе» · + сдача А.С. в 
@@ -132,7 +132,7 @@ DESCRIPTION:Ввод в спектакль «Федорино горе»
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-08-1500-1b7fnh4@raspisanie
-DTSTAMP:20261019T140400Z
+DTSTAMP:20261019T195200Z
 DTSTART;TZID=Europe/Moscow:20261008T150000
 DTEND;TZID=Europe/Moscow:20261008T160000
 SUMMARY:Репетиция «Оксюморон» · Прогон
@@ -145,7 +145,7 @@ DESCRIPTION:Репетиция спектакля «Оксюморон»
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-09-1300-hncdcq@raspisanie
-DTSTAMP:20261019T140400Z
+DTSTAMP:20261019T195200Z
 DTSTART;TZID=Europe/Moscow:20261009T130000
 DTEND;TZID=Europe/Moscow:20261009T140000
 SUMMARY:Репетиция «Золушка» · + 15:00 – сдача 
@@ -158,7 +158,7 @@ DESCRIPTION:Репетиция спектакля «Золушка» + 15
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-09-1800-1s7c52g@raspisanie
-DTSTAMP:20261019T140400Z
+DTSTAMP:20261019T195200Z
 DTSTART;TZID=Europe/Moscow:20261009T180000
 DTEND;TZID=Europe/Moscow:20261009T190000
 SUMMARY:Спектакль «Золушка»
@@ -169,7 +169,7 @@ DESCRIPTION:Спектакль «Золушка»\nМиронова\, К
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-10-1100-c3sa16@raspisanie
-DTSTAMP:20261019T140400Z
+DTSTAMP:20261019T195200Z
 DTSTART;TZID=Europe/Moscow:20261010T110000
 DTEND;TZID=Europe/Moscow:20261010T120000
 SUMMARY:Спектакль «Тараканище»
@@ -180,7 +180,7 @@ DESCRIPTION:Спектакль «Тараканище»\nКожев\, Б
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-10-1300-c3sa16@raspisanie
-DTSTAMP:20261019T140400Z
+DTSTAMP:20261019T195200Z
 DTSTART;TZID=Europe/Moscow:20261010T130000
 DTEND;TZID=Europe/Moscow:20261010T140000
 SUMMARY:Спектакль «Тараканище»
@@ -191,7 +191,7 @@ DESCRIPTION:Спектакль «Тараканище»\nКожев\, Б
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-10-1500-c3sa16@raspisanie
-DTSTAMP:20261019T140400Z
+DTSTAMP:20261019T195200Z
 DTSTART;TZID=Europe/Moscow:20261010T150000
 DTEND;TZID=Europe/Moscow:20261010T160000
 SUMMARY:Спектакль «Тараканище»
@@ -202,7 +202,7 @@ DESCRIPTION:Спектакль «Тараканище»\nКожев\, Б
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-16-1200-q79fq@raspisanie
-DTSTAMP:20261019T140400Z
+DTSTAMP:20261019T195200Z
 DTSTART;TZID=Europe/Moscow:20261016T120000
 DTEND;TZID=Europe/Moscow:20261016T150000
 SUMMARY:Репетиция «Оксюморон»
@@ -214,101 +214,8 @@ DESCRIPTION:Репетиция спектакля «Оксюморон»
  ников\nЗвук/свет: Звук\, свет
 END:VEVENT
 BEGIN:VEVENT
-UID:2026-10-20-1100-175r9eq@raspisanie
-DTSTAMP:20261019T140400Z
-DTSTART;TZID=Europe/Moscow:20261020T110000
-DTEND;TZID=Europe/Moscow:20261020T120000
-SUMMARY:Репетиция «Мойдодыр»
-LOCATION:Старая сцена
-DESCRIPTION:Репетиция спектакля «Мойдодыр»\n
- Советов\, Шаймиев\, Баранов\, Сигитова\nЗ
- вук/свет: Звук
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-10-20-1630-q79fq@raspisanie
-DTSTAMP:20261019T140400Z
-DTSTART;TZID=Europe/Moscow:20261020T163000
-DTEND;TZID=Europe/Moscow:20261020T173000
-SUMMARY:Репетиция «Оксюморон»
-DESCRIPTION:Репетиция спектакля «Оксюморон»
- \nСигитова Безносиков Андреев Баранов Н
- осов
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-10-22-1600-q79fq@raspisanie
-DTSTAMP:20261019T140400Z
-DTSTART;TZID=Europe/Moscow:20261022T160000
-DTEND;TZID=Europe/Moscow:20261022T170000
-SUMMARY:Репетиция «Оксюморон»
-LOCATION:Новая сцена
-DESCRIPTION:Репетиция спектакля «Оксюморон»
- \nТрунина\, Беканова\, Миронова\, Сигитов
- а\, Мартюшева\, Разуваева\, Андреев\, Безн
- осиков\,\nБаранов\, Шаймиев\, Носов\, Заяш
- ников\nЗвук/свет: Звук\, свет
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-10-23-1100-1hjcxld@raspisanie
-DTSTAMP:20261019T140400Z
-DTSTART;TZID=Europe/Moscow:20261023T110000
-DTEND;TZID=Europe/Moscow:20261023T120000
-SUMMARY:Спектакль «Оксюморон»
-LOCATION:Новая сцена
-DESCRIPTION:Спектакль «Оксюморон»\nТрунина\, 
- Беканова\, Миронова\, Сигитова\, Мартюше
- ва\, Разуваева\, Андреев\, Безносиков\,\nБ
- аранов\, Шаймиев\, Носов\, Заяшников\nЗву
- к/свет: Звук\, свет
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-10-23-1900-1hjcxld@raspisanie
-DTSTAMP:20261019T140400Z
-DTSTART;TZID=Europe/Moscow:20261023T190000
-DTEND;TZID=Europe/Moscow:20261023T200000
-SUMMARY:Спектакль «Оксюморон»
-LOCATION:Новая сцена
-DESCRIPTION:Спектакль «Оксюморон»\nТрунина\, 
- Беканова\, Миронова\, Сигитова\, Мартюше
- ва\, Разуваева\, Андреев\, Безносиков\,\nБ
- аранов\, Шаймиев\, Носов\, Заяшников\nЗву
- к/свет: Звук\, свет
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-10-25-1100-sbrlhx@raspisanie
-DTSTAMP:20261019T140400Z
-DTSTART;TZID=Europe/Moscow:20261025T110000
-DTEND;TZID=Europe/Moscow:20261025T120000
-SUMMARY:Спектакль «Мойдодыр»
-LOCATION:Старая сцена
-DESCRIPTION:Спектакль «Мойдодыр»\nСоветов\, Ш
- аймиев\, Баранов\, Сигитова\nЗвук/свет: З
- вук\, свет
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-10-25-1300-sbrlhx@raspisanie
-DTSTAMP:20261019T140400Z
-DTSTART;TZID=Europe/Moscow:20261025T130000
-DTEND;TZID=Europe/Moscow:20261025T140000
-SUMMARY:Спектакль «Мойдодыр»
-LOCATION:Старая сцена
-DESCRIPTION:Спектакль «Мойдодыр»\nСоветов\, Ш
- аймиев\, Баранов\, Сигитова\nЗвук/свет: З
- вук\, свет
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-10-25-1500-sbrlhx@raspisanie
-DTSTAMP:20261019T140400Z
-DTSTART;TZID=Europe/Moscow:20261025T150000
-DTEND;TZID=Europe/Moscow:20261025T160000
-SUMMARY:Спектакль «Мойдодыр»
-LOCATION:Старая сцена
-DESCRIPTION:Спектакль «Мойдодыр»\nСоветов\, Ш
- аймиев\, Баранов\, Сигитова\nЗвук/свет: З
- вук\, свет
-END:VEVENT
-BEGIN:VEVENT
 UID:2026-10-28-1100-1ih3jwc@raspisanie
-DTSTAMP:20261019T140400Z
+DTSTAMP:20261019T195200Z
 DTSTART;TZID=Europe/Moscow:20261028T110000
 DTEND;TZID=Europe/Moscow:20261028T120000
 SUMMARY:Спектакль «Каштанка»
@@ -320,7 +227,7 @@ DESCRIPTION:Спектакль «Каштанка»\nБезносиков
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-28-1700-1ih3jwc@raspisanie
-DTSTAMP:20261019T140400Z
+DTSTAMP:20261019T195200Z
 DTSTART;TZID=Europe/Moscow:20261028T170000
 DTEND;TZID=Europe/Moscow:20261028T180000
 SUMMARY:Спектакль «Каштанка»
@@ -332,7 +239,7 @@ DESCRIPTION:Спектакль «Каштанка»\nБезносиков
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-31-1100-152hmft@raspisanie
-DTSTAMP:20261019T140400Z
+DTSTAMP:20261019T195200Z
 DTSTART;TZID=Europe/Moscow:20261031T110000
 DTEND;TZID=Europe/Moscow:20261031T120000
 SUMMARY:Спектакль «Кот в сапогах»
@@ -343,7 +250,7 @@ DESCRIPTION:Спектакль «Кот в сапогах»\nАндрее
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-31-1300-152hmft@raspisanie
-DTSTAMP:20261019T140400Z
+DTSTAMP:20261019T195200Z
 DTSTART;TZID=Europe/Moscow:20261031T130000
 DTEND;TZID=Europe/Moscow:20261031T140000
 SUMMARY:Спектакль «Кот в сапогах»
@@ -354,7 +261,7 @@ DESCRIPTION:Спектакль «Кот в сапогах»\nАндрее
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-31-1500-152hmft@raspisanie
-DTSTAMP:20261019T140400Z
+DTSTAMP:20261019T195200Z
 DTSTART;TZID=Europe/Moscow:20261031T150000
 DTEND;TZID=Europe/Moscow:20261031T160000
 SUMMARY:Спектакль «Кот в сапогах»
@@ -365,7 +272,7 @@ DESCRIPTION:Спектакль «Кот в сапогах»\nАндрее
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-11-01-1100-ezemun@raspisanie
-DTSTAMP:20261019T140400Z
+DTSTAMP:20261019T195200Z
 DTSTART;TZID=Europe/Moscow:20261101T110000
 DTEND;TZID=Europe/Moscow:20261101T120000
 SUMMARY:Спектакль «Колобок»
@@ -376,7 +283,7 @@ DESCRIPTION:Спектакль «Колобок»\nГалустянц\,
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-11-01-1300-ezemun@raspisanie
-DTSTAMP:20261019T140400Z
+DTSTAMP:20261019T195200Z
 DTSTART;TZID=Europe/Moscow:20261101T130000
 DTEND;TZID=Europe/Moscow:20261101T140000
 SUMMARY:Спектакль «Колобок»
@@ -387,7 +294,7 @@ DESCRIPTION:Спектакль «Колобок»\nГалустянц\,
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-11-01-1500-ezemun@raspisanie
-DTSTAMP:20261019T140400Z
+DTSTAMP:20261019T195200Z
 DTSTART;TZID=Europe/Moscow:20261101T150000
 DTEND;TZID=Europe/Moscow:20261101T160000
 SUMMARY:Спектакль «Колобок»
@@ -398,7 +305,7 @@ DESCRIPTION:Спектакль «Колобок»\nГалустянц\,
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-11-03-1200-tczztt@raspisanie
-DTSTAMP:20261019T140400Z
+DTSTAMP:20261019T195200Z
 DTSTART;TZID=Europe/Moscow:20261103T120000
 DTEND;TZID=Europe/Moscow:20261103T130000
 SUMMARY:Репетиция «Кошкин дом» · + сдача А.С.
@@ -411,7 +318,7 @@ DESCRIPTION:Репетиция спектакля «Кошкин дом»
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-11-04-1100-wsmc0l@raspisanie
-DTSTAMP:20261019T140400Z
+DTSTAMP:20261019T195200Z
 DTSTART;TZID=Europe/Moscow:20261104T110000
 DTEND;TZID=Europe/Moscow:20261104T120000
 SUMMARY:Спектакль ««Кошкин дом»
@@ -423,7 +330,7 @@ DESCRIPTION:Спектакль ««Кошкин дом»\nСоветов/
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-11-04-1300-wsmc0l@raspisanie
-DTSTAMP:20261019T140400Z
+DTSTAMP:20261019T195200Z
 DTSTART;TZID=Europe/Moscow:20261104T130000
 DTEND;TZID=Europe/Moscow:20261104T140000
 SUMMARY:Спектакль ««Кошкин дом»
@@ -435,7 +342,7 @@ DESCRIPTION:Спектакль ««Кошкин дом»\nСоветов/
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-11-04-1500-wsmc0l@raspisanie
-DTSTAMP:20261019T140400Z
+DTSTAMP:20261019T195200Z
 DTSTART;TZID=Europe/Moscow:20261104T150000
 DTEND;TZID=Europe/Moscow:20261104T160000
 SUMMARY:Спектакль ««Кошкин дом»
@@ -447,7 +354,7 @@ DESCRIPTION:Спектакль ««Кошкин дом»\nСоветов/
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-11-05-1200-1hjzj09@raspisanie
-DTSTAMP:20261019T140400Z
+DTSTAMP:20261019T195200Z
 DTSTART;TZID=Europe/Moscow:20261105T120000
 DTEND;TZID=Europe/Moscow:20261105T130000
 SUMMARY:Репетиция «Красная Шапочка» · + сда
@@ -460,7 +367,7 @@ DESCRIPTION:Репетиция спектакля «Красная Шап
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-11-06-1100-1ih3jwc@raspisanie
-DTSTAMP:20261019T140400Z
+DTSTAMP:20261019T195200Z
 DTSTART;TZID=Europe/Moscow:20261106T110000
 DTEND;TZID=Europe/Moscow:20261106T120000
 SUMMARY:Спектакль «Каштанка»
@@ -472,7 +379,7 @@ DESCRIPTION:Спектакль «Каштанка»\nБеканова\,
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-11-06-1800-1ih3jwc@raspisanie
-DTSTAMP:20261019T140400Z
+DTSTAMP:20261019T195200Z
 DTSTART;TZID=Europe/Moscow:20261106T180000
 DTEND;TZID=Europe/Moscow:20261106T190000
 SUMMARY:Спектакль «Каштанка»
@@ -484,7 +391,7 @@ DESCRIPTION:Спектакль «Каштанка»\nБеканова\,
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-11-07-1100-1pvjzs6@raspisanie
-DTSTAMP:20261019T140400Z
+DTSTAMP:20261019T195200Z
 DTSTART;TZID=Europe/Moscow:20261107T110000
 DTEND;TZID=Europe/Moscow:20261107T120000
 SUMMARY:Спектакль «Красная Шапочка»
@@ -496,7 +403,7 @@ DESCRIPTION:Спектакль «Красная Шапочка»\nСов
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-11-07-1300-1pvjzs6@raspisanie
-DTSTAMP:20261019T140400Z
+DTSTAMP:20261019T195200Z
 DTSTART;TZID=Europe/Moscow:20261107T130000
 DTEND;TZID=Europe/Moscow:20261107T140000
 SUMMARY:Спектакль «Красная Шапочка»
@@ -508,7 +415,7 @@ DESCRIPTION:Спектакль «Красная Шапочка»\nСов
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-11-07-1500-1pvjzs6@raspisanie
-DTSTAMP:20261019T140400Z
+DTSTAMP:20261019T195200Z
 DTSTART;TZID=Europe/Moscow:20261107T150000
 DTEND;TZID=Europe/Moscow:20261107T160000
 SUMMARY:Спектакль «Красная Шапочка»
@@ -517,5 +424,98 @@ DESCRIPTION:Спектакль «Красная Шапочка»\nСов
  етов (11:00 и 13:00)\, Радыгин (15:00 ??)\, Глазецка
  я (11:00 и 13:00)\, Сигитова (15:00)\,\nЛоскутова\, 
  Баранов\, Шаймиев\nЗвук/свет: Звук\, свет
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-20-1100-175r9eq@raspisanie
+DTSTAMP:20261019T195200Z
+DTSTART;TZID=Europe/Moscow:20261020T110000
+DTEND;TZID=Europe/Moscow:20261020T120000
+SUMMARY:Репетиция «Мойдодыр»
+LOCATION:Старая сцена
+DESCRIPTION:Репетиция спектакля «Мойдодыр»\n
+ Советов\, Шаймиев\, Баранов\, Сигитова\nЗ
+ вук/свет: Звук
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-20-1630-q79fq@raspisanie
+DTSTAMP:20261019T195200Z
+DTSTART;TZID=Europe/Moscow:20261020T163000
+DTEND;TZID=Europe/Moscow:20261020T173000
+SUMMARY:Репетиция «Оксюморон»
+DESCRIPTION:Репетиция спектакля «Оксюморон»
+ \nСигитова Безносиков Андреев Баранов Н
+ осов
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-22-1600-q79fq@raspisanie
+DTSTAMP:20261019T195200Z
+DTSTART;TZID=Europe/Moscow:20261022T160000
+DTEND;TZID=Europe/Moscow:20261022T170000
+SUMMARY:Репетиция «Оксюморон»
+LOCATION:Новая сцена
+DESCRIPTION:Репетиция спектакля «Оксюморон»
+ \nТрунина\, Беканова\, Миронова\, Сигитов
+ а\, Мартюшева\, Разуваева\, Андреев\, Безн
+ осиков\,\nБаранов\, Шаймиев\, Носов\, Заяш
+ ников\nЗвук/свет: Звук\, свет
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-23-1100-1hjcxld@raspisanie
+DTSTAMP:20261019T195200Z
+DTSTART;TZID=Europe/Moscow:20261023T110000
+DTEND;TZID=Europe/Moscow:20261023T120000
+SUMMARY:Спектакль «Оксюморон»
+LOCATION:Новая сцена
+DESCRIPTION:Спектакль «Оксюморон»\nТрунина\, 
+ Беканова\, Миронова\, Сигитова\, Мартюше
+ ва\, Разуваева\, Андреев\, Безносиков\,\nБ
+ аранов\, Шаймиев\, Носов\, Заяшников\nЗву
+ к/свет: Звук\, свет
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-23-1900-1hjcxld@raspisanie
+DTSTAMP:20261019T195200Z
+DTSTART;TZID=Europe/Moscow:20261023T190000
+DTEND;TZID=Europe/Moscow:20261023T200000
+SUMMARY:Спектакль «Оксюморон»
+LOCATION:Новая сцена
+DESCRIPTION:Спектакль «Оксюморон»\nТрунина\, 
+ Беканова\, Миронова\, Сигитова\, Мартюше
+ ва\, Разуваева\, Андреев\, Безносиков\,\nБ
+ аранов\, Шаймиев\, Носов\, Заяшников\nЗву
+ к/свет: Звук\, свет
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-25-1100-sbrlhx@raspisanie
+DTSTAMP:20261019T195200Z
+DTSTART;TZID=Europe/Moscow:20261025T110000
+DTEND;TZID=Europe/Moscow:20261025T120000
+SUMMARY:Спектакль «Мойдодыр»
+LOCATION:Старая сцена
+DESCRIPTION:Спектакль «Мойдодыр»\nСоветов\, Ш
+ аймиев\, Баранов\, Сигитова\nЗвук/свет: З
+ вук\, свет
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-25-1300-sbrlhx@raspisanie
+DTSTAMP:20261019T195200Z
+DTSTART;TZID=Europe/Moscow:20261025T130000
+DTEND;TZID=Europe/Moscow:20261025T140000
+SUMMARY:Спектакль «Мойдодыр»
+LOCATION:Старая сцена
+DESCRIPTION:Спектакль «Мойдодыр»\nСоветов\, Ш
+ аймиев\, Баранов\, Сигитова\nЗвук/свет: З
+ вук\, свет
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-25-1500-sbrlhx@raspisanie
+DTSTAMP:20261019T195200Z
+DTSTART;TZID=Europe/Moscow:20261025T150000
+DTEND;TZID=Europe/Moscow:20261025T160000
+SUMMARY:Спектакль «Мойдодыр»
+LOCATION:Старая сцена
+DESCRIPTION:Спектакль «Мойдодыр»\nСоветов\, Ш
+ аймиев\, Баранов\, Сигитова\nЗвук/свет: З
+ вук\, свет
 END:VEVENT
 END:VCALENDAR

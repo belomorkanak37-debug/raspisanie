@@ -575,9 +575,10 @@
   {
    "id": "e9",
    "date": "2026-10-22",
-   "timeText": "11:30",
+   "timeText": "11:30 13:30",
    "times": [
-    "11:30"
+    "11:30",
+    "13:30"
    ],
    "range": null,
    "timeUncertain": false,
@@ -638,9 +639,9 @@
   {
    "id": "e10",
    "date": "2026-10-22",
-   "timeText": "13:30",
+   "timeText": "15:30",
    "times": [
-    "13:30"
+    "15:30"
    ],
    "range": null,
    "timeUncertain": false,
@@ -1421,12 +1422,12 @@
    }
   }
  ],
- "version": 8,
- "updatedAt": "2026-10-15T00:34:40.490Z",
+ "version": 9,
+ "updatedAt": "2026-10-19T19:52:38.008Z",
  "pdf": "data/pdf/2026-10-19.pdf",
  "previous": {
-  "version": 7,
-  "updatedAt": "2026-10-11T13:52:32.995Z",
+  "version": 8,
+  "updatedAt": "2026-10-15T00:34:40.490Z",
   "events": [
    {
     "id": "e1",
@@ -1453,7 +1454,7 @@
    {
     "id": "e2",
     "date": "2026-10-20",
-    "timeText": "в 10:00 и 12:00",
+    "timeText": "10:00 12:00",
     "times": [
      "10:00",
      "12:00"
@@ -1535,9 +1536,9 @@
    {
     "id": "e3",
     "date": "2026-10-20",
-    "timeText": "12:00",
+    "timeText": "11:00",
     "times": [
-     "12:00"
+     "11:00"
     ],
     "range": null,
     "timeUncertain": false,
@@ -1641,86 +1642,22 @@
     }
    },
    {
-    "id": "e5",
+    "id": "nmv8t08ca8okoc6",
     "date": "2026-10-20",
-    "timeText": "15:00",
+    "timeText": "14:00",
     "times": [
-     "15:00"
+     "14:00"
     ],
     "range": null,
     "timeUncertain": false,
-    "title": "Репетиция спектакля «Оксюморон»",
-    "kind": "rehearsal",
-    "place": "Новая сцена",
-    "tech": "Звук, свет",
+    "title": "ВЫЕЗД спектакля «Кот в сапогах»",
+    "kind": "trip",
+    "place": "Шк № 7, ул Летчика Пилютова, 11 к 2",
+    "tech": "",
     "lines": [
-     "Трунина, Беканова, Миронова, Сигитова, Мартюшева, Разуваева, Андреев, Безносиков,",
-     "Баранов, Шаймиев, Носов, Заяшников"
+     "Безносиков Глазецкая"
     ],
     "people": [
-     {
-      "name": "Трунина",
-      "times": null,
-      "from": null,
-      "role": null,
-      "uncertain": false,
-      "alts": [],
-      "note": null
-     },
-     {
-      "name": "Беканова",
-      "times": null,
-      "from": null,
-      "role": null,
-      "uncertain": false,
-      "alts": [],
-      "note": null
-     },
-     {
-      "name": "Миронова",
-      "times": null,
-      "from": null,
-      "role": null,
-      "uncertain": false,
-      "alts": [],
-      "note": null
-     },
-     {
-      "name": "Сигитова",
-      "times": null,
-      "from": null,
-      "role": null,
-      "uncertain": false,
-      "alts": [],
-      "note": null
-     },
-     {
-      "name": "Мартюшева",
-      "times": null,
-      "from": null,
-      "role": null,
-      "uncertain": false,
-      "alts": [],
-      "note": null
-     },
-     {
-      "name": "Разуваева",
-      "times": null,
-      "from": null,
-      "role": null,
-      "uncertain": false,
-      "alts": [],
-      "note": null
-     },
-     {
-      "name": "Андреев",
-      "times": null,
-      "from": null,
-      "role": null,
-      "uncertain": false,
-      "alts": [],
-      "note": null
-     },
      {
       "name": "Безносиков",
       "times": null,
@@ -1731,16 +1668,44 @@
       "note": null
      },
      {
-      "name": "Баранов",
+      "name": "Глазецкая",
       "times": null,
       "from": null,
       "role": null,
       "uncertain": false,
       "alts": [],
       "note": null
-     },
+     }
+    ],
+    "scope": "people",
+    "accounting": {
+     "showWeight": 1,
+     "baby": false,
+     "halfFor": [],
+     "away": true,
+     "intro": false
+    },
+    "manual": true
+   },
+   {
+    "id": "e5",
+    "date": "2026-10-20",
+    "timeText": "15:30",
+    "times": [
+     "15:30"
+    ],
+    "range": null,
+    "timeUncertain": false,
+    "title": "Репетиция спектакля «Оксюморон»",
+    "kind": "rehearsal",
+    "place": "Новая сцена",
+    "tech": "Звук, свет",
+    "lines": [
+     "Андреев, Носов, Трунина"
+    ],
+    "people": [
      {
-      "name": "Шаймиев",
+      "name": "Андреев",
       "times": null,
       "from": null,
       "role": null,
@@ -1758,7 +1723,7 @@
       "note": null
      },
      {
-      "name": "Заяшников",
+      "name": "Трунина",
       "times": null,
       "from": null,
       "role": null,
@@ -1775,6 +1740,79 @@
      "away": false,
      "intro": false
     }
+   },
+   {
+    "id": "nmv8t3hmtu40070",
+    "date": "2026-10-20",
+    "timeText": "16:30",
+    "times": [
+     "16:30"
+    ],
+    "range": null,
+    "timeUncertain": false,
+    "title": "Репетиция спектакля «Оксюморон»",
+    "kind": "rehearsal",
+    "place": "",
+    "tech": "",
+    "lines": [
+     "Сигитова Безносиков Андреев Баранов Носов"
+    ],
+    "people": [
+     {
+      "name": "Сигитова",
+      "times": null,
+      "from": null,
+      "role": null,
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     },
+     {
+      "name": "Безносиков",
+      "times": null,
+      "from": null,
+      "role": null,
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     },
+     {
+      "name": "Андреев",
+      "times": null,
+      "from": null,
+      "role": null,
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     },
+     {
+      "name": "Баранов",
+      "times": null,
+      "from": null,
+      "role": null,
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     },
+     {
+      "name": "Носов",
+      "times": null,
+      "from": null,
+      "role": null,
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     }
+    ],
+    "scope": "people",
+    "accounting": {
+     "showWeight": 0,
+     "baby": false,
+     "halfFor": [],
+     "away": false,
+     "intro": false
+    },
+    "manual": true
    },
    {
     "id": "e6",
