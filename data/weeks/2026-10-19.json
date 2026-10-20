@@ -415,6 +415,7 @@
    "tech": "Звук, свет",
    "lines": [
     "Вводящийся – Радыгин",
+    "Вводящий - Безносиков",
     "Лоскутова, Самойлов, Лоскутов"
    ],
    "people": [
@@ -423,6 +424,15 @@
      "times": null,
      "from": null,
      "role": "вводящийся",
+     "uncertain": false,
+     "alts": [],
+     "note": null
+    },
+    {
+     "name": "Безносиков",
+     "times": null,
+     "from": null,
+     "role": "вводящий",
      "uncertain": false,
      "alts": [],
      "note": null
@@ -1422,12 +1432,12 @@
    }
   }
  ],
- "version": 9,
- "updatedAt": "2026-10-19T19:52:38.008Z",
+ "version": 10,
+ "updatedAt": "2026-10-20T15:15:31.067Z",
  "pdf": "data/pdf/2026-10-19.pdf",
  "previous": {
-  "version": 8,
-  "updatedAt": "2026-10-15T00:34:40.490Z",
+  "version": 9,
+  "updatedAt": "2026-10-19T19:52:38.008Z",
   "events": [
    {
     "id": "e1",
@@ -1989,9 +1999,10 @@
    {
     "id": "e9",
     "date": "2026-10-22",
-    "timeText": "11:30",
+    "timeText": "11:30 13:30",
     "times": [
-     "11:30"
+     "11:30",
+     "13:30"
     ],
     "range": null,
     "timeUncertain": false,
@@ -2052,9 +2063,9 @@
    {
     "id": "e10",
     "date": "2026-10-22",
-    "timeText": "13:30",
+    "timeText": "15:30",
     "times": [
-     "13:30"
+     "15:30"
     ],
     "range": null,
     "timeUncertain": false,
