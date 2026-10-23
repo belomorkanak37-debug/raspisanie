@@ -514,11 +514,17 @@ export function monthlyTotals(weeks, name, month) {
 
 export const SALARY_RATES = { show: 5, baby: 3, awayFirst: 6, awayExtra: 5, newcomer: 6, mentor: 3, actor: 4, tax: 13 };
 
-export function calculateSalary(totals, salary) {
+export function calculateSalary(totals, salary, advance = '') {
   const text = String(salary ?? '').trim().replace(/\s/g, '').replace(',', '.');
   const baseKopecks = Math.round(Number(text) * 100);
   if (!/^\d+(?:\.\d{1,2})?$/.test(text) || !Number.isSafeInteger(baseKopecks) || baseKopecks <= 0) {
     throw new Error('Введите оклад больше нуля, в рублях и копейках.');
+  }
+  const advanceText = String(advance ?? '').trim().replace(/\s/g, '').replace(',', '.');
+  const advanceKopecks = advanceText ? Math.round(Number(advanceText) * 100) : 0;
+  if (advanceText && (!/^\d+(?:\.\d{1,2})?$/.test(advanceText)
+    || !Number.isSafeInteger(advanceKopecks) || advanceKopecks < 0)) {
+    throw Object.assign(new Error('Введите аванс от нуля, в рублях и копейках, или оставьте поле пустым.'), { field: 'advance' });
   }
   const t = totals.confirmed;
   const counts = { show: 0, baby: 0, awayFirst: 0, awayExtra: 0, ...t.introDays };
@@ -551,6 +557,7 @@ export function calculateSalary(totals, salary) {
     base: baseKopecks / 100, lines, bonusPercent: lines.reduce((sum, line) => sum + line.percent, 0),
     bonus: bonusKopecks / 100, gross: grossKopecks / 100, tax: taxKopecks / 100,
     net: (grossKopecks - taxKopecks) / 100, taxRate: SALARY_RATES.tax, showCharges, awayCharges,
+    advance: advanceKopecks / 100, netAfterAdvance: (grossKopecks - taxKopecks - advanceKopecks) / 100,
   };
 }
 

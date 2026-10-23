@@ -103,3 +103,20 @@ assert.equal(kopecks.base, 50000.5);
 assert.equal(kopecks.tax, 6500.07);
 assert.equal(kopecks.net, 43500.43);
 console.log('PASS: money input validation, comma/space input, and kopeck rounding');
+
+const salaryTotals = total([...ninthBaby, threeAway, ...introductions]);
+const withoutAdvance = calculateSalary(salaryTotals, 100000);
+for (const advance of ['', '   ', null, 0, '0']) {
+  assert.deepEqual(calculateSalary(salaryTotals, 100000, advance), withoutAdvance);
+}
+const withAdvance = calculateSalary(salaryTotals, 100000, 25000);
+assert.equal(withAdvance.net, 117450);
+assert.equal(withAdvance.tax, 17550);
+assert.equal(withAdvance.advance, 25000);
+assert.equal(withAdvance.netAfterAdvance, 92450);
+assert.equal(calculateSalary(total([]), '50 000,50', '10 000,25').netAfterAdvance, 33500.18);
+assert.equal(calculateSalary(total([]), 100000, 100000).netAfterAdvance, -13000);
+for (const advance of ['-1', 'NaN', 'Infinity', '1e5', '123,456']) {
+  assert.throws(() => calculateSalary(salaryTotals, 100000, advance), (e) => e.field === 'advance');
+}
+console.log('PASS: optional advance is subtracted after tax; empty input unchanged; kopecks and invalid values handled');

@@ -34,6 +34,7 @@ const PIN = 'rs.pinned';
 const RECENT = 'rs.recent';
 const VIEW = 'rs.view';
 const salaryKey = (name) => `rs.salary.v1.${normName(name)}`;
+const advanceKey = (name, month) => `rs.advance.v1.${normName(name)}.${month}`;
 const savedView = store.get(VIEW, 'list');
 
 /* ---------- данные ---------- */
@@ -601,17 +602,18 @@ function salaryDetails(calc, totals) {
 }
 
 function updateSalaryResult() {
-  const box = $('#salaryResult'), input = $('[data-salary]'), context = state.salaryTotals;
-  if (!box || !input || !context || context.person !== current || state.view !== 'calculator' || context.ym !== state.totalsMonth) return;
+  const box = $('#salaryResult'), input = $('[data-salary]'), advance = $('[data-advance]'), context = state.salaryTotals;
+  if (!box || !input || !advance || !context || context.person !== current || state.view !== 'calculator' || context.ym !== state.totalsMonth) return;
   input.setAttribute('aria-invalid', 'false');
+  advance.setAttribute('aria-invalid', 'false');
   if (!input.value.trim()) {
     box.innerHTML = '<p class="calc-placeholder">Введите оклад, чтобы увидеть приблизительную зарплату.</p>';
     return;
   }
   try {
-    const calc = calculateSalary(context.totals, input.value);
+    const calc = calculateSalary(context.totals, input.value, advance.value);
     box.innerHTML = `<section class="calc-result" aria-label="Приблизительная зарплата">
-        <p>Примерно на руки</p><strong>${money(calc.net)}</strong><span>После удержания ${calc.taxRate}% налога</span>
+        <p>Примерно на руки</p><strong>${money(calc.netAfterAdvance)}</strong><span>После удержания ${calc.taxRate}% налога${calc.advance ? ' и вычета аванса' : ''}</span>
       </section>
       <dl class="calc-ledger">
         <div><dt>Оклад</dt><dd>${money(calc.base)}</dd></div>
@@ -619,9 +621,11 @@ function updateSalaryResult() {
         <div class="calc-total"><dt>Всего доплат <small>${fmtCount(calc.bonusPercent)}% от оклада</small></dt><dd>${money(calc.bonus)}</dd></div>
         <div class="calc-total"><dt>Начислено до налога</dt><dd>${money(calc.gross)}</dd></div>
         <div><dt>Налог ${calc.taxRate}%</dt><dd>−${money(calc.tax)}</dd></div>
+        ${calc.advance ? `<div><dt>После налога, до вычета аванса</dt><dd>${money(calc.net)}</dd></div>
+          <div><dt>Полученный аванс</dt><dd>−${money(calc.advance)}</dd></div>` : ''}
       </dl>${salaryDetails(calc, context.totals)}`;
   } catch (e) {
-    input.setAttribute('aria-invalid', 'true');
+    (e.field === 'advance' ? advance : input).setAttribute('aria-invalid', 'true');
     box.innerHTML = `<p class="calc-error" role="alert">${esc(e.message)}</p>`;
   }
 }
@@ -660,6 +664,10 @@ async function renderTotals(feed, calculator = false) {
       <div class="calc-form"><label for="salaryBase">Оклад, ₽</label>
         <input id="salaryBase" data-salary type="text" inputmode="decimal" autocomplete="off" placeholder="Например, 50000" value="${esc(store.get(salaryKey(person.key), ''))}" aria-describedby="salaryHint">
         <p id="salaryHint">До удержания налога. Оклад сохраняется только в этом браузере.</p>
+      </div>
+      <div class="calc-form"><label for="salaryAdvance">Аванс, ₽</label>
+        <input id="salaryAdvance" data-advance type="text" inputmode="decimal" autocomplete="off" placeholder="Не указан" value="${esc(store.get(advanceKey(person.key, ym), ''))}" aria-describedby="advanceHint">
+        <p id="advanceHint">Уже полученная сумма — вычитается после налога. Аванс сохраняется для выбранного месяца только в этом браузере.</p>
       </div>
       ${!coverage.days ? '<p class="totals-rules">Расписание на этот месяц не загружено — пока можно посчитать только оклад после налога.</p>' : ''}
       ${hasPossible ? '<p class="totals-rules">Участия под вопросом и альтернативный состав в сумму не включены. Их можно посмотреть в «Итогах».</p>' : ''}
@@ -788,8 +796,9 @@ function bindFeed(feed) {
     else state.pastRequest++;
   }, true);
   feed.addEventListener('input', (e) => {
-    if (!e.target.matches('[data-salary]') || !current) return;
-    store.set(salaryKey(current.key), e.target.value);
+    if (!e.target.matches('[data-salary], [data-advance]') || !current) return;
+    const key = e.target.matches('[data-advance]') ? advanceKey(current.key, state.totalsMonth) : salaryKey(current.key);
+    store.set(key, e.target.value);
     updateSalaryResult();
   });
   feed.addEventListener('change', (e) => {
