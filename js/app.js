@@ -613,7 +613,7 @@ function updateSalaryResult() {
   try {
     const calc = calculateSalary(context.totals, input.value, advance.value);
     box.innerHTML = `<section class="calc-result" aria-label="Приблизительная зарплата">
-        <p>Примерно на руки</p><strong>${money(calc.netAfterAdvance)}</strong><span>После удержания ${calc.taxRate}% налога${calc.advance ? ' и вычета аванса' : ''}</span>
+        <p>Примерно на руки</p><strong>${money(calc.netAfterAdvance)}</strong><span>После удержания ${calc.taxRate}% налога${calc.advance ? ' и вычета аванса' : ' · без вычета аванса'}</span>
       </section>
       <dl class="calc-ledger">
         <div><dt>Оклад</dt><dd>${money(calc.base)}</dd></div>
@@ -628,6 +628,23 @@ function updateSalaryResult() {
     (e.field === 'advance' ? advance : input).setAttribute('aria-invalid', 'true');
     box.innerHTML = `<p class="calc-error" role="alert">${esc(e.message)}</p>`;
   }
+}
+
+function syncSalaryForm() {
+  const context = state.salaryTotals, salary = $('[data-salary]'), advance = $('[data-advance]');
+  if (state.view !== 'calculator' || !context || context.person !== current || context.ym !== state.totalsMonth
+    || !salary || !advance) return;
+  // Браузер может восстановить поля без input; источником расчёта остаются видимые значения.
+  store.set(salaryKey(current.key), salary.value);
+  store.set(advanceKey(current.key, context.ym), advance.value);
+  updateSalaryResult();
+}
+
+function resumeSalaryCalculation() {
+  if (state.view !== 'calculator') return;
+  syncSalaryForm();
+  // При восстановлении страницы значения полей могут примениться после pageshow.
+  if (document.visibilityState === 'visible') requestAnimationFrame(syncSalaryForm);
 }
 
 async function renderTotals(feed, calculator = false) {
@@ -796,12 +813,10 @@ function bindFeed(feed) {
     else state.pastRequest++;
   }, true);
   feed.addEventListener('input', (e) => {
-    if (!e.target.matches('[data-salary], [data-advance]') || !current) return;
-    const key = e.target.matches('[data-advance]') ? advanceKey(current.key, state.totalsMonth) : salaryKey(current.key);
-    store.set(key, e.target.value);
-    updateSalaryResult();
+    if (e.target.matches('[data-salary], [data-advance]')) syncSalaryForm();
   });
   feed.addEventListener('change', (e) => {
+    if (e.target.matches('[data-salary], [data-advance]')) return syncSalaryForm();
     if (!e.target.matches('[data-totals-month]')) return;
     state.totalsMonth = e.target.value;
     renderFeed();
@@ -914,7 +929,10 @@ function renderFooter() {
 /* ---------- запуск ---------- */
 window.addEventListener('hashchange', route);
 window.addEventListener('online', () => setOffline(false));
+window.addEventListener('pageshow', resumeSalaryCalculation);
+window.addEventListener('focus', resumeSalaryCalculation);
 document.addEventListener('visibilitychange', async () => {
+  resumeSalaryCalculation();
   // Вернулись в приложение спустя время — подтягиваем свежие данные.
   if (document.visibilityState !== 'visible' || !state.index || Date.now() - (state.loadedAt || 0) < 5 * 60e3) return;
   state.index = null;
