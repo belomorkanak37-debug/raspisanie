@@ -7,7 +7,7 @@ export const WEEKDAYS = ['воскресенье', 'понедельник', 'в
 
 export const KIND_LABELS = {
   show: 'Спектакль', rehearsal: 'Репетиция', intro: 'Ввод', handover: 'Сдача',
-  meeting: 'Собрание', trip: 'Выезд', other: '',
+  meeting: 'Собрание', trip: 'Выезд', studio: 'Театральная студия', other: '',
 };
 
 /* ---------- даты ---------- */
@@ -127,8 +127,15 @@ export function addMinutes(hhmm, min) {
 
 /* ---------- названия ---------- */
 
+function isStudioTitle(title) {
+  const text = normName(title).replace(/[^а-яa-z0-9]+/g, ' ').trim();
+  return /^(?:занятие\s+)?(?:(?:детская|театральная|детской|театральной)\s+)*студи(?:я|и)(?:\s|$)/.test(text)
+    || /^(?:мастер\s*класс\s+)?хочу стать кукловодом(?:\s|$)/.test(text);
+}
+
 export function detectKind(title) {
   const t = String(title || '').trim().toLowerCase();
+  if (isStudioTitle(t)) return 'studio';
   if (/^ввод/.test(t)) return 'intro';
   if (/^сдача/.test(t)) return 'handover';
   if (/^(репетиц|прогон)/.test(t)) return 'rehearsal';
@@ -349,6 +356,8 @@ const uniq = (arr) => [...new Set(arr)];
 // Что из события относится к человеку: его время, роль, пометки.
 export function personalize(ev, key) {
   if (ev.scope === 'note') return { ev, type: 'note' };
+  // Новое название распознаётся и в старых JSON, без изменения опубликованного события.
+  if (ev.kind !== 'studio' && isStudioTitle(ev.title)) ev = { ...ev, kind: 'studio' };
   const entries = ev.people.filter((p) => normName(p.name) === key);
   if (ev.scope !== 'all' && !entries.length) return null;
   const specific = entries.length > 0 && entries.every((p) => p.times || p.from);
@@ -403,9 +412,10 @@ const accountingText = (s) => normName(s).replace(/[^а-яa-z0-9]+/g, ' ').trim(
 export function eventAccounting(ev) {
   const title = normName(ev.title);
   const kind = ev.kind || detectKind(ev.title);
+  const studio = ev.scope !== 'note' && (kind === 'studio' || isStudioTitle(ev.title));
   const awayTitle = /выезд|гастрол|фестивал|бдф/.test(title);
   const travelOnly = /^(отъезд|выезд\s+(?:гастрольной\s+)?группы)/.test(title);
-  const show = ev.scope !== 'note' && (kind === 'show' || ((kind === 'trip' || (kind === 'other' && awayTitle))
+  const show = !studio && ev.scope !== 'note' && (kind === 'show' || ((kind === 'trip' || (kind === 'other' && awayTitle))
     && !travelOnly && (/спектакл/.test(title) || (/«[^»]+»/.test(title) && ev.times?.length > 0))));
   const heading = accountingText(prettyTitle(ev.title).heading);
   const baby = show && /(^| )собачка($| )|(^| )первый снег малыша($| )/.test(heading);
@@ -413,7 +423,7 @@ export function eventAccounting(ev) {
   const place = normName(ev.place);
   const away = show && (awayTitle
     || /москв|выборг|шк(?:ола|\s|\.|№)|лице[йя]|гимнази|дворец|дом культуры|губернск|(^|[^а-я])дк($|[^а-я])|ул[.\s]|проспект/.test(place));
-  return { showWeight: show ? 1 : 0, baby, halfFor, away, intro: kind === 'intro' && ev.scope !== 'note' };
+  return { showWeight: show ? 1 : 0, baby, halfFor, away, studio, intro: !studio && kind === 'intro' && ev.scope !== 'note' };
 }
 
 function introRole(role) {
@@ -445,7 +455,7 @@ function accountingTimes(ev, p) {
   if (p.from) times = times.length ? times.filter((t) => t >= p.from) : [p.from];
   const until = /^до (\d{2}:\d{2})/.exec(p.note || '');
   if (until) times = times.filter((t) => t < until[1]);
-  // Спектакль без указанного времени всё равно является одним показом.
+  // Спектакль или занятие без времени всё равно учитывается один раз.
   return uniq(times.length ? times : (!ev.times?.length && !p.from && !until ? [''] : []));
 }
 
@@ -460,21 +470,22 @@ export function monthlyTotals(weeks, name, month) {
     if (!old || (w.version || 1) > (old.version || 1)
       || ((w.version || 1) === (old.version || 1) && (w.updatedAt || '') > (old.updatedAt || ''))) latest.set(w.id, w);
   }
-  const covered = new Set(), shows = new Map(), intros = new Map();
+  const covered = new Set(), shows = new Map(), intros = new Map(), studios = new Map();
   for (const w of latest.values()) {
     for (let d = w.start > first ? w.start : first; d <= w.end && d <= last; d = addDays(d, 1)) covered.add(d);
     // previous содержит отменённые и изменённые записи — в итогах берём только текущие events.
     for (const ev of w.events || []) {
       if (ev.date < first || ev.date > last || ev.scope === 'note') continue;
       const flags = eventAccounting(ev);
-      if (!flags.showWeight && !flags.intro) continue;
+      if (!flags.showWeight && !flags.intro && !flags.studio) continue;
       const entries = accountingPeople(ev).filter((p) => normName(p.name) === key);
       for (const p of entries) {
         const possible = !!p.uncertain || !!p.alts?.length;
-        if (flags.showWeight) for (const time of accountingTimes(ev, p)) {
+        if (flags.showWeight || flags.studio) for (const time of accountingTimes(ev, p)) {
           const id = [ev.date, time, accountingText(prettyTitle(ev.title).heading), accountingText(ev.place)].join('|');
-          const old = shows.get(id);
-          if (!old || (old.possible && !possible)) shows.set(id, {
+          const collection = flags.studio ? studios : shows;
+          const old = collection.get(id);
+          if (!old || (old.possible && !possible)) collection.set(id, {
             ev, week: w, time, possible, weight: flags.halfFor.includes(key) ? 0.5 : flags.showWeight,
             baby: flags.baby, away: flags.away,
           });
@@ -497,14 +508,17 @@ export function monthlyTotals(weeks, name, month) {
     const awayItems = items.filter((s) => s.away);
     const introItems = [...intros.values()].filter((i) => i.possible === possible)
       .sort((a, b) => `${a.date} ${a.role}`.localeCompare(`${b.date} ${b.role}`));
+    const studioItems = [...studios.values()].filter((s) => s.possible === possible)
+      .sort((a, b) => `${a.ev.date} ${a.time}`.localeCompare(`${b.ev.date} ${b.time}`));
     const showsCount = showItems.reduce((sum, s) => sum + s.weight, 0);
     return {
       shows: showsCount, performances: showItems.length, aboveNorm: Math.max(0, showsCount - MONTHLY_NORM),
       halfShows: showItems.filter((s) => s.weight === 0.5).length,
       babyShows: showItems.filter((s) => s.baby).length,
       awayShows: awayItems.length,
+      studioLessons: studioItems.length,
       introDays: Object.fromEntries(Object.keys(INTRO_ROLE_LABELS).map((r) => [r, introItems.filter((i) => i.role === r).length])),
-      showItems, awayItems, introItems,
+      showItems, awayItems, introItems, studioItems,
     };
   };
   return { month, norm: MONTHLY_NORM, confirmed: bucket(false), possible: bucket(true), coverage: { days: covered.size, totalDays } };
@@ -513,6 +527,7 @@ export function monthlyTotals(weeks, name, month) {
 /* ---------- приблизительная зарплата ---------- */
 
 export const SALARY_RATES = { show: 5, baby: 3, awayFirst: 6, awayExtra: 5, newcomer: 6, mentor: 3, actor: 4, tax: 13 };
+export const STUDIO_LESSON_FEE = 2500;
 
 export function calculateSalary(totals, salary, advance = '') {
   const text = String(salary ?? '').trim().replace(/\s/g, '').replace(',', '.');
@@ -549,7 +564,9 @@ export function calculateSalary(totals, salary, advance = '') {
     const count = counts[key], rate = SALARY_RATES[key], percent = count * rate;
     return { key, count, rate, percent, amount: Math.round(baseKopecks * percent / 100) / 100 };
   });
-  const bonusKopecks = lines.reduce((sum, line) => sum + Math.round(line.amount * 100), 0);
+  const studioLessons = t.studioItems.length;
+  const studioKopecks = studioLessons * STUDIO_LESSON_FEE * 100;
+  const bonusKopecks = lines.reduce((sum, line) => sum + Math.round(line.amount * 100), studioKopecks);
   const grossKopecks = baseKopecks + bonusKopecks;
   if (!Number.isSafeInteger(grossKopecks)) throw new Error('Оклад слишком большой для расчёта.');
   const taxKopecks = Math.round(grossKopecks * SALARY_RATES.tax / 100);
@@ -558,6 +575,7 @@ export function calculateSalary(totals, salary, advance = '') {
     bonus: bonusKopecks / 100, gross: grossKopecks / 100, tax: taxKopecks / 100,
     net: (grossKopecks - taxKopecks) / 100, taxRate: SALARY_RATES.tax, showCharges, awayCharges,
     advance: advanceKopecks / 100, netAfterAdvance: (grossKopecks - taxKopecks - advanceKopecks) / 100,
+    studioLessons, studioFee: STUDIO_LESSON_FEE, studioPay: studioKopecks / 100,
   };
 }
 

@@ -15,6 +15,7 @@
   --k-handover: #7448b0;
   --k-meeting: #2e8a5a;
   --k-trip: #5d6b7a;
+  --k-studio: #23818f;
   --k-other: #8a8580;
   --k-personal: #7353a6;
   --warn: #9a6200;
@@ -45,6 +46,7 @@
     --k-handover: #b392ee;
     --k-meeting: #62c592;
     --k-trip: #9fb0c2;
+    --k-studio: #71c6cc;
     --k-other: #aaa49c;
     --k-personal: #bb9ee8;
     --warn: #eab457;
@@ -349,6 +351,7 @@ main { flex: 1; }
 .k-handover { --k: var(--k-handover); }
 .k-meeting { --k: var(--k-meeting); }
 .k-trip { --k: var(--k-trip); }
+.k-studio { --k: var(--k-studio); }
 .k-other { --k: var(--k-other); }
 .k-personal { --k: var(--k-personal); }
 .card .title { font-size: 17.5px; font-weight: 650; line-height: 1.25; letter-spacing: -.01em; }

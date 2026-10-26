@@ -559,11 +559,12 @@ function totalsStats(t, possible = false) {
     ${Object.entries(INTRO_ROLE_LABELS).map(([r, label]) => `<div><dt>${label}</dt><dd>${t.introDays[r]} <span>${plural(t.introDays[r], 'день', 'дня', 'дней')}</span></dd></div>`).join('')}
     <div><dt>Выездных спектаклей</dt><dd>${t.awayShows}</dd></div>
     <div><dt>Бэбиков</dt><dd>${t.babyShows}</dd></div>
+    <div><dt>Занятий студии</dt><dd>${t.studioLessons}</dd></div>
   </dl>`;
 }
 
 function totalsDetails(t, label) {
-  if (!t.showItems.length && !t.awayItems.length && !t.introItems.length) return '';
+  if (!t.showItems.length && !t.awayItems.length && !t.introItems.length && !t.studioItems.length) return '';
   const showsList = (items) => `<ul>${items.map((s) => `<li><div class="totals-date">${fmtDate(s.ev.date)} · ${esc(s.time || 'время не указано')}</div>
     <div>${esc(prettyTitle(s.ev.title).heading)}${s.weight === 0.5 && !s.away ? ' <span class="chip">0,5</span>' : ''}${s.baby ? ' <span class="chip">бэбик</span>' : ''}</div>
     ${s.ev.place ? `<div class="muted">${esc(s.ev.place)}</div>` : ''}</li>`).join('')}</ul>`;
@@ -571,6 +572,7 @@ function totalsDetails(t, label) {
     ${t.showItems.length ? `<h3>Спектакли (${t.performances} ${plural(t.performances, 'показ', 'показа', 'показов')})</h3>
       ${showsList(t.showItems)}` : ''}
     ${t.awayItems.length ? `<h3>Выездные спектакли (${t.awayShows} ${plural(t.awayShows, 'показ', 'показа', 'показов')})</h3>${showsList(t.awayItems)}` : ''}
+    ${t.studioItems.length ? `<h3>Занятия студии (${t.studioLessons})</h3>${showsList(t.studioItems)}` : ''}
     ${t.introItems.length ? `<h3>Дни вводов</h3><ul>${t.introItems.map((i) => `<li>
       <div class="totals-date">${fmtDate(i.date)} · ${INTRO_ROLE_LABELS[i.role]}</div>
       <div>${i.titles.map(esc).join(', ')}</div></li>`).join('')}</ul>` : ''}
@@ -593,6 +595,11 @@ function salaryDetails(calc, totals) {
   return `<details class="totals-details"><summary>Посмотреть расчёт по датам</summary>
     ${calc.showCharges.length ? `<h3>Спектакли в театре</h3>${list(calc.showCharges, false)}` : ''}
     ${calc.awayCharges.length ? `<h3>Выезды, гастроли и фестивали</h3>${list(calc.awayCharges, true)}` : ''}
+    ${totals.confirmed.studioItems.length ? `<h3>Занятия студии</h3><ul>${totals.confirmed.studioItems.map((s) => `<li>
+      <div class="totals-date">${fmtDate(s.ev.date)} · ${esc(s.time || 'время не указано')}</div>
+      <div>${esc(prettyTitle(s.ev.title).heading)}</div>
+      <div class="muted">+${money(calc.studioFee)} до налога</div>
+    </li>`).join('')}</ul>` : ''}
     ${totals.confirmed.introItems.length ? `<h3>Дни вводов</h3><ul>${totals.confirmed.introItems.map((i) => `<li>
       <div class="totals-date">${fmtDate(i.date)} · ${INTRO_ROLE_LABELS[i.role]}</div>
       <div>${i.titles.map(esc).join(', ')}</div>
@@ -618,7 +625,8 @@ function updateSalaryResult() {
       <dl class="calc-ledger">
         <div><dt>Оклад</dt><dd>${money(calc.base)}</dd></div>
         ${calc.lines.map((line) => `<div><dt>${salaryLabels[line.key]}<small>${fmtCount(line.count)} × ${line.rate}% = ${fmtCount(line.percent)}%</small></dt><dd>${money(line.amount)}</dd></div>`).join('')}
-        <div class="calc-total"><dt>Всего доплат <small>${fmtCount(calc.bonusPercent)}% от оклада</small></dt><dd>${money(calc.bonus)}</dd></div>
+        <div><dt>Театральная студия<small>${calc.studioLessons} × ${money(calc.studioFee)}</small></dt><dd>${money(calc.studioPay)}</dd></div>
+        <div class="calc-total"><dt>Всего доплат <small>${fmtCount(calc.bonusPercent)}% от оклада${calc.studioPay ? ` + ${money(calc.studioPay)} за студию` : ''}</small></dt><dd>${money(calc.bonus)}</dd></div>
         <div class="calc-total"><dt>Начислено до налога</dt><dd>${money(calc.gross)}</dd></div>
         <div><dt>Налог ${calc.taxRate}%</dt><dd>−${money(calc.tax)}</dd></div>
         ${calc.advance ? `<div><dt>После налога, до вычета аванса</dt><dd>${money(calc.net)}</dd></div>
@@ -669,7 +677,7 @@ async function renderTotals(feed, calculator = false) {
   const weeks = loaded.filter(Boolean);
   const totals = monthlyTotals(weeks, person.key, ym);
   const { confirmed, possible, coverage } = totals;
-  const hasPossible = possible.showItems.length || possible.awayItems.length || possible.introItems.length;
+  const hasPossible = possible.showItems.length || possible.awayItems.length || possible.introItems.length || possible.studioItems.length;
   const failed = weeks.length < metas.length;
   const notices = `
     ${failed ? '<div class="banner">Часть расписаний не загрузилась. Показаны итоги только по доступным неделям. Обновите страницу при подключении к интернету.</div>' : ''}
@@ -692,7 +700,8 @@ async function renderTotals(feed, calculator = false) {
       <p class="totals-rules">Первые ${totals.norm} спектаклей входят в норму. Далее обычный показ даёт +5%, бэбик — только +3%. Порядок — по датам и времени.
         «Теремок» у Баранова и Носова учитывается по 0,5; часть сверх нормы оплачивается пропорционально.
         Выезды, гастроли и фестивали считаются отдельно: первый показ каждого дня +6%, каждый следующий +5%.
-        День ввода: вводящийся +6%, вводящий +3%, актёр на вводе +4%. Налог 13% удерживается с оклада и всех доплат.</p>`;
+        День ввода: вводящийся +6%, вводящий +3%, актёр на вводе +4%.
+        Театральная студия — 2 500 ₽ за занятие, независимо от оклада и нормы спектаклей. Налог 13% удерживается с оклада и всех доплат.</p>`;
     updateSalaryResult();
     return;
   }
@@ -700,6 +709,7 @@ async function renderTotals(feed, calculator = false) {
     ${coverage.days ? `<section class="totals-panel" aria-label="Итоги по расписанию">${totalsStats(confirmed)}</section>
       <p class="totals-rules">Норма спектаклей в театре — ${totals.norm}. «Собачка» и «Первый снег малыша» — бэбики, каждый считается как 1 спектакль.
         «Теремок» для Баранова и Носова считается по 0,5 за показ, для остальных — как 1.
+        Занятия студии считаются отдельно, без включения в норму спектаклей.
         Каждый личный показ считается отдельно. Выезды учитываются отдельной графой и не влияют на норму. Вводы считаются по дням, а не по числу репетиций; роли берутся из состава.</p>
       ${totalsDetails(confirmed, 'Посмотреть учтённые даты')}
       ${hasPossible ? `<section class="totals-panel totals-possible"><h3>Под вопросом — отдельно</h3>

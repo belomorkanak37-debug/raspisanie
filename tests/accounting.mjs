@@ -1,5 +1,5 @@
 import assert from 'node:assert/strict';
-import { buildEvent, calculateSalary, eventAccounting, monthlyTotals } from '../js/core.js';
+import { buildEvent, calculateSalary, eventAccounting, monthlyTotals, personalItems } from '../js/core.js';
 
 const person = 'Безносиков';
 const event = (day, title = 'Спектакль «Обычный»', timeText = '12:00', name = person) => buildEvent({
@@ -120,3 +120,58 @@ for (const advance of ['-1', 'NaN', 'Infinity', '1e5', '123,456']) {
   assert.throws(() => calculateSalary(salaryTotals, 100000, advance), (e) => e.field === 'advance');
 }
 console.log('PASS: optional advance is subtracted after tax; empty input unchanged; kopecks and invalid values handled');
+
+for (const title of ['студия', 'Детская студия', 'ТЕАТРАЛЬНАЯ СТУДИЯ', 'Детская театральная студия', 'Занятие детской студии', 'Мастер-класс «Хочу стать кукловодом»', 'мастер класс Хочу стать кукловодом']) {
+  const studio = event(26, title);
+  assert.equal(studio.kind, 'studio', title);
+  assert.equal(studio.accounting.studio, true);
+  const totals = total([studio]);
+  assert.equal(totals.confirmed.studioLessons, 1);
+  assert.equal(totals.confirmed.shows, 0);
+  assert.equal(totals.confirmed.awayShows, 0);
+  const calc = calculateSalary(totals, 50000);
+  assert.equal(calc.studioFee, 2500);
+  assert.equal(calc.studioPay, 2500);
+  assert.equal(calc.bonusPercent, 0);
+  assert.equal(calc.net, 45675);
+  assert.equal(calc.net - calculateSalary(total([]), 50000).net, 2175);
+}
+assert.equal(eventAccounting(event(26, 'Репетиция спектакля «Студия»')).studio, false);
+assert.equal(eventAccounting(event(26, 'Спектакль «Студия»')).studio, false);
+assert.equal(eventAccounting(event(26, 'Мастер-класс «Другое название»')).studio, false);
+console.log('PASS: studio title aliases and named master class add 2500 before tax / 2175 after tax, outside performance norm');
+
+const lessons = event(26, 'Студия', '10:00 12:00', 'Безносиков, Носов');
+for (const name of [person, 'Носов']) {
+  assert.equal(total([lessons], name).confirmed.studioLessons, 2);
+  assert.equal(pay([lessons], name).studioPay, 5000);
+}
+const restrictedStudio = { ...lessons, people: [{ ...lessons.people[0], times: ['12:00'] }] };
+assert.equal(total([restrictedStudio]).confirmed.studioLessons, 1);
+assert.equal(total([event(26, 'Студия', '10:00–12:00')]).confirmed.studioLessons, 1);
+assert.equal(total([event(26, 'Студия', '')]).confirmed.studioLessons, 1);
+assert.equal(total([event(26, 'Студия', '10:00', 'Носов')]).confirmed.studioLessons, 0);
+assert.equal(total([lessons, { ...lessons, id: 'duplicate' }]).confirmed.studioLessons, 2);
+const mixedStudio = calculateSalary(total([...ordinary(9), event(26, 'Студия')]), 100000, 10000);
+assert.equal(mixedStudio.bonusPercent, 5);
+assert.equal(mixedStudio.bonus, 7500);
+assert.equal(mixedStudio.net, 93525);
+assert.equal(mixedStudio.netAfterAdvance, 83525);
+console.log('PASS: lessons count per start time and surname, ranges count once, no duplicate fees, combined tax and advance correct');
+
+const unsureStudio = event(26, 'Студия');
+unsureStudio.people[0].uncertain = true;
+const possibleStudio = total([unsureStudio]);
+assert.equal(possibleStudio.confirmed.studioLessons, 0);
+assert.equal(possibleStudio.possible.studioLessons, 1);
+assert.equal(calculateSalary(possibleStudio, 100000).studioPay, 0);
+const removedStudio = { ...week([]), previous: week([lessons]) };
+assert.equal(monthlyTotals([removedStudio], person, '2026-10').confirmed.studioLessons, 0);
+assert.equal(monthlyTotals([{ ...week([lessons]), version: 1 }, { ...week([]), version: 2 }], person, '2026-10').confirmed.studioLessons, 0);
+const oldStudio = { ...event(26, 'Детская студия'), kind: 'other', accounting: { showWeight: 0, intro: false, away: false } };
+assert.equal(total([oldStudio]).confirmed.studioLessons, 1);
+assert.equal(personalItems([oldStudio], 'безносиков')[0].ev.kind, 'studio');
+assert.equal(oldStudio.kind, 'other');
+assert.equal(total([{ ...oldStudio, scope: 'note' }]).confirmed.studioLessons, 0);
+assert.equal(monthlyTotals([week([oldStudio])], person, '2026-11').confirmed.studioLessons, 0);
+console.log('PASS: uncertain/canceled lessons excluded from pay, latest versions win, old JSON recognized, notes and other months excluded');
