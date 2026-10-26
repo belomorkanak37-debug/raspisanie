@@ -1430,14 +1430,60 @@
     "away": false,
     "intro": false
    }
+  },
+  {
+   "id": "nmvpn015vpaidm7",
+   "date": "2026-10-25",
+   "timeText": "18:30",
+   "times": [
+    "18:30"
+   ],
+   "range": null,
+   "timeUncertain": false,
+   "title": "Детская студия",
+   "kind": "other",
+   "place": "Старая сцена",
+   "tech": "",
+   "lines": [
+    "Безносиков, Мартюшева"
+   ],
+   "people": [
+    {
+     "name": "Безносиков",
+     "times": null,
+     "from": null,
+     "role": null,
+     "uncertain": false,
+     "alts": [],
+     "note": null
+    },
+    {
+     "name": "Мартюшева",
+     "times": null,
+     "from": null,
+     "role": null,
+     "uncertain": false,
+     "alts": [],
+     "note": null
+    }
+   ],
+   "scope": "people",
+   "accounting": {
+    "showWeight": 0,
+    "baby": false,
+    "halfFor": [],
+    "away": false,
+    "intro": false
+   },
+   "manual": true
   }
  ],
- "version": 10,
- "updatedAt": "2026-10-20T15:15:31.067Z",
+ "version": 11,
+ "updatedAt": "2026-10-26T19:15:57.823Z",
  "pdf": "data/pdf/2026-10-19.pdf",
  "previous": {
-  "version": 9,
-  "updatedAt": "2026-10-19T19:52:38.008Z",
+  "version": 10,
+  "updatedAt": "2026-10-20T15:15:31.067Z",
   "events": [
    {
     "id": "e1",
@@ -1839,6 +1885,7 @@
     "tech": "Звук, свет",
     "lines": [
      "Вводящийся – Радыгин",
+     "Вводящий - Безносиков",
      "Лоскутова, Самойлов, Лоскутов"
     ],
     "people": [
@@ -1847,6 +1894,15 @@
       "times": null,
       "from": null,
       "role": "вводящийся",
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     },
+     {
+      "name": "Безносиков",
+      "times": null,
+      "from": null,
+      "role": "вводящий",
       "uncertain": false,
       "alts": [],
       "note": null

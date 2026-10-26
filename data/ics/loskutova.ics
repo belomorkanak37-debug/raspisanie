@@ -18,7 +18,7 @@ END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
 UID:2026-09-29-1100-t2zk61@raspisanie
-DTSTAMP:20261023T121100Z
+DTSTAMP:20261026T191600Z
 DTSTART;TZID=Europe/Moscow:20260929T110000
 DTEND;TZID=Europe/Moscow:20260929T120000
 SUMMARY:Ввод «Маша и медведи»
@@ -30,7 +30,7 @@ DESCRIPTION:Ввод в спектакль «Маша и медведи»
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-09-29-1430-t2zk61@raspisanie
-DTSTAMP:20261023T121100Z
+DTSTAMP:20261026T191600Z
 DTSTART;TZID=Europe/Moscow:20260929T143000
 DTEND;TZID=Europe/Moscow:20260929T153000
 SUMMARY:Ввод «Маша и медведи»
@@ -42,7 +42,7 @@ DESCRIPTION:Ввод в спектакль «Маша и медведи»
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-09-29-1500-5dus6@raspisanie
-DTSTAMP:20261023T121100Z
+DTSTAMP:20261026T191600Z
 DTSTART;TZID=Europe/Moscow:20260929T150000
 DTEND;TZID=Europe/Moscow:20260929T160000
 SUMMARY:Репетиция «Бармалей»
@@ -54,7 +54,7 @@ DESCRIPTION:Репетиция спектакля «Бармалей»\n
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-01-1100-1fugs7c@raspisanie
-DTSTAMP:20261023T121100Z
+DTSTAMP:20261026T191600Z
 DTSTART;TZID=Europe/Moscow:20261001T110000
 DTEND;TZID=Europe/Moscow:20261001T120000
 SUMMARY:Спектакль «Собачка»
@@ -64,7 +64,7 @@ DESCRIPTION:Спектакль «Собачка»\nТрунина\, Ло
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-01-1300-aq7k9r@raspisanie
-DTSTAMP:20261023T121100Z
+DTSTAMP:20261026T191600Z
 DTSTART;TZID=Europe/Moscow:20261001T130000
 DTEND;TZID=Europe/Moscow:20261001T140000
 SUMMARY:Сдача «Курочка ряба»
@@ -76,7 +76,7 @@ DESCRIPTION:Сдача А.С. спектакля «Курочка ряб
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-02-1230-l5f9v@raspisanie
-DTSTAMP:20261023T121100Z
+DTSTAMP:20261026T191600Z
 DTSTART;TZID=Europe/Moscow:20261002T123000
 DTEND;TZID=Europe/Moscow:20261002T133000
 SUMMARY:Собрание всего коллектива
@@ -85,7 +85,7 @@ DESCRIPTION:СОБРАНИЕ ВСЕГО КОЛЛЕКТИВА
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-15-1500-18re0zl@raspisanie
-DTSTAMP:20261023T121100Z
+DTSTAMP:20261026T191600Z
 DTSTART;TZID=Europe/Moscow:20261015T150000
 DTEND;TZID=Europe/Moscow:20261015T160000
 SUMMARY:Репетиция «Сказка о глупом мышонке
@@ -98,7 +98,7 @@ DESCRIPTION:Репетиция спектакля «Сказка о гл
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-17-1100-ij5ejw@raspisanie
-DTSTAMP:20261023T121100Z
+DTSTAMP:20261026T191600Z
 DTSTART;TZID=Europe/Moscow:20261017T110000
 DTEND;TZID=Europe/Moscow:20261017T120000
 SUMMARY:Спектакль «Краденое солнце»
@@ -109,7 +109,7 @@ DESCRIPTION:Спектакль «Краденое солнце»\nЛос
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-17-1300-ij5ejw@raspisanie
-DTSTAMP:20261023T121100Z
+DTSTAMP:20261026T191600Z
 DTSTART;TZID=Europe/Moscow:20261017T130000
 DTEND;TZID=Europe/Moscow:20261017T140000
 SUMMARY:Спектакль «Краденое солнце»
@@ -120,7 +120,7 @@ DESCRIPTION:Спектакль «Краденое солнце»\nЛос
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-17-1500-ij5ejw@raspisanie
-DTSTAMP:20261023T121100Z
+DTSTAMP:20261026T191600Z
 DTSTART;TZID=Europe/Moscow:20261017T150000
 DTEND;TZID=Europe/Moscow:20261017T160000
 SUMMARY:Спектакль «Краденое солнце»
@@ -130,114 +130,8 @@ DESCRIPTION:Спектакль «Краденое солнце»\nЛос
  к/свет: Звук\, свет
 END:VEVENT
 BEGIN:VEVENT
-UID:2026-10-21-1200-z1uvui@raspisanie
-DTSTAMP:20261023T121100Z
-DTSTART;TZID=Europe/Moscow:20261021T120000
-DTEND;TZID=Europe/Moscow:20261021T130000
-SUMMARY:Ввод «Конёк-горбунок»
-LOCATION:Старая сцена
-DESCRIPTION:Ввод в спектакль «Конёк-горбунок
- »\nВводящийся – Радыгин\nВводящий - Безн
- осиков\nЛоскутова\, Самойлов\, Лоскутов\n
- Звук/свет: Звук\, свет
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-10-22-1130-1ri7jfm@raspisanie
-DTSTAMP:20261023T121100Z
-DTSTART;TZID=Europe/Moscow:20261022T113000
-DTEND;TZID=Europe/Moscow:20261022T123000
-SUMMARY:Спектакль «Конёк-горбунок»
-LOCATION:Старая сцена
-DESCRIPTION:Спектакль «Конёк-горбунок»\nБезн
- осиков\, Лоскутова\, Самойлов\, Лоскутов
- \nЗвук/свет: Звук\, свет
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-10-22-1330-1ri7jfm@raspisanie
-DTSTAMP:20261023T121100Z
-DTSTART;TZID=Europe/Moscow:20261022T133000
-DTEND;TZID=Europe/Moscow:20261022T143000
-SUMMARY:Спектакль «Конёк-горбунок»
-LOCATION:Старая сцена
-DESCRIPTION:Спектакль «Конёк-горбунок»\nБезн
- осиков\, Лоскутова\, Самойлов\, Лоскутов
- \nЗвук/свет: Звук\, свет
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-10-24-1100-1xn9ady@raspisanie
-DTSTAMP:20261023T121100Z
-DTSTART;TZID=Europe/Moscow:20261024T110000
-DTEND;TZID=Europe/Moscow:20261024T120000
-SUMMARY:Спектакль «Сказка о глупом мышонке
- »
-LOCATION:Старая сцена
-DESCRIPTION:Спектакль «Сказка о глупом мышон
- ке»\nБеканова\, Трунина\, Глазецкая\, Гал
- устянц\, Лоскутова\nЗвук/свет: Звук\, све
- т
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-10-24-1300-1xn9ady@raspisanie
-DTSTAMP:20261023T121100Z
-DTSTART;TZID=Europe/Moscow:20261024T130000
-DTEND;TZID=Europe/Moscow:20261024T140000
-SUMMARY:Спектакль «Сказка о глупом мышонке
- »
-LOCATION:Старая сцена
-DESCRIPTION:Спектакль «Сказка о глупом мышон
- ке»\nБеканова\, Трунина\, Глазецкая\, Гал
- устянц\, Лоскутова\nЗвук/свет: Звук\, све
- т
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-10-24-1500-1xn9ady@raspisanie
-DTSTAMP:20261023T121100Z
-DTSTART;TZID=Europe/Moscow:20261024T150000
-DTEND;TZID=Europe/Moscow:20261024T160000
-SUMMARY:Спектакль «Сказка о глупом мышонке
- »
-LOCATION:Старая сцена
-DESCRIPTION:Спектакль «Сказка о глупом мышон
- ке»\nБеканова\, Трунина\, Глазецкая\, Гал
- устянц\, Лоскутова\nЗвук/свет: Звук\, све
- т
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-10-25-1100-1ty7xlr@raspisanie
-DTSTAMP:20261023T121100Z
-DTSTART;TZID=Europe/Moscow:20261025T110000
-DTEND;TZID=Europe/Moscow:20261025T120000
-SUMMARY:Спектакль «Звёздочка»
-LOCATION:Новая сцена
-DESCRIPTION:Спектакль «Звёздочка»\nБеканова\,
-  Лоскутова\, Чирочкина. Заяшников\, Носо
- в\nЗвук/свет: Звук\, свет
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-10-25-1300-1ty7xlr@raspisanie
-DTSTAMP:20261023T121100Z
-DTSTART;TZID=Europe/Moscow:20261025T130000
-DTEND;TZID=Europe/Moscow:20261025T140000
-SUMMARY:Спектакль «Звёздочка»
-LOCATION:Новая сцена
-DESCRIPTION:Спектакль «Звёздочка»\nБеканова\,
-  Лоскутова\, Чирочкина. Заяшников\, Носо
- в\nЗвук/свет: Звук\, свет
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-10-25-1500-1ty7xlr@raspisanie
-DTSTAMP:20261023T121100Z
-DTSTART;TZID=Europe/Moscow:20261025T150000
-DTEND;TZID=Europe/Moscow:20261025T160000
-SUMMARY:Спектакль «Звёздочка»
-LOCATION:Новая сцена
-DESCRIPTION:Спектакль «Звёздочка»\nБеканова\,
-  Лоскутова\, Чирочкина. Заяшников\, Носо
- в\nЗвук/свет: Звук\, свет
-END:VEVENT
-BEGIN:VEVENT
 UID:2026-10-28-1100-1ih3jwc@raspisanie
-DTSTAMP:20261023T121100Z
+DTSTAMP:20261026T191600Z
 DTSTART;TZID=Europe/Moscow:20261028T110000
 DTEND;TZID=Europe/Moscow:20261028T120000
 SUMMARY:Спектакль «Каштанка»
@@ -249,7 +143,7 @@ DESCRIPTION:Спектакль «Каштанка»\nБезносиков
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-28-1700-1ih3jwc@raspisanie
-DTSTAMP:20261023T121100Z
+DTSTAMP:20261026T191600Z
 DTSTART;TZID=Europe/Moscow:20261028T170000
 DTEND;TZID=Europe/Moscow:20261028T180000
 SUMMARY:Спектакль «Каштанка»
@@ -261,7 +155,7 @@ DESCRIPTION:Спектакль «Каштанка»\nБезносиков
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-29-1100-10amesw@raspisanie
-DTSTAMP:20261023T121100Z
+DTSTAMP:20261026T191600Z
 DTSTART;TZID=Europe/Moscow:20261029T110000
 DTEND;TZID=Europe/Moscow:20261029T130000
 SUMMARY:Репетиция «Агния Барто» · + сдача А.
@@ -274,7 +168,7 @@ DESCRIPTION:Репетиция спектакля «Агния Барто
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-31-1100-1nrwk50@raspisanie
-DTSTAMP:20261023T121100Z
+DTSTAMP:20261026T191600Z
 DTSTART;TZID=Europe/Moscow:20261031T110000
 DTEND;TZID=Europe/Moscow:20261031T120000
 SUMMARY:Спектакль «Палочка-выручалочка»
@@ -285,7 +179,7 @@ DESCRIPTION:Спектакль «Палочка-выручалочка»
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-31-1300-1nrwk50@raspisanie
-DTSTAMP:20261023T121100Z
+DTSTAMP:20261026T191600Z
 DTSTART;TZID=Europe/Moscow:20261031T130000
 DTEND;TZID=Europe/Moscow:20261031T140000
 SUMMARY:Спектакль «Палочка-выручалочка»
@@ -296,7 +190,7 @@ DESCRIPTION:Спектакль «Палочка-выручалочка»
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-31-1500-1nrwk50@raspisanie
-DTSTAMP:20261023T121100Z
+DTSTAMP:20261026T191600Z
 DTSTART;TZID=Europe/Moscow:20261031T150000
 DTEND;TZID=Europe/Moscow:20261031T160000
 SUMMARY:Спектакль «Палочка-выручалочка»
@@ -307,7 +201,7 @@ DESCRIPTION:Спектакль «Палочка-выручалочка»
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-11-01-1300-yunp5@raspisanie
-DTSTAMP:20261023T121100Z
+DTSTAMP:20261026T191600Z
 DTSTART;TZID=Europe/Moscow:20261101T130000
 DTEND;TZID=Europe/Moscow:20261101T140000
 SUMMARY:Выезд «Краденое солнце» · Выезд спе
@@ -319,7 +213,7 @@ DESCRIPTION:Выезд спектакля «Краденое солнце
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-11-03-1200-tczztt@raspisanie
-DTSTAMP:20261023T121100Z
+DTSTAMP:20261026T191600Z
 DTSTART;TZID=Europe/Moscow:20261103T120000
 DTEND;TZID=Europe/Moscow:20261103T130000
 SUMMARY:Репетиция «Кошкин дом» · + сдача А.С.
@@ -332,7 +226,7 @@ DESCRIPTION:Репетиция спектакля «Кошкин дом»
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-11-04-1100-wsmc0l@raspisanie
-DTSTAMP:20261023T121100Z
+DTSTAMP:20261026T191600Z
 DTSTART;TZID=Europe/Moscow:20261104T110000
 DTEND;TZID=Europe/Moscow:20261104T120000
 SUMMARY:Спектакль ««Кошкин дом»
@@ -344,7 +238,7 @@ DESCRIPTION:Спектакль ««Кошкин дом»\nСоветов/
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-11-04-1300-wsmc0l@raspisanie
-DTSTAMP:20261023T121100Z
+DTSTAMP:20261026T191600Z
 DTSTART;TZID=Europe/Moscow:20261104T130000
 DTEND;TZID=Europe/Moscow:20261104T140000
 SUMMARY:Спектакль ««Кошкин дом»
@@ -356,7 +250,7 @@ DESCRIPTION:Спектакль ««Кошкин дом»\nСоветов/
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-11-04-1500-wsmc0l@raspisanie
-DTSTAMP:20261023T121100Z
+DTSTAMP:20261026T191600Z
 DTSTART;TZID=Europe/Moscow:20261104T150000
 DTEND;TZID=Europe/Moscow:20261104T160000
 SUMMARY:Спектакль ««Кошкин дом»
@@ -368,7 +262,7 @@ DESCRIPTION:Спектакль ««Кошкин дом»\nСоветов/
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-11-05-1200-1hjzj09@raspisanie
-DTSTAMP:20261023T121100Z
+DTSTAMP:20261026T191600Z
 DTSTART;TZID=Europe/Moscow:20261105T120000
 DTEND;TZID=Europe/Moscow:20261105T130000
 SUMMARY:Репетиция «Красная Шапочка» · + сда
@@ -381,7 +275,7 @@ DESCRIPTION:Репетиция спектакля «Красная Шап
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-11-06-1100-1ih3jwc@raspisanie
-DTSTAMP:20261023T121100Z
+DTSTAMP:20261026T191600Z
 DTSTART;TZID=Europe/Moscow:20261106T110000
 DTEND;TZID=Europe/Moscow:20261106T120000
 SUMMARY:Спектакль «Каштанка»
@@ -393,7 +287,7 @@ DESCRIPTION:Спектакль «Каштанка»\nБеканова\,
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-11-06-1800-1ih3jwc@raspisanie
-DTSTAMP:20261023T121100Z
+DTSTAMP:20261026T191600Z
 DTSTART;TZID=Europe/Moscow:20261106T180000
 DTEND;TZID=Europe/Moscow:20261106T190000
 SUMMARY:Спектакль «Каштанка»
@@ -405,7 +299,7 @@ DESCRIPTION:Спектакль «Каштанка»\nБеканова\,
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-11-07-1100-1pvjzs6@raspisanie
-DTSTAMP:20261023T121100Z
+DTSTAMP:20261026T191600Z
 DTSTART;TZID=Europe/Moscow:20261107T110000
 DTEND;TZID=Europe/Moscow:20261107T120000
 SUMMARY:Спектакль «Красная Шапочка»
@@ -417,7 +311,7 @@ DESCRIPTION:Спектакль «Красная Шапочка»\nСов
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-11-07-1300-1pvjzs6@raspisanie
-DTSTAMP:20261023T121100Z
+DTSTAMP:20261026T191600Z
 DTSTART;TZID=Europe/Moscow:20261107T130000
 DTEND;TZID=Europe/Moscow:20261107T140000
 SUMMARY:Спектакль «Красная Шапочка»
@@ -429,7 +323,7 @@ DESCRIPTION:Спектакль «Красная Шапочка»\nСов
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-11-07-1500-1pvjzs6@raspisanie
-DTSTAMP:20261023T121100Z
+DTSTAMP:20261026T191600Z
 DTSTART;TZID=Europe/Moscow:20261107T150000
 DTEND;TZID=Europe/Moscow:20261107T160000
 SUMMARY:Спектакль «Красная Шапочка»
@@ -441,7 +335,7 @@ DESCRIPTION:Спектакль «Красная Шапочка»\nСов
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-11-08-1100-sbscg3@raspisanie
-DTSTAMP:20261023T121100Z
+DTSTAMP:20261026T191600Z
 DTSTART;TZID=Europe/Moscow:20261108T110000
 DTEND;TZID=Europe/Moscow:20261108T120000
 SUMMARY:Спектакль «Агния Барто и др»
@@ -452,7 +346,7 @@ DESCRIPTION:Спектакль «Агния Барто и др»\nЛос
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-11-08-1300-sbscg3@raspisanie
-DTSTAMP:20261023T121100Z
+DTSTAMP:20261026T191600Z
 DTSTART;TZID=Europe/Moscow:20261108T130000
 DTEND;TZID=Europe/Moscow:20261108T140000
 SUMMARY:Спектакль «Агния Барто и др»
@@ -463,7 +357,7 @@ DESCRIPTION:Спектакль «Агния Барто и др»\nЛос
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-11-08-1500-sbscg3@raspisanie
-DTSTAMP:20261023T121100Z
+DTSTAMP:20261026T191600Z
 DTSTART;TZID=Europe/Moscow:20261108T150000
 DTEND;TZID=Europe/Moscow:20261108T160000
 SUMMARY:Спектакль «Агния Барто и др»
@@ -474,7 +368,7 @@ DESCRIPTION:Спектакль «Агния Барто и др»\nЛос
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-11-11-1100-1ih3jwc@raspisanie
-DTSTAMP:20261023T121100Z
+DTSTAMP:20261026T191600Z
 DTSTART;TZID=Europe/Moscow:20261111T110000
 DTEND;TZID=Europe/Moscow:20261111T120000
 SUMMARY:Спектакль «Каштанка»
@@ -486,7 +380,7 @@ DESCRIPTION:Спектакль «Каштанка»\nКожев\, Бек
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-11-13-1100-c33i7@raspisanie
-DTSTAMP:20261023T121100Z
+DTSTAMP:20261026T191600Z
 DTSTART;TZID=Europe/Moscow:20261113T110000
 DTEND;TZID=Europe/Moscow:20261113T120000
 SUMMARY:Спектакль «Заинька»
@@ -497,7 +391,7 @@ DESCRIPTION:Спектакль «Заинька»\nЛоскутов. Ло
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-11-15-1100-1j396w1@raspisanie
-DTSTAMP:20261023T121100Z
+DTSTAMP:20261026T191600Z
 DTSTART;TZID=Europe/Moscow:20261115T110000
 DTEND;TZID=Europe/Moscow:20261115T120000
 SUMMARY:Спектакль «Бармалей»
@@ -509,7 +403,7 @@ DESCRIPTION:Спектакль «Бармалей»\nМартюшева\,
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-11-15-1300-1j396w1@raspisanie
-DTSTAMP:20261023T121100Z
+DTSTAMP:20261026T191600Z
 DTSTART;TZID=Europe/Moscow:20261115T130000
 DTEND;TZID=Europe/Moscow:20261115T140000
 SUMMARY:Спектакль «Бармалей»
@@ -518,5 +412,111 @@ DESCRIPTION:Спектакль «Бармалей»\nМартюшева\,
   Самойлов\, Галустянц\, Носов\, Лоскутова
   (11:00 и 13:00)\, Глазецкая (15:00)\nЗвук/свет: Зв
  ук\, свет
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-21-1200-z1uvui@raspisanie
+DTSTAMP:20261026T191600Z
+DTSTART;TZID=Europe/Moscow:20261021T120000
+DTEND;TZID=Europe/Moscow:20261021T130000
+SUMMARY:Ввод «Конёк-горбунок»
+LOCATION:Старая сцена
+DESCRIPTION:Ввод в спектакль «Конёк-горбунок
+ »\nВводящийся – Радыгин\nВводящий - Безн
+ осиков\nЛоскутова\, Самойлов\, Лоскутов\n
+ Звук/свет: Звук\, свет
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-22-1130-1ri7jfm@raspisanie
+DTSTAMP:20261026T191600Z
+DTSTART;TZID=Europe/Moscow:20261022T113000
+DTEND;TZID=Europe/Moscow:20261022T123000
+SUMMARY:Спектакль «Конёк-горбунок»
+LOCATION:Старая сцена
+DESCRIPTION:Спектакль «Конёк-горбунок»\nБезн
+ осиков\, Лоскутова\, Самойлов\, Лоскутов
+ \nЗвук/свет: Звук\, свет
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-22-1330-1ri7jfm@raspisanie
+DTSTAMP:20261026T191600Z
+DTSTART;TZID=Europe/Moscow:20261022T133000
+DTEND;TZID=Europe/Moscow:20261022T143000
+SUMMARY:Спектакль «Конёк-горбунок»
+LOCATION:Старая сцена
+DESCRIPTION:Спектакль «Конёк-горбунок»\nБезн
+ осиков\, Лоскутова\, Самойлов\, Лоскутов
+ \nЗвук/свет: Звук\, свет
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-24-1100-1xn9ady@raspisanie
+DTSTAMP:20261026T191600Z
+DTSTART;TZID=Europe/Moscow:20261024T110000
+DTEND;TZID=Europe/Moscow:20261024T120000
+SUMMARY:Спектакль «Сказка о глупом мышонке
+ »
+LOCATION:Старая сцена
+DESCRIPTION:Спектакль «Сказка о глупом мышон
+ ке»\nБеканова\, Трунина\, Глазецкая\, Гал
+ устянц\, Лоскутова\nЗвук/свет: Звук\, све
+ т
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-24-1300-1xn9ady@raspisanie
+DTSTAMP:20261026T191600Z
+DTSTART;TZID=Europe/Moscow:20261024T130000
+DTEND;TZID=Europe/Moscow:20261024T140000
+SUMMARY:Спектакль «Сказка о глупом мышонке
+ »
+LOCATION:Старая сцена
+DESCRIPTION:Спектакль «Сказка о глупом мышон
+ ке»\nБеканова\, Трунина\, Глазецкая\, Гал
+ устянц\, Лоскутова\nЗвук/свет: Звук\, све
+ т
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-24-1500-1xn9ady@raspisanie
+DTSTAMP:20261026T191600Z
+DTSTART;TZID=Europe/Moscow:20261024T150000
+DTEND;TZID=Europe/Moscow:20261024T160000
+SUMMARY:Спектакль «Сказка о глупом мышонке
+ »
+LOCATION:Старая сцена
+DESCRIPTION:Спектакль «Сказка о глупом мышон
+ ке»\nБеканова\, Трунина\, Глазецкая\, Гал
+ устянц\, Лоскутова\nЗвук/свет: Звук\, све
+ т
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-25-1100-1ty7xlr@raspisanie
+DTSTAMP:20261026T191600Z
+DTSTART;TZID=Europe/Moscow:20261025T110000
+DTEND;TZID=Europe/Moscow:20261025T120000
+SUMMARY:Спектакль «Звёздочка»
+LOCATION:Новая сцена
+DESCRIPTION:Спектакль «Звёздочка»\nБеканова\,
+  Лоскутова\, Чирочкина. Заяшников\, Носо
+ в\nЗвук/свет: Звук\, свет
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-25-1300-1ty7xlr@raspisanie
+DTSTAMP:20261026T191600Z
+DTSTART;TZID=Europe/Moscow:20261025T130000
+DTEND;TZID=Europe/Moscow:20261025T140000
+SUMMARY:Спектакль «Звёздочка»
+LOCATION:Новая сцена
+DESCRIPTION:Спектакль «Звёздочка»\nБеканова\,
+  Лоскутова\, Чирочкина. Заяшников\, Носо
+ в\nЗвук/свет: Звук\, свет
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-25-1500-1ty7xlr@raspisanie
+DTSTAMP:20261026T191600Z
+DTSTART;TZID=Europe/Moscow:20261025T150000
+DTEND;TZID=Europe/Moscow:20261025T160000
+SUMMARY:Спектакль «Звёздочка»
+LOCATION:Новая сцена
+DESCRIPTION:Спектакль «Звёздочка»\nБеканова\,
+  Лоскутова\, Чирочкина. Заяшников\, Носо
+ в\nЗвук/свет: Звук\, свет
 END:VEVENT
 END:VCALENDAR
