@@ -4,7 +4,7 @@
  "end": "2026-11-15",
  "title": "9–15 ноября",
  "header": "ПЛАН РАБОТЫ На НОЯБРЬ 2026 года",
- "source": "Расписание с  9 ноября по 15 ноября(1).pdf",
+ "source": "Расписание с  9 ноября по 15 ноября-1.pdf",
  "days": [
   "2026-11-09",
   "2026-11-10",
@@ -391,7 +391,7 @@
    "place": "Старая сцена",
    "tech": "Звук, свет",
    "lines": [
-    "Заяшников, Разуваева, Галустянц, Чирочкина, Баранов, Мартюшева"
+    "Заяшников, Разуваева, Лоскутова, Чирочкина, Лоскутов, Мартюшева"
    ],
    "people": [
     {
@@ -413,7 +413,7 @@
      "note": null
     },
     {
-     "name": "Галустянц",
+     "name": "Лоскутова",
      "times": null,
      "from": null,
      "role": null,
@@ -431,7 +431,7 @@
      "note": null
     },
     {
-     "name": "Баранов",
+     "name": "Лоскутов",
      "times": null,
      "from": null,
      "role": null,
@@ -547,7 +547,7 @@
    "place": "Новая сцена",
    "tech": "Звук, свет",
    "lines": [
-    "Лоскутов. Лоскутова, Заяшников"
+    "Лоскутов, Лоскутова, Заяшников"
    ],
    "people": [
     {
@@ -590,6 +590,80 @@
   },
   {
    "id": "e10",
+   "date": "2026-11-13",
+   "timeText": "13:00",
+   "times": [
+    "13:00"
+   ],
+   "range": null,
+   "timeUncertain": false,
+   "title": "Ввод в спектакль «Удивительное путешествие Нильса с дикими гусями»",
+   "kind": "intro",
+   "place": "Старая сцена",
+   "tech": "Звук",
+   "lines": [
+    "Вводящаяся –Миронова; вводящая - Беканова",
+    "Трунина, Баранов, Кожев"
+   ],
+   "people": [
+    {
+     "name": "Миронова",
+     "times": null,
+     "from": null,
+     "role": "вводящаяся",
+     "uncertain": false,
+     "alts": [],
+     "note": null
+    },
+    {
+     "name": "Беканова",
+     "times": null,
+     "from": null,
+     "role": "вводящая",
+     "uncertain": false,
+     "alts": [],
+     "note": null
+    },
+    {
+     "name": "Трунина",
+     "times": null,
+     "from": null,
+     "role": null,
+     "uncertain": false,
+     "alts": [],
+     "note": null
+    },
+    {
+     "name": "Баранов",
+     "times": null,
+     "from": null,
+     "role": null,
+     "uncertain": false,
+     "alts": [],
+     "note": null
+    },
+    {
+     "name": "Кожев",
+     "times": null,
+     "from": null,
+     "role": null,
+     "uncertain": false,
+     "alts": [],
+     "note": null
+    }
+   ],
+   "scope": "people",
+   "accounting": {
+    "showWeight": 0,
+    "baby": false,
+    "halfFor": [],
+    "away": false,
+    "studio": false,
+    "intro": true
+   }
+  },
+  {
+   "id": "e11",
    "date": "2026-11-13",
    "timeText": "14:00",
    "times": [
@@ -663,7 +737,7 @@
    }
   },
   {
-   "id": "e11",
+   "id": "e12",
    "date": "2026-11-13",
    "timeText": "18:00",
    "times": [
@@ -727,7 +801,7 @@
    }
   },
   {
-   "id": "e12",
+   "id": "e13",
    "date": "2026-11-14",
    "timeText": "11:00 13:00 15:00",
    "times": [
@@ -802,7 +876,7 @@
    }
   },
   {
-   "id": "e13",
+   "id": "e14",
    "date": "2026-11-14",
    "timeText": "11:00 13:00 15:00",
    "times": [
@@ -859,7 +933,7 @@
    }
   },
   {
-   "id": "e14",
+   "id": "e15",
    "date": "2026-11-15",
    "timeText": "11:00 13:00 15:00",
    "times": [
@@ -874,7 +948,7 @@
    "place": "Старая сцена",
    "tech": "Звук, свет",
    "lines": [
-    "Мартюшева, Самойлов, Галустянц, Носов, Лоскутова (11:00 и 13:00), Глазецкая (15:00)"
+    "Мартюшева, Самойлов, Галустянц, Носов, Лоскутова (11:00 и 13:00), Трунина (15:00)"
    ],
    "people": [
     {
@@ -926,7 +1000,7 @@
      "note": null
     },
     {
-     "name": "Глазецкая",
+     "name": "Трунина",
      "times": [
       "15:00"
      ],
@@ -948,7 +1022,7 @@
    }
   },
   {
-   "id": "e15",
+   "id": "e16",
    "date": "2026-11-15",
    "timeText": "11:00 13:00 15:00",
    "times": [
@@ -1028,12 +1102,12 @@
    }
   }
  ],
- "version": 2,
- "updatedAt": "2026-10-27T16:01:42.639Z",
+ "version": 3,
+ "updatedAt": "2026-11-01T15:11:21.949Z",
  "pdf": "data/pdf/2026-11-09.pdf",
  "previous": {
-  "version": 1,
-  "updatedAt": "2026-10-23T12:11:56.784Z",
+  "version": 2,
+  "updatedAt": "2026-10-27T16:01:42.639Z",
   "events": [
    {
     "id": "e1",
@@ -1054,6 +1128,7 @@
      "baby": false,
      "halfFor": [],
      "away": false,
+     "studio": false,
      "intro": false
     }
    },
@@ -1108,6 +1183,7 @@
      "baby": false,
      "halfFor": [],
      "away": false,
+     "studio": false,
      "intro": false
     }
    },
@@ -1120,35 +1196,35 @@
     ],
     "range": null,
     "timeUncertain": false,
-    "title": "Ввод в спектакль «Тараканище»",
+    "title": "Ввод в спектакль «Солнышко и снежные человечки»",
     "kind": "intro",
     "place": "Старая сцена",
     "tech": "Звук",
     "lines": [
-     "Вводящийся –Шаймиев; вводящий - Кожев",
-     "Беканова, Лоскутов, Галустянц, Баранов"
+     "Вводящаяся –Разуваева; вводящая - Глазецкая",
+     "Трунина, Лоскутов, Галустянц"
     ],
     "people": [
      {
-      "name": "Шаймиев",
+      "name": "Разуваева",
       "times": null,
       "from": null,
-      "role": "вводящийся",
+      "role": "вводящаяся",
       "uncertain": false,
       "alts": [],
       "note": null
      },
      {
-      "name": "Кожев",
+      "name": "Глазецкая",
       "times": null,
       "from": null,
-      "role": "вводящий",
+      "role": "вводящая",
       "uncertain": false,
       "alts": [],
       "note": null
      },
      {
-      "name": "Беканова",
+      "name": "Трунина",
       "times": null,
       "from": null,
       "role": null,
@@ -1173,15 +1249,6 @@
       "uncertain": false,
       "alts": [],
       "note": null
-     },
-     {
-      "name": "Баранов",
-      "times": null,
-      "from": null,
-      "role": null,
-      "uncertain": false,
-      "alts": [],
-      "note": null
      }
     ],
     "scope": "people",
@@ -1190,6 +1257,7 @@
      "baby": false,
      "halfFor": [],
      "away": false,
+     "studio": false,
      "intro": true
     }
    },
@@ -1289,6 +1357,7 @@
      "baby": false,
      "halfFor": [],
      "away": false,
+     "studio": false,
      "intro": false
     }
    },
@@ -1343,6 +1412,7 @@
      "baby": false,
      "halfFor": [],
      "away": false,
+     "studio": false,
      "intro": false
     }
    },
@@ -1397,6 +1467,7 @@
      "baby": false,
      "halfFor": [],
      "away": false,
+     "studio": false,
      "intro": false
     }
    },
@@ -1478,6 +1549,7 @@
      "baby": false,
      "halfFor": [],
      "away": false,
+     "studio": false,
      "intro": false
     }
    },
@@ -1551,6 +1623,7 @@
      "baby": false,
      "halfFor": [],
      "away": false,
+     "studio": false,
      "intro": false
     }
    },
@@ -1605,6 +1678,7 @@
      "baby": false,
      "halfFor": [],
      "away": false,
+     "studio": false,
      "intro": false
     }
    },
@@ -1678,6 +1752,7 @@
      "baby": false,
      "halfFor": [],
      "away": false,
+     "studio": false,
      "intro": false
     }
    },
@@ -1741,6 +1816,7 @@
      "baby": false,
      "halfFor": [],
      "away": false,
+     "studio": false,
      "intro": false
     }
    },
@@ -1815,6 +1891,7 @@
      "baby": false,
      "halfFor": [],
      "away": false,
+     "studio": false,
      "intro": false
     }
    },
@@ -1871,6 +1948,7 @@
      "baby": false,
      "halfFor": [],
      "away": false,
+     "studio": false,
      "intro": false
     }
    },
@@ -1959,6 +2037,7 @@
      "baby": false,
      "halfFor": [],
      "away": false,
+     "studio": false,
      "intro": false
     }
    },
@@ -2038,6 +2117,7 @@
      "baby": false,
      "halfFor": [],
      "away": false,
+     "studio": false,
      "intro": false
     }
    }
