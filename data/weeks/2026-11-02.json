@@ -100,7 +100,7 @@
    ],
    "range": null,
    "timeUncertain": false,
-   "title": "Репетиция спектакля «Кошкин дом» + сдача А.С.",
+   "title": "Репетиция спектакля «Кошкин дом» + 15:00 сдача А.С.",
    "kind": "rehearsal",
    "place": "Старая сцена",
    "tech": "Звук, свет",
@@ -464,7 +464,7 @@
    ],
    "range": null,
    "timeUncertain": false,
-   "title": "Репетиция спектакля «Красная Шапочка» + сдача А.С.",
+   "title": "Репетиция спектакля «Красная Шапочка» + 14:30 сдача А.С.",
    "kind": "rehearsal",
    "place": "Старая сцена",
    "tech": "Звук",
@@ -533,6 +533,7 @@
     "baby": false,
     "halfFor": [],
     "away": false,
+    "studio": false,
     "intro": false
    }
   },
@@ -1030,12 +1031,12 @@
    }
   }
  ],
- "version": 2,
- "updatedAt": "2026-11-01T05:55:43.978Z",
+ "version": 3,
+ "updatedAt": "2026-11-02T13:32:06.347Z",
  "pdf": "data/pdf/2026-11-02.pdf",
  "previous": {
-  "version": 1,
-  "updatedAt": "2026-10-19T14:04:31.704Z",
+  "version": 2,
+  "updatedAt": "2026-11-01T05:55:43.978Z",
   "events": [
    {
     "id": "e1",
@@ -1127,7 +1128,7 @@
     "place": "Старая сцена",
     "tech": "Звук, свет",
     "lines": [
-     "Советов, Кожев, Самойлов, Галустянц, Трунина, Баранов, Глазецкая, Радыгин, Лоскутова"
+     "Советов, Кожев, Самойлов, Галустянц, Трунина, Баранов, Глазецкая, Радыгин, Лоскутова, Безносиков"
     ],
     "people": [
      {
@@ -1210,6 +1211,15 @@
       "uncertain": false,
       "alts": [],
       "note": null
+     },
+     {
+      "name": "Безносиков",
+      "times": null,
+      "from": null,
+      "role": null,
+      "uncertain": false,
+      "alts": [],
+      "note": null
      }
     ],
     "scope": "people",
@@ -1218,6 +1228,7 @@
      "baby": false,
      "halfFor": [],
      "away": false,
+     "studio": false,
      "intro": false
     }
    },
