@@ -1,0 +1,70 @@
+{
+ "id": "2026-11-23",
+ "start": "2026-11-23",
+ "end": "2026-11-29",
+ "title": "23–29 ноября",
+ "header": "",
+ "source": "",
+ "days": [
+  "2026-11-23",
+  "2026-11-24",
+  "2026-11-25",
+  "2026-11-26",
+  "2026-11-27",
+  "2026-11-28",
+  "2026-11-29"
+ ],
+ "events": [
+  {
+   "id": "nmw2m9ufsbz4c68",
+   "date": "2026-11-29",
+   "timeText": "18:30",
+   "times": [
+    "18:30"
+   ],
+   "range": null,
+   "timeUncertain": false,
+   "title": "Детская студия",
+   "kind": "studio",
+   "place": "",
+   "tech": "",
+   "lines": [
+    "Мартюшева,Безносиков"
+   ],
+   "people": [
+    {
+     "name": "Мартюшева",
+     "times": null,
+     "from": null,
+     "role": null,
+     "uncertain": false,
+     "alts": [],
+     "note": null
+    },
+    {
+     "name": "Безносиков",
+     "times": null,
+     "from": null,
+     "role": null,
+     "uncertain": false,
+     "alts": [],
+     "note": null
+    }
+   ],
+   "scope": "people",
+   "accounting": {
+    "showWeight": 0,
+    "baby": false,
+    "halfFor": [],
+    "away": false,
+    "studio": true,
+    "intro": false
+   },
+   "manual": true
+  }
+ ],
+ "pdf": null,
+ "version": 1,
+ "updatedAt": "2026-11-04T21:16:30.158Z",
+ "previous": null
+}
