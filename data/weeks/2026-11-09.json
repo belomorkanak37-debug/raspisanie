@@ -1100,14 +1100,61 @@
     "studio": false,
     "intro": false
    }
+  },
+  {
+   "id": "nmw2m7kwq5g39ju",
+   "date": "2026-11-15",
+   "timeText": "18:30",
+   "times": [
+    "18:30"
+   ],
+   "range": null,
+   "timeUncertain": false,
+   "title": "Детская студия",
+   "kind": "studio",
+   "place": "",
+   "tech": "",
+   "lines": [
+    "Мартюшева,Безносиков"
+   ],
+   "people": [
+    {
+     "name": "Мартюшева",
+     "times": null,
+     "from": null,
+     "role": null,
+     "uncertain": false,
+     "alts": [],
+     "note": null
+    },
+    {
+     "name": "Безносиков",
+     "times": null,
+     "from": null,
+     "role": null,
+     "uncertain": false,
+     "alts": [],
+     "note": null
+    }
+   ],
+   "scope": "people",
+   "accounting": {
+    "showWeight": 0,
+    "baby": false,
+    "halfFor": [],
+    "away": false,
+    "studio": true,
+    "intro": false
+   },
+   "manual": true
   }
  ],
- "version": 3,
- "updatedAt": "2026-11-01T15:11:21.949Z",
+ "version": 4,
+ "updatedAt": "2026-11-04T21:15:15.744Z",
  "pdf": "data/pdf/2026-11-09.pdf",
  "previous": {
-  "version": 2,
-  "updatedAt": "2026-10-27T16:01:42.639Z",
+  "version": 3,
+  "updatedAt": "2026-11-01T15:11:21.949Z",
   "events": [
    {
     "id": "e1",
@@ -1485,7 +1532,7 @@
     "place": "Старая сцена",
     "tech": "Звук, свет",
     "lines": [
-     "Заяшников, Разуваева, Галустянц, Чирочкина, Баранов, Мартюшева"
+     "Заяшников, Разуваева, Лоскутова, Чирочкина, Лоскутов, Мартюшева"
     ],
     "people": [
      {
@@ -1507,7 +1554,7 @@
       "note": null
      },
      {
-      "name": "Галустянц",
+      "name": "Лоскутова",
       "times": null,
       "from": null,
       "role": null,
@@ -1525,7 +1572,7 @@
       "note": null
      },
      {
-      "name": "Баранов",
+      "name": "Лоскутов",
       "times": null,
       "from": null,
       "role": null,
@@ -1641,7 +1688,7 @@
     "place": "Новая сцена",
     "tech": "Звук, свет",
     "lines": [
-     "Лоскутов. Лоскутова, Заяшников"
+     "Лоскутов, Лоскутова, Заяшников"
     ],
     "people": [
      {
@@ -1684,6 +1731,80 @@
    },
    {
     "id": "e10",
+    "date": "2026-11-13",
+    "timeText": "13:00",
+    "times": [
+     "13:00"
+    ],
+    "range": null,
+    "timeUncertain": false,
+    "title": "Ввод в спектакль «Удивительное путешествие Нильса с дикими гусями»",
+    "kind": "intro",
+    "place": "Старая сцена",
+    "tech": "Звук",
+    "lines": [
+     "Вводящаяся –Миронова; вводящая - Беканова",
+     "Трунина, Баранов, Кожев"
+    ],
+    "people": [
+     {
+      "name": "Миронова",
+      "times": null,
+      "from": null,
+      "role": "вводящаяся",
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     },
+     {
+      "name": "Беканова",
+      "times": null,
+      "from": null,
+      "role": "вводящая",
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     },
+     {
+      "name": "Трунина",
+      "times": null,
+      "from": null,
+      "role": null,
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     },
+     {
+      "name": "Баранов",
+      "times": null,
+      "from": null,
+      "role": null,
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     },
+     {
+      "name": "Кожев",
+      "times": null,
+      "from": null,
+      "role": null,
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     }
+    ],
+    "scope": "people",
+    "accounting": {
+     "showWeight": 0,
+     "baby": false,
+     "halfFor": [],
+     "away": false,
+     "studio": false,
+     "intro": true
+    }
+   },
+   {
+    "id": "e11",
     "date": "2026-11-13",
     "timeText": "14:00",
     "times": [
@@ -1757,7 +1878,7 @@
     }
    },
    {
-    "id": "e11",
+    "id": "e12",
     "date": "2026-11-13",
     "timeText": "18:00",
     "times": [
@@ -1821,7 +1942,7 @@
     }
    },
    {
-    "id": "e12",
+    "id": "e13",
     "date": "2026-11-14",
     "timeText": "11:00 13:00 15:00",
     "times": [
@@ -1896,7 +2017,7 @@
     }
    },
    {
-    "id": "e13",
+    "id": "e14",
     "date": "2026-11-14",
     "timeText": "11:00 13:00 15:00",
     "times": [
@@ -1953,7 +2074,7 @@
     }
    },
    {
-    "id": "e14",
+    "id": "e15",
     "date": "2026-11-15",
     "timeText": "11:00 13:00 15:00",
     "times": [
@@ -1968,7 +2089,7 @@
     "place": "Старая сцена",
     "tech": "Звук, свет",
     "lines": [
-     "Мартюшева, Самойлов, Галустянц, Носов, Лоскутова (11:00 и 13:00), Глазецкая (15:00)"
+     "Мартюшева, Самойлов, Галустянц, Носов, Лоскутова (11:00 и 13:00), Трунина (15:00)"
     ],
     "people": [
      {
@@ -2020,7 +2141,7 @@
       "note": null
      },
      {
-      "name": "Глазецкая",
+      "name": "Трунина",
       "times": [
        "15:00"
       ],
@@ -2042,7 +2163,7 @@
     }
    },
    {
-    "id": "e15",
+    "id": "e16",
     "date": "2026-11-15",
     "timeText": "11:00 13:00 15:00",
     "times": [

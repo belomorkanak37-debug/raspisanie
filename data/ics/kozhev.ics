@@ -18,7 +18,7 @@ END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
 UID:2026-09-29-1100-t2zk61@raspisanie
-DTSTAMP:20261104T211300Z
+DTSTAMP:20261104T211500Z
 DTSTART;TZID=Europe/Moscow:20260929T110000
 DTEND;TZID=Europe/Moscow:20260929T120000
 SUMMARY:Ввод «Маша и медведи» (вводящий)
@@ -30,7 +30,7 @@ DESCRIPTION:Ввод в спектакль «Маша и медведи»
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-09-29-1430-t2zk61@raspisanie
-DTSTAMP:20261104T211300Z
+DTSTAMP:20261104T211500Z
 DTSTART;TZID=Europe/Moscow:20260929T143000
 DTEND;TZID=Europe/Moscow:20260929T153000
 SUMMARY:Ввод «Маша и медведи» (вводящий)
@@ -42,7 +42,7 @@ DESCRIPTION:Ввод в спектакль «Маша и медведи»
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-09-30-1500-t2zk61@raspisanie
-DTSTAMP:20261104T211300Z
+DTSTAMP:20261104T211500Z
 DTSTART;TZID=Europe/Moscow:20260930T150000
 DTEND;TZID=Europe/Moscow:20260930T160000
 SUMMARY:Ввод «Маша и медведи» (вводящий)
@@ -54,7 +54,7 @@ DESCRIPTION:Ввод в спектакль «Маша и медведи»
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-01-1500-1fd518o@raspisanie
-DTSTAMP:20261104T211300Z
+DTSTAMP:20261104T211500Z
 DTSTART;TZID=Europe/Moscow:20261001T150000
 DTEND;TZID=Europe/Moscow:20261001T160000
 SUMMARY:Репетиция «Звёздочка»
@@ -65,7 +65,7 @@ DESCRIPTION:Репетиция спектакля «Звёздочка»
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-02-1230-l5f9v@raspisanie
-DTSTAMP:20261104T211300Z
+DTSTAMP:20261104T211500Z
 DTSTART;TZID=Europe/Moscow:20261002T123000
 DTEND;TZID=Europe/Moscow:20261002T133000
 SUMMARY:Собрание всего коллектива
@@ -74,7 +74,7 @@ DESCRIPTION:СОБРАНИЕ ВСЕГО КОЛЛЕКТИВА
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-02-1430-1d49a9z@raspisanie
-DTSTAMP:20261104T211300Z
+DTSTAMP:20261104T211500Z
 DTSTART;TZID=Europe/Moscow:20261002T143000
 DTEND;TZID=Europe/Moscow:20261002T153000
 SUMMARY:Репетиция «Медведь в своём реперту
@@ -87,7 +87,7 @@ DESCRIPTION:Репетиция спектакля «Медведь в с
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-02-1800-pzasw@raspisanie
-DTSTAMP:20261104T211300Z
+DTSTAMP:20261104T211500Z
 DTSTART;TZID=Europe/Moscow:20261002T180000
 DTEND;TZID=Europe/Moscow:20261002T190000
 SUMMARY:Спектакль «Медведь в своём реперту
@@ -99,7 +99,7 @@ DESCRIPTION:Спектакль «Медведь в своём репер
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-08-1200-f0s38s@raspisanie
-DTSTAMP:20261104T211300Z
+DTSTAMP:20261104T211500Z
 DTSTART;TZID=Europe/Moscow:20261008T120000
 DTEND;TZID=Europe/Moscow:20261008T130000
 SUMMARY:Ввод «Палочка-выручалочка»
@@ -111,7 +111,7 @@ DESCRIPTION:Ввод в спектакль «Палочка-выруча
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-09-1300-hncdcq@raspisanie
-DTSTAMP:20261104T211300Z
+DTSTAMP:20261104T211500Z
 DTSTART;TZID=Europe/Moscow:20261009T130000
 DTEND;TZID=Europe/Moscow:20261009T140000
 SUMMARY:Репетиция «Золушка» · + 15:00 – сдача 
@@ -124,7 +124,7 @@ DESCRIPTION:Репетиция спектакля «Золушка» + 15
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-09-1800-1s7c52g@raspisanie
-DTSTAMP:20261104T211300Z
+DTSTAMP:20261104T211500Z
 DTSTART;TZID=Europe/Moscow:20261009T180000
 DTEND;TZID=Europe/Moscow:20261009T190000
 SUMMARY:Спектакль «Золушка»
@@ -135,7 +135,7 @@ DESCRIPTION:Спектакль «Золушка»\nМиронова\, К
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-10-1100-c3sa16@raspisanie
-DTSTAMP:20261104T211300Z
+DTSTAMP:20261104T211500Z
 DTSTART;TZID=Europe/Moscow:20261010T110000
 DTEND;TZID=Europe/Moscow:20261010T120000
 SUMMARY:Спектакль «Тараканище»
@@ -146,7 +146,7 @@ DESCRIPTION:Спектакль «Тараканище»\nКожев\, Б
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-10-1300-c3sa16@raspisanie
-DTSTAMP:20261104T211300Z
+DTSTAMP:20261104T211500Z
 DTSTART;TZID=Europe/Moscow:20261010T130000
 DTEND;TZID=Europe/Moscow:20261010T140000
 SUMMARY:Спектакль «Тараканище»
@@ -157,7 +157,7 @@ DESCRIPTION:Спектакль «Тараканище»\nКожев\, Б
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-10-1500-c3sa16@raspisanie
-DTSTAMP:20261104T211300Z
+DTSTAMP:20261104T211500Z
 DTSTART;TZID=Europe/Moscow:20261010T150000
 DTEND;TZID=Europe/Moscow:20261010T160000
 SUMMARY:Спектакль «Тараканище»
@@ -168,7 +168,7 @@ DESCRIPTION:Спектакль «Тараканище»\nКожев\, Б
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-16-1800-rgb9cu@raspisanie
-DTSTAMP:20261104T211300Z
+DTSTAMP:20261104T211500Z
 DTSTART;TZID=Europe/Moscow:20261016T180000
 DTEND;TZID=Europe/Moscow:20261016T190000
 SUMMARY:Спектакль «Гадкий утёнок»
@@ -179,7 +179,7 @@ DESCRIPTION:Спектакль «Гадкий утёнок»\nГлазе
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-20-1000-1m6gyt1@raspisanie
-DTSTAMP:20261104T211300Z
+DTSTAMP:20261104T211500Z
 DTSTART;TZID=Europe/Moscow:20261020T100000
 DTEND;TZID=Europe/Moscow:20261020T110000
 SUMMARY:Выезд «Кот в сапогах» · Выезд спект
@@ -192,7 +192,7 @@ DESCRIPTION:ВЫЕЗД спектакля «Кот в сапогах»\n
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-20-1200-1m6gyt1@raspisanie
-DTSTAMP:20261104T211300Z
+DTSTAMP:20261104T211500Z
 DTSTART;TZID=Europe/Moscow:20261020T120000
 DTEND;TZID=Europe/Moscow:20261020T130000
 SUMMARY:Выезд «Кот в сапогах» · Выезд спект
@@ -205,7 +205,7 @@ DESCRIPTION:ВЫЕЗД спектакля «Кот в сапогах»\n
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-28-1100-1ih3jwc@raspisanie
-DTSTAMP:20261104T211300Z
+DTSTAMP:20261104T211500Z
 DTSTART;TZID=Europe/Moscow:20261028T110000
 DTEND;TZID=Europe/Moscow:20261028T120000
 SUMMARY:Спектакль «Каштанка»
@@ -217,7 +217,7 @@ DESCRIPTION:Спектакль «Каштанка»\nБезносиков
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-28-1700-1ih3jwc@raspisanie
-DTSTAMP:20261104T211300Z
+DTSTAMP:20261104T211500Z
 DTSTART;TZID=Europe/Moscow:20261028T170000
 DTEND;TZID=Europe/Moscow:20261028T180000
 SUMMARY:Спектакль «Каштанка»
@@ -229,7 +229,7 @@ DESCRIPTION:Спектакль «Каштанка»\nБезносиков
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-31-1100-1nrwk50@raspisanie
-DTSTAMP:20261104T211300Z
+DTSTAMP:20261104T211500Z
 DTSTART;TZID=Europe/Moscow:20261031T110000
 DTEND;TZID=Europe/Moscow:20261031T120000
 SUMMARY:Спектакль «Палочка-выручалочка»
@@ -240,7 +240,7 @@ DESCRIPTION:Спектакль «Палочка-выручалочка»
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-31-1300-1nrwk50@raspisanie
-DTSTAMP:20261104T211300Z
+DTSTAMP:20261104T211500Z
 DTSTART;TZID=Europe/Moscow:20261031T130000
 DTEND;TZID=Europe/Moscow:20261031T140000
 SUMMARY:Спектакль «Палочка-выручалочка»
@@ -251,7 +251,7 @@ DESCRIPTION:Спектакль «Палочка-выручалочка»
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-31-1500-1nrwk50@raspisanie
-DTSTAMP:20261104T211300Z
+DTSTAMP:20261104T211500Z
 DTSTART;TZID=Europe/Moscow:20261031T150000
 DTEND;TZID=Europe/Moscow:20261031T160000
 SUMMARY:Спектакль «Палочка-выручалочка»
@@ -261,166 +261,8 @@ DESCRIPTION:Спектакль «Палочка-выручалочка»
  \, Лоскутов)\nЗвук/свет: Звук\, свет
 END:VEVENT
 BEGIN:VEVENT
-UID:2026-11-11-1100-1ih3jwc@raspisanie
-DTSTAMP:20261104T211300Z
-DTSTART;TZID=Europe/Moscow:20261111T110000
-DTEND;TZID=Europe/Moscow:20261111T120000
-SUMMARY:Спектакль «Каштанка»
-LOCATION:Старая сцена
-DESCRIPTION:Спектакль «Каштанка»\nКожев\, Бек
- анова\, Безносиков\, Галустянц\, Баранов
- \, Глазецкая\, Шаймиев\, Лоскутова\nЗвук/с
- вет: Звук\, свет\, проектор
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-11-13-1300-qtjd1k@raspisanie
-DTSTAMP:20261104T211300Z
-DTSTART;TZID=Europe/Moscow:20261113T130000
-DTEND;TZID=Europe/Moscow:20261113T140000
-SUMMARY:Ввод «Удивительное путешествие Нил
- ьса с дикими гусями»
-LOCATION:Старая сцена
-DESCRIPTION:Ввод в спектакль «Удивительное п
- утешествие Нильса с дикими гусями»\nВво
- дящаяся –Миронова\; вводящая - Беканова
- \nТрунина\, Баранов\, Кожев\nЗвук/свет: Зв
- ук
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-11-13-1800-azd45s@raspisanie
-DTSTAMP:20261104T211300Z
-DTSTART;TZID=Europe/Moscow:20261113T180000
-DTEND;TZID=Europe/Moscow:20261113T190000
-SUMMARY:Спектакль «Удивительное путешеств
- ие Нильса с дикими гусями»
-LOCATION:Старая сцена
-DESCRIPTION:Спектакль «Удивительное путешес
- твие Нильса с дикими гусями»\nБаранов\, 
- Беканова\, Кожев\, Трунина\nЗвук/свет: Зв
- ук\, свет
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-11-14-1100-kzw19b@raspisanie
-DTSTAMP:20261104T211300Z
-DTSTART;TZID=Europe/Moscow:20261114T110000
-DTEND;TZID=Europe/Moscow:20261114T120000
-SUMMARY:Спектакль «Курочка Ряба»
-LOCATION:Старая сцена
-DESCRIPTION:Спектакль «Курочка Ряба»\nЛоскут
- ов\, Галустянц\, Чепиль\, Кожев\, Трунина\n
- Звук/свет: Звук\, свет
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-11-14-1300-kzw19b@raspisanie
-DTSTAMP:20261104T211300Z
-DTSTART;TZID=Europe/Moscow:20261114T130000
-DTEND;TZID=Europe/Moscow:20261114T140000
-SUMMARY:Спектакль «Курочка Ряба»
-LOCATION:Старая сцена
-DESCRIPTION:Спектакль «Курочка Ряба»\nЛоскут
- ов\, Галустянц\, Чепиль\, Кожев\, Трунина\n
- Звук/свет: Звук\, свет
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-11-14-1500-kzw19b@raspisanie
-DTSTAMP:20261104T211300Z
-DTSTART;TZID=Europe/Moscow:20261114T150000
-DTEND;TZID=Europe/Moscow:20261114T160000
-SUMMARY:Спектакль «Курочка Ряба»
-LOCATION:Старая сцена
-DESCRIPTION:Спектакль «Курочка Ряба»\nЛоскут
- ов\, Галустянц\, Чепиль\, Кожев\, Трунина\n
- Звук/свет: Звук\, свет
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-11-18-1200-1hand4g@raspisanie
-DTSTAMP:20261104T211300Z
-DTSTART;TZID=Europe/Moscow:20261118T120000
-DTEND;TZID=Europe/Moscow:20261118T130000
-SUMMARY:Ввод «Золушка»
-LOCATION:Старая сцена
-DESCRIPTION:Ввод в спектакль «Золушка»\nВводя
- щаяся –Разуваева\; вводящая – Беканова
- \nБаранов\, Миронова\, Кожев\, Глазецкая\n
- Звук/свет: Звук
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-11-19-1200-1hand4g@raspisanie
-DTSTAMP:20261104T211300Z
-DTSTART;TZID=Europe/Moscow:20261119T120000
-DTEND;TZID=Europe/Moscow:20261119T130000
-SUMMARY:Ввод «Золушка»
-LOCATION:Старая сцена
-DESCRIPTION:Ввод в спектакль «Золушка»\nВводя
- щаяся –Разуваева\; вводящая – Беканова
- \nБаранов\, Миронова\, Кожев\, Глазецкая\n
- Звук/свет: Звук\, свет
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-11-20-1300-1hand4g@raspisanie
-DTSTAMP:20261104T211300Z
-DTSTART;TZID=Europe/Moscow:20261120T130000
-DTEND;TZID=Europe/Moscow:20261120T140000
-SUMMARY:Ввод «Золушка»
-LOCATION:Старая сцена
-DESCRIPTION:Ввод в спектакль «Золушка»\nВводя
- щаяся –Разуваева\; вводящая – Беканова
- \nБаранов\, Миронова\, Кожев\, Глазецкая\n
- Звук/свет: Звук
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-11-20-1800-1sg4ijc@raspisanie
-DTSTAMP:20261104T211300Z
-DTSTART;TZID=Europe/Moscow:20261120T180000
-DTEND;TZID=Europe/Moscow:20261120T190000
-SUMMARY:Спектакль ««Золушка»
-LOCATION:Старая сцена
-DESCRIPTION:Спектакль ««Золушка»»\nРазуваева
- ?/Беканова? Баранов\, Миронова\, Кожев\, Г
- лазецкая\nЗвук/свет: Звук\, свет
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-11-22-1100-h0lmu4@raspisanie
-DTSTAMP:20261104T211300Z
-DTSTART;TZID=Europe/Moscow:20261122T110000
-DTEND;TZID=Europe/Moscow:20261122T120000
-SUMMARY:Спектакль «Маша\, медведи и невероя
- тные приключения в лесу»
-LOCATION:Новая сцена
-DESCRIPTION:Спектакль «Маша\, медведи и невер
- оятные приключения в лесу»\nЛоскутова. 
- Кожев. Носов\, Разуваева\nЗвук/свет: Звук
- \, свет
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-11-22-1300-h0lmu4@raspisanie
-DTSTAMP:20261104T211300Z
-DTSTART;TZID=Europe/Moscow:20261122T130000
-DTEND;TZID=Europe/Moscow:20261122T140000
-SUMMARY:Спектакль «Маша\, медведи и невероя
- тные приключения в лесу»
-LOCATION:Новая сцена
-DESCRIPTION:Спектакль «Маша\, медведи и невер
- оятные приключения в лесу»\nЛоскутова. 
- Кожев. Носов\, Разуваева\nЗвук/свет: Звук
- \, свет
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-11-22-1500-h0lmu4@raspisanie
-DTSTAMP:20261104T211300Z
-DTSTART;TZID=Europe/Moscow:20261122T150000
-DTEND;TZID=Europe/Moscow:20261122T160000
-SUMMARY:Спектакль «Маша\, медведи и невероя
- тные приключения в лесу»
-LOCATION:Новая сцена
-DESCRIPTION:Спектакль «Маша\, медведи и невер
- оятные приключения в лесу»\nЛоскутова. 
- Кожев. Носов\, Разуваева\nЗвук/свет: Звук
- \, свет
-END:VEVENT
-BEGIN:VEVENT
 UID:2026-11-03-1200-1rmx7hb@raspisanie
-DTSTAMP:20261104T211300Z
+DTSTAMP:20261104T211500Z
 DTSTART;TZID=Europe/Moscow:20261103T120000
 DTEND;TZID=Europe/Moscow:20261103T130000
 SUMMARY:Репетиция «Кошкин дом» · + 15:00 сдача 
@@ -434,7 +276,7 @@ DESCRIPTION:Репетиция спектакля «Кошкин дом»
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-11-04-1100-nb9x5q@raspisanie
-DTSTAMP:20261104T211300Z
+DTSTAMP:20261104T211500Z
 DTSTART;TZID=Europe/Moscow:20261104T110000
 DTEND;TZID=Europe/Moscow:20261104T120000
 SUMMARY:Спектакль «Кошкин дом»
@@ -446,7 +288,7 @@ DESCRIPTION:Спектакль «Кошкин дом»\nСоветов\,
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-11-04-1300-nb9x5q@raspisanie
-DTSTAMP:20261104T211300Z
+DTSTAMP:20261104T211500Z
 DTSTART;TZID=Europe/Moscow:20261104T130000
 DTEND;TZID=Europe/Moscow:20261104T140000
 SUMMARY:Спектакль «Кошкин дом»
@@ -458,7 +300,7 @@ DESCRIPTION:Спектакль «Кошкин дом»\nСоветов\,
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-11-04-1500-nb9x5q@raspisanie
-DTSTAMP:20261104T211300Z
+DTSTAMP:20261104T211500Z
 DTSTART;TZID=Europe/Moscow:20261104T150000
 DTEND;TZID=Europe/Moscow:20261104T160000
 SUMMARY:Спектакль «Кошкин дом»
@@ -470,7 +312,7 @@ DESCRIPTION:Спектакль «Кошкин дом»\nСоветов\,
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-11-06-1100-1ih3jwc@raspisanie
-DTSTAMP:20261104T211300Z
+DTSTAMP:20261104T211500Z
 DTSTART;TZID=Europe/Moscow:20261106T110000
 DTEND;TZID=Europe/Moscow:20261106T120000
 SUMMARY:Спектакль «Каштанка»
@@ -482,7 +324,7 @@ DESCRIPTION:Спектакль «Каштанка»\nБеканова\,
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-11-06-1800-1ih3jwc@raspisanie
-DTSTAMP:20261104T211300Z
+DTSTAMP:20261104T211500Z
 DTSTART;TZID=Europe/Moscow:20261106T180000
 DTEND;TZID=Europe/Moscow:20261106T190000
 SUMMARY:Спектакль «Каштанка»
@@ -491,5 +333,163 @@ DESCRIPTION:Спектакль «Каштанка»\nБеканова\,
  Кожев\, Безносиков\, Баранов\, Глазецкая
  \, Галустянц\, Лоскутова\, Шаймиев\nЗвук/с
  вет: Звук\, свет\, проектор
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-11-18-1200-1hand4g@raspisanie
+DTSTAMP:20261104T211500Z
+DTSTART;TZID=Europe/Moscow:20261118T120000
+DTEND;TZID=Europe/Moscow:20261118T130000
+SUMMARY:Ввод «Золушка»
+LOCATION:Старая сцена
+DESCRIPTION:Ввод в спектакль «Золушка»\nВводя
+ щаяся –Разуваева\; вводящая – Беканова
+ \nБаранов\, Миронова\, Кожев\, Глазецкая\n
+ Звук/свет: Звук
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-11-19-1200-1hand4g@raspisanie
+DTSTAMP:20261104T211500Z
+DTSTART;TZID=Europe/Moscow:20261119T120000
+DTEND;TZID=Europe/Moscow:20261119T130000
+SUMMARY:Ввод «Золушка»
+LOCATION:Старая сцена
+DESCRIPTION:Ввод в спектакль «Золушка»\nВводя
+ щаяся –Разуваева\; вводящая – Беканова
+ \nБаранов\, Миронова\, Кожев\, Глазецкая\n
+ Звук/свет: Звук\, свет
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-11-20-1300-1hand4g@raspisanie
+DTSTAMP:20261104T211500Z
+DTSTART;TZID=Europe/Moscow:20261120T130000
+DTEND;TZID=Europe/Moscow:20261120T140000
+SUMMARY:Ввод «Золушка»
+LOCATION:Старая сцена
+DESCRIPTION:Ввод в спектакль «Золушка»\nВводя
+ щаяся –Разуваева\; вводящая – Беканова
+ \nБаранов\, Миронова\, Кожев\, Глазецкая\n
+ Звук/свет: Звук
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-11-20-1800-1sg4ijc@raspisanie
+DTSTAMP:20261104T211500Z
+DTSTART;TZID=Europe/Moscow:20261120T180000
+DTEND;TZID=Europe/Moscow:20261120T190000
+SUMMARY:Спектакль ««Золушка»
+LOCATION:Старая сцена
+DESCRIPTION:Спектакль ««Золушка»»\nРазуваева
+ ?/Беканова? Баранов\, Миронова\, Кожев\, Г
+ лазецкая\nЗвук/свет: Звук\, свет
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-11-22-1100-h0lmu4@raspisanie
+DTSTAMP:20261104T211500Z
+DTSTART;TZID=Europe/Moscow:20261122T110000
+DTEND;TZID=Europe/Moscow:20261122T120000
+SUMMARY:Спектакль «Маша\, медведи и невероя
+ тные приключения в лесу»
+LOCATION:Новая сцена
+DESCRIPTION:Спектакль «Маша\, медведи и невер
+ оятные приключения в лесу»\nЛоскутова. 
+ Кожев. Носов\, Разуваева\nЗвук/свет: Звук
+ \, свет
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-11-22-1300-h0lmu4@raspisanie
+DTSTAMP:20261104T211500Z
+DTSTART;TZID=Europe/Moscow:20261122T130000
+DTEND;TZID=Europe/Moscow:20261122T140000
+SUMMARY:Спектакль «Маша\, медведи и невероя
+ тные приключения в лесу»
+LOCATION:Новая сцена
+DESCRIPTION:Спектакль «Маша\, медведи и невер
+ оятные приключения в лесу»\nЛоскутова. 
+ Кожев. Носов\, Разуваева\nЗвук/свет: Звук
+ \, свет
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-11-22-1500-h0lmu4@raspisanie
+DTSTAMP:20261104T211500Z
+DTSTART;TZID=Europe/Moscow:20261122T150000
+DTEND;TZID=Europe/Moscow:20261122T160000
+SUMMARY:Спектакль «Маша\, медведи и невероя
+ тные приключения в лесу»
+LOCATION:Новая сцена
+DESCRIPTION:Спектакль «Маша\, медведи и невер
+ оятные приключения в лесу»\nЛоскутова. 
+ Кожев. Носов\, Разуваева\nЗвук/свет: Звук
+ \, свет
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-11-11-1100-1ih3jwc@raspisanie
+DTSTAMP:20261104T211500Z
+DTSTART;TZID=Europe/Moscow:20261111T110000
+DTEND;TZID=Europe/Moscow:20261111T120000
+SUMMARY:Спектакль «Каштанка»
+LOCATION:Старая сцена
+DESCRIPTION:Спектакль «Каштанка»\nКожев\, Бек
+ анова\, Безносиков\, Галустянц\, Баранов
+ \, Глазецкая\, Шаймиев\, Лоскутова\nЗвук/с
+ вет: Звук\, свет\, проектор
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-11-13-1300-qtjd1k@raspisanie
+DTSTAMP:20261104T211500Z
+DTSTART;TZID=Europe/Moscow:20261113T130000
+DTEND;TZID=Europe/Moscow:20261113T140000
+SUMMARY:Ввод «Удивительное путешествие Нил
+ ьса с дикими гусями»
+LOCATION:Старая сцена
+DESCRIPTION:Ввод в спектакль «Удивительное п
+ утешествие Нильса с дикими гусями»\nВво
+ дящаяся –Миронова\; вводящая - Беканова
+ \nТрунина\, Баранов\, Кожев\nЗвук/свет: Зв
+ ук
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-11-13-1800-azd45s@raspisanie
+DTSTAMP:20261104T211500Z
+DTSTART;TZID=Europe/Moscow:20261113T180000
+DTEND;TZID=Europe/Moscow:20261113T190000
+SUMMARY:Спектакль «Удивительное путешеств
+ ие Нильса с дикими гусями»
+LOCATION:Старая сцена
+DESCRIPTION:Спектакль «Удивительное путешес
+ твие Нильса с дикими гусями»\nБаранов\, 
+ Беканова\, Кожев\, Трунина\nЗвук/свет: Зв
+ ук\, свет
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-11-14-1100-kzw19b@raspisanie
+DTSTAMP:20261104T211500Z
+DTSTART;TZID=Europe/Moscow:20261114T110000
+DTEND;TZID=Europe/Moscow:20261114T120000
+SUMMARY:Спектакль «Курочка Ряба»
+LOCATION:Старая сцена
+DESCRIPTION:Спектакль «Курочка Ряба»\nЛоскут
+ ов\, Галустянц\, Чепиль\, Кожев\, Трунина\n
+ Звук/свет: Звук\, свет
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-11-14-1300-kzw19b@raspisanie
+DTSTAMP:20261104T211500Z
+DTSTART;TZID=Europe/Moscow:20261114T130000
+DTEND;TZID=Europe/Moscow:20261114T140000
+SUMMARY:Спектакль «Курочка Ряба»
+LOCATION:Старая сцена
+DESCRIPTION:Спектакль «Курочка Ряба»\nЛоскут
+ ов\, Галустянц\, Чепиль\, Кожев\, Трунина\n
+ Звук/свет: Звук\, свет
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-11-14-1500-kzw19b@raspisanie
+DTSTAMP:20261104T211500Z
+DTSTART;TZID=Europe/Moscow:20261114T150000
+DTEND;TZID=Europe/Moscow:20261114T160000
+SUMMARY:Спектакль «Курочка Ряба»
+LOCATION:Старая сцена
+DESCRIPTION:Спектакль «Курочка Ряба»\nЛоскут
+ ов\, Галустянц\, Чепиль\, Кожев\, Трунина\n
+ Звук/свет: Звук\, свет
 END:VEVENT
 END:VCALENDAR
