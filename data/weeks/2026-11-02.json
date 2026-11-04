@@ -225,7 +225,7 @@
    "place": "Старая сцена",
    "tech": "Звук, свет",
    "lines": [
-    "Советов/Лоскутов (?), Кожев, Самойлов, Галустянц, Трунина, Баранов, Глазецкая, Радыгин,",
+    "Советов, Кожев, Самойлов, Галустянц, Трунина, Баранов, Глазецкая, Радыгин,",
     "Лоскутова"
    ],
    "people": [
@@ -234,21 +234,8 @@
      "times": null,
      "from": null,
      "role": null,
-     "uncertain": true,
-     "alts": [
-      "Лоскутов"
-     ],
-     "note": null
-    },
-    {
-     "name": "Лоскутов",
-     "times": null,
-     "from": null,
-     "role": null,
-     "uncertain": true,
-     "alts": [
-      "Советов"
-     ],
+     "uncertain": false,
+     "alts": [],
      "note": null
     },
     {
@@ -330,6 +317,7 @@
     "baby": false,
     "halfFor": [],
     "away": false,
+    "studio": false,
     "intro": false
    }
   },
@@ -349,7 +337,7 @@
    "place": "Новая сцена",
    "tech": "Звук, свет",
    "lines": [
-    "Безносиков, Чирочкина, Беканова, Носов"
+    "Безносиков,Лоскутова,Глазецкая Носов"
    ],
    "people": [
     {
@@ -362,7 +350,7 @@
      "note": null
     },
     {
-     "name": "Чирочкина",
+     "name": "Лоскутова",
      "times": null,
      "from": null,
      "role": null,
@@ -371,7 +359,7 @@
      "note": null
     },
     {
-     "name": "Беканова",
+     "name": "Глазецкая",
      "times": null,
      "from": null,
      "role": null,
@@ -398,6 +386,7 @@
      "носов"
     ],
     "away": false,
+    "studio": false,
     "intro": false
    }
   },
@@ -1031,12 +1020,12 @@
    }
   }
  ],
- "version": 3,
- "updatedAt": "2026-11-02T13:32:06.347Z",
+ "version": 4,
+ "updatedAt": "2026-11-04T11:06:49.195Z",
  "pdf": "data/pdf/2026-11-02.pdf",
  "previous": {
-  "version": 2,
-  "updatedAt": "2026-11-01T05:55:43.978Z",
+  "version": 3,
+  "updatedAt": "2026-11-02T13:32:06.347Z",
   "events": [
    {
     "id": "e1",
@@ -1123,7 +1112,7 @@
     ],
     "range": null,
     "timeUncertain": false,
-    "title": "Репетиция спектакля «Кошкин дом» + сдача А.С.",
+    "title": "Репетиция спектакля «Кошкин дом» + 15:00 сдача А.С.",
     "kind": "rehearsal",
     "place": "Старая сцена",
     "tech": "Звук, свет",
@@ -1487,7 +1476,7 @@
     ],
     "range": null,
     "timeUncertain": false,
-    "title": "Репетиция спектакля «Красная Шапочка» + сдача А.С.",
+    "title": "Репетиция спектакля «Красная Шапочка» + 14:30 сдача А.С.",
     "kind": "rehearsal",
     "place": "Старая сцена",
     "tech": "Звук",
@@ -1556,6 +1545,7 @@
      "baby": false,
      "halfFor": [],
      "away": false,
+     "studio": false,
      "intro": false
     }
    },
