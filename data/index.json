@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-04T11:07:20.376Z",
+ "updatedAt": "2026-11-04T11:09:50.156Z",
  "weeks": [
   {
    "id": "2026-09-28",
@@ -175,8 +175,8 @@
    "start": "2026-11-02",
    "end": "2026-11-08",
    "title": "2–8 ноября",
-   "version": 5,
-   "updatedAt": "2026-11-04T11:07:19.310Z",
+   "version": 6,
+   "updatedAt": "2026-11-04T11:09:46.546Z",
    "pdf": "data/pdf/2026-11-02.pdf",
    "people": [
     "Андреев",
@@ -198,7 +198,8 @@
     "Трунина",
     "Чепиль",
     "Чирочкина",
-    "Шаймиев"
+    "Шаймиев",
+    "Шумилова"
    ]
   },
   {
@@ -265,6 +266,7 @@
   "чепиль": "data/ics/chepil.ics",
   "чирочкина": "data/ics/chirochkina.ics",
   "шаймиев": "data/ics/shaymiev.ics",
-  "шерстюк": "data/ics/sherstyuk.ics"
+  "шерстюк": "data/ics/sherstyuk.ics",
+  "шумилова": "data/ics/shumilova.ics"
  }
 }
