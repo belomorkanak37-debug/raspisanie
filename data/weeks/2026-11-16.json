@@ -1,0 +1,1091 @@
+{
+ "id": "2026-11-16",
+ "start": "2026-11-16",
+ "end": "2026-11-22",
+ "title": "16–22 ноября",
+ "header": "ПЛАН РАБОТЫ На НОЯБРЬ 2026 года",
+ "source": "Расписание с  16 ноября по 22 ноября.pdf",
+ "days": [
+  "2026-11-16",
+  "2026-11-17",
+  "2026-11-18",
+  "2026-11-19",
+  "2026-11-20",
+  "2026-11-21",
+  "2026-11-22"
+ ],
+ "events": [
+  {
+   "id": "e1",
+   "date": "2026-11-16",
+   "timeText": "",
+   "times": [],
+   "range": null,
+   "timeUncertain": false,
+   "title": "ВЫХОДНОЙ",
+   "kind": "other",
+   "place": "",
+   "tech": "",
+   "lines": [],
+   "people": [],
+   "scope": "note",
+   "accounting": {
+    "showWeight": 0,
+    "baby": false,
+    "halfFor": [],
+    "away": false,
+    "studio": false,
+    "intro": false
+   }
+  },
+  {
+   "id": "e2",
+   "date": "2026-11-17",
+   "timeText": "11:00",
+   "times": [
+    "11:00"
+   ],
+   "range": null,
+   "timeUncertain": false,
+   "title": "Репетиция спектакля «Муравьишка»",
+   "kind": "rehearsal",
+   "place": "Новая сцена",
+   "tech": "Звук, свет",
+   "lines": [
+    "Чепиль, Сигитова, Андреев"
+   ],
+   "people": [
+    {
+     "name": "Чепиль",
+     "times": null,
+     "from": null,
+     "role": null,
+     "uncertain": false,
+     "alts": [],
+     "note": null
+    },
+    {
+     "name": "Сигитова",
+     "times": null,
+     "from": null,
+     "role": null,
+     "uncertain": false,
+     "alts": [],
+     "note": null
+    },
+    {
+     "name": "Андреев",
+     "times": null,
+     "from": null,
+     "role": null,
+     "uncertain": false,
+     "alts": [],
+     "note": null
+    }
+   ],
+   "scope": "people",
+   "accounting": {
+    "showWeight": 0,
+    "baby": false,
+    "halfFor": [],
+    "away": false,
+    "studio": false,
+    "intro": false
+   }
+  },
+  {
+   "id": "e3",
+   "date": "2026-11-17",
+   "timeText": "12:00",
+   "times": [
+    "12:00"
+   ],
+   "range": null,
+   "timeUncertain": false,
+   "title": "Ввод в спектакль «Солнышко и снежные человечки»",
+   "kind": "intro",
+   "place": "Старая сцена",
+   "tech": "Звук",
+   "lines": [
+    "Вводящаяся –Разуваева; вводящая - Глазецкая",
+    "Лоскутова, Шаймиев, Носов"
+   ],
+   "people": [
+    {
+     "name": "Разуваева",
+     "times": null,
+     "from": null,
+     "role": "вводящаяся",
+     "uncertain": false,
+     "alts": [],
+     "note": null
+    },
+    {
+     "name": "Глазецкая",
+     "times": null,
+     "from": null,
+     "role": "вводящая",
+     "uncertain": false,
+     "alts": [],
+     "note": null
+    },
+    {
+     "name": "Лоскутова",
+     "times": null,
+     "from": null,
+     "role": null,
+     "uncertain": false,
+     "alts": [],
+     "note": null
+    },
+    {
+     "name": "Шаймиев",
+     "times": null,
+     "from": null,
+     "role": null,
+     "uncertain": false,
+     "alts": [],
+     "note": null
+    },
+    {
+     "name": "Носов",
+     "times": null,
+     "from": null,
+     "role": null,
+     "uncertain": false,
+     "alts": [],
+     "note": null
+    }
+   ],
+   "scope": "people",
+   "accounting": {
+    "showWeight": 0,
+    "baby": false,
+    "halfFor": [],
+    "away": false,
+    "studio": false,
+    "intro": true
+   }
+  },
+  {
+   "id": "e4",
+   "date": "2026-11-18",
+   "timeText": "11:00",
+   "times": [
+    "11:00"
+   ],
+   "range": null,
+   "timeUncertain": false,
+   "title": "Репетиция спектакля «Муравьишка»",
+   "kind": "rehearsal",
+   "place": "Новая сцена",
+   "tech": "Звук, свет",
+   "lines": [
+    "Чепиль, Сигитова, Андреев"
+   ],
+   "people": [
+    {
+     "name": "Чепиль",
+     "times": null,
+     "from": null,
+     "role": null,
+     "uncertain": false,
+     "alts": [],
+     "note": null
+    },
+    {
+     "name": "Сигитова",
+     "times": null,
+     "from": null,
+     "role": null,
+     "uncertain": false,
+     "alts": [],
+     "note": null
+    },
+    {
+     "name": "Андреев",
+     "times": null,
+     "from": null,
+     "role": null,
+     "uncertain": false,
+     "alts": [],
+     "note": null
+    }
+   ],
+   "scope": "people",
+   "accounting": {
+    "showWeight": 0,
+    "baby": false,
+    "halfFor": [],
+    "away": false,
+    "studio": false,
+    "intro": false
+   }
+  },
+  {
+   "id": "e5",
+   "date": "2026-11-18",
+   "timeText": "12:00",
+   "times": [
+    "12:00"
+   ],
+   "range": null,
+   "timeUncertain": false,
+   "title": "Ввод в спектакль «Золушка»",
+   "kind": "intro",
+   "place": "Старая сцена",
+   "tech": "Звук",
+   "lines": [
+    "Вводящаяся –Разуваева; вводящая – Беканова",
+    "Баранов, Миронова, Кожев, Глазецкая"
+   ],
+   "people": [
+    {
+     "name": "Разуваева",
+     "times": null,
+     "from": null,
+     "role": "вводящаяся",
+     "uncertain": false,
+     "alts": [],
+     "note": null
+    },
+    {
+     "name": "Беканова",
+     "times": null,
+     "from": null,
+     "role": "вводящая",
+     "uncertain": false,
+     "alts": [],
+     "note": null
+    },
+    {
+     "name": "Баранов",
+     "times": null,
+     "from": null,
+     "role": null,
+     "uncertain": false,
+     "alts": [],
+     "note": null
+    },
+    {
+     "name": "Миронова",
+     "times": null,
+     "from": null,
+     "role": null,
+     "uncertain": false,
+     "alts": [],
+     "note": null
+    },
+    {
+     "name": "Кожев",
+     "times": null,
+     "from": null,
+     "role": null,
+     "uncertain": false,
+     "alts": [],
+     "note": null
+    },
+    {
+     "name": "Глазецкая",
+     "times": null,
+     "from": null,
+     "role": null,
+     "uncertain": false,
+     "alts": [],
+     "note": null
+    }
+   ],
+   "scope": "people",
+   "accounting": {
+    "showWeight": 0,
+    "baby": false,
+    "halfFor": [],
+    "away": false,
+    "studio": false,
+    "intro": true
+   }
+  },
+  {
+   "id": "e6",
+   "date": "2026-11-19",
+   "timeText": "11:00",
+   "times": [
+    "11:00"
+   ],
+   "range": null,
+   "timeUncertain": false,
+   "title": "Репетиция спектакля «Муравьишка»",
+   "kind": "rehearsal",
+   "place": "Новая сцена",
+   "tech": "Звук, свет",
+   "lines": [
+    "Чепиль, Сигитова, Андреев"
+   ],
+   "people": [
+    {
+     "name": "Чепиль",
+     "times": null,
+     "from": null,
+     "role": null,
+     "uncertain": false,
+     "alts": [],
+     "note": null
+    },
+    {
+     "name": "Сигитова",
+     "times": null,
+     "from": null,
+     "role": null,
+     "uncertain": false,
+     "alts": [],
+     "note": null
+    },
+    {
+     "name": "Андреев",
+     "times": null,
+     "from": null,
+     "role": null,
+     "uncertain": false,
+     "alts": [],
+     "note": null
+    }
+   ],
+   "scope": "people",
+   "accounting": {
+    "showWeight": 0,
+    "baby": false,
+    "halfFor": [],
+    "away": false,
+    "studio": false,
+    "intro": false
+   }
+  },
+  {
+   "id": "e7",
+   "date": "2026-11-19",
+   "timeText": "12:00",
+   "times": [
+    "12:00"
+   ],
+   "range": null,
+   "timeUncertain": false,
+   "title": "Ввод в спектакль «Золушка»",
+   "kind": "intro",
+   "place": "Старая сцена",
+   "tech": "Звук, свет",
+   "lines": [
+    "Вводящаяся –Разуваева; вводящая – Беканова",
+    "Баранов, Миронова, Кожев, Глазецкая"
+   ],
+   "people": [
+    {
+     "name": "Разуваева",
+     "times": null,
+     "from": null,
+     "role": "вводящаяся",
+     "uncertain": false,
+     "alts": [],
+     "note": null
+    },
+    {
+     "name": "Беканова",
+     "times": null,
+     "from": null,
+     "role": "вводящая",
+     "uncertain": false,
+     "alts": [],
+     "note": null
+    },
+    {
+     "name": "Баранов",
+     "times": null,
+     "from": null,
+     "role": null,
+     "uncertain": false,
+     "alts": [],
+     "note": null
+    },
+    {
+     "name": "Миронова",
+     "times": null,
+     "from": null,
+     "role": null,
+     "uncertain": false,
+     "alts": [],
+     "note": null
+    },
+    {
+     "name": "Кожев",
+     "times": null,
+     "from": null,
+     "role": null,
+     "uncertain": false,
+     "alts": [],
+     "note": null
+    },
+    {
+     "name": "Глазецкая",
+     "times": null,
+     "from": null,
+     "role": null,
+     "uncertain": false,
+     "alts": [],
+     "note": null
+    }
+   ],
+   "scope": "people",
+   "accounting": {
+    "showWeight": 0,
+    "baby": false,
+    "halfFor": [],
+    "away": false,
+    "studio": false,
+    "intro": true
+   }
+  },
+  {
+   "id": "e8",
+   "date": "2026-11-20",
+   "timeText": "11:00",
+   "times": [
+    "11:00"
+   ],
+   "range": null,
+   "timeUncertain": false,
+   "title": "Репетиция спектакля «Муравьишка»",
+   "kind": "rehearsal",
+   "place": "Новая сцена",
+   "tech": "Звук, свет",
+   "lines": [
+    "Чепиль, Сигитова, Андреев"
+   ],
+   "people": [
+    {
+     "name": "Чепиль",
+     "times": null,
+     "from": null,
+     "role": null,
+     "uncertain": false,
+     "alts": [],
+     "note": null
+    },
+    {
+     "name": "Сигитова",
+     "times": null,
+     "from": null,
+     "role": null,
+     "uncertain": false,
+     "alts": [],
+     "note": null
+    },
+    {
+     "name": "Андреев",
+     "times": null,
+     "from": null,
+     "role": null,
+     "uncertain": false,
+     "alts": [],
+     "note": null
+    }
+   ],
+   "scope": "people",
+   "accounting": {
+    "showWeight": 0,
+    "baby": false,
+    "halfFor": [],
+    "away": false,
+    "studio": false,
+    "intro": false
+   }
+  },
+  {
+   "id": "e9",
+   "date": "2026-11-20",
+   "timeText": "13:00 (?)",
+   "times": [
+    "13:00"
+   ],
+   "range": null,
+   "timeUncertain": true,
+   "title": "Ввод в спектакль «Золушка»",
+   "kind": "intro",
+   "place": "Старая сцена",
+   "tech": "Звук",
+   "lines": [
+    "Вводящаяся –Разуваева; вводящая – Беканова",
+    "Баранов, Миронова, Кожев, Глазецкая"
+   ],
+   "people": [
+    {
+     "name": "Разуваева",
+     "times": null,
+     "from": null,
+     "role": "вводящаяся",
+     "uncertain": false,
+     "alts": [],
+     "note": null
+    },
+    {
+     "name": "Беканова",
+     "times": null,
+     "from": null,
+     "role": "вводящая",
+     "uncertain": false,
+     "alts": [],
+     "note": null
+    },
+    {
+     "name": "Баранов",
+     "times": null,
+     "from": null,
+     "role": null,
+     "uncertain": false,
+     "alts": [],
+     "note": null
+    },
+    {
+     "name": "Миронова",
+     "times": null,
+     "from": null,
+     "role": null,
+     "uncertain": false,
+     "alts": [],
+     "note": null
+    },
+    {
+     "name": "Кожев",
+     "times": null,
+     "from": null,
+     "role": null,
+     "uncertain": false,
+     "alts": [],
+     "note": null
+    },
+    {
+     "name": "Глазецкая",
+     "times": null,
+     "from": null,
+     "role": null,
+     "uncertain": false,
+     "alts": [],
+     "note": null
+    }
+   ],
+   "scope": "people",
+   "accounting": {
+    "showWeight": 0,
+    "baby": false,
+    "halfFor": [],
+    "away": false,
+    "studio": false,
+    "intro": true
+   }
+  },
+  {
+   "id": "e10",
+   "date": "2026-11-20",
+   "timeText": "18:00",
+   "times": [
+    "18:00"
+   ],
+   "range": null,
+   "timeUncertain": false,
+   "title": "Сдача на зрителей спектакля «Муравьишка»",
+   "kind": "handover",
+   "place": "Новая сцена",
+   "tech": "Звук, свет",
+   "lines": [
+    "Чепиль, Сигитова, Андреев"
+   ],
+   "people": [
+    {
+     "name": "Чепиль",
+     "times": null,
+     "from": null,
+     "role": null,
+     "uncertain": false,
+     "alts": [],
+     "note": null
+    },
+    {
+     "name": "Сигитова",
+     "times": null,
+     "from": null,
+     "role": null,
+     "uncertain": false,
+     "alts": [],
+     "note": null
+    },
+    {
+     "name": "Андреев",
+     "times": null,
+     "from": null,
+     "role": null,
+     "uncertain": false,
+     "alts": [],
+     "note": null
+    }
+   ],
+   "scope": "people",
+   "accounting": {
+    "showWeight": 0,
+    "baby": false,
+    "halfFor": [],
+    "away": false,
+    "studio": false,
+    "intro": false
+   }
+  },
+  {
+   "id": "e11",
+   "date": "2026-11-20",
+   "timeText": "18:00",
+   "times": [
+    "18:00"
+   ],
+   "range": null,
+   "timeUncertain": false,
+   "title": "Спектакль ««Золушка»»",
+   "kind": "show",
+   "place": "Старая сцена",
+   "tech": "Звук, свет",
+   "lines": [
+    "Разуваева?/Беканова? Баранов, Миронова, Кожев, Глазецкая"
+   ],
+   "people": [
+    {
+     "name": "Разуваева",
+     "times": null,
+     "from": null,
+     "role": null,
+     "uncertain": true,
+     "alts": [
+      "Беканова"
+     ],
+     "note": null
+    },
+    {
+     "name": "Беканова",
+     "times": null,
+     "from": null,
+     "role": null,
+     "uncertain": true,
+     "alts": [
+      "Разуваева"
+     ],
+     "note": null
+    },
+    {
+     "name": "Баранов",
+     "times": null,
+     "from": null,
+     "role": null,
+     "uncertain": false,
+     "alts": [],
+     "note": null
+    },
+    {
+     "name": "Миронова",
+     "times": null,
+     "from": null,
+     "role": null,
+     "uncertain": false,
+     "alts": [],
+     "note": null
+    },
+    {
+     "name": "Кожев",
+     "times": null,
+     "from": null,
+     "role": null,
+     "uncertain": false,
+     "alts": [],
+     "note": null
+    },
+    {
+     "name": "Глазецкая",
+     "times": null,
+     "from": null,
+     "role": null,
+     "uncertain": false,
+     "alts": [],
+     "note": null
+    }
+   ],
+   "scope": "people",
+   "accounting": {
+    "showWeight": 1,
+    "baby": false,
+    "halfFor": [],
+    "away": false,
+    "studio": false,
+    "intro": false
+   }
+  },
+  {
+   "id": "e12",
+   "date": "2026-11-21",
+   "timeText": "11:00 13:00 15:00",
+   "times": [
+    "11:00",
+    "13:00",
+    "15:00"
+   ],
+   "range": null,
+   "timeUncertain": false,
+   "title": "Спектакль «Муха Цокотуха»",
+   "kind": "show",
+   "place": "Старая сцена",
+   "tech": "Звук, свет",
+   "lines": [
+    "Миронова, Разуваева (11:00 и 13:00), Галустянц (15:00), Безносиков, Самойлов"
+   ],
+   "people": [
+    {
+     "name": "Миронова",
+     "times": null,
+     "from": null,
+     "role": null,
+     "uncertain": false,
+     "alts": [],
+     "note": null
+    },
+    {
+     "name": "Разуваева",
+     "times": [
+      "11:00",
+      "13:00"
+     ],
+     "from": null,
+     "role": null,
+     "uncertain": false,
+     "alts": [],
+     "note": null
+    },
+    {
+     "name": "Галустянц",
+     "times": [
+      "15:00"
+     ],
+     "from": null,
+     "role": null,
+     "uncertain": false,
+     "alts": [],
+     "note": null
+    },
+    {
+     "name": "Безносиков",
+     "times": null,
+     "from": null,
+     "role": null,
+     "uncertain": false,
+     "alts": [],
+     "note": null
+    },
+    {
+     "name": "Самойлов",
+     "times": null,
+     "from": null,
+     "role": null,
+     "uncertain": false,
+     "alts": [],
+     "note": null
+    }
+   ],
+   "scope": "people",
+   "accounting": {
+    "showWeight": 1,
+    "baby": false,
+    "halfFor": [],
+    "away": false,
+    "studio": false,
+    "intro": false
+   }
+  },
+  {
+   "id": "e13",
+   "date": "2026-11-21",
+   "timeText": "11:00 13:00 15:00",
+   "times": [
+    "11:00",
+    "13:00",
+    "15:00"
+   ],
+   "range": null,
+   "timeUncertain": false,
+   "title": "Спектакль «Муравьишка»",
+   "kind": "show",
+   "place": "Новая сцена",
+   "tech": "Звук, свет",
+   "lines": [
+    "Чепиль, Сигитова, Андреев"
+   ],
+   "people": [
+    {
+     "name": "Чепиль",
+     "times": null,
+     "from": null,
+     "role": null,
+     "uncertain": false,
+     "alts": [],
+     "note": null
+    },
+    {
+     "name": "Сигитова",
+     "times": null,
+     "from": null,
+     "role": null,
+     "uncertain": false,
+     "alts": [],
+     "note": null
+    },
+    {
+     "name": "Андреев",
+     "times": null,
+     "from": null,
+     "role": null,
+     "uncertain": false,
+     "alts": [],
+     "note": null
+    }
+   ],
+   "scope": "people",
+   "accounting": {
+    "showWeight": 1,
+    "baby": false,
+    "halfFor": [],
+    "away": false,
+    "studio": false,
+    "intro": false
+   }
+  },
+  {
+   "id": "e14",
+   "date": "2026-11-22",
+   "timeText": "11:00 13:00 15:00",
+   "times": [
+    "11:00",
+    "13:00",
+    "15:00"
+   ],
+   "range": null,
+   "timeUncertain": false,
+   "title": "Спектакль «Мойдодыр»",
+   "kind": "show",
+   "place": "Старая сцена",
+   "tech": "Звук, свет",
+   "lines": [
+    "Лоскутов, Заяшников, Баранов, Сигитова"
+   ],
+   "people": [
+    {
+     "name": "Лоскутов",
+     "times": null,
+     "from": null,
+     "role": null,
+     "uncertain": false,
+     "alts": [],
+     "note": null
+    },
+    {
+     "name": "Заяшников",
+     "times": null,
+     "from": null,
+     "role": null,
+     "uncertain": false,
+     "alts": [],
+     "note": null
+    },
+    {
+     "name": "Баранов",
+     "times": null,
+     "from": null,
+     "role": null,
+     "uncertain": false,
+     "alts": [],
+     "note": null
+    },
+    {
+     "name": "Сигитова",
+     "times": null,
+     "from": null,
+     "role": null,
+     "uncertain": false,
+     "alts": [],
+     "note": null
+    }
+   ],
+   "scope": "people",
+   "accounting": {
+    "showWeight": 1,
+    "baby": false,
+    "halfFor": [],
+    "away": false,
+    "studio": false,
+    "intro": false
+   }
+  },
+  {
+   "id": "e15",
+   "date": "2026-11-22",
+   "timeText": "11:00 13:00 15:00",
+   "times": [
+    "11:00",
+    "13:00",
+    "15:00"
+   ],
+   "range": null,
+   "timeUncertain": false,
+   "title": "Спектакль «Маша, медведи и невероятные приключения в лесу»",
+   "kind": "show",
+   "place": "Новая сцена",
+   "tech": "Звук, свет",
+   "lines": [
+    "Лоскутова. Кожев. Носов, Разуваева"
+   ],
+   "people": [
+    {
+     "name": "Лоскутова",
+     "times": null,
+     "from": null,
+     "role": null,
+     "uncertain": false,
+     "alts": [],
+     "note": null
+    },
+    {
+     "name": "Кожев",
+     "times": null,
+     "from": null,
+     "role": null,
+     "uncertain": false,
+     "alts": [],
+     "note": null
+    },
+    {
+     "name": "Носов",
+     "times": null,
+     "from": null,
+     "role": null,
+     "uncertain": false,
+     "alts": [],
+     "note": null
+    },
+    {
+     "name": "Разуваева",
+     "times": null,
+     "from": null,
+     "role": null,
+     "uncertain": false,
+     "alts": [],
+     "note": null
+    }
+   ],
+   "scope": "people",
+   "accounting": {
+    "showWeight": 1,
+    "baby": false,
+    "halfFor": [],
+    "away": false,
+    "studio": false,
+    "intro": false
+   }
+  },
+  {
+   "id": "e16",
+   "date": "2026-11-22",
+   "timeText": "17:00",
+   "times": [
+    "17:00"
+   ],
+   "range": null,
+   "timeUncertain": false,
+   "title": "Хочу стать кукловодом – ср. группа",
+   "kind": "studio",
+   "place": "",
+   "tech": "",
+   "lines": [
+    "Трунина, Баранов"
+   ],
+   "people": [
+    {
+     "name": "Трунина",
+     "times": null,
+     "from": null,
+     "role": null,
+     "uncertain": false,
+     "alts": [],
+     "note": null
+    },
+    {
+     "name": "Баранов",
+     "times": null,
+     "from": null,
+     "role": null,
+     "uncertain": false,
+     "alts": [],
+     "note": null
+    }
+   ],
+   "scope": "people",
+   "accounting": {
+    "showWeight": 0,
+    "baby": false,
+    "halfFor": [],
+    "away": false,
+    "studio": true,
+    "intro": false
+   }
+  },
+  {
+   "id": "e17",
+   "date": "2026-11-22",
+   "timeText": "18:30",
+   "times": [
+    "18:30"
+   ],
+   "range": null,
+   "timeUncertain": false,
+   "title": "Хочу стать кукловодом – ст. группа",
+   "kind": "studio",
+   "place": "",
+   "tech": "",
+   "lines": [
+    "Безносиков, Мартюшева"
+   ],
+   "people": [
+    {
+     "name": "Безносиков",
+     "times": null,
+     "from": null,
+     "role": null,
+     "uncertain": false,
+     "alts": [],
+     "note": null
+    },
+    {
+     "name": "Мартюшева",
+     "times": null,
+     "from": null,
+     "role": null,
+     "uncertain": false,
+     "alts": [],
+     "note": null
+    }
+   ],
+   "scope": "people",
+   "accounting": {
+    "showWeight": 0,
+    "baby": false,
+    "halfFor": [],
+    "away": false,
+    "studio": true,
+    "intro": false
+   }
+  }
+ ],
+ "version": 1,
+ "updatedAt": "2026-11-04T15:12:31.288Z",
+ "pdf": "data/pdf/2026-11-16.pdf",
+ "previous": null
+}
