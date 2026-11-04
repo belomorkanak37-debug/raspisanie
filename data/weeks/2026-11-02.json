@@ -1018,14 +1018,61 @@
     "away": false,
     "intro": false
    }
+  },
+  {
+   "id": "nmw2m57adap8ka5",
+   "date": "2026-11-08",
+   "timeText": "18:30",
+   "times": [
+    "18:30"
+   ],
+   "range": null,
+   "timeUncertain": false,
+   "title": "Детская студия",
+   "kind": "studio",
+   "place": "Новая сцена",
+   "tech": "",
+   "lines": [
+    "Мартюшева,Безносиков"
+   ],
+   "people": [
+    {
+     "name": "Мартюшева",
+     "times": null,
+     "from": null,
+     "role": null,
+     "uncertain": false,
+     "alts": [],
+     "note": null
+    },
+    {
+     "name": "Безносиков",
+     "times": null,
+     "from": null,
+     "role": null,
+     "uncertain": false,
+     "alts": [],
+     "note": null
+    }
+   ],
+   "scope": "people",
+   "accounting": {
+    "showWeight": 0,
+    "baby": false,
+    "halfFor": [],
+    "away": false,
+    "studio": true,
+    "intro": false
+   },
+   "manual": true
   }
  ],
- "version": 6,
- "updatedAt": "2026-11-04T11:09:46.546Z",
+ "version": 7,
+ "updatedAt": "2026-11-04T21:13:03.398Z",
  "pdf": "data/pdf/2026-11-02.pdf",
  "previous": {
-  "version": 5,
-  "updatedAt": "2026-11-04T11:07:19.310Z",
+  "version": 6,
+  "updatedAt": "2026-11-04T11:09:46.546Z",
   "events": [
    {
     "id": "e1",
@@ -1237,8 +1284,8 @@
     "place": "Старая сцена",
     "tech": "Звук, свет",
     "lines": [
-     "Советов, Кожев, Самойлов, Галустянц, Трунина, Баранов, Глазецкая, Радыгин,",
-     "Лоскутова"
+     "Советов, Кожев, Самойлов, Галустянц, Трунина, Баранов, Беканова, Радыгин,",
+     "Шумилова"
     ],
     "people": [
      {
@@ -1296,7 +1343,7 @@
       "note": null
      },
      {
-      "name": "Глазецкая",
+      "name": "Беканова",
       "times": null,
       "from": null,
       "role": null,
@@ -1314,7 +1361,7 @@
       "note": null
      },
      {
-      "name": "Лоскутова",
+      "name": "Шумилова",
       "times": null,
       "from": null,
       "role": null,
