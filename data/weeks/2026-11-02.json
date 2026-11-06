@@ -905,7 +905,7 @@
    "place": "Старая сцена",
    "tech": "Звук, свет",
    "lines": [
-    "Лоскутова, Андреев, Мартюшева, Чепиль"
+    "Лоскутова, Андреев, Мартюшева,Носов"
    ],
    "people": [
     {
@@ -936,7 +936,7 @@
      "note": null
     },
     {
-     "name": "Чепиль",
+     "name": "Носов",
      "times": null,
      "from": null,
      "role": null,
@@ -951,6 +951,7 @@
     "baby": false,
     "halfFor": [],
     "away": false,
+    "studio": false,
     "intro": false
    }
   },
@@ -1067,12 +1068,12 @@
    "manual": true
   }
  ],
- "version": 7,
- "updatedAt": "2026-11-04T21:13:03.398Z",
+ "version": 8,
+ "updatedAt": "2026-11-06T20:00:07.360Z",
  "pdf": "data/pdf/2026-11-02.pdf",
  "previous": {
-  "version": 6,
-  "updatedAt": "2026-11-04T11:09:46.546Z",
+  "version": 7,
+  "updatedAt": "2026-11-04T21:13:03.398Z",
   "events": [
    {
     "id": "e1",
@@ -2077,6 +2078,53 @@
      "away": false,
      "intro": false
     }
+   },
+   {
+    "id": "nmw2m57adap8ka5",
+    "date": "2026-11-08",
+    "timeText": "18:30",
+    "times": [
+     "18:30"
+    ],
+    "range": null,
+    "timeUncertain": false,
+    "title": "Детская студия",
+    "kind": "studio",
+    "place": "Новая сцена",
+    "tech": "",
+    "lines": [
+     "Мартюшева,Безносиков"
+    ],
+    "people": [
+     {
+      "name": "Мартюшева",
+      "times": null,
+      "from": null,
+      "role": null,
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     },
+     {
+      "name": "Безносиков",
+      "times": null,
+      "from": null,
+      "role": null,
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     }
+    ],
+    "scope": "people",
+    "accounting": {
+     "showWeight": 0,
+     "baby": false,
+     "halfFor": [],
+     "away": false,
+     "studio": true,
+     "intro": false
+    },
+    "manual": true
    }
   ]
  }
