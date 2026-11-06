@@ -323,6 +323,118 @@
    }
   },
   {
+   "id": "nmw56ehvctm58jc",
+   "date": "2026-11-11",
+   "timeText": "12:40",
+   "times": [
+    "12:40"
+   ],
+   "range": null,
+   "timeUncertain": false,
+   "title": "Ввод в спектакль «Каштанка»",
+   "kind": "intro",
+   "place": "",
+   "tech": "",
+   "lines": [
+    "Вводящаяся Миронова",
+    "Вводящая Беканова",
+    "Кожев, Безносиков, Галустянц, Баранов, Глазецкая, Шаймиев, Лоскутова"
+   ],
+   "people": [
+    {
+     "name": "Миронова",
+     "times": null,
+     "from": null,
+     "role": null,
+     "uncertain": false,
+     "alts": [],
+     "note": null
+    },
+    {
+     "name": "Беканова",
+     "times": null,
+     "from": null,
+     "role": null,
+     "uncertain": false,
+     "alts": [],
+     "note": null
+    },
+    {
+     "name": "Кожев",
+     "times": null,
+     "from": null,
+     "role": null,
+     "uncertain": false,
+     "alts": [],
+     "note": null
+    },
+    {
+     "name": "Безносиков",
+     "times": null,
+     "from": null,
+     "role": null,
+     "uncertain": false,
+     "alts": [],
+     "note": null
+    },
+    {
+     "name": "Галустянц",
+     "times": null,
+     "from": null,
+     "role": null,
+     "uncertain": false,
+     "alts": [],
+     "note": null
+    },
+    {
+     "name": "Баранов",
+     "times": null,
+     "from": null,
+     "role": null,
+     "uncertain": false,
+     "alts": [],
+     "note": null
+    },
+    {
+     "name": "Глазецкая",
+     "times": null,
+     "from": null,
+     "role": null,
+     "uncertain": false,
+     "alts": [],
+     "note": null
+    },
+    {
+     "name": "Шаймиев",
+     "times": null,
+     "from": null,
+     "role": null,
+     "uncertain": false,
+     "alts": [],
+     "note": null
+    },
+    {
+     "name": "Лоскутова",
+     "times": null,
+     "from": null,
+     "role": null,
+     "uncertain": false,
+     "alts": [],
+     "note": null
+    }
+   ],
+   "scope": "people",
+   "accounting": {
+    "showWeight": 0,
+    "baby": false,
+    "halfFor": [],
+    "away": false,
+    "studio": false,
+    "intro": true
+   },
+   "manual": true
+  },
+  {
    "id": "e6",
    "date": "2026-11-12",
    "timeText": "11:00",
@@ -1149,12 +1261,12 @@
    "manual": true
   }
  ],
- "version": 4,
- "updatedAt": "2026-11-04T21:15:15.744Z",
+ "version": 5,
+ "updatedAt": "2026-11-06T16:15:33.829Z",
  "pdf": "data/pdf/2026-11-09.pdf",
  "previous": {
-  "version": 3,
-  "updatedAt": "2026-11-01T15:11:21.949Z",
+  "version": 4,
+  "updatedAt": "2026-11-04T21:15:15.744Z",
   "events": [
    {
     "id": "e1",
@@ -2241,6 +2353,53 @@
      "studio": false,
      "intro": false
     }
+   },
+   {
+    "id": "nmw2m7kwq5g39ju",
+    "date": "2026-11-15",
+    "timeText": "18:30",
+    "times": [
+     "18:30"
+    ],
+    "range": null,
+    "timeUncertain": false,
+    "title": "Детская студия",
+    "kind": "studio",
+    "place": "",
+    "tech": "",
+    "lines": [
+     "Мартюшева,Безносиков"
+    ],
+    "people": [
+     {
+      "name": "Мартюшева",
+      "times": null,
+      "from": null,
+      "role": null,
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     },
+     {
+      "name": "Безносиков",
+      "times": null,
+      "from": null,
+      "role": null,
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     }
+    ],
+    "scope": "people",
+    "accounting": {
+     "showWeight": 0,
+     "baby": false,
+     "halfFor": [],
+     "away": false,
+     "studio": true,
+     "intro": false
+    },
+    "manual": true
    }
   ]
  }
