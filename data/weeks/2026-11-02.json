@@ -737,15 +737,14 @@
    "place": "Старая сцена",
    "tech": "Звук, свет",
    "lines": [
-    "Советов (11:00 и 13:00), Радыгин (15:00 ??), Глазецкая (11:00 и 13:00), Сигитова (15:00),",
+    "Лоскутов (11:00), Радыгин (13:00 и 15:00), Глазецкая (11:00 и 13:00), Сигитова (15:00),",
     "Лоскутова, Баранов, Шаймиев"
    ],
    "people": [
     {
-     "name": "Советов",
+     "name": "Лоскутов",
      "times": [
-      "11:00",
-      "13:00"
+      "11:00"
      ],
      "from": null,
      "role": null,
@@ -756,11 +755,12 @@
     {
      "name": "Радыгин",
      "times": [
+      "13:00",
       "15:00"
      ],
      "from": null,
      "role": null,
-     "uncertain": true,
+     "uncertain": false,
      "alts": [],
      "note": null
     },
@@ -821,6 +821,7 @@
     "baby": false,
     "halfFor": [],
     "away": false,
+    "studio": false,
     "intro": false
    }
   },
@@ -1068,12 +1069,12 @@
    "manual": true
   }
  ],
- "version": 8,
- "updatedAt": "2026-11-06T20:00:07.360Z",
+ "version": 9,
+ "updatedAt": "2026-11-08T06:10:36.980Z",
  "pdf": "data/pdf/2026-11-02.pdf",
  "previous": {
-  "version": 7,
-  "updatedAt": "2026-11-04T21:13:03.398Z",
+  "version": 8,
+  "updatedAt": "2026-11-06T20:00:07.360Z",
   "events": [
    {
     "id": "e1",
@@ -1965,7 +1966,7 @@
     "place": "Старая сцена",
     "tech": "Звук, свет",
     "lines": [
-     "Лоскутова, Андреев, Мартюшева, Чепиль"
+     "Лоскутова, Андреев, Мартюшева,Носов"
     ],
     "people": [
      {
@@ -1996,7 +1997,7 @@
       "note": null
      },
      {
-      "name": "Чепиль",
+      "name": "Носов",
       "times": null,
       "from": null,
       "role": null,
@@ -2011,6 +2012,7 @@
      "baby": false,
      "halfFor": [],
      "away": false,
+     "studio": false,
      "intro": false
     }
    },
