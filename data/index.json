@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-08T06:10:43.377Z",
+ "updatedAt": "2026-11-14T13:04:52.240Z",
  "weeks": [
   {
    "id": "2026-09-28",
@@ -240,14 +240,15 @@
    "start": "2026-11-16",
    "end": "2026-11-22",
    "title": "16–22 ноября",
-   "version": 2,
-   "updatedAt": "2026-11-07T09:43:15.037Z",
+   "version": 3,
+   "updatedAt": "2026-11-14T13:04:50.818Z",
    "pdf": "data/pdf/2026-11-16.pdf",
    "people": [
     "Андреев",
     "Баранов",
     "Безносиков",
     "Беканова",
+    "Всем",
     "Галустянц",
     "Глазецкая",
     "Заяшников",
@@ -286,6 +287,7 @@
   "баранов": "data/ics/baranov.ics",
   "безносиков": "data/ics/beznosikov.ics",
   "беканова": "data/ics/bekanova.ics",
+  "всем": "data/ics/vsem.ics",
   "галустянц": "data/ics/galustyants.ics",
   "глазецкая": "data/ics/glazetskaya.ics",
   "гончаренко": "data/ics/goncharenko.ics",

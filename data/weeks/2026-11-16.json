@@ -723,6 +723,44 @@
    }
   },
   {
+   "id": "nmwgf3zhiu5v2ip",
+   "date": "2026-11-20",
+   "timeText": "18:00",
+   "times": [
+    "18:00"
+   ],
+   "range": null,
+   "timeUncertain": false,
+   "title": "Сдача спектакля Муравьишка",
+   "kind": "handover",
+   "place": "Новая сцена",
+   "tech": "",
+   "lines": [
+    "Всем"
+   ],
+   "people": [
+    {
+     "name": "Всем",
+     "times": null,
+     "from": null,
+     "role": null,
+     "uncertain": false,
+     "alts": [],
+     "note": null
+    }
+   ],
+   "scope": "people",
+   "accounting": {
+    "showWeight": 0,
+    "baby": false,
+    "halfFor": [],
+    "away": false,
+    "studio": false,
+    "intro": false
+   },
+   "manual": true
+  },
+  {
    "id": "e12",
    "date": "2026-11-21",
    "timeText": "11:00 13:00 15:00",
@@ -1084,12 +1122,12 @@
    }
   }
  ],
- "version": 2,
- "updatedAt": "2026-11-07T09:43:15.037Z",
+ "version": 3,
+ "updatedAt": "2026-11-14T13:04:50.818Z",
  "pdf": "data/pdf/2026-11-16.pdf",
  "previous": {
-  "version": 1,
-  "updatedAt": "2026-11-04T15:12:31.288Z",
+  "version": 2,
+  "updatedAt": "2026-11-07T09:43:15.037Z",
   "events": [
    {
     "id": "e1",
