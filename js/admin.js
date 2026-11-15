@@ -346,7 +346,7 @@ function renderPreview() {
     status = `<span class="chip warn">Заменит опубликованную версию ${existing.version || 1}</span>`;
     const d = diffSummary(week.events, existing.events);
     diff = d.added || d.removed || d.changed
-      ? `<p class="diff">По сравнению с опубликованной: ${[d.added && `+${d.added} новых`, d.changed && `${d.changed} изменено`, d.removed && `−${d.removed} убрано`].filter(Boolean).join(' · ')}. У людей эти изменения будут отмечены.</p>`
+      ? `<p class="diff">По сравнению с опубликованной: ${[d.added && `+${d.added} новых`, d.changed && `${d.changed} изменено`, d.removed && `−${d.removed} убрано`].filter(Boolean).join(' · ')}. У людей будут показаны только актуальные события.</p>`
       : '<p class="diff muted">Отличий от опубликованной версии нет.</p>';
   }
   const days = [...new Set([...week.days, ...week.events.map((e) => e.date).filter(Boolean)])].sort();

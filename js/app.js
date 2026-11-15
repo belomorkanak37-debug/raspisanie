@@ -226,13 +226,11 @@ function renderFeed() {
   return state.view === 'calendar' ? renderCalendar(feed) : renderList(feed);
 }
 
-// Записи человека за неделю + отменённые (из прошлой версии недели) с отметками изменений.
+// Только актуальные записи человека за неделю с отметками изменений.
 function weekEntries(w, key, keep) {
   const items = personalItems(w.events, key).filter(keep);
-  const removed = w.previous
-    ? markChanges(items, personalItems(w.previous.events, key).filter(keep)).map((r) => ({ ...r, removed: true }))
-    : [];
-  return [...items, ...removed]
+  if (w.previous) markChanges(items, personalItems(w.previous.events, key).filter(keep));
+  return items
     .map((it) => Object.assign(it, { week: w }))
     .sort((a, b) => (a.sortKey < b.sortKey ? -1 : a.sortKey > b.sortKey ? 1 : 0));
 }
