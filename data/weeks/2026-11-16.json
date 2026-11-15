@@ -223,6 +223,62 @@
    }
   },
   {
+   "id": "nmwhsq46v78eml8",
+   "date": "2026-11-17",
+   "timeText": "17:00",
+   "times": [
+    "17:00"
+   ],
+   "range": null,
+   "timeUncertain": false,
+   "title": "Худ.совет, сдача спектакля Муравьишка",
+   "kind": "show",
+   "place": "Новая сцена",
+   "tech": "",
+   "lines": [
+    "Глазецкая, Безносиков,Лоскутов"
+   ],
+   "people": [
+    {
+     "name": "Глазецкая",
+     "times": null,
+     "from": null,
+     "role": null,
+     "uncertain": false,
+     "alts": [],
+     "note": null
+    },
+    {
+     "name": "Безносиков",
+     "times": null,
+     "from": null,
+     "role": null,
+     "uncertain": false,
+     "alts": [],
+     "note": null
+    },
+    {
+     "name": "Лоскутов",
+     "times": null,
+     "from": null,
+     "role": null,
+     "uncertain": false,
+     "alts": [],
+     "note": null
+    }
+   ],
+   "scope": "people",
+   "accounting": {
+    "showWeight": 1,
+    "baby": false,
+    "halfFor": [],
+    "away": false,
+    "studio": false,
+    "intro": false
+   },
+   "manual": true
+  },
+  {
    "id": "e5",
    "date": "2026-11-18",
    "timeText": "11:00",
@@ -805,44 +861,6 @@
    }
   },
   {
-   "id": "nmwgf3zhiu5v2ip",
-   "date": "2026-11-20",
-   "timeText": "18:00",
-   "times": [
-    "18:00"
-   ],
-   "range": null,
-   "timeUncertain": false,
-   "title": "Сдача спектакля Муравьишка",
-   "kind": "handover",
-   "place": "Новая сцена",
-   "tech": "",
-   "lines": [
-    "Всем"
-   ],
-   "people": [
-    {
-     "name": "Всем",
-     "times": null,
-     "from": null,
-     "role": null,
-     "uncertain": false,
-     "alts": [],
-     "note": null
-    }
-   ],
-   "scope": "people",
-   "accounting": {
-    "showWeight": 0,
-    "baby": false,
-    "halfFor": [],
-    "away": false,
-    "studio": false,
-    "intro": false
-   },
-   "manual": true
-  },
-  {
    "id": "e13",
    "date": "2026-11-21",
    "timeText": "11:00 13:00 15:00",
@@ -1204,12 +1222,12 @@
    }
   }
  ],
- "version": 4,
- "updatedAt": "2026-11-14T13:30:24.369Z",
+ "version": 5,
+ "updatedAt": "2026-11-15T12:13:55.601Z",
  "pdf": "data/pdf/2026-11-16.pdf",
  "previous": {
-  "version": 3,
-  "updatedAt": "2026-11-14T13:04:50.818Z",
+  "version": 4,
+  "updatedAt": "2026-11-14T13:30:24.369Z",
   "events": [
    {
     "id": "e1",
@@ -1218,10 +1236,10 @@
     "times": [],
     "range": null,
     "timeUncertain": false,
-    "title": "ВЫХОДНОЙ",
-    "kind": "other",
+    "title": "ВЫХОДНОЙ (кроме состава спектакля «Муравьишка»)",
+    "kind": "show",
     "place": "",
-    "tech": "",
+    "tech": "Звук - Бабанов, свет - Нечаев",
     "lines": [],
     "people": [],
     "scope": "note",
@@ -1236,6 +1254,61 @@
    },
    {
     "id": "e2",
+    "date": "2026-11-16",
+    "timeText": "11:00",
+    "times": [
+     "11:00"
+    ],
+    "range": null,
+    "timeUncertain": false,
+    "title": "Репетиция спектакля «Муравьишка»",
+    "kind": "rehearsal",
+    "place": "",
+    "tech": "Звук - Бабанов, свет - Нечаев",
+    "lines": [
+     "Чепиль, Сигитова, Андреев"
+    ],
+    "people": [
+     {
+      "name": "Чепиль",
+      "times": null,
+      "from": null,
+      "role": null,
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     },
+     {
+      "name": "Сигитова",
+      "times": null,
+      "from": null,
+      "role": null,
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     },
+     {
+      "name": "Андреев",
+      "times": null,
+      "from": null,
+      "role": null,
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     }
+    ],
+    "scope": "people",
+    "accounting": {
+     "showWeight": 0,
+     "baby": false,
+     "halfFor": [],
+     "away": false,
+     "studio": false,
+     "intro": false
+    }
+   },
+   {
+    "id": "e3",
     "date": "2026-11-17",
     "timeText": "11:00",
     "times": [
@@ -1290,7 +1363,7 @@
     }
    },
    {
-    "id": "e3",
+    "id": "e4",
     "date": "2026-11-17",
     "timeText": "12:00",
     "times": [
@@ -1364,7 +1437,7 @@
     }
    },
    {
-    "id": "e4",
+    "id": "e5",
     "date": "2026-11-18",
     "timeText": "11:00",
     "times": [
@@ -1419,7 +1492,7 @@
     }
    },
    {
-    "id": "e5",
+    "id": "e6",
     "date": "2026-11-18",
     "timeText": "12:00",
     "times": [
@@ -1432,21 +1505,39 @@
     "place": "Старая сцена",
     "tech": "Звук",
     "lines": [
-     "Вводящаяся –Разуваева; вводящая – Беканова",
-     "Баранов, Миронова, Кожев, Глазецкая"
+     "Вводящиеся –Разуваева, Шаймиев; вводящая – Беканова, Кожев",
+     "Баранов, Миронова, Глазецкая"
     ],
     "people": [
      {
       "name": "Разуваева",
       "times": null,
       "from": null,
-      "role": "вводящаяся",
+      "role": "вводящиеся",
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     },
+     {
+      "name": "Шаймиев",
+      "times": null,
+      "from": null,
+      "role": "вводящиеся",
       "uncertain": false,
       "alts": [],
       "note": null
      },
      {
       "name": "Беканова",
+      "times": null,
+      "from": null,
+      "role": "вводящая",
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     },
+     {
+      "name": "Кожев",
       "times": null,
       "from": null,
       "role": "вводящая",
@@ -1465,15 +1556,6 @@
      },
      {
       "name": "Миронова",
-      "times": null,
-      "from": null,
-      "role": null,
-      "uncertain": false,
-      "alts": [],
-      "note": null
-     },
-     {
-      "name": "Кожев",
       "times": null,
       "from": null,
       "role": null,
@@ -1502,7 +1584,7 @@
     }
    },
    {
-    "id": "e6",
+    "id": "e7",
     "date": "2026-11-19",
     "timeText": "11:00",
     "times": [
@@ -1557,7 +1639,7 @@
     }
    },
    {
-    "id": "e7",
+    "id": "e8",
     "date": "2026-11-19",
     "timeText": "12:00",
     "times": [
@@ -1570,21 +1652,39 @@
     "place": "Старая сцена",
     "tech": "Звук, свет",
     "lines": [
-     "Вводящаяся –Разуваева; вводящая – Беканова",
-     "Баранов, Миронова, Кожев, Глазецкая"
+     "Вводящиеся –Разуваева, Шаймиев; вводящая – Беканова, Кожев",
+     "Баранов, Миронова, Глазецкая"
     ],
     "people": [
      {
       "name": "Разуваева",
       "times": null,
       "from": null,
-      "role": "вводящаяся",
+      "role": "вводящиеся",
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     },
+     {
+      "name": "Шаймиев",
+      "times": null,
+      "from": null,
+      "role": "вводящиеся",
       "uncertain": false,
       "alts": [],
       "note": null
      },
      {
       "name": "Беканова",
+      "times": null,
+      "from": null,
+      "role": "вводящая",
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     },
+     {
+      "name": "Кожев",
       "times": null,
       "from": null,
       "role": "вводящая",
@@ -1603,15 +1703,6 @@
      },
      {
       "name": "Миронова",
-      "times": null,
-      "from": null,
-      "role": null,
-      "uncertain": false,
-      "alts": [],
-      "note": null
-     },
-     {
-      "name": "Кожев",
       "times": null,
       "from": null,
       "role": null,
@@ -1640,7 +1731,7 @@
     }
    },
    {
-    "id": "e8",
+    "id": "e9",
     "date": "2026-11-20",
     "timeText": "11:00",
     "times": [
@@ -1695,7 +1786,7 @@
     }
    },
    {
-    "id": "e9",
+    "id": "e10",
     "date": "2026-11-20",
     "timeText": "13:00 (?)",
     "times": [
@@ -1708,21 +1799,39 @@
     "place": "Старая сцена",
     "tech": "Звук",
     "lines": [
-     "Вводящаяся –Разуваева; вводящая – Беканова",
-     "Баранов, Миронова, Кожев, Глазецкая"
+     "Вводящиеся –Разуваева, Шаймиев; вводящая – Беканова, Кожев",
+     "Баранов, Миронова, Глазецкая"
     ],
     "people": [
      {
       "name": "Разуваева",
       "times": null,
       "from": null,
-      "role": "вводящаяся",
+      "role": "вводящиеся",
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     },
+     {
+      "name": "Шаймиев",
+      "times": null,
+      "from": null,
+      "role": "вводящиеся",
       "uncertain": false,
       "alts": [],
       "note": null
      },
      {
       "name": "Беканова",
+      "times": null,
+      "from": null,
+      "role": "вводящая",
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     },
+     {
+      "name": "Кожев",
       "times": null,
       "from": null,
       "role": "вводящая",
@@ -1741,15 +1850,6 @@
      },
      {
       "name": "Миронова",
-      "times": null,
-      "from": null,
-      "role": null,
-      "uncertain": false,
-      "alts": [],
-      "note": null
-     },
-     {
-      "name": "Кожев",
       "times": null,
       "from": null,
       "role": null,
@@ -1778,7 +1878,7 @@
     }
    },
    {
-    "id": "e10",
+    "id": "e11",
     "date": "2026-11-20",
     "timeText": "18:00",
     "times": [
@@ -1833,7 +1933,7 @@
     }
    },
    {
-    "id": "e11",
+    "id": "e12",
     "date": "2026-11-20",
     "timeText": "18:00",
     "times": [
@@ -1957,7 +2057,7 @@
     "manual": true
    },
    {
-    "id": "e12",
+    "id": "e13",
     "date": "2026-11-21",
     "timeText": "11:00 13:00 15:00",
     "times": [
@@ -2037,7 +2137,7 @@
     }
    },
    {
-    "id": "e13",
+    "id": "e14",
     "date": "2026-11-21",
     "timeText": "11:00 13:00 15:00",
     "times": [
@@ -2094,7 +2194,7 @@
     }
    },
    {
-    "id": "e14",
+    "id": "e15",
     "date": "2026-11-22",
     "timeText": "11:00 13:00 15:00",
     "times": [
@@ -2160,7 +2260,7 @@
     }
    },
    {
-    "id": "e15",
+    "id": "e16",
     "date": "2026-11-22",
     "timeText": "11:00 13:00 15:00",
     "times": [
@@ -2226,7 +2326,7 @@
     }
    },
    {
-    "id": "e16",
+    "id": "e17",
     "date": "2026-11-22",
     "timeText": "17:00",
     "times": [
@@ -2272,7 +2372,7 @@
     }
    },
    {
-    "id": "e17",
+    "id": "e18",
     "date": "2026-11-22",
     "timeText": "18:30",
     "times": [
