@@ -231,8 +231,8 @@
    ],
    "range": null,
    "timeUncertain": false,
-   "title": "Худ.совет, сдача спектакля Муравьишка",
-   "kind": "show",
+   "title": "Худ.совет Муравьишка",
+   "kind": "other",
    "place": "Новая сцена",
    "tech": "",
    "lines": [
@@ -269,7 +269,7 @@
    ],
    "scope": "people",
    "accounting": {
-    "showWeight": 1,
+    "showWeight": 0,
     "baby": false,
     "halfFor": [],
     "away": false,
@@ -1222,12 +1222,12 @@
    }
   }
  ],
- "version": 5,
- "updatedAt": "2026-11-15T12:13:55.601Z",
+ "version": 6,
+ "updatedAt": "2026-11-15T12:15:43.241Z",
  "pdf": "data/pdf/2026-11-16.pdf",
  "previous": {
-  "version": 4,
-  "updatedAt": "2026-11-14T13:30:24.369Z",
+  "version": 5,
+  "updatedAt": "2026-11-15T12:13:55.601Z",
   "events": [
    {
     "id": "e1",
@@ -1435,6 +1435,62 @@
      "studio": false,
      "intro": true
     }
+   },
+   {
+    "id": "nmwhsq46v78eml8",
+    "date": "2026-11-17",
+    "timeText": "17:00",
+    "times": [
+     "17:00"
+    ],
+    "range": null,
+    "timeUncertain": false,
+    "title": "Худ.совет, сдача спектакля Муравьишка",
+    "kind": "show",
+    "place": "Новая сцена",
+    "tech": "",
+    "lines": [
+     "Глазецкая, Безносиков,Лоскутов"
+    ],
+    "people": [
+     {
+      "name": "Глазецкая",
+      "times": null,
+      "from": null,
+      "role": null,
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     },
+     {
+      "name": "Безносиков",
+      "times": null,
+      "from": null,
+      "role": null,
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     },
+     {
+      "name": "Лоскутов",
+      "times": null,
+      "from": null,
+      "role": null,
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     }
+    ],
+    "scope": "people",
+    "accounting": {
+     "showWeight": 1,
+     "baby": false,
+     "halfFor": [],
+     "away": false,
+     "studio": false,
+     "intro": false
+    },
+    "manual": true
    },
    {
     "id": "e5",
@@ -2017,44 +2073,6 @@
      "studio": false,
      "intro": false
     }
-   },
-   {
-    "id": "nmwgf3zhiu5v2ip",
-    "date": "2026-11-20",
-    "timeText": "18:00",
-    "times": [
-     "18:00"
-    ],
-    "range": null,
-    "timeUncertain": false,
-    "title": "Сдача спектакля Муравьишка",
-    "kind": "handover",
-    "place": "Новая сцена",
-    "tech": "",
-    "lines": [
-     "Всем"
-    ],
-    "people": [
-     {
-      "name": "Всем",
-      "times": null,
-      "from": null,
-      "role": null,
-      "uncertain": false,
-      "alts": [],
-      "note": null
-     }
-    ],
-    "scope": "people",
-    "accounting": {
-     "showWeight": 0,
-     "baby": false,
-     "halfFor": [],
-     "away": false,
-     "studio": false,
-     "intro": false
-    },
-    "manual": true
    },
    {
     "id": "e13",
