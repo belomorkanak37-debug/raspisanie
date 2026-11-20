@@ -158,6 +158,32 @@
    }
   },
   {
+   "id": "nmwoqorxudgcu8r",
+   "date": "2026-11-24",
+   "timeText": "13:00",
+   "times": [
+    "13:00"
+   ],
+   "range": null,
+   "timeUncertain": false,
+   "title": "Собрание",
+   "kind": "meeting",
+   "place": "Новая сцена",
+   "tech": "",
+   "lines": [],
+   "people": [],
+   "scope": "all",
+   "accounting": {
+    "showWeight": 0,
+    "baby": false,
+    "halfFor": [],
+    "away": false,
+    "studio": false,
+    "intro": false
+   },
+   "manual": true
+  },
+  {
    "id": "e4",
    "date": "2026-11-24",
    "timeText": "14:00",
@@ -1560,32 +1586,6 @@
    }
   },
   {
-   "id": "nmwoqorxudgcu8r",
-   "date": "2026-11-29",
-   "timeText": "13:00",
-   "times": [
-    "13:00"
-   ],
-   "range": null,
-   "timeUncertain": false,
-   "title": "Собрание",
-   "kind": "meeting",
-   "place": "Новая сцена",
-   "tech": "",
-   "lines": [],
-   "people": [],
-   "scope": "all",
-   "accounting": {
-    "showWeight": 0,
-    "baby": false,
-    "halfFor": [],
-    "away": false,
-    "studio": false,
-    "intro": false
-   },
-   "manual": true
-  },
-  {
    "id": "e19",
    "date": "2026-11-29",
    "timeText": "17:00",
@@ -1678,12 +1678,12 @@
    }
   }
  ],
- "version": 4,
- "updatedAt": "2026-11-20T08:51:29.112Z",
+ "version": 5,
+ "updatedAt": "2026-11-20T08:53:02.409Z",
  "pdf": "data/pdf/2026-11-23.pdf",
  "previous": {
-  "version": 3,
-  "updatedAt": "2026-11-14T13:14:25.197Z",
+  "version": 4,
+  "updatedAt": "2026-11-20T08:51:29.112Z",
   "events": [
    {
     "id": "e1",
@@ -3228,6 +3228,32 @@
      "studio": false,
      "intro": false
     }
+   },
+   {
+    "id": "nmwoqorxudgcu8r",
+    "date": "2026-11-29",
+    "timeText": "13:00",
+    "times": [
+     "13:00"
+    ],
+    "range": null,
+    "timeUncertain": false,
+    "title": "Собрание",
+    "kind": "meeting",
+    "place": "Новая сцена",
+    "tech": "",
+    "lines": [],
+    "people": [],
+    "scope": "all",
+    "accounting": {
+     "showWeight": 0,
+     "baby": false,
+     "halfFor": [],
+     "away": false,
+     "studio": false,
+     "intro": false
+    },
+    "manual": true
    },
    {
     "id": "e19",
