@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-20T08:53:03.680Z",
+ "updatedAt": "2026-11-21T16:33:59.212Z",
  "weeks": [
   {
    "id": "2026-09-28",
@@ -296,6 +296,42 @@
     "Чирочкина",
     "Шаймиев"
    ]
+  },
+  {
+   "id": "2026-11-30",
+   "start": "2026-11-30",
+   "end": "2026-12-06",
+   "title": "30 ноября — 6 декабря",
+   "version": 1,
+   "updatedAt": "2026-11-21T16:33:58.151Z",
+   "pdf": "data/pdf/2026-11-30.pdf",
+   "people": [
+    "Андреев",
+    "Баранов",
+    "Безносиков",
+    "Беканова",
+    "Галустянц",
+    "Глазецкая",
+    "Денисова",
+    "Заяшников",
+    "Кожев",
+    "Лоскутов",
+    "Лоскутова",
+    "Мартюшева",
+    "Миронова",
+    "Носов",
+    "Ожинский",
+    "Радыгин",
+    "Разуваева",
+    "Ромашева",
+    "Самойлов",
+    "Семёнов",
+    "Сигитова",
+    "Трунина",
+    "Чепиль",
+    "Чирочкина",
+    "Шаймиев"
+   ]
   }
  ],
  "calendars": {
@@ -310,6 +346,7 @@
   "глазецкая": "data/ics/glazetskaya.ics",
   "гончаренко": "data/ics/goncharenko.ics",
   "демьянова": "data/ics/demyanova.ics",
+  "денисова": "data/ics/denisova.ics",
   "заяшников": "data/ics/zayashnikov.ics",
   "кожев": "data/ics/kozhev.ics",
   "кожевникова": "data/ics/kozhevnikova.ics",
@@ -323,7 +360,9 @@
   "ожинский": "data/ics/ozhinskiy.ics",
   "радыгин": "data/ics/radygin.ics",
   "разуваева": "data/ics/razuvaeva.ics",
+  "ромашева": "data/ics/romasheva.ics",
   "самойлов": "data/ics/samoylov.ics",
+  "семенов": "data/ics/semenov.ics",
   "сигитова": "data/ics/sigitova.ics",
   "советов": "data/ics/sovetov.ics",
   "трунина": "data/ics/trunina.ics",
