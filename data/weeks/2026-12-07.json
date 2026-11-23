@@ -4,7 +4,7 @@
  "end": "2026-12-13",
  "title": "7–13 декабря",
  "header": "ПЛАН РАБОТЫ На ДЕКАБРЬ 2026 года",
- "source": "с  07 декабря по 13 декабря.pdf",
+ "source": "7 декабря по 13 декабря.pdf",
  "days": [
   "2026-12-07",
   "2026-12-08",
@@ -1134,8 +1134,1131 @@
    }
   }
  ],
- "version": 1,
- "updatedAt": "2026-11-21T16:34:53.827Z",
+ "version": 2,
+ "updatedAt": "2026-11-23T11:36:19.411Z",
  "pdf": "data/pdf/2026-12-07.pdf",
- "previous": null
+ "previous": {
+  "version": 1,
+  "updatedAt": "2026-11-21T16:34:53.827Z",
+  "events": [
+   {
+    "id": "e1",
+    "date": "2026-12-07",
+    "timeText": "",
+    "times": [],
+    "range": null,
+    "timeUncertain": false,
+    "title": "ВЫХОДНОЙ",
+    "kind": "other",
+    "place": "",
+    "tech": "",
+    "lines": [],
+    "people": [],
+    "scope": "note",
+    "accounting": {
+     "showWeight": 0,
+     "baby": false,
+     "halfFor": [],
+     "away": false,
+     "studio": false,
+     "intro": false
+    }
+   },
+   {
+    "id": "e2",
+    "date": "2026-12-08",
+    "timeText": "12:00",
+    "times": [
+     "12:00"
+    ],
+    "range": null,
+    "timeUncertain": false,
+    "title": "Ввод в спектакль «Приключения пингвинят»",
+    "kind": "intro",
+    "place": "Старая сцена",
+    "tech": "Звук, свет",
+    "lines": [
+     "Вводящиеся – Радыгин, Сигитова; вводящие – Шаймиев, Беканова",
+     "Кожев, Носов, Заяшников"
+    ],
+    "people": [
+     {
+      "name": "Радыгин",
+      "times": null,
+      "from": null,
+      "role": "вводящиеся",
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     },
+     {
+      "name": "Сигитова",
+      "times": null,
+      "from": null,
+      "role": "вводящиеся",
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     },
+     {
+      "name": "Шаймиев",
+      "times": null,
+      "from": null,
+      "role": "вводящие",
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     },
+     {
+      "name": "Беканова",
+      "times": null,
+      "from": null,
+      "role": "вводящие",
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     },
+     {
+      "name": "Кожев",
+      "times": null,
+      "from": null,
+      "role": null,
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     },
+     {
+      "name": "Носов",
+      "times": null,
+      "from": null,
+      "role": null,
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     },
+     {
+      "name": "Заяшников",
+      "times": null,
+      "from": null,
+      "role": null,
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     }
+    ],
+    "scope": "people",
+    "accounting": {
+     "showWeight": 0,
+     "baby": false,
+     "halfFor": [],
+     "away": false,
+     "studio": false,
+     "intro": true
+    }
+   },
+   {
+    "id": "e3",
+    "date": "2026-12-08",
+    "timeText": "12:00",
+    "times": [
+     "12:00"
+    ],
+    "range": null,
+    "timeUncertain": false,
+    "title": "Ввод в спектакль «Морозко» + сдача А. С. В 16:00",
+    "kind": "intro",
+    "place": "Новая сцена",
+    "tech": "Звук",
+    "lines": [
+     "Вводящаяся – Мартюшева;",
+     "Чирочкина, Андреев"
+    ],
+    "people": [
+     {
+      "name": "Мартюшева",
+      "times": null,
+      "from": null,
+      "role": "вводящаяся",
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     },
+     {
+      "name": "Чирочкина",
+      "times": null,
+      "from": null,
+      "role": null,
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     },
+     {
+      "name": "Андреев",
+      "times": null,
+      "from": null,
+      "role": null,
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     }
+    ],
+    "scope": "people",
+    "accounting": {
+     "showWeight": 0,
+     "baby": false,
+     "halfFor": [],
+     "away": false,
+     "studio": false,
+     "intro": true
+    }
+   },
+   {
+    "id": "e4",
+    "date": "2026-12-09",
+    "timeText": "12:00",
+    "times": [
+     "12:00"
+    ],
+    "range": null,
+    "timeUncertain": false,
+    "title": "Ввод в спектакль «Приключения пингвинят»",
+    "kind": "intro",
+    "place": "Старая сцена",
+    "tech": "Звук, свет",
+    "lines": [
+     "Вводящиеся – Радыгин, Сигитова; вводящие – Глазецкая",
+     "Кожев, Носов, Заяшников"
+    ],
+    "people": [
+     {
+      "name": "Радыгин",
+      "times": null,
+      "from": null,
+      "role": "вводящиеся",
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     },
+     {
+      "name": "Сигитова",
+      "times": null,
+      "from": null,
+      "role": "вводящиеся",
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     },
+     {
+      "name": "Глазецкая",
+      "times": null,
+      "from": null,
+      "role": "вводящие",
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     },
+     {
+      "name": "Кожев",
+      "times": null,
+      "from": null,
+      "role": null,
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     },
+     {
+      "name": "Носов",
+      "times": null,
+      "from": null,
+      "role": null,
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     },
+     {
+      "name": "Заяшников",
+      "times": null,
+      "from": null,
+      "role": null,
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     }
+    ],
+    "scope": "people",
+    "accounting": {
+     "showWeight": 0,
+     "baby": false,
+     "halfFor": [],
+     "away": false,
+     "studio": false,
+     "intro": true
+    }
+   },
+   {
+    "id": "e5",
+    "date": "2026-12-09",
+    "timeText": "12:00",
+    "times": [
+     "12:00"
+    ],
+    "range": null,
+    "timeUncertain": false,
+    "title": "Репетиция спектакля «Морозко»",
+    "kind": "rehearsal",
+    "place": "Новая сцена",
+    "tech": "Звук, свет",
+    "lines": [
+     "Мартюшева, Галустянц, Баранов"
+    ],
+    "people": [
+     {
+      "name": "Мартюшева",
+      "times": null,
+      "from": null,
+      "role": null,
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     },
+     {
+      "name": "Галустянц",
+      "times": null,
+      "from": null,
+      "role": null,
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     },
+     {
+      "name": "Баранов",
+      "times": null,
+      "from": null,
+      "role": null,
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     }
+    ],
+    "scope": "people",
+    "accounting": {
+     "showWeight": 0,
+     "baby": false,
+     "halfFor": [],
+     "away": false,
+     "studio": false,
+     "intro": false
+    }
+   },
+   {
+    "id": "e6",
+    "date": "2026-12-10",
+    "timeText": "12:00",
+    "times": [
+     "12:00"
+    ],
+    "range": null,
+    "timeUncertain": false,
+    "title": "Репетиция спектакля «Серебряное копытце»",
+    "kind": "rehearsal",
+    "place": "Старая сцена",
+    "tech": "Звук, свет",
+    "lines": [
+     "Разуваева, Миронова, Лоскутова, Галустянц, Кожев, Баранов"
+    ],
+    "people": [
+     {
+      "name": "Разуваева",
+      "times": null,
+      "from": null,
+      "role": null,
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     },
+     {
+      "name": "Миронова",
+      "times": null,
+      "from": null,
+      "role": null,
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     },
+     {
+      "name": "Лоскутова",
+      "times": null,
+      "from": null,
+      "role": null,
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     },
+     {
+      "name": "Галустянц",
+      "times": null,
+      "from": null,
+      "role": null,
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     },
+     {
+      "name": "Кожев",
+      "times": null,
+      "from": null,
+      "role": null,
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     },
+     {
+      "name": "Баранов",
+      "times": null,
+      "from": null,
+      "role": null,
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     }
+    ],
+    "scope": "people",
+    "accounting": {
+     "showWeight": 0,
+     "baby": false,
+     "halfFor": [],
+     "away": false,
+     "studio": false,
+     "intro": false
+    }
+   },
+   {
+    "id": "e7",
+    "date": "2026-12-10",
+    "timeText": "12:00",
+    "times": [
+     "12:00"
+    ],
+    "range": null,
+    "timeUncertain": false,
+    "title": "Ввод в спектакль «Как Снеговик за ёлкой ходил» + сдача А.С. в 14:00",
+    "kind": "intro",
+    "place": "Новая сцена",
+    "tech": "Звук, свет",
+    "lines": [
+     "Вводящаяся – Сигитова",
+     "Шаймиев, Безносиков, Чирочкина, Мартюшева, Заяшников"
+    ],
+    "people": [
+     {
+      "name": "Сигитова",
+      "times": null,
+      "from": null,
+      "role": "вводящаяся",
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     },
+     {
+      "name": "Шаймиев",
+      "times": null,
+      "from": null,
+      "role": null,
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     },
+     {
+      "name": "Безносиков",
+      "times": null,
+      "from": null,
+      "role": null,
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     },
+     {
+      "name": "Чирочкина",
+      "times": null,
+      "from": null,
+      "role": null,
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     },
+     {
+      "name": "Мартюшева",
+      "times": null,
+      "from": null,
+      "role": null,
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     },
+     {
+      "name": "Заяшников",
+      "times": null,
+      "from": null,
+      "role": null,
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     }
+    ],
+    "scope": "people",
+    "accounting": {
+     "showWeight": 0,
+     "baby": false,
+     "halfFor": [],
+     "away": false,
+     "studio": false,
+     "intro": true
+    }
+   },
+   {
+    "id": "e8",
+    "date": "2026-12-11",
+    "timeText": "11:00 17:00",
+    "times": [
+     "11:00",
+     "17:00"
+    ],
+    "range": null,
+    "timeUncertain": false,
+    "title": "Спектакль «Собачка»",
+    "kind": "show",
+    "place": "Новая сцена",
+    "tech": "Звук, свет",
+    "lines": [
+     "11:00 Разуваева, Шаймиев, Лоскутова",
+     "17:00 Лоскутов, Трунина, Носов"
+    ],
+    "people": [
+     {
+      "name": "Разуваева",
+      "times": [
+       "11:00"
+      ],
+      "from": null,
+      "role": null,
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     },
+     {
+      "name": "Шаймиев",
+      "times": [
+       "11:00"
+      ],
+      "from": null,
+      "role": null,
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     },
+     {
+      "name": "Лоскутова",
+      "times": [
+       "11:00"
+      ],
+      "from": null,
+      "role": null,
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     },
+     {
+      "name": "Лоскутов",
+      "times": [
+       "17:00"
+      ],
+      "from": null,
+      "role": null,
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     },
+     {
+      "name": "Трунина",
+      "times": [
+       "17:00"
+      ],
+      "from": null,
+      "role": null,
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     },
+     {
+      "name": "Носов",
+      "times": [
+       "17:00"
+      ],
+      "from": null,
+      "role": null,
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     }
+    ],
+    "scope": "people",
+    "accounting": {
+     "showWeight": 1,
+     "baby": true,
+     "halfFor": [],
+     "away": false,
+     "studio": false,
+     "intro": false
+    }
+   },
+   {
+    "id": "e9",
+    "date": "2026-12-11",
+    "timeText": "15:30",
+    "times": [
+     "15:30"
+    ],
+    "range": null,
+    "timeUncertain": false,
+    "title": "Репетиция спектакля «Серебряное копытце»",
+    "kind": "rehearsal",
+    "place": "Старая сцена",
+    "tech": "Звук, свет",
+    "lines": [
+     "Глазецкая, Миронова, Лоскутова, Галустянц, Шаймиев, Баранов"
+    ],
+    "people": [
+     {
+      "name": "Глазецкая",
+      "times": null,
+      "from": null,
+      "role": null,
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     },
+     {
+      "name": "Миронова",
+      "times": null,
+      "from": null,
+      "role": null,
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     },
+     {
+      "name": "Лоскутова",
+      "times": null,
+      "from": null,
+      "role": null,
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     },
+     {
+      "name": "Галустянц",
+      "times": null,
+      "from": null,
+      "role": null,
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     },
+     {
+      "name": "Шаймиев",
+      "times": null,
+      "from": null,
+      "role": null,
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     },
+     {
+      "name": "Баранов",
+      "times": null,
+      "from": null,
+      "role": null,
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     }
+    ],
+    "scope": "people",
+    "accounting": {
+     "showWeight": 0,
+     "baby": false,
+     "halfFor": [],
+     "away": false,
+     "studio": false,
+     "intro": false
+    }
+   },
+   {
+    "id": "e10",
+    "date": "2026-12-11",
+    "timeText": "18:00",
+    "times": [
+     "18:00"
+    ],
+    "range": null,
+    "timeUncertain": false,
+    "title": "Спектакль «Серебряное копытце»",
+    "kind": "show",
+    "place": "Старая сцена",
+    "tech": "Звук, свет",
+    "lines": [
+     "Глазецкая, Миронова, Лоскутова, Галустянц, Шаймиев, Баранов"
+    ],
+    "people": [
+     {
+      "name": "Глазецкая",
+      "times": null,
+      "from": null,
+      "role": null,
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     },
+     {
+      "name": "Миронова",
+      "times": null,
+      "from": null,
+      "role": null,
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     },
+     {
+      "name": "Лоскутова",
+      "times": null,
+      "from": null,
+      "role": null,
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     },
+     {
+      "name": "Галустянц",
+      "times": null,
+      "from": null,
+      "role": null,
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     },
+     {
+      "name": "Шаймиев",
+      "times": null,
+      "from": null,
+      "role": null,
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     },
+     {
+      "name": "Баранов",
+      "times": null,
+      "from": null,
+      "role": null,
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     }
+    ],
+    "scope": "people",
+    "accounting": {
+     "showWeight": 1,
+     "baby": false,
+     "halfFor": [],
+     "away": false,
+     "studio": false,
+     "intro": false
+    }
+   },
+   {
+    "id": "e11",
+    "date": "2026-12-12",
+    "timeText": "11:00 13:00 15:00",
+    "times": [
+     "11:00",
+     "13:00",
+     "15:00"
+    ],
+    "range": null,
+    "timeUncertain": false,
+    "title": "Спектакль «Серебряное копытце»",
+    "kind": "show",
+    "place": "Старая сцена",
+    "tech": "Звук, свет",
+    "lines": [
+     "Кожев, Галустянц, Трунина, Миронова, Разуваева, Баранов",
+     "15:00 + Интерактив: Дед Мороз – Лоскутов; Снегурочка - Глазецкая"
+    ],
+    "people": [
+     {
+      "name": "Кожев",
+      "times": null,
+      "from": null,
+      "role": null,
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     },
+     {
+      "name": "Галустянц",
+      "times": null,
+      "from": null,
+      "role": null,
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     },
+     {
+      "name": "Трунина",
+      "times": null,
+      "from": null,
+      "role": null,
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     },
+     {
+      "name": "Миронова",
+      "times": null,
+      "from": null,
+      "role": null,
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     },
+     {
+      "name": "Разуваева",
+      "times": null,
+      "from": null,
+      "role": null,
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     },
+     {
+      "name": "Баранов",
+      "times": null,
+      "from": null,
+      "role": null,
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     },
+     {
+      "name": "Лоскутов",
+      "times": [
+       "15:00"
+      ],
+      "from": null,
+      "role": "интерактив дед мороз",
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     },
+     {
+      "name": "Глазецкая",
+      "times": null,
+      "from": null,
+      "role": "снегурочка",
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     }
+    ],
+    "scope": "people",
+    "accounting": {
+     "showWeight": 1,
+     "baby": false,
+     "halfFor": [],
+     "away": false,
+     "studio": false,
+     "intro": false
+    }
+   },
+   {
+    "id": "e12",
+    "date": "2026-12-12",
+    "timeText": "11:00 13:00 15:00",
+    "times": [
+     "11:00",
+     "13:00",
+     "15:00"
+    ],
+    "range": null,
+    "timeUncertain": false,
+    "title": "Спектакль «Морозко»",
+    "kind": "show",
+    "place": "Новая сцена",
+    "tech": "Звук, свет",
+    "lines": [
+     "Мартюшева, Чирочкина, Андреев",
+     "15:00 + Интермедия: Дед Мороз – Безносиков; Снегурочка - Алексеева"
+    ],
+    "people": [
+     {
+      "name": "Мартюшева",
+      "times": null,
+      "from": null,
+      "role": null,
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     },
+     {
+      "name": "Чирочкина",
+      "times": null,
+      "from": null,
+      "role": null,
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     },
+     {
+      "name": "Андреев",
+      "times": null,
+      "from": null,
+      "role": null,
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     },
+     {
+      "name": "Безносиков",
+      "times": [
+       "15:00"
+      ],
+      "from": null,
+      "role": "интермедия дед мороз",
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     },
+     {
+      "name": "Алексеева",
+      "times": null,
+      "from": null,
+      "role": "снегурочка",
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     }
+    ],
+    "scope": "people",
+    "accounting": {
+     "showWeight": 1,
+     "baby": false,
+     "halfFor": [],
+     "away": false,
+     "studio": false,
+     "intro": false
+    }
+   },
+   {
+    "id": "e13",
+    "date": "2026-12-13",
+    "timeText": "11:00 13:00 15:00",
+    "times": [
+     "11:00",
+     "13:00",
+     "15:00"
+    ],
+    "range": null,
+    "timeUncertain": false,
+    "title": "Спектакль «Приключения пингвинят»",
+    "kind": "show",
+    "place": "Старая сцена",
+    "tech": "Звук, свет",
+    "lines": [
+     "Радыгин, Кожев, Носов, Заяшников, Сигитова",
+     "15:00 + Интерактив: Дед Мороз – Лоскутов; Снегурочка - Беканова"
+    ],
+    "people": [
+     {
+      "name": "Радыгин",
+      "times": null,
+      "from": null,
+      "role": null,
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     },
+     {
+      "name": "Кожев",
+      "times": null,
+      "from": null,
+      "role": null,
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     },
+     {
+      "name": "Носов",
+      "times": null,
+      "from": null,
+      "role": null,
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     },
+     {
+      "name": "Заяшников",
+      "times": null,
+      "from": null,
+      "role": null,
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     },
+     {
+      "name": "Сигитова",
+      "times": null,
+      "from": null,
+      "role": null,
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     },
+     {
+      "name": "Лоскутов",
+      "times": [
+       "15:00"
+      ],
+      "from": null,
+      "role": "интерактив дед мороз",
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     },
+     {
+      "name": "Беканова",
+      "times": null,
+      "from": null,
+      "role": "снегурочка",
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     }
+    ],
+    "scope": "people",
+    "accounting": {
+     "showWeight": 1,
+     "baby": false,
+     "halfFor": [],
+     "away": false,
+     "studio": false,
+     "intro": false
+    }
+   },
+   {
+    "id": "e14",
+    "date": "2026-12-13",
+    "timeText": "11:00 13:00 15:00",
+    "times": [
+     "11:00",
+     "13:00",
+     "15:00"
+    ],
+    "range": null,
+    "timeUncertain": false,
+    "title": "Спектакль «Как Снеговик за ёлкой ходил»",
+    "kind": "show",
+    "place": "Новая сцена",
+    "tech": "Звук, свет",
+    "lines": [
+     "Андреев, Лоскутова, Безносиков, Шаймиев, Мартюшева, Разуваева",
+     "15:00 + Интермедия: Дед Мороз – Безносиков; Снегурочка - Глазецкая"
+    ],
+    "people": [
+     {
+      "name": "Андреев",
+      "times": null,
+      "from": null,
+      "role": null,
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     },
+     {
+      "name": "Лоскутова",
+      "times": null,
+      "from": null,
+      "role": null,
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     },
+     {
+      "name": "Безносиков",
+      "times": null,
+      "from": null,
+      "role": null,
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     },
+     {
+      "name": "Шаймиев",
+      "times": null,
+      "from": null,
+      "role": null,
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     },
+     {
+      "name": "Мартюшева",
+      "times": null,
+      "from": null,
+      "role": null,
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     },
+     {
+      "name": "Разуваева",
+      "times": null,
+      "from": null,
+      "role": null,
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     },
+     {
+      "name": "Безносиков",
+      "times": [
+       "15:00"
+      ],
+      "from": null,
+      "role": "интермедия дед мороз",
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     },
+     {
+      "name": "Глазецкая",
+      "times": null,
+      "from": null,
+      "role": "снегурочка",
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     }
+    ],
+    "scope": "people",
+    "accounting": {
+     "showWeight": 1,
+     "baby": false,
+     "halfFor": [],
+     "away": false,
+     "studio": false,
+     "intro": false
+    }
+   }
+  ]
+ }
 }
