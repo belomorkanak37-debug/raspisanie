@@ -576,19 +576,3 @@ main { flex: 1; }
 @media (prefers-reduced-motion: reduce) {
   * { animation: none !important; transition: none !important; }
 }
-
-/* Зимние украшения не перехватывают касания. */
-.winter-garland { height: 22px; margin: 0 3px 8px; display: flex; justify-content: space-around; align-items: flex-start; border-top: 2px solid #47685a; border-radius: 0 0 50% 50%; pointer-events: none; }
-.winter-garland i { position: relative; width: 9px; height: 13px; border-radius: 45% 45% 50% 50%; margin-top: 3px; background: #ed565d; box-shadow: 0 0 7px #ed565d99; animation: bulb-glow 3.6s ease-in-out infinite alternate; }
-.winter-garland i::before { content: ''; position: absolute; width: 5px; height: 4px; left: 2px; top: -4px; background: #47685a; border-radius: 2px 2px 0 0; }
-.winter-garland i:nth-child(4n+2) { background: #48b87b; box-shadow: 0 0 7px #48b87b99; animation-delay: -1s; }
-.winter-garland i:nth-child(4n+3) { background: #5799eb; box-shadow: 0 0 7px #5799eb99; animation-delay: -2s; }
-.winter-garland i:nth-child(4n) { background: #f3c250; box-shadow: 0 0 7px #f3c250aa; animation-delay: -3s; }
-@keyframes bulb-glow { from { opacity: .65; } to { opacity: 1; } }
-.winter-snow { position: fixed; inset: 0; z-index: 10; pointer-events: none; overflow: hidden; }
-.winter-snow i { position: absolute; left: var(--x); top: -10px; width: var(--size); height: var(--size); border-radius: 50%; background: #a8c5d9; opacity: .48; animation: snow-fall var(--duration) linear var(--delay) infinite; }
-@keyframes snow-fall { 0% { transform: translate3d(0, 0, 0); } 33% { transform: translate3d(var(--drift), 34vh, 0); } 66% { transform: translate3d(0, 68vh, 0); } 100% { transform: translate3d(var(--drift), 102vh, 0); } }
-.card::before, .totals-panel::before, .cal::before { content: ''; position: absolute; z-index: 1; pointer-events: none; right: 13px; top: -3px; width: 48px; height: 6px; border-radius: 90% 70% 40% 40%; background: #d7e8f2; box-shadow: -13px 2px 0 -2px #d7e8f2, 12px 2px 0 -2px #d7e8f2; transform-origin: center; animation: snow-settle 18s ease-out both; }
-.totals-panel, .cal { position: relative; }
-@keyframes snow-settle { from { transform: scale(.35, .15); opacity: .3; } to { transform: scale(1); opacity: .85; } }
-@media (prefers-reduced-motion: reduce) { .winter-snow i, .winter-garland i, .card::before, .totals-panel::before, .cal::before { animation: none; } }
