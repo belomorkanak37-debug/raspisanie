@@ -85,6 +85,7 @@ main { flex: 1; }
 
 /* ---------- верхняя панель ---------- */
 .topbar {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -575,3 +576,9 @@ main { flex: 1; }
 @media (prefers-reduced-motion: reduce) {
   * { animation: none !important; transition: none !important; }
 }
+
+/* Ненавязчивое зимнее оформление, не перекрывает управление. */
+.winter-garland { position: absolute; right: 4px; top: -8px; color: #dba65c; opacity: .65; font-size: 11px; letter-spacing: 3px; pointer-events: none; }
+.winter-snow { position: fixed; inset: 0; z-index: 10; pointer-events: none; opacity: .14; background-image: radial-gradient(circle, #9ebbd0 1px, transparent 1.6px), radial-gradient(circle, #b5c9d8 1px, transparent 1.8px); background-size: 103px 129px, 149px 173px; animation: winter-fall 30s linear infinite; }
+@keyframes winter-fall { to { background-position: 40px 258px, -30px 346px; } }
+@media (prefers-reduced-motion: reduce) { .winter-snow { animation: none; } }

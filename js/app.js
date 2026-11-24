@@ -66,6 +66,9 @@ async function loadIndex() {
   if (!state.index) {
     try {
       state.index = await fetchJSON('data/index.json');
+      if ('serviceWorker' in navigator) navigator.serviceWorker.ready.then((reg) => {
+        reg.active?.postMessage({ type: 'cache-weeks', ids: (state.index?.weeks || []).map((w) => w.id) });
+      }).catch(() => {});
     } catch {
       state.index = { weeks: [], calendars: {}, failed: true };
     }

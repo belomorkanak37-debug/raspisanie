@@ -1,7 +1,13 @@
 // Работа без интернета: оболочка приложения из кэша, данные — сначала из сети.
-const VERSION = 'v16';
+const VERSION = 'v17';
 const SHELL = `shell-${VERSION}`;
 const DATA = 'data';
+async function fetchTimed(request, options = {}, ms = 6000) {
+  const controller = new AbortController();
+  const timer = setTimeout(() => controller.abort(), ms);
+  try { return await fetch(request, { ...options, signal: controller.signal }); }
+  finally { clearTimeout(timer); }
+}
 const SHELL_FILES = [
   './', 'index.html', 'css/app.css', 'js/app.js', 'js/core.js', 'js/personal.js', 'manifest.webmanifest',
   'icons/icon.svg', 'icons/icon-192.png', 'icons/apple-touch-icon.png',
@@ -21,6 +27,21 @@ self.addEventListener('activate', (e) => {
     .then(() => self.clients.claim()));
 });
 
+// Сохраняем все опубликованные недели, даже если их ещё не открывали на устройстве.
+self.addEventListener('message', (e) => {
+  if (e.data?.type !== 'cache-weeks' || !Array.isArray(e.data.ids)) return;
+  e.waitUntil((async () => {
+    const cache = await caches.open(DATA);
+    for (const id of e.data.ids.filter((id) => /^\d{4}-\d{2}-\d{2}$/.test(id))) {
+      const url = new URL(`data/weeks/${id}.json`, self.registration.scope);
+      try {
+        const res = await fetchTimed(url, { cache: 'no-store' }, 8000);
+        if (res.ok) await cache.put(url.href, res);
+      } catch { /* При следующем подключении повторим. */ }
+    }
+  })());
+});
+
 self.addEventListener('fetch', (e) => {
   const url = new URL(e.request.url);
   if (e.request.method !== 'GET' || url.origin !== location.origin) return;
@@ -29,19 +50,21 @@ self.addEventListener('fetch', (e) => {
 
   if (/\/data\/.+\.json$/.test(path)) {
     const key = url.origin + path;
-    e.respondWith(fetch(e.request).then((res) => {
-      if (res.ok) {
-        const copy = res.clone();
-        caches.open(DATA).then((c) => c.put(key, copy));
-      }
-      return res;
-    }).catch(async () => {
+    e.respondWith((async () => {
+      try {
+        const res = await fetchTimed(e.request);
+        if (!res.ok) throw new Error(`HTTP ${res.status}`);
+        const cache = await caches.open(DATA);
+        await cache.put(key, res.clone());
+        return res;
+      } catch {
       const cached = await caches.match(key, { cacheName: DATA });
       if (!cached) throw new Error('offline');
       const headers = new Headers(cached.headers);
       headers.set('X-From-Cache', '1');
       return new Response(await cached.blob(), { status: 200, headers });
-    }));
+      }
+    })());
     return;
   }
 
