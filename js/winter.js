@@ -14,6 +14,7 @@ function startWinter() {
   const toggle = document.querySelector('#winterToggle');
   const visitor = document.querySelector('#winterVisitor');
   const character = document.querySelector('#winterCharacter');
+  const dismiss = document.querySelector('#winterDismiss');
   const portrait = document.querySelector('#winterPortrait');
   const fallback = document.querySelector('#winterFallback');
   const bubble = document.querySelector('#winterBubble');
@@ -132,13 +133,13 @@ function startWinter() {
     hint.textContent = 'Поймай меня!'; visitor.hidden = false; invite.hidden = true;
     // Следующий кадр нужен для появления из-за края экрана.
     visitor.getBoundingClientRect(); visitor.classList.add('is-visible');
-    character.disabled = false; visible = true; caught = false; exitAt = elapsed + 10;
+    character.disabled = false; dismiss.disabled = false; visible = true; caught = false; exitAt = elapsed + 10;
   }
   function hideVisitor() {
     invite.textContent = caught ? 'Кто ещё в сугробе?' : 'Ускользнул! Позвать ещё?';
     invite.hidden = false;
     if (visitor.contains(document.activeElement)) invite.focus({ preventScroll: true });
-    visitor.classList.remove('is-visible'); character.disabled = true;
+    visitor.classList.remove('is-visible'); character.disabled = true; dismiss.disabled = true;
     visible = false; invite.hidden = false; nextVisitor = elapsed + 22 + Math.random() * 10;
   }
   character.addEventListener('click', () => {
@@ -151,6 +152,7 @@ function startWinter() {
     exitAt = elapsed + 7;
   });
   invite.addEventListener('click', showVisitor);
+  dismiss.addEventListener('click', hideVisitor);
   // При недоступной картинке остаются читаемые кнопки вместо сломанного изображения.
   portrait.addEventListener('error', () => { portrait.hidden = true; fallback.hidden = false; });
 
@@ -158,7 +160,8 @@ function startWinter() {
     frame = 0;
     if (suspended || !enabled || reduced.matches) return;
     if (now - lastFrame < 32) { frame = requestAnimationFrame(tick); return; }
-    const dt = Math.min((now - lastFrame) / 1000, .06); lastFrame = now; elapsed += dt;
+    const delta = (now - lastFrame) / 1000;
+    const dt = Math.min(delta, .06); lastFrame = now; elapsed += delta;
     if (scanNeeded) scanLedges();
     flakes.forEach((f, i) => {
       const before = f.y;

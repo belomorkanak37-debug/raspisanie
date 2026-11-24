@@ -23,6 +23,7 @@ class Element {
   setAttribute(k, v) { this.attrs.set(k, v); }
   getBoundingClientRect() { return { x: 0, y: 500, width: 115, height: 145 }; }
   contains(el) { return this === el; }
+  focus() {}
   matches() { return false; }
 }
 const elements = new Map();
@@ -53,6 +54,12 @@ assert.equal(get('#winterVisitor').hidden, false);
 assert.equal(get('#winterBubble').textContent, 'Новогодка близко');
 get('#winterCharacter').fire('click');
 assert.match(get('#winterAnnouncement').textContent, /Поймал/);
+get('#winterDismiss').fire('click');
+assert.equal(get('#winterInvite').hidden, false);
+get('#winterInvite').fire('click');
+assert.equal(get('#winterVisitor').dataset.character, 'snowman');
+get('#winterCharacter').fire('click');
+assert.match(get('#winterAnnouncement').textContent, /растопи/);
 assert.equal(frames.size, 1);
 get('#winterMode').fire('click');
 assert.equal(get('#winterModeName').textContent, 'Бегущие огни');

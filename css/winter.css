@@ -27,6 +27,8 @@
 .is-visible .winter-character { pointer-events: auto; }
 .winter-character img { width: 100%; height: 100%; object-fit: contain; user-select: none; }
 .winter-character:active { transform: scale(.94); }
+.winter-dismiss { position: absolute; top: -16px; left: 0; width: 32px; height: 32px; z-index: 1; border-radius: 50%; border: 1px solid #c4d7e4; background: #f5faff; color: #567084; font-size: 22px; line-height: 26px; cursor: pointer; pointer-events: none; }
+.is-visible .winter-dismiss { pointer-events: auto; }
 .winter-visitor.is-caught img { animation: winter-cheer .6s ease-in-out; }
 @keyframes winter-cheer { 0%, 100% { transform: rotate(0); } 25% { transform: rotate(-12deg) translateY(-9px); } 65% { transform: rotate(10deg) translateY(-5px); } }
 .winter-bubble { position: absolute; left: 88px; bottom: 103px; min-width: 155px; max-width: min(210px, calc(100vw - 145px)); width: max-content; padding: 12px 15px; border-radius: 17px 17px 17px 4px; background: #fff9ee; color: #3b3833; border: 1px solid #e5d8c2; box-shadow: 0 5px 22px #162c4520; font-size: 14px; line-height: 1.35; font-weight: 650; transform: rotate(4deg); }
