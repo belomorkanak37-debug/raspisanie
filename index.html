@@ -86,20 +86,7 @@
 
   <div class="winter-scene" id="winterScene">
     <canvas class="winter-canvas" id="winterCanvas" aria-hidden="true"></canvas>
-    <div class="winter-stage">
-      <div class="winter-visitor" id="winterVisitor" data-character="santa" hidden>
-        <button class="winter-dismiss" id="winterDismiss" type="button" aria-label="Спрятать зимнего гостя" disabled>×</button>
-        <div class="winter-bubble" id="winterBubble" aria-hidden="true">Новогодка близко</div>
-        <button class="winter-character" id="winterCharacter" type="button" aria-label="Поймать Деда Мороза">
-          <img id="winterPortrait" src="assets/winter/ded-moroz.webp" width="115" height="145" alt="" draggable="false">
-          <span id="winterFallback" aria-hidden="true" hidden>🎅</span>
-        </button>
-        <span class="winter-catch-hint" aria-hidden="true">Поймай меня!</span>
-      </div>
-      <button class="winter-invite" id="winterInvite" type="button" aria-label="Позвать Деда Мороза или снеговика">Кто в сугробе?</button>
-    </div>
   </div>
-  <span class="winter-sr" id="winterAnnouncement" role="status" aria-live="polite"></span>
   <script type="module" src="js/app.js"></script>
   <script type="module" src="js/winter.js"></script>
 </body>

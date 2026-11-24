@@ -1,5 +1,5 @@
 // Работа без интернета: оболочка приложения из кэша, данные — сначала из сети.
-const VERSION = 'v21';
+const VERSION = 'v22';
 const SHELL = `shell-${VERSION}`;
 const DATA = 'data';
 async function fetchTimed(request, options = {}, ms = 6000) {
@@ -26,13 +26,7 @@ self.addEventListener('activate', (e) => {
   e.waitUntil(caches.keys()
     .then((keys) => Promise.all(keys.filter((k) => k !== SHELL && k !== DATA).map((k) => caches.delete(k))))
     .then(() => self.clients.claim()));
-  // Иллюстрации необязательны: их загрузка не блокирует установку приложения.
-  e.waitUntil(caches.open(SHELL).then((cache) => Promise.allSettled(
-    ['assets/winter/ded-moroz.webp', 'assets/winter/snowman.webp'].map(async (path) => {
-      const res = await fetchTimed(new URL(path, self.registration.scope));
-      if (res.ok) await cache.put(path, res);
-    })
-  )));
+
 });
 
 // Сохраняем все опубликованные недели, даже если их ещё не открывали на устройстве.

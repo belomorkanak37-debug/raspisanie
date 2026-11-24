@@ -12,28 +12,14 @@ function startWinter() {
   const modeButton = document.querySelector('#winterMode');
   const modeName = document.querySelector('#winterModeName');
   const toggle = document.querySelector('#winterToggle');
-  const visitor = document.querySelector('#winterVisitor');
-  const character = document.querySelector('#winterCharacter');
-  const dismiss = document.querySelector('#winterDismiss');
-  const portrait = document.querySelector('#winterPortrait');
-  const fallback = document.querySelector('#winterFallback');
-  const bubble = document.querySelector('#winterBubble');
-  const hint = document.querySelector('.winter-catch-hint');
-  const invite = document.querySelector('#winterInvite');
-  const announcement = document.querySelector('#winterAnnouncement');
   const reduced = matchMedia('(prefers-reduced-motion: reduce)');
   const dark = matchMedia('(prefers-color-scheme: dark)');
   const modes = [['wave', 'Волна'], ['chase', 'Бегущие огни'], ['twinkle', 'Мерцание']];
-  const characters = [
-    { name: 'Деда Мороза', image: 'ded-moroz', welcome: 'Новогодка близко', replies: ['Поймал! Новогодка близко 🎄', 'Хо-хо! Всем аншлагов и мандаринов!', 'Твой подарок — ещё одна репетиция. Шучу!', 'Пусть все выходы будут удачными!'] },
-    { name: 'снеговика', image: 'snowman', welcome: 'Тс-с… я тут на подмене!', replies: ['Поймал! Только не растопи меня ☃', 'Моя роль — стоять и не таять.', 'Снег идёт. А я уже пришёл!', 'Морковка на месте. К выходу готов!'] },
-  ];
   let enabled = true;
   try { enabled = localStorage.getItem('rs.winter.enabled') !== 'false'; } catch { /* private mode */ }
-  let width = 0, height = 0, ground, flakes = [], bursts = [], ledges = [];
+  let width = 0, height = 0, ground, flakes = [], ledges = [];
   const ledgeBanks = new WeakMap();
   let scanNeeded = true, frame = 0, lastFrame = 0, elapsed = 0, nextMode = 18;
-  let nextVisitor = 2.5, exitAt = 0, guest = -1, catches = [0, 0], visible = false, caught = false;
   let mode = 0, suspended = false;
 
   function setMode(value) {
@@ -78,11 +64,37 @@ function startWinter() {
         const r = element.getBoundingClientRect();
         if (r.top < 70 || r.top > height - 95 || r.width < 100) return null;
         const w = Math.min(r.width * .4, 150);
-        let bank = ledgeBanks.get(element);
-        if (!bank || Math.abs(bank.width - w) > 1) { bank = makeBank(w, 7); ledgeBanks.set(element, bank); }
-        return { x: r.right - w - 16, y: r.top + 1, bank };
+        let cap = ledgeBanks.get(element);
+        if (!cap) {
+          const svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+          const path = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+          svg.setAttribute('class', 'winter-snow-cap');
+          svg.setAttribute('aria-hidden', 'true');
+          svg.setAttribute('focusable', 'false');
+          svg.appendChild(path);
+          element.classList.add('winter-snow-anchor');
+          element.appendChild(svg);
+          cap = { bank: makeBank(w, 7), svg, path };
+          ledgeBanks.set(element, cap);
+          updateCap(cap);
+        } else if (Math.abs(cap.bank.width - w) > 1) {
+          const old = cap.bank;
+          cap.bank = makeBank(w, 7);
+          cap.bank.heights = cap.bank.heights.map((v, i) => snowHeight(old, i / (cap.bank.heights.length - 1) * old.width));
+          updateCap(cap);
+        }
+        // Координаты экрана нужны только для столкновений падающих снежинок.
+        // Сам сугроб находится внутри карточки и прокручивается браузером вместе с ней.
+        const capRect = cap.svg.getBoundingClientRect();
+        return { x: capRect.left, y: capRect.top + 9, bank: cap.bank, cap };
       }).filter(Boolean).slice(0, 6).sort((a, b) => a.y - b.y);
     scanNeeded = false;
+  }
+  function updateCap({ bank, svg, path }) {
+    svg.setAttribute('viewBox', `0 0 ${bank.width} 10`);
+    svg.style.width = `${bank.width}px`;
+    const points = bank.heights.map((h, i) => `${i ? 'L' : 'M'}${i * bank.width / (bank.heights.length - 1)} ${9 - h}`);
+    path.setAttribute('d', `${points.join(' ')} L${bank.width} 10 L0 10 Z`);
   }
   function drawBank(bank, x, baseline, bottom) {
     const step = bank.width / (bank.heights.length - 1);
@@ -109,53 +121,9 @@ function startWinter() {
     if (scanNeeded) scanLedges();
     ctx.clearRect(0, 0, width, height);
     if (!reduced.matches) flakes.forEach(drawFlake);
-    bursts.forEach(drawFlake); ctx.globalAlpha = 1;
-    ledges.forEach((ledge) => drawBank(ledge.bank, ledge.x, ledge.y, ledge.y + 1));
+    ctx.globalAlpha = 1;
     drawBank(ground, 0, height, height);
   }
-  function snowBurst(x, y) {
-    if (reduced.matches) return;
-    // Ограничиваем и частицы после серии быстрых нажатий.
-    bursts = bursts.slice(-45);
-    for (let i = 0; i < 24; i++) bursts.push({ x, y, r: 1 + Math.random() * 2, alpha: 1, star: i % 3 === 0,
-      phase: Math.random(), vx: (Math.random() - .5) * 140, vy: -35 - Math.random() * 110, life: 1.6 });
-  }
-  function showVisitor() {
-    if (!enabled || suspended || visible) return;
-    guest = (guest + 1) % characters.length;
-    const data = characters[guest];
-    portrait.hidden = false; fallback.hidden = true;
-    fallback.textContent = guest === 0 ? '🎅' : '☃';
-    portrait.src = `assets/winter/${data.image}.webp`;
-    character.setAttribute('aria-label', `Поймать ${data.name}`);
-    visitor.dataset.character = guest === 0 ? 'santa' : 'snowman';
-    visitor.classList.remove('is-caught'); bubble.textContent = data.welcome;
-    hint.textContent = 'Поймай меня!'; visitor.hidden = false; invite.hidden = true;
-    // Следующий кадр нужен для появления из-за края экрана.
-    visitor.getBoundingClientRect(); visitor.classList.add('is-visible');
-    character.disabled = false; dismiss.disabled = false; visible = true; caught = false; exitAt = elapsed + 10;
-  }
-  function hideVisitor() {
-    invite.textContent = caught ? 'Кто ещё в сугробе?' : 'Ускользнул! Позвать ещё?';
-    invite.hidden = false;
-    if (visitor.contains(document.activeElement)) invite.focus({ preventScroll: true });
-    visitor.classList.remove('is-visible'); character.disabled = true; dismiss.disabled = true;
-    visible = false; invite.hidden = false; nextVisitor = elapsed + 22 + Math.random() * 10;
-  }
-  character.addEventListener('click', () => {
-    caught = true;
-    const data = characters[guest];
-    const text = data.replies[catches[guest]++ % data.replies.length];
-    bubble.textContent = text; announcement.textContent = text; hint.textContent = 'Ещё раз?';
-    visitor.classList.remove('is-caught'); visitor.getBoundingClientRect(); visitor.classList.add('is-caught');
-    const r = character.getBoundingClientRect(); snowBurst(r.x + r.width / 2, r.y + 45);
-    exitAt = elapsed + 7;
-  });
-  invite.addEventListener('click', showVisitor);
-  dismiss.addEventListener('click', hideVisitor);
-  // При недоступной картинке остаются читаемые кнопки вместо сломанного изображения.
-  portrait.addEventListener('error', () => { portrait.hidden = true; fallback.hidden = false; });
-
   function tick(now) {
     frame = 0;
     if (suspended || !enabled || reduced.matches) return;
@@ -169,14 +137,10 @@ function startWinter() {
       f.y += f.speed * dt;
       if (f.x < -12) f.x = width + 10; if (f.x > width + 12) f.x = -10;
       const hit = ledges.find((l) => f.x >= l.x && f.x <= l.x + l.bank.width && before <= l.y - snowHeight(l.bank, f.x - l.x) && f.y >= l.y - snowHeight(l.bank, f.x - l.x));
-      if (hit) { depositSnow(hit.bank, f.x - hit.x, .7 + f.r * .28); flakes[i] = spawn(); }
+      if (hit) { depositSnow(hit.bank, f.x - hit.x, .7 + f.r * .28); updateCap(hit.cap); flakes[i] = spawn(); }
       else if (f.y >= height - snowHeight(ground, f.x)) { depositSnow(ground, f.x, .8 + f.r * .65); flakes[i] = spawn(); }
     });
-    bursts = bursts.filter((p) => p.life > 0);
-    bursts.forEach((p) => { p.x += p.vx * dt; p.vy += 100 * dt; p.y += p.vy * dt; p.life -= dt; p.alpha = Math.max(0, p.life / 1.6); });
     if (elapsed > nextMode) { setMode(mode + 1); nextMode = elapsed + 18; }
-    if (!visible && elapsed > nextVisitor) showVisitor();
-    if (visible && elapsed > exitAt && !character.matches(':focus-visible')) hideVisitor();
     draw(); frame = requestAnimationFrame(tick);
   }
   function syncActivity() {
@@ -194,7 +158,13 @@ function startWinter() {
       else { lastFrame = performance.now(); frame = requestAnimationFrame(tick); }
     }
   }
-  new MutationObserver(() => { scanNeeded = true; syncActivity(); }).observe(document.querySelector('#view'), { childList: true, subtree: true });
+  const view = document.querySelector('#view');
+  new MutationObserver((records) => {
+    // Вставка сугробов не должна запускать ещё один обход интерфейса.
+    if (records.every((r) => [...r.addedNodes, ...r.removedNodes].every((n) => n.nodeType === 1 && n.classList.contains('winter-snow-cap')))) return;
+    scanNeeded = true; syncActivity();
+  }).observe(view, { childList: true, subtree: true });
+  view.addEventListener('click', () => { scanNeeded = true; });
   const dialogs = new MutationObserver(syncActivity);
   document.querySelectorAll('dialog').forEach((d) => dialogs.observe(d, { attributes: true, attributeFilter: ['open'] }));
   window.addEventListener('resize', resize, { passive: true });
