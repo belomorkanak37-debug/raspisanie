@@ -11,6 +11,7 @@ function startWinter() {
   const lights = document.querySelector('#winterLights');
   const modeButton = document.querySelector('#winterMode');
   const modeName = document.querySelector('#winterModeName');
+  const wire = document.querySelector('.winter-wire');
   const toggle = document.querySelector('#winterToggle');
   const reduced = matchMedia('(prefers-reduced-motion: reduce)');
   const dark = matchMedia('(prefers-color-scheme: dark)');
@@ -48,6 +49,17 @@ function startWinter() {
   }
   function resize() {
     width = window.innerWidth; height = window.innerHeight;
+    // Постоянный шаг лампочек и продолжение за обоими краями экрана.
+    const bulbCount = Math.ceil(width / 42) + 2;
+    if (wire.children.length !== bulbCount) {
+      wire.replaceChildren(...Array.from({ length: bulbCount }, (_, i) => {
+        const bulb = document.createElement('i');
+        const t = ((i * 42 + 5.5) % 336) / 336;
+        const drop = 8 + 54 * t * (1 - t);
+        bulb.setAttribute('style', `--i:${i};--drop:${drop.toFixed(2)}px`);
+        return bulb;
+      }));
+    }
     const ratio = Math.min(devicePixelRatio || 1, 2);
     canvas.width = Math.round(width * ratio); canvas.height = Math.round(height * ratio);
     ctx.setTransform(ratio, 0, 0, ratio, 0, 0);

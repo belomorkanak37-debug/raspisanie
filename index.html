@@ -17,7 +17,13 @@
   <link rel="stylesheet" href="css/app.css">
   <link rel="stylesheet" href="css/winter.css">
 </head>
-<body>
+<body class="winter-page">
+  <section class="winter-lights" id="winterLights" aria-label="Новогоднее настроение">
+    <button class="winter-mode" id="winterMode" type="button" aria-label="Переключить режим гирлянды">
+      <span class="winter-wire" aria-hidden="true"></span>
+      <span class="winter-mode-label">Гирлянда · <span id="winterModeName">Волна</span> <span aria-hidden="true">↻</span></span>
+    </button>
+  </section>
   <div class="wrap">
     <header class="topbar">
       <a class="brand" href="#/search" aria-label="К поиску">
@@ -25,19 +31,13 @@
         <span>Расписание</span>
       </a>
       <div class="top-right">
+        <button class="winter-toggle" id="winterToggle" type="button" aria-pressed="true" aria-label="Новогодние эффекты">❄</button>
         <span class="status" id="status" hidden></span>
         <a class="icon-link" id="searchLink" href="#/search" aria-label="Другая фамилия" hidden>
           <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l4.5 4.5"/></svg>
         </a>
       </div>
     </header>
-    <section class="winter-lights" id="winterLights" aria-label="Новогоднее настроение">
-      <button class="winter-mode" id="winterMode" type="button" aria-label="Переключить режим гирлянды">
-        <span class="winter-wire" aria-hidden="true"><i style="--i:0"></i><i style="--i:1"></i><i style="--i:2"></i><i style="--i:3"></i><i style="--i:4"></i><i style="--i:5"></i><i style="--i:6"></i><i style="--i:7"></i><i style="--i:8"></i><i style="--i:9"></i><i style="--i:10"></i><i style="--i:11"></i></span>
-        <span class="winter-mode-label">Гирлянда · <span id="winterModeName">Волна</span> <span aria-hidden="true">↻</span></span>
-      </button>
-      <button class="winter-toggle" id="winterToggle" type="button" aria-pressed="true" aria-label="Новогодние эффекты">❄</button>
-    </section>
     <main id="view" aria-live="polite"></main>
     <footer class="foot" id="foot"></footer>
   </div>

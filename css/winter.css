@@ -1,15 +1,18 @@
 /* Декорации изолированы от расписания; снег пропускает касания. */
-.winter-lights { display: flex; align-items: center; gap: 12px; margin: 6px 0 2px; }
-.winter-mode { flex: 1; min-width: 0; padding: 0 6px 4px; border: 0; background: none; cursor: pointer; }
-.winter-wire { display: flex; justify-content: space-around; height: 38px; position: relative; border-top: 2px solid #467467; border-radius: 50%; padding-top: 4px; }
-.winter-wire i { --color: #ff546b; display: block; position: relative; width: 11px; height: 18px; margin-top: 4px; border-radius: 45% 45% 55% 55%; background: radial-gradient(ellipse at 32% 25%, #fffbd9 0 9%, var(--color) 40%); color: var(--color); box-shadow: 0 0 7px currentColor, 0 0 18px currentColor; animation: winter-wave 3s ease-in-out infinite; animation-delay: calc(var(--i) * -.22s); transform-origin: 50% -5px; }
+.winter-page .topbar { padding-top: calc(50px + env(safe-area-inset-top)); }
+.winter-lights { position: absolute; top: env(safe-area-inset-top); left: 0; right: 0; height: 50px; z-index: 2; overflow: hidden; }
+.winter-mode { display: block; position: relative; width: 100%; height: 50px; padding: 0; border: 0; background: none; cursor: pointer; }
+.winter-wire { display: flex; align-items: flex-start; gap: 31px; position: absolute; left: -6px; right: -48px; top: 0; height: 50px; }
+.winter-wire::before { content: ''; position: absolute; inset: 0; background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='336' height='32' viewBox='0 0 336 32'%3E%3Cpath d='M0 4 C112 22 224 22 336 4' fill='none' stroke='%236b9785' stroke-width='1.6'/%3E%3C/svg%3E") repeat-x left top; }
+.winter-wire i { --color: #ff546b; display: block; position: relative; flex: 0 0 11px; width: 11px; height: 18px; margin-top: var(--drop, 16px); border-radius: 45% 45% 55% 55%; background: radial-gradient(ellipse at 32% 25%, #fffbd9 0 9%, var(--color) 40%); color: var(--color); box-shadow: 0 0 7px currentColor, 0 0 18px currentColor; animation: winter-wave 3s ease-in-out infinite; animation-delay: calc(var(--i) * -.22s); transform-origin: 50% -5px; }
 .winter-wire i::before { content: ''; position: absolute; width: 6px; height: 5px; left: 2.5px; top: -4px; border-radius: 2px; background: #467467; }
 .winter-wire i:nth-child(4n+2) { --color: #35d991; }
 .winter-wire i:nth-child(4n+3) { --color: #589aff; }
 .winter-wire i:nth-child(4n) { --color: #ffd45a; }
-.winter-mode-label { display: block; font-size: 11px; color: var(--muted); letter-spacing: .025em; }
+.winter-mode-label { position: absolute; width: 1px; height: 1px; margin: -1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
 .winter-toggle { flex: 0 0 44px; width: 44px; height: 44px; padding: 0; border: 1px solid var(--line); border-radius: 50%; background: var(--surface); color: var(--accent); font-size: 22px; cursor: pointer; }
-.winter-lights button:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
+.winter-lights button:focus-visible { outline: 2px solid var(--accent); outline-offset: -2px; }
+.winter-toggle:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
 .winter-lights[data-mode="chase"] i { animation-name: winter-chase; animation-duration: 2.4s; animation-delay: calc(var(--i) * -.2s); }
 .winter-lights[data-mode="twinkle"] i { animation-name: winter-twinkle; animation-duration: 4.1s; animation-delay: calc(var(--i) * -.73s); }
 @keyframes winter-wave { 0%, 100% { opacity: .5; filter: saturate(.9); box-shadow: 0 0 3px currentColor; transform: rotate(-5deg); } 50% { opacity: 1; filter: saturate(1.3); box-shadow: 0 0 9px currentColor, 0 0 22px currentColor; transform: rotate(5deg); } }
@@ -24,5 +27,5 @@
 .winter-off .winter-wire i { animation: none; opacity: .4; box-shadow: none; }
 .winter-off .winter-toggle { color: var(--muted); }
 .winter-paused .winter-wire i { animation-play-state: paused; }
-@media (prefers-color-scheme: dark) { .winter-wire { border-color: #6b9785; } .winter-wire i { filter: saturate(1.15); } .winter-snow-cap { fill: #e0edf5; stroke: #ffffffb0; } }
+@media (prefers-color-scheme: dark) { .winter-wire i { filter: saturate(1.15); } .winter-snow-cap { fill: #e0edf5; stroke: #ffffffb0; } }
 @media (prefers-reduced-motion: reduce) { .winter-lights * { animation: none !important; transition: none !important; } }

@@ -23,6 +23,7 @@ class Element {
   fire(type) { this.listeners.get(type)?.(); }
   setAttribute(k, v) { this.attrs.set(k, v); }
   appendChild(child) { this.children.push(child); child.parentElement = this; }
+  replaceChildren(...children) { this.children = []; children.forEach((child) => this.appendChild(child)); }
   getBoundingClientRect() {
     if (this.parentElement) { const p = this.parentElement.getBoundingClientRect(); const width = Number.parseFloat(this.style.width) || 120; return { left: p.right - 16 - width, top: p.top - 8, width, right: p.right - 16, height: 10 }; }
     return { left: 20, top: this.top, width: 300, right: 320, height: 120 };
@@ -40,6 +41,7 @@ const reduced = { matches: false, addEventListener(_, fn) { this.listener = fn; 
 const document = { hidden: false, activeElement: null, documentElement: new Element(),
   querySelector: (s) => s === 'dialog[open]' ? (dialogOpen ? {} : null) : get(s), querySelectorAll: (s) => s.startsWith('#feed') ? [card] : [],
   createElementNS: () => new Element(),
+  createElement: () => new Element(),
   addEventListener: (type, fn) => events.set(type, fn) };
 get('#winterCanvas').getContext = () => new Proxy({}, { get: () => () => {} });
 const context = vm.createContext({
