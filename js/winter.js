@@ -32,7 +32,7 @@ function startWinter() {
   let width = 0, height = 0, ground, flakes = [], bursts = [], ledges = [];
   const ledgeBanks = new WeakMap();
   let scanNeeded = true, frame = 0, lastFrame = 0, elapsed = 0, nextMode = 18;
-  let nextVisitor = 2.5, exitAt = 0, guest = -1, catches = [0, 0], visible = false;
+  let nextVisitor = 2.5, exitAt = 0, guest = -1, catches = [0, 0], visible = false, caught = false;
   let mode = 0, suspended = false;
 
   function setMode(value) {
@@ -132,15 +132,17 @@ function startWinter() {
     hint.textContent = 'Поймай меня!'; visitor.hidden = false; invite.hidden = true;
     // Следующий кадр нужен для появления из-за края экрана.
     visitor.getBoundingClientRect(); visitor.classList.add('is-visible');
-    character.disabled = false; visible = true; exitAt = elapsed + 10;
+    character.disabled = false; visible = true; caught = false; exitAt = elapsed + 10;
   }
   function hideVisitor() {
+    invite.textContent = caught ? 'Кто ещё в сугробе?' : 'Ускользнул! Позвать ещё?';
     invite.hidden = false;
     if (visitor.contains(document.activeElement)) invite.focus({ preventScroll: true });
     visitor.classList.remove('is-visible'); character.disabled = true;
     visible = false; invite.hidden = false; nextVisitor = elapsed + 22 + Math.random() * 10;
   }
   character.addEventListener('click', () => {
+    caught = true;
     const data = characters[guest];
     const text = data.replies[catches[guest]++ % data.replies.length];
     bubble.textContent = text; announcement.textContent = text; hint.textContent = 'Ещё раз?';
@@ -189,7 +191,7 @@ function startWinter() {
       else { lastFrame = performance.now(); frame = requestAnimationFrame(tick); }
     }
   }
-  new MutationObserver(() => { scanNeeded = true; }).observe(document.querySelector('#view'), { childList: true, subtree: true });
+  new MutationObserver(() => { scanNeeded = true; syncActivity(); }).observe(document.querySelector('#view'), { childList: true, subtree: true });
   const dialogs = new MutationObserver(syncActivity);
   document.querySelectorAll('dialog').forEach((d) => dialogs.observe(d, { attributes: true, attributeFilter: ['open'] }));
   window.addEventListener('resize', resize, { passive: true });

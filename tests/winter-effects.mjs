@@ -27,7 +27,7 @@ class Element {
 }
 const elements = new Map();
 const get = (s) => { if (!elements.has(s)) elements.set(s, new Element()); return elements.get(s); };
-const frames = new Map(), storage = new Map(), events = new Map();
+const frames = new Map(), storage = new Map(), events = new Map(), observers = [];
 let serial = 0, now = 0, dialogOpen = false;
 const reduced = { matches: false, addEventListener(_, fn) { this.listener = fn; } };
 const document = { hidden: false, activeElement: null, documentElement: new Element(),
@@ -37,7 +37,7 @@ get('#winterCanvas').getContext = () => new Proxy({}, { get: () => () => {} });
 const context = vm.createContext({
   document, window: { innerWidth: 390, innerHeight: 844, addEventListener() {} },
   matchMedia: (q) => q.includes('reduced-motion') ? reduced : { matches: false, addEventListener() {} },
-  MutationObserver: class { observe() {} }, performance: { now: () => now }, devicePixelRatio: 2,
+  MutationObserver: class { constructor(fn) { observers.push(fn); } observe() {} }, performance: { now: () => now }, devicePixelRatio: 2,
   localStorage: { getItem: (k) => storage.get(k), setItem: (k, v) => storage.set(k, v) },
   requestAnimationFrame: (fn) => { frames.set(++serial, fn); return serial; }, cancelAnimationFrame: (id) => frames.delete(id), queueMicrotask,
 });
@@ -62,7 +62,9 @@ document.hidden = false; events.get('visibilitychange')();
 assert.equal(frames.size, 1);
 document.activeElement = { matches: () => true }; events.get('focusin')();
 assert.equal(frames.size, 0); assert.equal(get('#winterScene').hidden, true);
-document.activeElement = null; events.get('focusin')();
+// Search may remove the focused input without a focusout event.
+document.activeElement = null; observers[0]();
+assert.equal(frames.size, 1);
 dialogOpen = true; events.get('focusin')();
 assert.equal(frames.size, 0); assert.equal(get('#winterScene').hidden, true);
 dialogOpen = false; events.get('focusin')();
