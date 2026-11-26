@@ -35,6 +35,8 @@
     "halfFor": [],
     "away": false,
     "studio": false,
+    "interlude": false,
+    "interludeType": null,
     "intro": false
    }
   },
@@ -127,6 +129,8 @@
     "halfFor": [],
     "away": false,
     "studio": false,
+    "interlude": false,
+    "interludeType": null,
     "intro": true
    }
   },
@@ -191,6 +195,8 @@
     "halfFor": [],
     "away": false,
     "studio": false,
+    "interlude": false,
+    "interludeType": null,
     "intro": false
    }
   },
@@ -274,6 +280,8 @@
     "halfFor": [],
     "away": false,
     "studio": false,
+    "interlude": false,
+    "interludeType": null,
     "intro": true
    }
   },
@@ -329,6 +337,8 @@
     "halfFor": [],
     "away": false,
     "studio": false,
+    "interlude": false,
+    "interludeType": null,
     "intro": false
    }
   },
@@ -425,6 +435,8 @@
     "halfFor": [],
     "away": false,
     "studio": false,
+    "interlude": false,
+    "interludeType": null,
     "intro": false
    }
   },
@@ -498,6 +510,8 @@
     "halfFor": [],
     "away": false,
     "studio": false,
+    "interlude": false,
+    "interludeType": null,
     "intro": false
    }
   },
@@ -594,6 +608,8 @@
     "halfFor": [],
     "away": false,
     "studio": false,
+    "interlude": false,
+    "interludeType": null,
     "intro": false
    }
   },
@@ -652,6 +668,8 @@
     "halfFor": [],
     "away": false,
     "studio": false,
+    "interlude": false,
+    "interludeType": null,
     "intro": false
    }
   },
@@ -734,6 +752,8 @@
     "halfFor": [],
     "away": false,
     "studio": false,
+    "interlude": false,
+    "interludeType": null,
     "intro": false
    }
   },
@@ -816,6 +836,8 @@
     "halfFor": [],
     "away": false,
     "studio": false,
+    "interlude": false,
+    "interludeType": null,
     "intro": false
    }
   },
@@ -930,80 +952,6 @@
    }
   },
   {
-   "id": "e12-interlude",
-   "date": "2026-12-12",
-   "timeText": "15:00",
-   "times": [
-    "15:00"
-   ],
-   "range": null,
-   "timeUncertain": false,
-   "title": "Интерактив «Серебряное копытце»",
-   "kind": "interlude",
-   "place": "Старая сцена",
-   "tech": "Звук, свет",
-   "lines": [
-    "15:00 — Дед Мороз – Лоскутов; Снегурочка – Глазецкая; Чепель, Носов"
-   ],
-   "people": [
-    {
-     "name": "Лоскутов",
-     "times": [
-      "15:00"
-     ],
-     "from": null,
-     "role": "дед мороз",
-     "uncertain": false,
-     "alts": [],
-     "note": null
-    },
-    {
-     "name": "Глазецкая",
-     "times": [
-      "15:00"
-     ],
-     "from": null,
-     "role": "снегурочка",
-     "uncertain": false,
-     "alts": [],
-     "note": null
-    },
-    {
-     "name": "Чепель",
-     "times": [
-      "15:00"
-     ],
-     "from": null,
-     "role": null,
-     "uncertain": false,
-     "alts": [],
-     "note": null
-    },
-    {
-     "name": "Носов",
-     "times": [
-      "15:00"
-     ],
-     "from": null,
-     "role": null,
-     "uncertain": false,
-     "alts": [],
-     "note": null
-    }
-   ],
-   "scope": "people",
-   "accounting": {
-    "showWeight": 0,
-    "baby": false,
-    "halfFor": [],
-    "away": false,
-    "studio": false,
-    "interlude": true,
-    "interludeType": "unknown",
-    "intro": false
-   }
-  },
-  {
    "id": "e13",
    "date": "2026-12-12",
    "timeText": "11:00 13:00 15:00",
@@ -1075,7 +1023,81 @@
    }
   },
   {
-   "id": "e13-interlude",
+   "id": "e14",
+   "date": "2026-12-12",
+   "timeText": "15:00",
+   "times": [
+    "15:00"
+   ],
+   "range": null,
+   "timeUncertain": false,
+   "title": "Интерактив «Серебряное копытце»",
+   "kind": "interlude",
+   "place": "Старая сцена",
+   "tech": "Звук, свет",
+   "lines": [
+    "15:00 — Дед Мороз – Лоскутов; Снегурочка – Глазецкая; Чепель, Носов"
+   ],
+   "people": [
+    {
+     "name": "Лоскутов",
+     "times": [
+      "15:00"
+     ],
+     "from": null,
+     "role": "дед мороз",
+     "uncertain": false,
+     "alts": [],
+     "note": null
+    },
+    {
+     "name": "Глазецкая",
+     "times": [
+      "15:00"
+     ],
+     "from": null,
+     "role": "снегурочка",
+     "uncertain": false,
+     "alts": [],
+     "note": null
+    },
+    {
+     "name": "Чепель",
+     "times": [
+      "15:00"
+     ],
+     "from": null,
+     "role": null,
+     "uncertain": false,
+     "alts": [],
+     "note": null
+    },
+    {
+     "name": "Носов",
+     "times": [
+      "15:00"
+     ],
+     "from": null,
+     "role": null,
+     "uncertain": false,
+     "alts": [],
+     "note": null
+    }
+   ],
+   "scope": "people",
+   "accounting": {
+    "showWeight": 0,
+    "baby": false,
+    "halfFor": [],
+    "away": false,
+    "studio": false,
+    "interlude": true,
+    "interludeType": "interactive",
+    "intro": false
+   }
+  },
+  {
+   "id": "e15",
    "date": "2026-12-12",
    "timeText": "15:00",
    "times": [
@@ -1127,7 +1149,7 @@
    }
   },
   {
-   "id": "e14",
+   "id": "e16",
    "date": "2026-12-13",
    "timeText": "11:00 13:00 15:00",
    "times": [
@@ -1224,59 +1246,7 @@
    }
   },
   {
-   "id": "e14-interlude",
-   "date": "2026-12-13",
-   "timeText": "15:00",
-   "times": [
-    "15:00"
-   ],
-   "range": null,
-   "timeUncertain": false,
-   "title": "Интерактив «Приключения пингвинят»",
-   "kind": "interlude",
-   "place": "Старая сцена",
-   "tech": "Звук, свет",
-   "lines": [
-    "15:00 — Дед Мороз – Лоскутов; Снегурочка - Беканова"
-   ],
-   "people": [
-    {
-     "name": "Лоскутов",
-     "times": [
-      "15:00"
-     ],
-     "from": null,
-     "role": "дед мороз",
-     "uncertain": false,
-     "alts": [],
-     "note": null
-    },
-    {
-     "name": "Беканова",
-     "times": [
-      "15:00"
-     ],
-     "from": null,
-     "role": "снегурочка",
-     "uncertain": false,
-     "alts": [],
-     "note": null
-    }
-   ],
-   "scope": "people",
-   "accounting": {
-    "showWeight": 0,
-    "baby": false,
-    "halfFor": [],
-    "away": false,
-    "studio": false,
-    "interlude": true,
-    "interludeType": "unknown",
-    "intro": false
-   }
-  },
-  {
-   "id": "e15",
+   "id": "e17",
    "date": "2026-12-13",
    "timeText": "11:00 13:00 15:00",
    "times": [
@@ -1386,7 +1356,59 @@
    }
   },
   {
-   "id": "e15-interlude",
+   "id": "e18",
+   "date": "2026-12-13",
+   "timeText": "15:00",
+   "times": [
+    "15:00"
+   ],
+   "range": null,
+   "timeUncertain": false,
+   "title": "Интерактив «Приключения пингвинят»",
+   "kind": "interlude",
+   "place": "Старая сцена",
+   "tech": "Звук, свет",
+   "lines": [
+    "15:00 — Дед Мороз – Лоскутов; Снегурочка - Беканова"
+   ],
+   "people": [
+    {
+     "name": "Лоскутов",
+     "times": [
+      "15:00"
+     ],
+     "from": null,
+     "role": "дед мороз",
+     "uncertain": false,
+     "alts": [],
+     "note": null
+    },
+    {
+     "name": "Беканова",
+     "times": [
+      "15:00"
+     ],
+     "from": null,
+     "role": "снегурочка",
+     "uncertain": false,
+     "alts": [],
+     "note": null
+    }
+   ],
+   "scope": "people",
+   "accounting": {
+    "showWeight": 0,
+    "baby": false,
+    "halfFor": [],
+    "away": false,
+    "studio": false,
+    "interlude": true,
+    "interludeType": "interactive",
+    "intro": false
+   }
+  },
+  {
+   "id": "e19",
    "date": "2026-12-13",
    "timeText": "15:00",
    "times": [
@@ -1460,12 +1482,12 @@
    }
   }
  ],
- "version": 4,
- "updatedAt": "2026-11-26T12:40:14.331Z",
+ "version": 5,
+ "updatedAt": "2026-11-26T13:33:02.255Z",
  "pdf": "data/pdf/2026-12-07.pdf",
  "previous": {
-  "version": 3,
-  "updatedAt": "2026-11-26T12:20:23.294Z",
+  "version": 4,
+  "updatedAt": "2026-11-26T12:40:14.331Z",
   "events": [
    {
     "id": "e1",
@@ -2287,13 +2309,16 @@
     "place": "Старая сцена",
     "tech": "Звук, свет",
     "lines": [
-     "Кожев, Галустянц, Трунина, Миронова, Разуваева, Баранов",
-     "15:00 + Интерактив: Дед Мороз – Лоскутов; Снегурочка – Глазецкая; Чепель, Носов"
+     "Кожев, Галустянц, Трунина, Миронова, Разуваева, Баранов"
     ],
     "people": [
      {
       "name": "Кожев",
-      "times": null,
+      "times": [
+       "11:00",
+       "13:00",
+       "15:00"
+      ],
       "from": null,
       "role": null,
       "uncertain": false,
@@ -2302,7 +2327,11 @@
      },
      {
       "name": "Галустянц",
-      "times": null,
+      "times": [
+       "11:00",
+       "13:00",
+       "15:00"
+      ],
       "from": null,
       "role": null,
       "uncertain": false,
@@ -2311,7 +2340,11 @@
      },
      {
       "name": "Трунина",
-      "times": null,
+      "times": [
+       "11:00",
+       "13:00",
+       "15:00"
+      ],
       "from": null,
       "role": null,
       "uncertain": false,
@@ -2320,7 +2353,11 @@
      },
      {
       "name": "Миронова",
-      "times": null,
+      "times": [
+       "11:00",
+       "13:00",
+       "15:00"
+      ],
       "from": null,
       "role": null,
       "uncertain": false,
@@ -2329,7 +2366,11 @@
      },
      {
       "name": "Разуваева",
-      "times": null,
+      "times": [
+       "11:00",
+       "13:00",
+       "15:00"
+      ],
       "from": null,
       "role": null,
       "uncertain": false,
@@ -2338,45 +2379,11 @@
      },
      {
       "name": "Баранов",
-      "times": null,
-      "from": null,
-      "role": null,
-      "uncertain": false,
-      "alts": [],
-      "note": null
-     },
-     {
-      "name": "Лоскутов",
       "times": [
+       "11:00",
+       "13:00",
        "15:00"
       ],
-      "from": null,
-      "role": "интерактив дед мороз",
-      "uncertain": false,
-      "alts": [],
-      "note": null
-     },
-     {
-      "name": "Глазецкая",
-      "times": null,
-      "from": null,
-      "role": "снегурочка",
-      "uncertain": false,
-      "alts": [],
-      "note": null
-     },
-     {
-      "name": "Чепель",
-      "times": null,
-      "from": null,
-      "role": null,
-      "uncertain": false,
-      "alts": [],
-      "note": null
-     },
-     {
-      "name": "Носов",
-      "times": null,
       "from": null,
       "role": null,
       "uncertain": false,
@@ -2391,6 +2398,82 @@
      "halfFor": [],
      "away": false,
      "studio": false,
+     "interlude": false,
+     "interludeType": null,
+     "intro": false
+    }
+   },
+   {
+    "id": "e12-interlude",
+    "date": "2026-12-12",
+    "timeText": "15:00",
+    "times": [
+     "15:00"
+    ],
+    "range": null,
+    "timeUncertain": false,
+    "title": "Интерактив «Серебряное копытце»",
+    "kind": "interlude",
+    "place": "Старая сцена",
+    "tech": "Звук, свет",
+    "lines": [
+     "15:00 — Дед Мороз – Лоскутов; Снегурочка – Глазецкая; Чепель, Носов"
+    ],
+    "people": [
+     {
+      "name": "Лоскутов",
+      "times": [
+       "15:00"
+      ],
+      "from": null,
+      "role": "дед мороз",
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     },
+     {
+      "name": "Глазецкая",
+      "times": [
+       "15:00"
+      ],
+      "from": null,
+      "role": "снегурочка",
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     },
+     {
+      "name": "Чепель",
+      "times": [
+       "15:00"
+      ],
+      "from": null,
+      "role": null,
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     },
+     {
+      "name": "Носов",
+      "times": [
+       "15:00"
+      ],
+      "from": null,
+      "role": null,
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     }
+    ],
+    "scope": "people",
+    "accounting": {
+     "showWeight": 0,
+     "baby": false,
+     "halfFor": [],
+     "away": false,
+     "studio": false,
+     "interlude": true,
+     "interludeType": "unknown",
      "intro": false
     }
    },
@@ -2410,13 +2493,16 @@
     "place": "Новая сцена",
     "tech": "Звук, свет",
     "lines": [
-     "Мартюшева, Чирочкина, Андреев",
-     "15:00 + Интермедия: Дед Мороз – Безносиков; Снегурочка - Алексеева"
+     "Мартюшева, Чирочкина, Андреев"
     ],
     "people": [
      {
       "name": "Мартюшева",
-      "times": null,
+      "times": [
+       "11:00",
+       "13:00",
+       "15:00"
+      ],
       "from": null,
       "role": null,
       "uncertain": false,
@@ -2425,7 +2511,11 @@
      },
      {
       "name": "Чирочкина",
-      "times": null,
+      "times": [
+       "11:00",
+       "13:00",
+       "15:00"
+      ],
       "from": null,
       "role": null,
       "uncertain": false,
@@ -2434,29 +2524,13 @@
      },
      {
       "name": "Андреев",
-      "times": null,
-      "from": null,
-      "role": null,
-      "uncertain": false,
-      "alts": [],
-      "note": null
-     },
-     {
-      "name": "Безносиков",
       "times": [
+       "11:00",
+       "13:00",
        "15:00"
       ],
       "from": null,
-      "role": "интермедия дед мороз",
-      "uncertain": false,
-      "alts": [],
-      "note": null
-     },
-     {
-      "name": "Алексеева",
-      "times": null,
-      "from": null,
-      "role": "снегурочка",
+      "role": null,
       "uncertain": false,
       "alts": [],
       "note": null
@@ -2469,6 +2543,60 @@
      "halfFor": [],
      "away": false,
      "studio": false,
+     "interlude": false,
+     "interludeType": null,
+     "intro": false
+    }
+   },
+   {
+    "id": "e13-interlude",
+    "date": "2026-12-12",
+    "timeText": "15:00",
+    "times": [
+     "15:00"
+    ],
+    "range": null,
+    "timeUncertain": false,
+    "title": "Обычная интермедия «Морозко»",
+    "kind": "interlude",
+    "place": "Новая сцена",
+    "tech": "Звук, свет",
+    "lines": [
+     "15:00 — Дед Мороз – Безносиков; Снегурочка - Алексеева"
+    ],
+    "people": [
+     {
+      "name": "Безносиков",
+      "times": [
+       "15:00"
+      ],
+      "from": null,
+      "role": "дед мороз",
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     },
+     {
+      "name": "Алексеева",
+      "times": [
+       "15:00"
+      ],
+      "from": null,
+      "role": "снегурочка",
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     }
+    ],
+    "scope": "people",
+    "accounting": {
+     "showWeight": 0,
+     "baby": false,
+     "halfFor": [],
+     "away": false,
+     "studio": false,
+     "interlude": true,
+     "interludeType": "regular",
      "intro": false
     }
    },
@@ -2488,13 +2616,16 @@
     "place": "Старая сцена",
     "tech": "Звук, свет",
     "lines": [
-     "Радыгин, Кожев, Носов, Заяшников, Сигитова",
-     "15:00 + Интерактив: Дед Мороз – Лоскутов; Снегурочка - Беканова"
+     "Радыгин, Кожев, Носов, Заяшников, Сигитова"
     ],
     "people": [
      {
       "name": "Радыгин",
-      "times": null,
+      "times": [
+       "11:00",
+       "13:00",
+       "15:00"
+      ],
       "from": null,
       "role": null,
       "uncertain": false,
@@ -2503,7 +2634,11 @@
      },
      {
       "name": "Кожев",
-      "times": null,
+      "times": [
+       "11:00",
+       "13:00",
+       "15:00"
+      ],
       "from": null,
       "role": null,
       "uncertain": false,
@@ -2512,7 +2647,11 @@
      },
      {
       "name": "Носов",
-      "times": null,
+      "times": [
+       "11:00",
+       "13:00",
+       "15:00"
+      ],
       "from": null,
       "role": null,
       "uncertain": false,
@@ -2521,7 +2660,11 @@
      },
      {
       "name": "Заяшников",
-      "times": null,
+      "times": [
+       "11:00",
+       "13:00",
+       "15:00"
+      ],
       "from": null,
       "role": null,
       "uncertain": false,
@@ -2530,29 +2673,13 @@
      },
      {
       "name": "Сигитова",
-      "times": null,
-      "from": null,
-      "role": null,
-      "uncertain": false,
-      "alts": [],
-      "note": null
-     },
-     {
-      "name": "Лоскутов",
       "times": [
+       "11:00",
+       "13:00",
        "15:00"
       ],
       "from": null,
-      "role": "интерактив дед мороз",
-      "uncertain": false,
-      "alts": [],
-      "note": null
-     },
-     {
-      "name": "Беканова",
-      "times": null,
-      "from": null,
-      "role": "снегурочка",
+      "role": null,
       "uncertain": false,
       "alts": [],
       "note": null
@@ -2565,6 +2692,60 @@
      "halfFor": [],
      "away": false,
      "studio": false,
+     "interlude": false,
+     "interludeType": null,
+     "intro": false
+    }
+   },
+   {
+    "id": "e14-interlude",
+    "date": "2026-12-13",
+    "timeText": "15:00",
+    "times": [
+     "15:00"
+    ],
+    "range": null,
+    "timeUncertain": false,
+    "title": "Интерактив «Приключения пингвинят»",
+    "kind": "interlude",
+    "place": "Старая сцена",
+    "tech": "Звук, свет",
+    "lines": [
+     "15:00 — Дед Мороз – Лоскутов; Снегурочка - Беканова"
+    ],
+    "people": [
+     {
+      "name": "Лоскутов",
+      "times": [
+       "15:00"
+      ],
+      "from": null,
+      "role": "дед мороз",
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     },
+     {
+      "name": "Беканова",
+      "times": [
+       "15:00"
+      ],
+      "from": null,
+      "role": "снегурочка",
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     }
+    ],
+    "scope": "people",
+    "accounting": {
+     "showWeight": 0,
+     "baby": false,
+     "halfFor": [],
+     "away": false,
+     "studio": false,
+     "interlude": true,
+     "interludeType": "unknown",
      "intro": false
     }
    },
@@ -2584,14 +2765,16 @@
     "place": "Новая сцена",
     "tech": "Звук, свет",
     "lines": [
-     "Андреев, Лоскутова, Безносиков, Шаймиев, Мартюшева, Разуваева",
-     "15:00 + Интермедия: Дед Мороз – Безносиков; Снегурочка – Глазецкая; Трунина,",
-     "Чепель"
+     "Андреев, Лоскутова, Безносиков, Шаймиев, Мартюшева, Разуваева"
     ],
     "people": [
      {
       "name": "Андреев",
-      "times": null,
+      "times": [
+       "11:00",
+       "13:00",
+       "15:00"
+      ],
       "from": null,
       "role": null,
       "uncertain": false,
@@ -2600,43 +2783,11 @@
      },
      {
       "name": "Лоскутова",
-      "times": null,
-      "from": null,
-      "role": null,
-      "uncertain": false,
-      "alts": [],
-      "note": null
-     },
-     {
-      "name": "Безносиков",
-      "times": null,
-      "from": null,
-      "role": null,
-      "uncertain": false,
-      "alts": [],
-      "note": null
-     },
-     {
-      "name": "Шаймиев",
-      "times": null,
-      "from": null,
-      "role": null,
-      "uncertain": false,
-      "alts": [],
-      "note": null
-     },
-     {
-      "name": "Мартюшева",
-      "times": null,
-      "from": null,
-      "role": null,
-      "uncertain": false,
-      "alts": [],
-      "note": null
-     },
-     {
-      "name": "Разуваева",
-      "times": null,
+      "times": [
+       "11:00",
+       "13:00",
+       "15:00"
+      ],
       "from": null,
       "role": null,
       "uncertain": false,
@@ -2646,26 +2797,10 @@
      {
       "name": "Безносиков",
       "times": [
+       "11:00",
+       "13:00",
        "15:00"
       ],
-      "from": null,
-      "role": "интермедия дед мороз",
-      "uncertain": false,
-      "alts": [],
-      "note": null
-     },
-     {
-      "name": "Глазецкая",
-      "times": null,
-      "from": null,
-      "role": "снегурочка",
-      "uncertain": false,
-      "alts": [],
-      "note": null
-     },
-     {
-      "name": "Трунина",
-      "times": null,
       "from": null,
       "role": null,
       "uncertain": false,
@@ -2673,8 +2808,38 @@
       "note": null
      },
      {
-      "name": "Чепель",
-      "times": null,
+      "name": "Шаймиев",
+      "times": [
+       "11:00",
+       "13:00",
+       "15:00"
+      ],
+      "from": null,
+      "role": null,
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     },
+     {
+      "name": "Мартюшева",
+      "times": [
+       "11:00",
+       "13:00",
+       "15:00"
+      ],
+      "from": null,
+      "role": null,
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     },
+     {
+      "name": "Разуваева",
+      "times": [
+       "11:00",
+       "13:00",
+       "15:00"
+      ],
       "from": null,
       "role": null,
       "uncertain": false,
@@ -2689,6 +2854,82 @@
      "halfFor": [],
      "away": false,
      "studio": false,
+     "interlude": false,
+     "interludeType": null,
+     "intro": false
+    }
+   },
+   {
+    "id": "e15-interlude",
+    "date": "2026-12-13",
+    "timeText": "15:00",
+    "times": [
+     "15:00"
+    ],
+    "range": null,
+    "timeUncertain": false,
+    "title": "Обычная интермедия «Как Снеговик за ёлкой ходил»",
+    "kind": "interlude",
+    "place": "Новая сцена",
+    "tech": "Звук, свет",
+    "lines": [
+     "15:00 — Дед Мороз – Безносиков; Снегурочка – Глазецкая; Трунина, Чепель"
+    ],
+    "people": [
+     {
+      "name": "Безносиков",
+      "times": [
+       "15:00"
+      ],
+      "from": null,
+      "role": "дед мороз",
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     },
+     {
+      "name": "Глазецкая",
+      "times": [
+       "15:00"
+      ],
+      "from": null,
+      "role": "снегурочка",
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     },
+     {
+      "name": "Трунина",
+      "times": [
+       "15:00"
+      ],
+      "from": null,
+      "role": null,
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     },
+     {
+      "name": "Чепель",
+      "times": [
+       "15:00"
+      ],
+      "from": null,
+      "role": null,
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     }
+    ],
+    "scope": "people",
+    "accounting": {
+     "showWeight": 0,
+     "baby": false,
+     "halfFor": [],
+     "away": false,
+     "studio": false,
+     "interlude": true,
+     "interludeType": "regular",
      "intro": false
     }
    }
