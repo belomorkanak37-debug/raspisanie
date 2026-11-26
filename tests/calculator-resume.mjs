@@ -78,6 +78,27 @@ await emit(docListeners, 'visibilitychange');
 assert.equal(storage.get('rs.salary.v1.проверка'), JSON.stringify('60000'));
 assert.equal(storage.get('rs.advance.v1.проверка.2026-10'), JSON.stringify(''));
 assert.equal(frames.length, 0);
+
+document.visibilityState = 'visible';
+state.totalsMonth = '2026-12';
+state.salaryTotals = { person, ym: '2026-12', totals: core.monthlyTotals([], person.key, '2026-12') };
+salary.value = '50000'; advance.value = '10000'; updateSalaryResult();
+assert.ok(result.innerHTML.includes(`<strong>${money(33500)}</strong>`));
+assert.ok(result.innerHTML.includes(`<strong>${money(77000)}</strong>`));
+assert.ok(result.innerHTML.includes('Квартальная премия — под вопросом'));
+assert.ok(result.innerHTML.includes('Если будет квартальная премия 100%'));
+advance.value = ''; await emit(winListeners, 'pageshow'); flushFrames();
+assert.ok(result.innerHTML.includes(`<strong>${money(43500)}</strong>`));
+assert.ok(result.innerHTML.includes(`<strong>${money(87000)}</strong>`));
+salary.value = '60000'; await feed.emit('input', { target: salary });
+assert.ok(result.innerHTML.includes(`<strong>${money(104400)}</strong>`));
+state.totalsMonth = '2027-01';
+state.salaryTotals = { person, ym: '2027-01', totals: core.monthlyTotals([], person.key, '2027-01') };
+updateSalaryResult();
+assert.ok(!result.innerHTML.includes('квартальная премия'));
+assert.ok(!result.innerHTML.includes('calc-bonus-scenario'));
+console.log('PASS: December scenario updates with salary and restored advance, disappears in January');
+
 const stored = [...storage];
 setPerson({ name: 'Другой', key: 'другой', known: true });
 document.visibilityState = 'visible'; await emit(winListeners, 'pageshow'); flushFrames();

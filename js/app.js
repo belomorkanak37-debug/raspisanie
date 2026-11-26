@@ -632,6 +632,10 @@ function updateSalaryResult() {
     const calc = calculateSalary(context.totals, input.value, advance.value);
     box.innerHTML = `<section class="calc-result" aria-label="Приблизительная зарплата">
         <p>Примерно на руки</p><strong>${money(calc.netAfterAdvance)}</strong><span>После удержания ${calc.taxRate}% налога${calc.advance ? ' и вычета аванса' : ' · без вычета аванса'}</span>
+        ${calc.quarterlyBonus ? `<div class="calc-bonus-scenario">
+          <p>Если будет квартальная премия 100%</p><strong>${money(calc.quarterlyBonus.totalNetAfterAdvance)}</strong>
+          <span>Включая ${money(calc.quarterlyBonus.net)} премии после налога ${calc.taxRate}%</span>
+        </div>` : ''}
       </section>
       ${calc.interludePending ? `<p class="banner">Для ${calc.interludePending} участий в интермедиях тариф требует уточнения. Они видны в расчёте по датам, но доплата за них пока не включена.</p>` : ''}
       <dl class="calc-ledger">
@@ -643,6 +647,9 @@ function updateSalaryResult() {
         <div><dt>Налог ${calc.taxRate}%</dt><dd>−${money(calc.tax)}</dd></div>
         ${calc.advance ? `<div><dt>После налога, до вычета аванса</dt><dd>${money(calc.net)}</dd></div>
           <div><dt>Полученный аванс</dt><dd>−${money(calc.advance)}</dd></div>` : ''}
+        ${calc.quarterlyBonus ? `<div class="calc-quarterly-bonus"><dt>Квартальная премия — под вопросом
+          <small>100% оклада · до налога</small><small>После налога ${calc.taxRate}%: ${money(calc.quarterlyBonus.net)}</small>
+          <small>Не включена в основной расчёт</small></dt><dd>${money(calc.quarterlyBonus.gross)}</dd></div>` : ''}
       </dl>${salaryDetails(calc, context.totals)}`;
   } catch (e) {
     (e.field === 'advance' ? advance : input).setAttribute('aria-invalid', 'true');

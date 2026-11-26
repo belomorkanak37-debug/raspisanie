@@ -269,6 +269,9 @@ main { flex: 1; }
 .calc-result p { margin: 0 0 6px; font-size: 15px; }
 .calc-result strong { display: block; color: var(--accent); font-size: clamp(28px, 7vw, 38px); overflow-wrap: anywhere; }
 .calc-result span { display: block; margin-top: 6px; font-size: 13px; color: var(--muted); }
+.calc-bonus-scenario { margin-top: 18px; padding-top: 16px; border-top: 1px dashed var(--line); }
+.calc-bonus-scenario p { line-height: 1.45; }
+.calc-bonus-scenario strong { color: var(--text); font-size: clamp(24px, 6vw, 30px); }
 .calc-ledger { margin: 14px 0; padding: 0 16px; border: 1px solid var(--line); border-radius: var(--radius); background: var(--surface); }
 .calc-ledger > div { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; padding: 13px 0; border-bottom: 1px solid var(--line); }
 .calc-ledger > div:last-child { border-bottom: 0; }
@@ -276,6 +279,7 @@ main { flex: 1; }
 .calc-ledger small { display: block; margin-top: 4px; color: var(--muted); font-size: 12px; font-weight: 400; }
 .calc-ledger dd { margin: 0; flex-shrink: 0; font-size: 15px; font-weight: 600; font-variant-numeric: tabular-nums; }
 .calc-ledger .calc-total { font-weight: 600; }
+.calc-quarterly-bonus dt { color: var(--warn); }
 .calc-error { color: var(--warn); font-size: 14px; }
 .past-days { margin-top: 20px; padding: 12px 14px; border: 1px solid var(--line); border-radius: 14px; }
 .past-days > summary { cursor: pointer; font-size: 14px; font-weight: 600; }

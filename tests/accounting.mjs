@@ -175,3 +175,28 @@ assert.equal(oldStudio.kind, 'other');
 assert.equal(total([{ ...oldStudio, scope: 'note' }]).confirmed.studioLessons, 0);
 assert.equal(monthlyTotals([week([oldStudio])], person, '2026-11').confirmed.studioLessons, 0);
 console.log('PASS: uncertain/canceled lessons excluded from pay, latest versions win, old JSON recognized, notes and other months excluded');
+
+// Возможная квартальная премия — отдельный декабрьский сценарий для любого актёра.
+for (const month of ['2026-11', '2026-12', '2027-01', '2027-03', '2027-12']) {
+  for (const name of [person, 'Глазецкая']) {
+    const calc = calculateSalary(monthlyTotals([], name, month), 50000, 10000);
+    assert.equal(calc.netAfterAdvance, 33500);
+    assert.equal(calc.gross, 50000);
+    assert.equal(calc.tax, 6500);
+    assert.equal(calc.bonus, 0);
+    if (month.endsWith('-12')) assert.deepEqual(calc.quarterlyBonus, {
+      rate: 100, gross: 50000, tax: 6500, net: 43500, totalNetAfterAdvance: 77000,
+    });
+    else assert.equal(calc.quarterlyBonus, null);
+  }
+}
+// Те же спектакли и доплаты: премия не меняет ни одну основную сумму.
+const decemberPay = calculateSalary({ ...salaryTotals, month: '2026-12' }, 100000, 25000);
+const { quarterlyBonus, ...decemberBase } = decemberPay;
+const { quarterlyBonus: noQuarterlyBonus, ...ordinaryBase } = withAdvance;
+assert.deepEqual(decemberBase, ordinaryBase);
+assert.equal(quarterlyBonus.totalNetAfterAdvance, 179450);
+const decemberEmpty = monthlyTotals([], person, '2026-12');
+assert.equal(calculateSalary(decemberEmpty, 50000, '').quarterlyBonus.totalNetAfterAdvance, 87000);
+assert.equal(calculateSalary(decemberEmpty, '50 000,50', '10 000,25').quarterlyBonus.totalNetAfterAdvance, 77000.61);
+console.log('PASS: December-only 100% quarterly bonus, separate 13% tax, advance once, kopecks and unchanged base calculation');

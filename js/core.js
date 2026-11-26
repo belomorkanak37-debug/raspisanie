@@ -674,13 +674,21 @@ export function calculateSalary(totals, salary, advance = '') {
   const grossKopecks = baseKopecks + bonusKopecks;
   if (!Number.isSafeInteger(grossKopecks)) throw new Error('Оклад слишком большой для расчёта.');
   const taxKopecks = Math.round(grossKopecks * SALARY_RATES.tax / 100);
+  // Декабрьская премия пока под вопросом: считаем отдельный сценарий,
+  // не меняя основные начисления, доплаты и сумму к выплате.
+  const quarterlyTaxKopecks = Math.round(baseKopecks * SALARY_RATES.tax / 100);
+  const quarterlyBonus = totals.month?.endsWith('-12') ? {
+    rate: 100, gross: baseKopecks / 100, tax: quarterlyTaxKopecks / 100,
+    net: (baseKopecks - quarterlyTaxKopecks) / 100,
+    totalNetAfterAdvance: (grossKopecks - taxKopecks - advanceKopecks + baseKopecks - quarterlyTaxKopecks) / 100,
+  } : null;
   return {
     base: baseKopecks / 100, lines, bonusPercent: lines.reduce((sum, line) => sum + line.percent, 0),
     bonus: bonusKopecks / 100, gross: grossKopecks / 100, tax: taxKopecks / 100,
     net: (grossKopecks - taxKopecks) / 100, taxRate: SALARY_RATES.tax, showCharges, awayCharges,
     advance: advanceKopecks / 100, netAfterAdvance: (grossKopecks - taxKopecks - advanceKopecks) / 100,
     interludeCharges, interludePending: interludeCharges.filter((s) => s.rate == null).length,
-    studioLessons, studioFee: STUDIO_LESSON_FEE, studioPay: studioKopecks / 100,
+    studioLessons, studioFee: STUDIO_LESSON_FEE, studioPay: studioKopecks / 100, quarterlyBonus,
   };
 }
 
