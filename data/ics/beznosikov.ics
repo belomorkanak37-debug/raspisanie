@@ -1339,4 +1339,58 @@ DESCRIPTION:Обычная интермедия «Как Снеговик
   за ёлкой ходил»\nДед Мороз — Безносико
  в
 END:VEVENT
+BEGIN:VEVENT
+UID:2026-12-29-1100-dw6hd9@raspisanie
+DTSTAMP:20261126T163000Z
+DTSTART;TZID=Europe/Moscow:20261229T110000
+DTEND;TZID=Europe/Moscow:20261229T120000
+SUMMARY:Интермедия «Серебряное копытце» · 
+ Интерактив (дед мороз)
+DESCRIPTION:Интерактив «Серебряное копытце»
+ \nДед Мороз — Безносиков\; Снегурочка — 
+ Глазецкая
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-12-29-1300-dw6hd9@raspisanie
+DTSTAMP:20261126T163000Z
+DTSTART;TZID=Europe/Moscow:20261229T130000
+DTEND;TZID=Europe/Moscow:20261229T140000
+SUMMARY:Интермедия «Серебряное копытце» · 
+ Интерактив (дед мороз)
+DESCRIPTION:Интерактив «Серебряное копытце»
+ \nДед Мороз — Безносиков\; Снегурочка — 
+ Глазецкая
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-12-30-1100-1p6gva@raspisanie
+DTSTAMP:20261126T163000Z
+DTSTART;TZID=Europe/Moscow:20261230T110000
+DTEND;TZID=Europe/Moscow:20261230T120000
+SUMMARY:Интермедия «Приключения пингвинят
+ » · Интерактив (дед мороз)
+DESCRIPTION:Интерактив «Приключения пингвин
+ ят»\nДед Мороз — Безносиков\; Снегурочк
+ а — Глазецкая (11:00)
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-12-30-1300-1p6gva@raspisanie
+DTSTAMP:20261126T163000Z
+DTSTART;TZID=Europe/Moscow:20261230T130000
+DTEND;TZID=Europe/Moscow:20261230T140000
+SUMMARY:Интермедия «Приключения пингвинят
+ » · Интерактив (дед мороз)
+DESCRIPTION:Интерактив «Приключения пингвин
+ ят»\nДед Мороз — Безносиков\; Снегурочк
+ а — Глазецкая (11:00)
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-12-31-1100-siwr43@raspisanie
+DTSTAMP:20261126T163000Z
+DTSTART;TZID=Europe/Moscow:20261231T110000
+DTEND;TZID=Europe/Moscow:20261231T120000
+SUMMARY:Интермедия «Морозко» · Обычная инт
+ ермедия (дед мороз)
+DESCRIPTION:Обычная интермедия «Морозко»\nДе
+ д Мороз — Безносиков
+END:VEVENT
 END:VCALENDAR
