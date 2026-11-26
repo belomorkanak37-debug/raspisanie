@@ -4,7 +4,7 @@
  "end": "2026-12-13",
  "title": "7–13 декабря",
  "header": "ПЛАН РАБОТЫ На ДЕКАБРЬ 2026 года",
- "source": "7 декабря по 13 декабря.pdf",
+ "source": " 07 декабря по 13 декабря.pdf",
  "days": [
   "2026-12-07",
   "2026-12-08",
@@ -139,26 +139,25 @@
    ],
    "range": null,
    "timeUncertain": false,
-   "title": "Ввод в спектакль «Морозко» + сдача А. С. В 16:00",
-   "kind": "intro",
+   "title": "Репетиция спектакля «Морозко»",
+   "kind": "rehearsal",
    "place": "Новая сцена",
    "tech": "Звук",
    "lines": [
-    "Вводящаяся – Мартюшева;",
-    "Чирочкина, Андреев"
+    "Мартюшева; Галустянц, Андреев, Баранов"
    ],
    "people": [
     {
      "name": "Мартюшева",
      "times": null,
      "from": null,
-     "role": "вводящаяся",
+     "role": null,
      "uncertain": false,
      "alts": [],
      "note": null
     },
     {
-     "name": "Чирочкина",
+     "name": "Галустянц",
      "times": null,
      "from": null,
      "role": null,
@@ -174,6 +173,15 @@
      "uncertain": false,
      "alts": [],
      "note": null
+    },
+    {
+     "name": "Баранов",
+     "times": null,
+     "from": null,
+     "role": null,
+     "uncertain": false,
+     "alts": [],
+     "note": null
     }
    ],
    "scope": "people",
@@ -183,7 +191,7 @@
     "halfFor": [],
     "away": false,
     "studio": false,
-    "intro": true
+    "intro": false
    }
   },
   {
@@ -272,22 +280,22 @@
   {
    "id": "e5",
    "date": "2026-12-09",
-   "timeText": "12:00",
+   "timeText": "16:00",
    "times": [
-    "12:00"
+    "16:00"
    ],
    "range": null,
    "timeUncertain": false,
-   "title": "Репетиция спектакля «Морозко»",
+   "title": "Репетиция спектакля «Петрушка»",
    "kind": "rehearsal",
-   "place": "Новая сцена",
+   "place": "Новая сцена - фойе",
    "tech": "Звук, свет",
    "lines": [
-    "Мартюшева, Галустянц, Баранов"
+    "Трунина, Чепель, Радыгин"
    ],
    "people": [
     {
-     "name": "Мартюшева",
+     "name": "Трунина",
      "times": null,
      "from": null,
      "role": null,
@@ -296,7 +304,7 @@
      "note": null
     },
     {
-     "name": "Галустянц",
+     "name": "Чепель",
      "times": null,
      "from": null,
      "role": null,
@@ -305,7 +313,7 @@
      "note": null
     },
     {
-     "name": "Баранов",
+     "name": "Радыгин",
      "times": null,
      "from": null,
      "role": null,
@@ -327,22 +335,118 @@
   {
    "id": "e6",
    "date": "2026-12-10",
-   "timeText": "12:00",
+   "timeText": "11:00 17:00",
    "times": [
-    "12:00"
+    "11:00",
+    "17:00"
    ],
    "range": null,
    "timeUncertain": false,
-   "title": "Репетиция спектакля «Серебряное копытце»",
+   "title": "Спектакль «Заинька»",
+   "kind": "show",
+   "place": "Новая сцена",
+   "tech": "Звук, свет",
+   "lines": [
+    "11:00, Лоскутова, Лоскутов, Заяшников",
+    "17:00 Глазецкая, Безносиков, Баранов"
+   ],
+   "people": [
+    {
+     "name": "Лоскутова",
+     "times": [
+      "11:00"
+     ],
+     "from": null,
+     "role": null,
+     "uncertain": false,
+     "alts": [],
+     "note": null
+    },
+    {
+     "name": "Лоскутов",
+     "times": [
+      "11:00"
+     ],
+     "from": null,
+     "role": null,
+     "uncertain": false,
+     "alts": [],
+     "note": null
+    },
+    {
+     "name": "Заяшников",
+     "times": [
+      "11:00"
+     ],
+     "from": null,
+     "role": null,
+     "uncertain": false,
+     "alts": [],
+     "note": null
+    },
+    {
+     "name": "Глазецкая",
+     "times": [
+      "17:00"
+     ],
+     "from": null,
+     "role": null,
+     "uncertain": false,
+     "alts": [],
+     "note": null
+    },
+    {
+     "name": "Безносиков",
+     "times": [
+      "17:00"
+     ],
+     "from": null,
+     "role": null,
+     "uncertain": false,
+     "alts": [],
+     "note": null
+    },
+    {
+     "name": "Баранов",
+     "times": [
+      "17:00"
+     ],
+     "from": null,
+     "role": null,
+     "uncertain": false,
+     "alts": [],
+     "note": null
+    }
+   ],
+   "scope": "people",
+   "accounting": {
+    "showWeight": 1,
+    "baby": false,
+    "halfFor": [],
+    "away": false,
+    "studio": false,
+    "intro": false
+   }
+  },
+  {
+   "id": "e7",
+   "date": "2026-12-10",
+   "timeText": "13:00",
+   "times": [
+    "13:00"
+   ],
+   "range": null,
+   "timeUncertain": false,
+   "title": "Репетиция спектакля «Приключения пингвинят» + в 15:00 сдача А.С.",
    "kind": "rehearsal",
    "place": "Старая сцена",
    "tech": "Звук, свет",
    "lines": [
-    "Разуваева, Миронова, Лоскутова, Галустянц, Кожев, Баранов"
+    "Радыгин, Сигитова, Кожев, Носов, Заяшников"
    ],
    "people": [
     {
-     "name": "Разуваева",
+     "name": "Радыгин",
      "times": null,
      "from": null,
      "role": null,
@@ -351,25 +455,7 @@
      "note": null
     },
     {
-     "name": "Миронова",
-     "times": null,
-     "from": null,
-     "role": null,
-     "uncertain": false,
-     "alts": [],
-     "note": null
-    },
-    {
-     "name": "Лоскутова",
-     "times": null,
-     "from": null,
-     "role": null,
-     "uncertain": false,
-     "alts": [],
-     "note": null
-    },
-    {
-     "name": "Галустянц",
+     "name": "Сигитова",
      "times": null,
      "from": null,
      "role": null,
@@ -387,81 +473,7 @@
      "note": null
     },
     {
-     "name": "Баранов",
-     "times": null,
-     "from": null,
-     "role": null,
-     "uncertain": false,
-     "alts": [],
-     "note": null
-    }
-   ],
-   "scope": "people",
-   "accounting": {
-    "showWeight": 0,
-    "baby": false,
-    "halfFor": [],
-    "away": false,
-    "studio": false,
-    "intro": false
-   }
-  },
-  {
-   "id": "e7",
-   "date": "2026-12-10",
-   "timeText": "12:00",
-   "times": [
-    "12:00"
-   ],
-   "range": null,
-   "timeUncertain": false,
-   "title": "Ввод в спектакль «Как Снеговик за ёлкой ходил» + сдача А.С. в 14:00",
-   "kind": "intro",
-   "place": "Новая сцена",
-   "tech": "Звук, свет",
-   "lines": [
-    "Вводящаяся – Сигитова",
-    "Шаймиев, Безносиков, Чирочкина, Мартюшева, Заяшников"
-   ],
-   "people": [
-    {
-     "name": "Сигитова",
-     "times": null,
-     "from": null,
-     "role": "вводящаяся",
-     "uncertain": false,
-     "alts": [],
-     "note": null
-    },
-    {
-     "name": "Шаймиев",
-     "times": null,
-     "from": null,
-     "role": null,
-     "uncertain": false,
-     "alts": [],
-     "note": null
-    },
-    {
-     "name": "Безносиков",
-     "times": null,
-     "from": null,
-     "role": null,
-     "uncertain": false,
-     "alts": [],
-     "note": null
-    },
-    {
-     "name": "Чирочкина",
-     "times": null,
-     "from": null,
-     "role": null,
-     "uncertain": false,
-     "alts": [],
-     "note": null
-    },
-    {
-     "name": "Мартюшева",
+     "name": "Носов",
      "times": null,
      "from": null,
      "role": null,
@@ -486,7 +498,7 @@
     "halfFor": [],
     "away": false,
     "studio": false,
-    "intro": true
+    "intro": false
    }
   },
   {
@@ -588,6 +600,64 @@
   {
    "id": "e9",
    "date": "2026-12-11",
+   "timeText": "13:00 – 15:00",
+   "times": [
+    "13:00"
+   ],
+   "range": {
+    "from": "13:00",
+    "to": "15:00"
+   },
+   "timeUncertain": false,
+   "title": "Репетиция спектакля «Петрушка»",
+   "kind": "rehearsal",
+   "place": "Новая сцена - фойе",
+   "tech": "Звук, свет",
+   "lines": [
+    "Трунина, Чепель, Радыгин"
+   ],
+   "people": [
+    {
+     "name": "Трунина",
+     "times": null,
+     "from": null,
+     "role": null,
+     "uncertain": false,
+     "alts": [],
+     "note": null
+    },
+    {
+     "name": "Чепель",
+     "times": null,
+     "from": null,
+     "role": null,
+     "uncertain": false,
+     "alts": [],
+     "note": null
+    },
+    {
+     "name": "Радыгин",
+     "times": null,
+     "from": null,
+     "role": null,
+     "uncertain": false,
+     "alts": [],
+     "note": null
+    }
+   ],
+   "scope": "people",
+   "accounting": {
+    "showWeight": 0,
+    "baby": false,
+    "halfFor": [],
+    "away": false,
+    "studio": false,
+    "intro": false
+   }
+  },
+  {
+   "id": "e10",
+   "date": "2026-12-11",
    "timeText": "15:30",
    "times": [
     "15:30"
@@ -668,7 +738,7 @@
    }
   },
   {
-   "id": "e10",
+   "id": "e11",
    "date": "2026-12-11",
    "timeText": "18:00",
    "times": [
@@ -750,7 +820,7 @@
    }
   },
   {
-   "id": "e11",
+   "id": "e12",
    "date": "2026-12-12",
    "timeText": "11:00 13:00 15:00",
    "times": [
@@ -766,7 +836,7 @@
    "tech": "Звук, свет",
    "lines": [
     "Кожев, Галустянц, Трунина, Миронова, Разуваева, Баранов",
-    "15:00 + Интерактив: Дед Мороз – Лоскутов; Снегурочка - Глазецкая"
+    "15:00 + Интерактив: Дед Мороз – Лоскутов; Снегурочка – Глазецкая; Чепель, Носов"
    ],
    "people": [
     {
@@ -842,6 +912,24 @@
      "uncertain": false,
      "alts": [],
      "note": null
+    },
+    {
+     "name": "Чепель",
+     "times": null,
+     "from": null,
+     "role": null,
+     "uncertain": false,
+     "alts": [],
+     "note": null
+    },
+    {
+     "name": "Носов",
+     "times": null,
+     "from": null,
+     "role": null,
+     "uncertain": false,
+     "alts": [],
+     "note": null
     }
    ],
    "scope": "people",
@@ -855,7 +943,7 @@
    }
   },
   {
-   "id": "e12",
+   "id": "e13",
    "date": "2026-12-12",
    "timeText": "11:00 13:00 15:00",
    "times": [
@@ -933,7 +1021,7 @@
    }
   },
   {
-   "id": "e13",
+   "id": "e14",
    "date": "2026-12-13",
    "timeText": "11:00 13:00 15:00",
    "times": [
@@ -1029,7 +1117,7 @@
    }
   },
   {
-   "id": "e14",
+   "id": "e15",
    "date": "2026-12-13",
    "timeText": "11:00 13:00 15:00",
    "times": [
@@ -1045,7 +1133,8 @@
    "tech": "Звук, свет",
    "lines": [
     "Андреев, Лоскутова, Безносиков, Шаймиев, Мартюшева, Разуваева",
-    "15:00 + Интермедия: Дед Мороз – Безносиков; Снегурочка - Глазецкая"
+    "15:00 + Интермедия: Дед Мороз – Безносиков; Снегурочка – Глазецкая; Трунина,",
+    "Чепель"
    ],
    "people": [
     {
@@ -1121,6 +1210,24 @@
      "uncertain": false,
      "alts": [],
      "note": null
+    },
+    {
+     "name": "Трунина",
+     "times": null,
+     "from": null,
+     "role": null,
+     "uncertain": false,
+     "alts": [],
+     "note": null
+    },
+    {
+     "name": "Чепель",
+     "times": null,
+     "from": null,
+     "role": null,
+     "uncertain": false,
+     "alts": [],
+     "note": null
     }
    ],
    "scope": "people",
@@ -1134,12 +1241,12 @@
    }
   }
  ],
- "version": 2,
- "updatedAt": "2026-11-23T11:36:19.411Z",
+ "version": 3,
+ "updatedAt": "2026-11-26T12:20:23.294Z",
  "pdf": "data/pdf/2026-12-07.pdf",
  "previous": {
-  "version": 1,
-  "updatedAt": "2026-11-21T16:34:53.827Z",
+  "version": 2,
+  "updatedAt": "2026-11-23T11:36:19.411Z",
   "events": [
    {
     "id": "e1",
