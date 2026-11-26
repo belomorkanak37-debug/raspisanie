@@ -3,7 +3,7 @@
 // День | Дата | Начало | Спектакль / РПТ | Сцена | Звук, свет.
 
 import * as pdfjsLib from 'https://cdn.jsdelivr.net/npm/pdfjs-dist@4.10.38/build/pdf.min.mjs';
-import { buildEvent, detectYearMonth, eventSortKey, resolveDate, weekTitle } from './core.js';
+import { buildEvent, expandInterludes, detectYearMonth, eventSortKey, resolveDate, weekTitle } from './core.js';
 
 pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdn.jsdelivr.net/npm/pdfjs-dist@4.10.38/build/pdf.worker.min.mjs';
 const OPS = pdfjsLib.OPS;
@@ -308,7 +308,7 @@ export async function parseSchedulePdf(buffer, fileName = '') {
   const allDates = [...dates].sort();
   if (!allDates.length) throw new Error('Не удалось найти даты в PDF. Это точно расписание в привычном формате?');
   const start = allDates[0], end = allDates[allDates.length - 1];
-  const events = rawEvents.map((r) => buildEvent(r)).sort((x, y) => eventSortKey(x).localeCompare(eventSortKey(y)));
+  const events = rawEvents.flatMap((r) => expandInterludes(buildEvent(r))).sort((x, y) => eventSortKey(x).localeCompare(eventSortKey(y)));
   events.forEach((ev, i) => { ev.id = `e${i + 1}`; });
 
   for (const ev of events) {
@@ -316,6 +316,7 @@ export async function parseSchedulePdf(buffer, fileName = '') {
     if (!ev.date) warnings.push(`Не определилась дата: ${what}`);
     if (ev.timeText && !ev.times.length) warnings.push(`Не распознано время «${ev.timeText}»: ${what}`);
     if (ev.scope === 'people' && !ev.people.length) warnings.push(`Нет участников — событие никому не покажется: ${what}`);
+    if (ev.kind === 'interlude' && ev.accounting.interludeType === 'unknown') warnings.push(`У интерактива не уточнён тариф доплаты: ${what}`);
     if (!ev.title) warnings.push(`Пустое название: ${what}`);
   }
 

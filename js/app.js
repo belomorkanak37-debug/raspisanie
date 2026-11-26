@@ -1,6 +1,6 @@
 import {
-  KIND_LABELS, buildICS, editDistance, fmtDate, fmtDateTime, markChanges, normName,
-  personalItems, prettyTitle, todayISO, addDays, weekdayName, weekTitle, monthlyTotals, calculateSalary, INTRO_ROLE_LABELS,
+  KIND_LABELS, expandInterludes, buildICS, editDistance, fmtDate, fmtDateTime, markChanges, normName,
+  personalItems, prettyTitle, todayISO, addDays, weekdayName, weekTitle, monthlyTotals, calculateSalary, INTRO_ROLE_LABELS, INTERLUDE_LABELS,
 } from './core.js';
 import { loadPersonalEvents, savePersonalEvent, deletePersonalEvent, personalStorageKey } from './personal.js';
 
@@ -561,11 +561,12 @@ function totalsStats(t, possible = false) {
     <div><dt>Выездных спектаклей</dt><dd>${t.awayShows}</dd></div>
     <div><dt>Бэбиков</dt><dd>${t.babyShows}</dd></div>
     <div><dt>Занятий студии</dt><dd>${t.studioLessons}</dd></div>
+    ${t.interludeSeason || t.interludeItems.length ? Object.entries(INTERLUDE_LABELS).filter(([k]) => k !== 'unknown' || t.interludeCounts[k]).map(([k, label]) => `<div><dt>${esc(label)}</dt><dd>${t.interludeCounts[k]}</dd></div>`).join('') : ''}
   </dl>`;
 }
 
 function totalsDetails(t, label) {
-  if (!t.showItems.length && !t.awayItems.length && !t.introItems.length && !t.studioItems.length) return '';
+  if (!t.showItems.length && !t.awayItems.length && !t.introItems.length && !t.studioItems.length && !t.interludeItems.length) return '';
   const showsList = (items) => `<ul>${items.map((s) => `<li><div class="totals-date">${fmtDate(s.ev.date)} · ${esc(s.time || 'время не указано')}</div>
     <div>${esc(prettyTitle(s.ev.title).heading)}${s.weight === 0.5 && !s.away ? ' <span class="chip">0,5</span>' : ''}${s.baby ? ' <span class="chip">бэбик</span>' : ''}</div>
     ${s.ev.place ? `<div class="muted">${esc(s.ev.place)}</div>` : ''}</li>`).join('')}</ul>`;
@@ -574,6 +575,7 @@ function totalsDetails(t, label) {
       ${showsList(t.showItems)}` : ''}
     ${t.awayItems.length ? `<h3>Выездные спектакли (${t.awayShows} ${plural(t.awayShows, 'показ', 'показа', 'показов')})</h3>${showsList(t.awayItems)}` : ''}
     ${t.studioItems.length ? `<h3>Занятия студии (${t.studioLessons})</h3>${showsList(t.studioItems)}` : ''}
+    ${t.interludeItems.length ? `<h3>Интермедии</h3>${interludeDetails(t.interludeItems)}` : ''}
     ${t.introItems.length ? `<h3>Дни вводов</h3><ul>${t.introItems.map((i) => `<li>
       <div class="totals-date">${fmtDate(i.date)} · ${INTRO_ROLE_LABELS[i.role]}</div>
       <div>${i.titles.map(esc).join(', ')}</div></li>`).join('')}</ul>` : ''}
@@ -585,7 +587,14 @@ const salaryLabels = {
   show: 'Спектакли сверх нормы', baby: 'Бэбики сверх нормы',
   awayFirst: 'Выезды: первый показ за день', awayExtra: 'Выезды: последующие показы',
   newcomer: 'Вводящийся', mentor: 'Вводящий', actor: 'Актёр на вводе',
+  interludeRegular: 'Обычные интермедии', interludeBaby: 'Бэби-интермедии', interludeSchool: 'Школьные интермедии',
 };
+
+function interludeDetails(items) {
+  return `<ul>${items.map((s) => `<li><div class="totals-date">${fmtDate(s.ev.date)} · ${esc(s.time || 'время не указано')}</div>
+    <div>${esc(s.ev.title)} · ${esc(s.role)}</div>
+    <div class="muted">${s.rate == null ? 'Тариф требует уточнения — доплата пока не включена' : `+${s.rate}% от оклада`}</div></li>`).join('')}</ul>`;
+}
 
 function salaryDetails(calc, totals) {
   const list = (items, away) => `<ul>${items.map((s) => `<li>
@@ -595,6 +604,7 @@ function salaryDetails(calc, totals) {
   </li>`).join('')}</ul>`;
   return `<details class="totals-details"><summary>Посмотреть расчёт по датам</summary>
     ${calc.showCharges.length ? `<h3>Спектакли в театре</h3>${list(calc.showCharges, false)}` : ''}
+    ${calc.interludeCharges.length ? `<h3>Интермедии</h3>${interludeDetails(calc.interludeCharges)}` : ''}
     ${calc.awayCharges.length ? `<h3>Выезды, гастроли и фестивали</h3>${list(calc.awayCharges, true)}` : ''}
     ${totals.confirmed.studioItems.length ? `<h3>Занятия студии</h3><ul>${totals.confirmed.studioItems.map((s) => `<li>
       <div class="totals-date">${fmtDate(s.ev.date)} · ${esc(s.time || 'время не указано')}</div>
@@ -623,6 +633,7 @@ function updateSalaryResult() {
     box.innerHTML = `<section class="calc-result" aria-label="Приблизительная зарплата">
         <p>Примерно на руки</p><strong>${money(calc.netAfterAdvance)}</strong><span>После удержания ${calc.taxRate}% налога${calc.advance ? ' и вычета аванса' : ' · без вычета аванса'}</span>
       </section>
+      ${calc.interludePending ? `<p class="banner">Для ${calc.interludePending} участий в интермедиях тариф требует уточнения. Они видны в расчёте по датам, но доплата за них пока не включена.</p>` : ''}
       <dl class="calc-ledger">
         <div><dt>Оклад</dt><dd>${money(calc.base)}</dd></div>
         ${calc.lines.map((line) => `<div><dt>${salaryLabels[line.key]}<small>${fmtCount(line.count)} × ${line.rate}% = ${fmtCount(line.percent)}%</small></dt><dd>${money(line.amount)}</dd></div>`).join('')}
@@ -678,7 +689,7 @@ async function renderTotals(feed, calculator = false) {
   const weeks = loaded.filter(Boolean);
   const totals = monthlyTotals(weeks, person.key, ym);
   const { confirmed, possible, coverage } = totals;
-  const hasPossible = possible.showItems.length || possible.awayItems.length || possible.introItems.length || possible.studioItems.length;
+  const hasPossible = possible.showItems.length || possible.awayItems.length || possible.introItems.length || possible.studioItems.length || possible.interludeItems.length;
   const failed = weeks.length < metas.length;
   const notices = `
     ${failed ? '<div class="banner">Часть расписаний не загрузилась. Показаны итоги только по доступным неделям. Обновите страницу при подключении к интернету.</div>' : ''}
@@ -702,6 +713,7 @@ async function renderTotals(feed, calculator = false) {
         «Теремок» у Баранова и Носова учитывается по 0,5; часть сверх нормы оплачивается пропорционально.
         Выезды, гастроли и фестивали считаются отдельно: первый показ каждого дня +6%, каждый следующий +5%.
         День ввода: вводящийся +6%, вводящий +3%, актёр на вводе +4%.
+        ${confirmed.interludeSeason || confirmed.interludeItems.length ? 'Интермедии не входят в норму спектаклей и оплачиваются за каждый личный показ: обычная — Деду Морозу +5%, бэби — Деду Морозу и Снегурочке +3%, школьная — Деду Морозу +7%. Неуточнённые тарифы показаны отдельно.' : ''}
         Театральная студия — 2 500 ₽ за занятие, независимо от оклада и нормы спектаклей. Налог 13% удерживается с оклада и всех доплат.</p>`;
     updateSalaryResult();
     return;
@@ -710,6 +722,7 @@ async function renderTotals(feed, calculator = false) {
     ${coverage.days ? `<section class="totals-panel" aria-label="Итоги по расписанию">${totalsStats(confirmed)}</section>
       <p class="totals-rules">Норма спектаклей в театре — ${totals.norm}. «Собачка» и «Первый снег малыша» — бэбики, каждый считается как 1 спектакль.
         «Теремок» для Баранова и Носова считается по 0,5 за показ, для остальных — как 1.
+        ${confirmed.interludeSeason || confirmed.interludeItems.length ? 'Интермедии считаются отдельно от спектаклей, только в указанное для человека время. Если человек занят и в спектакле, и в интермедии, учтены оба участия.' : ''}
         Занятия студии считаются отдельно, без включения в норму спектаклей.
         Каждый личный показ считается отдельно. Выезды учитываются отдельной графой и не влияют на норму. Вводы считаются по дням, а не по числу репетиций; роли берутся из состава.</p>
       ${totalsDetails(confirmed, 'Посмотреть учтённые даты')}
@@ -813,7 +826,7 @@ function bindFeed(feed) {
   const findItem = (id) => {
     const [wid, eid] = id.split(':');
     const w = state.rendered.find((x) => x.id === wid);
-    const ev = w?.events.find((e) => e.id === eid);
+    const ev = w?.events.flatMap(expandInterludes).find((e) => e.id === eid);
     return ev ? personalItems([ev], current.key)[0] : null;
   };
   feed.addEventListener('toggle', (e) => {

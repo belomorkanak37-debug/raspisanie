@@ -7,7 +7,7 @@ export const WEEKDAYS = ['воскресенье', 'понедельник', 'в
 
 export const KIND_LABELS = {
   show: 'Спектакль', rehearsal: 'Репетиция', intro: 'Ввод', handover: 'Сдача',
-  meeting: 'Собрание', trip: 'Выезд', studio: 'Театральная студия', other: '',
+  meeting: 'Собрание', trip: 'Выезд', interlude: 'Интермедия', studio: 'Театральная студия', other: '',
 };
 
 /* ---------- даты ---------- */
@@ -136,6 +136,7 @@ function isStudioTitle(title) {
 export function detectKind(title) {
   const t = String(title || '').trim().toLowerCase();
   if (isStudioTitle(t)) return 'studio';
+  if (/^(?:(?:нг|обычная|школьная|бэби|беби)\s*[-–]?\s*)*(?:интермеди|интерактив)/.test(t)) return 'interlude';
   if (/^ввод/.test(t)) return 'intro';
   if (/^сдача/.test(t)) return 'handover';
   if (/^(репетиц|прогон)/.test(t)) return 'rehearsal';
@@ -321,7 +322,7 @@ export function autoScope(times, people, title) {
 export function buildEvent({ id, date, timeText = '', title = '', lines = [], place = '', tech = '', scope }) {
   const tt = parseTimeText(timeText);
   const cleanLines = lines.map((l) => String(l).replace(/\s+/g, ' ').trim()).filter(Boolean);
-  const people = parseParticipants(cleanLines);
+  const people = detectKind(title) === 'interlude' ? castBlocks(cleanLines).flatMap((b) => parseInterludeParticipants(b.text).map((p) => ({ ...p, times: p.times || b.times }))) : parseParticipants(cleanLines);
   const cleanTitle = String(title).replace(/\s+/g, ' ').trim();
   const ev = {
     id, date, timeText: tt.text, times: tt.times, range: tt.range, timeUncertain: tt.uncertain,
@@ -333,6 +334,84 @@ export function buildEvent({ id, date, timeText = '', title = '', lines = [], pl
   };
   ev.accounting = eventAccounting(ev);
   return ev;
+}
+
+// Интермедия — самостоятельная занятость, даже если PDF объединяет её со спектаклем.
+export const INTERLUDE_LABELS = { regular: 'Обычная интермедия', baby: 'Бэби-интермедия', school: 'Школьная интермедия', unknown: 'Интерактив — тариф уточняется' };
+export function interludeType(text) {
+  const t = normName(text);
+  if (/школьн/.test(t)) return 'school';
+  if (/б[эе]би[\s-]*интермед/.test(t)) return 'baby';
+  if (/интерактив/.test(t)) return 'unknown';
+  return 'regular';
+}
+
+function parseInterludeParticipants(text) {
+  // Склейка переносов сохраняет «Сова - / Лоскутова» и время в скобках.
+  // Именованные замены через «;» наследуют роль: «Дед Мороз — А (11:00); Б (17:00)».
+  const matches = [...text.matchAll(/(дед\s+мороз|снегурочка|сова|коза)\s*[–—−-]\s*/gi)];
+  if (!matches.length) return parseParticipants([text]);
+  const people = parseParticipants([text.slice(0, matches[0].index)]);
+  matches.forEach((m, i) => {
+    const body = text.slice(m.index + m[0].length, matches[i + 1]?.index ?? text.length);
+    const role = normName(m[1]).replace(/\s+/g, ' ');
+    const chunks = body.split(';');
+    for (let j = 0; j < chunks.length; j++) {
+      const entries = parseParticipants([chunks[j]]);
+      for (const p of entries) {
+        // Безымянный список после «;» — другие актёры, а не ещё одна Снегурочка.
+        if (!p.role && (j === 0 || p.times || p.from)) p.role = role;
+        people.push(p);
+      }
+    }
+  });
+  return people;
+}
+
+// Времена в скобках принадлежат фамилии; вне скобок — целому блоку состава.
+function castBlocks(lines) {
+  const text = lines.join(' '), starts = [];
+  let depth = 0;
+  for (let i = 0; i < text.length; i++) {
+    if (text[i] === '(') depth++;
+    if (text[i] === ')') depth = Math.max(0, depth - 1);
+    if (depth || (i && /[\d:]/.test(text[i - 1]))) continue;
+    const m = /^(\d{1,2}:\d{2})(?:\s*(?:и|,)\s*\d{1,2}:\d{2})*/.exec(text.slice(i));
+    if (m) { starts.push({ start: i, end: i + m[0].length, times: parseTimeText(m[0]).times }); i += m[0].length - 1; }
+  }
+  const blocks = [];
+  if (!starts.length || starts[0].start > 0) blocks.push({ text: text.slice(0, starts[0]?.start ?? text.length), times: null });
+  starts.forEach((a, i) => blocks.push({ text: text.slice(a.end, starts[i + 1]?.start ?? text.length), times: a.times }));
+  return blocks;
+}
+
+export function expandInterludes(ev) {
+  if (ev.kind !== 'show' || ev.scope === 'note' || !/(?:интермедия|интерактив)\s*:|дед\s+мороз\s*[–—−-]/i.test((ev.lines || []).join(' '))) return [ev];
+  const showPeople = [], interPeople = [], showLines = [], interLines = [];
+  const markers = [];
+  for (const block of castBlocks(ev.lines)) {
+    const marker = /(?:(?:нг|обычная|школьная|бэби|беби)[\s-]+)*(?:интермедия|интерактив)\s*:|дед\s+мороз\s*[–—−-]/i.exec(block.text);
+    const before = (marker ? block.text.slice(0, marker.index) : block.text).replace(/^[\s,+;]+|[\s,+;]+$/g, '');
+    const after = marker ? block.text.slice(marker.index).replace(/^(?:(?:нг|обычная|школьная|бэби|беби)[\s-]+)*(?:интермедия|интерактив)\s*:\s*/i, '') : '';
+    const scopeTimes = block.times || ev.times;
+    const restrict = (people) => people.map((p) => ({ ...p, times: p.times ? (block.times ? p.times.filter((t) => block.times.includes(t)) : p.times) : scopeTimes.slice() }));
+    if (before) { showPeople.push(...restrict(parseParticipants([before]))); showLines.push(`${block.times ? block.times.join(', ') + ' — ' : ''}${before}`); }
+    if (after) { interPeople.push(...restrict(parseInterludeParticipants(after))); interLines.push(`${scopeTimes.join(', ')} — ${after}`); markers.push(marker[0]); }
+  }
+  if (!interPeople.length) return [ev];
+  const type = interludeType([ev.title, ...markers].join(' '));
+  const heading = prettyTitle(ev.title).heading;
+  const make = (people, interlude) => {
+    const times = [...new Set(people.flatMap((p) => p.times || ev.times))].sort();
+    const title = interlude ? `${type === 'unknown' ? 'Интерактив' : INTERLUDE_LABELS[type]} «${heading}»`
+      : ev.title.replace(/\s*\+\s*(?:НГ\s+)?(?:Б[эе]би[-\s]*)?(?:интермедия|интерактив)\s*$/i, '');
+    const out = { ...ev, id: interlude ? `${ev.id || 'event'}-interlude` : ev.id, title,
+      kind: interlude ? 'interlude' : 'show', people, times, timeText: times.join(' '), range: null,
+      lines: interlude ? interLines : showLines };
+    out.accounting = eventAccounting(out);
+    return out;
+  };
+  return [...(showPeople.length ? [make(showPeople, false)] : []), make(interPeople, true)];
 }
 
 export const eventSortKey = (ev) => `${ev.date || '9999'} ${ev.times[0] || (ev.range && ev.range.from) || (ev.scope === 'note' ? '00:00' : '99:99')}`;
@@ -396,7 +475,7 @@ export function itemSignature(it) {
 }
 
 export function personalItems(events, key) {
-  return events.map((ev) => personalize(ev, key)).filter(Boolean)
+  return events.flatMap(expandInterludes).map((ev) => personalize(ev, key)).filter(Boolean)
     .sort((a, b) => (a.sortKey < b.sortKey ? -1 : a.sortKey > b.sortKey ? 1 : 0));
 }
 
@@ -412,10 +491,11 @@ const accountingText = (s) => normName(s).replace(/[^а-яa-z0-9]+/g, ' ').trim(
 export function eventAccounting(ev) {
   const title = normName(ev.title);
   const kind = ev.kind || detectKind(ev.title);
+  const interlude = kind === 'interlude' && ev.scope !== 'note';
   const studio = ev.scope !== 'note' && (kind === 'studio' || isStudioTitle(ev.title));
   const awayTitle = /выезд|гастрол|фестивал|бдф/.test(title);
   const travelOnly = /^(отъезд|выезд\s+(?:гастрольной\s+)?группы)/.test(title);
-  const show = !studio && ev.scope !== 'note' && (kind === 'show' || ((kind === 'trip' || (kind === 'other' && awayTitle))
+  const show = !interlude && !studio && ev.scope !== 'note' && (kind === 'show' || ((kind === 'trip' || (kind === 'other' && awayTitle))
     && !travelOnly && (/спектакл/.test(title) || (/«[^»]+»/.test(title) && ev.times?.length > 0))));
   const heading = accountingText(prettyTitle(ev.title).heading);
   const baby = show && /(^| )собачка($| )|(^| )первый снег малыша($| )/.test(heading);
@@ -423,7 +503,7 @@ export function eventAccounting(ev) {
   const place = normName(ev.place);
   const away = show && (awayTitle
     || /москв|выборг|шк(?:ола|\s|\.|№)|лице[йя]|гимнази|дворец|дом культуры|губернск|(^|[^а-я])дк($|[^а-я])|ул[.\s]|проспект/.test(place));
-  return { showWeight: show ? 1 : 0, baby, halfFor, away, studio, intro: !studio && kind === 'intro' && ev.scope !== 'note' };
+  return { showWeight: show ? 1 : 0, baby, halfFor, away, studio, interlude, interludeType: interlude ? interludeType(ev.title) : null, intro: !studio && kind === 'intro' && ev.scope !== 'note' };
 }
 
 function introRole(role) {
@@ -451,7 +531,7 @@ function accountingPeople(ev) {
 }
 
 function accountingTimes(ev, p) {
-  let times = p.times?.length ? p.times.slice() : (ev.times || []).slice();
+  let times = Array.isArray(p.times) ? p.times.slice() : (ev.times || []).slice();
   if (p.from) times = times.length ? times.filter((t) => t >= p.from) : [p.from];
   const until = /^до (\d{2}:\d{2})/.exec(p.note || '');
   if (until) times = times.filter((t) => t < until[1]);
@@ -470,14 +550,14 @@ export function monthlyTotals(weeks, name, month) {
     if (!old || (w.version || 1) > (old.version || 1)
       || ((w.version || 1) === (old.version || 1) && (w.updatedAt || '') > (old.updatedAt || ''))) latest.set(w.id, w);
   }
-  const covered = new Set(), shows = new Map(), intros = new Map(), studios = new Map();
+  const covered = new Set(), shows = new Map(), intros = new Map(), studios = new Map(), interludes = new Map();
   for (const w of latest.values()) {
     for (let d = w.start > first ? w.start : first; d <= w.end && d <= last; d = addDays(d, 1)) covered.add(d);
     // previous содержит отменённые и изменённые записи — в итогах берём только текущие events.
-    for (const ev of w.events || []) {
+    for (const ev of (w.events || []).flatMap(expandInterludes)) {
       if (ev.date < first || ev.date > last || ev.scope === 'note') continue;
       const flags = eventAccounting(ev);
-      if (!flags.showWeight && !flags.intro && !flags.studio) continue;
+      if (!flags.showWeight && !flags.intro && !flags.studio && !flags.interlude) continue;
       const entries = accountingPeople(ev).filter((p) => normName(p.name) === key);
       for (const p of entries) {
         const possible = !!p.uncertain || !!p.alts?.length;
@@ -489,6 +569,14 @@ export function monthlyTotals(weeks, name, month) {
             ev, week: w, time, possible, weight: flags.halfFor.includes(key) ? 0.5 : flags.showWeight,
             baby: flags.baby, away: flags.away,
           });
+        }
+        if (flags.interlude) for (const time of accountingTimes(ev, p)) {
+          const id = [ev.date, time, accountingText(prettyTitle(ev.title).heading), accountingText(ev.place)].join('|');
+          const rate = interludeRate(flags.interludeType, p.role);
+          const old = interludes.get(id);
+          if (!old || (old.possible && !possible) || (old.possible === possible && (rate || 0) > (old.rate || 0))) {
+            interludes.set(id, { ev, week: w, time, possible, subtype: flags.interludeType, role: p.role || 'участник', rate });
+          }
         }
         if (flags.intro) {
           const role = introRole(p.role);
@@ -510,6 +598,8 @@ export function monthlyTotals(weeks, name, month) {
       .sort((a, b) => `${a.date} ${a.role}`.localeCompare(`${b.date} ${b.role}`));
     const studioItems = [...studios.values()].filter((s) => s.possible === possible)
       .sort((a, b) => `${a.ev.date} ${a.time}`.localeCompare(`${b.ev.date} ${b.time}`));
+    const interludeItems = [...interludes.values()].filter((s) => s.possible === possible)
+      .sort((a, b) => `${a.ev.date} ${a.time}`.localeCompare(`${b.ev.date} ${b.time}`));
     const showsCount = showItems.reduce((sum, s) => sum + s.weight, 0);
     return {
       shows: showsCount, performances: showItems.length, aboveNorm: Math.max(0, showsCount - MONTHLY_NORM),
@@ -518,7 +608,9 @@ export function monthlyTotals(weeks, name, month) {
       awayShows: awayItems.length,
       studioLessons: studioItems.length,
       introDays: Object.fromEntries(Object.keys(INTRO_ROLE_LABELS).map((r) => [r, introItems.filter((i) => i.role === r).length])),
-      showItems, awayItems, introItems, studioItems,
+      showItems, awayItems, introItems, studioItems, interludeItems,
+      interludeCounts: Object.fromEntries(Object.keys(INTERLUDE_LABELS).map((k) => [k, interludeItems.filter((s) => s.subtype === k).length])),
+      interludeSeason: num === 12 || num === 1,
     };
   };
   return { month, norm: MONTHLY_NORM, confirmed: bucket(false), possible: bucket(true), coverage: { days: covered.size, totalDays } };
@@ -527,6 +619,14 @@ export function monthlyTotals(weeks, name, month) {
 /* ---------- приблизительная зарплата ---------- */
 
 export const SALARY_RATES = { show: 5, baby: 3, awayFirst: 6, awayExtra: 5, newcomer: 6, mentor: 3, actor: 4, tax: 13 };
+// Неизвестный тариф остаётся видимым, но не увеличивает предварительную зарплату.
+export function interludeRate(type, role) {
+  const r = normName(role);
+  if (type === 'baby' && /дед мороз|снегурочка/.test(r)) return 3;
+  if (type === 'regular' && /дед мороз/.test(r)) return 5;
+  if (type === 'school' && /дед мороз/.test(r)) return 7;
+  return null;
+}
 export const STUDIO_LESSON_FEE = 2500;
 
 export function calculateSalary(totals, salary, advance = '') {
@@ -564,6 +664,13 @@ export function calculateSalary(totals, salary, advance = '') {
     const count = counts[key], rate = SALARY_RATES[key], percent = count * rate;
     return { key, count, rate, percent, amount: Math.round(baseKopecks * percent / 100) / 100 };
   });
+  const interludeCharges = (t.interludeItems || []).map((s) => ({ ...s, percent: s.rate }));
+  if (t.interludeSeason || interludeCharges.length) {
+    for (const [key, rate] of [['interludeRegular', 5], ['interludeBaby', 3], ['interludeSchool', 7]]) {
+      const count = interludeCharges.filter((s) => s.percent === rate).length, percent = count * rate;
+      lines.push({ key, count, rate, percent, amount: Math.round(baseKopecks * percent / 100) / 100 });
+    }
+  }
   const studioLessons = t.studioItems.length;
   const studioKopecks = studioLessons * STUDIO_LESSON_FEE * 100;
   const bonusKopecks = lines.reduce((sum, line) => sum + Math.round(line.amount * 100), studioKopecks);
@@ -575,6 +682,7 @@ export function calculateSalary(totals, salary, advance = '') {
     bonus: bonusKopecks / 100, gross: grossKopecks / 100, tax: taxKopecks / 100,
     net: (grossKopecks - taxKopecks) / 100, taxRate: SALARY_RATES.tax, showCharges, awayCharges,
     advance: advanceKopecks / 100, netAfterAdvance: (grossKopecks - taxKopecks - advanceKopecks) / 100,
+    interludeCharges, interludePending: interludeCharges.filter((s) => s.rate == null).length,
     studioLessons, studioFee: STUDIO_LESSON_FEE, studioPay: studioKopecks / 100,
   };
 }

@@ -18,7 +18,7 @@ END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
 UID:2026-10-02-1230-l5f9v@raspisanie
-DTSTAMP:20261126T122000Z
+DTSTAMP:20261126T124000Z
 DTSTART;TZID=Europe/Moscow:20261002T123000
 DTEND;TZID=Europe/Moscow:20261002T133000
 SUMMARY:Собрание всего коллектива
@@ -27,7 +27,7 @@ DESCRIPTION:СОБРАНИЕ ВСЕГО КОЛЛЕКТИВА
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-11-24-1300-1cb31bf@raspisanie
-DTSTAMP:20261126T122000Z
+DTSTAMP:20261126T124000Z
 DTSTART;TZID=Europe/Moscow:20261124T130000
 DTEND;TZID=Europe/Moscow:20261124T140000
 SUMMARY:Собрание
@@ -36,7 +36,7 @@ DESCRIPTION:Собрание
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-11-27-1300-1xxyyat@raspisanie
-DTSTAMP:20261126T122000Z
+DTSTAMP:20261126T124000Z
 DTSTART;TZID=Europe/Moscow:20261127T130000
 DTEND;TZID=Europe/Moscow:20261127T140000
 SUMMARY:Репетиция новогодних программ
@@ -48,8 +48,20 @@ DESCRIPTION:Репетиция новогодних программ\nК
  СТЮМ ДЛЯ АЛЕКСЕЕВОЙ!!!!\nЗвук/свет: Звук
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-12-12-1500-siwr43@raspisanie
+DTSTAMP:20261126T124000Z
+DTSTART;TZID=Europe/Moscow:20261212T150000
+DTEND;TZID=Europe/Moscow:20261212T160000
+SUMMARY:Интермедия «Морозко» · Обычная инт
+ ермедия (снегурочка)
+LOCATION:Новая сцена
+DESCRIPTION:Обычная интермедия «Морозко»\n15:00
+  — Дед Мороз – Безносиков\; Снегурочка -
+  Алексеева\nЗвук/свет: Звук\, свет
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-12-15-1200-1fd518o@raspisanie
-DTSTAMP:20261126T122000Z
+DTSTAMP:20261126T124000Z
 DTSTART;TZID=Europe/Moscow:20261215T120000
 DTEND;TZID=Europe/Moscow:20261215T130000
 SUMMARY:Репетиция «Звёздочка»
@@ -60,94 +72,46 @@ DESCRIPTION:Репетиция спектакля «Звёздочка»
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-12-20-1100-1ty7xlr@raspisanie
-DTSTAMP:20261126T122000Z
+DTSTAMP:20261126T124000Z
 DTSTART;TZID=Europe/Moscow:20261220T110000
 DTEND;TZID=Europe/Moscow:20261220T120000
 SUMMARY:Спектакль «Звёздочка»
 LOCATION:Новая сцена
 DESCRIPTION:Спектакль «Звёздочка»\nАлексеева
  \, Чирочкина\, Носов\, Заяшников\, Трунина
- \nДед Мороз – Безносиков (11:00 и 13:00)\; Рады
- гин (15:00 и 17:00) Снегурочка – Миронова\n(11:0
- 0\, 13:00 и 15:00)\; Беканова (17:00)\nЗвук/свет: Зв
- ук\, свет
+ \nЗвук/свет: Звук\, свет
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-12-20-1300-1ty7xlr@raspisanie
-DTSTAMP:20261126T122000Z
+DTSTAMP:20261126T124000Z
 DTSTART;TZID=Europe/Moscow:20261220T130000
 DTEND;TZID=Europe/Moscow:20261220T140000
 SUMMARY:Спектакль «Звёздочка»
 LOCATION:Новая сцена
 DESCRIPTION:Спектакль «Звёздочка»\nАлексеева
  \, Чирочкина\, Носов\, Заяшников\, Трунина
- \nДед Мороз – Безносиков (11:00 и 13:00)\; Рады
- гин (15:00 и 17:00) Снегурочка – Миронова\n(11:0
- 0\, 13:00 и 15:00)\; Беканова (17:00)\nЗвук/свет: Зв
- ук\, свет
+ \nЗвук/свет: Звук\, свет
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-12-20-1500-1ty7xlr@raspisanie
-DTSTAMP:20261126T122000Z
+DTSTAMP:20261126T124000Z
 DTSTART;TZID=Europe/Moscow:20261220T150000
 DTEND;TZID=Europe/Moscow:20261220T160000
 SUMMARY:Спектакль «Звёздочка»
 LOCATION:Новая сцена
 DESCRIPTION:Спектакль «Звёздочка»\nАлексеева
  \, Чирочкина\, Носов\, Заяшников\, Трунина
- \nДед Мороз – Безносиков (11:00 и 13:00)\; Рады
- гин (15:00 и 17:00) Снегурочка – Миронова\n(11:0
- 0\, 13:00 и 15:00)\; Беканова (17:00)\nЗвук/свет: Зв
- ук\, свет
+ \nЗвук/свет: Звук\, свет
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-12-20-1700-1ty7xlr@raspisanie
-DTSTAMP:20261126T122000Z
+DTSTAMP:20261126T124000Z
 DTSTART;TZID=Europe/Moscow:20261220T170000
 DTEND;TZID=Europe/Moscow:20261220T180000
 SUMMARY:Спектакль «Звёздочка»
 LOCATION:Новая сцена
 DESCRIPTION:Спектакль «Звёздочка»\nАлексеева
  \, Чирочкина\, Носов\, Заяшников\, Трунина
- \nДед Мороз – Безносиков (11:00 и 13:00)\; Рады
- гин (15:00 и 17:00) Снегурочка – Миронова\n(11:0
- 0\, 13:00 и 15:00)\; Беканова (17:00)\nЗвук/свет: Зв
- ук\, свет
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-12-12-1100-y6lud0@raspisanie
-DTSTAMP:20261126T122000Z
-DTSTART;TZID=Europe/Moscow:20261212T110000
-DTEND;TZID=Europe/Moscow:20261212T120000
-SUMMARY:Спектакль «Морозко» (снегурочка)
-LOCATION:Новая сцена
-DESCRIPTION:Спектакль «Морозко»\nМартюшева\, 
- Чирочкина\, Андреев\n15:00 + Интермедия: Де
- д Мороз – Безносиков\; Снегурочка - Алек
- сеева\nЗвук/свет: Звук\, свет
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-12-12-1300-y6lud0@raspisanie
-DTSTAMP:20261126T122000Z
-DTSTART;TZID=Europe/Moscow:20261212T130000
-DTEND;TZID=Europe/Moscow:20261212T140000
-SUMMARY:Спектакль «Морозко» (снегурочка)
-LOCATION:Новая сцена
-DESCRIPTION:Спектакль «Морозко»\nМартюшева\, 
- Чирочкина\, Андреев\n15:00 + Интермедия: Де
- д Мороз – Безносиков\; Снегурочка - Алек
- сеева\nЗвук/свет: Звук\, свет
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-12-12-1500-y6lud0@raspisanie
-DTSTAMP:20261126T122000Z
-DTSTART;TZID=Europe/Moscow:20261212T150000
-DTEND;TZID=Europe/Moscow:20261212T160000
-SUMMARY:Спектакль «Морозко» (снегурочка)
-LOCATION:Новая сцена
-DESCRIPTION:Спектакль «Морозко»\nМартюшева\, 
- Чирочкина\, Андреев\n15:00 + Интермедия: Де
- д Мороз – Безносиков\; Снегурочка - Алек
- сеева\nЗвук/свет: Звук\, свет
+ \nЗвук/свет: Звук\, свет
 END:VEVENT
 END:VCALENDAR

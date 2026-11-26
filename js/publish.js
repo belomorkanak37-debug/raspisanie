@@ -1,6 +1,6 @@
 // Подготовка файлов данных и публикация в репозиторий GitHub (через GitHub API).
 
-import { addDays, buildICS, normName, peopleOfWeek, personalItems, todayISO, translit } from './core.js';
+import { addDays, expandInterludes, buildICS, normName, peopleOfWeek, personalItems, todayISO, translit } from './core.js';
 
 export const weekPath = (id) => `data/weeks/${id}.json`;
 export const pdfPath = (id) => `data/pdf/${id}.pdf`;
@@ -11,6 +11,7 @@ export function finalizeWeek(draft, existing) {
   const { warnings, ...week } = draft;
   return {
     ...week,
+    events: week.events.flatMap(expandInterludes),
     version: existing ? (existing.version || 1) + 1 : 1,
     updatedAt: new Date().toISOString(),
     pdf: week.pdf === undefined ? pdfPath(week.id) : week.pdf,

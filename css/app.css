@@ -352,6 +352,7 @@ main { flex: 1; }
 .k-handover { --k: var(--k-handover); }
 .k-meeting { --k: var(--k-meeting); }
 .k-trip { --k: var(--k-trip); }
+.k-interlude { --k: var(--k-intro); }
 .k-studio { --k: var(--k-studio); }
 .k-other { --k: var(--k-other); }
 .k-personal { --k: var(--k-personal); }
