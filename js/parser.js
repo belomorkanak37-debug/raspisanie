@@ -316,7 +316,6 @@ export async function parseSchedulePdf(buffer, fileName = '') {
     if (!ev.date) warnings.push(`Не определилась дата: ${what}`);
     if (ev.timeText && !ev.times.length) warnings.push(`Не распознано время «${ev.timeText}»: ${what}`);
     if (ev.scope === 'people' && !ev.people.length) warnings.push(`Нет участников — событие никому не покажется: ${what}`);
-    if (ev.kind === 'interlude' && ev.accounting.interludeType === 'unknown') warnings.push(`У интерактива не уточнён тариф доплаты: ${what}`);
     if (!ev.title) warnings.push(`Пустое название: ${what}`);
   }
 

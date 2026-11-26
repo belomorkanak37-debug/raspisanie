@@ -561,7 +561,7 @@ function totalsStats(t, possible = false) {
     <div><dt>Выездных спектаклей</dt><dd>${t.awayShows}</dd></div>
     <div><dt>Бэбиков</dt><dd>${t.babyShows}</dd></div>
     <div><dt>Занятий студии</dt><dd>${t.studioLessons}</dd></div>
-    ${t.interludeSeason || t.interludeItems.length ? Object.entries(INTERLUDE_LABELS).filter(([k]) => k !== 'unknown' || t.interludeCounts[k]).map(([k, label]) => `<div><dt>${esc(label)}</dt><dd>${t.interludeCounts[k]}</dd></div>`).join('') : ''}
+    ${t.interludeSeason || t.interludeItems.length ? Object.entries(INTERLUDE_LABELS).map(([k, label]) => `<div><dt>${esc(label)}</dt><dd>${t.interludeCounts[k]}</dd></div>`).join('') : ''}
   </dl>`;
 }
 
@@ -587,7 +587,7 @@ const salaryLabels = {
   show: 'Спектакли сверх нормы', baby: 'Бэбики сверх нормы',
   awayFirst: 'Выезды: первый показ за день', awayExtra: 'Выезды: последующие показы',
   newcomer: 'Вводящийся', mentor: 'Вводящий', actor: 'Актёр на вводе',
-  interludeRegular: 'Обычные интермедии', interludeBaby: 'Бэби-интермедии', interludeSchool: 'Школьные интермедии',
+  interludeRegular: 'Обычные интермедии и интерактивы', interludeBaby: 'Бэби-интермедии', interludeSchool: 'Школьные интермедии',
 };
 
 function interludeDetails(items) {
@@ -713,7 +713,7 @@ async function renderTotals(feed, calculator = false) {
         «Теремок» у Баранова и Носова учитывается по 0,5; часть сверх нормы оплачивается пропорционально.
         Выезды, гастроли и фестивали считаются отдельно: первый показ каждого дня +6%, каждый следующий +5%.
         День ввода: вводящийся +6%, вводящий +3%, актёр на вводе +4%.
-        ${confirmed.interludeSeason || confirmed.interludeItems.length ? 'Интермедии не входят в норму спектаклей и оплачиваются за каждый личный показ: обычная — Деду Морозу +5%, бэби — Деду Морозу и Снегурочке +3%, школьная — Деду Морозу +7%. Неуточнённые тарифы показаны отдельно.' : ''}
+        ${confirmed.interludeSeason || confirmed.interludeItems.length ? 'Интермедии не входят в норму спектаклей и оплачиваются за каждый личный показ: обычная (детская) и интерактив — +5%, бэби — +3%, школьная ёлка — +7%. Тариф одинаков для всех участников, независимо от роли.' : ''}
         Театральная студия — 2 500 ₽ за занятие, независимо от оклада и нормы спектаклей. Налог 13% удерживается с оклада и всех доплат.</p>`;
     updateSalaryResult();
     return;

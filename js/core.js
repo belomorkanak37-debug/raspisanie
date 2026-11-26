@@ -136,7 +136,8 @@ function isStudioTitle(title) {
 export function detectKind(title) {
   const t = String(title || '').trim().toLowerCase();
   if (isStudioTitle(t)) return 'studio';
-  if (/^(?:(?:нг|обычная|школьная|бэби|беби)\s*[-–]?\s*)*(?:интермеди|интерактив)/.test(t)) return 'interlude';
+  if (/^школьная\s+[её]лка/.test(t)) return 'interlude';
+  if (/^(?:(?:нг|детская|обычная|школьная|бэби|беби)\s*[-–]?\s*)*(?:интермеди|интерактив)/.test(t)) return 'interlude';
   if (/^ввод/.test(t)) return 'intro';
   if (/^сдача/.test(t)) return 'handover';
   if (/^(репетиц|прогон)/.test(t)) return 'rehearsal';
@@ -337,12 +338,12 @@ export function buildEvent({ id, date, timeText = '', title = '', lines = [], pl
 }
 
 // Интермедия — самостоятельная занятость, даже если PDF объединяет её со спектаклем.
-export const INTERLUDE_LABELS = { regular: 'Обычная интермедия', baby: 'Бэби-интермедия', school: 'Школьная интермедия', unknown: 'Интерактив — тариф уточняется' };
+export const INTERLUDE_LABELS = { regular: 'Обычная интермедия', baby: 'Бэби-интермедия', school: 'Школьная интермедия', interactive: 'Интерактив' };
 export function interludeType(text) {
   const t = normName(text);
   if (/школьн/.test(t)) return 'school';
   if (/б[эе]би[\s-]*интермед/.test(t)) return 'baby';
-  if (/интерактив/.test(t)) return 'unknown';
+  if (/интерактив/.test(t)) return 'interactive';
   return 'regular';
 }
 
@@ -390,9 +391,9 @@ export function expandInterludes(ev) {
   const showPeople = [], interPeople = [], showLines = [], interLines = [];
   const markers = [];
   for (const block of castBlocks(ev.lines)) {
-    const marker = /(?:(?:нг|обычная|школьная|бэби|беби)[\s-]+)*(?:интермедия|интерактив)\s*:|дед\s+мороз\s*[–—−-]/i.exec(block.text);
+    const marker = /(?:(?:нг|детская|обычная|школьная|бэби|беби)[\s-]+)*(?:интермедия|интерактив)\s*:|дед\s+мороз\s*[–—−-]/i.exec(block.text);
     const before = (marker ? block.text.slice(0, marker.index) : block.text).replace(/^[\s,+;]+|[\s,+;]+$/g, '');
-    const after = marker ? block.text.slice(marker.index).replace(/^(?:(?:нг|обычная|школьная|бэби|беби)[\s-]+)*(?:интермедия|интерактив)\s*:\s*/i, '') : '';
+    const after = marker ? block.text.slice(marker.index).replace(/^(?:(?:нг|детская|обычная|школьная|бэби|беби)[\s-]+)*(?:интермедия|интерактив)\s*:\s*/i, '') : '';
     const scopeTimes = block.times || ev.times;
     const restrict = (people) => people.map((p) => ({ ...p, times: p.times ? (block.times ? p.times.filter((t) => block.times.includes(t)) : p.times) : scopeTimes.slice() }));
     if (before) { showPeople.push(...restrict(parseParticipants([before]))); showLines.push(`${block.times ? block.times.join(', ') + ' — ' : ''}${before}`); }
@@ -403,7 +404,7 @@ export function expandInterludes(ev) {
   const heading = prettyTitle(ev.title).heading;
   const make = (people, interlude) => {
     const times = [...new Set(people.flatMap((p) => p.times || ev.times))].sort();
-    const title = interlude ? `${type === 'unknown' ? 'Интерактив' : INTERLUDE_LABELS[type]} «${heading}»`
+    const title = interlude ? `${type === 'interactive' ? 'Интерактив' : INTERLUDE_LABELS[type]} «${heading}»`
       : ev.title.replace(/\s*\+\s*(?:НГ\s+)?(?:Б[эе]би[-\s]*)?(?:интермедия|интерактив)\s*$/i, '');
     const out = { ...ev, id: interlude ? `${ev.id || 'event'}-interlude` : ev.id, title,
       kind: interlude ? 'interlude' : 'show', people, times, timeText: times.join(' '), range: null,
@@ -619,13 +620,9 @@ export function monthlyTotals(weeks, name, month) {
 /* ---------- приблизительная зарплата ---------- */
 
 export const SALARY_RATES = { show: 5, baby: 3, awayFirst: 6, awayExtra: 5, newcomer: 6, mentor: 3, actor: 4, tax: 13 };
-// Неизвестный тариф остаётся видимым, но не увеличивает предварительную зарплату.
-export function interludeRate(type, role) {
-  const r = normName(role);
-  if (type === 'baby' && /дед мороз|снегурочка/.test(r)) return 3;
-  if (type === 'regular' && /дед мороз/.test(r)) return 5;
-  if (type === 'school' && /дед мороз/.test(r)) return 7;
-  return null;
+// Тариф зависит только от программы, одинаков для всех участников и персонажей.
+export function interludeRate(type) {
+  return { regular: 5, interactive: 5, baby: 3, school: 7 }[type] ?? null;
 }
 export const STUDIO_LESSON_FEE = 2500;
 

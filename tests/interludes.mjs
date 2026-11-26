@@ -40,7 +40,7 @@ const a=monthlyTotals([week(raw)],'Безносиков','2026-12');
 const b=monthlyTotals([week(expanded)],'Безносиков','2026-12');
 assert.equal(a.confirmed.shows,b.confirmed.shows);
 assert.equal(a.confirmed.interludeItems.length,7);
-assert.deepEqual(a.confirmed.interludeCounts,{regular:4,baby:3,school:0,unknown:0});
+assert.deepEqual(a.confirmed.interludeCounts,{regular:4,baby:3,school:0,interactive:0});
 const pay=calculateSalary(a,10000,1000);
 assert.equal(pay.lines.find(l=>l.key==='interludeRegular').percent,20);
 assert.equal(pay.lines.find(l=>l.key==='interludeBaby').percent,9);
@@ -48,9 +48,9 @@ assert.equal(pay.interludePending,0);
 assert.equal(pay.netAfterAdvance,pay.gross*.87-1000);
 const sn=calculateSalary(monthlyTotals([week(raw)],'Глазецкая','2026-12'),10000);
 assert.equal(sn.lines.find(l=>l.key==='interludeBaby').count,2);
-assert.ok(sn.interludePending>0);
-assert.equal(interludeRate('unknown','дед мороз'),null);
-assert.equal(interludeRate('baby','сова'),null);
+assert.equal(sn.interludePending,0);
+assert.equal(interludeRate('interactive','дед мороз'),5);
+assert.equal(interludeRate('baby','сова'),3);
 const school=buildEvent({date:'2027-01-05',title:'Школьная интермедия',timeText:'11:00 13:00',lines:['Дед Мороз — Безносиков']});
 const jan=monthlyTotals([{id:'jan',start:'2027-01-01',end:'2027-01-07',events:[school]}],'Безносиков','2027-01');
 assert.equal(jan.confirmed.shows,0); assert.equal(jan.confirmed.interludeCounts.school,2);
@@ -64,3 +64,17 @@ const ics=buildICS(byDay('Безносиков','2026-12-17'),'test');
 assert.match(ics,/20261217T170000/); assert.doesNotMatch(ics,/20261217T110000/);
 assert.match(ics,/дед мороз/);
 console.log('PASS: migration/editor round trip, separate norm and pay, unknown and uncertain rates, January, tax, advance and ICS');
+
+for (const role of ['дед мороз', 'снегурочка', 'сова', 'коза', null]) {
+  for (const [type, rate] of Object.entries({regular:5,interactive:5,school:7,baby:3})) assert.equal(interludeRate(type,role),rate);
+}
+for (const [title,rate] of [['Детская интермедия',5],['Обычная интермедия',5],['НГ интерактив',5],['Школьная ёлка',7],['Школьная елка',7],['Бэби интермедия',3]]) {
+  const e=buildEvent({date:'2027-01-05',title,timeText:'11:00 13:00',lines:['Дед Мороз — Безносиков; Снегурочка — Глазецкая; Сова — Трунина; Коза — Лоскутова; Чепель']});
+  for(const name of ['Безносиков','Глазецкая','Трунина','Лоскутова','Чепель']) {
+    const t=monthlyTotals([{id:'jan',start:'2027-01-01',end:'2027-01-07',events:[e]}],name,'2027-01');
+    const c=calculateSalary(t,10000,1000);
+    assert.equal(t.confirmed.shows,0); assert.equal(c.bonusPercent,2*rate); assert.equal(c.interludePending,0);
+    assert.equal(c.netAfterAdvance,(10000+200*rate)*.87-1000);
+  }
+}
+console.log('PASS: all roles and unnamed actors share program rates; school tree aliases, tax and advance');
