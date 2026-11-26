@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-24T11:24:10.585Z",
+ "updatedAt": "2026-11-26T12:18:14.706Z",
  "weeks": [
   {
    "id": "2026-09-28",
@@ -302,8 +302,8 @@
    "start": "2026-11-30",
    "end": "2026-12-06",
    "title": "30 ноября — 6 декабря",
-   "version": 3,
-   "updatedAt": "2026-11-23T12:02:06.112Z",
+   "version": 4,
+   "updatedAt": "2026-11-26T12:18:11.119Z",
    "pdf": "data/pdf/2026-11-30.pdf",
    "people": [
     "Андреев",
@@ -328,6 +328,7 @@
     "Семёнов",
     "Сигитова",
     "Трунина",
+    "Чепель",
     "Чепиль",
     "Чирочкина",
     "Шаймиев"
@@ -397,6 +398,7 @@
   "сигитова": "data/ics/sigitova.ics",
   "советов": "data/ics/sovetov.ics",
   "трунина": "data/ics/trunina.ics",
+  "чепель": "data/ics/chepel.ics",
   "чепиль": "data/ics/chepil.ics",
   "чирочкина": "data/ics/chirochkina.ics",
   "шаймиев": "data/ics/shaymiev.ics",

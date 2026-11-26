@@ -18,7 +18,7 @@ END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
 UID:2026-10-02-1230-l5f9v@raspisanie
-DTSTAMP:20261124T112400Z
+DTSTAMP:20261126T121800Z
 DTSTART;TZID=Europe/Moscow:20261002T123000
 DTEND;TZID=Europe/Moscow:20261002T133000
 SUMMARY:Собрание всего коллектива
@@ -26,8 +26,30 @@ LOCATION:Старая сцена
 DESCRIPTION:СОБРАНИЕ ВСЕГО КОЛЛЕКТИВА
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-11-24-1300-1cb31bf@raspisanie
+DTSTAMP:20261126T121800Z
+DTSTART;TZID=Europe/Moscow:20261124T130000
+DTEND;TZID=Europe/Moscow:20261124T140000
+SUMMARY:Собрание
+LOCATION:Новая сцена
+DESCRIPTION:Собрание
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-11-27-1300-1xxyyat@raspisanie
+DTSTAMP:20261126T121800Z
+DTSTART;TZID=Europe/Moscow:20261127T130000
+DTEND;TZID=Europe/Moscow:20261127T140000
+SUMMARY:Репетиция новогодних программ
+LOCATION:Новая сцена
+DESCRIPTION:Репетиция новогодних программ\nК
+ ожев\, Лоскутов\, Безносиков\, Радыгин\, Г
+ лазецкая\, Беканова\, Миронова\, Трунина
+ \,\nМартюшева\, Алексеева\nПОДГОТОВИТЬ КО
+ СТЮМ ДЛЯ АЛЕКСЕЕВОЙ!!!!\nЗвук/свет: Звук
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-12-12-1100-y6lud0@raspisanie
-DTSTAMP:20261124T112400Z
+DTSTAMP:20261126T121800Z
 DTSTART;TZID=Europe/Moscow:20261212T110000
 DTEND;TZID=Europe/Moscow:20261212T120000
 SUMMARY:Спектакль «Морозко» (снегурочка)
@@ -39,7 +61,7 @@ DESCRIPTION:Спектакль «Морозко»\nМартюшева\,
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-12-12-1300-y6lud0@raspisanie
-DTSTAMP:20261124T112400Z
+DTSTAMP:20261126T121800Z
 DTSTART;TZID=Europe/Moscow:20261212T130000
 DTEND;TZID=Europe/Moscow:20261212T140000
 SUMMARY:Спектакль «Морозко» (снегурочка)
@@ -51,7 +73,7 @@ DESCRIPTION:Спектакль «Морозко»\nМартюшева\,
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-12-12-1500-y6lud0@raspisanie
-DTSTAMP:20261124T112400Z
+DTSTAMP:20261126T121800Z
 DTSTART;TZID=Europe/Moscow:20261212T150000
 DTEND;TZID=Europe/Moscow:20261212T160000
 SUMMARY:Спектакль «Морозко» (снегурочка)
@@ -60,27 +82,5 @@ DESCRIPTION:Спектакль «Морозко»\nМартюшева\,
  Чирочкина\, Андреев\n15:00 + Интермедия: Де
  д Мороз – Безносиков\; Снегурочка - Алек
  сеева\nЗвук/свет: Звук\, свет
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-11-24-1300-1cb31bf@raspisanie
-DTSTAMP:20261124T112400Z
-DTSTART;TZID=Europe/Moscow:20261124T130000
-DTEND;TZID=Europe/Moscow:20261124T140000
-SUMMARY:Собрание
-LOCATION:Новая сцена
-DESCRIPTION:Собрание
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-11-27-1300-1xxyyat@raspisanie
-DTSTAMP:20261124T112400Z
-DTSTART;TZID=Europe/Moscow:20261127T130000
-DTEND;TZID=Europe/Moscow:20261127T140000
-SUMMARY:Репетиция новогодних программ
-LOCATION:Новая сцена
-DESCRIPTION:Репетиция новогодних программ\nК
- ожев\, Лоскутов\, Безносиков\, Радыгин\, Г
- лазецкая\, Беканова\, Миронова\, Трунина
- \,\nМартюшева\, Алексеева\nПОДГОТОВИТЬ КО
- СТЮМ ДЛЯ АЛЕКСЕЕВОЙ!!!!\nЗвук/свет: Звук
 END:VEVENT
 END:VCALENDAR
