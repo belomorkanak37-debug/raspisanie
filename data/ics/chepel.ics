@@ -18,7 +18,7 @@ END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
 UID:2026-10-02-1230-l5f9v@raspisanie
-DTSTAMP:20261126T121800Z
+DTSTAMP:20261126T121900Z
 DTSTART;TZID=Europe/Moscow:20261002T123000
 DTEND;TZID=Europe/Moscow:20261002T133000
 SUMMARY:Собрание всего коллектива
@@ -27,7 +27,7 @@ DESCRIPTION:СОБРАНИЕ ВСЕГО КОЛЛЕКТИВА
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-11-24-1300-1cb31bf@raspisanie
-DTSTAMP:20261126T121800Z
+DTSTAMP:20261126T121900Z
 DTSTART;TZID=Europe/Moscow:20261124T130000
 DTEND;TZID=Europe/Moscow:20261124T140000
 SUMMARY:Собрание
@@ -36,7 +36,7 @@ DESCRIPTION:Собрание
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-12-01-1200-1mo1dyo@raspisanie
-DTSTAMP:20261126T121800Z
+DTSTAMP:20261126T121900Z
 DTSTART;TZID=Europe/Moscow:20261201T120000
 DTEND;TZID=Europe/Moscow:20261201T130000
 SUMMARY:Репетиция «Петрушка» · + 16:00 сдача А.
@@ -44,5 +44,117 @@ SUMMARY:Репетиция «Петрушка» · + 16:00 сдача А.
 LOCATION:Новая сцена- фойе
 DESCRIPTION:Репетиция спектакля «Петрушка» + 
  16:00 сдача А.С.\nТрунина\, Чепель\, Радыгин
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-12-18-1800-vy49tn@raspisanie
+DTSTAMP:20261126T121900Z
+DTSTART;TZID=Europe/Moscow:20261218T180000
+DTEND;TZID=Europe/Moscow:20261218T190000
+SUMMARY:Спектакль «Умка» · + НГ интерактив
+LOCATION:Старая сцена
+DESCRIPTION:Спектакль «Умка» + НГ интерактив\n
+ Сигитова\, Разуваева\, Самойлов\, Галуст
+ янц\nДед Мороз – Кожев\; Снегурочка – Гл
+ азецкая\; Чепель\, Носов\nЗвук/свет: Звук
+ \, свет
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-12-19-1100-vy49tn@raspisanie
+DTSTAMP:20261126T121900Z
+DTSTART;TZID=Europe/Moscow:20261219T110000
+DTEND;TZID=Europe/Moscow:20261219T120000
+SUMMARY:Спектакль «Умка» · + НГ интерактив
+LOCATION:Старая сцена
+DESCRIPTION:Спектакль «Умка» + НГ интерактив\n
+ Трунина\, Разуваева\, Самойлов\, Галустя
+ нц\nДед Мороз – Кожев\; Снегурочка – Бек
+ анова\; Чепель\, Мартюшева\nЗвук/свет: Зв
+ ук\, свет
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-12-19-1300-vy49tn@raspisanie
+DTSTAMP:20261126T121900Z
+DTSTART;TZID=Europe/Moscow:20261219T130000
+DTEND;TZID=Europe/Moscow:20261219T140000
+SUMMARY:Спектакль «Умка» · + НГ интерактив
+LOCATION:Старая сцена
+DESCRIPTION:Спектакль «Умка» + НГ интерактив\n
+ Трунина\, Разуваева\, Самойлов\, Галустя
+ нц\nДед Мороз – Кожев\; Снегурочка – Бек
+ анова\; Чепель\, Мартюшева\nЗвук/свет: Зв
+ ук\, свет
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-12-19-1500-vy49tn@raspisanie
+DTSTAMP:20261126T121900Z
+DTSTART;TZID=Europe/Moscow:20261219T150000
+DTEND;TZID=Europe/Moscow:20261219T160000
+SUMMARY:Спектакль «Умка» · + НГ интерактив
+LOCATION:Старая сцена
+DESCRIPTION:Спектакль «Умка» + НГ интерактив\n
+ Трунина\, Разуваева\, Самойлов\, Галустя
+ нц\nДед Мороз – Кожев\; Снегурочка – Бек
+ анова\; Чепель\, Мартюшева\nЗвук/свет: Зв
+ ук\, свет
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-12-20-1100-11ezir8@raspisanie
+DTSTAMP:20261126T121900Z
+DTSTART;TZID=Europe/Moscow:20261220T110000
+DTEND;TZID=Europe/Moscow:20261220T120000
+SUMMARY:Спектакль «Солнышко и снежные чело
+ вечки»
+LOCATION:Старая сцена
+DESCRIPTION:Спектакль «Солнышко и снежные че
+ ловечки»\nГалустянц\, Разуваева\, Кожев (
+ 11:00 и 13:00)\, Шаймиев (15:00 и 17:00) Лоскутова\nД
+ ед Мороз – Лоскутов\; Снегурочка – Бека
+ нова (11:00 и 13:00)\, Глазецкая (15:00 и 17:00)\;\nЧе
+ пель\, Мартюшева\nЗвук/свет: Звук\, свет
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-12-20-1300-11ezir8@raspisanie
+DTSTAMP:20261126T121900Z
+DTSTART;TZID=Europe/Moscow:20261220T130000
+DTEND;TZID=Europe/Moscow:20261220T140000
+SUMMARY:Спектакль «Солнышко и снежные чело
+ вечки»
+LOCATION:Старая сцена
+DESCRIPTION:Спектакль «Солнышко и снежные че
+ ловечки»\nГалустянц\, Разуваева\, Кожев (
+ 11:00 и 13:00)\, Шаймиев (15:00 и 17:00) Лоскутова\nД
+ ед Мороз – Лоскутов\; Снегурочка – Бека
+ нова (11:00 и 13:00)\, Глазецкая (15:00 и 17:00)\;\nЧе
+ пель\, Мартюшева\nЗвук/свет: Звук\, свет
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-12-20-1500-11ezir8@raspisanie
+DTSTAMP:20261126T121900Z
+DTSTART;TZID=Europe/Moscow:20261220T150000
+DTEND;TZID=Europe/Moscow:20261220T160000
+SUMMARY:Спектакль «Солнышко и снежные чело
+ вечки»
+LOCATION:Старая сцена
+DESCRIPTION:Спектакль «Солнышко и снежные че
+ ловечки»\nГалустянц\, Разуваева\, Кожев (
+ 11:00 и 13:00)\, Шаймиев (15:00 и 17:00) Лоскутова\nД
+ ед Мороз – Лоскутов\; Снегурочка – Бека
+ нова (11:00 и 13:00)\, Глазецкая (15:00 и 17:00)\;\nЧе
+ пель\, Мартюшева\nЗвук/свет: Звук\, свет
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-12-20-1700-11ezir8@raspisanie
+DTSTAMP:20261126T121900Z
+DTSTART;TZID=Europe/Moscow:20261220T170000
+DTEND;TZID=Europe/Moscow:20261220T180000
+SUMMARY:Спектакль «Солнышко и снежные чело
+ вечки»
+LOCATION:Старая сцена
+DESCRIPTION:Спектакль «Солнышко и снежные че
+ ловечки»\nГалустянц\, Разуваева\, Кожев (
+ 11:00 и 13:00)\, Шаймиев (15:00 и 17:00) Лоскутова\nД
+ ед Мороз – Лоскутов\; Снегурочка – Бека
+ нова (11:00 и 13:00)\, Глазецкая (15:00 и 17:00)\;\nЧе
+ пель\, Мартюшева\nЗвук/свет: Звук\, свет
 END:VEVENT
 END:VCALENDAR

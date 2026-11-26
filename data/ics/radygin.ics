@@ -18,7 +18,7 @@ END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
 UID:2026-09-29-1100-t2zk61@raspisanie
-DTSTAMP:20261126T121800Z
+DTSTAMP:20261126T121900Z
 DTSTART;TZID=Europe/Moscow:20260929T110000
 DTEND;TZID=Europe/Moscow:20260929T120000
 SUMMARY:Ввод «Маша и медведи» (вводящийся)
@@ -30,7 +30,7 @@ DESCRIPTION:Ввод в спектакль «Маша и медведи»
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-09-29-1430-t2zk61@raspisanie
-DTSTAMP:20261126T121800Z
+DTSTAMP:20261126T121900Z
 DTSTART;TZID=Europe/Moscow:20260929T143000
 DTEND;TZID=Europe/Moscow:20260929T153000
 SUMMARY:Ввод «Маша и медведи» (вводящийся)
@@ -42,7 +42,7 @@ DESCRIPTION:Ввод в спектакль «Маша и медведи»
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-09-30-1500-t2zk61@raspisanie
-DTSTAMP:20261126T121800Z
+DTSTAMP:20261126T121900Z
 DTSTART;TZID=Europe/Moscow:20260930T150000
 DTEND;TZID=Europe/Moscow:20260930T160000
 SUMMARY:Ввод «Маша и медведи» (вводящийся)
@@ -54,7 +54,7 @@ DESCRIPTION:Ввод в спектакль «Маша и медведи»
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-02-1230-l5f9v@raspisanie
-DTSTAMP:20261126T121800Z
+DTSTAMP:20261126T121900Z
 DTSTART;TZID=Europe/Moscow:20261002T123000
 DTEND;TZID=Europe/Moscow:20261002T133000
 SUMMARY:Собрание всего коллектива
@@ -63,7 +63,7 @@ DESCRIPTION:СОБРАНИЕ ВСЕГО КОЛЛЕКТИВА
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-06-1200-gs@raspisanie
-DTSTAMP:20261126T121800Z
+DTSTAMP:20261126T121900Z
 DTSTART;TZID=Europe/Moscow:20261006T120000
 DTEND;TZID=Europe/Moscow:20261006T130000
 SUMMARY:Ввод «Федорино горе» · + сдача А.С. в 
@@ -76,7 +76,7 @@ DESCRIPTION:Ввод в спектакль «Федорино горе»
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-08-1200-f0s38s@raspisanie
-DTSTAMP:20261126T121800Z
+DTSTAMP:20261126T121900Z
 DTSTART;TZID=Europe/Moscow:20261008T120000
 DTEND;TZID=Europe/Moscow:20261008T130000
 SUMMARY:Ввод «Палочка-выручалочка» (вводящ
@@ -89,7 +89,7 @@ DESCRIPTION:Ввод в спектакль «Палочка-выруча
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-14-1100-z1uvui@raspisanie
-DTSTAMP:20261126T121800Z
+DTSTAMP:20261126T121900Z
 DTSTART;TZID=Europe/Moscow:20261014T110000
 DTEND;TZID=Europe/Moscow:20261014T150000
 SUMMARY:Ввод «Конёк-горбунок» (вводящийся)
@@ -101,7 +101,7 @@ DESCRIPTION:Ввод в спектакль «Конёк-горбунок
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-18-1100-dp5ewz@raspisanie
-DTSTAMP:20261126T121800Z
+DTSTAMP:20261126T121900Z
 DTSTART;TZID=Europe/Moscow:20261018T110000
 DTEND;TZID=Europe/Moscow:20261018T120000
 SUMMARY:Спектакль «Федорино горе»
@@ -113,7 +113,7 @@ DESCRIPTION:Спектакль «Федорино горе»\nРадыг
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-18-1300-dp5ewz@raspisanie
-DTSTAMP:20261126T121800Z
+DTSTAMP:20261126T121900Z
 DTSTART;TZID=Europe/Moscow:20261018T130000
 DTEND;TZID=Europe/Moscow:20261018T140000
 SUMMARY:Спектакль «Федорино горе»
@@ -125,7 +125,7 @@ DESCRIPTION:Спектакль «Федорино горе»\nРадыг
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-18-1500-dp5ewz@raspisanie
-DTSTAMP:20261126T121800Z
+DTSTAMP:20261126T121900Z
 DTSTART;TZID=Europe/Moscow:20261018T150000
 DTEND;TZID=Europe/Moscow:20261018T160000
 SUMMARY:Спектакль «Федорино горе»
@@ -137,7 +137,7 @@ DESCRIPTION:Спектакль «Федорино горе»\nРадыг
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-21-1200-z1uvui@raspisanie
-DTSTAMP:20261126T121800Z
+DTSTAMP:20261126T121900Z
 DTSTART;TZID=Europe/Moscow:20261021T120000
 DTEND;TZID=Europe/Moscow:20261021T130000
 SUMMARY:Ввод «Конёк-горбунок» (вводящийся)
@@ -149,7 +149,7 @@ DESCRIPTION:Ввод в спектакль «Конёк-горбунок
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-22-1530-t3fget@raspisanie
-DTSTAMP:20261126T121800Z
+DTSTAMP:20261126T121900Z
 DTSTART;TZID=Europe/Moscow:20261022T153000
 DTEND;TZID=Europe/Moscow:20261022T163000
 SUMMARY:Репетиция «Конёк-горбунок»
@@ -160,7 +160,7 @@ DESCRIPTION:Репетиция спектакля «Конёк-горбу
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-23-1500-t3fget@raspisanie
-DTSTAMP:20261126T121800Z
+DTSTAMP:20261126T121900Z
 DTSTART;TZID=Europe/Moscow:20261023T150000
 DTEND;TZID=Europe/Moscow:20261023T160000
 SUMMARY:Репетиция «Конёк-горбунок»
@@ -171,7 +171,7 @@ DESCRIPTION:Репетиция спектакля «Конёк-горбу
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-23-1800-trma95@raspisanie
-DTSTAMP:20261126T121800Z
+DTSTAMP:20261126T121900Z
 DTSTART;TZID=Europe/Moscow:20261023T180000
 DTEND;TZID=Europe/Moscow:20261023T190000
 SUMMARY:Спектакль ««Конёк-горбунок»
@@ -182,7 +182,7 @@ DESCRIPTION:Спектакль ««Конёк-горбунок»\nРад
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-11-03-1200-1rmx7hb@raspisanie
-DTSTAMP:20261126T121800Z
+DTSTAMP:20261126T121900Z
 DTSTART;TZID=Europe/Moscow:20261103T120000
 DTEND;TZID=Europe/Moscow:20261103T130000
 SUMMARY:Репетиция «Кошкин дом» · + 15:00 сдача 
@@ -196,7 +196,7 @@ DESCRIPTION:Репетиция спектакля «Кошкин дом»
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-11-04-1100-nb9x5q@raspisanie
-DTSTAMP:20261126T121800Z
+DTSTAMP:20261126T121900Z
 DTSTART;TZID=Europe/Moscow:20261104T110000
 DTEND;TZID=Europe/Moscow:20261104T120000
 SUMMARY:Спектакль «Кошкин дом»
@@ -208,7 +208,7 @@ DESCRIPTION:Спектакль «Кошкин дом»\nСоветов\,
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-11-04-1300-nb9x5q@raspisanie
-DTSTAMP:20261126T121800Z
+DTSTAMP:20261126T121900Z
 DTSTART;TZID=Europe/Moscow:20261104T130000
 DTEND;TZID=Europe/Moscow:20261104T140000
 SUMMARY:Спектакль «Кошкин дом»
@@ -220,7 +220,7 @@ DESCRIPTION:Спектакль «Кошкин дом»\nСоветов\,
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-11-04-1500-nb9x5q@raspisanie
-DTSTAMP:20261126T121800Z
+DTSTAMP:20261126T121900Z
 DTSTART;TZID=Europe/Moscow:20261104T150000
 DTEND;TZID=Europe/Moscow:20261104T160000
 SUMMARY:Спектакль «Кошкин дом»
@@ -232,7 +232,7 @@ DESCRIPTION:Спектакль «Кошкин дом»\nСоветов\,
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-11-05-1200-xyy1mt@raspisanie
-DTSTAMP:20261126T121800Z
+DTSTAMP:20261126T121900Z
 DTSTART;TZID=Europe/Moscow:20261105T120000
 DTEND;TZID=Europe/Moscow:20261105T130000
 SUMMARY:Репетиция «Красная Шапочка» · + 14:30 
@@ -245,7 +245,7 @@ DESCRIPTION:Репетиция спектакля «Красная Шап
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-11-07-1300-1pvjzs6@raspisanie
-DTSTAMP:20261126T121800Z
+DTSTAMP:20261126T121900Z
 DTSTART;TZID=Europe/Moscow:20261107T130000
 DTEND;TZID=Europe/Moscow:20261107T140000
 SUMMARY:Спектакль «Красная Шапочка»
@@ -257,7 +257,7 @@ DESCRIPTION:Спектакль «Красная Шапочка»\nЛос
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-11-07-1500-1pvjzs6@raspisanie
-DTSTAMP:20261126T121800Z
+DTSTAMP:20261126T121900Z
 DTSTART;TZID=Europe/Moscow:20261107T150000
 DTEND;TZID=Europe/Moscow:20261107T160000
 SUMMARY:Спектакль «Красная Шапочка»
@@ -269,7 +269,7 @@ DESCRIPTION:Спектакль «Красная Шапочка»\nЛос
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-11-12-1500-124q4yz@raspisanie
-DTSTAMP:20261126T121800Z
+DTSTAMP:20261126T121900Z
 DTSTART;TZID=Europe/Moscow:20261112T150000
 DTEND;TZID=Europe/Moscow:20261112T160000
 SUMMARY:Репетиция «Палочка-выручалочка» · +
@@ -282,7 +282,7 @@ DESCRIPTION:Репетиция спектакля «Палочка-выр
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-11-24-1100-1onmug4@raspisanie
-DTSTAMP:20261126T121800Z
+DTSTAMP:20261126T121900Z
 DTSTART;TZID=Europe/Moscow:20261124T110000
 DTEND;TZID=Europe/Moscow:20261124T120000
 SUMMARY:Конек-горбунок · Cпектакль
@@ -293,7 +293,7 @@ DESCRIPTION:Cпектакль «Конек-горбунок»\nЛоску
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-11-24-1300-1cb31bf@raspisanie
-DTSTAMP:20261126T121800Z
+DTSTAMP:20261126T121900Z
 DTSTART;TZID=Europe/Moscow:20261124T130000
 DTEND;TZID=Europe/Moscow:20261124T140000
 SUMMARY:Собрание
@@ -302,7 +302,7 @@ DESCRIPTION:Собрание
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-11-25-1100-dp5ewz@raspisanie
-DTSTAMP:20261126T121800Z
+DTSTAMP:20261126T121900Z
 DTSTART;TZID=Europe/Moscow:20261125T110000
 DTEND;TZID=Europe/Moscow:20261125T120000
 SUMMARY:Спектакль «Федорино горе»
@@ -314,7 +314,7 @@ DESCRIPTION:Спектакль «Федорино горе»\nБезно
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-11-26-1330-1xxyyat@raspisanie
-DTSTAMP:20261126T121800Z
+DTSTAMP:20261126T121900Z
 DTSTART;TZID=Europe/Moscow:20261126T133000
 DTEND;TZID=Europe/Moscow:20261126T143000
 SUMMARY:Репетиция новогодних программ
@@ -327,7 +327,7 @@ DESCRIPTION:Репетиция новогодних программ\nК
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-11-27-1300-1xxyyat@raspisanie
-DTSTAMP:20261126T121800Z
+DTSTAMP:20261126T121900Z
 DTSTART;TZID=Europe/Moscow:20261127T130000
 DTEND;TZID=Europe/Moscow:20261127T140000
 SUMMARY:Репетиция новогодних программ
@@ -340,7 +340,7 @@ DESCRIPTION:Репетиция новогодних программ\nК
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-11-28-1100-1nrwk50@raspisanie
-DTSTAMP:20261126T121800Z
+DTSTAMP:20261126T121900Z
 DTSTART;TZID=Europe/Moscow:20261128T110000
 DTEND;TZID=Europe/Moscow:20261128T120000
 SUMMARY:Спектакль «Палочка-выручалочка»
@@ -351,7 +351,7 @@ DESCRIPTION:Спектакль «Палочка-выручалочка»
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-11-28-1300-1nrwk50@raspisanie
-DTSTAMP:20261126T121800Z
+DTSTAMP:20261126T121900Z
 DTSTART;TZID=Europe/Moscow:20261128T130000
 DTEND;TZID=Europe/Moscow:20261128T140000
 SUMMARY:Спектакль «Палочка-выручалочка»
@@ -362,7 +362,7 @@ DESCRIPTION:Спектакль «Палочка-выручалочка»
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-11-28-1500-1nrwk50@raspisanie
-DTSTAMP:20261126T121800Z
+DTSTAMP:20261126T121900Z
 DTSTART;TZID=Europe/Moscow:20261128T150000
 DTEND;TZID=Europe/Moscow:20261128T160000
 SUMMARY:Спектакль «Палочка-выручалочка»
@@ -373,7 +373,7 @@ DESCRIPTION:Спектакль «Палочка-выручалочка»
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-11-29-1100-dp5ewz@raspisanie
-DTSTAMP:20261126T121800Z
+DTSTAMP:20261126T121900Z
 DTSTART;TZID=Europe/Moscow:20261129T110000
 DTEND;TZID=Europe/Moscow:20261129T120000
 SUMMARY:Спектакль «Федорино горе»
@@ -385,7 +385,7 @@ DESCRIPTION:Спектакль «Федорино горе»\nКожев
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-11-29-1300-dp5ewz@raspisanie
-DTSTAMP:20261126T121800Z
+DTSTAMP:20261126T121900Z
 DTSTART;TZID=Europe/Moscow:20261129T130000
 DTEND;TZID=Europe/Moscow:20261129T140000
 SUMMARY:Спектакль «Федорино горе»
@@ -397,7 +397,7 @@ DESCRIPTION:Спектакль «Федорино горе»\nКожев
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-11-29-1500-dp5ewz@raspisanie
-DTSTAMP:20261126T121800Z
+DTSTAMP:20261126T121900Z
 DTSTART;TZID=Europe/Moscow:20261129T150000
 DTEND;TZID=Europe/Moscow:20261129T160000
 SUMMARY:Спектакль «Федорино горе»
@@ -408,74 +408,8 @@ DESCRIPTION:Спектакль «Федорино горе»\nКожев
  ет
 END:VEVENT
 BEGIN:VEVENT
-UID:2026-12-08-1200-4963c0@raspisanie
-DTSTAMP:20261126T121800Z
-DTSTART;TZID=Europe/Moscow:20261208T120000
-DTEND;TZID=Europe/Moscow:20261208T130000
-SUMMARY:Ввод «Приключения пингвинят» (ввод
- ящиеся)
-LOCATION:Старая сцена
-DESCRIPTION:Ввод в спектакль «Приключения пи
- нгвинят»\nВводящиеся – Радыгин\, Сигито
- ва\; вводящие – Шаймиев\, Беканова\nКоже
- в\, Носов\, Заяшников\nЗвук/свет: Звук\, св
- ет
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-12-09-1200-4963c0@raspisanie
-DTSTAMP:20261126T121800Z
-DTSTART;TZID=Europe/Moscow:20261209T120000
-DTEND;TZID=Europe/Moscow:20261209T130000
-SUMMARY:Ввод «Приключения пингвинят» (ввод
- ящиеся)
-LOCATION:Старая сцена
-DESCRIPTION:Ввод в спектакль «Приключения пи
- нгвинят»\nВводящиеся – Радыгин\, Сигито
- ва\; вводящие – Глазецкая\nКожев\, Носов
- \, Заяшников\nЗвук/свет: Звук\, свет
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-12-13-1100-1u64em0@raspisanie
-DTSTAMP:20261126T121800Z
-DTSTART;TZID=Europe/Moscow:20261213T110000
-DTEND;TZID=Europe/Moscow:20261213T120000
-SUMMARY:Спектакль «Приключения пингвинят»
-LOCATION:Старая сцена
-DESCRIPTION:Спектакль «Приключения пингвиня
- т»\nРадыгин\, Кожев\, Носов\, Заяшников\, С
- игитова\n15:00 + Интерактив: Дед Мороз – Ло
- скутов\; Снегурочка - Беканова\nЗвук/све
- т: Звук\, свет
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-12-13-1300-1u64em0@raspisanie
-DTSTAMP:20261126T121800Z
-DTSTART;TZID=Europe/Moscow:20261213T130000
-DTEND;TZID=Europe/Moscow:20261213T140000
-SUMMARY:Спектакль «Приключения пингвинят»
-LOCATION:Старая сцена
-DESCRIPTION:Спектакль «Приключения пингвиня
- т»\nРадыгин\, Кожев\, Носов\, Заяшников\, С
- игитова\n15:00 + Интерактив: Дед Мороз – Ло
- скутов\; Снегурочка - Беканова\nЗвук/све
- т: Звук\, свет
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-12-13-1500-1u64em0@raspisanie
-DTSTAMP:20261126T121800Z
-DTSTART;TZID=Europe/Moscow:20261213T150000
-DTEND;TZID=Europe/Moscow:20261213T160000
-SUMMARY:Спектакль «Приключения пингвинят»
-LOCATION:Старая сцена
-DESCRIPTION:Спектакль «Приключения пингвиня
- т»\nРадыгин\, Кожев\, Носов\, Заяшников\, С
- игитова\n15:00 + Интерактив: Дед Мороз – Ло
- скутов\; Снегурочка - Беканова\nЗвук/све
- т: Звук\, свет
-END:VEVENT
-BEGIN:VEVENT
 UID:2026-12-01-1200-1mo1dyo@raspisanie
-DTSTAMP:20261126T121800Z
+DTSTAMP:20261126T121900Z
 DTSTART;TZID=Europe/Moscow:20261201T120000
 DTEND;TZID=Europe/Moscow:20261201T130000
 SUMMARY:Репетиция «Петрушка» · + 16:00 сдача А.
@@ -486,7 +420,7 @@ DESCRIPTION:Репетиция спектакля «Петрушка» +
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-12-02-1100-1pvjzs6@raspisanie
-DTSTAMP:20261126T121800Z
+DTSTAMP:20261126T121900Z
 DTSTART;TZID=Europe/Moscow:20261202T110000
 DTEND;TZID=Europe/Moscow:20261202T120000
 SUMMARY:Спектакль «Красная Шапочка»
@@ -497,7 +431,7 @@ DESCRIPTION:Спектакль «Красная Шапочка»\nГал
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-12-03-1000-1495tfw@raspisanie
-DTSTAMP:20261126T121800Z
+DTSTAMP:20261126T121900Z
 DTSTART;TZID=Europe/Moscow:20261203T100000
 DTEND;TZID=Europe/Moscow:20261203T110000
 SUMMARY:Выезд «КРАСНАЯ ШАПОЧКА» · Выезд спе
@@ -512,7 +446,7 @@ DESCRIPTION:ВЫЕЗД СПЕКТАКЛЯ «КРАСНАЯ ШАПОЧКА
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-12-03-1200-1495tfw@raspisanie
-DTSTAMP:20261126T121800Z
+DTSTAMP:20261126T121900Z
 DTSTART;TZID=Europe/Moscow:20261203T120000
 DTEND;TZID=Europe/Moscow:20261203T130000
 SUMMARY:Выезд «КРАСНАЯ ШАПОЧКА» · Выезд спе
@@ -527,7 +461,7 @@ DESCRIPTION:ВЫЕЗД СПЕКТАКЛЯ «КРАСНАЯ ШАПОЧКА
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-12-03-1400-1495tfw@raspisanie
-DTSTAMP:20261126T121800Z
+DTSTAMP:20261126T121900Z
 DTSTART;TZID=Europe/Moscow:20261203T140000
 DTEND;TZID=Europe/Moscow:20261203T150000
 SUMMARY:Выезд «КРАСНАЯ ШАПОЧКА» · Выезд спе
@@ -542,7 +476,7 @@ DESCRIPTION:ВЫЕЗД СПЕКТАКЛЯ «КРАСНАЯ ШАПОЧКА
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-12-04-1330-1xxyyat@raspisanie
-DTSTAMP:20261126T121800Z
+DTSTAMP:20261126T121900Z
 DTSTART;TZID=Europe/Moscow:20261204T133000
 DTEND;TZID=Europe/Moscow:20261204T143000
 SUMMARY:Репетиция новогодних программ
@@ -554,7 +488,7 @@ DESCRIPTION:Репетиция новогодних программ\nК
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-12-04-1800-1pvjzs6@raspisanie
-DTSTAMP:20261126T121800Z
+DTSTAMP:20261126T121900Z
 DTSTART;TZID=Europe/Moscow:20261204T180000
 DTEND;TZID=Europe/Moscow:20261204T190000
 SUMMARY:Спектакль «Красная Шапочка»
@@ -562,5 +496,138 @@ LOCATION:Старая сцена
 DESCRIPTION:Спектакль «Красная Шапочка»\nРад
  ыгин\, Трунина\, Галустянц\, Заяшников\, Г
  лазецкая\nЗвук/свет: Звук\, свет
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-12-08-1200-4963c0@raspisanie
+DTSTAMP:20261126T121900Z
+DTSTART;TZID=Europe/Moscow:20261208T120000
+DTEND;TZID=Europe/Moscow:20261208T130000
+SUMMARY:Ввод «Приключения пингвинят» (ввод
+ ящиеся)
+LOCATION:Старая сцена
+DESCRIPTION:Ввод в спектакль «Приключения пи
+ нгвинят»\nВводящиеся – Радыгин\, Сигито
+ ва\; вводящие – Шаймиев\, Беканова\nКоже
+ в\, Носов\, Заяшников\nЗвук/свет: Звук\, св
+ ет
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-12-09-1200-4963c0@raspisanie
+DTSTAMP:20261126T121900Z
+DTSTART;TZID=Europe/Moscow:20261209T120000
+DTEND;TZID=Europe/Moscow:20261209T130000
+SUMMARY:Ввод «Приключения пингвинят» (ввод
+ ящиеся)
+LOCATION:Старая сцена
+DESCRIPTION:Ввод в спектакль «Приключения пи
+ нгвинят»\nВводящиеся – Радыгин\, Сигито
+ ва\; вводящие – Глазецкая\nКожев\, Носов
+ \, Заяшников\nЗвук/свет: Звук\, свет
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-12-13-1100-1u64em0@raspisanie
+DTSTAMP:20261126T121900Z
+DTSTART;TZID=Europe/Moscow:20261213T110000
+DTEND;TZID=Europe/Moscow:20261213T120000
+SUMMARY:Спектакль «Приключения пингвинят»
+LOCATION:Старая сцена
+DESCRIPTION:Спектакль «Приключения пингвиня
+ т»\nРадыгин\, Кожев\, Носов\, Заяшников\, С
+ игитова\n15:00 + Интерактив: Дед Мороз – Ло
+ скутов\; Снегурочка - Беканова\nЗвук/све
+ т: Звук\, свет
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-12-13-1300-1u64em0@raspisanie
+DTSTAMP:20261126T121900Z
+DTSTART;TZID=Europe/Moscow:20261213T130000
+DTEND;TZID=Europe/Moscow:20261213T140000
+SUMMARY:Спектакль «Приключения пингвинят»
+LOCATION:Старая сцена
+DESCRIPTION:Спектакль «Приключения пингвиня
+ т»\nРадыгин\, Кожев\, Носов\, Заяшников\, С
+ игитова\n15:00 + Интерактив: Дед Мороз – Ло
+ скутов\; Снегурочка - Беканова\nЗвук/све
+ т: Звук\, свет
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-12-13-1500-1u64em0@raspisanie
+DTSTAMP:20261126T121900Z
+DTSTART;TZID=Europe/Moscow:20261213T150000
+DTEND;TZID=Europe/Moscow:20261213T160000
+SUMMARY:Спектакль «Приключения пингвинят»
+LOCATION:Старая сцена
+DESCRIPTION:Спектакль «Приключения пингвиня
+ т»\nРадыгин\, Кожев\, Носов\, Заяшников\, С
+ игитова\n15:00 + Интерактив: Дед Мороз – Ло
+ скутов\; Снегурочка - Беканова\nЗвук/све
+ т: Звук\, свет
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-12-19-1100-zfcejg@raspisanie
+DTSTAMP:20261126T121900Z
+DTSTART;TZID=Europe/Moscow:20261219T110000
+DTEND;TZID=Europe/Moscow:20261219T120000
+SUMMARY:Спектакль «Волк и Лиса» (интермедия
+  дед мороз)
+LOCATION:Новая сцена
+DESCRIPTION:Спектакль «Волк и Лиса»\nБезносик
+ ов\, Шаймиев\, Заяшников\, Чирочкина\nИнт
+ ермедия: Дед Мороз – Радыгин\; Снегуроч
+ ка - Миронова\nЗвук/свет: Звук\, свет
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-12-19-1300-zfcejg@raspisanie
+DTSTAMP:20261126T121900Z
+DTSTART;TZID=Europe/Moscow:20261219T130000
+DTEND;TZID=Europe/Moscow:20261219T140000
+SUMMARY:Спектакль «Волк и Лиса» (интермедия
+  дед мороз)
+LOCATION:Новая сцена
+DESCRIPTION:Спектакль «Волк и Лиса»\nБезносик
+ ов\, Шаймиев\, Заяшников\, Чирочкина\nИнт
+ ермедия: Дед Мороз – Радыгин\; Снегуроч
+ ка - Миронова\nЗвук/свет: Звук\, свет
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-12-19-1500-zfcejg@raspisanie
+DTSTAMP:20261126T121900Z
+DTSTART;TZID=Europe/Moscow:20261219T150000
+DTEND;TZID=Europe/Moscow:20261219T160000
+SUMMARY:Спектакль «Волк и Лиса» (интермедия
+  дед мороз)
+LOCATION:Новая сцена
+DESCRIPTION:Спектакль «Волк и Лиса»\nБезносик
+ ов\, Шаймиев\, Заяшников\, Чирочкина\nИнт
+ ермедия: Дед Мороз – Радыгин\; Снегуроч
+ ка - Миронова\nЗвук/свет: Звук\, свет
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-12-20-1500-1ty7xlr@raspisanie
+DTSTAMP:20261126T121900Z
+DTSTART;TZID=Europe/Moscow:20261220T150000
+DTEND;TZID=Europe/Moscow:20261220T160000
+SUMMARY:Спектакль «Звёздочка»
+LOCATION:Новая сцена
+DESCRIPTION:Спектакль «Звёздочка»\nАлексеева
+ \, Чирочкина\, Носов\, Заяшников\, Трунина
+ \nДед Мороз – Безносиков (11:00 и 13:00)\; Рады
+ гин (15:00 и 17:00) Снегурочка – Миронова\n(11:0
+ 0\, 13:00 и 15:00)\; Беканова (17:00)\nЗвук/свет: Зв
+ ук\, свет
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-12-20-1700-1ty7xlr@raspisanie
+DTSTAMP:20261126T121900Z
+DTSTART;TZID=Europe/Moscow:20261220T170000
+DTEND;TZID=Europe/Moscow:20261220T180000
+SUMMARY:Спектакль «Звёздочка»
+LOCATION:Новая сцена
+DESCRIPTION:Спектакль «Звёздочка»\nАлексеева
+ \, Чирочкина\, Носов\, Заяшников\, Трунина
+ \nДед Мороз – Безносиков (11:00 и 13:00)\; Рады
+ гин (15:00 и 17:00) Снегурочка – Миронова\n(11:0
+ 0\, 13:00 и 15:00)\; Беканова (17:00)\nЗвук/свет: Зв
+ ук\, свет
 END:VEVENT
 END:VCALENDAR
