@@ -767,6 +767,101 @@ DESCRIPTION:ВЫЕЗД СПЕКТАКЛЯ «КОТ В САПОГАХ» В
  Звук – Бабанов Свет – Халтурин
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-12-08-1200-4963c0@raspisanie
+DTSTAMP:20261126T133300Z
+DTSTART;TZID=Europe/Moscow:20261208T120000
+DTEND;TZID=Europe/Moscow:20261208T130000
+SUMMARY:Ввод «Приключения пингвинят»
+LOCATION:Старая сцена
+DESCRIPTION:Ввод в спектакль «Приключения пи
+ нгвинят»\nВводящиеся – Радыгин\, Сигито
+ ва\; вводящие – Шаймиев\, Беканова\nКоже
+ в\, Носов\, Заяшников\nЗвук/свет: Звук\, св
+ ет
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-12-09-1200-4963c0@raspisanie
+DTSTAMP:20261126T133300Z
+DTSTART;TZID=Europe/Moscow:20261209T120000
+DTEND;TZID=Europe/Moscow:20261209T130000
+SUMMARY:Ввод «Приключения пингвинят»
+LOCATION:Старая сцена
+DESCRIPTION:Ввод в спектакль «Приключения пи
+ нгвинят»\nВводящиеся – Радыгин\, Сигито
+ ва\; вводящие – Глазецкая\nКожев\, Носов
+ \, Заяшников\nЗвук/свет: Звук\, свет
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-12-10-1300-1mi7d3f@raspisanie
+DTSTAMP:20261126T133300Z
+DTSTART;TZID=Europe/Moscow:20261210T130000
+DTEND;TZID=Europe/Moscow:20261210T140000
+SUMMARY:Репетиция «Приключения пингвинят» 
+ · + в 15:00 сдача А.С.
+LOCATION:Старая сцена
+DESCRIPTION:Репетиция спектакля «Приключени
+ я пингвинят» + в 15:00 сдача А.С.\nРадыгин\, 
+ Сигитова\, Кожев\, Носов\, Заяшников\nЗву
+ к/свет: Звук\, свет
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-12-11-1700-1fugs7c@raspisanie
+DTSTAMP:20261126T133300Z
+DTSTART;TZID=Europe/Moscow:20261211T170000
+DTEND;TZID=Europe/Moscow:20261211T180000
+SUMMARY:Спектакль «Собачка»
+LOCATION:Новая сцена
+DESCRIPTION:Спектакль «Собачка»\n11:00 Разуваев
+ а\, Шаймиев\, Лоскутова\n17:00 Лоскутов\, Тр
+ унина\, Носов\nЗвук/свет: Звук\, свет
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-12-12-1500-dw6hd9@raspisanie
+DTSTAMP:20261126T133300Z
+DTSTART;TZID=Europe/Moscow:20261212T150000
+DTEND;TZID=Europe/Moscow:20261212T160000
+SUMMARY:Интермедия «Серебряное копытце» · 
+ Интерактив
+LOCATION:Старая сцена
+DESCRIPTION:Интерактив «Серебряное копытце»
+ \n15:00 — Дед Мороз – Лоскутов\; Снегурочк
+ а – Глазецкая\; Чепель\, Носов\nЗвук/свет
+ : Звук\, свет
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-12-13-1100-1u64em0@raspisanie
+DTSTAMP:20261126T133300Z
+DTSTART;TZID=Europe/Moscow:20261213T110000
+DTEND;TZID=Europe/Moscow:20261213T120000
+SUMMARY:Спектакль «Приключения пингвинят»
+LOCATION:Старая сцена
+DESCRIPTION:Спектакль «Приключения пингвиня
+ т»\nРадыгин\, Кожев\, Носов\, Заяшников\, С
+ игитова\nЗвук/свет: Звук\, свет
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-12-13-1300-1u64em0@raspisanie
+DTSTAMP:20261126T133300Z
+DTSTART;TZID=Europe/Moscow:20261213T130000
+DTEND;TZID=Europe/Moscow:20261213T140000
+SUMMARY:Спектакль «Приключения пингвинят»
+LOCATION:Старая сцена
+DESCRIPTION:Спектакль «Приключения пингвиня
+ т»\nРадыгин\, Кожев\, Носов\, Заяшников\, С
+ игитова\nЗвук/свет: Звук\, свет
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-12-13-1500-1u64em0@raspisanie
+DTSTAMP:20261126T133300Z
+DTSTART;TZID=Europe/Moscow:20261213T150000
+DTEND;TZID=Europe/Moscow:20261213T160000
+SUMMARY:Спектакль «Приключения пингвинят»
+LOCATION:Старая сцена
+DESCRIPTION:Спектакль «Приключения пингвиня
+ т»\nРадыгин\, Кожев\, Носов\, Заяшников\, С
+ игитова\nЗвук/свет: Звук\, свет
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-12-15-1200-1fd518o@raspisanie
 DTSTAMP:20261126T133300Z
 DTSTART;TZID=Europe/Moscow:20261215T120000
@@ -890,100 +985,5 @@ LOCATION:Новая сцена
 DESCRIPTION:Спектакль «Звёздочка»\nАлексеева
  \, Чирочкина\, Носов\, Заяшников\, Трунина
  \nЗвук/свет: Звук\, свет
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-12-08-1200-4963c0@raspisanie
-DTSTAMP:20261126T133300Z
-DTSTART;TZID=Europe/Moscow:20261208T120000
-DTEND;TZID=Europe/Moscow:20261208T130000
-SUMMARY:Ввод «Приключения пингвинят»
-LOCATION:Старая сцена
-DESCRIPTION:Ввод в спектакль «Приключения пи
- нгвинят»\nВводящиеся – Радыгин\, Сигито
- ва\; вводящие – Шаймиев\, Беканова\nКоже
- в\, Носов\, Заяшников\nЗвук/свет: Звук\, св
- ет
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-12-09-1200-4963c0@raspisanie
-DTSTAMP:20261126T133300Z
-DTSTART;TZID=Europe/Moscow:20261209T120000
-DTEND;TZID=Europe/Moscow:20261209T130000
-SUMMARY:Ввод «Приключения пингвинят»
-LOCATION:Старая сцена
-DESCRIPTION:Ввод в спектакль «Приключения пи
- нгвинят»\nВводящиеся – Радыгин\, Сигито
- ва\; вводящие – Глазецкая\nКожев\, Носов
- \, Заяшников\nЗвук/свет: Звук\, свет
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-12-10-1300-1mi7d3f@raspisanie
-DTSTAMP:20261126T133300Z
-DTSTART;TZID=Europe/Moscow:20261210T130000
-DTEND;TZID=Europe/Moscow:20261210T140000
-SUMMARY:Репетиция «Приключения пингвинят» 
- · + в 15:00 сдача А.С.
-LOCATION:Старая сцена
-DESCRIPTION:Репетиция спектакля «Приключени
- я пингвинят» + в 15:00 сдача А.С.\nРадыгин\, 
- Сигитова\, Кожев\, Носов\, Заяшников\nЗву
- к/свет: Звук\, свет
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-12-11-1700-1fugs7c@raspisanie
-DTSTAMP:20261126T133300Z
-DTSTART;TZID=Europe/Moscow:20261211T170000
-DTEND;TZID=Europe/Moscow:20261211T180000
-SUMMARY:Спектакль «Собачка»
-LOCATION:Новая сцена
-DESCRIPTION:Спектакль «Собачка»\n11:00 Разуваев
- а\, Шаймиев\, Лоскутова\n17:00 Лоскутов\, Тр
- унина\, Носов\nЗвук/свет: Звук\, свет
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-12-12-1500-dw6hd9@raspisanie
-DTSTAMP:20261126T133300Z
-DTSTART;TZID=Europe/Moscow:20261212T150000
-DTEND;TZID=Europe/Moscow:20261212T160000
-SUMMARY:Интермедия «Серебряное копытце» · 
- Интерактив
-LOCATION:Старая сцена
-DESCRIPTION:Интерактив «Серебряное копытце»
- \n15:00 — Дед Мороз – Лоскутов\; Снегурочк
- а – Глазецкая\; Чепель\, Носов\nЗвук/свет
- : Звук\, свет
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-12-13-1100-1u64em0@raspisanie
-DTSTAMP:20261126T133300Z
-DTSTART;TZID=Europe/Moscow:20261213T110000
-DTEND;TZID=Europe/Moscow:20261213T120000
-SUMMARY:Спектакль «Приключения пингвинят»
-LOCATION:Старая сцена
-DESCRIPTION:Спектакль «Приключения пингвиня
- т»\nРадыгин\, Кожев\, Носов\, Заяшников\, С
- игитова\nЗвук/свет: Звук\, свет
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-12-13-1300-1u64em0@raspisanie
-DTSTAMP:20261126T133300Z
-DTSTART;TZID=Europe/Moscow:20261213T130000
-DTEND;TZID=Europe/Moscow:20261213T140000
-SUMMARY:Спектакль «Приключения пингвинят»
-LOCATION:Старая сцена
-DESCRIPTION:Спектакль «Приключения пингвиня
- т»\nРадыгин\, Кожев\, Носов\, Заяшников\, С
- игитова\nЗвук/свет: Звук\, свет
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-12-13-1500-1u64em0@raspisanie
-DTSTAMP:20261126T133300Z
-DTSTART;TZID=Europe/Moscow:20261213T150000
-DTEND;TZID=Europe/Moscow:20261213T160000
-SUMMARY:Спектакль «Приключения пингвинят»
-LOCATION:Старая сцена
-DESCRIPTION:Спектакль «Приключения пингвиня
- т»\nРадыгин\, Кожев\, Носов\, Заяшников\, С
- игитова\nЗвук/свет: Звук\, свет
 END:VEVENT
 END:VCALENDAR

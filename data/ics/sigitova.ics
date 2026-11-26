@@ -624,54 +624,6 @@ DESCRIPTION:Спектакль «Муравьишка»\nАндреев\,
   Чепиль\, Сигитова\nЗвук/свет: Звук\, свет
 END:VEVENT
 BEGIN:VEVENT
-UID:2026-12-15-1200-1akhcza@raspisanie
-DTSTAMP:20261126T133300Z
-DTSTART;TZID=Europe/Moscow:20261215T120000
-DTEND;TZID=Europe/Moscow:20261215T130000
-SUMMARY:Ввод «Умка» (вводящиеся)
-LOCATION:Старая сцена
-DESCRIPTION:Ввод в спектакль «Умка»\nВводящие
- ся – Разуваева (Умка)\, Сигитова (Мальчи
- к)\; вводящие – Глазецкая\, Трунина\nСамо
- йлов\, Галустянц\nЗвук/свет: Звук
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-12-16-1300-1akhcza@raspisanie
-DTSTAMP:20261126T133300Z
-DTSTART;TZID=Europe/Moscow:20261216T130000
-DTEND;TZID=Europe/Moscow:20261216T140000
-SUMMARY:Ввод «Умка» (вводящиеся)
-LOCATION:Старая сцена
-DESCRIPTION:Ввод в спектакль «Умка»\nВводящие
- ся – Разуваева (Умка)\, Сигитова (Мальчи
- к)\; вводящие – Глазецкая\, Трунина\nСамо
- йлов\, Галустянц\nЗвук/свет: Звук
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-12-17-1200-k6y0c7@raspisanie
-DTSTAMP:20261126T133300Z
-DTSTART;TZID=Europe/Moscow:20261217T120000
-DTEND;TZID=Europe/Moscow:20261217T130000
-SUMMARY:Ввод «Умка» · + в 13:30 сдача А.С. (вводя
- щиеся)
-LOCATION:Старая сцена
-DESCRIPTION:Ввод в спектакль «Умка» + в 13:30 сда
- ча А.С.\nВводящиеся – Разуваева (Умка)\, С
- игитова (Мальчик)\nСамойлов\, Галустянц\n
- Звук/свет: Звук\, свет
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-12-18-1800-1v77fce@raspisanie
-DTSTAMP:20261126T133300Z
-DTSTART;TZID=Europe/Moscow:20261218T180000
-DTEND;TZID=Europe/Moscow:20261218T190000
-SUMMARY:Спектакль «Умка»
-LOCATION:Старая сцена
-DESCRIPTION:Спектакль «Умка»\nСигитова\, Разу
- ваева\, Самойлов\, Галустянц\nЗвук/свет: 
- Звук\, свет
-END:VEVENT
-BEGIN:VEVENT
 UID:2026-12-08-1200-4963c0@raspisanie
 DTSTAMP:20261126T133300Z
 DTSTART;TZID=Europe/Moscow:20261208T120000
@@ -743,5 +695,53 @@ LOCATION:Старая сцена
 DESCRIPTION:Спектакль «Приключения пингвиня
  т»\nРадыгин\, Кожев\, Носов\, Заяшников\, С
  игитова\nЗвук/свет: Звук\, свет
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-12-15-1200-1akhcza@raspisanie
+DTSTAMP:20261126T133300Z
+DTSTART;TZID=Europe/Moscow:20261215T120000
+DTEND;TZID=Europe/Moscow:20261215T130000
+SUMMARY:Ввод «Умка» (вводящиеся)
+LOCATION:Старая сцена
+DESCRIPTION:Ввод в спектакль «Умка»\nВводящие
+ ся – Разуваева (Умка)\, Сигитова (Мальчи
+ к)\; вводящие – Глазецкая\, Трунина\nСамо
+ йлов\, Галустянц\nЗвук/свет: Звук
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-12-16-1300-1akhcza@raspisanie
+DTSTAMP:20261126T133300Z
+DTSTART;TZID=Europe/Moscow:20261216T130000
+DTEND;TZID=Europe/Moscow:20261216T140000
+SUMMARY:Ввод «Умка» (вводящиеся)
+LOCATION:Старая сцена
+DESCRIPTION:Ввод в спектакль «Умка»\nВводящие
+ ся – Разуваева (Умка)\, Сигитова (Мальчи
+ к)\; вводящие – Глазецкая\, Трунина\nСамо
+ йлов\, Галустянц\nЗвук/свет: Звук
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-12-17-1200-k6y0c7@raspisanie
+DTSTAMP:20261126T133300Z
+DTSTART;TZID=Europe/Moscow:20261217T120000
+DTEND;TZID=Europe/Moscow:20261217T130000
+SUMMARY:Ввод «Умка» · + в 13:30 сдача А.С. (вводя
+ щиеся)
+LOCATION:Старая сцена
+DESCRIPTION:Ввод в спектакль «Умка» + в 13:30 сда
+ ча А.С.\nВводящиеся – Разуваева (Умка)\, С
+ игитова (Мальчик)\nСамойлов\, Галустянц\n
+ Звук/свет: Звук\, свет
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-12-18-1800-1v77fce@raspisanie
+DTSTAMP:20261126T133300Z
+DTSTART;TZID=Europe/Moscow:20261218T180000
+DTEND;TZID=Europe/Moscow:20261218T190000
+SUMMARY:Спектакль «Умка»
+LOCATION:Старая сцена
+DESCRIPTION:Спектакль «Умка»\nСигитова\, Разу
+ ваева\, Самойлов\, Галустянц\nЗвук/свет: 
+ Звук\, свет
 END:VEVENT
 END:VCALENDAR

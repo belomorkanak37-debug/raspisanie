@@ -769,6 +769,89 @@ DESCRIPTION:Хочу стать кукловодом – ст. групп
  а\nБезносиков\, Мартюшева
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-12-08-1200-1iw1c6b@raspisanie
+DTSTAMP:20261126T133300Z
+DTSTART;TZID=Europe/Moscow:20261208T120000
+DTEND;TZID=Europe/Moscow:20261208T130000
+SUMMARY:Репетиция «Морозко»
+LOCATION:Новая сцена
+DESCRIPTION:Репетиция спектакля «Морозко»\nМ
+ артюшева\; Галустянц\, Андреев\, Баранов
+ \nЗвук/свет: Звук
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-12-12-1100-y6lud0@raspisanie
+DTSTAMP:20261126T133300Z
+DTSTART;TZID=Europe/Moscow:20261212T110000
+DTEND;TZID=Europe/Moscow:20261212T120000
+SUMMARY:Спектакль «Морозко»
+LOCATION:Новая сцена
+DESCRIPTION:Спектакль «Морозко»\nМартюшева\, 
+ Чирочкина\, Андреев\nЗвук/свет: Звук\, св
+ ет
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-12-12-1300-y6lud0@raspisanie
+DTSTAMP:20261126T133300Z
+DTSTART;TZID=Europe/Moscow:20261212T130000
+DTEND;TZID=Europe/Moscow:20261212T140000
+SUMMARY:Спектакль «Морозко»
+LOCATION:Новая сцена
+DESCRIPTION:Спектакль «Морозко»\nМартюшева\, 
+ Чирочкина\, Андреев\nЗвук/свет: Звук\, св
+ ет
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-12-12-1500-y6lud0@raspisanie
+DTSTAMP:20261126T133300Z
+DTSTART;TZID=Europe/Moscow:20261212T150000
+DTEND;TZID=Europe/Moscow:20261212T160000
+SUMMARY:Спектакль «Морозко»
+LOCATION:Новая сцена
+DESCRIPTION:Спектакль «Морозко»\nМартюшева\, 
+ Чирочкина\, Андреев\nЗвук/свет: Звук\, св
+ ет
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-12-13-1100-45s737@raspisanie
+DTSTAMP:20261126T133300Z
+DTSTART;TZID=Europe/Moscow:20261213T110000
+DTEND;TZID=Europe/Moscow:20261213T120000
+SUMMARY:Спектакль «Как Снеговик за ёлкой хо
+ дил»
+LOCATION:Новая сцена
+DESCRIPTION:Спектакль «Как Снеговик за ёлкой 
+ ходил»\nАндреев\, Лоскутова\, Безносиков
+ \, Шаймиев\, Мартюшева\, Разуваева\nЗвук/с
+ вет: Звук\, свет
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-12-13-1300-45s737@raspisanie
+DTSTAMP:20261126T133300Z
+DTSTART;TZID=Europe/Moscow:20261213T130000
+DTEND;TZID=Europe/Moscow:20261213T140000
+SUMMARY:Спектакль «Как Снеговик за ёлкой хо
+ дил»
+LOCATION:Новая сцена
+DESCRIPTION:Спектакль «Как Снеговик за ёлкой 
+ ходил»\nАндреев\, Лоскутова\, Безносиков
+ \, Шаймиев\, Мартюшева\, Разуваева\nЗвук/с
+ вет: Звук\, свет
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-12-13-1500-45s737@raspisanie
+DTSTAMP:20261126T133300Z
+DTSTART;TZID=Europe/Moscow:20261213T150000
+DTEND;TZID=Europe/Moscow:20261213T160000
+SUMMARY:Спектакль «Как Снеговик за ёлкой хо
+ дил»
+LOCATION:Новая сцена
+DESCRIPTION:Спектакль «Как Снеговик за ёлкой 
+ ходил»\nАндреев\, Лоскутова\, Безносиков
+ \, Шаймиев\, Мартюшева\, Разуваева\nЗвук/с
+ вет: Звук\, свет
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-12-16-1100-45s737@raspisanie
 DTSTAMP:20261126T133300Z
 DTSTART;TZID=Europe/Moscow:20261216T110000
@@ -872,88 +955,5 @@ DESCRIPTION:Обычная интермедия «Солнышко и с
  ед Мороз – Лоскутов\; Снегурочка – Бека
  нова (11:00 и 13:00)\, Глазецкая (15:00 и 17:00)\; Чеп
  ель\, Мартюшева\nЗвук/свет: Звук\, свет
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-12-08-1200-1iw1c6b@raspisanie
-DTSTAMP:20261126T133300Z
-DTSTART;TZID=Europe/Moscow:20261208T120000
-DTEND;TZID=Europe/Moscow:20261208T130000
-SUMMARY:Репетиция «Морозко»
-LOCATION:Новая сцена
-DESCRIPTION:Репетиция спектакля «Морозко»\nМ
- артюшева\; Галустянц\, Андреев\, Баранов
- \nЗвук/свет: Звук
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-12-12-1100-y6lud0@raspisanie
-DTSTAMP:20261126T133300Z
-DTSTART;TZID=Europe/Moscow:20261212T110000
-DTEND;TZID=Europe/Moscow:20261212T120000
-SUMMARY:Спектакль «Морозко»
-LOCATION:Новая сцена
-DESCRIPTION:Спектакль «Морозко»\nМартюшева\, 
- Чирочкина\, Андреев\nЗвук/свет: Звук\, св
- ет
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-12-12-1300-y6lud0@raspisanie
-DTSTAMP:20261126T133300Z
-DTSTART;TZID=Europe/Moscow:20261212T130000
-DTEND;TZID=Europe/Moscow:20261212T140000
-SUMMARY:Спектакль «Морозко»
-LOCATION:Новая сцена
-DESCRIPTION:Спектакль «Морозко»\nМартюшева\, 
- Чирочкина\, Андреев\nЗвук/свет: Звук\, св
- ет
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-12-12-1500-y6lud0@raspisanie
-DTSTAMP:20261126T133300Z
-DTSTART;TZID=Europe/Moscow:20261212T150000
-DTEND;TZID=Europe/Moscow:20261212T160000
-SUMMARY:Спектакль «Морозко»
-LOCATION:Новая сцена
-DESCRIPTION:Спектакль «Морозко»\nМартюшева\, 
- Чирочкина\, Андреев\nЗвук/свет: Звук\, св
- ет
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-12-13-1100-45s737@raspisanie
-DTSTAMP:20261126T133300Z
-DTSTART;TZID=Europe/Moscow:20261213T110000
-DTEND;TZID=Europe/Moscow:20261213T120000
-SUMMARY:Спектакль «Как Снеговик за ёлкой хо
- дил»
-LOCATION:Новая сцена
-DESCRIPTION:Спектакль «Как Снеговик за ёлкой 
- ходил»\nАндреев\, Лоскутова\, Безносиков
- \, Шаймиев\, Мартюшева\, Разуваева\nЗвук/с
- вет: Звук\, свет
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-12-13-1300-45s737@raspisanie
-DTSTAMP:20261126T133300Z
-DTSTART;TZID=Europe/Moscow:20261213T130000
-DTEND;TZID=Europe/Moscow:20261213T140000
-SUMMARY:Спектакль «Как Снеговик за ёлкой хо
- дил»
-LOCATION:Новая сцена
-DESCRIPTION:Спектакль «Как Снеговик за ёлкой 
- ходил»\nАндреев\, Лоскутова\, Безносиков
- \, Шаймиев\, Мартюшева\, Разуваева\nЗвук/с
- вет: Звук\, свет
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-12-13-1500-45s737@raspisanie
-DTSTAMP:20261126T133300Z
-DTSTART;TZID=Europe/Moscow:20261213T150000
-DTEND;TZID=Europe/Moscow:20261213T160000
-SUMMARY:Спектакль «Как Снеговик за ёлкой хо
- дил»
-LOCATION:Новая сцена
-DESCRIPTION:Спектакль «Как Снеговик за ёлкой 
- ходил»\nАндреев\, Лоскутова\, Безносиков
- \, Шаймиев\, Мартюшева\, Разуваева\nЗвук/с
- вет: Звук\, свет
 END:VEVENT
 END:VCALENDAR

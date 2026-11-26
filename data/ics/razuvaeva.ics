@@ -795,6 +795,92 @@ DESCRIPTION:ВЫЕЗД СПЕКТАКЛЯ «КОТ В САПОГАХ» В
  Звук – Бабанов Свет – Халтурин
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-12-11-1100-1fugs7c@raspisanie
+DTSTAMP:20261126T133300Z
+DTSTART;TZID=Europe/Moscow:20261211T110000
+DTEND;TZID=Europe/Moscow:20261211T120000
+SUMMARY:Спектакль «Собачка»
+LOCATION:Новая сцена
+DESCRIPTION:Спектакль «Собачка»\n11:00 Разуваев
+ а\, Шаймиев\, Лоскутова\n17:00 Лоскутов\, Тр
+ унина\, Носов\nЗвук/свет: Звук\, свет
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-12-12-1100-tz0nxv@raspisanie
+DTSTAMP:20261126T133300Z
+DTSTART;TZID=Europe/Moscow:20261212T110000
+DTEND;TZID=Europe/Moscow:20261212T120000
+SUMMARY:Спектакль «Серебряное копытце»
+LOCATION:Старая сцена
+DESCRIPTION:Спектакль «Серебряное копытце»\n
+ Кожев\, Галустянц\, Трунина\, Миронова\, Р
+ азуваева\, Баранов\nЗвук/свет: Звук\, све
+ т
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-12-12-1300-tz0nxv@raspisanie
+DTSTAMP:20261126T133300Z
+DTSTART;TZID=Europe/Moscow:20261212T130000
+DTEND;TZID=Europe/Moscow:20261212T140000
+SUMMARY:Спектакль «Серебряное копытце»
+LOCATION:Старая сцена
+DESCRIPTION:Спектакль «Серебряное копытце»\n
+ Кожев\, Галустянц\, Трунина\, Миронова\, Р
+ азуваева\, Баранов\nЗвук/свет: Звук\, све
+ т
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-12-12-1500-tz0nxv@raspisanie
+DTSTAMP:20261126T133300Z
+DTSTART;TZID=Europe/Moscow:20261212T150000
+DTEND;TZID=Europe/Moscow:20261212T160000
+SUMMARY:Спектакль «Серебряное копытце»
+LOCATION:Старая сцена
+DESCRIPTION:Спектакль «Серебряное копытце»\n
+ Кожев\, Галустянц\, Трунина\, Миронова\, Р
+ азуваева\, Баранов\nЗвук/свет: Звук\, све
+ т
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-12-13-1100-45s737@raspisanie
+DTSTAMP:20261126T133300Z
+DTSTART;TZID=Europe/Moscow:20261213T110000
+DTEND;TZID=Europe/Moscow:20261213T120000
+SUMMARY:Спектакль «Как Снеговик за ёлкой хо
+ дил»
+LOCATION:Новая сцена
+DESCRIPTION:Спектакль «Как Снеговик за ёлкой 
+ ходил»\nАндреев\, Лоскутова\, Безносиков
+ \, Шаймиев\, Мартюшева\, Разуваева\nЗвук/с
+ вет: Звук\, свет
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-12-13-1300-45s737@raspisanie
+DTSTAMP:20261126T133300Z
+DTSTART;TZID=Europe/Moscow:20261213T130000
+DTEND;TZID=Europe/Moscow:20261213T140000
+SUMMARY:Спектакль «Как Снеговик за ёлкой хо
+ дил»
+LOCATION:Новая сцена
+DESCRIPTION:Спектакль «Как Снеговик за ёлкой 
+ ходил»\nАндреев\, Лоскутова\, Безносиков
+ \, Шаймиев\, Мартюшева\, Разуваева\nЗвук/с
+ вет: Звук\, свет
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-12-13-1500-45s737@raspisanie
+DTSTAMP:20261126T133300Z
+DTSTART;TZID=Europe/Moscow:20261213T150000
+DTEND;TZID=Europe/Moscow:20261213T160000
+SUMMARY:Спектакль «Как Снеговик за ёлкой хо
+ дил»
+LOCATION:Новая сцена
+DESCRIPTION:Спектакль «Как Снеговик за ёлкой 
+ ходил»\nАндреев\, Лоскутова\, Безносиков
+ \, Шаймиев\, Мартюшева\, Разуваева\nЗвук/с
+ вет: Звук\, свет
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-12-15-1200-1akhcza@raspisanie
 DTSTAMP:20261126T133300Z
 DTSTART;TZID=Europe/Moscow:20261215T120000
@@ -939,91 +1025,5 @@ DESCRIPTION:Спектакль «Солнышко и снежные че
  ловечки»\nГалустянц\, Разуваева\, Кожев (
  11:00 и 13:00)\, Шаймиев (15:00 и 17:00) Лоскутова\nЗ
  вук/свет: Звук\, свет
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-12-11-1100-1fugs7c@raspisanie
-DTSTAMP:20261126T133300Z
-DTSTART;TZID=Europe/Moscow:20261211T110000
-DTEND;TZID=Europe/Moscow:20261211T120000
-SUMMARY:Спектакль «Собачка»
-LOCATION:Новая сцена
-DESCRIPTION:Спектакль «Собачка»\n11:00 Разуваев
- а\, Шаймиев\, Лоскутова\n17:00 Лоскутов\, Тр
- унина\, Носов\nЗвук/свет: Звук\, свет
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-12-12-1100-tz0nxv@raspisanie
-DTSTAMP:20261126T133300Z
-DTSTART;TZID=Europe/Moscow:20261212T110000
-DTEND;TZID=Europe/Moscow:20261212T120000
-SUMMARY:Спектакль «Серебряное копытце»
-LOCATION:Старая сцена
-DESCRIPTION:Спектакль «Серебряное копытце»\n
- Кожев\, Галустянц\, Трунина\, Миронова\, Р
- азуваева\, Баранов\nЗвук/свет: Звук\, све
- т
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-12-12-1300-tz0nxv@raspisanie
-DTSTAMP:20261126T133300Z
-DTSTART;TZID=Europe/Moscow:20261212T130000
-DTEND;TZID=Europe/Moscow:20261212T140000
-SUMMARY:Спектакль «Серебряное копытце»
-LOCATION:Старая сцена
-DESCRIPTION:Спектакль «Серебряное копытце»\n
- Кожев\, Галустянц\, Трунина\, Миронова\, Р
- азуваева\, Баранов\nЗвук/свет: Звук\, све
- т
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-12-12-1500-tz0nxv@raspisanie
-DTSTAMP:20261126T133300Z
-DTSTART;TZID=Europe/Moscow:20261212T150000
-DTEND;TZID=Europe/Moscow:20261212T160000
-SUMMARY:Спектакль «Серебряное копытце»
-LOCATION:Старая сцена
-DESCRIPTION:Спектакль «Серебряное копытце»\n
- Кожев\, Галустянц\, Трунина\, Миронова\, Р
- азуваева\, Баранов\nЗвук/свет: Звук\, све
- т
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-12-13-1100-45s737@raspisanie
-DTSTAMP:20261126T133300Z
-DTSTART;TZID=Europe/Moscow:20261213T110000
-DTEND;TZID=Europe/Moscow:20261213T120000
-SUMMARY:Спектакль «Как Снеговик за ёлкой хо
- дил»
-LOCATION:Новая сцена
-DESCRIPTION:Спектакль «Как Снеговик за ёлкой 
- ходил»\nАндреев\, Лоскутова\, Безносиков
- \, Шаймиев\, Мартюшева\, Разуваева\nЗвук/с
- вет: Звук\, свет
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-12-13-1300-45s737@raspisanie
-DTSTAMP:20261126T133300Z
-DTSTART;TZID=Europe/Moscow:20261213T130000
-DTEND;TZID=Europe/Moscow:20261213T140000
-SUMMARY:Спектакль «Как Снеговик за ёлкой хо
- дил»
-LOCATION:Новая сцена
-DESCRIPTION:Спектакль «Как Снеговик за ёлкой 
- ходил»\nАндреев\, Лоскутова\, Безносиков
- \, Шаймиев\, Мартюшева\, Разуваева\nЗвук/с
- вет: Звук\, свет
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-12-13-1500-45s737@raspisanie
-DTSTAMP:20261126T133300Z
-DTSTART;TZID=Europe/Moscow:20261213T150000
-DTEND;TZID=Europe/Moscow:20261213T160000
-SUMMARY:Спектакль «Как Снеговик за ёлкой хо
- дил»
-LOCATION:Новая сцена
-DESCRIPTION:Спектакль «Как Снеговик за ёлкой 
- ходил»\nАндреев\, Лоскутова\, Безносиков
- \, Шаймиев\, Мартюшева\, Разуваева\nЗвук/с
- вет: Звук\, свет
 END:VEVENT
 END:VCALENDAR

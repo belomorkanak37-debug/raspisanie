@@ -923,41 +923,6 @@ DESCRIPTION:Хочу стать кукловодом – ср. групп
  а\nТрунина\, Баранов
 END:VEVENT
 BEGIN:VEVENT
-UID:2026-12-16-1500-1apbr08@raspisanie
-DTSTAMP:20261126T133300Z
-DTSTART;TZID=Europe/Moscow:20261216T150000
-DTEND;TZID=Europe/Moscow:20261216T160000
-SUMMARY:Репетиция «Первый снег малыша»
-LOCATION:Новая сцена
-DESCRIPTION:Репетиция спектакля «Первый снег
-  малыша»\nТрунина\, Баранов\, Носов\, Шайм
- иев\, Лоскутова\nЗвук/свет: Звук\, свет
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-12-17-1100-3zf9lb@raspisanie
-DTSTAMP:20261126T133300Z
-DTSTART;TZID=Europe/Moscow:20261217T110000
-DTEND;TZID=Europe/Moscow:20261217T120000
-SUMMARY:Спектакль «Первый снег малыша»
-LOCATION:Новая сцена
-DESCRIPTION:Спектакль «Первый снег малыша»\n11
- :00 — Трунина\, Баранов\, Носов\n17:00 — Лоск
- утова\, Шаймиев\, Носов\nЗвук/свет: Звук\, 
- свет
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-12-18-1700-3zf9lb@raspisanie
-DTSTAMP:20261126T133300Z
-DTSTART;TZID=Europe/Moscow:20261218T170000
-DTEND;TZID=Europe/Moscow:20261218T180000
-SUMMARY:Спектакль «Первый снег малыша»
-LOCATION:Новая сцена
-DESCRIPTION:Спектакль «Первый снег малыша»\n11
- :00 — Трунина\, Шаймиев\, Носов\n17:00 — Лоск
- утова\, Баранов\, Носов\nЗвук/свет: Звук\, 
- свет
-END:VEVENT
-BEGIN:VEVENT
 UID:2026-12-08-1200-1iw1c6b@raspisanie
 DTSTAMP:20261126T133300Z
 DTSTART;TZID=Europe/Moscow:20261208T120000
@@ -1039,5 +1004,40 @@ DESCRIPTION:Спектакль «Серебряное копытце»\n
  Кожев\, Галустянц\, Трунина\, Миронова\, Р
  азуваева\, Баранов\nЗвук/свет: Звук\, све
  т
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-12-16-1500-1apbr08@raspisanie
+DTSTAMP:20261126T133300Z
+DTSTART;TZID=Europe/Moscow:20261216T150000
+DTEND;TZID=Europe/Moscow:20261216T160000
+SUMMARY:Репетиция «Первый снег малыша»
+LOCATION:Новая сцена
+DESCRIPTION:Репетиция спектакля «Первый снег
+  малыша»\nТрунина\, Баранов\, Носов\, Шайм
+ иев\, Лоскутова\nЗвук/свет: Звук\, свет
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-12-17-1100-3zf9lb@raspisanie
+DTSTAMP:20261126T133300Z
+DTSTART;TZID=Europe/Moscow:20261217T110000
+DTEND;TZID=Europe/Moscow:20261217T120000
+SUMMARY:Спектакль «Первый снег малыша»
+LOCATION:Новая сцена
+DESCRIPTION:Спектакль «Первый снег малыша»\n11
+ :00 — Трунина\, Баранов\, Носов\n17:00 — Лоск
+ утова\, Шаймиев\, Носов\nЗвук/свет: Звук\, 
+ свет
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-12-18-1700-3zf9lb@raspisanie
+DTSTAMP:20261126T133300Z
+DTSTART;TZID=Europe/Moscow:20261218T170000
+DTEND;TZID=Europe/Moscow:20261218T180000
+SUMMARY:Спектакль «Первый снег малыша»
+LOCATION:Новая сцена
+DESCRIPTION:Спектакль «Первый снег малыша»\n11
+ :00 — Трунина\, Шаймиев\, Носов\n17:00 — Лоск
+ утова\, Баранов\, Носов\nЗвук/свет: Звук\, 
+ свет
 END:VEVENT
 END:VCALENDAR

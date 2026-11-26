@@ -497,6 +497,66 @@ DESCRIPTION:Репетиция новогодних программ\nК
  \,\nМартюшева\nЗвук/свет: Звук
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-12-11-1530-1y3x2x0@raspisanie
+DTSTAMP:20261126T133300Z
+DTSTART;TZID=Europe/Moscow:20261211T153000
+DTEND;TZID=Europe/Moscow:20261211T163000
+SUMMARY:Репетиция «Серебряное копытце»
+LOCATION:Старая сцена
+DESCRIPTION:Репетиция спектакля «Серебряное 
+ копытце»\nГлазецкая\, Миронова\, Лоскуто
+ ва\, Галустянц\, Шаймиев\, Баранов\nЗвук/с
+ вет: Звук\, свет
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-12-11-1800-tz0nxv@raspisanie
+DTSTAMP:20261126T133300Z
+DTSTART;TZID=Europe/Moscow:20261211T180000
+DTEND;TZID=Europe/Moscow:20261211T190000
+SUMMARY:Спектакль «Серебряное копытце»
+LOCATION:Старая сцена
+DESCRIPTION:Спектакль «Серебряное копытце»\n
+ Глазецкая\, Миронова\, Лоскутова\, Галус
+ тянц\, Шаймиев\, Баранов\nЗвук/свет: Звук
+ \, свет
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-12-12-1100-tz0nxv@raspisanie
+DTSTAMP:20261126T133300Z
+DTSTART;TZID=Europe/Moscow:20261212T110000
+DTEND;TZID=Europe/Moscow:20261212T120000
+SUMMARY:Спектакль «Серебряное копытце»
+LOCATION:Старая сцена
+DESCRIPTION:Спектакль «Серебряное копытце»\n
+ Кожев\, Галустянц\, Трунина\, Миронова\, Р
+ азуваева\, Баранов\nЗвук/свет: Звук\, све
+ т
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-12-12-1300-tz0nxv@raspisanie
+DTSTAMP:20261126T133300Z
+DTSTART;TZID=Europe/Moscow:20261212T130000
+DTEND;TZID=Europe/Moscow:20261212T140000
+SUMMARY:Спектакль «Серебряное копытце»
+LOCATION:Старая сцена
+DESCRIPTION:Спектакль «Серебряное копытце»\n
+ Кожев\, Галустянц\, Трунина\, Миронова\, Р
+ азуваева\, Баранов\nЗвук/свет: Звук\, све
+ т
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-12-12-1500-tz0nxv@raspisanie
+DTSTAMP:20261126T133300Z
+DTSTART;TZID=Europe/Moscow:20261212T150000
+DTEND;TZID=Europe/Moscow:20261212T160000
+SUMMARY:Спектакль «Серебряное копытце»
+LOCATION:Старая сцена
+DESCRIPTION:Спектакль «Серебряное копытце»\n
+ Кожев\, Галустянц\, Трунина\, Миронова\, Р
+ азуваева\, Баранов\nЗвук/свет: Звук\, све
+ т
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-12-18-1100-1art7hd@raspisanie
 DTSTAMP:20261126T133300Z
 DTSTART;TZID=Europe/Moscow:20261218T110000
@@ -591,65 +651,5 @@ DESCRIPTION:Обычная интермедия «Звёздочка»\n1
  ов (11:00 и 13:00)\; Радыгин (15:00 и 17:00) Снегуроч
  ка – Миронова (11:00\, 13:00 и 15:00)\; Беканова (1
  7:00)\nЗвук/свет: Звук\, свет
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-12-11-1530-1y3x2x0@raspisanie
-DTSTAMP:20261126T133300Z
-DTSTART;TZID=Europe/Moscow:20261211T153000
-DTEND;TZID=Europe/Moscow:20261211T163000
-SUMMARY:Репетиция «Серебряное копытце»
-LOCATION:Старая сцена
-DESCRIPTION:Репетиция спектакля «Серебряное 
- копытце»\nГлазецкая\, Миронова\, Лоскуто
- ва\, Галустянц\, Шаймиев\, Баранов\nЗвук/с
- вет: Звук\, свет
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-12-11-1800-tz0nxv@raspisanie
-DTSTAMP:20261126T133300Z
-DTSTART;TZID=Europe/Moscow:20261211T180000
-DTEND;TZID=Europe/Moscow:20261211T190000
-SUMMARY:Спектакль «Серебряное копытце»
-LOCATION:Старая сцена
-DESCRIPTION:Спектакль «Серебряное копытце»\n
- Глазецкая\, Миронова\, Лоскутова\, Галус
- тянц\, Шаймиев\, Баранов\nЗвук/свет: Звук
- \, свет
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-12-12-1100-tz0nxv@raspisanie
-DTSTAMP:20261126T133300Z
-DTSTART;TZID=Europe/Moscow:20261212T110000
-DTEND;TZID=Europe/Moscow:20261212T120000
-SUMMARY:Спектакль «Серебряное копытце»
-LOCATION:Старая сцена
-DESCRIPTION:Спектакль «Серебряное копытце»\n
- Кожев\, Галустянц\, Трунина\, Миронова\, Р
- азуваева\, Баранов\nЗвук/свет: Звук\, све
- т
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-12-12-1300-tz0nxv@raspisanie
-DTSTAMP:20261126T133300Z
-DTSTART;TZID=Europe/Moscow:20261212T130000
-DTEND;TZID=Europe/Moscow:20261212T140000
-SUMMARY:Спектакль «Серебряное копытце»
-LOCATION:Старая сцена
-DESCRIPTION:Спектакль «Серебряное копытце»\n
- Кожев\, Галустянц\, Трунина\, Миронова\, Р
- азуваева\, Баранов\nЗвук/свет: Звук\, све
- т
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-12-12-1500-tz0nxv@raspisanie
-DTSTAMP:20261126T133300Z
-DTSTART;TZID=Europe/Moscow:20261212T150000
-DTEND;TZID=Europe/Moscow:20261212T160000
-SUMMARY:Спектакль «Серебряное копытце»
-LOCATION:Старая сцена
-DESCRIPTION:Спектакль «Серебряное копытце»\n
- Кожев\, Галустянц\, Трунина\, Миронова\, Р
- азуваева\, Баранов\nЗвук/свет: Звук\, све
- т
 END:VEVENT
 END:VCALENDAR

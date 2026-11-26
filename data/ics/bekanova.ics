@@ -820,6 +820,32 @@ DESCRIPTION:ВЫЕЗД СПЕКТАКЛЯ «КОТ В САПОГАХ» В
  Звук – Бабанов Свет – Халтурин
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-12-08-1200-4963c0@raspisanie
+DTSTAMP:20261126T133300Z
+DTSTART;TZID=Europe/Moscow:20261208T120000
+DTEND;TZID=Europe/Moscow:20261208T130000
+SUMMARY:Ввод «Приключения пингвинят» (ввод
+ ящие)
+LOCATION:Старая сцена
+DESCRIPTION:Ввод в спектакль «Приключения пи
+ нгвинят»\nВводящиеся – Радыгин\, Сигито
+ ва\; вводящие – Шаймиев\, Беканова\nКоже
+ в\, Носов\, Заяшников\nЗвук/свет: Звук\, св
+ ет
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-12-13-1500-1p6gva@raspisanie
+DTSTAMP:20261126T133300Z
+DTSTART;TZID=Europe/Moscow:20261213T150000
+DTEND;TZID=Europe/Moscow:20261213T160000
+SUMMARY:Интермедия «Приключения пингвинят
+ » · Интерактив (снегурочка)
+LOCATION:Старая сцена
+DESCRIPTION:Интерактив «Приключения пингвин
+ ят»\n15:00 — Дед Мороз – Лоскутов\; Снегур
+ очка - Беканова\nЗвук/свет: Звук\, свет
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-12-17-1700-1art7hd@raspisanie
 DTSTAMP:20261126T133300Z
 DTSTART;TZID=Europe/Moscow:20261217T170000
@@ -929,31 +955,5 @@ DESCRIPTION:Обычная интермедия «Звёздочка»\n1
  ов (11:00 и 13:00)\; Радыгин (15:00 и 17:00) Снегуроч
  ка – Миронова (11:00\, 13:00 и 15:00)\; Беканова (1
  7:00)\nЗвук/свет: Звук\, свет
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-12-08-1200-4963c0@raspisanie
-DTSTAMP:20261126T133300Z
-DTSTART;TZID=Europe/Moscow:20261208T120000
-DTEND;TZID=Europe/Moscow:20261208T130000
-SUMMARY:Ввод «Приключения пингвинят» (ввод
- ящие)
-LOCATION:Старая сцена
-DESCRIPTION:Ввод в спектакль «Приключения пи
- нгвинят»\nВводящиеся – Радыгин\, Сигито
- ва\; вводящие – Шаймиев\, Беканова\nКоже
- в\, Носов\, Заяшников\nЗвук/свет: Звук\, св
- ет
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-12-13-1500-1p6gva@raspisanie
-DTSTAMP:20261126T133300Z
-DTSTART;TZID=Europe/Moscow:20261213T150000
-DTEND;TZID=Europe/Moscow:20261213T160000
-SUMMARY:Интермедия «Приключения пингвинят
- » · Интерактив (снегурочка)
-LOCATION:Старая сцена
-DESCRIPTION:Интерактив «Приключения пингвин
- ят»\n15:00 — Дед Мороз – Лоскутов\; Снегур
- очка - Беканова\nЗвук/свет: Звук\, свет
 END:VEVENT
 END:VCALENDAR

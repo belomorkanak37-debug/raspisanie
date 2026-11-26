@@ -897,6 +897,54 @@ DESCRIPTION:ВЫЕЗД СПЕКТАКЛЯ «КОТ В САПОГАХ» В
  Звук – Бабанов Свет – Халтурин
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-12-10-1100-c33i7@raspisanie
+DTSTAMP:20261126T133300Z
+DTSTART;TZID=Europe/Moscow:20261210T110000
+DTEND;TZID=Europe/Moscow:20261210T120000
+SUMMARY:Спектакль «Заинька»
+LOCATION:Новая сцена
+DESCRIPTION:Спектакль «Заинька»\n11:00\, Лоскуто
+ ва\, Лоскутов\, Заяшников\n17:00 Глазецкая\,
+  Безносиков\, Баранов\nЗвук/свет: Звук\, с
+ вет
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-12-11-1700-1fugs7c@raspisanie
+DTSTAMP:20261126T133300Z
+DTSTART;TZID=Europe/Moscow:20261211T170000
+DTEND;TZID=Europe/Moscow:20261211T180000
+SUMMARY:Спектакль «Собачка»
+LOCATION:Новая сцена
+DESCRIPTION:Спектакль «Собачка»\n11:00 Разуваев
+ а\, Шаймиев\, Лоскутова\n17:00 Лоскутов\, Тр
+ унина\, Носов\nЗвук/свет: Звук\, свет
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-12-12-1500-dw6hd9@raspisanie
+DTSTAMP:20261126T133300Z
+DTSTART;TZID=Europe/Moscow:20261212T150000
+DTEND;TZID=Europe/Moscow:20261212T160000
+SUMMARY:Интермедия «Серебряное копытце» · 
+ Интерактив (дед мороз)
+LOCATION:Старая сцена
+DESCRIPTION:Интерактив «Серебряное копытце»
+ \n15:00 — Дед Мороз – Лоскутов\; Снегурочк
+ а – Глазецкая\; Чепель\, Носов\nЗвук/свет
+ : Звук\, свет
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-12-13-1500-1p6gva@raspisanie
+DTSTAMP:20261126T133300Z
+DTSTART;TZID=Europe/Moscow:20261213T150000
+DTEND;TZID=Europe/Moscow:20261213T160000
+SUMMARY:Интермедия «Приключения пингвинят
+ » · Интерактив (дед мороз)
+LOCATION:Старая сцена
+DESCRIPTION:Интерактив «Приключения пингвин
+ ят»\n15:00 — Дед Мороз – Лоскутов\; Снегур
+ очка - Беканова\nЗвук/свет: Звук\, свет
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-12-17-1100-1art7hd@raspisanie
 DTSTAMP:20261126T133300Z
 DTSTART;TZID=Europe/Moscow:20261217T110000
@@ -983,53 +1031,5 @@ DESCRIPTION:Обычная интермедия «Солнышко и с
  ед Мороз – Лоскутов\; Снегурочка – Бека
  нова (11:00 и 13:00)\, Глазецкая (15:00 и 17:00)\; Чеп
  ель\, Мартюшева\nЗвук/свет: Звук\, свет
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-12-10-1100-c33i7@raspisanie
-DTSTAMP:20261126T133300Z
-DTSTART;TZID=Europe/Moscow:20261210T110000
-DTEND;TZID=Europe/Moscow:20261210T120000
-SUMMARY:Спектакль «Заинька»
-LOCATION:Новая сцена
-DESCRIPTION:Спектакль «Заинька»\n11:00\, Лоскуто
- ва\, Лоскутов\, Заяшников\n17:00 Глазецкая\,
-  Безносиков\, Баранов\nЗвук/свет: Звук\, с
- вет
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-12-11-1700-1fugs7c@raspisanie
-DTSTAMP:20261126T133300Z
-DTSTART;TZID=Europe/Moscow:20261211T170000
-DTEND;TZID=Europe/Moscow:20261211T180000
-SUMMARY:Спектакль «Собачка»
-LOCATION:Новая сцена
-DESCRIPTION:Спектакль «Собачка»\n11:00 Разуваев
- а\, Шаймиев\, Лоскутова\n17:00 Лоскутов\, Тр
- унина\, Носов\nЗвук/свет: Звук\, свет
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-12-12-1500-dw6hd9@raspisanie
-DTSTAMP:20261126T133300Z
-DTSTART;TZID=Europe/Moscow:20261212T150000
-DTEND;TZID=Europe/Moscow:20261212T160000
-SUMMARY:Интермедия «Серебряное копытце» · 
- Интерактив (дед мороз)
-LOCATION:Старая сцена
-DESCRIPTION:Интерактив «Серебряное копытце»
- \n15:00 — Дед Мороз – Лоскутов\; Снегурочк
- а – Глазецкая\; Чепель\, Носов\nЗвук/свет
- : Звук\, свет
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-12-13-1500-1p6gva@raspisanie
-DTSTAMP:20261126T133300Z
-DTSTART;TZID=Europe/Moscow:20261213T150000
-DTEND;TZID=Europe/Moscow:20261213T160000
-SUMMARY:Интермедия «Приключения пингвинят
- » · Интерактив (дед мороз)
-LOCATION:Старая сцена
-DESCRIPTION:Интерактив «Приключения пингвин
- ят»\n15:00 — Дед Мороз – Лоскутов\; Снегур
- очка - Беканова\nЗвук/свет: Звук\, свет
 END:VEVENT
 END:VCALENDAR

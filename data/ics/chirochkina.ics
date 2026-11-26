@@ -476,6 +476,39 @@ DESCRIPTION:Спектакль «Волк и Лиса»\nБезносик
  к/свет: Звук\, свет
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-12-12-1100-y6lud0@raspisanie
+DTSTAMP:20261126T133300Z
+DTSTART;TZID=Europe/Moscow:20261212T110000
+DTEND;TZID=Europe/Moscow:20261212T120000
+SUMMARY:Спектакль «Морозко»
+LOCATION:Новая сцена
+DESCRIPTION:Спектакль «Морозко»\nМартюшева\, 
+ Чирочкина\, Андреев\nЗвук/свет: Звук\, св
+ ет
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-12-12-1300-y6lud0@raspisanie
+DTSTAMP:20261126T133300Z
+DTSTART;TZID=Europe/Moscow:20261212T130000
+DTEND;TZID=Europe/Moscow:20261212T140000
+SUMMARY:Спектакль «Морозко»
+LOCATION:Новая сцена
+DESCRIPTION:Спектакль «Морозко»\nМартюшева\, 
+ Чирочкина\, Андреев\nЗвук/свет: Звук\, св
+ ет
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-12-12-1500-y6lud0@raspisanie
+DTSTAMP:20261126T133300Z
+DTSTART;TZID=Europe/Moscow:20261212T150000
+DTEND;TZID=Europe/Moscow:20261212T160000
+SUMMARY:Спектакль «Морозко»
+LOCATION:Новая сцена
+DESCRIPTION:Спектакль «Морозко»\nМартюшева\, 
+ Чирочкина\, Андреев\nЗвук/свет: Звук\, св
+ ет
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-12-15-1200-1fd518o@raspisanie
 DTSTAMP:20261126T133300Z
 DTSTART;TZID=Europe/Moscow:20261215T120000
@@ -588,38 +621,5 @@ LOCATION:Новая сцена
 DESCRIPTION:Спектакль «Звёздочка»\nАлексеева
  \, Чирочкина\, Носов\, Заяшников\, Трунина
  \nЗвук/свет: Звук\, свет
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-12-12-1100-y6lud0@raspisanie
-DTSTAMP:20261126T133300Z
-DTSTART;TZID=Europe/Moscow:20261212T110000
-DTEND;TZID=Europe/Moscow:20261212T120000
-SUMMARY:Спектакль «Морозко»
-LOCATION:Новая сцена
-DESCRIPTION:Спектакль «Морозко»\nМартюшева\, 
- Чирочкина\, Андреев\nЗвук/свет: Звук\, св
- ет
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-12-12-1300-y6lud0@raspisanie
-DTSTAMP:20261126T133300Z
-DTSTART;TZID=Europe/Moscow:20261212T130000
-DTEND;TZID=Europe/Moscow:20261212T140000
-SUMMARY:Спектакль «Морозко»
-LOCATION:Новая сцена
-DESCRIPTION:Спектакль «Морозко»\nМартюшева\, 
- Чирочкина\, Андреев\nЗвук/свет: Звук\, св
- ет
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-12-12-1500-y6lud0@raspisanie
-DTSTAMP:20261126T133300Z
-DTSTART;TZID=Europe/Moscow:20261212T150000
-DTEND;TZID=Europe/Moscow:20261212T160000
-SUMMARY:Спектакль «Морозко»
-LOCATION:Новая сцена
-DESCRIPTION:Спектакль «Морозко»\nМартюшева\, 
- Чирочкина\, Андреев\nЗвук/свет: Звук\, св
- ет
 END:VEVENT
 END:VCALENDAR

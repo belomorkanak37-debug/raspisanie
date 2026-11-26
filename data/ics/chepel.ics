@@ -46,6 +46,54 @@ DESCRIPTION:Репетиция спектакля «Петрушка» +
  16:00 сдача А.С.\nТрунина\, Чепель\, Радыгин
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-12-09-1600-1fs6r5x@raspisanie
+DTSTAMP:20261126T133300Z
+DTSTART;TZID=Europe/Moscow:20261209T160000
+DTEND;TZID=Europe/Moscow:20261209T170000
+SUMMARY:Репетиция «Петрушка»
+LOCATION:Новая сцена - фойе
+DESCRIPTION:Репетиция спектакля «Петрушка»\n
+ Трунина\, Чепель\, Радыгин\nЗвук/свет: Зв
+ ук\, свет
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-12-11-1300-1fs6r5x@raspisanie
+DTSTAMP:20261126T133300Z
+DTSTART;TZID=Europe/Moscow:20261211T130000
+DTEND;TZID=Europe/Moscow:20261211T150000
+SUMMARY:Репетиция «Петрушка»
+LOCATION:Новая сцена - фойе
+DESCRIPTION:Репетиция спектакля «Петрушка»\n
+ Трунина\, Чепель\, Радыгин\nЗвук/свет: Зв
+ ук\, свет
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-12-12-1500-dw6hd9@raspisanie
+DTSTAMP:20261126T133300Z
+DTSTART;TZID=Europe/Moscow:20261212T150000
+DTEND;TZID=Europe/Moscow:20261212T160000
+SUMMARY:Интермедия «Серебряное копытце» · 
+ Интерактив
+LOCATION:Старая сцена
+DESCRIPTION:Интерактив «Серебряное копытце»
+ \n15:00 — Дед Мороз – Лоскутов\; Снегурочк
+ а – Глазецкая\; Чепель\, Носов\nЗвук/свет
+ : Звук\, свет
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-12-13-1500-u4qdw@raspisanie
+DTSTAMP:20261126T133300Z
+DTSTART;TZID=Europe/Moscow:20261213T150000
+DTEND;TZID=Europe/Moscow:20261213T160000
+SUMMARY:Интермедия «Как Снеговик за ёлкой х
+ одил» · Обычная интермедия
+LOCATION:Новая сцена
+DESCRIPTION:Обычная интермедия «Как Снеговик
+  за ёлкой ходил»\n15:00 — Дед Мороз – Безн
+ осиков\; Снегурочка – Глазецкая\; Труни
+ на\, Чепель\nЗвук/свет: Звук\, свет
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-12-18-1800-19xnlc@raspisanie
 DTSTAMP:20261126T133300Z
 DTSTART;TZID=Europe/Moscow:20261218T180000
@@ -147,53 +195,5 @@ DESCRIPTION:Обычная интермедия «Солнышко и с
  ед Мороз – Лоскутов\; Снегурочка – Бека
  нова (11:00 и 13:00)\, Глазецкая (15:00 и 17:00)\; Чеп
  ель\, Мартюшева\nЗвук/свет: Звук\, свет
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-12-09-1600-1fs6r5x@raspisanie
-DTSTAMP:20261126T133300Z
-DTSTART;TZID=Europe/Moscow:20261209T160000
-DTEND;TZID=Europe/Moscow:20261209T170000
-SUMMARY:Репетиция «Петрушка»
-LOCATION:Новая сцена - фойе
-DESCRIPTION:Репетиция спектакля «Петрушка»\n
- Трунина\, Чепель\, Радыгин\nЗвук/свет: Зв
- ук\, свет
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-12-11-1300-1fs6r5x@raspisanie
-DTSTAMP:20261126T133300Z
-DTSTART;TZID=Europe/Moscow:20261211T130000
-DTEND;TZID=Europe/Moscow:20261211T150000
-SUMMARY:Репетиция «Петрушка»
-LOCATION:Новая сцена - фойе
-DESCRIPTION:Репетиция спектакля «Петрушка»\n
- Трунина\, Чепель\, Радыгин\nЗвук/свет: Зв
- ук\, свет
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-12-12-1500-dw6hd9@raspisanie
-DTSTAMP:20261126T133300Z
-DTSTART;TZID=Europe/Moscow:20261212T150000
-DTEND;TZID=Europe/Moscow:20261212T160000
-SUMMARY:Интермедия «Серебряное копытце» · 
- Интерактив
-LOCATION:Старая сцена
-DESCRIPTION:Интерактив «Серебряное копытце»
- \n15:00 — Дед Мороз – Лоскутов\; Снегурочк
- а – Глазецкая\; Чепель\, Носов\nЗвук/свет
- : Звук\, свет
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-12-13-1500-u4qdw@raspisanie
-DTSTAMP:20261126T133300Z
-DTSTART;TZID=Europe/Moscow:20261213T150000
-DTEND;TZID=Europe/Moscow:20261213T160000
-SUMMARY:Интермедия «Как Снеговик за ёлкой х
- одил» · Обычная интермедия
-LOCATION:Новая сцена
-DESCRIPTION:Обычная интермедия «Как Снеговик
-  за ёлкой ходил»\n15:00 — Дед Мороз – Безн
- осиков\; Снегурочка – Глазецкая\; Труни
- на\, Чепель\nЗвук/свет: Звук\, свет
 END:VEVENT
 END:VCALENDAR

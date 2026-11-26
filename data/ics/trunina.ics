@@ -911,6 +911,88 @@ DESCRIPTION:Хочу стать кукловодом – ср. групп
  а\nТрунина\, Баранов
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-12-09-1600-1fs6r5x@raspisanie
+DTSTAMP:20261126T133300Z
+DTSTART;TZID=Europe/Moscow:20261209T160000
+DTEND;TZID=Europe/Moscow:20261209T170000
+SUMMARY:Репетиция «Петрушка»
+LOCATION:Новая сцена - фойе
+DESCRIPTION:Репетиция спектакля «Петрушка»\n
+ Трунина\, Чепель\, Радыгин\nЗвук/свет: Зв
+ ук\, свет
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-12-11-1300-1fs6r5x@raspisanie
+DTSTAMP:20261126T133300Z
+DTSTART;TZID=Europe/Moscow:20261211T130000
+DTEND;TZID=Europe/Moscow:20261211T150000
+SUMMARY:Репетиция «Петрушка»
+LOCATION:Новая сцена - фойе
+DESCRIPTION:Репетиция спектакля «Петрушка»\n
+ Трунина\, Чепель\, Радыгин\nЗвук/свет: Зв
+ ук\, свет
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-12-11-1700-1fugs7c@raspisanie
+DTSTAMP:20261126T133300Z
+DTSTART;TZID=Europe/Moscow:20261211T170000
+DTEND;TZID=Europe/Moscow:20261211T180000
+SUMMARY:Спектакль «Собачка»
+LOCATION:Новая сцена
+DESCRIPTION:Спектакль «Собачка»\n11:00 Разуваев
+ а\, Шаймиев\, Лоскутова\n17:00 Лоскутов\, Тр
+ унина\, Носов\nЗвук/свет: Звук\, свет
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-12-12-1100-tz0nxv@raspisanie
+DTSTAMP:20261126T133300Z
+DTSTART;TZID=Europe/Moscow:20261212T110000
+DTEND;TZID=Europe/Moscow:20261212T120000
+SUMMARY:Спектакль «Серебряное копытце»
+LOCATION:Старая сцена
+DESCRIPTION:Спектакль «Серебряное копытце»\n
+ Кожев\, Галустянц\, Трунина\, Миронова\, Р
+ азуваева\, Баранов\nЗвук/свет: Звук\, све
+ т
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-12-12-1300-tz0nxv@raspisanie
+DTSTAMP:20261126T133300Z
+DTSTART;TZID=Europe/Moscow:20261212T130000
+DTEND;TZID=Europe/Moscow:20261212T140000
+SUMMARY:Спектакль «Серебряное копытце»
+LOCATION:Старая сцена
+DESCRIPTION:Спектакль «Серебряное копытце»\n
+ Кожев\, Галустянц\, Трунина\, Миронова\, Р
+ азуваева\, Баранов\nЗвук/свет: Звук\, све
+ т
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-12-12-1500-tz0nxv@raspisanie
+DTSTAMP:20261126T133300Z
+DTSTART;TZID=Europe/Moscow:20261212T150000
+DTEND;TZID=Europe/Moscow:20261212T160000
+SUMMARY:Спектакль «Серебряное копытце»
+LOCATION:Старая сцена
+DESCRIPTION:Спектакль «Серебряное копытце»\n
+ Кожев\, Галустянц\, Трунина\, Миронова\, Р
+ азуваева\, Баранов\nЗвук/свет: Звук\, све
+ т
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-12-13-1500-u4qdw@raspisanie
+DTSTAMP:20261126T133300Z
+DTSTART;TZID=Europe/Moscow:20261213T150000
+DTEND;TZID=Europe/Moscow:20261213T160000
+SUMMARY:Интермедия «Как Снеговик за ёлкой х
+ одил» · Обычная интермедия
+LOCATION:Новая сцена
+DESCRIPTION:Обычная интермедия «Как Снеговик
+  за ёлкой ходил»\n15:00 — Дед Мороз – Безн
+ осиков\; Снегурочка – Глазецкая\; Труни
+ на\, Чепель\nЗвук/свет: Звук\, свет
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-12-15-1200-1akhcza@raspisanie
 DTSTAMP:20261126T133300Z
 DTSTART;TZID=Europe/Moscow:20261215T120000
@@ -1088,87 +1170,5 @@ LOCATION:Новая сцена
 DESCRIPTION:Спектакль «Звёздочка»\nАлексеева
  \, Чирочкина\, Носов\, Заяшников\, Трунина
  \nЗвук/свет: Звук\, свет
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-12-09-1600-1fs6r5x@raspisanie
-DTSTAMP:20261126T133300Z
-DTSTART;TZID=Europe/Moscow:20261209T160000
-DTEND;TZID=Europe/Moscow:20261209T170000
-SUMMARY:Репетиция «Петрушка»
-LOCATION:Новая сцена - фойе
-DESCRIPTION:Репетиция спектакля «Петрушка»\n
- Трунина\, Чепель\, Радыгин\nЗвук/свет: Зв
- ук\, свет
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-12-11-1300-1fs6r5x@raspisanie
-DTSTAMP:20261126T133300Z
-DTSTART;TZID=Europe/Moscow:20261211T130000
-DTEND;TZID=Europe/Moscow:20261211T150000
-SUMMARY:Репетиция «Петрушка»
-LOCATION:Новая сцена - фойе
-DESCRIPTION:Репетиция спектакля «Петрушка»\n
- Трунина\, Чепель\, Радыгин\nЗвук/свет: Зв
- ук\, свет
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-12-11-1700-1fugs7c@raspisanie
-DTSTAMP:20261126T133300Z
-DTSTART;TZID=Europe/Moscow:20261211T170000
-DTEND;TZID=Europe/Moscow:20261211T180000
-SUMMARY:Спектакль «Собачка»
-LOCATION:Новая сцена
-DESCRIPTION:Спектакль «Собачка»\n11:00 Разуваев
- а\, Шаймиев\, Лоскутова\n17:00 Лоскутов\, Тр
- унина\, Носов\nЗвук/свет: Звук\, свет
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-12-12-1100-tz0nxv@raspisanie
-DTSTAMP:20261126T133300Z
-DTSTART;TZID=Europe/Moscow:20261212T110000
-DTEND;TZID=Europe/Moscow:20261212T120000
-SUMMARY:Спектакль «Серебряное копытце»
-LOCATION:Старая сцена
-DESCRIPTION:Спектакль «Серебряное копытце»\n
- Кожев\, Галустянц\, Трунина\, Миронова\, Р
- азуваева\, Баранов\nЗвук/свет: Звук\, све
- т
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-12-12-1300-tz0nxv@raspisanie
-DTSTAMP:20261126T133300Z
-DTSTART;TZID=Europe/Moscow:20261212T130000
-DTEND;TZID=Europe/Moscow:20261212T140000
-SUMMARY:Спектакль «Серебряное копытце»
-LOCATION:Старая сцена
-DESCRIPTION:Спектакль «Серебряное копытце»\n
- Кожев\, Галустянц\, Трунина\, Миронова\, Р
- азуваева\, Баранов\nЗвук/свет: Звук\, све
- т
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-12-12-1500-tz0nxv@raspisanie
-DTSTAMP:20261126T133300Z
-DTSTART;TZID=Europe/Moscow:20261212T150000
-DTEND;TZID=Europe/Moscow:20261212T160000
-SUMMARY:Спектакль «Серебряное копытце»
-LOCATION:Старая сцена
-DESCRIPTION:Спектакль «Серебряное копытце»\n
- Кожев\, Галустянц\, Трунина\, Миронова\, Р
- азуваева\, Баранов\nЗвук/свет: Звук\, све
- т
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-12-13-1500-u4qdw@raspisanie
-DTSTAMP:20261126T133300Z
-DTSTART;TZID=Europe/Moscow:20261213T150000
-DTEND;TZID=Europe/Moscow:20261213T160000
-SUMMARY:Интермедия «Как Снеговик за ёлкой х
- одил» · Обычная интермедия
-LOCATION:Новая сцена
-DESCRIPTION:Обычная интермедия «Как Снеговик
-  за ёлкой ходил»\n15:00 — Дед Мороз – Безн
- осиков\; Снегурочка – Глазецкая\; Труни
- на\, Чепель\nЗвук/свет: Звук\, свет
 END:VEVENT
 END:VCALENDAR
