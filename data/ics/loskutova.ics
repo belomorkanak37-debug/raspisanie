@@ -1045,4 +1045,42 @@ SUMMARY:Спектакль «Как Снеговик за ёлкой хо
 DESCRIPTION:Спектакль «Как Снеговик за ёлкой 
  ходил»\nБезносиков\, Лоскутова
 END:VEVENT
+BEGIN:VEVENT
+UID:2026-12-29-1100-tz0nxv@raspisanie
+DTSTAMP:20261127T104200Z
+DTSTART;TZID=Europe/Moscow:20261229T110000
+DTEND;TZID=Europe/Moscow:20261229T120000
+SUMMARY:Спектакль «Серебряное копытце»
+DESCRIPTION:Спектакль «Серебряное копытце»\n
+ Лоскутова
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-12-29-1300-tz0nxv@raspisanie
+DTSTAMP:20261127T104200Z
+DTSTART;TZID=Europe/Moscow:20261229T130000
+DTEND;TZID=Europe/Moscow:20261229T140000
+SUMMARY:Спектакль «Серебряное копытце»
+DESCRIPTION:Спектакль «Серебряное копытце»\n
+ Лоскутова
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-12-30-1100-3zf9lb@raspisanie
+DTSTAMP:20261127T104200Z
+DTSTART;TZID=Europe/Moscow:20261230T110000
+DTEND;TZID=Europe/Moscow:20261230T120000
+SUMMARY:Спектакль «Первый снег малыша»
+DESCRIPTION:Спектакль «Первый снег малыша»\nЛ
+ оскутова\, Лоскутов
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-12-30-1100-1art7hd@raspisanie
+DTSTAMP:20261127T104200Z
+DTSTART;TZID=Europe/Moscow:20261230T110000
+DTEND;TZID=Europe/Moscow:20261230T120000
+SUMMARY:Интермедия «Первый снег малыша» · Б
+ эби-интермедия (сова)
+DESCRIPTION:Бэби-интермедия «Первый снег мал
+ ыша»\nСова — Лоскутова (11:00)\; Дед Мороз 
+ — Лоскутов (17:00)
+END:VEVENT
 END:VCALENDAR

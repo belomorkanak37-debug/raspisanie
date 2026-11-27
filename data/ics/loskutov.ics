@@ -1133,4 +1133,44 @@ SUMMARY:Интермедия «Серебряное копытце» ·
 DESCRIPTION:Интерактив «Серебряное копытце»
  \nДед Мороз — Лоскутов
 END:VEVENT
+BEGIN:VEVENT
+UID:2026-12-29-1100-1art7hd@raspisanie
+DTSTAMP:20261127T104200Z
+DTSTART;TZID=Europe/Moscow:20261229T110000
+DTEND;TZID=Europe/Moscow:20261229T120000
+SUMMARY:Интермедия «Первый снег малыша» · Б
+ эби-интермедия (дед мороз)
+DESCRIPTION:Бэби-интермедия «Первый снег мал
+ ыша»\nДед Мороз — Лоскутов
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-12-29-1700-1art7hd@raspisanie
+DTSTAMP:20261127T104200Z
+DTSTART;TZID=Europe/Moscow:20261229T170000
+DTEND;TZID=Europe/Moscow:20261229T180000
+SUMMARY:Интермедия «Первый снег малыша» · Б
+ эби-интермедия (дед мороз)
+DESCRIPTION:Бэби-интермедия «Первый снег мал
+ ыша»\nДед Мороз — Лоскутов
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-12-30-1100-3zf9lb@raspisanie
+DTSTAMP:20261127T104200Z
+DTSTART;TZID=Europe/Moscow:20261230T110000
+DTEND;TZID=Europe/Moscow:20261230T120000
+SUMMARY:Спектакль «Первый снег малыша»
+DESCRIPTION:Спектакль «Первый снег малыша»\nЛ
+ оскутова\, Лоскутов
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-12-30-1700-1art7hd@raspisanie
+DTSTAMP:20261127T104200Z
+DTSTART;TZID=Europe/Moscow:20261230T170000
+DTEND;TZID=Europe/Moscow:20261230T180000
+SUMMARY:Интермедия «Первый снег малыша» · Б
+ эби-интермедия (дед мороз)
+DESCRIPTION:Бэби-интермедия «Первый снег мал
+ ыша»\nСова — Лоскутова (11:00)\; Дед Мороз 
+ — Лоскутов (17:00)
+END:VEVENT
 END:VCALENDAR

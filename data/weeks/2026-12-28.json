@@ -66,6 +66,88 @@
    "manual": true
   },
   {
+   "id": "nmwyurf3i0cmrs6",
+   "date": "2026-12-29",
+   "timeText": "11:00, 13:00",
+   "times": [
+    "11:00",
+    "13:00"
+   ],
+   "range": null,
+   "timeUncertain": false,
+   "title": "Спектакль «Серебряное копытце»",
+   "kind": "show",
+   "place": "",
+   "tech": "",
+   "lines": [
+    "Лоскутова"
+   ],
+   "people": [
+    {
+     "name": "Лоскутова",
+     "times": null,
+     "from": null,
+     "role": null,
+     "uncertain": false,
+     "alts": [],
+     "note": null
+    }
+   ],
+   "scope": "people",
+   "accounting": {
+    "showWeight": 1,
+    "baby": false,
+    "halfFor": [],
+    "away": false,
+    "studio": false,
+    "interlude": false,
+    "interludeType": null,
+    "intro": false
+   },
+   "manual": true
+  },
+  {
+   "id": "nmwyurflk5tn2mo",
+   "date": "2026-12-29",
+   "timeText": "11:00, 17:00",
+   "times": [
+    "11:00",
+    "17:00"
+   ],
+   "range": null,
+   "timeUncertain": false,
+   "title": "Бэби-интермедия «Первый снег малыша»",
+   "kind": "interlude",
+   "place": "",
+   "tech": "",
+   "lines": [
+    "Дед Мороз — Лоскутов"
+   ],
+   "people": [
+    {
+     "name": "Лоскутов",
+     "times": null,
+     "from": null,
+     "role": "дед мороз",
+     "uncertain": false,
+     "alts": [],
+     "note": null
+    }
+   ],
+   "scope": "people",
+   "accounting": {
+    "showWeight": 0,
+    "baby": false,
+    "halfFor": [],
+    "away": false,
+    "studio": false,
+    "interlude": true,
+    "interludeType": "baby",
+    "intro": false
+   },
+   "manual": true
+  },
+  {
    "id": "nmwxrqx8mbwc60k",
    "date": "2026-12-30",
    "timeText": "11:00, 13:00",
@@ -118,6 +200,109 @@
    "manual": true
   },
   {
+   "id": "nmwyurkq80g9taa",
+   "date": "2026-12-30",
+   "timeText": "11:00",
+   "times": [
+    "11:00"
+   ],
+   "range": null,
+   "timeUncertain": false,
+   "title": "Спектакль «Первый снег малыша»",
+   "kind": "show",
+   "place": "",
+   "tech": "",
+   "lines": [
+    "Лоскутова, Лоскутов"
+   ],
+   "people": [
+    {
+     "name": "Лоскутова",
+     "times": null,
+     "from": null,
+     "role": null,
+     "uncertain": false,
+     "alts": [],
+     "note": null
+    },
+    {
+     "name": "Лоскутов",
+     "times": null,
+     "from": null,
+     "role": null,
+     "uncertain": false,
+     "alts": [],
+     "note": null
+    }
+   ],
+   "scope": "people",
+   "accounting": {
+    "showWeight": 1,
+    "baby": true,
+    "halfFor": [],
+    "away": false,
+    "studio": false,
+    "interlude": false,
+    "interludeType": null,
+    "intro": false
+   },
+   "manual": true
+  },
+  {
+   "id": "nmwyurl7tgcbx85",
+   "date": "2026-12-30",
+   "timeText": "11:00, 17:00",
+   "times": [
+    "11:00",
+    "17:00"
+   ],
+   "range": null,
+   "timeUncertain": false,
+   "title": "Бэби-интермедия «Первый снег малыша»",
+   "kind": "interlude",
+   "place": "",
+   "tech": "",
+   "lines": [
+    "Сова — Лоскутова (11:00); Дед Мороз — Лоскутов (17:00)"
+   ],
+   "people": [
+    {
+     "name": "Лоскутова",
+     "times": [
+      "11:00"
+     ],
+     "from": null,
+     "role": "сова",
+     "uncertain": false,
+     "alts": [],
+     "note": null
+    },
+    {
+     "name": "Лоскутов",
+     "times": [
+      "17:00"
+     ],
+     "from": null,
+     "role": "дед мороз",
+     "uncertain": false,
+     "alts": [],
+     "note": null
+    }
+   ],
+   "scope": "people",
+   "accounting": {
+    "showWeight": 0,
+    "baby": false,
+    "halfFor": [],
+    "away": false,
+    "studio": false,
+    "interlude": true,
+    "interludeType": "baby",
+    "intro": false
+   },
+   "manual": true
+  },
+  {
    "id": "nmwxrqxq8kbolmp",
    "date": "2026-12-31",
    "timeText": "11:00",
@@ -159,7 +344,154 @@
   }
  ],
  "pdf": null,
- "version": 1,
- "updatedAt": "2026-11-26T16:30:43.408Z",
- "previous": null
+ "version": 2,
+ "updatedAt": "2026-11-27T10:42:56.435Z",
+ "previous": {
+  "version": 1,
+  "updatedAt": "2026-11-26T16:30:43.408Z",
+  "events": [
+   {
+    "id": "nmwxrqwq4w5hh3c",
+    "date": "2026-12-29",
+    "timeText": "11:00, 13:00",
+    "times": [
+     "11:00",
+     "13:00"
+    ],
+    "range": null,
+    "timeUncertain": false,
+    "title": "Интерактив «Серебряное копытце»",
+    "kind": "interlude",
+    "place": "",
+    "tech": "",
+    "lines": [
+     "Дед Мороз — Безносиков; Снегурочка — Глазецкая"
+    ],
+    "people": [
+     {
+      "name": "Безносиков",
+      "times": null,
+      "from": null,
+      "role": "дед мороз",
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     },
+     {
+      "name": "Глазецкая",
+      "times": null,
+      "from": null,
+      "role": "снегурочка",
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     }
+    ],
+    "scope": "people",
+    "accounting": {
+     "showWeight": 0,
+     "baby": false,
+     "halfFor": [],
+     "away": false,
+     "studio": false,
+     "interlude": true,
+     "interludeType": "interactive",
+     "intro": false
+    },
+    "manual": true
+   },
+   {
+    "id": "nmwxrqx8mbwc60k",
+    "date": "2026-12-30",
+    "timeText": "11:00, 13:00",
+    "times": [
+     "11:00",
+     "13:00"
+    ],
+    "range": null,
+    "timeUncertain": false,
+    "title": "Интерактив «Приключения пингвинят»",
+    "kind": "interlude",
+    "place": "",
+    "tech": "",
+    "lines": [
+     "Дед Мороз — Безносиков; Снегурочка — Глазецкая (11:00)"
+    ],
+    "people": [
+     {
+      "name": "Безносиков",
+      "times": null,
+      "from": null,
+      "role": "дед мороз",
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     },
+     {
+      "name": "Глазецкая",
+      "times": [
+       "11:00"
+      ],
+      "from": null,
+      "role": "снегурочка",
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     }
+    ],
+    "scope": "people",
+    "accounting": {
+     "showWeight": 0,
+     "baby": false,
+     "halfFor": [],
+     "away": false,
+     "studio": false,
+     "interlude": true,
+     "interludeType": "interactive",
+     "intro": false
+    },
+    "manual": true
+   },
+   {
+    "id": "nmwxrqxq8kbolmp",
+    "date": "2026-12-31",
+    "timeText": "11:00",
+    "times": [
+     "11:00"
+    ],
+    "range": null,
+    "timeUncertain": false,
+    "title": "Обычная интермедия «Морозко»",
+    "kind": "interlude",
+    "place": "",
+    "tech": "",
+    "lines": [
+     "Дед Мороз — Безносиков"
+    ],
+    "people": [
+     {
+      "name": "Безносиков",
+      "times": null,
+      "from": null,
+      "role": "дед мороз",
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     }
+    ],
+    "scope": "people",
+    "accounting": {
+     "showWeight": 0,
+     "baby": false,
+     "halfFor": [],
+     "away": false,
+     "studio": false,
+     "interlude": true,
+     "interludeType": "regular",
+     "intro": false
+    },
+    "manual": true
+   }
+  ]
+ }
 }
