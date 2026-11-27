@@ -56,6 +56,46 @@
    "manual": true
   },
   {
+   "id": "nmwyuq1jmecpods",
+   "date": "2026-12-22",
+   "timeText": "11:30",
+   "times": [
+    "11:30"
+   ],
+   "range": null,
+   "timeUncertain": false,
+   "title": "Спектакль «Серебряное копытце»",
+   "kind": "show",
+   "place": "",
+   "tech": "",
+   "lines": [
+    "Лоскутова"
+   ],
+   "people": [
+    {
+     "name": "Лоскутова",
+     "times": null,
+     "from": null,
+     "role": null,
+     "uncertain": false,
+     "alts": [],
+     "note": null
+    }
+   ],
+   "scope": "people",
+   "accounting": {
+    "showWeight": 1,
+    "baby": false,
+    "halfFor": [],
+    "away": false,
+    "studio": false,
+    "interlude": false,
+    "interludeType": null,
+    "intro": false
+   },
+   "manual": true
+  },
+  {
    "id": "nmwxrp88t76pybo",
    "date": "2026-12-23",
    "timeText": "11:00",
@@ -100,6 +140,46 @@
     "studio": false,
     "interlude": false,
     "interludeType": null,
+    "intro": false
+   },
+   "manual": true
+  },
+  {
+   "id": "nmwyuq2m2klms5o",
+   "date": "2026-12-23",
+   "timeText": "11:00",
+   "times": [
+    "11:00"
+   ],
+   "range": null,
+   "timeUncertain": false,
+   "title": "Школьная интермедия «Снегурочка»",
+   "kind": "interlude",
+   "place": "",
+   "tech": "",
+   "lines": [
+    "Дед Мороз — Лоскутов"
+   ],
+   "people": [
+    {
+     "name": "Лоскутов",
+     "times": null,
+     "from": null,
+     "role": "дед мороз",
+     "uncertain": false,
+     "alts": [],
+     "note": null
+    }
+   ],
+   "scope": "people",
+   "accounting": {
+    "showWeight": 0,
+    "baby": false,
+    "halfFor": [],
+    "away": false,
+    "studio": false,
+    "interlude": true,
+    "interludeType": "school",
     "intro": false
    },
    "manual": true
@@ -318,7 +398,7 @@
    "place": "",
    "tech": "",
    "lines": [
-    "Снегурочка — Глазецкая"
+    "Снегурочка — Глазецкая; Дед Мороз — Лоскутов"
    ],
    "people": [
     {
@@ -326,6 +406,15 @@
      "times": null,
      "from": null,
      "role": "снегурочка",
+     "uncertain": false,
+     "alts": [],
+     "note": null
+    },
+    {
+     "name": "Лоскутов",
+     "times": null,
+     "from": null,
+     "role": "дед мороз",
      "uncertain": false,
      "alts": [],
      "note": null
@@ -347,9 +436,12 @@
   {
    "id": "nmwxrpskmzs13kv",
    "date": "2026-12-26",
-   "timeText": "11:00",
+   "timeText": "11:00, 13:00, 15:00, 17:00",
    "times": [
-    "11:00"
+    "11:00",
+    "13:00",
+    "15:00",
+    "17:00"
    ],
    "range": null,
    "timeUncertain": false,
@@ -358,14 +450,25 @@
    "place": "",
    "tech": "",
    "lines": [
-    "Снегурочка — Глазецкая"
+    "Снегурочка — Глазецкая (11:00); Дед Мороз — Лоскутов"
    ],
    "people": [
     {
      "name": "Глазецкая",
-     "times": null,
+     "times": [
+      "11:00"
+     ],
      "from": null,
      "role": "снегурочка",
+     "uncertain": false,
+     "alts": [],
+     "note": null
+    },
+    {
+     "name": "Лоскутов",
+     "times": null,
+     "from": null,
+     "role": "дед мороз",
      "uncertain": false,
      "alts": [],
      "note": null
@@ -406,6 +509,47 @@
    "people": [
     {
      "name": "Безносиков",
+     "times": null,
+     "from": null,
+     "role": null,
+     "uncertain": false,
+     "alts": [],
+     "note": null
+    }
+   ],
+   "scope": "people",
+   "accounting": {
+    "showWeight": 1,
+    "baby": false,
+    "halfFor": [],
+    "away": false,
+    "studio": false,
+    "interlude": false,
+    "interludeType": null,
+    "intro": false
+   },
+   "manual": true
+  },
+  {
+   "id": "nmwyuqidzk24ijr",
+   "date": "2026-12-26",
+   "timeText": "11:00, 13:00",
+   "times": [
+    "11:00",
+    "13:00"
+   ],
+   "range": null,
+   "timeUncertain": false,
+   "title": "Спектакль «Солнышко и снежные человечки»",
+   "kind": "show",
+   "place": "",
+   "tech": "",
+   "lines": [
+    "Лоскутова"
+   ],
+   "people": [
+    {
+     "name": "Лоскутова",
      "times": null,
      "from": null,
      "role": null,
@@ -485,11 +629,20 @@
    "place": "",
    "tech": "",
    "lines": [
-    "Безносиков"
+    "Безносиков, Лоскутова"
    ],
    "people": [
     {
      "name": "Безносиков",
+     "times": null,
+     "from": null,
+     "role": null,
+     "uncertain": false,
+     "alts": [],
+     "note": null
+    },
+    {
+     "name": "Лоскутова",
      "times": null,
      "from": null,
      "role": null,
@@ -552,6 +705,49 @@
    "manual": true
   },
   {
+   "id": "nmwyuqjxjozeghj",
+   "date": "2026-12-27",
+   "timeText": "11:00, 13:00, 15:00, 17:00",
+   "times": [
+    "11:00",
+    "13:00",
+    "15:00",
+    "17:00"
+   ],
+   "range": null,
+   "timeUncertain": false,
+   "title": "Интерактив «Серебряное копытце»",
+   "kind": "interlude",
+   "place": "",
+   "tech": "",
+   "lines": [
+    "Дед Мороз — Лоскутов"
+   ],
+   "people": [
+    {
+     "name": "Лоскутов",
+     "times": null,
+     "from": null,
+     "role": "дед мороз",
+     "uncertain": false,
+     "alts": [],
+     "note": null
+    }
+   ],
+   "scope": "people",
+   "accounting": {
+    "showWeight": 0,
+    "baby": false,
+    "halfFor": [],
+    "away": false,
+    "studio": false,
+    "interlude": true,
+    "interludeType": "interactive",
+    "intro": false
+   },
+   "manual": true
+  },
+  {
    "id": "nmwxrq4649hpbh1",
    "date": "2026-12-27",
    "timeText": "13:00",
@@ -593,7 +789,588 @@
   }
  ],
  "pdf": null,
- "version": 1,
- "updatedAt": "2026-11-26T16:30:07.440Z",
- "previous": null
+ "version": 2,
+ "updatedAt": "2026-11-27T10:42:11.374Z",
+ "previous": {
+  "version": 1,
+  "updatedAt": "2026-11-26T16:30:07.440Z",
+  "events": [
+   {
+    "id": "nmwxrovycuomsol",
+    "date": "2026-12-22",
+    "timeText": "11:30",
+    "times": [
+     "11:30"
+    ],
+    "range": null,
+    "timeUncertain": false,
+    "title": "Школьная интермедия «Серебряное копытце»",
+    "kind": "interlude",
+    "place": "",
+    "tech": "",
+    "lines": [
+     "Снегурочка — Глазецкая"
+    ],
+    "people": [
+     {
+      "name": "Глазецкая",
+      "times": null,
+      "from": null,
+      "role": "снегурочка",
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     }
+    ],
+    "scope": "people",
+    "accounting": {
+     "showWeight": 0,
+     "baby": false,
+     "halfFor": [],
+     "away": false,
+     "studio": false,
+     "interlude": true,
+     "interludeType": "school",
+     "intro": false
+    },
+    "manual": true
+   },
+   {
+    "id": "nmwxrp88t76pybo",
+    "date": "2026-12-23",
+    "timeText": "11:00",
+    "times": [
+     "11:00"
+    ],
+    "range": null,
+    "timeUncertain": false,
+    "title": "Спектакль «Снегурочка»",
+    "kind": "show",
+    "place": "",
+    "tech": "",
+    "lines": [
+     "Глазецкая, Безносиков"
+    ],
+    "people": [
+     {
+      "name": "Глазецкая",
+      "times": null,
+      "from": null,
+      "role": null,
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     },
+     {
+      "name": "Безносиков",
+      "times": null,
+      "from": null,
+      "role": null,
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     }
+    ],
+    "scope": "people",
+    "accounting": {
+     "showWeight": 1,
+     "baby": false,
+     "halfFor": [],
+     "away": false,
+     "studio": false,
+     "interlude": false,
+     "interludeType": null,
+     "intro": false
+    },
+    "manual": true
+   },
+   {
+    "id": "nmwxrp8qwz6nvsw",
+    "date": "2026-12-24",
+    "timeText": "17:00",
+    "times": [
+     "17:00"
+    ],
+    "range": null,
+    "timeUncertain": false,
+    "title": "Интерактив «Умка»",
+    "kind": "interlude",
+    "place": "",
+    "tech": "",
+    "lines": [
+     "Снегурочка — Глазецкая"
+    ],
+    "people": [
+     {
+      "name": "Глазецкая",
+      "times": null,
+      "from": null,
+      "role": "снегурочка",
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     }
+    ],
+    "scope": "people",
+    "accounting": {
+     "showWeight": 0,
+     "baby": false,
+     "halfFor": [],
+     "away": false,
+     "studio": false,
+     "interlude": true,
+     "interludeType": "interactive",
+     "intro": false
+    },
+    "manual": true
+   },
+   {
+    "id": "nmwxrp98068yulc",
+    "date": "2026-12-24",
+    "timeText": "17:00",
+    "times": [
+     "17:00"
+    ],
+    "range": null,
+    "timeUncertain": false,
+    "title": "Спектакль «Как Снеговик за ёлкой ходил»",
+    "kind": "show",
+    "place": "",
+    "tech": "",
+    "lines": [
+     "Безносиков"
+    ],
+    "people": [
+     {
+      "name": "Безносиков",
+      "times": null,
+      "from": null,
+      "role": null,
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     }
+    ],
+    "scope": "people",
+    "accounting": {
+     "showWeight": 1,
+     "baby": false,
+     "halfFor": [],
+     "away": false,
+     "studio": false,
+     "interlude": false,
+     "interludeType": null,
+     "intro": false
+    },
+    "manual": true
+   },
+   {
+    "id": "nmwxrpgqr39cnbx",
+    "date": "2026-12-24",
+    "timeText": "17:00",
+    "times": [
+     "17:00"
+    ],
+    "range": null,
+    "timeUncertain": false,
+    "title": "Обычная интермедия «Как Снеговик за ёлкой ходил»",
+    "kind": "interlude",
+    "place": "",
+    "tech": "",
+    "lines": [
+     "Дед Мороз — Безносиков"
+    ],
+    "people": [
+     {
+      "name": "Безносиков",
+      "times": null,
+      "from": null,
+      "role": "дед мороз",
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     }
+    ],
+    "scope": "people",
+    "accounting": {
+     "showWeight": 0,
+     "baby": false,
+     "halfFor": [],
+     "away": false,
+     "studio": false,
+     "interlude": true,
+     "interludeType": "regular",
+     "intro": false
+    },
+    "manual": true
+   },
+   {
+    "id": "nmwxrph7zrgvjkk",
+    "date": "2026-12-25",
+    "timeText": "12:00",
+    "times": [
+     "12:00"
+    ],
+    "range": null,
+    "timeUncertain": false,
+    "title": "Спектакль «Морозко»",
+    "kind": "show",
+    "place": "",
+    "tech": "",
+    "lines": [
+     "Глазецкая"
+    ],
+    "people": [
+     {
+      "name": "Глазецкая",
+      "times": null,
+      "from": null,
+      "role": null,
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     }
+    ],
+    "scope": "people",
+    "accounting": {
+     "showWeight": 1,
+     "baby": false,
+     "halfFor": [],
+     "away": false,
+     "studio": false,
+     "interlude": false,
+     "interludeType": null,
+     "intro": false
+    },
+    "manual": true
+   },
+   {
+    "id": "nmwxrphp15fab48",
+    "date": "2026-12-25",
+    "timeText": "12:00",
+    "times": [
+     "12:00"
+    ],
+    "range": null,
+    "timeUncertain": false,
+    "title": "Школьная интермедия «Морозко»",
+    "kind": "interlude",
+    "place": "",
+    "tech": "",
+    "lines": [
+     "Дед Мороз — Безносиков"
+    ],
+    "people": [
+     {
+      "name": "Безносиков",
+      "times": null,
+      "from": null,
+      "role": "дед мороз",
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     }
+    ],
+    "scope": "people",
+    "accounting": {
+     "showWeight": 0,
+     "baby": false,
+     "halfFor": [],
+     "away": false,
+     "studio": false,
+     "interlude": true,
+     "interludeType": "school",
+     "intro": false
+    },
+    "manual": true
+   },
+   {
+    "id": "nmwxrpi731ixufu",
+    "date": "2026-12-25",
+    "timeText": "17:00",
+    "times": [
+     "17:00"
+    ],
+    "range": null,
+    "timeUncertain": false,
+    "title": "Интерактив «Приключения пингвинят»",
+    "kind": "interlude",
+    "place": "",
+    "tech": "",
+    "lines": [
+     "Снегурочка — Глазецкая"
+    ],
+    "people": [
+     {
+      "name": "Глазецкая",
+      "times": null,
+      "from": null,
+      "role": "снегурочка",
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     }
+    ],
+    "scope": "people",
+    "accounting": {
+     "showWeight": 0,
+     "baby": false,
+     "halfFor": [],
+     "away": false,
+     "studio": false,
+     "interlude": true,
+     "interludeType": "interactive",
+     "intro": false
+    },
+    "manual": true
+   },
+   {
+    "id": "nmwxrpskmzs13kv",
+    "date": "2026-12-26",
+    "timeText": "11:00",
+    "times": [
+     "11:00"
+    ],
+    "range": null,
+    "timeUncertain": false,
+    "title": "Интерактив «Солнышко и снежные человечки»",
+    "kind": "interlude",
+    "place": "",
+    "tech": "",
+    "lines": [
+     "Снегурочка — Глазецкая"
+    ],
+    "people": [
+     {
+      "name": "Глазецкая",
+      "times": null,
+      "from": null,
+      "role": "снегурочка",
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     }
+    ],
+    "scope": "people",
+    "accounting": {
+     "showWeight": 0,
+     "baby": false,
+     "halfFor": [],
+     "away": false,
+     "studio": false,
+     "interlude": true,
+     "interludeType": "interactive",
+     "intro": false
+    },
+    "manual": true
+   },
+   {
+    "id": "nmwxrptjspz9e59",
+    "date": "2026-12-26",
+    "timeText": "11:00, 13:00, 15:00, 17:00",
+    "times": [
+     "11:00",
+     "13:00",
+     "15:00",
+     "17:00"
+    ],
+    "range": null,
+    "timeUncertain": false,
+    "title": "Спектакль «Волк и Лиса»",
+    "kind": "show",
+    "place": "",
+    "tech": "",
+    "lines": [
+     "Безносиков"
+    ],
+    "people": [
+     {
+      "name": "Безносиков",
+      "times": null,
+      "from": null,
+      "role": null,
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     }
+    ],
+    "scope": "people",
+    "accounting": {
+     "showWeight": 1,
+     "baby": false,
+     "halfFor": [],
+     "away": false,
+     "studio": false,
+     "interlude": false,
+     "interludeType": null,
+     "intro": false
+    },
+    "manual": true
+   },
+   {
+    "id": "nmwxrpt27pmu3cf",
+    "date": "2026-12-26",
+    "timeText": "15:00, 17:00",
+    "times": [
+     "15:00",
+     "17:00"
+    ],
+    "range": null,
+    "timeUncertain": false,
+    "title": "Обычная интермедия «Волк и Лиса»",
+    "kind": "interlude",
+    "place": "",
+    "tech": "",
+    "lines": [
+     "Снегурочка — Глазецкая"
+    ],
+    "people": [
+     {
+      "name": "Глазецкая",
+      "times": null,
+      "from": null,
+      "role": "снегурочка",
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     }
+    ],
+    "scope": "people",
+    "accounting": {
+     "showWeight": 0,
+     "baby": false,
+     "halfFor": [],
+     "away": false,
+     "studio": false,
+     "interlude": true,
+     "interludeType": "regular",
+     "intro": false
+    },
+    "manual": true
+   },
+   {
+    "id": "nmwxrq4n8a1c26y",
+    "date": "2026-12-27",
+    "timeText": "11:00, 13:00, 15:00, 17:00",
+    "times": [
+     "11:00",
+     "13:00",
+     "15:00",
+     "17:00"
+    ],
+    "range": null,
+    "timeUncertain": false,
+    "title": "Спектакль «Как Снеговик за ёлкой ходил»",
+    "kind": "show",
+    "place": "",
+    "tech": "",
+    "lines": [
+     "Безносиков"
+    ],
+    "people": [
+     {
+      "name": "Безносиков",
+      "times": null,
+      "from": null,
+      "role": null,
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     }
+    ],
+    "scope": "people",
+    "accounting": {
+     "showWeight": 1,
+     "baby": false,
+     "halfFor": [],
+     "away": false,
+     "studio": false,
+     "interlude": false,
+     "interludeType": null,
+     "intro": false
+    },
+    "manual": true
+   },
+   {
+    "id": "nmwxrq54dy49eok",
+    "date": "2026-12-27",
+    "timeText": "11:00",
+    "times": [
+     "11:00"
+    ],
+    "range": null,
+    "timeUncertain": false,
+    "title": "Обычная интермедия «Как Снеговик за ёлкой ходил»",
+    "kind": "interlude",
+    "place": "",
+    "tech": "",
+    "lines": [
+     "Дед Мороз — Безносиков"
+    ],
+    "people": [
+     {
+      "name": "Безносиков",
+      "times": null,
+      "from": null,
+      "role": "дед мороз",
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     }
+    ],
+    "scope": "people",
+    "accounting": {
+     "showWeight": 0,
+     "baby": false,
+     "halfFor": [],
+     "away": false,
+     "studio": false,
+     "interlude": true,
+     "interludeType": "regular",
+     "intro": false
+    },
+    "manual": true
+   },
+   {
+    "id": "nmwxrq4649hpbh1",
+    "date": "2026-12-27",
+    "timeText": "13:00",
+    "times": [
+     "13:00"
+    ],
+    "range": null,
+    "timeUncertain": false,
+    "title": "Выезд спектакля «Морозко»",
+    "kind": "trip",
+    "place": "Выборгская сторона",
+    "tech": "",
+    "lines": [
+     "Глазецкая"
+    ],
+    "people": [
+     {
+      "name": "Глазецкая",
+      "times": null,
+      "from": null,
+      "role": null,
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     }
+    ],
+    "scope": "people",
+    "accounting": {
+     "showWeight": 1,
+     "baby": false,
+     "halfFor": [],
+     "away": true,
+     "studio": false,
+     "interlude": false,
+     "interludeType": null,
+     "intro": false
+    },
+    "manual": true
+   }
+  ]
+ }
 }
