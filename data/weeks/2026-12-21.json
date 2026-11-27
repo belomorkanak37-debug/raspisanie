@@ -16,6 +16,47 @@
  ],
  "events": [
   {
+   "id": "nmwyvn5s0aq468e",
+   "date": "2026-12-22",
+   "timeText": "11:00, 13:00",
+   "times": [
+    "11:00",
+    "13:00"
+   ],
+   "range": null,
+   "timeUncertain": false,
+   "title": "Выезд спектакля «Морозко»",
+   "kind": "trip",
+   "place": "Школа № 386",
+   "tech": "",
+   "lines": [
+    "Мартюшева"
+   ],
+   "people": [
+    {
+     "name": "Мартюшева",
+     "times": null,
+     "from": null,
+     "role": null,
+     "uncertain": false,
+     "alts": [],
+     "note": null
+    }
+   ],
+   "scope": "people",
+   "accounting": {
+    "showWeight": 1,
+    "baby": false,
+    "halfFor": [],
+    "away": true,
+    "studio": false,
+    "interlude": false,
+    "interludeType": null,
+    "intro": false
+   },
+   "manual": true
+  },
+  {
    "id": "nmwxrovycuomsol",
    "date": "2026-12-22",
    "timeText": "11:30",
@@ -158,9 +199,18 @@
    "place": "",
    "tech": "",
    "lines": [
-    "Дед Мороз — Лоскутов"
+    "Мартюшева; Дед Мороз — Лоскутов"
    ],
    "people": [
+    {
+     "name": "Мартюшева",
+     "times": null,
+     "from": null,
+     "role": null,
+     "uncertain": false,
+     "alts": [],
+     "note": null
+    },
     {
      "name": "Лоскутов",
      "times": null,
@@ -238,11 +288,20 @@
    "place": "",
    "tech": "",
    "lines": [
-    "Безносиков"
+    "Безносиков, Мартюшева"
    ],
    "people": [
     {
      "name": "Безносиков",
+     "times": null,
+     "from": null,
+     "role": null,
+     "uncertain": false,
+     "alts": [],
+     "note": null
+    },
+    {
+     "name": "Мартюшева",
      "times": null,
      "from": null,
      "role": null,
@@ -307,9 +366,10 @@
   {
    "id": "nmwxrph7zrgvjkk",
    "date": "2026-12-25",
-   "timeText": "12:00",
+   "timeText": "12:00, 17:00",
    "times": [
-    "12:00"
+    "12:00",
+    "17:00"
    ],
    "range": null,
    "timeUncertain": false,
@@ -318,11 +378,22 @@
    "place": "",
    "tech": "",
    "lines": [
-    "Глазецкая"
+    "Глазецкая (12:00), Мартюшева"
    ],
    "people": [
     {
      "name": "Глазецкая",
+     "times": [
+      "12:00"
+     ],
+     "from": null,
+     "role": null,
+     "uncertain": false,
+     "alts": [],
+     "note": null
+    },
+    {
+     "name": "Мартюшева",
      "times": null,
      "from": null,
      "role": null,
@@ -358,9 +429,18 @@
    "place": "",
    "tech": "",
    "lines": [
-    "Дед Мороз — Безносиков"
+    "Мартюшева; Дед Мороз — Безносиков"
    ],
    "people": [
+    {
+     "name": "Мартюшева",
+     "times": null,
+     "from": null,
+     "role": null,
+     "uncertain": false,
+     "alts": [],
+     "note": null
+    },
     {
      "name": "Безносиков",
      "times": null,
@@ -572,6 +652,46 @@
    "manual": true
   },
   {
+   "id": "nmwyvn6pbr6yh0k",
+   "date": "2026-12-26",
+   "timeText": "12:00",
+   "times": [
+    "12:00"
+   ],
+   "range": null,
+   "timeUncertain": false,
+   "title": "Выезд спектакля «Морозко»",
+   "kind": "trip",
+   "place": "ДК «Саперный»",
+   "tech": "",
+   "lines": [
+    "Мартюшева"
+   ],
+   "people": [
+    {
+     "name": "Мартюшева",
+     "times": null,
+     "from": null,
+     "role": null,
+     "uncertain": false,
+     "alts": [],
+     "note": null
+    }
+   ],
+   "scope": "people",
+   "accounting": {
+    "showWeight": 1,
+    "baby": false,
+    "halfFor": [],
+    "away": true,
+    "studio": false,
+    "interlude": false,
+    "interludeType": null,
+    "intro": false
+   },
+   "manual": true
+  },
+  {
    "id": "nmwxrpt27pmu3cf",
    "date": "2026-12-26",
    "timeText": "15:00, 17:00",
@@ -629,7 +749,7 @@
    "place": "",
    "tech": "",
    "lines": [
-    "Безносиков, Лоскутова"
+    "Безносиков, Лоскутова, Мартюшева"
    ],
    "people": [
     {
@@ -643,6 +763,15 @@
     },
     {
      "name": "Лоскутова",
+     "times": null,
+     "from": null,
+     "role": null,
+     "uncertain": false,
+     "alts": [],
+     "note": null
+    },
+    {
+     "name": "Мартюшева",
      "times": null,
      "from": null,
      "role": null,
@@ -789,11 +918,11 @@
   }
  ],
  "pdf": null,
- "version": 2,
- "updatedAt": "2026-11-27T10:42:11.374Z",
+ "version": 3,
+ "updatedAt": "2026-11-27T11:07:37.406Z",
  "previous": {
-  "version": 1,
-  "updatedAt": "2026-11-26T16:30:07.440Z",
+  "version": 2,
+  "updatedAt": "2026-11-27T10:42:11.374Z",
   "events": [
    {
     "id": "nmwxrovycuomsol",
@@ -831,6 +960,46 @@
      "studio": false,
      "interlude": true,
      "interludeType": "school",
+     "intro": false
+    },
+    "manual": true
+   },
+   {
+    "id": "nmwyuq1jmecpods",
+    "date": "2026-12-22",
+    "timeText": "11:30",
+    "times": [
+     "11:30"
+    ],
+    "range": null,
+    "timeUncertain": false,
+    "title": "Спектакль «Серебряное копытце»",
+    "kind": "show",
+    "place": "",
+    "tech": "",
+    "lines": [
+     "Лоскутова"
+    ],
+    "people": [
+     {
+      "name": "Лоскутова",
+      "times": null,
+      "from": null,
+      "role": null,
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     }
+    ],
+    "scope": "people",
+    "accounting": {
+     "showWeight": 1,
+     "baby": false,
+     "halfFor": [],
+     "away": false,
+     "studio": false,
+     "interlude": false,
+     "interludeType": null,
      "intro": false
     },
     "manual": true
@@ -880,6 +1049,46 @@
      "studio": false,
      "interlude": false,
      "interludeType": null,
+     "intro": false
+    },
+    "manual": true
+   },
+   {
+    "id": "nmwyuq2m2klms5o",
+    "date": "2026-12-23",
+    "timeText": "11:00",
+    "times": [
+     "11:00"
+    ],
+    "range": null,
+    "timeUncertain": false,
+    "title": "Школьная интермедия «Снегурочка»",
+    "kind": "interlude",
+    "place": "",
+    "tech": "",
+    "lines": [
+     "Дед Мороз — Лоскутов"
+    ],
+    "people": [
+     {
+      "name": "Лоскутов",
+      "times": null,
+      "from": null,
+      "role": "дед мороз",
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     }
+    ],
+    "scope": "people",
+    "accounting": {
+     "showWeight": 0,
+     "baby": false,
+     "halfFor": [],
+     "away": false,
+     "studio": false,
+     "interlude": true,
+     "interludeType": "school",
      "intro": false
     },
     "manual": true
@@ -1098,7 +1307,7 @@
     "place": "",
     "tech": "",
     "lines": [
-     "Снегурочка — Глазецкая"
+     "Снегурочка — Глазецкая; Дед Мороз — Лоскутов"
     ],
     "people": [
      {
@@ -1106,6 +1315,15 @@
       "times": null,
       "from": null,
       "role": "снегурочка",
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     },
+     {
+      "name": "Лоскутов",
+      "times": null,
+      "from": null,
+      "role": "дед мороз",
       "uncertain": false,
       "alts": [],
       "note": null
@@ -1127,9 +1345,12 @@
    {
     "id": "nmwxrpskmzs13kv",
     "date": "2026-12-26",
-    "timeText": "11:00",
+    "timeText": "11:00, 13:00, 15:00, 17:00",
     "times": [
-     "11:00"
+     "11:00",
+     "13:00",
+     "15:00",
+     "17:00"
     ],
     "range": null,
     "timeUncertain": false,
@@ -1138,14 +1359,25 @@
     "place": "",
     "tech": "",
     "lines": [
-     "Снегурочка — Глазецкая"
+     "Снегурочка — Глазецкая (11:00); Дед Мороз — Лоскутов"
     ],
     "people": [
      {
       "name": "Глазецкая",
-      "times": null,
+      "times": [
+       "11:00"
+      ],
       "from": null,
       "role": "снегурочка",
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     },
+     {
+      "name": "Лоскутов",
+      "times": null,
+      "from": null,
+      "role": "дед мороз",
       "uncertain": false,
       "alts": [],
       "note": null
@@ -1186,6 +1418,47 @@
     "people": [
      {
       "name": "Безносиков",
+      "times": null,
+      "from": null,
+      "role": null,
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     }
+    ],
+    "scope": "people",
+    "accounting": {
+     "showWeight": 1,
+     "baby": false,
+     "halfFor": [],
+     "away": false,
+     "studio": false,
+     "interlude": false,
+     "interludeType": null,
+     "intro": false
+    },
+    "manual": true
+   },
+   {
+    "id": "nmwyuqidzk24ijr",
+    "date": "2026-12-26",
+    "timeText": "11:00, 13:00",
+    "times": [
+     "11:00",
+     "13:00"
+    ],
+    "range": null,
+    "timeUncertain": false,
+    "title": "Спектакль «Солнышко и снежные человечки»",
+    "kind": "show",
+    "place": "",
+    "tech": "",
+    "lines": [
+     "Лоскутова"
+    ],
+    "people": [
+     {
+      "name": "Лоскутова",
       "times": null,
       "from": null,
       "role": null,
@@ -1265,11 +1538,20 @@
     "place": "",
     "tech": "",
     "lines": [
-     "Безносиков"
+     "Безносиков, Лоскутова"
     ],
     "people": [
      {
       "name": "Безносиков",
+      "times": null,
+      "from": null,
+      "role": null,
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     },
+     {
+      "name": "Лоскутова",
       "times": null,
       "from": null,
       "role": null,
@@ -1327,6 +1609,49 @@
      "studio": false,
      "interlude": true,
      "interludeType": "regular",
+     "intro": false
+    },
+    "manual": true
+   },
+   {
+    "id": "nmwyuqjxjozeghj",
+    "date": "2026-12-27",
+    "timeText": "11:00, 13:00, 15:00, 17:00",
+    "times": [
+     "11:00",
+     "13:00",
+     "15:00",
+     "17:00"
+    ],
+    "range": null,
+    "timeUncertain": false,
+    "title": "Интерактив «Серебряное копытце»",
+    "kind": "interlude",
+    "place": "",
+    "tech": "",
+    "lines": [
+     "Дед Мороз — Лоскутов"
+    ],
+    "people": [
+     {
+      "name": "Лоскутов",
+      "times": null,
+      "from": null,
+      "role": "дед мороз",
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     }
+    ],
+    "scope": "people",
+    "accounting": {
+     "showWeight": 0,
+     "baby": false,
+     "halfFor": [],
+     "away": false,
+     "studio": false,
+     "interlude": true,
+     "interludeType": "interactive",
      "intro": false
     },
     "manual": true
