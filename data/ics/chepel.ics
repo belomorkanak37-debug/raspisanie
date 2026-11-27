@@ -18,7 +18,7 @@ END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
 UID:2026-10-02-1230-l5f9v@raspisanie
-DTSTAMP:20261127T135900Z
+DTSTAMP:20261127T140000Z
 DTSTART;TZID=Europe/Moscow:20261002T123000
 DTEND;TZID=Europe/Moscow:20261002T133000
 SUMMARY:Собрание всего коллектива
@@ -27,7 +27,7 @@ DESCRIPTION:СОБРАНИЕ ВСЕГО КОЛЛЕКТИВА
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-11-24-1300-1cb31bf@raspisanie
-DTSTAMP:20261127T135900Z
+DTSTAMP:20261127T140000Z
 DTSTART;TZID=Europe/Moscow:20261124T130000
 DTEND;TZID=Europe/Moscow:20261124T140000
 SUMMARY:Собрание
@@ -36,7 +36,7 @@ DESCRIPTION:Собрание
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-12-01-1200-1mo1dyo@raspisanie
-DTSTAMP:20261127T135900Z
+DTSTAMP:20261127T140000Z
 DTSTART;TZID=Europe/Moscow:20261201T120000
 DTEND;TZID=Europe/Moscow:20261201T130000
 SUMMARY:Репетиция «Петрушка» · + 16:00 сдача А.
@@ -46,111 +46,8 @@ DESCRIPTION:Репетиция спектакля «Петрушка» +
  16:00 сдача А.С.\nТрунина\, Чепель\, Радыгин
 END:VEVENT
 BEGIN:VEVENT
-UID:2026-12-18-1800-19xnlc@raspisanie
-DTSTAMP:20261127T135900Z
-DTSTART;TZID=Europe/Moscow:20261218T180000
-DTEND;TZID=Europe/Moscow:20261218T190000
-SUMMARY:Интермедия «Умка» · Интерактив
-LOCATION:Старая сцена
-DESCRIPTION:Интерактив «Умка»\n18:00 — Дед Моро
- з – Кожев\; Снегурочка – Глазецкая\; Чеп
- ель\, Носов\nЗвук/свет: Звук\, свет
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-12-19-1100-19xnlc@raspisanie
-DTSTAMP:20261127T135900Z
-DTSTART;TZID=Europe/Moscow:20261219T110000
-DTEND;TZID=Europe/Moscow:20261219T120000
-SUMMARY:Интермедия «Умка» · Интерактив
-LOCATION:Старая сцена
-DESCRIPTION:Интерактив «Умка»\n11:00\, 13:00\, 15:00 — 
- Дед Мороз – Кожев\; Снегурочка – Бекано
- ва\; Чепель\, Мартюшева\nЗвук/свет: Звук\, 
- свет
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-12-19-1300-19xnlc@raspisanie
-DTSTAMP:20261127T135900Z
-DTSTART;TZID=Europe/Moscow:20261219T130000
-DTEND;TZID=Europe/Moscow:20261219T140000
-SUMMARY:Интермедия «Умка» · Интерактив
-LOCATION:Старая сцена
-DESCRIPTION:Интерактив «Умка»\n11:00\, 13:00\, 15:00 — 
- Дед Мороз – Кожев\; Снегурочка – Бекано
- ва\; Чепель\, Мартюшева\nЗвук/свет: Звук\, 
- свет
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-12-19-1500-19xnlc@raspisanie
-DTSTAMP:20261127T135900Z
-DTSTART;TZID=Europe/Moscow:20261219T150000
-DTEND;TZID=Europe/Moscow:20261219T160000
-SUMMARY:Интермедия «Умка» · Интерактив
-LOCATION:Старая сцена
-DESCRIPTION:Интерактив «Умка»\n11:00\, 13:00\, 15:00 — 
- Дед Мороз – Кожев\; Снегурочка – Бекано
- ва\; Чепель\, Мартюшева\nЗвук/свет: Звук\, 
- свет
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-12-20-1100-dpmdii@raspisanie
-DTSTAMP:20261127T135900Z
-DTSTART;TZID=Europe/Moscow:20261220T110000
-DTEND;TZID=Europe/Moscow:20261220T120000
-SUMMARY:Интермедия «Солнышко и снежные чел
- овечки» · Интерактив
-LOCATION:Старая сцена
-DESCRIPTION:Интерактив «Солнышко и снежные ч
- еловечки»\n11:00\, 13:00\, 15:00\, 17:00 — Дед Мороз 
- – Лоскутов\; Снегурочка – Беканова (11:00 
- и 13:00)\, Глазецкая (15:00 и 17:00)\; Чепель\, Мар
- тюшева\nЗвук/свет: Звук\, свет
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-12-20-1300-dpmdii@raspisanie
-DTSTAMP:20261127T135900Z
-DTSTART;TZID=Europe/Moscow:20261220T130000
-DTEND;TZID=Europe/Moscow:20261220T140000
-SUMMARY:Интермедия «Солнышко и снежные чел
- овечки» · Интерактив
-LOCATION:Старая сцена
-DESCRIPTION:Интерактив «Солнышко и снежные ч
- еловечки»\n11:00\, 13:00\, 15:00\, 17:00 — Дед Мороз 
- – Лоскутов\; Снегурочка – Беканова (11:00 
- и 13:00)\, Глазецкая (15:00 и 17:00)\; Чепель\, Мар
- тюшева\nЗвук/свет: Звук\, свет
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-12-20-1500-dpmdii@raspisanie
-DTSTAMP:20261127T135900Z
-DTSTART;TZID=Europe/Moscow:20261220T150000
-DTEND;TZID=Europe/Moscow:20261220T160000
-SUMMARY:Интермедия «Солнышко и снежные чел
- овечки» · Интерактив
-LOCATION:Старая сцена
-DESCRIPTION:Интерактив «Солнышко и снежные ч
- еловечки»\n11:00\, 13:00\, 15:00\, 17:00 — Дед Мороз 
- – Лоскутов\; Снегурочка – Беканова (11:00 
- и 13:00)\, Глазецкая (15:00 и 17:00)\; Чепель\, Мар
- тюшева\nЗвук/свет: Звук\, свет
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-12-20-1700-dpmdii@raspisanie
-DTSTAMP:20261127T135900Z
-DTSTART;TZID=Europe/Moscow:20261220T170000
-DTEND;TZID=Europe/Moscow:20261220T180000
-SUMMARY:Интермедия «Солнышко и снежные чел
- овечки» · Интерактив
-LOCATION:Старая сцена
-DESCRIPTION:Интерактив «Солнышко и снежные ч
- еловечки»\n11:00\, 13:00\, 15:00\, 17:00 — Дед Мороз 
- – Лоскутов\; Снегурочка – Беканова (11:00 
- и 13:00)\, Глазецкая (15:00 и 17:00)\; Чепель\, Мар
- тюшева\nЗвук/свет: Звук\, свет
-END:VEVENT
-BEGIN:VEVENT
 UID:2026-12-09-1600-1fs6r5x@raspisanie
-DTSTAMP:20261127T135900Z
+DTSTAMP:20261127T140000Z
 DTSTART;TZID=Europe/Moscow:20261209T160000
 DTEND;TZID=Europe/Moscow:20261209T170000
 SUMMARY:Репетиция «Петрушка»
@@ -161,7 +58,7 @@ DESCRIPTION:Репетиция спектакля «Петрушка»\n
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-12-11-1300-1fs6r5x@raspisanie
-DTSTAMP:20261127T135900Z
+DTSTAMP:20261127T140000Z
 DTSTART;TZID=Europe/Moscow:20261211T130000
 DTEND;TZID=Europe/Moscow:20261211T150000
 SUMMARY:Репетиция «Петрушка»
@@ -172,7 +69,7 @@ DESCRIPTION:Репетиция спектакля «Петрушка»\n
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-12-12-1500-dw6hd9@raspisanie
-DTSTAMP:20261127T135900Z
+DTSTAMP:20261127T140000Z
 DTSTART;TZID=Europe/Moscow:20261212T150000
 DTEND;TZID=Europe/Moscow:20261212T160000
 SUMMARY:Интермедия «Серебряное копытце» · 
@@ -185,7 +82,7 @@ DESCRIPTION:Интерактив «Серебряное копытце»
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-12-13-1500-1p6gva@raspisanie
-DTSTAMP:20261127T135900Z
+DTSTAMP:20261127T140000Z
 DTSTART;TZID=Europe/Moscow:20261213T150000
 DTEND;TZID=Europe/Moscow:20261213T160000
 SUMMARY:Интермедия «Приключения пингвинят
@@ -195,5 +92,108 @@ DESCRIPTION:Интерактив «Приключения пингвин
  ят»\n15:00 — Дед Мороз – Лоскутов\; Снегур
  очка – Беканова\; Трунина\, Чепель\nЗвук/
  свет: Звук\, свет
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-12-18-1800-19xnlc@raspisanie
+DTSTAMP:20261127T140000Z
+DTSTART;TZID=Europe/Moscow:20261218T180000
+DTEND;TZID=Europe/Moscow:20261218T190000
+SUMMARY:Интермедия «Умка» · Интерактив
+LOCATION:Старая сцена
+DESCRIPTION:Интерактив «Умка»\n18:00 — Дед Моро
+ з – Кожев\; Снегурочка – Беканова\; Чепе
+ ль\, Мартюшева\nЗвук/свет: Звук\, свет
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-12-19-1100-19xnlc@raspisanie
+DTSTAMP:20261127T140000Z
+DTSTART;TZID=Europe/Moscow:20261219T110000
+DTEND;TZID=Europe/Moscow:20261219T120000
+SUMMARY:Интермедия «Умка» · Интерактив
+LOCATION:Старая сцена
+DESCRIPTION:Интерактив «Умка»\n11:00\, 13:00\, 15:00 — 
+ Дед Мороз – Кожев\; Снегурочка – Глазец
+ кая\; Чепель\, Носов\nЗвук/свет: Звук\, све
+ т
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-12-19-1300-19xnlc@raspisanie
+DTSTAMP:20261127T140000Z
+DTSTART;TZID=Europe/Moscow:20261219T130000
+DTEND;TZID=Europe/Moscow:20261219T140000
+SUMMARY:Интермедия «Умка» · Интерактив
+LOCATION:Старая сцена
+DESCRIPTION:Интерактив «Умка»\n11:00\, 13:00\, 15:00 — 
+ Дед Мороз – Кожев\; Снегурочка – Глазец
+ кая\; Чепель\, Носов\nЗвук/свет: Звук\, све
+ т
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-12-19-1500-19xnlc@raspisanie
+DTSTAMP:20261127T140000Z
+DTSTART;TZID=Europe/Moscow:20261219T150000
+DTEND;TZID=Europe/Moscow:20261219T160000
+SUMMARY:Интермедия «Умка» · Интерактив
+LOCATION:Старая сцена
+DESCRIPTION:Интерактив «Умка»\n11:00\, 13:00\, 15:00 — 
+ Дед Мороз – Кожев\; Снегурочка – Глазец
+ кая\; Чепель\, Носов\nЗвук/свет: Звук\, све
+ т
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-12-20-1100-bmwgwz@raspisanie
+DTSTAMP:20261127T140000Z
+DTSTART;TZID=Europe/Moscow:20261220T110000
+DTEND;TZID=Europe/Moscow:20261220T120000
+SUMMARY:Интермедия «Солнышко и снежные чел
+ овечки» · Обычная интермедия
+LOCATION:Старая сцена
+DESCRIPTION:Обычная интермедия «Солнышко и с
+ нежные человечки»\n11:00\, 13:00\, 15:00\, 17:00 — Д
+ ед Мороз – Лоскутов\; Снегурочка – Бека
+ нова (11:00 и 13:00)\, Глазецкая (15:00 и 17:00)\; Чеп
+ ель\, Мартюшева\nЗвук/свет: Звук\, свет
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-12-20-1300-bmwgwz@raspisanie
+DTSTAMP:20261127T140000Z
+DTSTART;TZID=Europe/Moscow:20261220T130000
+DTEND;TZID=Europe/Moscow:20261220T140000
+SUMMARY:Интермедия «Солнышко и снежные чел
+ овечки» · Обычная интермедия
+LOCATION:Старая сцена
+DESCRIPTION:Обычная интермедия «Солнышко и с
+ нежные человечки»\n11:00\, 13:00\, 15:00\, 17:00 — Д
+ ед Мороз – Лоскутов\; Снегурочка – Бека
+ нова (11:00 и 13:00)\, Глазецкая (15:00 и 17:00)\; Чеп
+ ель\, Мартюшева\nЗвук/свет: Звук\, свет
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-12-20-1500-bmwgwz@raspisanie
+DTSTAMP:20261127T140000Z
+DTSTART;TZID=Europe/Moscow:20261220T150000
+DTEND;TZID=Europe/Moscow:20261220T160000
+SUMMARY:Интермедия «Солнышко и снежные чел
+ овечки» · Обычная интермедия
+LOCATION:Старая сцена
+DESCRIPTION:Обычная интермедия «Солнышко и с
+ нежные человечки»\n11:00\, 13:00\, 15:00\, 17:00 — Д
+ ед Мороз – Лоскутов\; Снегурочка – Бека
+ нова (11:00 и 13:00)\, Глазецкая (15:00 и 17:00)\; Чеп
+ ель\, Мартюшева\nЗвук/свет: Звук\, свет
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-12-20-1700-bmwgwz@raspisanie
+DTSTAMP:20261127T140000Z
+DTSTART;TZID=Europe/Moscow:20261220T170000
+DTEND;TZID=Europe/Moscow:20261220T180000
+SUMMARY:Интермедия «Солнышко и снежные чел
+ овечки» · Обычная интермедия
+LOCATION:Старая сцена
+DESCRIPTION:Обычная интермедия «Солнышко и с
+ нежные человечки»\n11:00\, 13:00\, 15:00\, 17:00 — Д
+ ед Мороз – Лоскутов\; Снегурочка – Бека
+ нова (11:00 и 13:00)\, Глазецкая (15:00 и 17:00)\; Чеп
+ ель\, Мартюшева\nЗвук/свет: Звук\, свет
 END:VEVENT
 END:VCALENDAR
