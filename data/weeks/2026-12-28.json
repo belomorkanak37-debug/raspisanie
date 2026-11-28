@@ -157,6 +157,47 @@
    "manual": true
   },
   {
+   "id": "nmx02bvpklq5t0g",
+   "date": "2026-12-29",
+   "timeText": "11:00, 17:00",
+   "times": [
+    "11:00",
+    "17:00"
+   ],
+   "range": null,
+   "timeUncertain": false,
+   "title": "Спектакль «Первый снег малыша»",
+   "kind": "show",
+   "place": "",
+   "tech": "",
+   "lines": [
+    "Носов"
+   ],
+   "people": [
+    {
+     "name": "Носов",
+     "times": null,
+     "from": null,
+     "role": null,
+     "uncertain": false,
+     "alts": [],
+     "note": null
+    }
+   ],
+   "scope": "people",
+   "accounting": {
+    "showWeight": 1,
+    "baby": true,
+    "halfFor": [],
+    "away": false,
+    "studio": false,
+    "interlude": false,
+    "interludeType": null,
+    "intro": false
+   },
+   "manual": true
+  },
+  {
    "id": "nmwxrqx8mbwc60k",
    "date": "2026-12-30",
    "timeText": "11:00, 13:00",
@@ -220,9 +261,10 @@
   {
    "id": "nmwyurkq80g9taa",
    "date": "2026-12-30",
-   "timeText": "11:00",
+   "timeText": "11:00, 17:00",
    "times": [
-    "11:00"
+    "11:00",
+    "17:00"
    ],
    "range": null,
    "timeUncertain": false,
@@ -231,12 +273,14 @@
    "place": "",
    "tech": "",
    "lines": [
-    "Лоскутова, Лоскутов"
+    "Лоскутова (11:00), Лоскутов (11:00), Носов (17:00)"
    ],
    "people": [
     {
      "name": "Лоскутова",
-     "times": null,
+     "times": [
+      "11:00"
+     ],
      "from": null,
      "role": null,
      "uncertain": false,
@@ -245,7 +289,20 @@
     },
     {
      "name": "Лоскутов",
-     "times": null,
+     "times": [
+      "11:00"
+     ],
+     "from": null,
+     "role": null,
+     "uncertain": false,
+     "alts": [],
+     "note": null
+    },
+    {
+     "name": "Носов",
+     "times": [
+      "17:00"
+     ],
      "from": null,
      "role": null,
      "uncertain": false,
@@ -316,6 +373,47 @@
     "studio": false,
     "interlude": true,
     "interludeType": "baby",
+    "intro": false
+   },
+   "manual": true
+  },
+  {
+   "id": "nmx02bwsxdq3njm",
+   "date": "2026-12-30",
+   "timeText": "11:00, 13:00",
+   "times": [
+    "11:00",
+    "13:00"
+   ],
+   "range": null,
+   "timeUncertain": false,
+   "title": "Спектакль «Приключения пингвинят»",
+   "kind": "show",
+   "place": "",
+   "tech": "",
+   "lines": [
+    "Носов"
+   ],
+   "people": [
+    {
+     "name": "Носов",
+     "times": null,
+     "from": null,
+     "role": null,
+     "uncertain": false,
+     "alts": [],
+     "note": null
+    }
+   ],
+   "scope": "people",
+   "accounting": {
+    "showWeight": 1,
+    "baby": false,
+    "halfFor": [],
+    "away": false,
+    "studio": false,
+    "interlude": false,
+    "interludeType": null,
     "intro": false
    },
    "manual": true
@@ -399,14 +497,54 @@
     "intro": false
    },
    "manual": true
+  },
+  {
+   "id": "nmx02bxvt6pi7fl",
+   "date": "2026-12-31",
+   "timeText": "11:00",
+   "times": [
+    "11:00"
+   ],
+   "range": null,
+   "timeUncertain": false,
+   "title": "Интерактив «Умка»",
+   "kind": "interlude",
+   "place": "",
+   "tech": "",
+   "lines": [
+    "Носов"
+   ],
+   "people": [
+    {
+     "name": "Носов",
+     "times": null,
+     "from": null,
+     "role": null,
+     "uncertain": false,
+     "alts": [],
+     "note": null
+    }
+   ],
+   "scope": "people",
+   "accounting": {
+    "showWeight": 0,
+    "baby": false,
+    "halfFor": [],
+    "away": false,
+    "studio": false,
+    "interlude": true,
+    "interludeType": "interactive",
+    "intro": false
+   },
+   "manual": true
   }
  ],
  "pdf": null,
- "version": 3,
- "updatedAt": "2026-11-27T11:08:16.314Z",
+ "version": 4,
+ "updatedAt": "2026-11-28T07:02:35.258Z",
  "previous": {
-  "version": 2,
-  "updatedAt": "2026-11-27T10:42:56.435Z",
+  "version": 3,
+  "updatedAt": "2026-11-27T11:08:16.314Z",
   "events": [
    {
     "id": "nmwxrqwq4w5hh3c",
@@ -423,9 +561,18 @@
     "place": "",
     "tech": "",
     "lines": [
-     "Дед Мороз — Безносиков; Снегурочка — Глазецкая"
+     "Мартюшева; Дед Мороз — Безносиков; Снегурочка — Глазецкая"
     ],
     "people": [
+     {
+      "name": "Мартюшева",
+      "times": null,
+      "from": null,
+      "role": null,
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     },
      {
       "name": "Безносиков",
       "times": null,
@@ -555,9 +702,18 @@
     "place": "",
     "tech": "",
     "lines": [
-     "Дед Мороз — Безносиков; Снегурочка — Глазецкая (11:00)"
+     "Мартюшева; Дед Мороз — Безносиков; Снегурочка — Глазецкая (11:00)"
     ],
     "people": [
+     {
+      "name": "Мартюшева",
+      "times": null,
+      "from": null,
+      "role": null,
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     },
      {
       "name": "Безносиков",
       "times": null,
@@ -731,6 +887,46 @@
      "studio": false,
      "interlude": true,
      "interludeType": "regular",
+     "intro": false
+    },
+    "manual": true
+   },
+   {
+    "id": "nmwyvo4x9tlbxry",
+    "date": "2026-12-31",
+    "timeText": "11:00",
+    "times": [
+     "11:00"
+    ],
+    "range": null,
+    "timeUncertain": false,
+    "title": "Спектакль «Морозко»",
+    "kind": "show",
+    "place": "",
+    "tech": "",
+    "lines": [
+     "Мартюшева"
+    ],
+    "people": [
+     {
+      "name": "Мартюшева",
+      "times": null,
+      "from": null,
+      "role": null,
+      "uncertain": false,
+      "alts": [],
+      "note": null
+     }
+    ],
+    "scope": "people",
+    "accounting": {
+     "showWeight": 1,
+     "baby": false,
+     "halfFor": [],
+     "away": false,
+     "studio": false,
+     "interlude": false,
+     "interludeType": null,
      "intro": false
     },
     "manual": true
